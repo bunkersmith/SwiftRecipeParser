@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
-        // Override point for customization after application launch.
+        //let databaseManager:DatabaseManager = DatabaseManager.instance
+        //let mainDatabaseInterface:DatabaseInterface = DatabaseInterface()
+        
+        //NSLog("GroceryItem.count() = \(GroceryItem.count())")
+
         return true
     }
 
