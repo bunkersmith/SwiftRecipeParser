@@ -1,25 +1,235 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="c3m-Kk-ogg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Smith Family Recipes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecipeMasterTableViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7yv-9I-4IM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeTableCell" id="Wba-d3-UyP">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wba-d3-UyP" id="EQB-42-t86">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qCH-mv-xqX"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fXr-qo-FB6"/>
+                                    <outletCollection property="gestureRecognizers" destination="iKc-k4-tbY" appends="YES" id="57g-Tb-ZaT"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3F-dR-mjQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bpE-Gs-4Il"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bpE-Gs-4Il"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="bpE-Gs-4Il"/>
+                                    </mask>
+                                </variation>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="n0f-91-w8N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeTableCell" id="w1W-dx-wBl">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w1W-dx-wBl" id="nCd-YU-a44">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="SMh-6h-5uz"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jqq-3z-VcU"/>
+                                    <outletCollection property="gestureRecognizers" destination="0gG-h9-GGh" appends="YES" id="nAx-dG-mtU"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eBs-qw-BNg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QUJ-So-vRR"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QUJ-So-vRR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="QUJ-So-vRR"/>
+                                    </mask>
+                                </variation>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7yv-9I-4IM" secondAttribute="bottom" id="484-tL-tD7"/>
+                            <constraint firstItem="n0f-91-w8N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" priority="900" id="6oB-X3-Ix3"/>
+                            <constraint firstItem="7yv-9I-4IM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" id="79y-uH-md7"/>
+                            <constraint firstItem="n0f-91-w8N" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ENw-DT-gmc"/>
+                            <constraint firstAttribute="trailing" secondItem="G3F-dR-mjQ" secondAttribute="trailing" id="Sda-tr-vvy"/>
+                            <constraint firstAttribute="bottom" secondItem="n0f-91-w8N" secondAttribute="bottom" id="TPG-4i-fzr"/>
+                            <constraint firstAttribute="trailing" secondItem="eBs-qw-BNg" secondAttribute="trailing" id="YBw-Zh-hYi"/>
+                            <constraint firstItem="G3F-dR-mjQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a09-vu-7Ab"/>
+                            <constraint firstItem="eBs-qw-BNg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aag-UL-zTE"/>
+                            <constraint firstAttribute="trailing" secondItem="7yv-9I-4IM" secondAttribute="trailing" id="abc-CM-f4z"/>
+                            <constraint firstAttribute="trailing" secondItem="n0f-91-w8N" secondAttribute="trailing" id="fcy-a8-Huj"/>
+                            <constraint firstItem="7yv-9I-4IM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ffa-xd-6Uc"/>
+                            <constraint firstItem="n0f-91-w8N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mB4-jO-3ev"/>
+                            <constraint firstItem="7yv-9I-4IM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" priority="900" id="n1P-Dt-yPS"/>
+                            <constraint firstItem="eBs-qw-BNg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ouc-TK-yRc"/>
+                            <constraint firstItem="G3F-dR-mjQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="t1h-NH-NG4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7yv-9I-4IM"/>
+                                <exclude reference="G3F-dR-mjQ"/>
+                                <exclude reference="n0f-91-w8N"/>
+                                <exclude reference="eBs-qw-BNg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Sda-tr-vvy"/>
+                                <exclude reference="a09-vu-7Ab"/>
+                                <exclude reference="t1h-NH-NG4"/>
+                                <exclude reference="YBw-Zh-hYi"/>
+                                <exclude reference="aag-UL-zTE"/>
+                                <exclude reference="ouc-TK-yRc"/>
+                                <exclude reference="484-tL-tD7"/>
+                                <exclude reference="79y-uH-md7"/>
+                                <exclude reference="abc-CM-f4z"/>
+                                <exclude reference="ffa-xd-6Uc"/>
+                                <exclude reference="n1P-Dt-yPS"/>
+                                <exclude reference="6oB-X3-Ix3"/>
+                                <exclude reference="ENw-DT-gmc"/>
+                                <exclude reference="TPG-4i-fzr"/>
+                                <exclude reference="fcy-a8-Huj"/>
+                                <exclude reference="mB4-jO-3ev"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="G3F-dR-mjQ"/>
+                                <include reference="n0f-91-w8N"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Sda-tr-vvy"/>
+                                <include reference="a09-vu-7Ab"/>
+                                <include reference="t1h-NH-NG4"/>
+                                <include reference="6oB-X3-Ix3"/>
+                                <include reference="ENw-DT-gmc"/>
+                                <include reference="TPG-4i-fzr"/>
+                                <include reference="fcy-a8-Huj"/>
+                                <include reference="mB4-jO-3ev"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="7yv-9I-4IM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="484-tL-tD7"/>
+                                <include reference="79y-uH-md7"/>
+                                <include reference="abc-CM-f4z"/>
+                                <include reference="ffa-xd-6Uc"/>
+                                <include reference="n1P-Dt-yPS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="eBs-qw-BNg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="YBw-Zh-hYi"/>
+                                <include reference="aag-UL-zTE"/>
+                                <include reference="ouc-TK-yRc"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Smith Family Recipes" id="CmU-cm-WNN"/>
+                    <connections>
+                        <outlet property="searchBar" destination="eBs-qw-BNg" id="e9G-SI-biO"/>
+                        <outlet property="tableView" destination="7yv-9I-4IM" id="SGH-5Y-9NT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="iKc-k4-tbY">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="Ia2-jB-MzS"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="0gG-h9-GGh">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="Rlk-KQ-36E"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1839" y="441"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="Gf7-c1-psd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Emm-QH-Pnt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recipes" id="W4Z-GS-g9K"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1K1-eP-BMQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cPv-bg-7nh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggR-7R-xVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="441"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Azv-Hx-oB4">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c3m-Kk-ogg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rgE-yR-rH3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Emm-QH-Pnt" kind="relationship" relationship="viewControllers" id="xZz-WQ-kIH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNk-pJ-fh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="441"/>
         </scene>
     </scenes>
 </document>
