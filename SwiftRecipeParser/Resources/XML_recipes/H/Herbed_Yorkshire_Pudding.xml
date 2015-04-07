@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Herbed Yorkshire Pudding</name>
+    <indexCharacter>H</indexCharacter>
+    <notes></notes>
+    <servings>6</servings>
+    <instructions>Preheat the oven to 450 degrees 
+
+F. Place an 8 by 12-inch enameled cast iron baking dish in the preheated oven for 10 minutes. Meanwhile, in a mixing bowl, beat the eggs until foamy and light. Whisk in the milk until combined. Add the flour, herbs, a big pinch of salt, and some pepper, beat just until the batter is smooth. Pour the beef drippings into the bottom of the hot pan. Immediately pour in the batter and bake for 10 minutes. Reduce the oven temperature to 350 degrees F and continue baking for 15 to 20 minutes until the pudding is puffy and brown. Serve immediately, it deflates rapidly.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>chopped fresh mixed herbs such as chives, thyme, and parsley</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

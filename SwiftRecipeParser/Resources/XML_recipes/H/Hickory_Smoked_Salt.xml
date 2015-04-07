@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Hickory Smoked Salt</name>
+    <indexCharacter>H</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Pour salt and Liquid Smoke into a Tupperware container.
+
+Cover and shake to combine.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Liquid Smoke</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Kosher Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
