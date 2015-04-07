@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Rum Chocolate Mousse</name>
+    <indexCharacter>R</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Cook over rum and sugar over very low heat until dissolved but not colored brown. In a separate pan, melt chocolate. When chocolate is melted, stir in 3 tablespoons whipping cream. Add the sugar/rum syrup to the melted chocolate and stir until smooth. When the mixture is cool but not chilled, fold egg whites into it and then fold this combination very gently into 2 cups of whipped cream. Chill at least 2 hours before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Rum</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Real Chocolate Chips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Whipping Cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>Stiffly Beaten Egg Whites</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Whipped Cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

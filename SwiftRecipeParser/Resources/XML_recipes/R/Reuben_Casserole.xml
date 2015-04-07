@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Reuben Casserole</name>
+    <indexCharacter>R</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Spread rye bread with mustard, cut bread in cubes, and put in buttered 9 x 9 x 2 inch pan. Crumble corned beef over bread. Stir together sauerkraut, tomatos, relish and water. Spoon over corned beef. Bake, uncovered, in 375 degree oven for 25 minutes. Arrange half slices of cheese over top. Return to oven for 5 minutes more. Cut in squares to serve. Makes 6 servings.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>sl</unitOfMeasure>
+            <ingredientName>Rye Bread</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Prepared Mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Can Corned Beef</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Can Sauerkraut, Drained And Snipped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Can Diced Tomatos</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>sl</unitOfMeasure>
+            <ingredientName>Provelone Cheese, Halved Diagonally</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Dill Pickle Relish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

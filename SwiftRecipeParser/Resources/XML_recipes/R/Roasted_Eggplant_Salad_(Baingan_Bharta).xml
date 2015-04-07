@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Roasted Eggplant Salad (Baingan Bharta)</name>
+    <indexCharacter>R</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat the oven to 500 degrees F. 
+
+Line a baking sheet with foil. Make 3 slashes in each eggplant, from top to tail, equally distanced around the eggplant. Rub the eggplants with a little peanut oil. Sit them on the baking sheet and roast until soft all the way to the center and the skin is brown, about 45 minutes, rotating the pan and flipping the eggplants halfway through. Remove from the oven and cool. 
+
+Once cool, skin the eggplant. Chop the flesh until it's relatively smooth but not mushy. 
+
+In a large skillet, warm the peanut oil over medium-high heat. Once the oil is shimmering, add the onion and saute until it turns golden brown. Add the eggplant flesh, garlic, chile and cilantro leaves. Cook 2 minutes. Add a splash of water if it begins to stick. 
+
+Add the turmeric, cumin, and 2 teaspoons of salt. Stir and cook another 5 minutes. 
+
+Turn off the heat. Add the yogurt and stir to combine. Taste for seasoning, and garnish with cilantro leaves and a sprinkle of ground cumin. Serve either warm or slightly chilled.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>large</unitOfMeasure>
+            <ingredientName>eggplants</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>peanut oil, plus more for eggplant</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>medium</unitOfMeasure>
+            <ingredientName>white onion, finely diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>cloves</unitOfMeasure>
+            <ingredientName>garlic, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>small</unitOfMeasure>
+            <ingredientName>serrano pepper, seeded (if you wish less heat) and minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh cilantro, minced, plus more picked leaves for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>ground turmeric</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>ground cumin, plus more for sprinkling</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Greek yogurt, beaten until smooth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

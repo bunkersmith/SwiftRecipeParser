@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Roasted Chili Flank Steak</name>
+    <indexCharacter>R</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a small bowl, combine roasted red curry paste, black pepper, cumin and salt; blend well. Rub surface of steak with mixture to coat evenly and let sit for 30 minutes to 1 hour. Barbecue or broil 4 to 6 minutes each side for medium-rare or 6 to 8 minutes each side for medium. Let stand 5 minutes. Slice steak thinly across the grain. Serve accompanied with Fiery Thai Salsa and rice.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Roasted Red Curry Paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Black Peppercorns, Crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Cumin Seeds, Crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Coarse Sea Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Flank Steak</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Fiery Thai Salsa (Recipe follows)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
