@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+        
+        let utilities:Utilities = Utilities.instance
+        utilities.appStartupTime = Utilities.currentTickCount()
+        
         //let databaseManager:DatabaseManager = DatabaseManager.instance
         //let mainDatabaseInterface:DatabaseInterface = DatabaseInterface()
         
