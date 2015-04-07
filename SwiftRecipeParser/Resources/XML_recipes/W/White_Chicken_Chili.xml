@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>White Chicken Chili</name>
+    <indexCharacter>W</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. In a large saucepan or Dutch oven, place all chilis, onions, celery, leeks, garlic, cumin, oregano, basil, rosemary, olive oil, sea salt and pepper. Cook over medium heat until onions become translucent - about 10 minutes.
+
+ 2. Add 8 cups cooking liquid, beans and cubed chicken and bring mixture to a boil. Reduce heat and let mixture simmer for 40 minutes. Add lime amd lemon juices, cilantro and green onions. Remove from heat and serve immediately.
+
+ Tip: I like to serve chili over brown rice. This gives me another serving of whole grains and makes it a perfect clean-eating meal.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>Poblano chilis, stemmed, seeded and chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>Jalapeno chilis, seeded and deveined, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Vidalia onions peeled and chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ribs</unitOfMeasure>
+            <ingredientName>celery, trimmed and chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>leek, white only, well rinsed and chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>cloves</unitOfMeasure>
+            <ingredientName>garlic, pressed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>dried oregano, crumbled</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>dried basil, crumbled</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh rosemary</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>extra virgin olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Sea salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water or low-sodium chicken stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>15 oz cans navy beans, cannellini beans, other small white bean or combination, drained and rinsed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>boneless, skinless chicken breasts (about 3 double breasts), cooked and cubed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>fresh limes, juiced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>fresh lemons, juiced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped fresh cilantro leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green onions, trimmed and chopped for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

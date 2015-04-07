@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Whiskey Smoked Prime Rib</name>
+    <indexCharacter>W</indexCharacter>
+    <notes></notes>
+    <servings>10</servings>
+    <instructions>Prepare 3/4 of charcoal in smoker. Fill secondary pan with cold water. Soak wood chips in bourbon and 1/2 cup water. Rub roast with seasonings and place on the top grate. Place a few handfuls of wood chips onto the fire. 
+
+Close lid and check the temperature every 40-50 minutes, or preferably monitor the temperature with a wireless BBQ temperature probe (sold at most hardware stores). Be sure to add more wood chips every time the roast is checked. Smoke roast for about 4.5 hours or until internal temperatures reaches 140 degrees. 
+
+For an Orion Cooker, the time needed to reach 140 degrees is approximately 2 hours and 15 minutes. Allow to rest before carving.
+
+If you want your rib roast to have an extra bit of crust on the outside (like it does at the best steak houses), take the roast out of the smoker at 120 degrees (approx 1 hour 30 to 1 hour 45 minutes in the Orion, but double check the time). Take a metal bowl outside to cover roast immediately after it comes of the Orion so that the temperature does not drop while it is being carried inside.
+
+Let it rest until the temperature stops going up (should be at 130-133 degrees). Then cook in a 500-degree oven for 10 minutes (or until the temperature reaches 140 degrees) to develop a crust on the outside.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>standing rib roast</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>15</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>charcoal briquets</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>wood chips, hickory</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>bourbon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>hickory-smoked salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>garlic powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>onion powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>paprika</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

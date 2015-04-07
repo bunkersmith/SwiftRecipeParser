@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>White Chocolate Macadamia Nut Cookies</name>
+    <indexCharacter>W</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Preheat oven to 350 degrees.
+
+2. In a large bowl, cream together the butter, brown sugar, and white sugar until smooth. Beat in the eggs, one at a time, then stir in the vanilla and almond extracts. Combine the flour, baking soda, and salt; gradually stir into the creamed mixture. Mix in the macadamia nuts and white chocolate. Drop dough by teaspoonfuls onto ungreased cookie sheets.
+
+3. Bake for 10 minutes, or until golden brown.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>butter, softened</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>packed light brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>white sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>vanilla extract</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>baking soda</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>coarsely chopped macadamia nuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>coarsely chopped white chocolate</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

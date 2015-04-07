@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Won Ton Soup</name>
+    <indexCharacter>W</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>PEEL AND devein the prawns. Place in a tea towel and squeeze out as much moisture as possible. Mince the prawns to a coarse paste using a sharp knife or in a food processor.
+
+BLANCH the water chestnuts in boiling water for 1 minute, then refresh in cold water. Drain, pat dry and roughly chop them. Place the prawns, water chestnuts, pork, 2 teaspoons of the soy sauce, 2 teaspoons of the Shaoxing rice wine, 1/2 teaspoon of the salt, 1/2 teaspoon of the sesame oil, the black pepper, ginger and cornstarch in a mixing bowl. Stir vigorously to combine.
+
+PLACE a teaspoon of filling in the centre of one won ton wrapper. Brush the edge of the wrapper with a little water, fold in half and then bring the two folded corners together and press firmly. Place the won tons on a cornstarch-dusted tray.
+
+BRING a saucepan of water to the boil. Cook the won tons, covered, for 5-6 minutes, or until they have risen to the surface. Using a wire sieve or slotted spoon, remove the won tons and divide them among six bowls.
+
+PLACE the stock in a saucepan with the remaining soy sauce, rice wine, salt and sesame oil, and bring to the boil. Add the spinach and cook until just wilted. Pour the hot stock over the won tons and sprinkle with the spring onion.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>9</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>prawns (shrimp)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>peeled water chestnuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>9</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>lean ground pork</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>light soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Shaoxing rice wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>roasted sesame oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>finely chopped ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>cornstarch</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>30</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>square or round won ton wrappers</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>English spinach, trimmed (optional)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>spring onions (scallions), green part only, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
