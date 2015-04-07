@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Beef Roulade (Braciole)</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat the oven to 350 degrees F. Place the tomato sauce in a 9 by 13-inch baking dish and place in the oven to heat.
+
+In a the bowl of a food processor mix the croutons, cheese, eggs, herbs and garlic until it forms a paste.
+
+Brush the pounded flank steak with the olive oil and season generously with the salt and pepper. Spread the filling evenly over the meat. Roll tightly and tie with butcher's twine.
+
+In a large saute pan heat 1 to 2 tablespoons of vegetable oil and sear all sides of the rolled meat. Remove from the pan.
+
+Add to the hot tomato sauce, cover with a tin foil tent so that the foil is not touching the meat. Braise for 35 minutes or, up to 3 hours.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>tomato sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>flavored croutons</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated Parmesan</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>fresh parsley, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>fresh oregano, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh rosemary, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh thyme, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>clove</unitOfMeasure>
+            <ingredientName>garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>flank steak, pounded to 1/4-inch thick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Olive oil, for brushing</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Vegetable oil, for searing</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

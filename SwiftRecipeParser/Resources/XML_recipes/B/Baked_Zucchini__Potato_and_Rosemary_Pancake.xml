@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Baked Zucchini, Potato and Rosemary Pancake</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place an oven rack in the center of the oven. Preheat the oven to 450 degrees F.
+
+Lay the potatoes, zucchini, and onion on 2 kitchen towels. Bring the corners of the towels together and squeeze out the moisture from the vegetables. Place the vegetables in a large bowl. Add the garlic, bread crumbs, Parmesan, chopped rosemary, egg whites, salt, and pepper. Mix well until all ingredients are combined.
+
+In a 12-inch skillet, heat the oil over medium heat. Add the vegetable mixture to the pan. Using a spatula, press the mixture evenly into the pan. Cook for 6 minutes or until the edge of the mixture just starts to brown. Place in the oven and bake for 20 to 25 minutes or until the top of the pancake starts to brown and the edges are crispy.
+
+Allow pancake to cool for about 5 minutes. Slide the pancake out of the pan onto a cutting board and cut into wedges and arrange on a serving platter. Garnish with rosemary sprigs.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>vegetable cooking spray</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>russet potatoes, peeled and grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>zucchini, grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>onion, grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>seasoned bread crumbs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated Parmesan, plus 1 tablespoon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh rosemary leaves, chopped, plus sprig for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>egg whites, lightly beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

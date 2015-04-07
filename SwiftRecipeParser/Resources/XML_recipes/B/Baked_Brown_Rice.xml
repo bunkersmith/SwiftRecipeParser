@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Baked Brown Rice</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Preheat the oven to 375 degrees F. Place the rice into an 8-inch square glass baking dish. Bring the water, butter, and salt just to a boil in a kettle or covered saucepan. Once the water boils, pour it over the rice, stir to combine, and cover the dish tightly with heavy-duty aluminum foil. Bake on the middle rack of the oven for 1 hour. After 1 hour, remove cover and fluff the rice with a fork. Serve immediately.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>brown rice - medium or short grain</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>unsalted butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

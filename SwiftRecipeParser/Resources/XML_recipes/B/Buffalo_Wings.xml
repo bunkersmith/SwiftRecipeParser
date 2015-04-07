@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Buffalo Wings</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place a 6-quart saucepan with a steamer basket and 1 inch of water in the bottom, over high heat, cover and bring to a boil.
+
+Remove the tips of the wings and discard or save for making stock. Using kitchen shears, or a knife, separate the wings at the joint. Fold the joint tightly together and slit with a knife to begin the separation. Place the wings into the steamer basket, cover, reduce the heat to medium and steam for 10 minutes. Remove the wings from the basket and carefully pat dry. Lay the wings out on a cooling rack set in a half sheet pan lined with paper towels and place in the refrigerator for 1 hour.
+
+Preheat the oven to 425 degrees F.
+
+Replace the paper towels with parchment paper. Roast on the middle rack of the oven for 20 minutes. Turn the wings over and cook another 20 minutes or until meat is cooked through and the skin is golden brown.
+
+While the wings are roasting, melt the butter in a small bowl along with the garlic. Pour this along with hot sauce and salt into a bowl large enough to hold all of the chicken and stir to combine.
+
+Remove the wings from the oven and transfer to a large mixing bowl along with the glaze and toss to coat. Serve warm.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>whole chicken wings</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>unsalted butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>clove</unitOfMeasure>
+            <ingredientName>garlic, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>hot sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

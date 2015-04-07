@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Brown Basmati Rice (from Henry's)</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Simmer 20 minutes. Let stand 10 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Brown Basmati Rice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

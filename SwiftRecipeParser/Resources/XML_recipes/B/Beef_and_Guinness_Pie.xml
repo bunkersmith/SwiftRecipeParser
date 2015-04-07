@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Beef and Guinness Pie</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Put oven rack in middle position and preheat oven to 350°F.
+
+Pat beef dry. Stir together flour, salt, and pepper in a shallow dish. Add beef, turning to coat, then shake off excess and transfer to a plate. Heat oil in a wide 5- to 6-quart ovenproof heavy pot over moderately high heat until just smoking, then brown meat in 3 batches, turning occasionally, about 5 minutes per batch, transferring to a bowl.
+
+Add onion, garlic, and water to pot and cook, scraping up any brown bits from bottom of pot and stirring frequently, until onion is softened, about 5 minutes. Add tomato paste and cook, stirring, 1 minute. Stir in beef with any juices accumulated in bowl, broth, beer, Worcestershire sauce, peppercorns, and thyme and bring to a simmer, then cover and transfer to oven. Braise until beef is very tender and sauce is thickened, about 1-1/4 to 1-1/2 hours. Discard thyme and cool stew completely, uncovered, about 30 minutes. (If stew is warm while assembling pies, it will melt uncooked pastry top.)
+
+Put a shallow baking pan on middle rack of oven and increase oven temperature to 425°F.
+
+Divide cooled stew among bowls (they won't be completely full). Roll out pastry dough on a lightly floured surface with a lightly floured rolling pin into a 13-inch square, about 1/8 inch thick. Trim edges and cut dough into quarters. Stir together egg and water and brush a 1-inch border of egg wash around each square. Invert 1 square over each bowl and drape, pressing sides lightly to help adhere. Brush pastry tops with some of remaining egg wash and freeze 15 minutes to thoroughly chill dough.
+
+Bake pies in preheated shallow baking pan until pastry is puffed and golden brown, about 20 minutes.
+
+Reduce oven temperature to 400°F and bake 5 minutes more to fully cook dough.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Boneless Beef Chuck, Cut Into 1-inch Pieces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>All-purpose Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Black Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Vegetable Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Onion, Coarsely Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Tomato Paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Beef Broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Guinness Or Other Irish Stout</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Worcestershire Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Brined Green Peppercorns, Drained and Coarsely Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Fresh Thyme Sprigs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Rough Puff Pastry Dough</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Egg, Lightly Beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

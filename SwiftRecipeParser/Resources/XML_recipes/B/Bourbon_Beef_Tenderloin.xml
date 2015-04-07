@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Bourbon Beef Tenderloin</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Preheat grill or oven to 350 degrees F. Prepare marinade by combining the bourbon, brown sugar, soy sauce, cilantro, lemon juice, Worcestershire sauce, water, and thyme in a bowl. Make sure the tenderloin has been cleaned and the tissues have been removed. Fold the tail end of the beef back underneath itself so that it is of uniform thickness and secure with butcher's string. Place meat in a dish and pour marinade over meat, cover, and refrigerate for approximately 8 to 12 hours turning meat over several times. When grill is ready, place meat on oiled surface and reserve the liquid from the marinade. Cook over high heat with lid closed, turning meat often and occasionally basting with the marinade. The tenderloin will cook to rare in approximately 30 to 45 minutes. Serve with horseradish cream on the side.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>bourbon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>bn</unitOfMeasure>
+            <ingredientName>cilantro, leaves chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>lemon juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Worcestershire sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>sprigs</unitOfMeasure>
+            <ingredientName>fresh thyme, leaves chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>pound</unitOfMeasure>
+            <ingredientName>beef tenderloin, silver connective tissue removed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Oil, to brush grill</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

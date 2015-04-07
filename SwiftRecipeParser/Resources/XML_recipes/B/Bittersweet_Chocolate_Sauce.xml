@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Bittersweet Chocolate Sauce</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Whisk sugar and cocoa powder in heavy small saucepan to blend. Whisk in 1/2 cup water. Add chopped chocolate. Stir over medium heat until chocolate melts and mixture is smooth and begins to simmer, about 5 minutes. (Can be made 2 days ahead. Cover and refrigerate. Rewarm chocolate sauce before serving.) Makes about 1 cup.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Unsweetened Cocoa Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Bittersweet Chocolate, (or Semisweet, but not Unsweetened), Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

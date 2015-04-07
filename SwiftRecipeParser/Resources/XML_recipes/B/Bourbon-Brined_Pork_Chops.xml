@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Bourbon-Brined Pork Chops</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>1. Rinse the pork chops under cold running water and blot dry with paper towels. Arrange the chops in a baking dish just large enough to hold them or in a resealable plastic bag. Arrange the onion, bay leaves, cinnamon stick, peppercorns, allspice, and cloves over the meat.
+
+2. Make the brine: Combine the brown sugar and salt in a large bowl. Add the hot water and whisk until the brown sugar and salt are dissolved. Stir in the cold water, bourbon, and 2 tablespoons of oil. Pour this mixture over the chops, turning the chops a couple of times to coat evenly. Brine the chops, covered, in the refrigerator for 2 to 4 hours, turning once or twice to ensure even brining. Turn on the grill and preheat to high. If using a gas grill, place the wood chips in the smoker box or in a smoker pouch and preheat until you see smoke.
+
+3. Set up the grill for indirect grilling.
+
+4. When ready to cook, brush and oil the grill grate. Drain the pork chops and blot dry with paper towels, dusting off any loose spices. Brush the chops on both sides with the remaining oil. Arrange the chops in the center of the hot grate away from the heat. If using a charcoal grill, toss the wood chips on the coals. Cover the grill and smoke the chops for 20 minutes. Then move the chops directly over the heat: If using a charcoal grill, place 2 chops on each side over the mounds of coals. If using a gas grill, place all 4 chops over the lit portion of the grill. Grill the chops, uncovered, until cooked through (about 160°F on an instant-read meat thermometer), 4 to 7 minutes per side, rotating the chops 90 degrees after 2 minutes to create an attractive crosshatch of grill marks. Transfer the chops to plates or a platter and let rest for 3 minutes, then serve at once.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>loin pork chops, each 1 inch thick and 10 to 12 ounces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>onion, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bay leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cinnamon stick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>black peppercorn</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>allspice berries</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>coarse salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>hot water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>cold water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>bourbon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>vegetable oil, plus 1 to 2 tablespoons for basting</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

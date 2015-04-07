@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Biscuits with Green Onions and Cheddar</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat the oven to 475 degrees F.
+
+Into a bowl, sift together the self-rising flour, cake flour, baking powder, baking soda, sugar, and salt. Using your fingers or a pastry cutter, work the butter into the flour until the mixture resembles coarse crumbs. Add the buttermilk, cheese, and green onions and, using your hands or a rubber spatula, stir just until the buttermilk and flour come together to form a dough, being careful not to overmix.
+
+Lightly flour a work surface with the all-purpose flour. Turn out the dough onto the surface and press into a disk about 1/2-inch thick and 8 inches in diameter. Using a 3-inch round cutter dusted in flour, cut into rounds. (Be sure to press straight and downward when cutting the dough, since a twisting motion will prevent the dough from rising.)
+
+Reform the scraps in order to make 7 biscuits. Place on a small baking sheet and brush the tops with the melted butter. Bake until golden brown, 10 to 12 minutes.
+
+Remove from the oven and serve hot or at room temperature.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>self-rising flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>cake flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>baking powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>baking soda</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>unsalted butter, (cold) cut into pieces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>buttermilk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated cheddar cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>green onions, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>all-purpose flour, bench flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>unsalted butter, melted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

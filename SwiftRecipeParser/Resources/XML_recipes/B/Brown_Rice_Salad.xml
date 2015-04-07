@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Brown Rice Salad</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a 10-inch saute pan over medium heat, fry the bacon until crisp. Drain, crumble, and set aside. Reserve 1 tablespoon of the bacon fat. Add the red onion to the pan and cook until translucent, approximately 5 to 6 minutes. Add the vinegar, chicken broth, mustard, sugar, salt, and pepper to the pan and stir to combine. Add the bacon back to the pan along with the rice and cook, stirring occasionally, until the liquid is absorbed, approximately 7 to 10 minutes. Stir in the dill. Allow to cool slightly before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>sl</unitOfMeasure>
+            <ingredientName>bacon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>red onion, diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>white wine vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Dijon mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>kosher salt, plus a pinch</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>black pepper, freshly ground</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>recipe Baked Brown Rice, recipe follows</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fresh dill, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Brined Roast Turkey</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>In a large stockpot, bring the water, cloves, ginger, black peppercorn, bay leaves and salt to a boil. Lower to a simmer and stir in the honey and maple syrup until well blended. Turn off heat and allow to cool to room temperature. Rinse the turkey inside and out with cold tap water. Reserve the neck and specialty meats for pan gravy. Set the turkey in the brine, making sure that the turkey is fully immersed in the brine. Place a weight on top of the turkey to make sure it is always covered with brine. Marinate for at least 4 hours to overnight, depending on the weight of the turkey, in the refrigerator. Preheat grill to 325 degrees F. Remove turkey from brine and rinse inside and out with cold water. Mix together the butter, garlic, chopped rosemary, and sage to make a compound butter. Using your hands, loosen to the skin from the breast by gently inserting your fingers between the skin and the flesh. Rub the compound butter underneath the skin. Insert the stuffing into the cavity of the turkey. Place the turkey on the rotisserie. Tuck the wings back and under the turkey. Using kitchen twine, tie the legs together. This will make a compact shape and will create a great presentation. Drizzle the turkey with olive oil and rub it into the skin. Roast the turkey to at least 165 degrees F in the breast, about 2-1/2 hours. If the skin gets too dark during roasting, tent with foil.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ga</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Ground Cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Ground Ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Cracked Black Peppercorns</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Bay Leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Kosher Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Honey</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Maple Syrup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Whole Fresh Turkey, Giblets And Neck Removed And Reserved For Stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>stick</unitOfMeasure>
+            <ingredientName>Butter, Room Temperature</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Garlic, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Fresh Rosemary Leaves, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Fresh Sage Leaves, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Brandied Peaches</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Peel peaches: Cut a small x in the blossom end of each peach. Place peaches in boiling water for about 30 seconds. Remove from boiling water and quickly submerge in ice cold water for a few minutes, or until cool enough to handle. The skin should slip off. Cut peaches in half and remove pit. Dice peaches and put in a sterilized 1-quart Mason-type jar.
+
+In a saucepan bring the sugar and water to a boil over low heat, washing down any sugar crystals clinging to the sides with a brush dipped in cold water until the sugar is dissolved. Simmer the syrup for 3 minutes and remove it from the heat. Add 1/2 cup brandy, 2 tablespoons at a time, stirring, and let it cool. Stir in the remaining 1 cup brandy.
+
+Pour the syrup over the peaches. Add more brandy if necessary to cover completely. Seal the jar with the lid and store in a cool place for at least 1 month.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Firm Ripe Peaches (about 3 medium)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Brandy</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

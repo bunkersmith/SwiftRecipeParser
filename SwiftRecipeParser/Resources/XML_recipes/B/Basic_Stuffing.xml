@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Basic Stuffing</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>In a preheated 400 degree F oven, toast bread cubes 5 to 7 minutes or until barely golden.
+
+In a large skillet, melt butter and cook onion and celery over medium heat for 3 minutes or until softened. Transfer to a bowl and add bread cubes, herbs, salt, pepper, and chicken broth. Toss well and adjust seasoning.
+
+Transfer to baking dish and bake in Bake at 325 degrees F for 20 minutes until heated through and crust forms on top.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>white bread, homemade style (about 1 pound), chopped  into 1/2 inch cubes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped celery</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>rubbed sage</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>dried thyme</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

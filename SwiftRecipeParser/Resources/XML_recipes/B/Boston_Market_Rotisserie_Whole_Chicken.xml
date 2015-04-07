@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Boston Market Rotisserie Whole Chicken</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Fill the cavity with apple, onions and celery. Place it in a Pam-sprayed Dutch oven or a roasting pan deep enough that it can later be sealed in foil without the foil touching the skin of the chicken. Mix basting ingredients well in saucepan and warm just to melt honey. Put on skin of chicken. Bake at 350 degrees F for an hour plus 15 to 30 minutes depending on the size of the chicken, basting chicken without turning, 3 or 4 times during baking or until nicely browned. Immediately upon removing from oven, seal baking dish tightly in foil and let stand 15 to 20 minutes before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Whole Chicken</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>chunk</unitOfMeasure>
+            <ingredientName>Onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Apples, unpeeled and cut into wedges</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>chunks</unitOfMeasure>
+            <ingredientName>Celery</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Vegetable Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Honey</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Lime Juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Paprika</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Seasoned Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

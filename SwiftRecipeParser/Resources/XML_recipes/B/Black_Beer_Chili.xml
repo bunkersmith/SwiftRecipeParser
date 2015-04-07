@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Black Beer Chili</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>8</servings>
+    <instructions>1. Rinse and sort the beans, place them in a large bowl, and add hot water to 1" above the beans. Cover with a large plate and soak overnight.
+
+2. The next day, drain the beans and place them in a stockpot with 3 cups of the beer. Bring to a boil over high heat and reduce the heat to medium-low. Cook at a slow bubble until the beans are tender, stirring occasionally and adding water to keep up the level of liquid if necessary, 1 to 1-1/2 hours.
+
+3. Meanwhile, heat 2 tbsp. of the oil in another large pot over medium-high heat. Add the beef and cook, stirring occasionally, until the meat is brown on all sides, 3 to 4 minutes. Remove the meat from the pot and set aside.
+
+4. Add the remaining 2 tbsp. oil to the same pot over medium heat. Stir in the onions, garlic, jalapeno peppers, chili powder, cumin, and cayenne and cook, stirring constantly, until the onions are tender, 4 to 6 minutes.
+
+5. Into the onions stir the stock, vinegar, and the remaining 1-1/2 cups of beer. Fold in the meat, bring to a bubble, and reduce the heat to low. Cover and simmer, stirring occasionally to keep the meat from sticking to the bottom of the pot, until the meat is very tender and shreds easily with a fork, about 1-1/2 hours.
+
+6. Transfer 1-1/2 cups of the beans with their cooking juices to the bowl of a food processor and puree until smooth. Drain the remaining beans and stir them, with the pureed beans, into the meat pot. Stir in the salt and pepper and continue to simmer, stirring occasionally, until all of the flavors have blended and the chili is heated through, about 15 minutes.
+
+7. Serve the chili in bowls, garnished with cheese, sour cream, and minced leeks or onions.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Dried black beans</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Dark beer or stout, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Olive oil, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Top round of beef, in 2" cubes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>onions, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>garlic, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>jalapeno peppers, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Chili powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>cumin, ground</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Cayenne pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Beef stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Balsamic vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>turns</unitOfMeasure>
+            <ingredientName>black pepper, freshly ground</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Monterey Jack cheese, grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sour cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>leeks or onions, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

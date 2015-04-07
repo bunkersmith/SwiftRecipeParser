@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Braised Pot Roast with Vegetables</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Season all sides of the beef with a fair amount of salt and pepper. In a large Dutch oven or other heavy pot that has a tight cover; heat 2 tablespoons of the oil over moderately high heat. Brown the meat on all sides, taking the time to get a nice crust on the outside. Pour in the tomatoes and the water. Scatter the vegetables and herbs around the pot roast, season with salt and pepper; and drizzle with the remaining tablespoon of oil. Cover the pot and reduce the heat to low. Braise for about 3 hours, basting every 30 minutes with the pan juices, until the beef is fork tender.
+
+Slice the pot roast and arrange on platter surrounded by the vegetables. Serve with the pot juices.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>beef chuck roast, trimmed of excess fat</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>canned crushed tomatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red onions, halved</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>carrots, sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>celery stalks, sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>button mushrooms, stems removed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>sprigs</unitOfMeasure>
+            <ingredientName>fresh rosemary</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>sprigs</unitOfMeasure>
+            <ingredientName>fresh thyme</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bay leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
