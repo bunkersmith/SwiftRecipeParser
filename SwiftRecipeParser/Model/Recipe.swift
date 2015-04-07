@@ -19,4 +19,28 @@ class Recipe: NSManagedObject {
     @NSManaged var servings: NSNumber
     @NSManaged var containsIngredients: NSOrderedSet
 
+    func recipeDescription() -> NSString {
+        var returnValue: String = "\name: \(name)"
+        returnValue += "\ninstructions: \(instructions)"
+        returnValue += "\nnotes: \(notes)"
+        returnValue += "\nindexCharacter: \(indexCharacter)"
+        returnValue += "\nservings: \(servings.intValue)"
+        returnValue += "\ningredient count: \(containsIngredients.count)"
+        
+        return returnValue
+    }
+    
+    func addContainsIngredientsObject(value:Ingredient)
+    {
+        self.willChangeValueForKey("containsIngredients")
+        
+        var tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet: containsIngredients)
+        
+        tempSet.addObject(value)
+        
+        self.containsIngredients = tempSet
+        
+        self.didChangeValueForKey("containsIngredients")
+    }
+    
 }
