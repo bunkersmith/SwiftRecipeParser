@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Artichokes (Steamed)</name>
+    <indexCharacter>A</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Chop the stems off the artichokes until they stand flat. Put the artichokes in a Dutch Oven with enough water to allow them to float. Pour in lemon juice and garlic oil and bring the water to a boil. Reduce heat to low, cover and simmer until a leaf pulls out easily, about 45 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Artichokes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Garlic Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Lemon Juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

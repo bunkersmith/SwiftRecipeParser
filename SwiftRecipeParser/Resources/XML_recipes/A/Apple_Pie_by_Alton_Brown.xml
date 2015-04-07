@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Apple Pie by Alton Brown</name>
+    <indexCharacter>A</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>For the crust:
+Place the butter, shortening and applejack into the refrigerator for 1 hour.
+
+In the bowl of a food processor, combine the flour, salt and sugar by pulsing 3 to 4 times. Add the butter and pulse 5 to 6 times until the texture looks mealy. Add the shortening and pulse another 3 to 4 times until incorporated. Remove the lid of the food processor and sprinkle in 5 tablespoons of the applejack. Replace the lid and pulse 5 times. Add more applejack as needed, and pulse again until the mixture holds together when squeezed. Weigh the dough and divide in half. Shape each half into a disk, wrap in plastic wrap and refrigerate for at least 1 hour and up to overnight. 
+
+For the filling:
+Peel and core the apples. Slice into 1/2-inch sthick wedges. Toss all of the apples with 1/4 cup of the sugar, place in a colander set over a large bowl and allow to drain. Transfer the drained liquid to a small saucepan, place over medium heat and reduce to 2 tablespoons. Set aside to cool. Toss the apples with the remaining sugar, tapioca flour, jelly, cider,lime juice, salt and grains of paradise.
+
+For assembling and baking the pie:
+Preheat oven to 425 degrees F.
+
+Remove one disk of dough from the refrigerator. Place the dough onto a lightly floured piece of waxed paper. Lightly sprinkle the top of the dough with flour and roll out into a 12-inch circle. Place into a 9 1/2 to 10-inch tart pan that is 2-inches deep. Gently press the dough into the sides of the pan, crimping and trimming the edges as necessary. Set a pie bird in the center of the bottom of the pan.
+
+Place the apples into the unbaked pie shell in concentric circles starting around the edges, working towards the center and forming a slight mound in the center of the pie. Pour over any liquid that remains in the bowl. Roll out the second pie dough as the first. Place this dough over the apples, pressing the pie bird through the top crust. Press together the edges of the dough around the rim of the pie. Brush the top crust with the reduced juice everywhere except around the edge of pie. Trim any excess dough. Place the pie on a half sheet pan lined with parchment paper and bake on the floor of the oven for 30 minutes. Transfer to the lower rack of the oven and continue to bake another 20 minutes or until the apples are cooked through but not mushy. Remove to a rack and cool a minimum of 4 hours or until almost room temperature.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For the crust:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>unsalted butter</ingredientName>
+            <processingInstructions>cut into 1/2-inch pieces</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>vegetable shortening</ingredientName>
+            <processingInstructions>cut into 1/2-inch pieces</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>applejack</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>all-purpose floor</ingredientName>
+            <processingInstructions>approximately 2-3/4 cups, plus extra for dusting</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>table salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>granulated sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For the filling:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>apples</ingredientName>
+            <processingInstructions>mixture of Granny Smith, Honeycrisp, Braeburn and Golden</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions>divided</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>tapioca floor</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>apple jelly</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>apple cider</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>lime juice</ingredientName>
+            <processingInstructions>freshly squeezed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>grains of paradise</ingredientName>
+            <processingInstructions>freshly ground</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

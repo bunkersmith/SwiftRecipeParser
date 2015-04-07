@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Artichokes with Pork Sausage, Lemon and Sage</name>
+    <indexCharacter>A</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>First thing to do is to steam the artichokes in a flavorful broth. Put the parsley, garlic, bay leaves, wine, and 1 of the halved lemons in a wide pot. Add 2 quarts of water and bring to a simmer. Season the broth with salt and pepper. While that's coming to a simmer, wash the artichokes under cold water. Then, using a paring knife, trim the bottom end of each stem and shave the stem down to expose the tender, light green flesh underneath. Snap or cut off the outer petals until you reach the soft, pale green leaves in the center. Slice off about 1 inch from the top of the artichoke with a large knife. Do the same to prepare the rest of the artichokes. Slide the artichokes into the simmering broth. Then cover the pan and simmer over medium-low heat for about 20 minutes, until there is no resistance when a knife is inserted into the base of each artichoke. Remove the artichokes from the poaching liquid with tongs. Using a spoon, carefully scoop out the hairy choke from the center of each and discard. Try and keep the artichoke halves intact as best you can; it looks great for presentation. Put a large, deep skillet over medium heat and cover the bottom with a 2-count of oil. When the oil is smoking hot, add the sausage and cook for 7 to 10 minutes until cooked through. Take them out of the pan and set them aside. Add a drizzle of oil to the pan. Add the sage leaves and cook 2 to 3 minutes to infuse the oil with their flavor. Add the shallots, garlic, and lemon slices and cook 2 minutes. Then add the stock to the pan, bring to a simmer and simmer until reduced and thickened. Swirl in the butter to emulsify, and a drizzle of olive oil. Return the artichokes to the pan and cook over low heat for a few minutes to warm up them up. Spoon the artichokes out onto plates and serve with the sausage.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>handful</unitOfMeasure>
+            <ingredientName>Fresh parsley</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Bay Leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Dry White Wine</ingredientName>
+            <processingInstructions>Such As Pinot Grigio</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Lemon</ingredientName>
+            <processingInstructions>Halved</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher Salt and Freshly Ground Black Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Artichokes</ingredientName>
+            <processingInstructions>Split In Half</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Extra Virgin Olive Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Pork Sausages</ingredientName>
+            <processingInstructions>About 1-1/2 Pounds Total</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Fresh Sage Leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Shallots</ingredientName>
+            <processingInstructions>Minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves</ingredientName>
+            <processingInstructions>Minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Lemon</ingredientName>
+            <processingInstructions>Cut Into Paper-thin Slices</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Chicken Stock</ingredientName>
+            <processingInstructions>Homemade Or Store Bought</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Unsalted Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Fresh Parsley Leaves</ingredientName>
+            <processingInstructions>Chopped, For Garnish</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Fried Sage Leaves</ingredientName>
+            <processingInstructions>For Garnish</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

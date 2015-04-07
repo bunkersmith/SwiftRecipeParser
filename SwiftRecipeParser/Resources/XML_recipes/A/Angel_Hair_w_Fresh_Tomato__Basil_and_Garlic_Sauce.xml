@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Angel Hair w/Fresh Tomato, Basil and Garlic Sauce</name>
+    <indexCharacter>A</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Bring a large pot of water to a boil and prepare an ice water bath. Cut a small "x" on the bottom of each tomato. In batches, place the tomatoes in the boiling water and blanch them for about 30 seconds to 1 minute, or until the skins are easy to peel away. Remove and immediately plunge into the ice bath. Peel the tomatoes and halve horizontally. Squeeze out the seeds, using your fingers to get them all. Roughly chop the peeled and seeded tomatoes. Set aside. (You can also use whole peeled canned tomatoes. Simply drain them, seed, and roughly chop). Heat a large saute pan over medium high heat. Add the olive oil and heat. When the oil is hot, add the onions and garlic and saute for 2 minutes. Add the thyme leaves, oregano sprig, and chili flakes and saute until the garlic begins to turn golden brown. Add the tomatoes and the sugar and stir well. Lower the heat and cook slowly until the mixture is fairly dry, about 15 minutes. Cook the angel hair pasta in boiling, salted water until al dente. Drain the pasta and add it to the sauce. Add the Parmesan and basil and toss well. Place in a large pasta bowl and garnish with Parmesan and basil sprigs.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Ripe Tomatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Extra-virgin Olive Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Red Onion</ingredientName>
+            <processingInstructions>Finely Chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves</ingredientName>
+            <processingInstructions>Thinly Sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Fresh Thyme Leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Oregano Sprig</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>Pinch</unitOfMeasure>
+            <ingredientName>Chili Flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Dried Angel Hair Pasta</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Grated Parmesan</ingredientName>
+            <processingInstructions>Plus More For Garnish</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Chiffonade Basil</ingredientName>
+            <processingInstructions>Plus Whole Sprigs For Garnish</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

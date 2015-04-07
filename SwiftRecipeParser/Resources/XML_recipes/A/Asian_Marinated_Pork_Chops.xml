@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Asian Marinated Pork Chops</name>
+    <indexCharacter>A</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place 1/4 cup vegetable oil, sugar, vinegar, ginger, sriracha, sesame oil, garlic and orange juice and zest in a food processor and process for 15 seconds. Put the pork chops in a heavy-duty resealable plastic bag. Add half of the marinade and reserve the other half until serving. Squeeze out the air, seal and move the chops around in the bag to coat evenly. Marinate in the refrigerator at least 30 minutes, and up to 8 hours. 
+
+Preheat the oven to 375 degrees F. 
+
+Remove the chops from the bag. Place the reserved marinade in a small saucepot. Bring to a boil to reduce and thicken the sauce a bit, about 2 minutes. 
+
+Heat large stainless saute pan over medium-high heat and add the remaining 1 teaspoon oil. Brown the chops in the hot pan, 1 to 2 minutes per side. Place the saute pan in the oven and cook until done (155 degrees F internal temperature). Serve with a spoonful of the glaze, with cilantro and sliced green onions sprinkled on top.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup (+ 1 tsp)</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>rice vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>ginger</ingredientName>
+            <processingInstructions>minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Sriracha</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>sesame oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>cloves</unitOfMeasure>
+            <ingredientName>garlic</ingredientName>
+            <processingInstructions>minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>orange</ingredientName>
+            <processingInstructions>zest and juice</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>4-oz</unitOfMeasure>
+            <ingredientName>thin pork chops</ingredientName>
+            <processingInstructions>bone-in (about 1/4-inch thick)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>fresh cilantro</ingredientName>
+            <processingInstructions>chopped, for garnish</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green onions</ingredientName>
+            <processingInstructions>sliced</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

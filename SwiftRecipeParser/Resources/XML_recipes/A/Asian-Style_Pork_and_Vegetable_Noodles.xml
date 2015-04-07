@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Asian-Style Pork and Vegetable Noodles</name>
+    <indexCharacter>A</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Put a large pot of water on to boil for pasta. Place sweet hot mustard in a bowl. Whisk in Tamari sauce. Add stock and sesame oil to the broth and soy. Set aside. Slice the pork chop very thinly against the grain. When water for pasta boils, heat a large nonstick skillet over medium high to high heat. To the skillet, add 2 tablespoons vegetable oil, 2 turns of the pan in a slow stream. Add crushed pepper flakes to the oil, then the thinly sliced pork. Season pork with salt and pepper. Cook pork 2 minutes to caramelize the meat, then turn and stir-fry. Add salt to pasta water, then carrots. Blanch carrots for a minute, then remove with a slotted spoon. Add fresh linguini to boiling water. Transfer carrots to pork stir-fry. Add mushrooms, ginger, red bell pepper, scallions and bean sprouts. Toss and stir-fry veggies with pork for 2 minutes. Cook pasta to al dente. Drain and add to the pork and veggies. Pour Tamari and broth mixture over the noodles and pork. Toss and allow the noodles to completely soak up the liquids, a minute or so. Remove from heat. Serve large bowls of noodles, pork and veggies with a garnish of toasted sesame seeds or black sesame seeds.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Sweet-hot Mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Tamari Soy Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Vegetable Or Chicken Stock</ingredientName>
+            <processingInstructions>or About Half Of One 14 Ounce Container</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Toasted Sesame Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>8-oz</unitOfMeasure>
+            <ingredientName>Boneless Center-cut Pork Loin Chops</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Vegetable Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Crushed Red Pepper Flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and Black Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Carrot</ingredientName>
+            <processingInstructions>Cut Into Matchsticks</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>16-oz pkg</unitOfMeasure>
+            <ingredientName>Fresh Linguini</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>15</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Shiitake Mushrooms</ingredientName>
+            <processingInstructions>Thinly Sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>Fresh Ginger Root</ingredientName>
+            <processingInstructions>Finely Chopped Or Grated</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Red Bell Pepper</ingredientName>
+            <processingInstructions>Seeded, Sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Scallions</ingredientName>
+            <processingInstructions>Thin, Angle Sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Fresh Bean Spouts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Toasted Sesame Seeds</ingredientName>
+            <processingInstructions>For Garnish</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
