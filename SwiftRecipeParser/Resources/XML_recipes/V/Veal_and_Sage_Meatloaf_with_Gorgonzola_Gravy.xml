@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Veal and Sage Meatloaf with Gorgonzola Gravy</name>
+    <indexCharacter>V</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Preheat oven to 400 degrees F. 
+
+Combine veal with egg, bread crumbs, parmesan, sage, salt, and black pepper. Form 4 (1-inch thick) oval shaped meat loaves. Heat a large nonstick skillet over medium-high heat with 2 tablespoons extra-virgin olive oil, 2 turns of the pan. Brown meatloaves 2 to 3 minutes on each side then transfer to a nonstick baking sheet and finish in the oven, 6 to 8 minutes. Return skillet to heat, add another turn of extra-virgin olive oil to the pan and the mushrooms and the garlic. Cook mushrooms until dark and tender, 5 to 6 minutes, then add salt and pepper and 1 cup chicken stock to deglaze the pan. 
+
+While the mushrooms cook, melt butter over medium heat in a medium saucepot. Add flour and cook 1 to 2 minutes. Whisk in milk and season with nutmeg, salt, and pepper. Reduce the sauce a few minutes to thicken a bit.
+
+Reserve half of the milk sauce for the smashed potatoes. 
+
+Add the other half of the milk sauce to the mushrooms, stir in Gorgonzola cheese to melt, then add the broth and combine. Serve the meatloaves with Gorgonzola-mushroom gravy over top and prosciutto potatoes alongside.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>ground veal</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>egg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>bread crumbs, a couple of handfuls</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated Parmigiano-Reggiano</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>fresh sage sprigs, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>extra-virgin olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cremini (baby portobello mushrooms), quartered</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic clove, crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>freshly grated nutmeg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5-1/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Gorgonzola</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

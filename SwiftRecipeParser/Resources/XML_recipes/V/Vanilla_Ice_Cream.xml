@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Vanilla Ice Cream</name>
+    <indexCharacter>V</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Combine all ingredients (including bean and its pulp) in a large saucepan and place over medium heat.
+
+Attach a frying or candy thermometer to inside of pan.
+
+Stirring occasionally, bring the mixture to 170 degrees F.
+
+Remove from heat and allow to cool slightly.
+
+Remove the hull of the vanilla bean, pour mixture into lidded container and refrigerate mixture overnight to mellow flavors and texture.
+
+Freeze mixture in ice cream freezer according to unit's instructions.
+
+Once the mixture has reached a soft serve consistency, spoon the mixture back into a lidded container and harden in the freezer at least 1 hour before serving.
+
+Yield: 1 quart</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>half and half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>whipping cream (not heavy)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>vanilla bean, split and scraped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
