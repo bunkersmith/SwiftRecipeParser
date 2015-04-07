@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Carne Asada</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Cut the limes in half and squeeze the juice over both sides of the steaks. Rub the garlic into the steaks. Then you want to sprinkle the chilies, pepper and cumin over the steaks. Cover steaks with plastic wrap and place in refrigerator to marinade for 30 minutes. Brush the steaks with oil and grill 7 minutes on each side for medium doneness. When the steaks are is cooked, dice the steaks into 1/4" cubes and add the cilantro.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>Fresh Limes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Ribeye Steaks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>cloves</unitOfMeasure>
+            <ingredientName>Garlic, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Red Chiles, Ground</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Freshly Ground Black Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Cumin, Ground</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Olive Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

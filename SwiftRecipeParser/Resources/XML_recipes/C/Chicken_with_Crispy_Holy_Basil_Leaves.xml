@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken with Crispy Holy Basil Leaves</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>MIX the chicken, garlic, chillies, fish sauce and oyster sauce in a bowl. Cover with plastic wrap and marinate in the refrigerator for at least 30 minutes. 
+
+HEAT 2 inches oil in a wok or deep frying pan over a medium heat When the oil seems hot, drop a few basil leaves into it. If they sizzle immediately. the oil is ready. Deep-fry three-quarters of the basil leaves for 1 minute or until they are all crispy. Lift out with a slotted spoon and drain on paper towels. Discard the remaining oil. 
+
+HEAT 2 tablespoons oil in the same wok or frying pan and stir-fry half the chicken over a high heat for 3 to 4 minutes. Remove from the pan and repeat with the remaining chicken. Return all the chicken to the wok.
+
+ADD the stock and sugar to the wok, then the red bell pepper and onion, and stir-fry for another 1 to 2 minutes. Stir in the fresh basil leaves. Taste, then adjust the seasoning if necessary. Garnish with the crispy basil leaves.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>18</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>skinless chicken breast fillets, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>red or green bird's eye chillies, lightly crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>oyster sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>vegetable oil, for deep-frying</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>handfuls</unitOfMeasure>
+            <ingredientName>holy basil leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>vegetable or chicken stock, or water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red bell pepper, cut into bite-sized pieces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>md</unitOfMeasure>
+            <ingredientName>onion, cut into thin wedges</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

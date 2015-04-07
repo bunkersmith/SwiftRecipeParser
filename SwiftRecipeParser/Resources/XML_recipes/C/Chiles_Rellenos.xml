@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chiles Rellenos</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>To prepare the chiles: Position a rack on the upper most shelf of the broiler element and preheat. Put the chiles on a foil-lined broiler pan and broil, turning occasionally with tongs, until the skin is charred, about 10 minutes.
+
+Transfer the chiles to a bowl, cover, and cool for 10 minutes. Carefully rub the charred skin off the chiles. Using a small knife, make a lengthwise slit along the side of each chile to form a pocket. Carefully cut out and discard the seeds. 
+
+Cut the cheese into 6 (1/4-inch-thick) slabs, about 3/4 the length of each chile (your chiles probably vary in length, so tailor the cheese to the chiles). Slip the cheese pieces into the pocket of each chile so they're 2/3 full. (If the cheese protrudes from the chiles, just cut a little off.) "Sew" each chile shut with a wooden skewer or long toothpick. (The skewers should be longer than the chiles, so they can be easily pulled out after frying.)
+
+Whisk the flour, baking powder, cumin, and salt in a large bowl. Stir in the beer to a make a smooth batter. In a large, wide, heavy-bottomed pot, pour in the oil to a depth of about 3 inches. Heat over medium heat until a deep-fry thermometer inserted in the oil registers 365 degrees F. Put the flour for dredging on a plate. 
+
+Working in 2 batches, dredge the chiles in the flour (the dampness of the chiles creates a light paste with the flour that seals over any tears), dip in the batter, and carefully add to the oil. Fry, turning the chiles once, until golden brown and crispy, about 4 minutes per batch. Using tongs, transfer the chiles rellenos to a dry paper towel-lined baking sheet to drain.
+
+Sprinkle with salt, to taste. Gently pull out and discard the skewers. Heat the sauce. Spoon some of the sauce on a plate and set 1 chile relleno on top. Repeat with the remaining sauce and chiles. Serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>poblano chiles</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Oaxcan-style string cheese, mozzarella, or Monterey Jack</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>all-purpose flour, plus more for dredging</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>baking powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>fine salt, plus more for sprinkling</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>bottle</unitOfMeasure>
+            <ingredientName>lager-style beer, 12 ounces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Vegetable oil, for deep-frying</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Mexican Tomato Sauce, warm, recipe follows</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Equipment: Wooden skewers about 6 inches long</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken, Coconut and Galangal Soup</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>PUT the coconut milk, lemon grass, galangal and shallots in a saucepan or wok over a medium heat and bring to a boil.
+
+ADD the chicken, fish sauce and palm sugar and simmer, stirring constantly for 5 minutes or until the chicken is cooked through.
+
+ADD the tomatoes and mushrooms and simmer for 2 to 3 minutes. 
+
+Add the lime juice, kaffir lime leaves and chillies in the last few seconds, taking care not to let the tomatoes lose their shape Taste, then adjust the seasoning if necessary. This dish is not meant to be overwhelmingly hot, but to have a sweet, salty, sour taste. Serve garnished with coriander leaves.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lemon grass stalks, white part only, each cut into a tassel or bruised</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>inch</unitOfMeasure>
+            <ingredientName>galangal, cut into several pieces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Asian shallots, smashed with the flat side of a cleaver</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>14</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>skinless chicken breast fillets cut into slices</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>palm sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>7</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>baby tomatoes, cut into bite-sized pieces if large</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>straw mushrooms, or button mushrooms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>kaffir lime leaves, torn in half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bird's eye chillles, stems removed, bruised.</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>cilantro leaves, a few for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

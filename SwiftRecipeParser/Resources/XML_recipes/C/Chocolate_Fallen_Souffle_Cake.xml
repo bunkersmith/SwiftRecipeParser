@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chocolate Fallen Souffle Cake</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Put oven rack in middle position and preheat oven to 350°F. Butter a 9-inch springform pan and line bottom with a round of parchment or wax paper, then butter paper. Melt chocolate and butter in a large metal bowl set over a pan of barely simmering water (or in a microwave-safe large glass or ceramic bowl in a microwave at 50 percent power for 4 to 5 minutes), stirring frequently, then cool completely. Whisk in vanilla, salt, and 6 tablespoons sugar. Add yolks 1 at a time, whisking well after each addition. Whisk in flour. Beat whites with a pinch of salt in a bowl using an electric mixer at medium-high speed until they hold soft peaks, then add remaining 6 tablespoons sugar a little at a time, beating, and continue to beat until whites hold stiff glossy peaks. Whisk about one fourth of whites into chocolate mixture to lighten, then fold in remaining whites gently but thoroughly. Pour batter into springform pan, spreading evenly. Bake until a wooden pick or skewer inserted in center comes out with moist crumbs adhering, 35 to 40 minutes. Cool cake in pan on a rack 10 minutes. Remove side of pan and cool cake completely. Invert cake onto rack and remove bottom of pan, discarding paper, then invert cake onto a plate. Cooks' note: Cake (removed from pan) can be made 1 day ahead and kept, wrapped in plastic wrap, at room temperature.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Bittersweet Chocolate (Fine-quality, not Unsweetened), Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Unsalted Butter, Cut Into Tablespoon Pieces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Vanilla</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Eggs, Separated And At Room Temperature For 30 Minutes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>All-purpose Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Cafreal</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Wash, remove skin, trim and cut the chicken into eight medium sized pieces. Make deep incisions on the chicken using a sharp knife.
+
+2. Peel, wash and finely slice onions. Heat sufficient oil in a pan and deep fry onions until they are crisp and golden brown. Drain on a paper towel and reserve for garnish.
+
+3. Remove stems and wash green chillies. Peel and wash ginger and garlic.
+
+4. Dry roast coriander seeds, cumin seeds, cloves, green cardamoms, peppercorns and cinnamon. Grind ginger, garlic, green chillies and roasted masala to a paste using a little water.
+
+5. Add salt to the paste and apply this paste to the chicken and refrigerate for two to three hours.
+
+6. Heat three tablespoons of oil in a pan, add the marinated chicken and cooik, covered on medium heat, stirring occasionally. Add a little water if required to avoid scorching. Cook for eight to ten minutes.
+7. When almost done add vinegar and simmer for two to three minutes.
+8. Serve hot garnished with fried onions.
+
+Chef's tip: If you like you can add a little fresh coriander to the paste. I know of a Goan restaurant which does it and it tastes delicious.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>chicken</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>onions</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>oil, plus extra for deep frying</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green chillies</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>fresh ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>coriander seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>cumin seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green cardamoms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>peppercorns</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>cinnamon stick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>salt to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

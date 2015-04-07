@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Pot Pie</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Filling:
+In a large saucepan, heat soups and milk. Stir in chicken, onion, peas, carrots, and salt and pepper. Cook until mixture boils. Remove from heat. Preheat oven to 350 degrees. Pour into a pastry-lined 13 x 9 x 2-pan. Cut pastry for top into strips. Lay over pie filling in a lattice - Dot with butter. Bake for 45 minutes until golden brown.
+
+Pastry:
+Sift together flour, salt, and baking powder. Cut in shortening with blender until pieces are the size of small peas. Sprinkle 1 to 2 tablespoons of ice water over part of mixture. Gently toss with fork; push to side of bowl. Repeat until all is moistened. Form into 2 balls. Flatten each on a lightly floured surface by pressing with edge of hand three times across in both directions. With a floured rolling pin, roll out on floured surface. Roll from center to edge until 1/8 inch thick.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Filling:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10-3/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Can condensed Cheddar cheese soup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10-3/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Can condensed cream of celery soup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>chicken, skinned, cooked, boned, and cubed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>onion, diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>package</unitOfMeasure>
+            <ingredientName>frozen green peas, 10 oz or one 8-oz can, drained</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>carrots, sliced, cooked, and drained</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and pepper to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>pastry for top and bottom (see below)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Butter to dot pastry</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pastry:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Crisco shortening</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>baking powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Ice water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

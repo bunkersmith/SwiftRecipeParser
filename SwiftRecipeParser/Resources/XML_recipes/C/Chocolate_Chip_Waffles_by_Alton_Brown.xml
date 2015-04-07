@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chocolate Chip Waffles by Alton Brown</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>3</servings>
+    <instructions>Preheat waffle iron according to manufacturer's directions. In a medium bowl whisk together the flour, sugar, cocoa powder, baking powder, salt, and baking soda. In another bowl beat together the eggs and melted butter and vanilla, and then add the buttermilk. Add the wet ingredients to the dry and stir in the chocolate chips just until combined. Allow to rest for 5 minutes. Ladle the recommended amount of waffle batter onto the center of the iron. Close the iron top and cook until the waffle is crispy on both sides and is easily removed from iron. Serve immediately or keep warm in a 200 degree F oven until ready to serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>7</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>all-purpose flour, approximately 1-1/2 cups</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-3/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>sugar, approximately 3 tablespoons</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>cocoa powder, approximately 1/2 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>baking powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>baking soda</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs, beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>unsalted butter, melted and slightly cooled</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>pure vanilla extract</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>buttermilk, room temperature</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>mini chocolate chips, approximately 3/4 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Vegetable spray, for waffle iron</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

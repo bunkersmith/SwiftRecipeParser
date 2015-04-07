@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Charred Pineapple-Habanero Hot Sauce</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Heat a grill to high or preheat the broiler. Place the whole pineapple (do not peel it) on the grill and grill until the entire surface is completely black and charred. Remove from grill and let cool slightly. Peel the pineapple, remove the core and coarsely chop the flesh.
+
+Heat oil in a medium saucepan over medium-high heat; add the onion and cook until soft. Add the pineapple, pineapple puree, habanero and vinegar and cook until the mixture is completely soft, about 25 to 30 minutes. Transfer to a blender and blend until smooth. Season with salt, pepper and honey, to taste. Strain the mixture into a bowl.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>ripe pineapple, preferably Golden pineapple</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>canola oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Spanish onion, coarsely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>container frozen pineapple puree, thawed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>habanero chiles, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>rice wine vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Honey</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

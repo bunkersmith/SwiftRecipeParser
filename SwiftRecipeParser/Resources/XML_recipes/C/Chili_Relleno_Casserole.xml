@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chili Relleno Casserole</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Lightly grease 9x13-inch glass baking dish. 
+
+Separate eggs. Beat the whites until soft peaks form. Beat the yolks, milk, flour, salt and pepper in a medium bowl to blend. Fold whites into yolk mixture.
+
+Arrange 1/3 of the chilies in the prepared dish, covering bottom completely. Sprinkle with 1/3 of each cheese. Repeat layering twice. 
+
+Pour egg mixture over cheese. Optional: let stand 30 minutes. (Can be prepared 1 day ahead. Cover and refrigerate.) 
+
+Preheat oven to 350°F. Bake until casserole is slightly puffed in center and golden brown on edges, about 45 minutes. Cool 20 minutes and serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>All Purpose Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>cans</unitOfMeasure>
+            <ingredientName>Whole Green Chilies (7-ounces each), or 10 Charred Fresh Poblano* Chilies (see separate recipe for charring instructions)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Shredded Cheddar, (about 1 Pound) – we use Mexican Blend</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Shredded Monterey Jack, (about 1 Pound) – we use Pepper Jack</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

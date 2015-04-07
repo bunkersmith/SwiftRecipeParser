@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Kheema Pulao</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Pick basmati rice. Wash twice and soak in three cups of water for half an hour. Drain and keep aside. Wash chicken mince, drain and keep aside.
+
+2. Peel, wash and slice onions. Peel, wash and grind ginger and garlic to a fine paste. Remove stems, wash and slit green chillies. Wash and chop tomatoes. Clean, wash and tear mint leaves. Clean, wash and finely chop coriander leaves. 
+
+3. Heat oil in a pan, add cloves, cinnamon, green cardamoms, peppercorns, cumin sees, onions and green chillies. Saute until the onions begin to brown.
+
+4. Add chicken mince and cook on high heat for four to five minutes.
+
+5. Add ginger and garlic paste, red chilli powder, tomatoes, three cups of hot water, salt and basmati rice. Mix lightly.
+
+6. Allow rice to come to a boil on high heat.
+
+Cover the pan and cook on low heat for twelve to fifteen minutes.
+
+7. Add mint leaves, coriander leaves and garam masala powder. Cover and cook for another five to seven minutes.
+
+8. Remove from heat and serve hot.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>basmati rice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>chicken, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>onions, medium sized</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>fresh ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>11</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green chillies</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>tomatoes, medium sized</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>18</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>fresh mint leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>fresh coriander leaves, a few sprigs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>cinnamon stick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green cardamoms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>9</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>peppercorns</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>cumin seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>red chilli powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>salt to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>garam masala powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

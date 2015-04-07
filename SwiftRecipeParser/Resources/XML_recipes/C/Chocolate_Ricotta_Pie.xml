@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chocolate Ricotta Pie</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>For the crust:
+
+In the bowl of a food processor combine the flour, 1/4 cup sugar, cornmeal, salt, and 1/2 cup toasted hazelnuts, and pulse to grind. Add the butter and pulse, just until the mixture forms a dough. Press the dough over the bottom and about 2 inches up the sides of an 11-inch diameter tart pan with a removable bottom. Refrigerate until the dough is firm, about 30 minutes.
+
+Preheat the oven to 350 degrees F.
+
+Line the tart dough with aluminum foil and fill with pie weights or dried beans. Bake the tart shell in the lower third of the oven until just set, about 25 minutes. Carefully remove the foil and pie weights. Bake the shell again until golden, about 10 minutes longer. Remove from the oven and cool completely.
+
+For the filling:
+
+Add the chocolate to a double boiler, over very softly simmering water and heat until melted.
+
+Combine the water with the sugar in a small saucepan over low heat. Stir to dissolve sugar. Remove from heat and cool.
+
+Add the ricotta cheese and cream cheese in a food processor and pulse until smooth. Add the egg and egg yolks, 1 at a time, and process until smooth. Add the melted chocolate and the sugar syrup and pulse until combined. Pour the custard into the tart shell and bake until the custard is just set, about 30 minutes. Scatter the remaining 1/4 cup of chopped hazelnuts on top of the filling. Let the tart cool completely before serving.
+
+The tart can be wrapped in plastic and refrigerated for up to 3 days. Return the tart to room temperature before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For The Crust:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>cornmeal</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pinch</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>hazelnuts, skinned and toasted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>stick</unitOfMeasure>
+            <ingredientName>unsalted butter, melted and cooled slightly</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For The Filling:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>semisweet chocolate chips (about 1-1/3 cups)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>ricotta cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>cream cheese, at room temperature</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>egg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>egg yolks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>hazelnuts, toasted and chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

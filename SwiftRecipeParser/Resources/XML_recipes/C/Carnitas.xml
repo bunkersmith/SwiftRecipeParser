@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Carnitas</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Pre-cooking: Cut the pork meat in chunks and discard big pieces of fat, leave some fat as it adds to the flavor. Chop the cilantro and cumin if you need to.
+
+Cooking: Set tall frying pan in mid-high heat Add the pork, cilantro, cumin, onion and broth. If necessary, add water so that the meat is covered Bring to a boil, reduce heat to low and simmer for about 3-4 hours or until the meat is very soft and pulls apart easily. Remove the meat and place it in a roasting pan, discarding the onion and broth, brake apart the meat in smaller chunks Bake for about 20 minutes at 450 degrees, until the meat is brown and crispy Heat the tortillas and enjoy, you can serve it with your favorite chili sauce, chopped onions and cilantro.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>32</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Chicken Broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Boneless Pork Shoulder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Coriander (cilantro), Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Cumin, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Corn Tortillas</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Bay Leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Onion, Quartered</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Chili Sauce, Such As Pico De Gallo or Chipotle</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

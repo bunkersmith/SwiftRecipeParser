@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Enchilada Casserole II</name>
+    <indexCharacter>C</indexCharacter>
+    <notes>Preheat oven to 350 degrees</notes>
+    <servings>12</servings>
+    <instructions>Preheat oven to 300 degrees F.
+
+Mix the chicken broth and pureed chipotle peppers in a bowl. Place the chicken in an oven-safe pot and cover it with the broth mixture. Cover the pot with aluminum foil and place it in the oven. Cook for at least 2 hours, or until fork tender.
+
+Increase the oven temperature to 350 degrees F.
+
+Place the sour cream in cheesecloth, gather up the edges, suspend over a bowl, and strain for 2 hours in the refrigerator.
+
+In a large bowl, mix sour cream, salsa, cream of chicken soup, onion, cilantro leaves and chili beans.
+
+Layer the bottom of a 9x13 inch baking dish with 1/3 tortilla strips. Top with 1/3 chicken, 1/3 sour cream mixture and 1/3 Cheddar cheese. Repeat layering with remaining ingredients.
+
+Bake in the oven for 20 to 30 minutes, or until golden and bubbly. Let stand about 10 minutes before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Sour Cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Chipotle Salsa Jar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10-3/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Can Condensed Cream Of Chicken Soup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Onion, Diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Cilantro Leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Can Chili Beans, Drained</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Flour Tortillas, (12 Inch) Cut Into Strips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Boneless Skinless Chicken Breast Halves – Cooked And Shredded, Pollo Asado or Pollo Adobado marinated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Chicken Broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Chipotle Peppers in Adobo Sauce, Pureed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Shredded Cheddar Cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

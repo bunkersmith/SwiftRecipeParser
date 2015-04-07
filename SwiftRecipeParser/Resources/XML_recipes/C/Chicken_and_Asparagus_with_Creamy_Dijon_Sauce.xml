@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken and Asparagus with Creamy Dijon Sauce</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Heat the olive oil in a large sauté pan over medium-high heat. Season the chicken cutlets with salt and pepper and add them to the pan in a single layer. Sauté the chicken on both sides until golden brown, about 2 minutes per side. Transfer the chicken to a platter and keep warm.
+
+2. Meanwhile, place the asparagus in a microwave safe bowl with a splash of water and cover it loosely with plastic wrap. Microwave the asparagus on high until it is just tender, about 2 to 3 minutes. Drain and set aside.
+
+3. Lower the heat and add the onions. Cook until the onions are soft and translucent, about 5 minutes. Add the garlic and cook for 1 minute more.
+
+4. Add the wine to the pan, turn the heat to medium and reduce the wine until it is almost completely evaporated. Add the chicken broth and reduce it by half. Whisk in the mustard, sour cream and half of the tarragon and stir until the sauce is smooth and creamy. 
+
+5. Add the chicken and asparagus to the sauce to heat them for a minute or two. Transfer the chicken and asparagus to a platter, sprinkle with the remaining tarragon and serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>chicken cutlets</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>salt to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>asparagus, cut into 2-inch lengths</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>onion, finely diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic, finely minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>dry white wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>low-sodium chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Dijon mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>low-fat sour cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>tarragon, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

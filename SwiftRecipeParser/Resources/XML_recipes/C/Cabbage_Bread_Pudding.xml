@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Cabbage Bread Pudding</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>8</servings>
+    <instructions>1. Preheat the oven to 350 degrees.
+
+2. Place all of the bread chunks in a large bowl. Add the milk, mix well, and soak until the bread has absorbed all of the milk, about 15 to 20 minutes.
+
+3. Place the bacon in a skillet over medium-high heat and cook until the fat begins to render, about 2 minutes. Add the onions and garlic and cook, stirring occasionally and turning the bacon, until the bacon is crisp and the onions are tender, 6 to 7 minutes.
+
+4. Stir in the cabbage and toss to cover all of the pieces with bacon drippings. Reduce the heat to medium-low, cover the skillet, and steam the cabbage until tender, 10 to 15 minutes. Remove from the heat and stir the contents of the skillet into the bread mixture.
+
+5. Beat the eggs in a small bowl. Fold the beaten eggs into the bread-cabbage mixture. Stir in the caraway seeds and blend until thoroughly combined.
+
+6. Melt the butter in two 8" baking pans, coating the bottom and sides of the pans. Turn the bread mixture into the pans and spread it evenly. Bake until the pudding tests done with a toothpick, about 30 minutes. Remove from the oven and cut the bread pudding into wedges.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>baguette</unitOfMeasure>
+            <ingredientName>French bread (unsliced), torn into chunks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>loaf</unitOfMeasure>
+            <ingredientName>dark pumpernickel bread (unsliced), torn into chunks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>sl</unitOfMeasure>
+            <ingredientName>bacon, quartered</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>onion, chopped (about 1 medium-large onion)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>garlic, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>green cabbage, cut into chunks and leaves pulled apart</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>caraway seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>unsalted butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

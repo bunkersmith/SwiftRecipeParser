@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Satay - Thai Cookbook (SA-TE KAI)</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>CUT the chicken fillets into strips 1-1/2 inches wide x 4 inches long x 1/4 inch thick and put them in a bowl.
+
+USING a food processor, blender or pestle and mortar, blend or pound the shallots, garlic, coriander roots and ginger to a paste. 
+
+ADD the paste to the chicken, along with the ground coriander, cumin, turmeric, curry powder, light soy sauce, vegetable oil, coconut milk, sugar and salt. Mix with your fingers or a spoon until the chicken is well coated. Cover with plastic wrap and marinate in the refrigerator for at least 5 hours or overnight. Turn the chicken occasionally.
+
+SOAK the bamboo sticks in water for 1 hour to prevent them from burning during cooking. 
+
+THREAD a piece of the marinated chicken onto each stick as if you were sewing a piece of material. If the pieces are small, thread two pieces onto each stick. 
+
+HEAT a barbecue or grill (broiler) to high. If using the grill, line the tray with foil. 
+
+BARBECUE the satay sticks for 5 to 7 minutes on each side, or grill (broil) for 10 minutes on each side, until the chicken is cooked through and slightly charred. Turn frequently and brush the marinade sauce over the meat during cooking. If using the grill, cook a good distance below the heat. Serve hot with peanut sauce or cucumber relish.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>36</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>skinless chicken breast fillets, (2 lb, 4 oz)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>MARINADE</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Asian shallots, roughly chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, roughly chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>coriander (cilantro) roots, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>inch</unitOfMeasure>
+            <ingredientName>ginger, sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>roasted ground coriander</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>roasted ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>roasted ground turmeric</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Thai curry powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>light soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Can coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>palm sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>40</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bamboo sticks (about 7-8 inches long)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Peanut sauce or cucumber relish, to serve</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

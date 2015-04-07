@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Cracked Crab with Curry Powder</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Put the crab in the freezer for 1 hour. Leaving the legs attached, cut the crab in half through the centre of the shell from head to rear. Cut in half again from left to right (quartering the crab), with legs attached to each quarter. Twist off and remove the upper shell pieces. Discard the stomach sac and the soft gill tissue. Using crackers or the back of a heavy knife, crack the crab claws to make them easier to eat. If the claws are too big, cut them in half. 
+
+MIX the coconut milk, light soy sauce, oyster sauce, curry powder and sugar in a bowl. 
+
+HEAT the oil in a wok or frying pan. Stir-fry the garlic over a medium heat until light brown. Add the crab and stir-try for about 4 to 5 minutes. Add the coconut mixture and onion and continue stir-frying for another 5 to 7 minutes or until the crab meat is cooked through and the sauce is reduced and very thick. Add the spring onions. Taste, then adjust the seasoning if necessary. Spoon onto a serving plate and sprinkle with sliced chlli and coriander leaves.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>18</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>live crab</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>light soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>oyster sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Thai curry powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>onion, cut into 3 wedges</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>scallions, finely sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>long red chilli, seeded and finely sliced for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

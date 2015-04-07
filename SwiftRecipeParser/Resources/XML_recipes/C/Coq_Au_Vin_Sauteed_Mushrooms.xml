@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Coq Au Vin Sauteed Mushrooms</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Wash the mushrooms and dry them well. Leave them whole if they are small - slice or quarter them if they are large Place the skillet over high heat with the butter and oil. As soon as you see that the butter foam has begun to subside, indicating it is hot enough, add the mushrooms. Toss and shake the pan for 4 to 5 minutes. During their saute the mushrooms will at first absorb the fat. In 2 to 3 minutes the fat will reappear on their surface, and the mushrooms will begin to brown. As soon as they have browned lightly, remove from heat. Toss the shallots with the mushrooms. Saute over moderate heat for 2 minutes. Sauteed mushrooms may be cooked in advance, set aside, then reheated when needed. Season to taste just before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Fresh Mushrooms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Minced Shallots</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt And Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

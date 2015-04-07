@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Tikka Masala</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>8</servings>
+    <instructions>For the marinade:
+In large bowl, mix the yogurt, ginger, garlic, 1 teaspoon salt, and 1/2 teaspoon black pepper. Poke chicken with a fork, then add to marinade. Fold to cover and marinate at least 30 minutes, at most refrigerated overnight.
+
+For the sauce:
+When you're ready to make the curry, place a large skillet over medium heat, and add the butter and olive oil. When butter has melted, add the garlic, ginger, and serrano pepper. Saute until lightly browned around the edges.
+
+Add the tomato paste and cook until the tomato has darkened in colour, about 3 minutes. Add the paprika and garam masala, and saute for about 1 minute to draw out their flavours.
+
+Add the tomatoes, salt, and water. Bring to a boil, then turn down the heat to a simmer, and cover. Cook for 20 minutes. Take the pan off the fire, and allow the sauce to cool for 5 minutes.
+
+Meanwhile, fire up your broiler, and cover your broiler pan in foil. Pull the chicken thigh chunks out of the marinade and place on the sheet. Place under the broiler, and cook about 7 minutes on each side, until charred and cooked through. Cook's Note: Don't worry if the chicken is still a little uncooked, but very charred on the outside; you can finish cooking the chicken in the sauce.
+
+Pour sauce into a blender or food processor, and process until smooth. Pour back into the pan, and bring back up to a boil. Add the chicken and fenugreek leaves, if using. Reduce heat to a simmer, and cook, covered, for about 10 minutes.
+
+Add cream and stir through. Garnish with minced fresh cilantro if you like, and serve over rice, with naan or a crusty piece of bread!</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Marinade:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>plain yogurt, whisked until smooth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>grated fresh ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, put through a garlic press or finely minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>boneless skinless chicken thighs, cut into large bite-size chunks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Sauce:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>ginger, peeled and minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>serrano peppers, minced (seeds removed if you don't want it spicy)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>tomato paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>paprika</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>garam masala</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Roma tomatoes, diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>dried fenugreek leaves, optional</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>heavy cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Fresh cilantro leaves, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

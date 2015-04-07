@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Corned Beef and Cabbage</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>6</servings>
+    <instructions>Place the corned beef in water to cover with the peppercorns or mixed pickling spices (in supermarkets, these often come packaged with the corned beef). Cover the pot or kettle, bring to a boil, reduce heat and simmer 5 hours or until tender, skimming occasionally. During the last hour, add the carrots and onions and cover again. During the last 15 minutes, add the cabbage. Transfer meat and vegetables to a platter and brush the vegetables with the melted butter. Serve with boiled parsley potatoes, cooked separately. (The stock can be saved to add to a pot roast or stew instead of other liquid.)</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>corned beef brisket</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>peppercorns, or packaged pickling spices</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>carrots, peeled and quartered</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>onions, peeled and quartered</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>medium-sized</unitOfMeasure>
+            <ingredientName>green cabbage, quartered or cut in wedges</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Butter, Melted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

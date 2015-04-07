@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Cacciatore Stoup</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Heat a deep skillet or a medium soup pot over medium-high heat. Add 2 tablespoons extra-virgin olive oil, 2 turns of the pan, and the chicken. Season it with coarse salt and pepper and red pepper flakes.
+
+While the chicken cooks, chop up the veggies.
+
+When the chicken is evenly and lightly browned all over, 3 or 4 minutes, remove it to a plate and reserve. Add another tablespoon of extra-virgin olive oil, 1 more turn of the pan. Add the potatoes to the pan. Cook a couple of minutes, then add in the mushrooms, celery, and onion and cook another couple of minutes. Add in the peppers and garlic and cook another 1 to 2 minutes. Season the vegetables with salt and pepper. Add chicken back to the pan. Toss it with the vegetables. Add red wine to the pan and deglaze it, picking up drippings. Add tomatoes and stock to the stoup and stir to combine. Stir in rosemary and reduce heat to low. Cover and cook 8 to10 minutes.
+
+Turn off stoup and ladle into shallow bowls. Top with basil (for a sweet finish and balance to the spice in the soup) or arugula (for a peppery finish) or with spinach (for a woodsy finish). At the table, pass grated cheese for sprinkling on top of the stoup and bread for mopping up the bowl.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lbs</unitOfMeasure>
+            <ingredientName>boneless skinless chicken breasts, diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Coarse salt and black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>crushed red pepper flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>extra-virgin olive oil, 3 turns of the pan</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>russet potatoes, peeled and cubed into 1/2-inch squares</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cremini mushrooms, sliced or chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ribs</unitOfMeasure>
+            <ingredientName>celery hearts, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>onion, peeled and quartered lengthwise then thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red bell pepper, seeded and quartered lengthwise then thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>dry Italian red wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>15</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>can diced tomatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>28</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>can fire-roasted crushed tomatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>7</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>fresh rosemary sprigs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>basil, arugula or baby spinach leaves, shredded or torn</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Grated Parmigiano-Reggiano or Romano, to pass at table</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Crusty bread, to pass at the table</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

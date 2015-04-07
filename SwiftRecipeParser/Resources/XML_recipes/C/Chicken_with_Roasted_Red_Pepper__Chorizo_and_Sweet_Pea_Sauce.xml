@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken with Roasted Red Pepper, Chorizo and Sweet Pea Sauce</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Heat a medium size saucepot over medium heat with 1 tablespoon of extra-virgin olive oil, about 1 tablespoon, and the butter. Add 1/4 of the chopped onion and season with salt and pepper, cook for about 1 minute, add the rice and stir to coat in the oil. Add 2 1/2 cups of chicken stock to the rice and bring up to a boil. Cover the pot, reduce heat to simmer and cook rice for 15 to 18 minutes or until tender and cooked through. 
+
+While the rice is cooking, start the chicken. Preheat a large skillet over medium-high heat with about 2 tablespoons of extra-virgin olive oil. Season the chicken breasts with smoked paprika, salt, pepper and the thyme; add the seasoned chicken to the skillet. Cook breasts 5 to 6 minutes on each side or, until cooked through. 
+
+Remove the chicken from the skillet to a plate and loosely cover with aluminum foil. Return the skillet to the stove top and over medium-high heat add chorizo, cook for 2 minutes stirring frequently. Add the remaining onion, garlic, grated carrot, and roasted red pepper to the chorizo and season with a little salt and pepper. Cook until the onions are slightly tender, about 2 to 3 minutes. Add 1/2 cup of chicken stock, scrape up any bits that have stuck to the bottom of the pan. Add the frozen peas and parsley; continue to cook for 1 to 2 minutes to heat the peas through. Taste and adjust seasonings with a little salt and pepper. 
+
+To serve, arrange the chicken breasts on dinner plates and top with lots of sauce. Fluff the rice with a fork and serve alongside.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>extra-virgin olive oil, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>onion, chopped, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>white rice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken stock, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>6-oz</unitOfMeasure>
+            <ingredientName>boneless skinless chicken breasts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>smoked paprika</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>dry thyme</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>chorizo sausage, cut in 1/2 lengthwise then thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>garlic cloves, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>carrot, peeled and grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>roasted red peppers, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>box frozen peas</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>flat-leaf parsley, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

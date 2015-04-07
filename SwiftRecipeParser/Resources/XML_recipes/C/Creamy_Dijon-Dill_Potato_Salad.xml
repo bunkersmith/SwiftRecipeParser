@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Creamy Dijon-Dill Potato Salad</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>I guess I'm sticking to the classic salads for my BBQ, and there's nothing more classic BBQ than a good home-style potato salad. Mine is rich in flavor, but still light and fresh, thanks in large part to the dill and lemon juice. The vibrant green dill also does wonders for the look of the salad. There's nothing worse than mushy, mealy potatoes, so make sure to start your spuds off in cold water and to cook them whole.
+
+Put the potatoes in a big pot with enough water to cover by 1-inch. Season with salt and bring the water to a boil. Cook just until the potatoes are tender when pierced with a fork, about 25 minutes. 
+
+Drain the potatoes and return them to the uncovered pot off the heat. Let them sit until almost room temperature. (Cooling them in the warm pot will get rid of any excess water in the potatoes, and that's good.) 
+
+Meanwhile, cut the white parts off the ends of the celery stalks. Cut the stalks in half lengthwise, then across into 1/4-inch slices. Stir the celery, 3/4 teaspoon salt, and the remaining ingredients together in a serving bowl large enough to hold all the potatoes. 
+
+When they're cool, cut the potatoes into 1-inch pieces, add them to the bowl as you go. Stir gently until all the potatoes are coated with dressing. You can make the salad up to a couple of hours in advance. Keep covered at room temperature. Don't refrigerate or the potatoes will lose their rich, smooth texture.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Yukon gold potatoes, peeled</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>stalks</unitOfMeasure>
+            <ingredientName>celery</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>mayonnaise</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>red onion (about 1/2 cup), finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh dill, tightly packed and chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lemon, juiced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Dijon mustard, grainy or regular</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Dumplings in Madeira Gravy</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>1. Combine the milk with 3 tbsp. of the butter in a 2-qt. saucepan over medium-high heat. Bring to a boil, stirring once or twice. Add 1 cup of the flour and 1/4 tsp. of the salt all at once. Stir with a large wooden spoon until the mixture forms a ball of dough. Remove from the heat, turn into a large bowl, and let cool for a few minutes.
+
+2. Using the spoon beat in the egg and egg yolks, and continue beating until the eggs are thoroughly incorporated.
+
+3. Fold in the ground chicken and blend with the wooden spoon. Blend in 5 tbsp. butter, the cream, nutmeg, and 4 turns of the pepper. Cover and refrigerate for at least 2 hours.
+
+4. About an hour before serving, bring the chicken stock to a boil in a large pot over high heat, about 10 minutes. Reduce the heat to medium and allow the stock to bubble until you're ready for it.
+
+5. Meanwhile, remove the chicken mixture from the refrigerator and form about 20 round dumplings, placing them in a large, deep skillet or pot.
+
+6. Pour the bubbling chicken stock over the dumplings, place over low heat, and cook until the dumplings float to the surface of the stock, 15 to 20 minutes. Remove from the heat.
+
+7. Melt the remaining 1/4 cup butter in a medium saucepan over medium heat. Stir in the remaining 1/4 cup flour, 1/2 tsp. salt, and 4 turns pepper. Cook, stirring constantly, until the mixture is golden brown, about 5 minutes. Whisk in the beef stock and cook, whisking constantly, until the sauce thickens, 8 to 10 minutes. Stir in the wine and cook, stirring, until the alcohol has cooked off and the sauce has a smooth, gravylike consistency, about 5 minutes.
+
+8. Use a slotted spoon to transfer the chicken dumplings to serving plates. Spoon the sauce over them and serve, allowing 3 to 5 dumplings per portion. Garnish each serving with chopped parsley.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>stick</unitOfMeasure>
+            <ingredientName>unsalted butter, (3/4 cup) room temperature, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>all-purpose flour, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Egg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Egg yolks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>ground chicken breast</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>heavy cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>ground nutmeg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>turns</unitOfMeasure>
+            <ingredientName>freshly ground black pepper, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>beef stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Madeira</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh parsley, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

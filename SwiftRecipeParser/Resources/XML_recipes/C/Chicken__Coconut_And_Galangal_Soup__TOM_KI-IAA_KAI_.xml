@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken, Coconut And Galangal Soup (TOM KI-IAA KAI)</name>
+    <indexCharacter>C</indexCharacter>
+    <notes>THIS IS ONE OF THE CLASSIC SOUPS OF THAILAND. THE THAI NAME MEANS ‘BOILED GALANGAL CHICKEN’. ALTHOUGH USUALLY MADE WITH CHICKEN, YOU CAN MAKE THIS RECIPE USING PRAWNS, FISH OR VEGETABLES. DON’T WORRY WHEN THE COCONUT MILK SPLITS — IT IS SUPPOSED TO.</notes>
+    <servings>4</servings>
+    <instructions>PUT the coconut milk, lemon grass, galangal and
+shallots in a saucepan or wok over a medium heat
+and bring to a boil.
+
+ADD the chicken, fish sauce and palm sugar and
+simmer, stirring constantly for 5 minutes or until
+the chicken is cooked through.
+
+ADD the tomatoes and mushrooms and simmer
+for 2 to 3 minutes. Add the lime juice, kaffir lime
+leaves and chillies in the last few seconds, taking
+care not to let the tomatoes lose their shape.
+Taste, then adjust the seasoning if necessary. This
+dish is not meant to be overwhelmingly hot, but to
+have a sweet, salty, sour taste. Serve garnished
+with coriander leaves.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lemon</unitOfMeasure>
+            <ingredientName>grass stalks</ingredientName>
+            <processingInstructions> white part only, each cut into a tassel or bruised</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>inch</unitOfMeasure>
+            <ingredientName>piece of galangal</ingredientName>
+            <processingInstructions> cut into several pieces</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>Asian</unitOfMeasure>
+            <ingredientName>shallots</ingredientName>
+            <processingInstructions> smashed with the flat side of a cleaver</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>14</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>skinless chicken breast fillets</ingredientName>
+            <processingInstructions> cut into slices</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>palm sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>7</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>baby tomatoes</ingredientName>
+            <processingInstructions> cut into bite—sized pieces if large</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>straw mushrooms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>kaffir</unitOfMeasure>
+            <ingredientName>lime leaves</ingredientName>
+            <processingInstructions> torn in half</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>bird's</unitOfMeasure>
+            <ingredientName>eye chillies</ingredientName>
+            <processingInstructions> stems removed, bruised</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>coriander (cilantro) leaves</ingredientName>
+            <processingInstructions> for garnish</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
