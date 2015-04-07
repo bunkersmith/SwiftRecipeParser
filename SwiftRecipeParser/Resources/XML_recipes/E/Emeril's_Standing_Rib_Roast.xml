@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Emeril's Standing Rib Roast</name>
+    <indexCharacter>E</indexCharacter>
+    <notes></notes>
+    <servings>8</servings>
+    <instructions>Separate the heads of roasted garlic into cloves and squeeze the roasted garlic out of the peels. Place the garlic in a small bowl and mash with the back of a fork until mostly smooth. Add 1 teaspoon salt, 1/2 teaspoon pepper, the rosemary and thyme, and stir to blend. Pat this mixture evenly over the top and sides of the roast. Place the trimmed strip of fat over the garlic-herb mixture and tie with kitchen string in several places to secure the fat onto the top of the roast. Season the roast all over with the remaining 2 1/2 teaspoons salt and 1 teaspoon of pepper. Place the roast in a roasting pan and add 1 1/2 cups red wine and 1/2 cup beef stock to the bottom of the pan. Roast for 20 minutes. Reduce the heat to 350 degrees F and continue to roast to the desired degree of doneness, about 18 minutes per pound for rare and 22 minutes per pound for medium. Let stand at least 5 minutes before carving. De-fat the pan juices and serve alongside the beef. If making au jus, place the roasting pan on the stove burners over medium-high heat. Add 1 cup red wine and scrape the browned bits on the bottom of the pan with a wooden spoon. Add 2 cups beef stock and season with salt and pepper. Continue to cook until the wine is reduced by half, about 5 minutes. Strain the sauce through a sieve to remove the solids before serving. De-grease, if necessary.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>roasted garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>finely chopped fresh rosemary leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>finely chopped fresh thyme leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>standing rib roast of beef (about 6-1/2 pounds), fat trimmed in 1 strip and reserved</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>red wine, plus 1 more cup if making au jus, optional</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>beef stock, plus 2 more cups if making au jus, optional</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

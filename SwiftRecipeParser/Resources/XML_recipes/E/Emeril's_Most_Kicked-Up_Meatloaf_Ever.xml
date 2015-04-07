@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Emeril's Most Kicked-Up Meatloaf Ever</name>
+    <indexCharacter>E</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a large skillet heat the butter over medium-high heat until melted. Add all but 1/4 cup of the onions, the celery and all but 2 tablespoons of the bell pepper and cook, stirring occasionally, until vegetables are softened and beginning to caramelize around the edges, about 6 minutes. Add 2 teaspoons of the garlic, the thyme, rosemary, and parsley and cook for 2 minutes. Remove from the heat and allow to cool. 
+
+Preheat the oven to 350 degrees F. 
+
+When the vegetable mixture is cooled, transfer to a mixing bowl and add the eggs, mustard, 1/4 cup of the ketchup, 1 teaspoon of the Worcestershire sauce, and heavy cream and mix until thoroughly combined. Add the breadcrumbs, ground chuck, pork sausage, ground veal, 1 teaspoon of the salt and 1/4 teaspoon of the pepper and mix until just combined. Do not overmix. Transfer meat mixture to a 9 by 5 by 3-inch loaf pan and using your hands, form mixture into a loaf shape. Arrange the slices of bacon on the top of the meatloaf and set aside. 
+
+In a small saucepan combine the remaining 1/4 cup of chopped onion, remaining 2 tablespoons of green pepper, remaining teaspoon of garlic, remaining 1/2 cup of ketchup, remaining 2 tablespoons of Worcestershire sauce, remaining 1/2 teaspoon of salt, remaining 2 teaspoons of pepper, vinegar, and canned tomatoes and bring to a boil over medium-high heat. Cook until thickened, about 5 minutes. Pour the sauce over the uncooked meatloaf and bake for 45 minutes to 1 hour, or until the bacon and sauce are slightly caramelized on the top of the meatloaf. Remove from the oven and cover loosely with aluminum foil. Let stand for 10 minutes before serving. 
+
+Slice and serve along with the Macaroni with 4 Cheeses.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>onion, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>rib</unitOfMeasure>
+            <ingredientName>celery, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red bell pepper, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>garlic, minced, plus 1 teaspoon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>thyme leaves, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>rosemary, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh parsley, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Dijon mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>ketchup, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Worcestershire sauce, plus 1 teaspoon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Heavy cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Breadcrumbs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>ground chuck</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>pork sausage, (such as breakfast sausage)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>ground veal</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>plus 1/4 teaspoon freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>sl</unitOfMeasure>
+            <ingredientName>bacon, cut in half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>white or red wine vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>canned tomatoes, chopped or crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
