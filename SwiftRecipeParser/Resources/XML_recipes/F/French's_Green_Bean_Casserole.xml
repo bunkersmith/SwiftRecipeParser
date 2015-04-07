@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>French's Green Bean Casserole</name>
+    <indexCharacter>F</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. MIX soup, milk and pepper in a 1 1/2 -qt. baking dish. Stir in beans and 2/3 cup French Fried Onions. 
+
+2. BAKE at 350 degrees for 30 min. or until hot. 
+
+3. STIR. Top with remaining 2/3 cup onions. 
+
+4. Bake 5 min. until onions are golden. 
+
+Tips
+
+1. Tip: You may substitute 2 cans (14 1/2 oz. each) cut green beans, drained or 4 cups fresh, cooked cut green beans. 
+
+2. Look for FRENCH'S® French Fried Onions in the canned vegetable aisle!</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>10-3/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Can Cream of Mushroom Soup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/8</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>18</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Frozen cut green beans, thawed*</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>French Fried Onions</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

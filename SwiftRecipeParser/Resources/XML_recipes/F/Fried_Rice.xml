@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Fried Rice</name>
+    <indexCharacter>F</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a saucepan bring water to a boil. Add rice and stir. Reduce heat, cover and simmer for 20 minutes. Meanwhile, season eggs with salt and pepper. Heat 1 teaspoon oil in small frying pan, pour in eggs. Coat the bottom of the pan with the eggs, in order to cook them evenly; cook for about 3 minutes. Flip the eggs, cook one minute more and remove them to a cool surface. Let them cool, then cut them into thin slices. Set aside. Place bacon in a large, deep skillet. Cook over medium high heat until evenly brown. Drain, crumble and set aside. Spoon remaining 2 teaspoons oil into the skillet with the bacon fat. Stir in rice; break up any clumps and toss to coat with oil. Stir in bacon, soy sauce, peas, eggs and green onions. Stir and cook until heated through, approximately 3 minutes</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Uncooked White Rice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Eggs, Lightly Beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ds</unitOfMeasure>
+            <ingredientName>Ground Black Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Vegetable Oil, Divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Bacon, Cut Into Strips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Soy Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>10-oz pkg</unitOfMeasure>
+            <ingredientName>Frozen Green Peas, Thawed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Green Onions, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

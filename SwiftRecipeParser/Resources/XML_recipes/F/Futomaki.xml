@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Futomaki</name>
+    <indexCharacter>F</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Eggs: Lightly beat the eggs, along with 1 T. sugar, 1 tsp water/stock and a pinch of salt. Heat oil in a skillet. Pour in the egg mixture to form an omelet. When both sides of the omelet are set, slide the omelet from the pan. Cut into long, 1/2-inch wide slices.
+
+Spinach: Boil until wilted.
+
+Mushroom and Kampyo: Boil both in 2 cups stock (dashi or veggie), along with 1 tbsp soy sauce, 1 tsp sake, 1 tsp sugar and 1/4 tsp. salt. Slice the mushrooms into strips. Cut the kampyo into strips that are the same length as the nori sheets
+
+2. Lay a bamboo rolling mat on a flat work surface. Place 1 sheet of nori on the mat. Smooth a thin layer of rice to cover approx. 2/3 of the sheet [leaving a space at the end farthest away from you]. Wet fingers in vinegared water to smooth on the rice evenly. (need help with the rolling technique? see http://www.digsmagazine.com/nourish_makingmakisushi3.htm)
+
+3. Sprinkle a strip of pork sung on top of the rice, spanning the width of the nori. Place a strip of egg, a strip of spinach, strips of mushroom to extend the width of the nori, and a strip of kampyo on top of the rice, near the end closest to you.
+
+4. Roll sushi, taking care not to let the ingredients slide around or the nori to skew.
+
+5. Repeat with remaining ingredients. When you've finished making the rolls, cut each roll into 3/4-inch thick slices. Serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>stalks spinach</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>dried shiitake mushrooms, soaked in warm water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>ribbons kampyo*</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>pork sung (rou sung) or Japanese pink fish powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>pcs</unitOfMeasure>
+            <ingredientName>nori</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>portion</unitOfMeasure>
+            <ingredientName>cooked sushi rice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>stock (preferably dashi, or veggie)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>sake</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

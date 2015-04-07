@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Five Cheese Lasagna</name>
+    <indexCharacter>F</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Bring a large pot of salted water to a boil for the lasagna noodles. 
+
+To make the sauce: Heat olive oil over medium-high heat in a medium saucepot, saute garlic and onion until the onions become translucent. Add crushed tomatoes, Italian seasoning and salt and pepper, and stir to combine. Bring to a boil, then reduce heat to low, cover and simmer about 20 minutes, checking periodically to make sure the sauce doesn't burn. 
+
+Boil the lasagna noodles until al dente, about 15 minutes. Drain and transfer to a large bowl. Toss with olive oil so the noodles don't stick together. Let cool. 
+
+This lasagna will have 4 layers but 2 different types of cheese layers. One cheese layer will consist of mascarpone, ricotta, Parmesan and egg to bind. Combine these 4 ingredients in a bowl and set aside briefly. Preheat oven to 350 degrees F. 
+
+Layer 4 to 5 lasagna noodles lengthwise side by side in an ovenproof lasagna dish with edges overlapping. Top with half of the mascarpone/ricotta cheese mixture. (It is easiest to drop evenly spaced spoonfuls of this over the noodles, and then spread it out.) Distribute half of the fresh basil and half of the fresh oregano over the cheese, then layer another 4 or 5 lasagna noodles over the cheese in the same fashion as the first layer of noodles. 
+
+The second layer of cheese will consist of provolone and mozzarella. Spread half of the provolone cheese slices over the second layer of noodles and sprinkle with half of the mozzarella. Repeat the process with the noodles, remaining mascarpone/ricotta and noodles for the third layer. For the last layer, spread out the remaining noodles, top with remaining provolone, but then ladle the tomato sauce over and finish with the remaining mozzarella. 
+
+Bake in the oven for 30 minutes, remove and let rest for 10 minutes before slicing. Garnish with fresh basil sprigs.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>white onion, diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>clove</unitOfMeasure>
+            <ingredientName>garlic, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>can crushed tomatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Italian seasoning (or 1/2 teaspoon each of dried oregano, thyme and parsley)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>package lasagna noodles (approximately 16 to 20 noodles)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>mascarpone cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>ricotta cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated Parmesan (about 4 ounces)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh basil leaves, finely chopped plus about 12 small sprigs to garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>fresh oregano leaves, finely chopped (about 2 or 3 sprigs stripped from stems)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>sliced provolone</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>shredded mozzarella (about 8 ounces)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
