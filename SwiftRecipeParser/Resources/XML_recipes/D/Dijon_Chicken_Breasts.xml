@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Dijon Chicken Breasts</name>
+    <indexCharacter>D</indexCharacter>
+    <notes></notes>
+    <servings>6</servings>
+    <instructions>Combine first 5 ingredients in heavy large skillet. Bring to gentle simmer over medium-low heat. Add chicken and season with pepper. Cover and poach until chicken is just cooked through, about 20 minutes. Transfer chicken to platter. Boil liquid in skillet until reduced to sauce consistency, about 2 minutes. Pour sauce over chicken and serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>unsalted chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>onion, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Dijon mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>garlic cloves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>dried thyme, crumbled</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>boneless skinless chicken breast halves, well trimmed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
