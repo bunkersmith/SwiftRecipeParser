@@ -44,15 +44,13 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     }
     
     func handleExitEmailLogNotification(notification:NSNotification) {
-        //[Logger writeToLogFile:[NSString stringWithFormat:@"%s called", __PRETTY_FUNCTION__]];
-    
         dispatch_async(dispatch_get_main_queue(), {
             self.popViewController(self)
         })
     }
     
     func popViewController(sender:AnyObject) {
-        navigationController.popViewControllerAnimated(true)
+        navigationController!.popViewControllerAnimated(true)
     }
     
     func requestMailComposeViewController() {
@@ -60,12 +58,8 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     }
     
     func showMailComposeViewController() {
-        // You must check that the current device can send email messages before you
-        // attempt to create an instance of MFMailComposeViewController.  If the
-        // device can not send email messages,
-        // [[MFMailComposeViewController alloc] init] will return nil.  Your app
-        // will crash when it calls -presentViewController:animated:completion: with
-        // a nil view controller.
+        // Check that the current device can send email messages before
+        // attempting to create an instance of MFMailComposeViewController.
         if MFMailComposeViewController.canSendMail() {
             // The device can send email.
             displayMailComposerSheet()
@@ -79,19 +73,15 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     
     
     func displayMailComposerSheet() {
-        //[Logger writeToLogFile:[NSString stringWithFormat:@"%s called", __PRETTY_FUNCTION__]];
+        composeViewController.mailComposeDelegate = self
         
-        if composeViewController != nil {
-            composeViewController.mailComposeDelegate = self
-            
-            composeViewController.setSubject("SwiftRecipeParser \(emailRecipeTitle) Recipe")
-            
-            // Fill out the email body text
-            emailBody = RecipeUtilities.convertRecipeNameToFormattedText(emailRecipeTitle)
-            composeViewController.setMessageBody(emailBody, isHTML: false)
-            
-            presentViewController(composeViewController, animated: false, completion: nil)
-        }
+        composeViewController.setSubject("SwiftRecipeParser \(emailRecipeTitle) Recipe")
+        
+        // Fill out the email body text
+        emailBody = RecipeUtilities.convertRecipeNameToFormattedText(emailRecipeTitle)
+        composeViewController.setMessageBody(emailBody, isHTML: false)
+        
+        presentViewController(composeViewController, animated: false, completion: nil)
     }
     
     // MARK - MFMailComposeViewControllerDelegate
@@ -132,19 +122,9 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     // MARK: - UIAlertViewDelegate
     
     func alertView(alertView: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
-        navigationController.popViewControllerAnimated(false)
+        navigationController!.popViewControllerAnimated(false)
     }
 }
