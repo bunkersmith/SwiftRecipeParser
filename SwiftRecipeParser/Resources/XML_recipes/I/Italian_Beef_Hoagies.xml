@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Italian Beef Hoagies</name>
+    <indexCharacter>I</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a crockpot or slow cooker, mix together 1 cup water, 1 cup juice from a pepperoncini bottle (you can put some water back in the bottle for next time), 6 pepperoncinis and the packet of Zesty Italian Dressing. Add the beef (with the excess fat trimmed off). You can cut the beef into 2 or 3 large pieces if it will not fit in the crockpot. Turn the cooker to low and let slow cook for approximately 8 hours (start it before work and it will be perfect by the time you get home. Carefully remove the beef from the cooker, but leave the juices. Add the packet of Au Jus sauce to the juices in the crockpot and mix. Using a fork, shred the beef and put back in the cooker with the Italian/Au Jus mixture. Turn the cooker to medium and let cook for an additional 30 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Tri-tip</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pk</unitOfMeasure>
+            <ingredientName>Dry Zesty Italian Dressing</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pk</unitOfMeasure>
+            <ingredientName>Dry Au Jus Mix</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>Pepperoncinis</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Pepperoncini Juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pk</unitOfMeasure>
+            <ingredientName>Hoagie Buns (french, Italian Or Sour Dough Bread)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
