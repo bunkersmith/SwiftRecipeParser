@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pork with Snake Beans (THUA PHAT MUU)</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>SNAKE BEANS ARE SOLD IN ASIAN FOOD SHOPS, EITHER COILED UP OR IN LONG BUNCHES. THEY TASTE SIMILAR TO EUROPEAN GREEN BEANS BUT HAVE A SLIGHTLY MORE LEATHERY SKIN. YOU CAN USE FRENCH OR ROUND GREEN BEANS IF YOU PREFER. THIS
+
+DISH GOES WITH ANY MEAL. 
+
+MIX the oyster sauce, light soy sauce, sugar and 2 tablespoons water in a small bowl. 
+
+HEAT the oil in a wok or frying pan and stir-fry the garlic over a medium heat until light brown. Add the pork and stir-fry over a high heat for 3 to 5 minutes or until the pork is cooked. Add the beans and the sauce mixture and stir-fry for 4 minutes. Taste, then adjust the seasoning if necessary. 
+
+TRANSFER to a serving plate and garnish with chili slices.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>oyster sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>light soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>pork fillet, finely sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>9</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>snake beans, cut into 2 inch pieces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>long red chilli, seeded, shredded, for garnish (optional)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

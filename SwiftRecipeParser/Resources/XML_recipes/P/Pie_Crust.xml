@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pie Crust</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Sift flour and salt together; cut in shortening with pastry blender till pieces are the size of small peas. (For extra tender pastry, cut in half the shortening till like cornmeal. Cut in remaining till like small peas.) Sprinkle 1 tablespoon water over part of mixture. Gently toss with; push to side of bowl. Repeat till all is moistened. Form into a ball. (For double-crust and lattice-top pies, divide dough for lower and upper crust and form into balls.) Flatten on lightly floured surface by pressing with edge of hand 3 times across in both directions. Roll from center to edge till 1/8 inch thick.
+
+To bake single-crust pie shells: Fit pastry into pie plate; trim 1/2 to 1 inch beyond edge; fold under and flute edge by pressing dough with forefinger against wedge made of finger and thumb of other hand. Prick bottom and sides well with fork. (If filling and crust are baked together, do not prick.) Bake at 450° for 10 to 12 minutes or till golden.
+
+For lattice-top pie: Trim lower crust 1/2 inch beyond edge of pie plate. Roll remaining dough 1/8 inch thick. Cut strips of pastry 1/2 to 3/4 inch wide with pastry wheel or knife. Lay strips on filled pie at 1-inch intervals. Fold back alternate strips as you weave cross strips. Trim lattice even with outer rim of pie plate; fold lower crust over strips. Seal; flute edge.
+
+For double-crust pie: Trim lower crust even with rim of pie plate. Cut slits in top crust. Lift pastry by rolling it over rolling pin; then unroll loosely over well-filled pie. Trim 1/2 inch beyond edge. Tuck top crust under edge of lower crust. Flute edge of pastry as desired.
+
+If edge of crust browns too quickly, fold strip of foil around rim of crust, covering fluted edge.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>sifted all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>shortening</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>(or up to 7 tablespoons) cold water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

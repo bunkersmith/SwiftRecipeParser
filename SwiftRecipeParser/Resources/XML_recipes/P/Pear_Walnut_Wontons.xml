@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pear Walnut Wontons</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>In a small saucepan over medium heat, bring water and sugar to a simmer, stirring occasionally, until sugar is dissolved. Remove from the heat and stir in vanilla bean scrapings and orange liqueur. 
+
+Place pears in the bowl of a food processor and process until finely chopped, stopping to scrape down the bowl if necessary. Add the sugar syrup and pulse just until combined. Transfer the pears to a bowl and stir in the walnuts. Place the mixture in the refrigerator to cool completely, approximately 1 hour. The filling may be made up to 1 day ahead of time. 
+
+Heat oil in a 6-quart Dutch oven to 360 degrees F. 
+
+To form the dumplings, remove 1 wonton wrapper from the package, covering the others with a damp cloth. Brush the edges of the wrapper lightly with water. Place 1 teaspoon of the pear mixture in the center of the wrapper. Fold over the edges, seal, and shape as desired. Set on a sheet pan and cover with a damp cloth. Repeat procedure until all of the filling is gone. 
+
+Gently place the wontons in the oil, 7 to 8 at a time. Fry until golden, approximately 2 minutes. Remove to a cooling rack set in a sheet pan lined with newspaper and let cool at least 5 minutes before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>vanilla bean, scraped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>orange liqueur</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>dried pears, roughly chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>walnuts, toasted and finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>25</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>wonton wrappers (can use up to 30)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Bowl of water, for sealing wontons</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>gal</unitOfMeasure>
+            <ingredientName>vegetable or peanut oil, for frying</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

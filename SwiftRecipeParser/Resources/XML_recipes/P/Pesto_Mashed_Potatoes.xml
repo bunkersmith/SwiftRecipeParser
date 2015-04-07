@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pesto Mashed Potatoes</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Cut larger potatoes in half and leave small potatoes whole. Cover potatoes with
+
+water and bring water to a boil. Add salt and cook until potatoes are tender 10
+
+to 12 minutes. Drain potatoes and return them to hot pot. Add broth or stock and smash the potatoes up. Add pesto and smash to desired consistency. Serve while hot.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Small Red Skinned Potatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Coarse Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Stock Or Chicken Broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Prepared Store Bought Pesto</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

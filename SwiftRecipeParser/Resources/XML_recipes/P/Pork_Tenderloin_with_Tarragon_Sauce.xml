@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pork Tenderloin with Tarragon Sauce</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>1. Cut whole pork tenderloin into 1-inch slices, trimming off excess fat, and dividing the entire amount into 8 equal pieces.
+
+2. Place meat between sheets of waxed paper.  Sprinkle with salt and pepper; and with side of fist, pound to flatten slightly. Brush with mustard.
+
+3. Spray heavy skillet or frying pan with butter flavored Pam. Slowly brown meat on both sides over medium heat, cooking 5 min. on each side until pinkness disappears entirely.
+
+4. Remove meat onto heated platter.
+
+5. Sprinkle tarragon over bottom of pan; add beef broth and heat to boiling, whisking to scrape up brownings from bottom of pan.
+
+6. Add half-and-half.  Boil, whisking, until reduced and thickened.
+
+7. Taste and add more salt and pepper, if desired.
+
+8. Pour sauce over cooked meat on platter.  Serve immediately.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>lean pork tenderloin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>pepper, freshly ground</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Dijon mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fat free beef broth, undiluted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>dried tarragon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fat-free half and half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

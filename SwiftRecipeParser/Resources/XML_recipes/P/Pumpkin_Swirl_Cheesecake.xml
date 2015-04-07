@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pumpkin Swirl Cheesecake</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. For crust, in a medium mixing bowl combine crushed gingersnaps, melted margarine or butter, and the 1 tablespoon flour. Press onto the bottom and about 1-1/2 inches up the sides of an 8- or 9-inch springform pan. Set pan aside.
+
+2. For filling, in a large mixing bowl beat cream cheese until smooth. Add sugar, the 3 tablespoons flour, ginger, and vanilla; beat on high speed until smooth. Add eggs all at once. Beat on low speed just until combined. Stir in milk. Measure 2 cups of filling; set aside. To remaining mixture add pumpkin, brown sugar, cinnamon, and nutmeg.
+
+3. Spoon plain cheese mixture into crust-lined springform pan. Carefully spoon the pumpkin mixture over plain cheese mixture. Use a spatula to gently swirl batters, being careful not to disturb crust. Place the springform pan on a shallow baking pan on the oven rack. Bake at 375 degrees F. for 50 to 55 minutes for an 8-inch pan (45 to 50 minutes for a 9-inch pan) or until center appears nearly set when shaken.
+
+4. Remove springform pan from baking pan. Cool cheesecake on a wire rack for 15 minutes. Use a small metal spatula to loosen crust from sides of pan. Cool 30 minutes more. Remove sides of the springform pan. Cool for 1 hour; cover and chill at least 4 hours. Makes 12 to 16 servings.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>finely crushed gingersnaps (about 28)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>margarine or butter, melted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>8-ounce packages cream cheese, softened</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>granulated sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>grated fresh ginger or 1/2 teaspoon ground ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>vanilla</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>canned pumpkin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>packed brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground cinnamon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground nutmeg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

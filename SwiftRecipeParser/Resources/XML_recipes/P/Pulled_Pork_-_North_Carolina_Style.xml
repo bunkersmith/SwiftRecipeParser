@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pulled Pork - North Carolina Style</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>1. Sprinkle the pork shoulder on all sides with the rub, patting it onto the meat with your fingers. Grill right away, or let stand in the refrigerator, covered, for up to 24 hours. The longer you cure it, the richer the flavor will be. 
+
+2. Set up the grill for indirect grilling and preheat to medium-low. If using a charcoal grill, place a large drip pan in the center. 
+
+3. Combine all the ingredients for the mop sauce with 1/2 cup water in a nonreactive bowl and stir until the salt and brown sugar dissolve. When ready to cook, place 1/2 cup
+
+of wood chips on the coals on either side of the drip pan. Place the pork, fat-side up, in the center of the hot grate, away from the heat. Cover the grill and cook the pork until very tender, 4 to 6 hours (about 195 degrees Farenheit on an instant-read meat thermometer). If using charcoal, add 12 fresh coals and 1/2 wood chips per side every hour. Baste the pork with the mop sauce every hour as well. 
+
+4. Transfer the cooked pork to a cutting board, cover loosely with aluminum foil, and let rest for 15 minutes. When ready to serve, wearing rubber gloves, pull of the skin and fat. Finely chop the crisp skin with a cleaver to add to the pulled pork. Discard the fat. Pull the pork into pieces. Transfer the shredded pork to a roasting pan and stir in 1 to 1-1/2 cups of the vinegar sauce, enough to keep the pork moist. Cover with aluminum foil and keep warm. 
+
+5. To serve, mound the pork on hamburger buns and top with coleslaw. Serve with any remaining vinegar sauce on the side.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Bone-in pork shoulder roast (5-7 lbs.)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Basic Barbecue Rub, Recipe Follows</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Hickory Chips, soaked in cold water for 1 hour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>MOP SAUCE</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Cider Vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Small onion, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Jalapeno Peppers, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Coarse Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Brown Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Black Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Hot Red Pepper Flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>FOR SERVING</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>North   CarolinaVinegar Sauce, Recipe Follows</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Hamburger Buns</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>North   CarolinaCole Slaw, Recipe Follows</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

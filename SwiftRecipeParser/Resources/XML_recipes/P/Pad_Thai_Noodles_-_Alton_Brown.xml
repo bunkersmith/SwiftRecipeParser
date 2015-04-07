@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pad Thai Noodles - Alton Brown</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place the tamarind paste in the boiling water and set aside while preparing the other ingredients. 
+
+Combine the fish sauce, palm sugar, and rice wine vinegar in a small bowl and set aside. 
+
+Place the rice stick noodles in a mixing bowl and cover with hot water. Set aside while you prepare the remaining ingredients. Once the other ingredients are measured out into separate bowls, drain the water from the noodles and set them aside. Cut the tofu into 1/2-inch wide strips, similar to French fries. 
+
+Press the tamarind paste through a fine mesh strainer and add to the sauce. Stir to combine. 
+
+Place a wok over high heat. Once hot, add 1 tablespoon of the peanut oil. Heat until it shimmers, then add the tofu. Cook the tofu until golden brown, moving constantly, for no longer than 1 minute. Remove the tofu from the pan to a small bowl and set aside. 
+
+If necessary, add some more peanut oil to the pan and heat until shimmering. Add 2/3 of the scallions and then the garlic, cook for 10 to 15 seconds. Add the eggs to the pan; once the eggs begin to set up, about 15 to 20 seconds, stir to scramble. Add the remaining ingredients in the following order and toss after each addition: noodles, sauce, cabbage, shrimp, and 2/3 of the bean sprouts and peanuts. Toss everything until heated through, but no longer than 1 to 2 minutes total. Transfer to a serving dish. Garnish with the remaining scallions, bean sprouts, and peanuts. Serve immediately with the ground chile peppers and lime wedges.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>tamarind paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>boiling water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>palm sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>rice wine vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>rice stick noodles</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Marinated Tofu (see separate recipe)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>peanut oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped scallions, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>whole</unitOfMeasure>
+            <ingredientName>eggs, beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salted cabbage</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>dried shrimp</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>bean sprouts, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>roasted salted peanuts, chopped, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Freshly ground dried red chile peppers, to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lime, cut into wedges</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

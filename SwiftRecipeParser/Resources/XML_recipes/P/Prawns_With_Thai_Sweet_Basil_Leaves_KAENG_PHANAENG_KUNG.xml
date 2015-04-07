@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Prawns With Thai Sweet Basil Leaves (KAENG PHANAENG KUNG)</name>
+    <indexCharacter>P</indexCharacter>
+    <notes>THE SAUCE FOR THIS DISH SHOULD BE THICK, HOT AND SWEET SO MAKE SURE YOUR WOK IS HOT ENOUGH TO REDUCE THE COCONUT MILK AS IT HITS THE SURFACE.</notes>
+    <servings>4</servings>
+    <instructions>PEEL and devein the prawns and cut each prawn along the back so it opens like a butterfly (leave each prawn joined along the base and at the tail, leaving the tail attached).
+        
+HEAT the oil in a saucepan or wok and stir—fry the dry curry paste over a medium heat for 2 minutes or until fragrant.
+        
+ADD the coconut milk, fish sauce and palm sugar and cook for a few seconds. Add the prawns and cook for a few minutes or until the prawns are cooked through. Taste, then adjust the seasoning if necessary. Spoon into a serving bowl and garnish with basil leaves and chillies.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>21</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>raw prawns (shrimp)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>dry curry paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <ingredientName>palm sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>handful</unitOfMeasure>
+            <ingredientName>Thai sweet basil leaves</ingredientName>
+            <processingInstructions> for garnish</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>long red chilli</ingredientName>
+            <processingInstructions> seeded and finely sliced, for garnish</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

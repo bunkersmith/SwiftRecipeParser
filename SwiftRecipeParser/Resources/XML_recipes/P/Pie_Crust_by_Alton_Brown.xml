@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pie Crust by Alton Brown</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>In a food processor, combine flour, cornmeal, sugar, and salt. Pulse to combine. Place dry ingredients in a mixing bowl and put the bowl into the refrigerator. Remove 3/4 stick of butter from the refrigerator and allow it to come to room temperature. In a food processor, add the 3/4 stick of butter to the flour mixture. Pulse until the fat completely disappears. Add the remaining 2 1/4 sticks butter in two equal batches. Pulse the first batch until flour mixture resembles the size of a pea. Pulse the second batch three or four times, leaving some large chunks of butter intact.
+
+Combine the apple juice concentrate and the cold water. Using a spray bottle, spritz the dough with the apple juice mixture while folding the mixture with a spatula. After about three tablespoons of the liquid, check the dough for consistency. It should hold together when compressed but remain relatively dry to the touch. If it does not bind, add a little more water. Remove from the processor and form the dough into a ball. Wrap the dough in wax paper or parchment paper and rest in refrigerator for 20 minutes. 
+
+Divide the dough into two balls, one for the bottom crust and one for the top crust.
+
+Place each ball of dough on a floured piece of parchment and roll out to a 1/8-inch thick disk.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3-3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>flour (15 oz by weight)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>stone ground cornmeal (3 oz by weight)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>20-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>(3 sticks) unsalted butter, divided, diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>20-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>apple juice concentrate</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>cold water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

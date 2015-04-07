@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Protein Bars</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Line the bottom of a 13 by 9-inch glass baking dish with parchment paper and lightly coat with canola oil. Set aside. Preheat the oven to 350 degrees F. 
+
+In a large mixing bowl, combine the protein powder, oat bran, wheat flour, wheat germ, and salt. Set aside. 
+
+Coarsely chop the raisins, dried cherries, blueberries and apricots and place in a small bowl and set aside. 
+
+In a third mixing bowl, whisk the tofu until smooth. Add the apple juice, brown sugar, eggs, and peanut butter, 1 at a time, and whisk to combine after each addition. Add this to the protein powder mixture and stir well to combine. Fold in the dried fruit. Spread evenly in the prepared baking dish and bake in the oven for 35 minutes or until the internal temperature reaches 205 degrees F. Remove from the oven and cool completely before cutting into squares. Cut into squares and store in an airtight container for up to a week.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>soy protein powder, approximately 1 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>oat bran, approximately 1/2 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-3/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>whole-wheat flour, approximately 1/2 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>wheat germ, approximately 1/4 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>raisins, approximately 1/2 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>dried cherries, approximately 1/2 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>dried blueberries, approximately 1/2 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>dried apricots, approximately 1/2 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pkg</unitOfMeasure>
+            <ingredientName>(12.3-ounces) soft silken tofu</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>unfiltered apple juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>dark brown sugar, approximately 1/2 cup packed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>whole eggs, beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>natural peanut butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Canola oil, for pan</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

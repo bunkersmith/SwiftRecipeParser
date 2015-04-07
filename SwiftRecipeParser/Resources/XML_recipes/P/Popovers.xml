@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Popovers</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Preheat the oven to 425 degrees F. There are 3 secrets to great popovers: 1. Make sure the pan is hot before you pour in the batter 2. Fill each section not more than half full 3. No peeking while they're in the oven! Generously grease aluminum popover pans or Pyrex custard cups with softened butter. You'll need enough pans to make 12 popovers. Place the pans in the oven for exactly 2 minutes to preheat. Meanwhile, whisk together the flour, salt, eggs, milk, and melted butter until smooth. The batter will be thin. Fill the popover pans less than half full and bake for exactly 30 minutes. Do not peek.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Unsalted Butter, Melted, Plus Softened Butter For Greasing Pans</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Kosher Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Extra-large Eggs, At Room Temperature</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Milk, At Room Temperature</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

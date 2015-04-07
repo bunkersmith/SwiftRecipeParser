@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Panaeng Beef Curry (KAENG PHANAENG NEUA)</name>
+    <indexCharacter>P</indexCharacter>
+    <notes>PANAENG CURRY IS A DRY, RICH, THICK CURRY MADE WITH SMALL AMOUNTS OF COCONUT MILK AND A DRY (PANAENG) CURRY PASTE, WHICH HAS RED CHILLIES, LEMON GRASS, GALANGAL AND PEANUTS. IT IS NOT TOO HOT AND HAS A SWEET AND SOUR TASTE. YOU CAN USE ANY TENDER CUT OF BEEF.
+
+As with many Thai curries, this one cooks relatively quickly. Keep the meat moving around the wok until you add the liquid.</notes>
+    <servings>4</servings>
+    <instructions>HEAT the oil in a saucepan or wok and stir—fry toe
+curry paste over a medium heat for 2 minutes or
+until fragrant.
+
+ADD the beef and stir for 5 minutes. Add nearly
+all of the coconut milk, the fish sauce, palm sugar
+and tamarind puree and reduce to a low heat.
+Simmer, uncovered, for 5 to 7 minutes. Although
+this is meant to be a dry curry, you can add a
+little more water during cooking it you feel it is
+drying out too much. Taste, then adjust the
+seasoning if necessary.
+
+SPOON the curry into a serving bowl, spoon the
+last bit of coconut milk over the top and spinkle
+with kaffir lime leaves and chilli slices. Serve with
+cucumber relish.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>dry curry paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>beef flank steak</ingredientName>
+            <processingInstructions> sliced into strips</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>palm sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>tamarind puree</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>kaffir lime leaves</ingredientName>
+            <processingInstructions> finely sliced, for garnish</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>long red chilli</ingredientName>
+            <processingInstructions> seeded and finely sliced, for garnish</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Cucumber relish (page 287)</ingredientName>
+            <processingInstructions> to serve</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

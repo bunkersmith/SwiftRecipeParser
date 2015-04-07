@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pumpkin Ice Cream</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Combine all dairy into a saucepan along with the sugars. Split and scrape the vanilla bean into the dairy and sugar mixture. Bring to 170 degrees F. to dissolve sugar then let cool at room temperature. Chill in the refrigerator overnight.
+
+While dairy is heating, grate nutmeg into pumpkin and add the other spices. Mix in a bowl to combine and chill overnight in the refrigerator.
+
+The next day, take pumpkin and dairy mixtures out. Filter dairy mixture to remove large vanilla bean pieces. Add some of the dairy mixture to the pumpkin and mix well to loosen it up. Then mix both the dairy and pumpkin together.
+
+Freeze mixture in ice cream freezer according to unit's instructions. Once the mixture has reached a soft serve consistency, spoon the mixture back into a lidded container and harden in the freezer at least 2 hours before serving.
+
+Yield: 1 quart</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>half and half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>heavy whipping cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>vanilla bean</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>light brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>canned pumpkin puree</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>nutmeg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground cinnamon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/8</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

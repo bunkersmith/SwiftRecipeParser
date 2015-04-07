@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Parmesan Truffled Potato Chips</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Using a mandolin or very sharp, heavy knife, slice the potatoes into rounds as thin as possible, and place in a large bowl of water to prevent discoloration. 
+
+Heat the oil in a large, heavy pot to between 340 and 350 degrees F. 
+
+Pat the potatoes completely dry. Add to the oil in batches and cook until golden brown, stirring with a long handled spoon to turn and cook evenly, about 2 minutes. Drain on paper towels and place in a large bowl. Toss with the cheese, truffle oil, salt, and pepper. Serve immediately.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>red bliss potatoes, scrubbed well and patted dry, skins left on</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>vegetable oil, for frying</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated Parmesan</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>truffle oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

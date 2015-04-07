@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pancetta Wrapped Pork Roast</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>6</servings>
+    <instructions>Blend the garlic, rosemary, thyme, and oil in a small food processor, scraping down the sides of the bowl occasionally, until the garlic is minced. Sprinkle the pork roast generously with salt and pepper. Arrange the pancetta slices on a work surface, overlapping slightly and forming a rectangle. Spread half of the garlic mixture over 1 side of the pork and between the 2 loins that meet in the center of the tied pork roast. Place the pork, garlic mixture side down, in the center of the pancetta rectangle. Spread the remaining garlic mixture over the remaining pork. Wrap the pancetta slices around the pork. Place the pork in a roasting pan. Cover and refrigerate at least 1 hour and up to 1 day. Preheat the oven to 400 degrees F. Pour 1/2 cup of broth and 1/2 cup of wine into the roasting pan. Add more broth and wine to the pan juices every 20 minutes. Roast the pork until a meat thermometer inserted into the center registers 145 degrees F for medium-rare, about 1 hour. Transfer the pork to a cutting board. Tent with aluminum foil and let stand for 10 minutes. Pour the pan drippings into a glass measuring cup and spoon off any fat that rises to the top. Using a large sharp carving knife, cut the pork into 1/4-inch-thick slices and serve with the pan juices.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>garlic cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fresh rosemary leaves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fresh thyme leaves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>tied boneless pork loin roast, 3-1/2 to 4-pounds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>pancetta, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>dry white wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
