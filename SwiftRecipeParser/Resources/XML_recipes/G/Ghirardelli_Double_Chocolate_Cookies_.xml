@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Ghirardelli Double Chocolate Cookies </name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Preheat the oven to 300 degrees. In a large mixing bowl, cream the butter and sugar until light and fluffy. Add the eggs one at a time, beating well after each egg, and the vanilla extract. In a separate bowl, combine the flour, ground cocoa and backing powder. Gradually fold the dry ingredients into the creamed mixture. Fold in the white chips. Using 2 tablespoons, drop the dough onto baking sheets in 1-inch balls, 3 inches apart. Bake for 16 to 18 minutes. Let cool 10 minutes on the baking sheets, then transfer to wire racks to cool completely. Let stand 30 minutes before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Butter, Softened</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>Eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Pure Vanilla Extract</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Ghirardelli Unsweetened Cocoa</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Baking Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Ghirardelli Classic White Chips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

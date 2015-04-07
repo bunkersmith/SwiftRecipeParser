@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Ginger Sea Bass over Wilted Greens</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Cut 4 (12-inch-square pieces) of aluminum foil. Preheat the oven to 400 degrees F. Working with 1 foil sheet at a time, place the foil sheets on the work surface. Place 1 1/2 cups of spinach in the center of each foil sheet. Top with a sea bass fillet. Sprinkle with 1 teaspoon of ginger and 1/2 teaspoon of garlic, then drizzle 2 tablespoons of Marsala, 2 teaspoons of soy sauce, and 1/2 teaspoon sesame oil over the fish and spinach. Gather the foil sheets over the fish. Fold in the foil edges and pinch tightly to seal. Place the foil packages on a heavy large baking sheet. Bake until the spinach wilts and the fish is just cooked through, about 10 minutes. Transfer the packages to wide shallow bowls. Cool 5 minutes. Open package and fold down to reveal fish, being careful of hot steam. Squeeze the lime juice over the fish. Sprinkle with the basil and serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh baby spinach leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>5-oz</unitOfMeasure>
+            <ingredientName>sea bass fillets</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>fresh ginger, peeled and minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>dry Marsala wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-2/3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>sesame oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>lime, quartered</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fresh basil leaves, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

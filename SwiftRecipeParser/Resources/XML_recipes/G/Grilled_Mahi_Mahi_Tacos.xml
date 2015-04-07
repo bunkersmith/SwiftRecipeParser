@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Grilled Mahi Mahi Tacos</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat grill. 
+
+Brush fillets with oil and season with salt and pepper. Grill for 3 to 4 minutes per side. 
+
+Remove from grill and drizzle with some of the Citrus Vinaigrette. Let rest 5 minutes and then flake with a fork. 
+
+Fill each fried tortilla with some of the mahi, top with the Red Cabbage Slaw, Tomato and Avocado Salsa, and drizzle with Charred Pineapple-habanero Hot Sauce.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>8-oz</unitOfMeasure>
+            <ingredientName>mahi mahi fillets</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>canola oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Citrus Vinaigrette (see separate recipe)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>6-inch</unitOfMeasure>
+            <ingredientName>flour tortillas, cut into 2-1/2 to 3-inch circles, and deep fried</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Red Cabbage Slaw (see separate recipe)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Tomato and Avocado Salsa (see separate recipe)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Charred Pineapple-Habanero Hot Sauce, store bought or see separate recipe, for drizzling</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

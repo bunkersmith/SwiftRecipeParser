@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Grilled Chicken Cutlet Parmigiana</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Heat outdoor grill or indoor grill pan to high. Season chicken with salt and pepper and drizzle with extra-virgin olive oil to keep it from sticking to the grill. Cook 3 to 4 minutes on each side and transfer to a foil covered platter to hold. If you are using a grill pan, cook the chicken in 2 batches if necessary. While chicken cooks, make sauce. 
+
+Place a medium pot on the stove over medium heat. Add 2 tablespoons extra-virgin olive oil, 2 turns of the pan. Add garlic, crushed red pepper flakes and chopped onions. Cook 10 minutes, stirring often. Add tomatoes and heat through, 2 minutes. Wilt in the basil and season the sauce with salt and pepper. 
+
+Preheat the broiler to high. 
+
+Layer the chicken with fire roasted sauce in a casserole dish. Top the casserole with Parmigiano and mozzarella. Brown the casserole under the broiler 3 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>thin cut chicken breast cutlets</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Extra-virgin olive oil, for drizzling, plus 2 tablespoons</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>crushed red pepper flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>yellow skinned onion, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>28-oz</unitOfMeasure>
+            <ingredientName>can fire roasted diced tomatoes, such as Muir Glenn brand</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>C</unitOfMeasure>
+            <ingredientName>fresh basil leaves (20 leaves), shredded or torn</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Parmigiano-Reggiano</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>smoked mozzarella, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

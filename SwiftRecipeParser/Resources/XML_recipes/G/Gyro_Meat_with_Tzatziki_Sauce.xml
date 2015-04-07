@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Gyro Meat with Tzatziki Sauce</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Process the onion in a food processor for 10 to 15 seconds and turn out into the center of a tea towel. Gather up the ends of the towel and squeeze until almost all of the juice is removed. Discard juice. 
+
+Return the onion to the food processor and add the lamb, garlic, marjoram, rosemary, salt, and pepper and process until it is a fine paste, approximately 1 minute. Stop the processor as needed to scrape down sides of bowl. 
+
+To cook on a rotisserie, proceed as follows: 
+
+Form the meat mixture into a loaf shape and place on top of 2 overlapping pieces of plastic wrap that are at least 18 inches long. Roll the mixture in the plastic wrap tightly, making sure to remove any air pockets. Once the meat is completely rolled in the wrap, twist the ends of the plastic wrap until the surface of the wrap is tight. Store in the refrigerator for at least 2 hours or up to overnight, to allow the mixture to firm up. 
+
+Preheat the grill to high. 
+
+Place the meat onto the rotisserie skewer. Place a double-thick piece of aluminum foil folded into a tray directly under the meat to catch any drippings. Cook on high for 15 minutes. Decrease the heat to medium and continue to cook for another 20 to 30 minutes or until the internal temperature of the meat reaches 165 degrees F. Turn off the heat and allow to continue to spin for another 10 to 15 minutes or until the internal temperature reaches 175 degrees. Slice and serve on pita bread with tzatziki sauce, chopped onion, tomatoes, and feta cheese.
+
+To cook in the oven as a meatloaf, proceed as follows: 
+
+Preheat the oven to 325 degrees F. 
+
+Place the mixture into a loaf pan, making sure to press into the sides of the pan. Place the loaf pan into a water bath and bake for 60 to 75 minutes or until the mixture reaches 165 to 170 degrees F. Remove from the oven and drain off any fat. Place the loaf pan on a cooling rack and place a brick wrapped in aluminum foil directly on the surface of the meat and allow to sit for 15 to 20 minutes, until the internal temperature reaches 175 degrees F. Slice and serve on pita bread with tzatziki sauce, chopped onion, tomatoes and feta cheese.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>onion, finely chopped or shredded</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>ground lamb</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>finely minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>dried marjoram</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>dried ground rosemary</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Tzatziki Sauce (see separate recipe)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>pita bread, for serving</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>onions, chopped, for serving</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>tomatoes, for serving</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>feta cheese, for serving</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

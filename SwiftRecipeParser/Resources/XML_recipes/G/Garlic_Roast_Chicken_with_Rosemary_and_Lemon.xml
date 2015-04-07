@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Garlic Roast Chicken with Rosemary and Lemon</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Preheat oven to 450 degrees F. Arrange chicken in a baking dish, 9 by 13-inch. Add garlic, rosemary, extra-virgin olive oil, lemon zest and grill seasoning or salt and pepper to the dish. Toss and coat the chicken with all ingredients, then place in oven. Roast 20 minutes. Add wine and lemon juice to the dish and combine with pan juices. Return to oven and turn oven off. Let stand 5 minutes longer then remove chicken from the oven. Place baking dish on trivet and serve, spooning pan juices over the chicken pieces.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Boneless, Skinless Chicken Breasts, Cut Into Large Chunks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>Garlic, Crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Fresh Rosemary, Leaves Stripped From Stems</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Extra-virgin Olive Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Lemon, Zested And Juiced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Grill Seasoning Blend (recommended: Montreal Seasoning)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Dry White Wine Or Chicken Broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

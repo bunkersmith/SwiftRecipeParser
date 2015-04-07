@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Ginger-Soy London Broil</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>1. Prepare the marinade: Place the ginger, onion, garlic, and cilantro in a food processor and process until a smooth paste forms. Add the wine, soy sauce, oil, and pepper and process to combine. 
+
+2. Place the steak in a baking dish just large enough to hold it and spread the marinade over it. Let marinate in the refrigerator, covered, for at least 4 hours, ideally 6 hours, or even overnight (12 hours) if time permits, turning the steak a few times. 
+
+3. Set up the grill for direct grilling and preheat to high. When ready to cook, brush and oil the grill grate. Remove the steak from the marinade and drain well. Place the steak on the hot grate and grill until cooked to taste, 6 to 8 minutes per side for medium-rare, 2 minutes more per side for medium, rotating the steak 90 degrees after 3 minutes if a crosshatch of grill marks is desired. (This isn't absolutely essential, as the steak will be carved for serving, but the perfectionist in you may want to do it anyway.) 
+
+4. Transfer the steak to a cutting board and let rest for 5 minutes. Using a sharp knife, carve it into broad thin slices, holding the knife blade at a 45 degree angle to the top of the meat. Serve at once.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>fresh ginger, peeled and thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red onion, cut into 1-inch chunks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>garlic, coarsely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh cilantro, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>dry red wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>beefsteak (1-1/2 to 2 pounds) cut from the top or bottom round or 1 flank steak (1-1/2 to 2 pounds)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

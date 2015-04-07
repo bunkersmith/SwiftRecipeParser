@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Grilled Jalapeno Poppers</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>6</servings>
+    <instructions>CAUTION: Jalapenos can be very hot. Use caution and wear rubber gloves if you have skin sensitivity. Keep hands away from face and eyes. Wash hands thoroughly with warm water and soap when finished handling peppers. 
+
+Slice peppers from stem to tip on 1 side. Carefully squeeze ends of pepper (like a change purse) and scoop out seeds and veins with a small spoon. Stuff each pepper with shredded cheese. Cut bacon slices in half. Wrap each pepper with a piece of bacon and secure with a toothpick. Preheat grill. Grill peppers 3 to 5 minutes on each side or until bacon is cooked, but not crisp. Remove from grill and serve while hot.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>jalapeno peppers</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Mexican blend shredded cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>thick slices bacon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

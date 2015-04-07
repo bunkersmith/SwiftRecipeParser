@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Grilled Lemon Mayonnaise</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Place the lemon halves, cut sides down, on the grill and cook until charred, about 1 minute. Squeeze the lemon juice into the bowl of a blender or food processor. Add the egg and 1 tablespoon water and process for 20 seconds. With the processor running, slowly pour in the olive and vegetable oils through the feed tube and process until emulsified, adding additional water 1 tablespoon at a time to thin the mayonnaise to drizzling consistency. Add the salt and cayenne pulse to blend. Adjust the seasoning to taste, transfer to an airtight container, and refrigerate for at least 30 minutes before using. (Mayonnaise will keep refrigerated for up to 24 hours.) Yield: about 1 1/4 cups 
+
+*RAW EGG WARNING The American Egg Board states: "There have been warnings against consuming raw or lightly cooked eggs on the grounds that the egg may be contaminated with Salmonella, a bacteria responsible for a type of foodborne illness. Healthy people need to remember that there is a very small risk and treat eggs and other raw animal foods accordingly. Use only properly refrigerated, clean, sound-shelled, fresh, grade AA or A eggs. Avoid mixing yolks and whites with the shell?"</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Lemons, Halved</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Egg*</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Olive Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Vegetable Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pinch Cayenne</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

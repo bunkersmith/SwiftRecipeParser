@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Green Curry With Chicken (KAENG KHIAW-WAAN KAI)</name>
+    <indexCharacter>G</indexCharacter>
+    <notes>THIS FAMILIAR CLASSIC, WHICH SHOULD NEVER BE EXTREMELY HOT, HAS AS ITS BASE A PASTE OF CHILIES, GALANGAL AND LEMON GRASS. BITTER VEGETABLES SUCH AS THAI EGGPLANT OFFSET THE SWEETNESS OF THE COCONUT CREAM. TENDER STEAK CAN BE USED INSTEAD OF CHICKEN.</notes>
+    <servings>4</servings>
+    <instructions>PUT the coconut cream in a wok or saucepan and
+simmer over a medium heat for about 5 minutes,
+or until the cream separates and a layer of oil
+forms on the surface. Stir the cream if it starts to
+brown around the edges. Add the curry paste, stir
+well to combine and cook until fragrant.
+
+ADD the chicken and stir for a few minutes. Add
+nearly all of the coconut milk, the fish sauce and
+palm sugar and simmer over a medium heat for
+another 5 minutes.
+
+ADD the eggplants and cook, stirring occasionally,
+for about 5 minutes or until the eggplants are
+cooked. Add the galangal and makrut lime leaves.
+Taste, then adjust the seasoning if necessary.
+Spoon into a serving bowl and sprinkle with the
+last bit of coconut milk, as well as the basil leaves
+and chilli slices.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>coconut cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>green curry paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>skinless chicken thigh fillets</ingredientName>
+            <processingInstructions> sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-3/4</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>mixed Thai eggplants and pea eggplants</ingredientName>
+            <processingInstructions> cut into quarters,</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>galangal</ingredientName>
+            <processingInstructions> julienned</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>7</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>kaffir lime leaves</ingredientName>
+            <processingInstructions> torn in half</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>handful</unitOfMeasure>
+            <ingredientName>Thai sweet basil leaves</ingredientName>
+            <processingInstructions> for garnish</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>long red chilli</ingredientName>
+            <processingInstructions> seeded and finely sliced, for garnish</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

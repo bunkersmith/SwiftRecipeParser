@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Grilled Avocado, Tomato, Red Onion Salad</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>5</servings>
+    <instructions>Preheat a grill over medium heat. Cover a large tray with tomato quarters, and set aside. Place avocado halves in a bowl and drizzle with olive oil. Place each half on a hot open grill for about 30 to 45 seconds. Remove and place on top of the tomatoes arranged on tray. Drizzle with olive oil again. In another bowl, cover the red onion slices with the juice from the lemon half and olive oil. Place onions in the empty avocado pit holes. Cover with the lemon/olive oil mix. Then, top with pesto, distributing generously on all sides. Sprinkle pine nuts and cheese on top, to taste.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Tomatoes, quartered</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Avocados, peeled, halved, and pitted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Extra-virgin olive oil, for drizzling</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Red Onion, sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Lemon, juiced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Pesto Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Pine Nuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

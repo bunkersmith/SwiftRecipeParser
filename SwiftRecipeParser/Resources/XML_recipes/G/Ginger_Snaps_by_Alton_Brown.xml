@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Ginger Snaps by Alton Brown</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat the oven to 350 degrees F.
+
+In a medium mixing bowl whisk together the flour, baking soda, ginger, cardamom, clove and salt.
+
+Place the brown sugar and butter into the bowl of a stand mixer fitted with the paddle attachment and beat on low speed until light and fluffy, 1 to 2 minutes. Add the molasses, egg and fresh ginger and beat on medium for 1 minute. Add the crystallized ginger and using a rubber spatula, stir to combine. Add the dry ingredients to the wet and stir until well combined.
+
+With a 2-teaspoon sized scoop, drop the dough onto a parchment lined half sheet pan approximately 2-inches apart. Bake on the middle rack of the oven for 12 minutes for slightly chewy cookies or 15 minutes for more crisp cookies. Rotate the pan halfway through cooking.
+
+Remove from the oven and allow the cookies to stay on the sheet pan for 30 seconds before transferring to a wire rack to cool completely. Repeat with all of the dough. Store in an airtight container for up 10 days. If desired, you may scoop and freeze the cookie dough on a sheet pan and once frozen, place in a resealable bag to store. Bake directly from the freezer as above.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>9-1/2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>baking soda</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>ground ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground cardamom</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground clove</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>7</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>dark brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>unsalted butter, room temperature</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>molasses, by weight</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>egg, room temperature</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh ginger, finely grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>candied ginger, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
