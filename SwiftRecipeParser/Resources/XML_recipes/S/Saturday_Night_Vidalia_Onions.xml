@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Saturday Night Vidalia Onions</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Prepare a fire in a charcoal grill or preheat oven to 350 degrees F. Trim and slice from the top of each onion, and peel the onion without cutting off the root end. Using a potato peeler, cut a small cone shaped section from the center of the onion. Cut the onion into quarters from the top down, stopping within a 1/2-inch of the root end. Place a bouillon cube in the center of each onion, slip slivers of butter between the sections, and sprinkle with pepper. Wrap each onion in heavy duty foil and place the onions directly onto the hot coals. Cook the onions for 45 minutes turning every so often. To serve, place each onion in individual bowl because the onions will produce a lot of broth, which tastes like French onion soup.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Vidalia onions</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>beef bouillon cubes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

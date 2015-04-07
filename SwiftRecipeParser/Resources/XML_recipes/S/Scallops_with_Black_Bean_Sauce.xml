@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Scallops with Black Bean Sauce</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>6</servings>
+    <instructions>SLICE the small, hard white muscle off the side of each scallop and pull off any membrane. Rinse the scallops and drain.  Pull off the roes if you prefer. 
+
+PLACE the black beans, garlic, ginger, sugar, soy and oyster sauces in a bowl and mix together. 
+
+HEAT a wok over high heat, add the oil and until very hot. Stir-fry the scallops and roes for 2 minutes, or until the scallops are cooked through and opaque. Just before the scallops are cooked add the spring onion. Transfer the mixture to a sieve to drain. 
+
+REHEAT the wok over medium heat. Stir-fry the black bean mixture for 1-2 minutes, or until aromatic.  Return the scallops and spring onion to the wok and toss together to combine.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>36</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>large scallops</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>salted, fermented black beans, rinsed and mashed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>finely chopped ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>light soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>oyster sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>scallions, cut into 3/4 inch lengths</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

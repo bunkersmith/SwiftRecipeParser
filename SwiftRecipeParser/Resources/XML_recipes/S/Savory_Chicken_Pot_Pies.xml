@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Savory Chicken Pot Pies</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>STOCK:
+
+Place chicken in 6-quart kettle along with the rest of stock ingredients.
+
+Bring to a boil over high heat.
+
+Reduce heat; simmer, covered, for about 1 hour, or until chicken is tender.
+
+(About 45 minutes with 2 smaller chickens.) 
+
+PASTRY: Meanwhile, make pastry.
+
+In medium bowl stir flour and salt together. With pastry blender, cut in shortening until mixture resembles coarse cornmeal. Sprinkle 1 tablespoon of ice water at a time, over all of pastry mixture, tossing lightly with a fork after each addition and pushing dampened portion to side of bowl; sprinkle only dry portion remaining. Pastry should be just moist enough to hold together, not sticky. (4 to 6 tablespoons ice water.) Shape into a ball; flatten and wrap in plastic wrap; refrigerate until ready to use. 
+
+FILLING: Remove chicken from kettle to bowl; cool until easy to handle. Discard skin and bones. Cut chicken meat into 1-inch pieces (4 to 5 cups). Strain stock into large saucepan.
+
+Bring to a boil.
+
+Add carrots, pearl onions, and celery.
+
+Cook, covered, for 5 to 10 minutes, until vegetables are just tender.
+
+In 2-cup measuring cup, measure milk; whisk in flour, poultry seasoning, salt, and pepper until smooth.
+
+Stir into vegetable-stock mixture; bring to a boil, stirring constantly.
+
+Reduce heat; boil 1 minute. Add cut-up chicken; mix well.
+
+Divide mixture among six 1-1/3-cup casseroles or separate baking dishes.
+
+Preheat oven to 400F. 
+
+Remove pastry from refrigerator.
+
+On lightly floured surface, cut pastry into 6 equal pieces.
+
+Flatten and evenly roll each piece to a circle the same diameter as the top of a casserole.
+
+Cut a cross, 1-1/2 inch across, in the center of each. Lightly moisten edges of casseroles with pastry brush and water.
+
+Place pastry circles on top of each casserole. Use knife tip to turn back the four corners in center of pastry, exposing filling. Firmly press edge of pastry to casserole with table fork. Place casseroles on large baking tray or rimmed cookie sheet. Bake for 30 minutes or until filling is bubbly. Remove from oven. Brush crusts with egg yolk mixture. Return to oven; bake for 5 minutes longer, or until pastry is golden-brown. 
+
+Makes 6 servings.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>CHICKEN:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Roasting chicken (OR two 2-1/2 Lb)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Onion, peeled and quartered</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Leafy celery tops</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Sprigs fresh parsley</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Peppercorns</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Bay leaf</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>PASTRY:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>All-purpose flour, unsifted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Shortening</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Ice water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>FILLING:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Small carrots, pared, cut</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>pk</unitOfMeasure>
+            <ingredientName>Frozen pearl onions (1/2 Lb)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Celery stalks, diagonal cut 1/4-inch long</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>All-purpose flour, unsifted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Poultry seasoning</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Egg yolk, beaten with 1 tbsp water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Sloppy Bombay Joes</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Begin by making the sauce: Warm the oil in a medium saucepan over medium heat, until it shimmers. Add the ginger, garlic and serrano pepper. Saute until the ginger and garlic brown a little. Add the garam masala and paprika and saute for 30 seconds. Stir in the tomato sauce and water. Bring to a boil, then reduce the heat and simmer, uncovered, until thickened, about 15 minutes. 
+
+Meanwhile for the turkey, in large skillet, warm 2 tablespoons of oil. When shimmering, add the pistachios and raisins. Cook until the raisins swell up and the pistachios toast slightly. Remove from the pan and set aside. 
+
+Return the pan to medium heat, add 1 to 2 more tablespoons of oil, and warm until shimmering. Add the cumin seeds and allow them to sizzle for about 10 seconds, or until some of the sizzling subsides. Stir in the onions and bell pepper; saute until softened and starting to brown. Add the serrano pepper. Saute for another couple of minutes, seasoning with a little salt. Stir in the turkey, breaking up the big lumps. Cook until opaque, about 5 minutes. 
+
+Meanwhile, your sauce should be ready. Pour the sauce into the skillet with the turkey. Stir and bring to a boil, then lower the heat and simmer until the mixture has thickened slightly, about 10 minutes. 
+
+Once the turkey is cooked and the sauce has thickened a little, remove the serrano pepper (unless you want to eat it whole, like my Dad does!). Add the honey, half-and-half, pistachios and raisins. Stir through and taste for seasoning. Before serving, garnish with fresh cilantro. 
+
+Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) and enjoy!</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Sauce:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp.</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>minced ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>cloves</unitOfMeasure>
+            <ingredientName>garlic, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>serrano chile, seeded and finely minced (save the other half for the turkey)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>garam masala</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>paprika</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>can</unitOfMeasure>
+            <ingredientName>Tomato sauce (15-oz)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Turkey:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>Shelled pistachios, small handful, about 1/4 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>Raisins, small handful, about 1/4 cup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>cumin seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>large</unitOfMeasure>
+            <ingredientName>white onion, finely diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>Each</unitOfMeasure>
+            <ingredientName>red bell pepper, seeds and membrane removed, finely diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>serrano chile, seeds intact (don't chop it up unless you like things spicy!)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pound</unitOfMeasure>
+            <ingredientName>ground turkey</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>honey</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>half-and-half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>Small handful chopped fresh cilantro (soft stems included)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>each</unitOfMeasure>
+            <ingredientName>hamburger buns</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

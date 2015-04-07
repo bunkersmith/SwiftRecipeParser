@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Shrimp Gumbo</name>
+    <indexCharacter>S</indexCharacter>
+    <notes>Preheat oven to 350 degrees</notes>
+    <servings>4</servings>
+    <instructions>Preheat the oven to 350 degrees F.
+
+Place the vegetable oil and flour into a 5 to 6-quart cast iron Dutch oven and whisk together to combine. Place on the middle shelf of the oven, uncovered, and bake for 1-1/2 hours, whisking 2 to 3 times throughout the cooking process.
+
+While the roux is baking, de-head, peel and devein the shrimp. Place the shrimp in a bowl and set in the refrigerator. Place the heads and shells in a 4-quart saucepan along with the 2 quarts of water, set over high heat and bring to a boil. Decrease the heat to low and simmer for 1 hour or until the liquid has reduced to 1-quart. Remove from the heat and strain the liquid into a container, discarding the solids.
+
+Once the roux is done, carefully remove it from the oven and set over medium-high heat. Gently add the onions, celery, green peppers and garlic and cook, moving constantly for 7 to 8 minutes or until the onions begin to turn translucent. Add the tomatoes, salt, black pepper, thyme, cayenne pepper, and bay leaves and stir to combine. Gradually add the shrimp broth while whisking continually. Decrease the heat to low, cover and cook for 35 minutes. Turn off the heat, add the shrimp and sausage and stir to combine. Add the file powder while stirring constantly. Cover and allow to sit for 10 minutes prior to serving. Serve over rice.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>raw, whole, head-on medium-sized (31-50 count) shrimp</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>qt</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>diced onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>diced celery</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>diced green peppers</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>peeled, seeded and chopped tomato</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh thyme, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>cayenne pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bay leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>andouille sausage, cut into 1/4-inch pieces and browned</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>file powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

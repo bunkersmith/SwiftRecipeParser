@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>String Bean Stir Fry</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Trim the ends of the beans and cut into 1 inch pieces. Remove seeds from the chili pepper and dice. Discard seeds. Grate the zest (yellow part) from the lemon rind. Grate the ginger, discarding the stringy part that will come from grating it. Heat the oil in a skillet. Add the diced chili, ginger and lemon zest. Sauté for one minute. Add the coconut milk and bring to a boil. Add the green beans and toss to coat. Cook over medium high heat until crisp-tender, about five minutes. It is better to undercook this dish, to avoid soggy beans. When beans are almost cooked, add 2 tablespoons lemon juice. Finish cooking and serve warm.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Green Beans</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>Chili Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Lemon, For Zest And 2 Tbsp Juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>One Inch Piece Of Fresh Ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Vegetable Oil, (canola Or Peanut)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Coconut Milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

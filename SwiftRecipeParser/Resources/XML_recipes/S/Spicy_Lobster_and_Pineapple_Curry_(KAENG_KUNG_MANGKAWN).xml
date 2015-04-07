@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Spicy Lobster and Pineapple Curry (KAENG KUNG MANGKAWN)</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>EVEN THOUGH THIS RED CURRY IS EXPENSIVE BECAUSE OF THE LOBSTER, IT IS EXCELLENT FOR SPECIAL OCCASIONS. YOU CAN USE LARGE PRAWNS OR CRAB HALVES IF YOU LIKE. ALSO, YOU CAN MAKE THE SAUCE AND SERVE IT WITH BARBCUED LOBSTER HALVES.. 
+
+PUT the coconut cream in a wok or sauced and simmer over a medium heat for about 5 minutes, or until the cream separates and a layer of oil forms on the surface. Stir the cream if it starts to brown around the edges. 
+
+ADD the curry paste, stir well to combine and cook until fragrant. Add the fish sauce and sugar and stir to combine. Cook for 4 to 5 minutes, stirring constantly. The mixture should darken. 
+
+STIR in the coconut milk and the pineapple. Simmer for 6 to 8 minutes to soften the pineapple. Add the lobster tail meat, kaffir lime leaves, tamarind puree and basil leaves. Cook for another 5 to 6 minutes until the lobster is firm. Serve with basil leaves and sliced chilli on top.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>coconut cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>red curry paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>palm sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>C</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>7</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>fresh pineapple, cut into bite-sized wedges</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>lobster tail meat</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>kaffir lime leaves, 2 roughly torn and 1 shredded</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>tamarind puree</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>C</unitOfMeasure>
+            <ingredientName>Thai sweet basil leaves, plus some for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>red chilli, finely sliced, for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

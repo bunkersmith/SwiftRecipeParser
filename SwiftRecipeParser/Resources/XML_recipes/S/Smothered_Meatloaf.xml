@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Smothered Meatloaf</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place potatoes in the bottom of a 5-quart slow cooker. 
+
+In a large bowl, combine ground beef, ground pork, shake and bake, onion soup mix, sliced mushrooms, and egg. Set aside. 
+
+In a small bowl, stir together 1/2 cup Cheddar soup and evaporated milk. Add to meat mixture. Using a wooden spoon or clean hands, mix thoroughly and form into a loaf. Place in slow cooker on top of the potatoes. Make sure meatloaf does not touch the sides of the slow cooker. 
+
+Stir together remaining cheddar soup with cream of mushroom soup. Pour over meatloaf. Top with onions and mushrooms. 
+
+Cover and cook on HIGH setting for 1 hour. Reduce the temperature to LOW setting and cook for an additional 5 to 6 hours.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Potatoes O'Brien (recommended: Ore-Ida)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>lean ground beef</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>ground pork</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5-2/7</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>box Garlic Herb Shake and Bake (recommended: Kraft)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/10</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>envelope Beefy Onion Soup Mix (recommended: Lipton)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4-1/2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>jar Sliced Mushrooms, drained (recommended: Green Giant)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Egg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>can condensed Cheddar soup, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>evaporated milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>can condensed cream of mushroom soup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>onion, sliced thin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>package sliced fresh mushrooms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

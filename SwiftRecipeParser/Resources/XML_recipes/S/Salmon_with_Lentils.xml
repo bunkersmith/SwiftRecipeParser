@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Salmon with Lentils</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place the lentils in a heat-proof bowl and cover with boiling water. Set aside for 15 minutes, then drain. 
+
+Meanwhile, heat the oil in a saute pan, add the onions, leeks, thyme, salt, and pepper and cook over medium heat for 10 minutes, until the onions are translucent. Add the garlic and cook for 2 more minutes. Add the drained lentils, celery, carrots, chicken stock, and tomato paste. Cover and simmer over low heat for 20 minutes, until the lentils are tender. Add the vinegar and season, to taste. 
+
+Preheat the oven to 450 degrees F. 
+
+For the salmon, heat a dry oven-proof saute pan over high heat for 4 minutes. Meanwhile, rub both sides of the salmon fillets with olive oil and season the tops very liberally with salt and pepper. When the pan is very hot, place the salmon fillets seasoning-sides down in the pan and cook over medium heat without moving them for 2 minutes, until very browned. Turn the fillets and place the pan in the oven for 5 to 7 minutes, until the salmon is cooked rare. Spoon a mound of lentils on each plate and place a salmon fillet on top. Serve hot.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>French green lentils (lentilles du Puy)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>good olive oil, plus extra for salmon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped yellow onions</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped leeks, white and light green parts only</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh thyme leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>minced fresh garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped celery (4 stalks)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped carrots (3 carrots)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>good canned chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>tomato paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>good red wine vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>(8-ounce) center-cut salmon fillets, skin removed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

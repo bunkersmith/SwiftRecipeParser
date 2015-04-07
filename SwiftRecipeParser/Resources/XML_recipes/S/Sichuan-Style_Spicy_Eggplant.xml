@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Sichuan-Style Spicy Eggplant</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>PEEL the eggplants and trim off the ends. Cut the eggplants in half lengthways and cut each half into strips 3/4 inch thick. Cut the strips into 2 inch lengths. Place the eggplant in a bowl, add the salt and toss lightly, then set aside for 1 hour. Pour off any water that has accumulated. 
+
+ARRANGE the eggplant on a heatproof plate and place in a steamer. Cover and steam over simmering water in a wok for 20 minutes, or until tender. Combine the remaining ingredients in a bowl, then pour the sauce over the eggplant, tossing lightly to coat. 
+
+SERVES 6</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>18</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Chinese eggplants (aubergines) or thin eggplants</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>light soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Shaoxing rice wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>roasted sesame oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>clear rice vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>spring onion (scallion), chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>chilli bean paste (toban jang)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Sticky Rice</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Rice cooked for sushi should be slightly harder in texture than for other dishes. You will need approximately one cup of cooked rice for each roll. It is easier and better to make too much rice than too little. 
+
+Most recipes call for rinsing the raw rice until the water runs clear, but I often neglect this. The reason it is rinsed first is to remove talc from the rice. Most rice seems to be coated now with some sort of cereal starch, rather than talc, so rinsing could be omitted. They also suggest letting the rinsed rice drain in a colander, or zaru, for 30-60 minutes. It's up to you. Do not use instant rice, converted rice, or brown rice.The rice you use should be short-grained rice, preferably Cal-Rose. 
+
+A fairly consistent recipe is to use equal amounts of rice and water, which will make the same number of cups of rice as the total of the rice and water. Another book mentions adding water until it is one inch above the rice, but I would go with the one-to-one ratio. The rice and water are brought to a quick boil, boiled for 1 minute, covered, simmered for 20 minutes, and let stand for 10 minutes after removing from the heat. 
+
+Put the hot rice in a large bowl and pour sushi vinegar evenly over the surface of the rice, mixing it into the rice with quick cutting strokes. You should use one tablespoon of vinegar per cup of rice. Fan the rice at the same time to cool the rice quickly. What I often do is pour the vinegar into the pan and stir it in, then spread the rice out on aluminum foil on a cookie sheet to cool.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Short-grained rice, preferably Cal-Rose</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Sushi Vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

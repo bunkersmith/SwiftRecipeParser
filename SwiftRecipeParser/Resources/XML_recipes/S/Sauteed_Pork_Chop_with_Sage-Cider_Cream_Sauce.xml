@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Sauteed Pork Chop with Sage-Cider Cream Sauce</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Pat chop dry and season with salt and pepper. Heat oil in an 8- to 10-inch heavy skillet over moderately high heat until hot but not smoking, then brown chop, turning over once, 5 to 6 minutes total. Transfer with tongs to a plate. Pour off all but 1 teaspoon fat from skillet and reduce heat to moderate, then cook onion, stirring occasionally, until softened and golden brown, 2 to 4 minutes. Add vinegar and boil until liquid is evaporated, about 3 seconds. Return chop to skillet along with any juices accumulated on plate, then add water, cream, and sage and simmer, covered, without turning, until thermometer inserted horizontally into center of chop (avoid bone) registers 150°F, 5 to 6 minutes. Transfer chop to a clean plate, then simmer sauce, uncovered, stirring, until liquid is reduced to about 3 tablespoons, 1 to 2 minutes. Stir in parsley and salt and pepper to taste. Spoon sauce over chop.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>(1-inch-thick) Rib Pork Chop</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Extra-virgin Olive Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Finely Chopped Onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Cider Vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Heavy Cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Finely Chopped Fresh Sage</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Finely Chopped Fresh Parsley</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

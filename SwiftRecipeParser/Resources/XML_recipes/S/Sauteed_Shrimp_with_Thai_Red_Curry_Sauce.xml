@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Sauteed Shrimp with Thai Red Curry Sauce</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a large saute pan, over high heat combine the oil and butter. Saute the shrimp until they are just pink, about 3 to 4 minutes, and season with salt and pepper. To serve, place 1/4 cup of the Thai Spiced Eggplant in the center of a plate. Arrange 3 of the sauteed shrimp on top and nap with 1/4 cup of the sauce. Garnish with chiffonade of basil leaves.
+
+In a medium saucepan, over high heat, add the peanut oil and stir fry the ginger, lemon grass and galangal. Cook until glossy and aromatic, stirring constantly, about 2 minutes. Add the Thai chiles and stir-fry another 30 seconds. Add the cumin, paprika, red Thai curry paste and tomato. Cook another 1 to 2 minutes, stirring constantly. Deglaze the saucepan with coconut milk and bring mixture to a boil. Lower heat to a simmer, add the lime juice, fish sauce, lime leaves and basil. Allow to simmer for 10 minutes and reduce slightly.
+
+Season, to taste, with salt and sugar. Remove from heat and steep for 20 minutes. Strain and use as needed.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>cooking oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large shrimp</ingredientName>
+            <processingInstructions> peeled, deveined, tail on</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and freshly ground pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Basil leaves</ingredientName>
+            <processingInstructions> chiffonade</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>peanut oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>inch</unitOfMeasure>
+            <ingredientName>ginger</ingredientName>
+            <processingInstructions> skin on, sliced and smashed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>large</unitOfMeasure>
+            <ingredientName>lemon grass</ingredientName>
+            <processingInstructions> white part only, about 4-inch piece, smashed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>inch</unitOfMeasure>
+            <ingredientName>galangal</ingredientName>
+            <processingInstructions> peeled and chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dried red Thai chiles</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <ingredientName>cumin powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>sweet paprika</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <ingredientName>red Thai curry paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>tomato concassee</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>unsweetened coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>Kaffir lime leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>Thai basil leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and sugar</ingredientName>
+            <processingInstructions> to taste</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

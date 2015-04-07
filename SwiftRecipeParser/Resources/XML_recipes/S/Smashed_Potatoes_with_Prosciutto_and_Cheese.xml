@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Smashed Potatoes with Prosciutto and Cheese</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Place potatoes in a pot, cover them with water, then bring water up to a boil; salt it and cook potatoes until fork-tender, 10 to 12 minutes or so. 
+
+Drain potatoes and add them back to warm pot. Add half of the milk sauce to potatoes with prosciutto and 1/2 cup of parmesan cheese, a couple of handfuls. Smash the potatoes to desired consistency and season with salt and pepper to taste.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>russet potatoes, peeled and chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>prosciutto, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated Parmigiano-Reggiano</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Milk sauce from Veal and Sage Meatloaf</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Spicy Shrimp and Bok Choy Noodle Bowl</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Heat a medium soup pot over medium-high heat. Add vegetable oil, 3 turns of the pan, crushed red pepper flakes, garlic, ginger, mushrooms, and bok choy, then season with salt and pepper. Add chicken broth and seafood stock or clam juice. Put a lid on the pot and bring soup to a boil. 
+
+Add shrimp and noodles and cook 3 minutes. Add in scallions and cook 2 minutes, then turn off soup and let it sit 2 to 3 minutes more. Adjust salt and serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>vegetable oil, 3 turns of the pan</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>crushed red pepper flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>ginger root, peeled and cut into very thin matchsticks or grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>shiitake mushroom caps, sliced, a couple of cups</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>bok choy, trimmed and cut into 3-inch pieces, then cut sticks lengthwise</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>qt</unitOfMeasure>
+            <ingredientName>chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>seafood stock, available on soup aisle or, 1 cup clam juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>medium peeled and deveined shrimp</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>vermicelli (thin spaghetti)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>scallions, cut into 3 inch pieces, then shredded lengthwise into thin sticks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
