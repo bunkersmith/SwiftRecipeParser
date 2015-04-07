@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Orange Beef</name>
+    <indexCharacter>O</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Marinate the beef with baking soda in the refrigerator for 8 hours or, preferably, overnight. After marinating, wash thoroughly, twice, with cold water. Drain and dry with paper towels. Place the beef in a bowl, add the egg white, and mix well until the beef is coated. Add the wine, white pepper, 1 tablespoon peanut oil, and cornstarch, mixing with your hand each time and ingredient is added. Allow to rest for 1 hour, refrigerated. There should be no residue. 
+
+In a bowl, combine the sauce ingredients and set aside. 
+
+Heat a wok over high heat for 1 minute. Add the 3 1/2 cups peanut oil and heat to 400 degrees F. Place the beef strips, one at a time, in the oil and cook for 1 1/2 minutes, loosening the beef with a spatula. Remove with a strainer and drain. Heat the oil again to 425 degrees F. Place the beef strips again in the oil and cook for 2 minutes, until the beef becomes crisp. Remove and allow to drain. 
+
+Drain off all but 1 tablespoon oil from the wok and heat over high heat for 20 seconds. Add the dried chilies, stir, and cook until darkened. Add the ginger and garlic and stir briefly. Add the fresh chili and orange peel and stir briefly. Add the scallions, and mix well. Add the beef and cook, stirring, for 45 seconds. Make a well in the center of the mixture, stir the sauce mixture, and pour in. Mix well until the sauce is absorbed and the beef acquires a shiny coating. Remove to a serving dish and serve, garnished with the orange slices.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>thick flank steak, weighed after trimming, cut into strips 2-1/2" by 1/4"</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>baking soda</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>egg white, lightly beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Shao-Hsing wine or dry sherry</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pinch freshly ground white pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>peanut oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>cornstarch</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For the sauce:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>dark soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>sesame oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Chinese white rice vinegar or distilled vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Chicken Stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pinch freshly ground white pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>15-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>peanut oil, to deep-fry the beef</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>sm</unitOfMeasure>
+            <ingredientName>dried chilies</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh ginger, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>fresh Thai chili, minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>fresh orange peel, most of pith removed and cut into 1/2-by 1/8-inch pieces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>scallions, trimmed and cut into 2-inch sections</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>slices</unitOfMeasure>
+            <ingredientName>fresh orange</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

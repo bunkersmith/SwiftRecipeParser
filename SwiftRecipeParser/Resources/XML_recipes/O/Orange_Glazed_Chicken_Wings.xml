@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Orange Glazed Chicken Wings</name>
+    <indexCharacter>O</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place a 6-quart saucepan with a steamer basket and 1 inch of water in the bottom, over high heat, cover and bring to a boil. 
+
+Remove the tips of the wings and discard or save for making stock. Using kitchen shears, or a knife, separate the wings at the joint. Fold the joint tightly together and slit with a knife to begin the separation. Place the wings into the steamer basket, cover, reduce the heat to medium and steam for 10 minutes. Remove the wings from the basket and carefully pat dry. Lay the wings out on a cooling rack set in a half sheet pan lined with paper towels and place in the refrigerator for 1 hour. 
+
+Preheat the oven to 425 degrees F. 
+
+Replace the paper towels with parchment paper. Roast on the middle rack of the oven for 20 minutes. Turn the wings over and cook another 20 minutes or until meat is cooked through and the skin is golden brown. 
+
+During the last 20 minutes of cooking the chicken, place the orange juice concentrate, hoisin sauce, honey, soy sauce, rice wine vinegar and red pepper flakes into a small saucepan, stir to combine and bring to a simmer over medium-high heat. Reduce the mixture to about 1/2 cup, approximately 5 to 10 minutes. Remove from the heat and allow to cool at least 5 minutes. 
+
+Remove the wings from the oven and transfer to a large mixing bowl along with the glaze and toss to coat. Serve warm.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>whole chicken wings</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>can frozen orange juice concentrate</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>hoisin sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>honey</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>rice wine vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>crushed red pepper flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

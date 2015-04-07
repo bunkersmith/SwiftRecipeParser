@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Onion Balsamic Marmalade</name>
+    <indexCharacter>O</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Heat the butter in a medium heavy sauce pan over moderate heat until hot. Add the onion, cook stirring, 5 minutes. Sprinkle with 1 tablespoon of the sugar, and continue to cook until very soft and browned, about 8-10 minutes more. Add the vinegar, wine, cranberries and oregano sprig. Reduce heat and simmer until almost all the liquid has evaporated and onion mixture is glistening and syrupy. (approx. 5 more minutes)
+
+Remove from heat.
+
+Stir in some pepper and salt to taste. Taste. If you would like the mixture with more sweetness stir in more sugar. 
+
+Makes 1 cup of marmalade</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>5-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>unsalted butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Spanish onion, chopped into medium dice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>balsamic vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>dry red wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh cranberries</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>sprigs fresh oregano</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and cracked pepper to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

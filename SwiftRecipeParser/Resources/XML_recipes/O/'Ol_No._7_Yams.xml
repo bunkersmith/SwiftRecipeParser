@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>'Ol No. 7 Yams</name>
+    <indexCharacter>O</indexCharacter>
+    <notes></notes>
+    <servings>12</servings>
+    <instructions>Preheat oven to 425 degrees F. Wash and dry sweet potatoes and bake for 1 hour or until potatoes are soft to the touch. Remove from the oven and let cool slightly then remove skin from potatoes. Meanwhile, combine remaining ingredients in a saucepan over medium high heat; bring to a boil. Cook, stirring occasionally, until sauce is thick enough to coat the back of a wooden spoon, 10 minutes. Remove from heat. Slice the potatoes 1/2-inch thick into a medium casserole dish. Pour syrup over them and return to the oven. Bake until top is golden, approximately 20 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>5-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>sweet potatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>cinnamon stick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>nutmeg, freshly grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>bourbon (recommended: No. 7 Jack Daniels)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>long strip orange peel</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

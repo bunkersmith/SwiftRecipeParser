@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Onion_Blossoms</name>
+    <indexCharacter>O</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Whisk together beer, flour and seasonings; let sit on the counter for several hours. Fill a large cast iron Dutch oven with enough peanut oil to completely cover an onion by 1-inch. Heat the oil to 350 degrees F over medium heat. Slice top tip of onions off, but do not disturb the root end and gently peel off outer skin. With a paring knife, starting 1/2- inch from the bottom of the onion, slice down to top of onion and continue at 1/4-inch intervals until onion is sliced all the way around (like a mum flower). Gently shake each onion to open the "petals" more. Gently pick up onion and spoon batter onto onion ensuring every part is coated, then gently allow to drain slightly. Carefully place onion root side down into the pan of hot oil and allow it to cook until light brown in color, about 5 to 8 minutes. Remove onion with a slotted spoon and use a knife to pull apart petals that are stuck together. Place onion back into the oil but this time top side down. When the onion turns golden brown, about 5 minutes, remove it with a slotted spoon to paper towels to drain. Repeat with remaining onions. Shake onions with Cajun seasoning and serve with ranch dressing as a dipping sauce.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Peanut oil, for frying</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>onions</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Cajun seasoning, optional</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Ranch dressing, optional</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Beer Batter:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>beer</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pinch Cajun seasoning</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pinch salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
