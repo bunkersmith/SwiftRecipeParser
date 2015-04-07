@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>North Carolina Coleslaw</name>
+    <indexCharacter>N</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>1. Core the cabbage and remove the outside leaves. Cut the cabbage into chunks and finely chop it in a food processor. 
+
+2. Transfer the cabbage to a nonreactive mixing bowl and toss with the vinegar sauce. Taste for seasoning, adding vinegar sauce as necessary.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>sm head</unitOfMeasure>
+            <ingredientName>green or savory cabbage, about 2 lbs.</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>North Carolina Vinegar Sauce (see separate recipe)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

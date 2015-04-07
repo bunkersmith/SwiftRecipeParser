@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Nothin' to Fret about Apple Fritters</name>
+    <indexCharacter>N</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Heat 1-inch vegetable oil on moderate to medium high heat. If you wish to test the oil, add a 1-inch cube of bread to hot oil. If it turns deep golden brown in color in a count of 40, the oil is ready. Core apples with an apple corer. Cut into 1/4-inch thick slices across, forming apple rings. Sprinkle sliced apples with the juice of a wedge of lemon to prevent browning. Mix together pancake mix and water, season with nutmeg. Place confectioners' sugar in a sifter or a tea strainer. Place a piece of cardboard or brown paper sack on a work surface for draining fritters. Working in small batches of 5 to 6 slices, coat rings of apple in batter, and fry for 2 to 3 minutes, until evenly golden brown. Transfer to paper bag or towels to drain. When all the fritters are cooked, let oil cool before discarding. Top fritters with confectioners' sugar and transfer to a serving platter.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Vegetable Oil, For Frying</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Apples, Red or Golden Delicious, or 2 of Each</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Lemon Juice (1 Wedge Will Do)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Complete Pancake Mix, Any Brand</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Ground Nutmeg, Or Equivalent Of Freshly Grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Confectioners' Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

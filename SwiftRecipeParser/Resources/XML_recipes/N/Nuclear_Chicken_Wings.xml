@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Nuclear Chicken Wings</name>
+    <indexCharacter>N</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>These chicken wings are quite easy to prepare. Adjust the amount of Tabasco sauce and Habanero sauce to your own tastes. I recommend though that you just cool them by dipping them in the bleu cheese salad dressing rather than decreasing the hot sauces. Preheat oven to 375 degrees.* In a medium-sized mixing bowl combine vegetable oil, garlic powder, Tabasco sauce, habanero sauce, vinegar and brown sugar. Separate tips from wings. Place tips and wings on cookie sheet(s). Using a pastry brush, coat the wings with the sauce mixture.
+
+Sprinkle ground red pepper over wings and tips. Bake wings for 15 to 20 minutes or until browning has occurred. Arrange wings on leaf lettuce and serve with your favorite beverage. Dip wings in bleu cheese salad dressing for some cooling effect.
+
+NOTE: These wings can also be cooked on the barbecue. Wings should be grilled for the same amount of time over medium high heat coals.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>24</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Chicken Wings, Separated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Vegetable Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Garlic Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Habanero Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Tabasco Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Ground Red Pepper To Taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>White Vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Brown Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Bleu Cheese Salad Dressing</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Leaf Lettuce For Platter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
