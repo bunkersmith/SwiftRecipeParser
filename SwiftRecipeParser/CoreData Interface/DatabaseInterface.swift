@@ -12,7 +12,8 @@ import CoreData
 class DatabaseInterface: NSObject {
     private var context:NSManagedObjectContext!
     
-    init() {
+    override init() {
+        super.init()
         let databaseManager:DatabaseManager = DatabaseManager.instance;
         if NSThread.isMainThread() {
             context = databaseManager.returnMainManagedObjectContext()
@@ -26,14 +27,14 @@ class DatabaseInterface: NSObject {
     }
     
     func newManagedObjectOfType(managedObjectClassName:String) -> NSManagedObject {
-        let entityDescription:NSEntityDescription = NSEntityDescription.entityForName(managedObjectClassName, inManagedObjectContext: context)
+        let entityDescription:NSEntityDescription = NSEntityDescription.entityForName(managedObjectClassName, inManagedObjectContext: context)!
         
         return NSManagedObject(entity: entityDescription, insertIntoManagedObjectContext: context)
     }
     
     func saveContext() {
         var error:NSError?
-        if context {
+        if context != nil {
             if !context.save(&error) {
                 NSLog("Error saving context in DatabaseInterface.saveContext(): \(error)")
             }
@@ -43,16 +44,18 @@ class DatabaseInterface: NSObject {
         }
     }
     
-    func entitiesOfType(entityTypeName:String, fetchRequestChangeBlock:(inputFetchRequest:NSFetchRequest) -> NSFetchRequest) -> [AnyObject] {
+    func entitiesOfType(entityTypeName:String, fetchRequestChangeBlock:((inputFetchRequest:NSFetchRequest) -> NSFetchRequest)?) -> [AnyObject] {
         var fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
         
-        fetchRequest = fetchRequestChangeBlock(inputFetchRequest: fetchRequest)
+        if fetchRequestChangeBlock != nil {
+            fetchRequest = fetchRequestChangeBlock!(inputFetchRequest: fetchRequest)
+        }
         fetchRequest.returnsObjectsAsFaults = false
         
         var error:NSError?
-        var result:[AnyObject] = context.executeFetchRequest(fetchRequest, error: &error)
+        var result:[AnyObject] = context.executeFetchRequest(fetchRequest, error: &error)!
         
-        if error {
+        if error != nil {
             NSLog("entitiesOfType error = \(error)")
         }
         
@@ -62,17 +65,50 @@ class DatabaseInterface: NSObject {
     func countOfEntitiesOfType(entityTypeName:String, fetchRequestChangeBlock:((inputFetchRequest:NSFetchRequest) -> NSFetchRequest)?) -> Int {
         var fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
         
-        if fetchRequestChangeBlock {
+        if fetchRequestChangeBlock != nil {
             fetchRequest = fetchRequestChangeBlock!(inputFetchRequest: fetchRequest)
         }
         
         var error:NSError?
         var result:Int = context.countForFetchRequest(fetchRequest, error: &error)
         
-        if error {
+        if error != nil {
             NSLog("countOfEntitiesOfType error = \(error)")
         }
 
         return result
     }
+
+    func createFetchedResultsController(entityName:String, sortKey:String, secondarySortKey:String?, fetchRequestChangeBlock:((inputFetchRequest:NSFetchRequest) -> NSFetchRequest)?) -> NSFetchedResultsController {
+        var fetchedResultsController:NSFetchedResultsController
+        var fetchRequest:NSFetchRequest = NSFetchRequest(entityName: entityName)
+
+        if fetchRequestChangeBlock != nil {
+            fetchRequest = fetchRequestChangeBlock!(inputFetchRequest:fetchRequest)
+        }
+        
+        var sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: sortKey, ascending: true)
+        var sortDescriptors:Array<NSSortDescriptor>
+        if secondarySortKey != nil {
+            var secondarySortDescriptor:NSSortDescriptor = NSSortDescriptor(key: secondarySortKey!, ascending: true)
+            sortDescriptors = [sortDescriptor, secondarySortDescriptor]
+        }
+        else {
+            sortDescriptors = [sortDescriptor]
+        }
+        fetchRequest.sortDescriptors = sortDescriptors
+        
+        fetchRequest.fetchBatchSize = 30
+        fetchRequest.returnsObjectsAsFaults = false
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: sortKey, cacheName: nil)
+        
+        var error:NSError?
+        if !fetchedResultsController.performFetch(&error) {
+            NSLog("Error initializing fetchedResultsController for \(entityName): \(error)")
+        }
+        
+        return fetchedResultsController
+    }
+    
 }
