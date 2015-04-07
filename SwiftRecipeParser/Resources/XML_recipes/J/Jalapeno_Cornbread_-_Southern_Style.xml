@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Jalapeno Cornbread - Southern Style</name>
+    <indexCharacter>J</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Combine cornbread mix and milk in a mixing bowl. Add remaining ingredients in order. Pour into three greased 8-inch square baking pans, or one 9x13x2-inch baking pan and one 8-inch square baking pan. Bake at 350° for 35 to 40 minutes. This cornbread is delicious with chili or pinto beans. Jalapeno cornbread freezes well.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>buttermilk cornbread mix</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>7/8</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-2/3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs, beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chopped onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>cream style corn</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-2/3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>jalapeno peppers, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Mexican blend cheese, shredded</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>sl</unitOfMeasure>
+            <ingredientName>bacon, cooked and crumbled</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>chopped pimiento</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ds</unitOfMeasure>
+            <ingredientName>garlic powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

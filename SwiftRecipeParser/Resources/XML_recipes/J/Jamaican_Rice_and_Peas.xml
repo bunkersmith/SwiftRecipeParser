@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Jamaican Rice and Peas</name>
+    <indexCharacter>J</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Cook peas according to package directions. Put cooked peas into a large saucepan
+
+or pot. Add chopped garlic. Measure all liquids, including reserved pea liquid, coconut milk and water enough to make 2-1/4 cups. Add the 2-1/4 cups of liquid to the beans and garlic in the pot. Add rice, crushed green onion, thyme, salt and pepper to taste. Bring to a boil. Reduce heat. Cover and cook for about 20 minutes or until all liquid is absorbed.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>gungo or black-eyed peas, cooked and liquid reserved</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>garlic, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>unsweetened coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Water (enough to make 2-1/4 c. combined liquid)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>rice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green onions, crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>sprigs fresh thyme</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Coarse black pepper to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
