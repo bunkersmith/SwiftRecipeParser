@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Thai Beef, Potato and Peanut Curry</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Heat coconut milk in a large saucepan 
+
+2. Add beef and bring to a boil. Reduce heat and cook for 1 hour uncovered 
+
+3. Meanwhile, in a large pot, heat oil. Add curry paste and saute for 5 minutes. 
+
+4. Add coconut-beef mixture, potatoes, onions, fish sauce, tamarind water, and spices. Cook until vegetables are tender- about 15 minutes. 
+
+5. Add peas and peanuts and simmer for 2 minutes longer.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>14 fl. oz. cans coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>beef chuck cut in 2-inch squares</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>peanut oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>green or red curry paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>white potatoes  peeled and cut into sixths</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>onion  cut into eighths</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water mixed with 1 Tbsp. tamarind paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>ground cinnamon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>cardamom seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bay leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>peas</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>unsalted roasted peanuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

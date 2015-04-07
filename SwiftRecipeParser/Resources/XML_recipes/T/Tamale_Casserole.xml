@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Tamale Casserole</name>
+    <indexCharacter>T</indexCharacter>
+    <notes>Preheat oven to 400 degrees</notes>
+    <servings>4</servings>
+    <instructions>Preheat oven to 400 degrees and oil casserole dish (1 1/2 to 2 quart). In skillet, cook ground beef, onion and green peppers until meat loses its pink color. Pour off excess fat if necessary. Add chili powder, taco seasoning, salt, sugar, pepper, garlic and tomato sauce to meat mixture. Heat to boiling, stirring. Reduce heat and simmer 10 minutes; uncovered. Pour mixture into dish. Make up cornbread mixture. Pour over top of meat mixture. Bake 25-30 minutes, or until cornbread topping is beginning to brown. Garnish top with grated cheese and sliced, pitted ripe olives.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Ground Beef</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Med. Onion, Finely Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Sm. Green Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Chili Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Taco Seasoning</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt and Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Black Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Sm. Garlic Clove, Crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>cn</unitOfMeasure>
+            <ingredientName>(8 Oz. Size) Tomato Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Cornbread Batter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Grated Cheddar Cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sliced Pitted Black Olives</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

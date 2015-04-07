@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Taro Infused with Lemongrass and Ginger</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>10</servings>
+    <instructions>Boil the taro in water for 1 hour or until tender. In another saucepan, combine remaining ingredients over low heat. Cover and let steep while the taro cooks. Drain the taro and transfer to a mixing bowl. Pass the infused milk through a sieve to remove the solids and add to the bowl of taro. Mash the taro as you would potatoes. Season with salt and pepper, to taste.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>taro, peeled and cubed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>macadamia nuts, toasted and smashed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lemon grass stalk, split</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>piece ginger root</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>piece galangal root</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

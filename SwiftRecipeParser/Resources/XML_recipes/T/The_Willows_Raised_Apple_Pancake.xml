@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>The Willows Raised Apple Pancake</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Combine the flours, baking powder, salt, cinnamon, and nutmeg together in a bowl and mix together. Beat the egg yolks until foamy and add the buttermilk. Add the dry ingredients to the wet ones. Mix thoroughly to ensure that they are well incorporated. Add the lemon juice to the grated apple. Pour the batter into the apple mixture. Whip the egg whites to stiff peaks, and add sugar. Gently fold into the apple batter. Melt the butter in a 10 inch ovenproof non-stick frying pan. Pour in the batter and sprinkle with the cinnamon and sugar. Toss on the chopped walnuts and bake in oven for 20 minutes. Remove and dust with powdered sugar. Cut into wedges and serve immediately.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Oat Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Cake Flour (*cook's Note: Use Low-gluten, Which Keeps The Pancake From Getting Tough)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Baking Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Ground Cinnamon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Freshly Ground Nutmeg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Jumbo Eggs, Separated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Buttermilk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Lemon Juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Apples, Peeled And Grated (recommended: Golden Delicious)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Cinnamon, For Sprinkling</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Walnuts, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Powdered Sugar, For Sprinkling</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

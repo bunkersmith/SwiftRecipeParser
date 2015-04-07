@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Thumbprint Kisses</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Cream the butter and sugar together. Add the egg yolks and vanilla and mix well. Mix in the flour then knead in the finely chopped walnuts. Cover and chill dough for 1 hour. Preheat oven to 350 degrees F (175 degrees C). Roll chilled dough into 1 inch balls and place on ungreased cookie sheets. Make a thumbprint in the middle of each cookie. Bake at 350 degrees F (175 degrees C) for 12 to 15 minutes. In a small pan over medium heat melt the caramels and the light cream together. Stir until smooth. Spoon 1/2 teaspoon of the caramel into the thumbprint of each warm cookie then top with a chocolate kiss.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Packed Brown Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Egg Yolks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Vanilla Extract</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>All-purpose Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Finely Chopped Walnuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>20</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Individually Wrapped Caramels, Unwrapped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Light Cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>30</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Milk Chocolate Candy Kisses, Unwrapped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

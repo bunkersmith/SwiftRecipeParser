@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Tommy's Rice And Beans</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a large sauté pan, heat the oil over medium-high heat until hot but not smoking. Add the onion, and sauté, stirring occasionally, until transparent, 5 to 7 minutes. Add the garlic and roasted pepper, and sauté, stirring occasionally, for an additional 2 minutes. Add the black beans, vinegar, and Tabasco sauce. Bring the mixture to a boil; reduce the heat to low, cover, and simmer 5 minutes. Add the cilantro and rice; mix well. Season to taste with the salt and black pepper. Serve accompanied by additional hot pepper sauce.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Onion, Diced Small</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Minced Garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Roasted Red Bell Pepper, Thinly Sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>16-ounce Can Black Beans</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>White Vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>Dashes</unitOfMeasure>
+            <ingredientName>Tabasco Sauce Or Other Hot Red Pepper Sauce (can use up to 10 dashes)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Roughly Chopped Cilantro</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Cooked Long Grain Rice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt And Freshly Milled Black Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

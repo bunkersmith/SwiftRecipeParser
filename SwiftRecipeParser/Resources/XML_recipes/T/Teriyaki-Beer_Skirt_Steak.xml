@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Teriyaki-Beer Skirt Steak</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a zip-top bag, place skirt steak, beer, teriyaki sauce, brown sugar, and season mix. Push out air and seal. Shake to combine. Set aside. In another zip-top bag, add vegetables, oil, and vinegar. Push out air and seal. Shake to combine. Set aside. Preheat grill. Grill vegetables to desired tenderness, about 10 to 15 minutes. Remove from grill and set aside. Grill steak approximately 3 to 5 minutes per side for medium rare. Remove from grill and let rest for 5 minutes. Thinly slice steak at an angle. Serve meat and vegetables piled on Hawaiian sweet rolls.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>skirt steak</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Beer</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Teriyaki sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Black pepper season mix</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Red bell pepper, cut into 1/2-inch slices</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Green bell pepper, cut into 1/2-inch slices</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Sweet onions, cut into 1/2-inch slices</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Extra-virgin olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Balsamic vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Hawaiian sweet rolls</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

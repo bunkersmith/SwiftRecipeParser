@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Ten-Treasure Soup</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>REMOVE the stems from the cabbage and cut the leaves into 2 inch squares. Separate the hard cabbage pieces from the leafy ones. Heat a wok over high heat, add the oil and heat until very hot. Add the hard cabbage pieces and the garlic. Toss lightly over high heat, adding 1 tablespoon of the rice wine. Stir-fry for several minutes, then add the leafy cabbage pieces. Stir-fry for 1 minute, then add 4 tablespoons of the rice wine, the stock and half of the salt. Bring to the boil, then reduce the heat to low and cook for 30 minutes. Transfer to a clay pot or saucepan.
+
+CUT the pork across the grain into slices about 1/8 inch thick. Place the pork in a bowl, add the soy sauce and sesame oil, and toss lightly. Marinate in the fridge for 20 minutes.
+
+PEEL and devein the prawns, then place in a bowl with the ginger, remaining rice wine and salt and toss lightly. Marinate in the fridge for 20 minutes. Remove and discard the ginger.
+
+SOAK the bean thread noodles in hot water for 10 minutes, then drain and cut into 6 inch lengths. Soak the dried mushrooms in boiling water for 30 minutes, then drain and squeeze out any excess water. Remove and discard the stems.
+
+ARRANGE the pork slices, tofu, mushrooms, noodles and carrot in separate piles on top of the cabbage in the casserole, leaving some space in the centre for the prawns and spinach. Cover and cook over medium heat for 20 minutes. Arrange the prawns and spinach in the centre and sprinkle with the spring onion. Cover and cook for 5 minutes, or until the prawns are pink and cooked through. Season with salt if necessary. Serve directly from the pot.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>14</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Chinese cabbage</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, smashed with the flat side of a cleaver</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Shaoxing rice wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>9</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>center-cut pork loin, trimmed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>light soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>roasted sesame oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>prawns or large shrimp</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>slices</unitOfMeasure>
+            <ingredientName>ginger, smashed with the flat side of a cleaver</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>bean thread noodles</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dried Chinese mushrooms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>firm tofu, drained and cut into 1 inch squares</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>carrots, cut into 3/4 inch pieces</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>bunch</unitOfMeasure>
+            <ingredientName>baby English spinach leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>spring onions (scallions), green part only, cut diagonally into 1/2 inch lengths</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

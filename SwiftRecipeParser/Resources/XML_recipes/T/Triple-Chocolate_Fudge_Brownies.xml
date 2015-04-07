@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Triple-Chocolate Fudge Brownies</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In a metal bowl, set over a pan of barely simmering water melt the bittersweet chocolate and the unsweetened chocolate with the butter, stirring until the mixture is smooth, remove the bowl from the heat, and let the mixture cool until it is lukewarm. Stir in the sugar and the vanilla and add the eggs, 1 at a time, stirring well after each addition. Stir in the salt and the flour, stirring until the mixture is just combined, and stir in the chocolate chips. Pour the batter into a well-buttered and floured 13 by 9-inch baking pan, smooth the top, and bake the mixture in the middle of a preheated 350 degrees F. oven for 25 to 30 minutes, or until a tester comes out with crumbs adhering to it. Let the mixture cool completely in the pan on a rack and cut it into 24 bars.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Fine-quality Bittersweet Chocolate, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Unsweetened Chocolate, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>(1-1/2 Sticks) Unsalted Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Vanilla</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>All-purpose Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Semisweet Chocolate Chips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

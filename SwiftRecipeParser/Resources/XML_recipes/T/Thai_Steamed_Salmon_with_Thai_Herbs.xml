@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Thai Steamed Salmon with Thai Herbs</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>If you don't have a bamboo steamer, this dish is reason enough to buy one. Steaming is an age old method of cooking and the fish takes on the vibrant flavors of the herbs it is steamed with. The fish is placed in dishes of the sauce and then placed in the steamer to cook. If you have a single layered steamer, repeat the process in batches because overcrowding will result in under cooked fish. This recipe also works well with red snapper and ahi tuna. 
+
+In a bowl, combine shallots, garlic, chilies, fish sauce, sugar, lime juice, pepper and basil leaves, mix well to combine. Place the fish in a 2 deep dish plates and cover with the sauce mixture. 
+
+Place a bamboo steamer over 2"-3" water in a wok or frying pan. Bring the water to a boil and carefully place the dishes in the steamer, being careful not to burn yourself on the steam. Cover and steam the fish for 7-10 minutes, or until it flakes easily with a fork. Remove the dishes carefully from the steamer and transfer the fish and sauce to a serving platter.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>fresh salmon steaks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>shallots  finely minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves  finely minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red Thai chilies  cut into small rounds  (optional)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Fish Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>fresh lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh basil leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

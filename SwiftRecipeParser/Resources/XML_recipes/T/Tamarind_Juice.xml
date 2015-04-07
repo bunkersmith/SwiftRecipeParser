@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Tamarind Juice</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Concentrated tamarind pulp is sold in small blocks in Asian markets. To use the pulp to make tamarind juice, soak or boil the concentrated pulp in water and use the resulting liquid for cooking. A good standard proportion is 1 part tamarind pulp concentrate to 8 parts of water. (Example: 1/4 cup concentrated tamarind pulp with 2 cups of water). If you like a stronger flavor, reduce the amount of water. First, boil the concentrated pulp for 5 minutes or soak it in cold water for 1 hour. Work the mixture with your fingertips or spatula until soft, then strain in a strainer or a coffee filter to remove the pulp and extract the liquid. You may want to squeeze the pulp to extract more liquid. It is usually this liquid that you use for recipes. Measure out the amount of liquid in the recipe and refrigerate or freeze the remaining tamarind juice for future use.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Concentrated Tamarind Pulp</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Tarragon Chicken</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Remove skin from chicken by grasping it with paper towels and pulling it off. Mix all ingredients except heavy cream and flour in 4-1/2 qt or larger slow-cooker. Cover and cook on high 4 hours or low 7 hours until chicken is cooked through and onions are soft. Whisk heavy cream and flour in a small bowl until smooth. Stir in some hot liquid from cooker; stir into liquid in cooker. Turn setting to high; cook 25 minutes until liquid thickens.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>chicken drumsticks and thighs (about 2-1/2 lb)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>onion, very thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>cloves</unitOfMeasure>
+            <ingredientName>garlic, peeled and thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>plum tomatoes, diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>tarragon vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>chopped fresh tarragon (or 2 tsp dried)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Dijon mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>heavy cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

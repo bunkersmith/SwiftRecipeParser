@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Thai Glazed Chicken Lettuce Wraps</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Thinly slice the chicken into strips and sprinkle with grill seasoning. Heat a large skillet to screaming hot. Add vegetable oil, then chicken. Cook chicken 2 minutes, stirring constantly. Add the ginger, garlic, peppers, cabbage and carrot mix and scallions and stir-fry another 2 minutes. Add plum sauce to glaze the mixture, toss 1 minute, then add basil and wilt leaves. Add fish sauce and turn to coat. Transfer cooked chicken and vegetables to a bowl. Place spoonfuls of chicken into a piece of lettuce with cucumber and fold lettuce over to eat, like small tacos.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Chicken Breast Meat, Cut Thin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Montreal Seasoning By McCormick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Vegetable Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Red Pepper Flakes (can use more)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Ginger Root, Minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>cloves</unitOfMeasure>
+            <ingredientName>Garlic, Minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Red Bell Pepper, Seeded And Very Thinly Sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Packaged Shredded Cabbage And Carrot Mix</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Scallions, Chopped On An Angle</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Plum Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Basil Leaves, Loosely Packed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Fish Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>head</unitOfMeasure>
+            <ingredientName>Iceberg Lettuce, Cut Into Half Again</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Seedless Cucumber, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

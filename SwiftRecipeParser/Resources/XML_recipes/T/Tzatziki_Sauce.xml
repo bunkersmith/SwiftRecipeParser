@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Tzatziki Sauce</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place the yogurt in a tea towel, gather up the edges, suspend over a bowl, and drain for 2 hours in the refrigerator. 
+
+Place the chopped cucumber in a tea towel and squeeze to remove the liquid; discard liquid. 
+
+In a food processor, blend the drained yogurt, cucumber, salt, garlic, olive oil, vinegar, and mint. Serve as a sauce for gyros. Store in the refrigerator in an airtight container for up to a week. 
+
+Yield: 1 1/2 cups</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>plain yogurt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>cucumber, peeled, seeded, and finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pinch kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, finely minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>red wine vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>mint leaves, finely minced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

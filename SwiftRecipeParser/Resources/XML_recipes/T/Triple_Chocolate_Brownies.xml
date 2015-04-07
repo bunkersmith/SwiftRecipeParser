@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Triple Chocolate Brownies</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat the oven to 350 degrees F. 
+
+Melt the butter and dark chocolate together in a large heavy based pan over a low heat. 
+
+In a bowl or large measuring jug, beat the eggs together with the superfine sugar and vanilla extract. 
+
+Allow the chocolate mixture to cool a little, then add the egg and sugar mixture and beat well. Fold in the flour and salt. Then stir in the white chocolate buttons or chips, and the semisweet chocolate buttons or chips. Beat to combine then scrape and pour the brownie mixture into the prepared tin. 
+
+Bake for about 25 minutes. You can see when the brownies are ready because the top dries to a slightly paler brown speckle, while the middle remains dark, dense and gooey. Even with such a big batch you do need to keep checking on it: the difference between gooey brownies and dry ones is only a few minutes. Remember, too, that they will continue to cook as they cool. 
+
+To serve, cut into squares while still warm and pile up on a large plate, sprinkling with confectioners' sugar pushed with a teaspoon through a small sieve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>sticks</unitOfMeasure>
+            <ingredientName>plus 2 tablespoons unsalted butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>best-quality bittersweet chocolate</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>superfine sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>pure vanilla extract</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>plus 2 tablespoons all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>white chocolate buttons, chips, or morsels</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>semisweet chocolate buttons, chips or morsels</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>(approximately) confectioners' sugar, for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Special equipment: Baking tin (approx. 11-1/4 inches by 9 inches by 2 inches), sides and base lined with baking parchment.</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

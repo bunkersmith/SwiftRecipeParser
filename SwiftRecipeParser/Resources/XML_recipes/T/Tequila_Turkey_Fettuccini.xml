@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Tequila Turkey Fettuccini</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>In saute pan with high heat, add olive oil, onions, jalapeno and saute until
+
+translucent. Add garlic and continue to saute for 2 minutes. Add turkey, lightly mix ingredients, careful not to break turkey up too much. Deglaze pan with tequila, pouring around the edge of the saute pan. Add cream, lemon juice and cilantro. Toss together, then add pasta, and toss ingredients while adding Parmesan cheese. Nest pasta on plate, pour sauce over pasta. Lay sprigs of cilantro over top, sprinkle tomatoes on top, and crack pepper around the rim of the plate.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red onion, cut into strips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>minced jalapeno</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>turkey breast, cooked, sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>tequila</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>fl</unitOfMeasure>
+            <ingredientName>heavy cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>fresh lemon juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>chopped cilantro leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>fettuccini pasta, cooked</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated Parmesan</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lime wedges, for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>cilantro, for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>diced Roma tomato, for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

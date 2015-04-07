@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Texas Oven-Roasted Beef Brisket</name>
+    <indexCharacter>T</indexCharacter>
+    <notes>Preheat oven to 350 degrees</notes>
+    <servings>10</servings>
+    <instructions>Preheat the oven to 350 degrees F. 
+
+Make a dry rub by combining chili powder, salt, garlic and onion powders, black pepper, sugar, dry mustard, and bay leaf. Season the raw brisket on both sides with the rub. Place in a roasting pan and roast, uncovered, for 1 hour. 
+
+Add beef stock and enough water to yield about 1/2 inch of liquid in the roasting pan. Lower oven to 300 degrees F, cover pan tightly and continue cooking for 3 hours, or until fork-tender. 
+
+Trim the fat and slice meat thinly across the grain. Top with juice from the pan.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>chili powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>garlic powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>onion powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>dry mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bay leaf, crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>beef brisket, trimmed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>beef stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

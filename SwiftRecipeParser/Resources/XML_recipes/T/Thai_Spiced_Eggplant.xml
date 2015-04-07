@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Thai Spiced Eggplant</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Preheat a grill. With a fork, poke eggplant several times. Rub with 1 tablespoon of peanut oil. Grill until completely tender. Remove pulp from the charred skin and roughly chop the pulp.
+
+In a medium saute pan, heat the remaining 1 tablespoon peanut oil and butter. Over medium heat, saute the jalapeno, garlic, ginger, and onion until glossy and aromatic, about 2 minutes. Add the tomato and eggplant pulp. Stir until well blended. Add the sugar, cumin, and coriander. Season, to taste, with salt and pepper. Cook over low heat for about 15 minutes, stirring occasionally.
+
+Taste and correct seasoning with salt and pepper. Turn off heat and stir in cilantro and Thai basil. Use as needed.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Globe eggplant</ingredientName>
+            <processingInstructions> or 4 Chinese eggplants</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>peanut oil</ingredientName>
+            <processingInstructions> divided</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>minced jalapeno</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>minced ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>minced white onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>tomato concasse</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>cumin powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>coriander powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>cilantro</ingredientName>
+            <processingInstructions> chiffonaded</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>Thai basil</ingredientName>
+            <processingInstructions> chiffonaded</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

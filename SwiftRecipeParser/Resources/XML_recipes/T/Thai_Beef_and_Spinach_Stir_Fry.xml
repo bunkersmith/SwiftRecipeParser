@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Thai Beef and Spinach Stir Fry</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Heat the wok on high sear setting, add 1 tablespoon oil and stir fry the garlic, ginger and onions. Cook for 2 minutes. Then add the red peppers. Cook for 2 minutes more, then remove.
+
+2. Add the remaining tablespoon of oil and stir fry the beef in small batches for 1 - 2 minutes.
+
+3. Remove when cooked and allow wok to reheat before stir frying next batch.
+
+4. Return all the ingredients to the wok.
+
+5. Reduce to a medium heat, setting 8, until spinach has softened.
+
+Serve with coconut rice.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>peanut oil, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>brown onions, sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>cloves</unitOfMeasure>
+            <ingredientName>garlic, finely sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>ginger, finely diced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red peppers, cut in strips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-3/4</quantity>
+            <unitOfMeasure>lbs</unitOfMeasure>
+            <ingredientName>lean beef strips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>baby spinach</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>mint leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>roasted cashews</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>sweet Thai chili sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>lemon grass, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

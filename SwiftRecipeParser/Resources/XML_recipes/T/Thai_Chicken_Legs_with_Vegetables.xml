@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Thai Chicken Legs with Vegetables</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Whisk coconut milk, flour and curry base in a 4-qt or larger slow-cooker until smooth. Whisk in garlic and salt. Add chicken, onion and carrots; stir to mix. Scatter bell pepper over top. Cover and cook on low 6 to 8 hours until chicken and vegetables are tender. Stir in frozen peas; cover and cook 5 minutes or until crisp-tender. Remove chicken and vegetables to serving bowl with a slotted spoon. Whisk sauce in cooker until smooth. Pour over chicken and vegetables. Sprinkle servings with mint.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cn</unitOfMeasure>
+            <ingredientName>(14 oz) lite or regular coconut milk (not cream of coconut)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Thai red curry base</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>chicken drumsticks and thighs (about 2-1/2 lb), skin and excess fat removed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>md</unitOfMeasure>
+            <ingredientName>onion, halved and thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>carrots, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>md</unitOfMeasure>
+            <ingredientName>bell pepper, quartered and sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>frozen sugar snap peas</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Garnish: fresh mint leaves, cut in strips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

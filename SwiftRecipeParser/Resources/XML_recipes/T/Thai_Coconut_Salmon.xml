@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Thai Coconut Salmon</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Heat coconut milk over low heat in a large skillet. Add curry paste and stir constantly. Simmer until paste is dissolved. Add fish sauce and sugar, then continue to cook for 1 minute.
+
+Place salmon into mixture and simmer while spooning mixture over fish. Cook for 8 minutes or until fish is cooked. Garnish with basil and serve over/with rice</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Can Coconut Milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Red Curry Paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Fish Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Fresh Salmon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Fresh Basil Leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
