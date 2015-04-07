@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Lean and Mean Texas Brisket</name>
+    <indexCharacter>L</indexCharacter>
+    <notes></notes>
+    <servings>10</servings>
+    <instructions>1. Rinse the brisket under cold running water and blot dry with paper towels. Combine all the ingredients for the rub in a small bowl and stir to mix. Rub this mixture onto the brisket on all sides. If you have the time, let the brisket stand in the refrigerator covered, for 4 to 6 hours, but you can certainly cook It right away. 
+
+2. Combine all the ingredients the for the mop sauce in a nonreactive bowl and stir until the salt and brown sugar are dissolved. 
+
+3. Set up the grill/smoker for indirect grilling. 
+
+4. When ready to cook, if using a charcoal grill, toss 1 cup wood chips on the coals. Place the brisket, fat-side up in an aluminum foil pan and place in the center of the hot grate, away from the heat and cover the grill. Grill the brisket until tender, about 6 hours (the cooking time will depend on the size of the brisket and the heat of the grill). Baste or mop the brisket with the mop sauce once an hour for the first 4 hours. If using a charcoal grill, you'll need to add 12 fresh coals and 1/2 cup wood chips per side every hour. To test for doneness use an instant-read meat thermometer: internal temperature should be about 190° 
+
+5. Transfer the brisket to a cutting board and let rest for 10 minutes. Thinly slice across the grain, using an electric knife or sharp carving knife. Transfer the sliced meat to plates or a platter and pour the pan juices on top.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>FOR THE BRISKET AND RUB</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>5 to 6 pound</unitOfMeasure>
+            <ingredientName>trimmed brisket, with a layer of fat at least 1/4 inch thick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>chili powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>coarse salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>garlic salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>onion powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>dried oregano</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>cayenne pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>FOR THE VINEGAR-BEER MOP SAUCE</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>distilled white vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>beer</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>garlic salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>hot red pepper flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Lemon Meringue Pie</name>
+    <indexCharacter>L</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Adjust the oven rack to the middle position. Preheat oven to 375 degrees F.
+
+Whisk egg yolks in medium size mixing bowl and set aside.
+
+In a medium saucepan, combine cornstarch, water, sugar, and salt. Whisk to combine. Turn heat on medium and, stirring frequently, bring mixture to a boil. Boil for 1 minute. Remove from heat and gradually, 1 whisk-full at a time, add hot mixture to egg yolks and stir until you have added at least half of the mixture.
+
+Return egg mixture to saucepan, turn heat down to low and cook, stirring constantly, for 1 more minute. Remove from heat and gently stir in butter, lemon juice, and zest until well combined. Pour mixture into pie shell and top with meringue while filling is still hot. Make sure meringue completely covers filling and that it goes right up to the edge of the crust. Bake for 10 to 12 minutes or until meringue is golden. Remove from oven and cool on a wire rack. Make sure pie is cooled completely before slicing.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>egg yolks, with whites reserved for meringue</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>cornstarch</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>lemon juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>lemon zest, finely grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>9-inch</unitOfMeasure>
+            <ingredientName>pie shell, pre-baked</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>recipe</unitOfMeasure>
+            <ingredientName>Meringue Topping (see separate recipe)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

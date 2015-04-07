@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Lobster Ravioli with Crabmeat Cream Sauce</name>
+    <indexCharacter>L</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Recipe courtesy Lilly's Gastronomia Italiana, Boston, MA
+
+For the Lobster Ravioli:
+In a large saute pan, add the butter and melt. Add the garlic and shallots and saute until golden brown. Add lobster, crab, and chives and saute 2 to 3 minutes. Add Cognac and reduce for 2 minutes. Remove from heat and cool for 30 minutes, until room temperature. Chop lobster mixture into small chunks. In a large bowl, combine lobster mixture and ricotta and mix well. Season with salt and pepper. Lay out the first piece of pasta dough on the table and place 1/4-ounce mounds of stuffing 2 inches apart. Using a pastry brush, brush egg white around each bit of stuffing, making the dough damp not wet. Take the second piece and cover the bottom piece with the stuffing. Press around each ravioli being careful not to squeeze the stuffing out. Using a round ravioli cutter, cut each ravioli round and put on a sheet pan sprinkled with semolina. Gently place ravioli in boiling water and cook for 8 to 10 minutes, or until al dente. 
+
+For the sauce: Using a 12-inch saute pan at medium heat, add butter, shallots, and saute until shallots are translucent. Add the crabmeat and sauté for about 2 to 3 minutes. Remove the saute pan from the burner and add Cognac then place pan back on the heat to cook off the alcohol. (Please beware: the Cognac will create a large flame.) Once the flame stops, add the tomato sauce and cream with salt and cook until it reduces half way and becomes creamy. Add the cooked ravioli to the sauce and let cook together for about 1 minute before serving. Garnish with chives. 
+
+Pasta Dough:
+Add all the ingredients into a large mixing bowl until all ingredients are blended. Place mixture on countertop and knead until the texture is smooth and well mixed. Separate the pasta dough into 2 equal pieces and put one piece aside. Flour the first piece, just enough to prevent sticking and roll out with a rolling pin to about 1/8th-inch thick. Repeat procedure with second piece making it as close to the shape as the first.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Lobster Ravioli:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Unsalted Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>Garlic, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Shallots, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Cooked Lobster Meat</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Cooked Snow Crabmeat</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Cognac</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Ricotta</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Chives, Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Egg White, Slightly Beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Crabmeat Cream Sauce:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Unsalted Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Chopped Shallots</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Whole Chunk Maryland Crabmeat</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Cognac</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Tomato Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Heavy Cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pasta Dough:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Durum Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Semolina</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Egg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Water, As Needed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Pinch Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Lemon Ice Cream</name>
+    <indexCharacter>L</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>In a mixing bowl combine lemon zest, sugar, eggs and lemon juice. Beat until mixture is light and fluffy. (be careful here, it doesn't really get light and fluffy and it spits out of the bowl if you use a hand mixer; I would just whisk it all together next time.) Whisk in 1 cup of half and half and cook custard, over medium heat, whisking constantly until mixture reaches the temperature of 170 degrees. Do not let boil.
+
+Pour the custard through a sieve and add the cream. Cover and chill at least 4 hours or preferably overnight.
+
+Freeze mixture in ice cream freezer according to unit's instructions. Spoon the mixture back into a lidded container and harden in the freezer at least 1 hour before serving.
+
+Yield: 1 quart</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <ingredientName>finely grated fresh lemon zest</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>fresh lemon juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>half and half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>heavy whipping cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
