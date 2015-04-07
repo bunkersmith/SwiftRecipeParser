@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Macaroni and Cheese Carbonara</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat oven to 350 degrees F. Butter the bottom and sides of a 3 quart baking dish and set aside. 
+
+Heat the oil in a large saute pan over medium heat. Add the pancetta and cook until golden brown on all sides. Remove with a slotted spoon to a plate lined with paper towels. 
+
+Add the garlic to the pan and cook until lightly golden brown. Whisk in the flour and cook for 1 to 2 minutes. Whisk in 6 cups of the hot milk, increase the heat to high and cook, whisking constantly until thickened, 3 to 5 minutes. Whisk in the eggs until incorporated and let cook for 1 to 2 minutes. Remove from the heat and whisk in the thyme, cayenne, and all of the cheese until completely melted, season with salt and pepper. If the mixture appears too thick, add some of the remaining milk 1/4 cup at a time. 
+
+Place the cooked macaroni in a large bowl, add the cheese sauce, reserved pancetta and parsley and stir until combined. Transfer the mixture to the prepared pan. Combine together additional Asiago, Cheddars, Fontina, and Parmesan in a bowl and sprinkle evenly over the top of the macaroni. Bake in the oven until heated through and the top is lightly golden brown, 12 to 15 minutes. Remove from the oven and let rest 10 minutes before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>piece</unitOfMeasure>
+            <ingredientName>pancetta (1 inch thick), cut into small dice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>whole milk, heated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>egg yolks, lightly whisked</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>fresh thyme leaves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>cayenne pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Asiago cheese (plus more for the top), freshly grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Irish white Cheddar (plus more for the top)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Mountain Valley Cheddar (plus more for the top)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Fontina cheese (plus more for the top), grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Parmigiano Reggiano (plus more for the top), freshly grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>elbow macaroni, cooked just under al dente</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>flat-leaf parsley, coarsely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Mojo Pork</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Puree first 9 ingredients a in a blender. Add oil gradually as machine continues to mix. Season with salt and pepper.
+
+2. Transfer ½ cup of the Mojo marinade into a small dish; cover and refrigerate. This can be reheated and used as a dipping sauce later.
+
+3. Place the pork tenderloins in a plastic sealable bag. Pour remaining mojo marinade over the pork. Seal bag and refrigerate overnight
+
+4. Preheat grill to 350ºF
+
+5. Remove pork from marinade. Remove excess marinade from the meat and season meat with salt and pepper. Oil grill and barbecue pork for 15-18 minutes, turning every 4 minutes to create, even golden browning
+
+6. Remove pork, tent with aluminium foil and leave to rest for 10 minutes before serving.
+
+7. Warm reserved Mojo and use as a dipping sauce</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh orange juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>onion, chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, coarsely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh cilantro, coarsely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>dried oregano</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>orange peel, grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>lime peel, grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>pork tenderloins</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

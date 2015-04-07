@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Massaman Curry Paste (KHREUANG KAENG MATSAMAN)</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>REMOVE the stems from the chillies and slit the chillies lengthways with a sharp knife. Discard the seeds and soak the chillies in hot water for 1 to 2 minutes of until soft. Drain and roughly chop. 
+
+USING a pestle and mortar, pound the chillies, lemon grass, galangal, cinnamon, cardamom seeds and nutmeg into a paste. Add the garlic, shallots and coriander roots. Pound and mix together. Add the shrimp paste and pound until the mixture is a smooth paste. 
+
+ALTERNATIVE: Use a food processor or blender to grind or blend all the ingredients into as smooth a paste as possible. Add cooking oil, as needed, to assist the blending. Use as required or keep in an airtight jar. The paste will keep for two weeks in the refrigerator and for two months in a freezer.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dried long red chilies, about 5 inches long</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lemon grass stalk, white part only, finely sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>inch</unitOfMeasure>
+            <ingredientName>galangal, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>inch</unitOfMeasure>
+            <ingredientName>cinnamon stick, crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cardamom seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>freshly grated nutmeg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Asian shallots, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Coriander (cilantro) roots, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>shrimp paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Mujadara</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Heat water in a large saucepan to a gentle boil. Add lentils, cover and boil gently for 10 minutes. Slice onions and cook in a separate saucepan with a generous amount of oil until they are golden brown. Spread bulgar evenly over lentils, cover and boil gently for another 10 minutes, or until the lentils are soft and the water is cooked off. Add a little water if the water cooks off before the second 10 minutes is up - the lentils should not stick to the pan. Combine the lentils and bulgar with the onions in a large bowl and salt to taste.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Lentils</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Bulgar Wheat</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Onions (3 cups cooked)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Cooking Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

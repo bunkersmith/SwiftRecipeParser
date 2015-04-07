@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Macaroni and Cheese - Southwestern Style</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Fill a large pot with water and bring to a boil. Add dry elbow pasta to boiling water and cook for about 10 minutes or until al dente, drain and reserve. 
+
+Preheat oven to 350 degrees F. 
+
+Heat olive oil in a large nonstick skillet over medium high heat. Add onion, bell pepper and jalapeno. Saute for 4 to 5 minutes or until tender. Add chicken, cilantro, salt, cumin, pepper and tomatoes; saute for 3 to 4 more minutes, remove from heat and set aside. 
+
+In a separate large pot over medium heat, melt butter. Remove from heat and whisk in flour, salt and pepper until smooth. Place back on medium-high heat, slowly whisk in milk and bring to a boil while continuously whisking. Reduce heat and stir in Cheddar, Monterey Jack, smoked Cheddar and cream cheese until melted and smooth. 
+
+Stir in cooked elbow noodles and chicken mixture. Pour mac and cheese mixture into a greased 3 quart casserole dish. In a medium bowl, combine the melted butter and bread crumbs. Toss to coat and sprinkle crumbs and pepitas over top of mac and cheese. Bake for 20 to 25 minutes or until cheese is bubbly and crumbs browned.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>dry elbow pasta noodles</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>extra-virgin olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>white onion, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>red bell pepper, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>jalapeno, with seeds and membrane removed, then finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>rotisserie chicken, cooked and shredded</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>fresh cilantro leaves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>14</quantity>
+            <unitOfMeasure>can</unitOfMeasure>
+            <ingredientName>tomatoes with green chiles, mild version</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>whole milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>medium Cheddar cheese, shredded</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Monterey Jack cheese, shredded</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>smoked Cheddar cheese, shredded</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>cream cheese, softened</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>butter, melted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>plain panko bread crumbs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>roasted salted pepitas (pumpkin seeds), coarsely ground</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

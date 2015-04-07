@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Mile High Dry Ribs</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>6</servings>
+    <instructions>Mix dry ingredients in a bowl. To prepare the ribs, remove the membrane from the back side of the ribs. Coat the entire racks of ribs with yellow mustard. Then coat the ribs with dry rub. Coat well, then shake off excess. Let the rib marinate in the cooler for 2 to 4 hours. Heat smoker to 210 degrees F. Put on the smoker for approximately 4 1/2 hours or until tender. Meat should pull off the bone, leaving bone clean.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chili powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>paprika</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>white pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>cayenne pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>garlic powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Yellow mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>slabs</unitOfMeasure>
+            <ingredientName>ribs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

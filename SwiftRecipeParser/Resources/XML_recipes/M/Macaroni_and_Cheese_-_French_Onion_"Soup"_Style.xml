@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Macaroni and Cheese - French Onion "Soup" Style</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat oven to 350 degrees F. 
+
+Topping: Combine bread crumbs and Parmesan cheese in a small bowl and set aside. 
+
+Bechamel Sauce: Melt 4 tablespoons of the butter over low heat in a medium saucepan. Add the flour and stir to combine. Stir constantly, for about 3 minutes. Increase heat to medium and whisk in the milk or half-and-half, adding a little at a time and cook until thickened, about 4 to 5 minutes. Lower heat, season with the salt and pepper and add Gruyere and mozzarella cheeses. Stir until cheese is melted and sauce is smooth. Set aside. 
+
+French Onion "Soup:" Heat 2 tablespoons of the butter and olive oil over medium-high heat in a large saucepan. Add onions, cover, and cook 10 to 15 minutes, stirring frequently. Remove cover, add garlic and honey, and continue to cook uncovered, stirring frequently, until onions are caramelized, about 10 to 15 minutes. Season with salt and a generous amount of pepper. Remove pot from heat and add sherry. Return to heat and stir to remove browned bits from bottom of pan. Reduce sherry by half, then add stock and thyme and cook until almost all liquid is evaporated. Remove from heat. 
+
+Grease a 3-quart baking dish or casserole with the last tablespoon of butter or spray with nonstick cooking spray. Combine cooked pasta with onion "soup" mixture and bechamel sauce, and stir well to combine. Transfer pasta to baking dish and sprinkle with bread crumb/Parmesan topping. 
+
+Bake until top is golden brown and cheese is bubbly, about 35 to 40 minutes. Remove from oven and let cool slightly before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Topping:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>bread crumbs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>grated Parmesan</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Bechamel Sauce:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>whole milk or half-and-half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Gruyere, grated</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>grated mozzarella</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>French Onion "Soup":</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>butter, plus 1 tablespoon (or nonstick spray)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>extra-virgin olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>white onions, thinly sliced</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, peeled and chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>honey</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>dry sherry</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>beef stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>sprigs</unitOfMeasure>
+            <ingredientName>fresh thyme leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>pasta, cooked al dente (elbow macaroni, ziti, or fusilli work well)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

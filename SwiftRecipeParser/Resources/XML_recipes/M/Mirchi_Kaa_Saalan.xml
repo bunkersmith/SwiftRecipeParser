@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Mirchi Kaa Saalan</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>6</servings>
+    <instructions>Dry roast all ingredients in spice powder. Grind into a powder in a food processor.
+
+Heat 3 tbsp oil in a large pan on high heat; Saute peppers until lightly blistered, about 18 minutes. Remove peppers and reserve. 
+
+Add 3 tbsp cup canola oil to pan; fry spice powder, stirring constantly, 2 minutes; add peanut flour and stir, scraping bottom. 
+
+Deglaze with 1 cup water, scraping bottom of pan, and cook stirring constantly 2 minutes (be careful not to burn flour). Add another cup of water and stir to combine water and spice mix; cook 3 minutes or until oil begins to form on top. Add coconut and stir; cook 4 to 5 minutes. 
+
+Add salt and tamarind paste and stir to combine, about 1 minute.
+
+Add 1 cup coconut milk and stir to combine. Add reserved peppers. Cover and cook on medium high about 5 minutes. Serve warm with rice and bread.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>canola oil, divided</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>hot peppers (such as habanero, jalapeno, and poblano)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>green bell peppers</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>sweet red and yellow bell peppers</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Spice Powder (see separate recipe)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>light roast peanut flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>dessicated coconut</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>tamarind paste (Tamco Brand)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>yogurt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Spice Powder (Yields 2/3 cup)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>peanuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>in</unitOfMeasure>
+            <ingredientName>cinnamon stick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>14</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>curry leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bay leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>black mustard seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>cumin seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>whole cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>green cardamom pods</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>whole black peppercorns</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>whole coriander seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>white sesame seeds</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>chaar magaz (melon seeds)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dried red chili peppers</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

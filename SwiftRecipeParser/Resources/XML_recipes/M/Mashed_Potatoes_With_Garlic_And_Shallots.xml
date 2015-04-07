@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Mashed Potatoes With Garlic And Shallots</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Preheat the oven to 425°F. In a bowl toss together the shallots, the head of garlic, 1 tablespoon of the oil, and salt and pepper to taste. Wrap the shallots and the garlic tightly in a foil package and roast them in the middle of the oven for 45 minutes. Unwrap the package carefully and let the shallots and the garlic cool until they can be handled. Peel the shallots and the garlic and purée them in a food processor. In a kettle combine the potatoes, peeled and cut into 1/2-inch pieces, with enough cold water to cover them by 2 inches, bring the water to a boil, and salt to taste. Simmer the potatoes for 15 minutes, or until they are very tender, drain them, reserving about 1 cup of the cooking water, and force them through a ricer or a food mill fitted with the coarse disk into a bowl. Beat in the garlic purée, the remaining 3 tablespoons oil, the butter, the salt and pepper to taste, and enough of the reserved cooking water to reach the desired consistency.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Shallots, Unpeeled</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lg</unitOfMeasure>
+            <ingredientName>Head Of Garlic, Outer Skin Peeled Leaving The Head Intact</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Olive Oil (preferably Extra-virgin)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Russet Potatoes (about 6 Large potatoes)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Unsalted Butter, Softened</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

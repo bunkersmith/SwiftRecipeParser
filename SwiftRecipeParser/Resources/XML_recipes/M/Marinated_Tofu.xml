@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Marinated Tofu</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place pressed tofu in a 2-cup container. Combine soy sauce and five-spice powder and pour over tofu. Cover and refrigerate for 30 minutes, turning once. Remove the tofu from the marinade and use immediately or store in the refrigerator for up to 2 to 3 days. 
+
+Yield: 6 ounces tofu</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>extra-firm tofu, not silken</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Chinese five-spice powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

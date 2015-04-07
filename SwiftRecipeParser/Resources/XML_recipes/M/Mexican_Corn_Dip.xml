@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Mexican Corn Dip</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Mix together and bake at 375 degrees for 30-40 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>cn</unitOfMeasure>
+            <ingredientName>Niblets Mexicorn, drained</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>4oz. Can Diced Green Chilies, drained</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Light Sour Cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Light Mayo</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>Cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4-1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Grated Cheddar Cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

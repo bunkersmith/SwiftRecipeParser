@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Meatloaf</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>Combine all ingredients and add 1 teaspoon salt; mix well. Shape mixture into a loaf in a 12x7-1/2x2-inch baking dish. Bake at 350 degrees about 1 hour and 15 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Ground Beef</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Medium Cracker Crumbs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>x</unitOfMeasure>
+            <ingredientName>Eggs, Beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Tomato Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Onion, Finely Chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ds</unitOfMeasure>
+            <ingredientName>Dried Thyme, Crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ds</unitOfMeasure>
+            <ingredientName>Dried Marjoram, Crushed</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

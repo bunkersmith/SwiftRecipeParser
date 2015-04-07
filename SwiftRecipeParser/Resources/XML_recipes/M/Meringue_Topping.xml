@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Meringue Topping</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place egg whites and cream of tartar in the bowl of a stand mixer fitted with the whisk attachment. Beat egg whites until soft peaks form and then gradually add sugar and continue beating until stiff peaks form, approximately 1 to 2 minutes. Use to top pie filling.
+
+Yield: topping for 1 (9-inch) pie</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>egg whites</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pinch</unitOfMeasure>
+            <ingredientName>cream of tartar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

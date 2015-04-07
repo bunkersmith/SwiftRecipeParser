@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Macadamia Nut Crusted Mahi Mahi</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat oven to 425 degrees F. In a medium bowl, stir together the nuts, panko, flour, and butter. Set aside. 
+
+Place a piece of aluminum foil on a baking sheet and brush it liberally with vegetable oil. Place the mahi mahi on the foil and sprinkle each fillet with salt and pepper on both sides. Bake for 5 minutes. Remove from the oven and brush each fillet with the coconut milk. Divide the nut mixture among the tops of the 4 fillets, patting the mixture to spread and adhere to the fillets. Return to the oven and bake for 5 to 10 minutes, or until the crust is golden brown. 
+
+Remove from the oven and allow to stand 10 minutes before serving.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>roasted macadamia nuts, coarsely ground</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>panko bread crumbs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>all-purpose flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>butter, melted</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Vegetable oil, for brushing foil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>7-oz</unitOfMeasure>
+            <ingredientName>mahi mahi fillets</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher salt and pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
