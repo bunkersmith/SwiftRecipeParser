@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Korean-style Filet Mignon</name>
+    <indexCharacter>K</indexCharacter>
+    <notes></notes>
+    <servings>2</servings>
+    <instructions>Preheat oven to 375 degrees F. Begin by preparing the Korean-style glaze. Combine the glaze ingredients and simmer gently over low heat for approximately 3 minutes, or until the sugar has dissolved. Season both sides of the filet mignon generously with salt and pepper. In a large heavy, ovenproof skillet, heat the olive oil over medium-high heat until almost smoking. Place the steaks in the hot pan and cook until well seared on 1 side, about 3 minutes. Turn the steaks over; there should be a nice crust on top. Then transfer the pan to the oven. Roast for 10 to 12 minutes until the steaks are cooked medium-rare (add 4 more minutes for medium). With 1 minute to go, brush steaks with the glaze. When done remove the steaks and brush again with remaining glaze. Transfer to a platter and cover loosely to let rest for 5 minutes and keep warm.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Korean-style Glaze:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>turbinado (raw) sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Sriracha (hot) sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>dark sesame oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>5-oz</unitOfMeasure>
+            <ingredientName>filet mignon steaks</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Kosher salt and freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>extra-virgin olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

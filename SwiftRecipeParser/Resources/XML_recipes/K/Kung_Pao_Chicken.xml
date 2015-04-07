@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Kung Pao Chicken</name>
+    <indexCharacter>K</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>KUNG PAO IS ONE OF THE MOST CLASSIC HOT-AND-SOUR SICHUANESE SAUCES, AND CAN BE STIR-FRIED WITH SEAFOOD, PORK OR VEGETABLES AS WELL AS CHICKEN. THE SEASONINGS ARE FRIED IN OIL OVER 
+
+HIGH HEAT, INTENSIFYING THE SPICINESS AND FLAVOURING THE OIL.
+
+CUT the chicken into 1 inch cubes. Place the cubes in a bowl, add 2 tablespoons of the soy sauce, 2 tablespoons of the rice wine, 1 teaspoon the sesame oil and 2 teaspoons of the cornstarch and toss lightly. Marinate in the fridge for at least 20 minutes.
+
+BLANCH the water chestnuts in a pan of boiling water, then refresh in cold water. Drain, pat dry and cut into thin slices.
+
+HEAT a wok over high heat, add 1 teaspoon of the oil and heat until very hot. Stir-fry the spinach, salt, 2 teaspoons of the garlic and 2 teaspoons of the rice wine, turning constantly, until the spinach is just becoming limp. Remove the spinach from the wok, arrange around the edge of a platter, cover and keep warm.
+
+REHEAT the wok over high heat, add 1 tablespoon of the oil and heat until very hot. Stir-fry half the chicken pieces, turning constantly, until the meat is cooked. Remove with a wire sieve or slotted spoon and drain. Repeat with 1 tablespoon of oil and the remaining chicken. Wipe out the pan.
+
+DRY-FRY the peanuts in the wok or a saucepan until browned.
+
+REHEAT the wok over high heat, add the remaining oil and heat until very hot. Stir-fry the spring onion, ginger, remaining garlic and the chili sauce for 10 seconds, or until fragrant. Add the sliced water chestnuts and stir-fry for 15 seconds or until heated through. Combine the sugar, black vinegar, chicken stock and remaining soy sauce, rice wine, sesame oil and cornstarch, add to the sauce and simmer until thickened. Add the cooked chicken and the peanuts. Toss lightly to coat with the sauce. Transfer to the center of the platter and serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>skinless chicken breast fillet</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>light soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Shaoxing rice wine</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>roasted sesame oll</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>cornstarch</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>peeled water chestnuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>baby English spinach leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>unsalted peanuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>scallion, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>ginger, finely chopped</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>chilli sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Chinese black rice vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

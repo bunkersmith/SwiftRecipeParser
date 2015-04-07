@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Kuay Tiaw Pad Thai</name>
+    <indexCharacter>K</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Mix all ingredients in a saucepan for about 60 minutes until it is well mixed and syrupy. Stir occasionally to prevent burning.
+
+You can buy premixed tamarind concentrate or make your own tamarind juice. Buy a package of compressed tamarind pulp at any Asian market, cut off 3 tablespoons of paste and soak in 1 1/2 cups of warm water for 20 minutes. Squeeze out the pulp and discard; the remaining liquid is tamarind juice. Store any leftover juice or noodle sauce in a tightly sealed container in the refrigerator or freezer.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>tamarind juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>palm sugar plus 3 tablespoons</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Key Lime Tarts</name>
+    <indexCharacter>K</indexCharacter>
+    <notes></notes>
+    <servings>8</servings>
+    <instructions>Preheat oven to 350 degrees F. Fill 2 (12-muffin) mini muffin tins with paper cups and spray cups with cooking spray. Place 1 Key Lime Cooler cookie in the bottom of the cup, flat side down. Prepare filling. Beat together cream cheese, egg, sugar, lime juice, and zest until well mixed. Fill the cups to the top. Bake for 10 to 12 minutes. Remove tarts to cool. When completely cool, fit a star tip in a pastry bag and fill with the whipped cream. Pipe the whipped cream on top of the tarts. Garnish with tiny mint leaves or lime zest.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>24</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Key Lime Cooler cookies</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>cream cheese, softened</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>egg</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>key lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ts</unitOfMeasure>
+            <ingredientName>lime zest</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Fresh sweetened whipped cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Mint leaves or lime zest, for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
