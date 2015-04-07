@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Yellow Chicken Curry With Peppercons (KAENG KARII KAI)</name>
+    <indexCharacter>Y</indexCharacter>
+    <notes>FRESH PEPPERCORNS HAVE A FRAGRANT, PUNGENT QUALITY THAT LIFTS THE FLAVOR OF ANY CURRY IN WHICH THEY ARE USED. YOU SHOULD BEWARE OF EATING A WHOLE SPRIG IN ONE GO THOUGH AS, JUST LIKE THE PEPPER THEY BECOME, THEY ARE EXTREMELY HOT.</notes>
+    <servings>4</servings>
+    <instructions>PUT the coconut cream in a wok or saucepan and
+simmer over a medium heat for about 5 minutes,
+or until the cream separates and a layer of oil
+forms on the surface. Stir the cream if it starts to
+brown around the edges.
+
+ADD the curry paste, stir well to combine and
+cook until fragrant. Add the fish sauce, palm sugar
+and turmeric and stir well. Cook for 2 to 3 minutes,
+stirring occasionally, until the mixture darkens.
+
+ADD the chicken to the pan and stir to coat all
+the pieces evenly in the spice mixture. Cook
+over a medium heat for 5 minutes, stirring
+occasionally and adding the coconut milk a
+tablespoon at a time to incorporate. Add the
+bamboo shoots, peppercorns, lime and basil
+leaves and cook for another 5 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>coconut cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>yellow curry paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <ingredientName>palm sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>turmeric</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>21</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>chicken thigh fillets</ingredientName>
+            <processingInstructions> cut into thin slices</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-3/4</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>bamboo shoots</ingredientName>
+            <processingInstructions> thinly sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>sprigs</unitOfMeasure>
+            <ingredientName>fresh green peppercorns</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>kaffir lime leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Thai sweet basil leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
