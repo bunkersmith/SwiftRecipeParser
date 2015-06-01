@@ -223,16 +223,12 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     func registerForNotifications() {
         let notificationCenter:NSNotificationCenter = NSNotificationCenter.defaultCenter()
-        notificationCenter.addObserver(self, selector: Selector("handleLoadNextRecipeNotification:"), name: "LoadNextRecipeNotification", object: nil)
-        notificationCenter.addObserver(self, selector: Selector("handleLoadPreviousRecipeNotification:"), name: "LoadPreviousRecipeNotification", object: nil)
         notificationCenter.addObserver(self, selector: Selector("handleRecipeProgressNotification:"), name: "RecipeProgressNotification", object: nil)
         notificationCenter.addObserver(self, selector: Selector("handleRecipeTableNeedsReloadNotification:"), name: "RecipeTableNeedsReloadNotification", object: nil)
     }
     
     func deregisterFromNotifications() {
         let notificationCenter:NSNotificationCenter = NSNotificationCenter.defaultCenter()
-        notificationCenter.removeObserver(self, name: "LoadNextRecipeNotification", object: nil)
-        notificationCenter.removeObserver(self, name: "LoadPreviousRecipeNotification", object: nil)
         notificationCenter.removeObserver(self, name: "RecipeProgressNotification", object: nil)
         notificationCenter.removeObserver(self, name: "RecipeTableNeedsReloadNotification", object: nil)
     }
@@ -244,7 +240,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         
         if (percentage != 0)
         {
-            NSLog("Progress percentage: %.0f", percentage.floatValue)
+            //NSLog("Progress percentage: %.0f", percentage.floatValue)
             dispatch_async(dispatch_get_main_queue(), {
                 self.updateProgressLabel(percentage.floatValue)
             })
@@ -255,102 +251,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     {
         tableView.reloadData();
     }
-    
-    func handleLoadNextRecipeNotification(notification:NSNotification) {
-        NSLog("TODO: Write RecipeMasterTableViewController:handleLoadNextRecipeNotification")
-/*
-        //NSLog(@"%s called with self.selectedSection = %i and self.selectedRow = %i", __PRETTY_FUNCTION__, self.selectedSection, self.selectedRow);
         
-        BOOL showNewRecipe = true;
-        
-        //NSArray *selectedSection;
-        NSInteger selectedSectionRowCount;
-        
-        //NSLog(@"self.selectedRow = %i", self.selectedRow);
-        //NSLog(@"self.selectedSection - 1 = %i", self.selectedSection - 1);
-        
-        selectedSectionRowCount = [self rowsInRecipeSection:self.selectedSection];
-        
-        //NSLog(@"[selectedSection count] - 1 = %i", [selectedSection count] - 1);
-        
-        if self.selectedRow < selectedSectionRowCount - 1 {
-            self.selectedRow++;
-            //NSLog(@"Updated self.selectedRow = %i", self.selectedRow);
-        }
-        else {
-            // getNextNonEmptySection will return the current section number if there are no non-empty sections past the current section
-            NSInteger newSectionNumber = [self getNextNonEmptySection:self.selectedSection];
-            
-            //NSLog(@"getNextNonEmptySection returned %i", newSectionNumber);
-            
-            if (newSectionNumber == self.selectedSection) {
-                showNewRecipe = false;
-            }
-            else {
-                self.selectedSection = newSectionNumber;
-                self.selectedRow = 0;
-            }
-            
-            //NSLog(@"self.selectedSection = %i after if (newSectionNumber == self.selectedSection)", self.selectedSection);
-        }
-        
-        if showNewRecipe {
-            NSIndexPath *realIndexPath = [NSIndexPath indexPathForRow:self.selectedRow inSection:self.selectedSection-1];
-            
-            //NSLog(@"self.selectedSection = %i after if (showNewRecipe)", self.selectedSection);
-            
-            Recipe *recipe = [fetchedResultsController objectAtIndexPath:realIndexPath];
-            
-            self.recipeDetailViewController.currentRecipeName = recipe.name;
-            
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"ReloadRecipeDetailViewNotification" object:self userInfo:nil];
-            
-            //NSLog(@"Recipe %@ Index = %i", recipeDetailViewController.currentRecipe.name, [firstRecipeInSection intValue] + self.selectedRow);
-        }
-*/
-    }
-    
-    func handleLoadPreviousRecipeNotification(notification:NSNotification) {
-        NSLog("TODO: Write RecipeMasterTableViewController:handleLoadPreviousRecipeNotification")
-/*
-        BOOL showNewRecipe = true;
-        
-        if self.selectedRow > 0 {
-            self.selectedRow--;
-        }
-        else
-        {
-            // getPreviousNonEmptySection will return the current section number if there are no non-empty sections before the current section
-            NSInteger newSectionNumber = [self getPreviousNonEmptySection:self.selectedSection];
-            
-            if newSectionNumber == self.selectedSection {
-                showNewRecipe = false;
-            }
-            else {
-                self.selectedSection = newSectionNumber;
-                
-                NSInteger selectedSectionRowCount = [self rowsInRecipeSection:self.selectedSection];
-                
-                self.selectedRow = selectedSectionRowCount - 1;
-            }
-        }
-        
-        if showNewRecipe {
-            NSIndexPath *realIndexPath = [NSIndexPath indexPathForRow:self.selectedRow inSection:self.selectedSection-1];
-            
-            //NSLog(@"self.selectedSection = %i after if (showNewRecipe)", self.selectedSection);
-            
-            Recipe *recipe = [fetchedResultsController objectAtIndexPath:realIndexPath];
-            
-            self.recipeDetailViewController.currentRecipeName = recipe.name;
-            
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"ReloadRecipeDetailViewNotification" object:self userInfo:nil];
-            
-            //NSLog(@"Recipe %@ Index = %i", recipeDetailViewController.currentRecipe.name, [firstRecipeInSection intValue] + self.selectedRow);
-        }
-*/
-    }
-    
     func updateProgressLabel(percentage:Float)
     {
         progressLabel.text = String(format:"Creating Recipe Database: %.0f%%", percentage)
