@@ -310,7 +310,6 @@
 		67A55ED41B1CFC60000F98C0 /* Rum_Chocolate_Mousse.xml in Resources */ = {isa = PBXBuildFile; fileRef = 67A55D611B1CFC60000F98C0 /* Rum_Chocolate_Mousse.xml */; };
 		67A55ED51B1CFC60000F98C0 /* Saigon_Sub.xml in Resources */ = {isa = PBXBuildFile; fileRef = 67A55D631B1CFC60000F98C0 /* Saigon_Sub.xml */; };
 		67A55ED61B1CFC60000F98C0 /* Salmon_with_Lentils.xml in Resources */ = {isa = PBXBuildFile; fileRef = 67A55D641B1CFC60000F98C0 /* Salmon_with_Lentils.xml */; };
-		67A55ED71B1CFC60000F98C0 /* Salsa_Stoup_with_Avocado_Smash_and_Double-Decker_Baked_Quesadillas.xml in Resources */ = {isa = PBXBuildFile; fileRef = 67A55D651B1CFC60000F98C0 /* Salsa_Stoup_with_Avocado_Smash_and_Double-Decker_Baked_Quesadillas.xml */; };
 		67A55ED81B1CFC60000F98C0 /* Sate_Daging_(Indonesian_Sate's).xml in Resources */ = {isa = PBXBuildFile; fileRef = 67A55D661B1CFC60000F98C0 /* Sate_Daging_(Indonesian_Sate's).xml */; };
 		67A55ED91B1CFC60000F98C0 /* Saturday_Night_Vidalia_Onions.xml in Resources */ = {isa = PBXBuildFile; fileRef = 67A55D671B1CFC60000F98C0 /* Saturday_Night_Vidalia_Onions.xml */; };
 		67A55EDA1B1CFC60000F98C0 /* Sausage_Chili.xml in Resources */ = {isa = PBXBuildFile; fileRef = 67A55D681B1CFC60000F98C0 /* Sausage_Chili.xml */; };
@@ -717,7 +716,6 @@
 		67A55D611B1CFC60000F98C0 /* Rum_Chocolate_Mousse.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Rum_Chocolate_Mousse.xml; sourceTree = "<group>"; };
 		67A55D631B1CFC60000F98C0 /* Saigon_Sub.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Saigon_Sub.xml; sourceTree = "<group>"; };
 		67A55D641B1CFC60000F98C0 /* Salmon_with_Lentils.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Salmon_with_Lentils.xml; sourceTree = "<group>"; };
-		67A55D651B1CFC60000F98C0 /* Salsa_Stoup_with_Avocado_Smash_and_Double-Decker_Baked_Quesadillas.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Salsa_Stoup_with_Avocado_Smash_and_Double-Decker_Baked_Quesadillas.xml"; sourceTree = "<group>"; };
 		67A55D661B1CFC60000F98C0 /* Sate_Daging_(Indonesian_Sate's).xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Sate_Daging_(Indonesian_Sate's).xml"; sourceTree = "<group>"; };
 		67A55D671B1CFC60000F98C0 /* Saturday_Night_Vidalia_Onions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Saturday_Night_Vidalia_Onions.xml; sourceTree = "<group>"; };
 		67A55D681B1CFC60000F98C0 /* Sausage_Chili.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Sausage_Chili.xml; sourceTree = "<group>"; };
@@ -1377,7 +1375,6 @@
 			children = (
 				67A55D631B1CFC60000F98C0 /* Saigon_Sub.xml */,
 				67A55D641B1CFC60000F98C0 /* Salmon_with_Lentils.xml */,
-				67A55D651B1CFC60000F98C0 /* Salsa_Stoup_with_Avocado_Smash_and_Double-Decker_Baked_Quesadillas.xml */,
 				67A55D661B1CFC60000F98C0 /* Sate_Daging_(Indonesian_Sate's).xml */,
 				67A55D671B1CFC60000F98C0 /* Saturday_Night_Vidalia_Onions.xml */,
 				67A55D681B1CFC60000F98C0 /* Sausage_Chili.xml */,
@@ -1770,7 +1767,6 @@
 				67A55EF01B1CFC60000F98C0 /* Spaghetti_and_Meat_Sauce_by_Alton_Brown.xml in Resources */,
 				67A55F211B1CFC60000F98C0 /* Veal_and_Sage_Meatloaf_with_Gorgonzola_Gravy.xml in Resources */,
 				67A55DF31B1CFC60000F98C0 /* Chicken_Cafreal.xml in Resources */,
-				67A55ED71B1CFC60000F98C0 /* Salsa_Stoup_with_Avocado_Smash_and_Double-Decker_Baked_Quesadillas.xml in Resources */,
 				67A55DE71B1CFC60000F98C0 /* Charred_Poblano_Chilis.xml in Resources */,
 				67A55E171B1CFC60000F98C0 /* Coconut-Pecan_Frosting.xml in Resources */,
 				67A55E691B1CFC60000F98C0 /* Kecap_Manis_(Sweet_Indonesian_Soy_Sauce)_Double_Batch.xml in Resources */,
