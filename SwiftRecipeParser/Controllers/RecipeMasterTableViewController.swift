@@ -36,15 +36,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         progressLabel.alpha = 0.0
         searchBar.alpha = 0.0
         searchBarText = nil
-
-        registerForNotifications()
     }
 
-    func viewDidUnloadd() {
-        // Need to redo the code flow for registering for and deregistering from notifications
-        deregisterFromNotifications()
-    }
-    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -56,6 +49,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                 loadRecipeTable()
             }
             else {
+                registerForNotifications()
+                
                 progressLabel.alpha = 1.0
                 progressLabel.text = "Creating Recipe Database..."
                 var recipeFiles:RecipeFiles = RecipeFiles()
@@ -224,13 +219,11 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     func registerForNotifications() {
         let notificationCenter:NSNotificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.addObserver(self, selector: Selector("handleRecipeProgressNotification:"), name: "RecipeProgressNotification", object: nil)
-        notificationCenter.addObserver(self, selector: Selector("handleRecipeTableNeedsReloadNotification:"), name: "RecipeTableNeedsReloadNotification", object: nil)
     }
     
     func deregisterFromNotifications() {
         let notificationCenter:NSNotificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.removeObserver(self, name: "RecipeProgressNotification", object: nil)
-        notificationCenter.removeObserver(self, name: "RecipeTableNeedsReloadNotification", object: nil)
     }
     
     func handleRecipeProgressNotification(notification:NSNotification)
@@ -257,6 +250,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         progressLabel.text = String(format:"Creating Recipe Database: %.0f%%", percentage)
         
         if percentage == 100.0 {
+            deregisterFromNotifications()
+            
             progressLabel.alpha = 0.0
             loadRecipeTable();
         }
