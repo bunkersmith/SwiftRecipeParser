@@ -33,7 +33,7 @@ class RecipeFiles {
         //NSLog("\(directoryName.lastPathComponent) count = \(directoryContent.count)")
         
         for i in 0 ..< directoryContent.count {
-            fullRecipePathname = directoryName.stringByAppendingPathComponent(directoryContent[i] as String)
+            fullRecipePathname = directoryName.stringByAppendingPathComponent(directoryContent[i] as! String)
             //Utilities.writelnToStandardOut(fullRecipePathname)
             
             if Utilities.fileExistsAtAbsolutePath(fullRecipePathname) {
@@ -73,10 +73,10 @@ class RecipeFiles {
         if exists {
             var directoryContent:Array<AnyObject>
             directoryContent = NSFileManager.defaultManager().contentsOfDirectoryAtPath(recipesResourcesDirectory, error: nil)!
-            var fullDirectoryPathname:NSString
+            var fullDirectoryPathname:String
             
             for i in 0 ..< directoryContent.count {
-                fullDirectoryPathname = recipesResourcesDirectory.stringByAppendingPathComponent(directoryContent[i] as NSString)
+                fullDirectoryPathname = recipesResourcesDirectory.stringByAppendingPathComponent(directoryContent[i] as! String)
                 
                 if Utilities.directoryExistsAtAbsolutePath(fullDirectoryPathname) {
                     initializeRecipesInDirectory(fullDirectoryPathname)
@@ -129,12 +129,12 @@ class RecipeFiles {
         
         var asyncInitElapsedTime:CFAbsoluteTime = asyncInitStopTime - asyncInitStartTime
         
-        NSLog( NSString(format: "asyncRecipeDatabaseInit Elapsed Time = %.3f", asyncInitElapsedTime / 1000.0 ))
+        NSLog("asyncRecipeDatabaseInit Elapsed Time = %.3f", asyncInitElapsedTime / 1000.0 )
     }
     
     func returnRecipeFromXML(recipePath:NSString, databaseInterface:DatabaseInterface)
     {
-        var recipeFileData:NSData = NSFileManager.defaultManager().contentsAtPath(recipePath)!;
+        var recipeFileData:NSData = NSFileManager.defaultManager().contentsAtPath(recipePath as String)!;
         
         var xmlRecipeParser:ParseXMLRecipe = ParseXMLRecipe();
         xmlRecipeParser.parseRecipeFromXMLData(recipeFileData, databaseInterface: databaseInterface)
@@ -181,6 +181,6 @@ class RecipeFiles {
             titleString = ParseRecipe.replaceString("&quot;", inputString:titleString, replacementString:"\"")
         }
         
-        return titleString
+        return titleString as String
     }
 }

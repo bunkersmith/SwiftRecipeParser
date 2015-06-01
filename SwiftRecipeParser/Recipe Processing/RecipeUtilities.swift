@@ -112,7 +112,7 @@ class RecipeUtilities {
             returnValue = returnValue.stringByAppendingString("    <ingredients>\n")
             
             for i in 0 ..< recipe!.containsIngredients.count {
-                ingredient = recipe!.containsIngredients[i] as Ingredient
+                ingredient = recipe!.containsIngredients[i] as! Ingredient
                     
                 returnValue = returnValue.stringByAppendingString("        <ingredient>\n")
                 
@@ -149,7 +149,7 @@ class RecipeUtilities {
         }
         
         for i in 0 ..< recipe!.containsIngredients.count {
-            ingredient = recipe!.containsIngredients[i] as Ingredient
+            ingredient = recipe!.containsIngredients[i] as! Ingredient
             
             if ingredient.quantity.doubleValue == 0 && ingredient.unitOfMeasure == "-" {
                 if ingredient.ingredientItem.name == "-" {
@@ -188,7 +188,7 @@ class RecipeUtilities {
         request.predicate = NSPredicate(format: "name == %@", fileName)
         
         var error:NSError?
-        var recipeObjects:Array<Recipe> = context.executeFetchRequest(request, error:&error) as Array<Recipe>
+        var recipeObjects:Array<Recipe> = context.executeFetchRequest(request, error:&error) as! Array<Recipe>
         
         if recipeObjects.count == 1 {
             recipe = recipeObjects[0] as Recipe
@@ -211,7 +211,7 @@ class RecipeUtilities {
                 let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: false)
                 inputFetchRequest.sortDescriptors = [sortDescriptor]
                 return inputFetchRequest
-            }) as Array<Recipe>
+            }) as! Array<Recipe>
             
             var currentRecipe:Recipe
             

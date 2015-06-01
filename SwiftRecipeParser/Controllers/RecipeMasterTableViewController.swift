@@ -64,7 +64,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         
             initializationCompleted = true
             let utilities:Utilities = Utilities.instance
-            NSLog(NSString(format: "App Startup Time = %.3f", Utilities.currentTickCount()-utilities.appStartupTime))
+            NSLog("App Startup Time = %.3f", Utilities.currentTickCount()-utilities.appStartupTime)
         }
     }
     
@@ -79,7 +79,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         if searchString != nil {
             fetchedResultsController = databaseInterface.createFetchedResultsController("Recipe", sortKey: "indexCharacter", secondarySortKey: nil, fetchRequestChangeBlock:{
             inputFetchRequest in
-                var predicate:NSPredicate = NSPredicate(format: "name contains[cd] \'\(searchString!)\'")!
+                var predicate:NSPredicate = NSPredicate(format: "name contains[cd] %@", searchString!)
                 inputFetchRequest.predicate = predicate
                 return inputFetchRequest
             })
@@ -170,13 +170,13 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             cell.textLabel!.font = UIFont.boldSystemFontOfSize(17.0)
             cell.textLabel!.numberOfLines = 0
             cell.textLabel!.lineBreakMode = NSLineBreakMode.ByWordWrapping
-            cell.textLabel!.text = recipeTitle
+            cell.textLabel!.text = recipeTitle as String
         }
         else {
             cell.textLabel!.font = UIFont.boldSystemFontOfSize(17.0)
             cell.textLabel!.numberOfLines = 1
             cell.textLabel!.lineBreakMode = NSLineBreakMode.ByTruncatingTail
-            cell.textLabel!.text = recipeTitle
+            cell.textLabel!.text = recipeTitle as String
         }
     }
     
@@ -190,7 +190,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             var sections:NSArray = fetchedResultsController.sections!
             
             var sectionInfo:NSFetchedResultsSectionInfo;
-            sectionInfo = fetchedResultsController.sections?[section - 1] as NSFetchedResultsSectionInfo
+            sectionInfo = fetchedResultsController.sections?[section - 1] as! NSFetchedResultsSectionInfo
             
             NSLog("Number of objects in section %d: %d", section, sectionInfo.numberOfObjects)
             
@@ -211,7 +211,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         
         var realIndexPath:NSIndexPath = NSIndexPath(forRow: indexPath.row , inSection: indexPath.section-1)
         
-        var recipe:Recipe = fetchedResultsController.objectAtIndexPath(realIndexPath) as Recipe
+        var recipe:Recipe = fetchedResultsController.objectAtIndexPath(realIndexPath) as! Recipe
         
         // Configure the cell...
         configureLabelForCell(cell, expandedFlag:cellIsExpanded, recipeTitle:recipe.name)
@@ -239,12 +239,12 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     func handleRecipeProgressNotification(notification:NSNotification)
     {
-        var userInfo:NSDictionary = notification.userInfo as Dictionary<NSString, NSNumber>
-        var percentage:NSNumber = userInfo.objectForKey("percentage") as NSNumber
+        var userInfo:NSDictionary = notification.userInfo as! Dictionary<NSString, NSNumber>
+        var percentage:NSNumber = userInfo.objectForKey("percentage") as! NSNumber
         
         if (percentage != 0)
         {
-            NSLog(NSString(format:"Progress percentage: %.0f", percentage.floatValue));
+            NSLog("Progress percentage: %.0f", percentage.floatValue)
             dispatch_async(dispatch_get_main_queue(), {
                 self.updateProgressLabel(percentage.floatValue)
             })
@@ -353,7 +353,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     func updateProgressLabel(percentage:Float)
     {
-        progressLabel.text = NSString(format:"Creating Recipe Database: %.0f%%", percentage)
+        progressLabel.text = String(format:"Creating Recipe Database: %.0f%%", percentage)
         
         if percentage == 100.0 {
             progressLabel.alpha = 0.0
@@ -392,7 +392,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     // MARK: - Table view data source
 
-    func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // Return the number of sections.
         var returnValue:Int = 0
         
@@ -412,7 +412,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         if section != 0 {
             if (self.fetchedResultsController.sections != nil) {
                 // Return the number of rows in the section.
-                var sections:Array<NSFetchedResultsSectionInfo> = self.fetchedResultsController.sections as Array<NSFetchedResultsSectionInfo>
+                var sections:Array<NSFetchedResultsSectionInfo> = self.fetchedResultsController.sections as! Array<NSFetchedResultsSectionInfo>
                 
                 var sectionInfo:NSFetchedResultsSectionInfo
                 sectionInfo = sections[section - 1]
@@ -426,11 +426,11 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         return returnValue;
     }
 
-    func sectionIndexTitlesForTableView(tableView: UITableView!) -> [AnyObject]! {
+    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
         return sectionIndexTitles
     }
     
-    func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         var returnValue:String = ""
         
         if section != 0 {
@@ -440,7 +440,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         return returnValue
     }
     
-    func tableView(tableView: UITableView!, sectionForSectionIndexTitle title: String!, atIndex index: Int) -> Int {
+    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
         if index == 0 {
             showHideSearchBar()
         }
@@ -449,7 +449,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RecipeTableCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("RecipeTableCell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
         configureCell(cell, atIndexPath: indexPath)
@@ -459,7 +459,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     // MARK: - Table view delegate
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("RecipeDetailSegue", sender: self)
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
@@ -468,7 +468,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "RecipeDetailSegue" {
-            let detailViewController:RecipeDetailViewController = segue.destinationViewController as RecipeDetailViewController
+            let detailViewController:RecipeDetailViewController = segue.destinationViewController as! RecipeDetailViewController
             
             var indexPath:NSIndexPath = tableView.indexPathForSelectedRow()!
             var realIndexPath:NSIndexPath = NSIndexPath(forRow: indexPath.row , inSection: indexPath.section-1)
@@ -484,14 +484,14 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         searchBarText = nil
     }
 
-    func searchBarCancelButtonClicked(searchBar: UISearchBar!) {
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         clearSearchBarText()
         searchBar.resignFirstResponder()
         showHideSearchBar()
         createNewFetchedResultsController(searchBarText)
     }
     
-    func searchBar(searchBar: UISearchBar!, textDidChange searchText: String!) {
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText == "" {
             self.searchBarText = nil
         }

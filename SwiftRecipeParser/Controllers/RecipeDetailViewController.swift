@@ -137,7 +137,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         var returnValue:String = ""
         
         if recipe != nil {
-            let ingredient:Ingredient = recipe!.containsIngredients[itemRowNumber] as Ingredient
+            let ingredient:Ingredient = recipe!.containsIngredients[itemRowNumber] as! Ingredient
             
             if ingredient.quantity.integerValue == 0 && ingredient.unitOfMeasure == "-" {
                 if ingredient.ingredientItem.name == "-" {
@@ -178,7 +178,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     
     // MARK: - Table View Delegate
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // Prompt user for adding ingredient to grocery list
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
@@ -210,7 +210,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "emailRecipeSegue" {
-            var emailRecipeViewController:EmailRecipeViewController = segue.destinationViewController as EmailRecipeViewController
+            var emailRecipeViewController:EmailRecipeViewController = segue.destinationViewController as! EmailRecipeViewController
             
             emailRecipeViewController.initRecipeTitle( recipeTitle.text! )
             emailRecipeViewController.requestMailComposeViewController()

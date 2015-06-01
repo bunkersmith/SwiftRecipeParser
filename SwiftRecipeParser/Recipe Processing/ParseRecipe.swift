@@ -11,9 +11,9 @@ import Foundation
 class ParseRecipe {
     
     class func replaceString(stringToReplace:NSString, inputString:NSString, replacementString:NSString) -> NSString {
-        var components:NSArray = inputString.componentsSeparatedByString(stringToReplace)
+        var components:NSArray = inputString.componentsSeparatedByString(stringToReplace as String)
         
-        return components.componentsJoinedByString(replacementString);
+        return components.componentsJoinedByString(replacementString as String);
     }
     
     class func textBetweenStrings(inputString:NSString, startString:NSString, endString:NSString, keepStrings:Bool) -> Array<NSString> {
@@ -30,7 +30,7 @@ class ParseRecipe {
         //NSLog("entireStringRange = \(entireStringRange)")
         //NSLog("inputString = \(inputString)")
         
-        matches = regex.matchesInString(inputString, options: nil, range: entireStringRange) as Array<NSTextCheckingResult>
+        matches = regex.matchesInString(inputString as String, options: nil, range: entireStringRange) as! Array<NSTextCheckingResult>
         
         if matches.count == 0
         {

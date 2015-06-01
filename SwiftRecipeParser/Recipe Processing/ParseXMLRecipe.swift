@@ -54,7 +54,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         }
     }
     
-    func parser(parser: NSXMLParser!, didStartElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!, attributes attributeDict: [NSObject : AnyObject]!)
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject])
     {
         //NSLog("didStartElement: %@", elementName)
     
@@ -84,7 +84,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         if elementName.isEqualToString("ingredient") {
             //NSLog(@"ingredient element found – create a new instance of Ingredient class...")
             if localDatabaseInterface != nil {
-                currentIngredient = (localDatabaseInterface!.newManagedObjectOfType("Ingredient") as Ingredient)
+                currentIngredient = (localDatabaseInterface!.newManagedObjectOfType("Ingredient") as! Ingredient)
                 return currentElementState.ingredientState
             }
         }
@@ -114,7 +114,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         if elementName.isEqualToString("recipe") {
             //NSLog(@"recipe element found – create a new instance of Recipe class...")
             if localDatabaseInterface != nil {
-                currentRecipe = (localDatabaseInterface!.newManagedObjectOfType("Recipe") as Recipe)
+                currentRecipe = (localDatabaseInterface!.newManagedObjectOfType("Recipe") as! Recipe)
                 if currentRecipe != nil {
                     currentRecipe!.notes = ""
                 }
@@ -125,11 +125,13 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         return currentElementState.noState
     }
     
-    func parser(parser: NSXMLParser!, foundCharacters string: String!) {
-        var squashed:NSString = NSString(string: string)
-        squashed.stringByReplacingOccurrencesOfString("\\s+", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: NSMakeRange(0, squashed.length))
-        if (squashed.length > 0) {
-            currentElementString += string
+    func parser(parser: NSXMLParser, foundCharacters string: String?) {
+        if (string != nil) {
+            var squashed:NSString = string!
+            squashed.stringByReplacingOccurrencesOfString("\\s+", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: NSMakeRange(0, squashed.length))
+            if (squashed.length > 0) {
+                currentElementString += string!
+            }
         }
     }
     
@@ -144,13 +146,13 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             
             case currentElementState.nameState:
                 if currentRecipe != nil {
-                    currentRecipe!.name = elementValue
+                    currentRecipe!.name = elementValue as String
                 }
             break
             
             case currentElementState.indexCharacterState:
                 if currentRecipe != nil {
-                    currentRecipe!.indexCharacter = elementValue
+                    currentRecipe!.indexCharacter = elementValue as String
                 }
             break
             
@@ -162,7 +164,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
                 }
                 else {
                     if currentRecipe != nil {
-                        currentRecipe!.notes = elementValue
+                        currentRecipe!.notes = elementValue as String
                     }
                 }
             break
@@ -175,7 +177,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             
             case currentElementState.instructionsState:
                 if currentRecipe != nil {
-                    currentRecipe!.instructions = elementValue
+                    currentRecipe!.instructions = elementValue as String
                 }
             break
             
@@ -187,21 +189,21 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             
             case currentElementState.quantityState:
                 if currentIngredient != nil {
-                    currentIngredient!.quantity = NSNumber(double: FractionMath.stringToDouble(elementValue))
+                    currentIngredient!.quantity = NSNumber(double: FractionMath.stringToDouble(elementValue as String))
                 }
             break
             
             case currentElementState.unitOfMeasureState:
                 if currentIngredient != nil {
-                    currentIngredient!.unitOfMeasure = elementValue
+                    currentIngredient!.unitOfMeasure = elementValue as String
                 }
             break
             
             case currentElementState.ingredientNameState:
             //NSLog(@"Ingredient Name: %@", elementValue)
                 if localDatabaseInterface != nil {
-                    var groceryItem:GroceryItem = localDatabaseInterface!.newManagedObjectOfType("GroceryItem") as GroceryItem
-                    groceryItem.name = elementValue
+                    var groceryItem:GroceryItem = localDatabaseInterface!.newManagedObjectOfType("GroceryItem") as! GroceryItem
+                    groceryItem.name = elementValue as String
                     if currentIngredient != nil {
                         currentIngredient!.processingInstructions = ""
                         currentIngredient!.ingredientItem = groceryItem
@@ -211,13 +213,13 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             
             case currentElementState.processingInstructionsState:
                 if currentIngredient != nil {
-                    currentIngredient!.processingInstructions = elementValue
+                    currentIngredient!.processingInstructions = elementValue as String
                 }
             break
         }
     }
     
-    func parser(parser: NSXMLParser!, didEndElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!) {
+    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         //NSLog(@"didEndElement: %@", elementName)
         var currentState:currentElementState  = currentStateStack[currentStateStack.endIndex - 1]
         
@@ -239,7 +241,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         currentStateStack.removeLast()
     }
     
-    func parser(parser: NSXMLParser!, parseErrorOccurred parseError: NSError!)  {
+    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError)  {
         NSLog("ParseXMLRecipe:parseErrorOccurred called with error %@", parseError)
     }
     

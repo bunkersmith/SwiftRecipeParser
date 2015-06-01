@@ -40,7 +40,7 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     }
     
     func initRecipeTitle(recipeTitle:NSString) {
-        emailRecipeTitle = recipeTitle;
+        emailRecipeTitle = recipeTitle as String;
     }
     
     func handleExitEmailLogNotification(notification:NSNotification) {
@@ -124,7 +124,7 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     
     // MARK: - UIAlertViewDelegate
     
-    func alertView(alertView: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         navigationController!.popViewControllerAnimated(false)
     }
 }

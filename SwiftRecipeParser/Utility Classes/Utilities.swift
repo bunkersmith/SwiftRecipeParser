@@ -38,7 +38,9 @@ class Utilities {
     
     class func convertSectionIndexTitles(fetchedResultsController:NSFetchedResultsController) -> Array<String> {
         var returnValue:Array<String> = [UITableViewIndexSearch]
-        returnValue += fetchedResultsController.sectionIndexTitles as Array<String>
+        for i in 0 ..< fetchedResultsController.sectionIndexTitles.count {
+            returnValue.append(fetchedResultsController.sectionIndexTitles[i] as! String)
+        }
         
         return returnValue
     }
@@ -66,7 +68,7 @@ class Utilities {
     // Returns the URL to the application's Documents directory.
     class func applicationDocumentsDirectory() -> NSURL
     {
-        let directoryURLs:Array<NSURL> = NSFileManager.defaultManager().URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask) as Array<NSURL>
-        return directoryURLs[directoryURLs.endIndex - 1]
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        return urls[urls.count-1] as! NSURL
     }
 }

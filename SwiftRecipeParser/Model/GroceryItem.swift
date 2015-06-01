@@ -17,7 +17,7 @@ class GroceryItem: NSManagedObject {
     @NSManaged var hasLocations: NSSet
     @NSManaged var inGroceryLists: NSSet
     
-    func description() -> String {
+    override var description: String {
         var returnValue:String
         
         returnValue = "\n***** GroceryItem"

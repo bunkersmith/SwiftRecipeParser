@@ -17,37 +17,10 @@ class DatabaseManager {
         return Singleton.instance
     }
     
-    private let operationQueue:NSOperationQueue!
-
-    private let modelURL:NSURL!
-    private let storeURL:NSURL!
-    private let model:NSManagedObjectModel!
-    private let storeCoordinator:NSPersistentStoreCoordinator!
-    private let mainContext:NSManagedObjectContext!
-    
     init() {
-        operationQueue = NSOperationQueue()
-        operationQueue.maxConcurrentOperationCount = 1
     
-        modelURL = NSBundle.mainBundle().URLForResource("SwiftRecipeParser", withExtension: "momd")
-        storeURL = appDocumentsDir().URLByAppendingPathComponent("SwiftRecipeParser.sqlite")
-        NSLog("storeURL = \(storeURL)")
-        
-        model = NSManagedObjectModel(contentsOfURL: modelURL)
-        storeCoordinator = NSPersistentStoreCoordinator(managedObjectModel:model)
-    
-        let options = [NSMigratePersistentStoresAutomaticallyOption : 1, NSInferMappingModelAutomaticallyOption : 1]
-        var error: NSError?
-        
-        if storeCoordinator.addPersistentStoreWithType(NSSQLiteStoreType,
-            configuration: nil, URL: storeURL, options: options, error: &error) == nil {
-                println("Error adding persistent store to store coordinator: \(error)")
-                abort()
-        }
-  
-        mainContext = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.ConfinementConcurrencyType)
-        mainContext.persistentStoreCoordinator = storeCoordinator
-        
+        NSLog("storeURL = \(self.storeURL)")
+        NSLog("modelURL = \(self.modelURL)")
 /*
         var fileManager:NSFileManager = NSFileManager.defaultManager()
         if fileManager.fileExistsAtPath(storeURL.path)
@@ -70,8 +43,48 @@ class DatabaseManager {
         return mainContext
     }
     
-    func appDocumentsDir() -> NSURL {
-        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask) as NSArray
-        return urls.lastObject as NSURL
-    }
+    lazy private var operationQueue:NSOperationQueue = {
+        let queue = NSOperationQueue()
+        queue.maxConcurrentOperationCount = 1
+        return queue
+        }()
+    
+    lazy private var storeURL:NSURL = {
+        return self.applicationDocumentsDirectory.URLByAppendingPathComponent("SwiftRecipeParser.sqlite")
+    }()
+    
+    lazy private var modelURL:NSURL = {
+        return NSBundle.mainBundle().URLForResource("SwiftRecipeParser", withExtension: "momd")!
+    }()
+
+    lazy private var model:NSManagedObjectModel = {
+        return NSManagedObjectModel(contentsOfURL: self.modelURL)!
+    }()
+
+    lazy private var storeCoordinator:NSPersistentStoreCoordinator = {
+        let storeCoordinator = NSPersistentStoreCoordinator(managedObjectModel:self.model)
+        
+        let options = [NSMigratePersistentStoresAutomaticallyOption : 1, NSInferMappingModelAutomaticallyOption : 1]
+        var error: NSError?
+        
+        if storeCoordinator.addPersistentStoreWithType(NSSQLiteStoreType,
+            configuration: nil, URL: self.storeURL, options: options, error: &error) == nil {
+                println("Error adding persistent store to store coordinator: \(error)")
+                abort()
+        }
+        
+        return storeCoordinator
+    }()
+    
+    lazy private var mainContext:NSManagedObjectContext = {
+        let mainContext = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.ConfinementConcurrencyType)
+        mainContext.persistentStoreCoordinator = self.storeCoordinator
+        return mainContext
+    }()
+    
+    lazy private var applicationDocumentsDirectory: NSURL = {
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "com.carlsmithswdev.SwiftRecipeParser" in the application's documents Application Support directory.
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        return urls[urls.count-1] as! NSURL
+        }()
 }
