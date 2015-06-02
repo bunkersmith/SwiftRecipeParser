@@ -111,4 +111,9 @@ class DatabaseInterface: NSObject {
         return fetchedResultsController
     }
     
+    func deleteObject(coreDataObject:AnyObject)
+    {
+        context.deleteObject(coreDataObject as! NSManagedObject);
+        saveContext()
+    }
 }
