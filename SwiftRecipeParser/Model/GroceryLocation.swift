@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-@objc(GroceryLocation)
 class GroceryLocation: NSManagedObject {
 
     @NSManaged var name: String
