@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-@objc(Ingredient)
 class Ingredient: NSManagedObject {
 
     @NSManaged var processingInstructions: String
