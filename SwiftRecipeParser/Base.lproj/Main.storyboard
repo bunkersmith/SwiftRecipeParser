@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="c3m-Kk-ogg">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
@@ -92,6 +93,59 @@
                 </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1839" y="441"/>
+        </scene>
+        <!--Grocery Lists-->
+        <scene sceneID="s90-UY-kWN">
+            <objects>
+                <viewController title="Grocery Lists" id="Rka-G7-4aq" customClass="GroceryListsViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NlE-8c-vmH"/>
+                        <viewControllerLayoutGuide type="bottom" id="pUN-bb-mrF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2gJ-wR-Pzw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-Xf-Inx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroceryListsTableCell" id="fZv-nw-za3">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZv-nw-za3" id="Zea-VX-Isq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rka-G7-4aq" id="atw-fp-g0P"/>
+                                    <outlet property="delegate" destination="Rka-G7-4aq" id="nj4-pp-CBt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qm9-Xf-Inx" secondAttribute="bottom" id="FKs-wu-iLU"/>
+                            <constraint firstItem="qm9-Xf-Inx" firstAttribute="leading" secondItem="2gJ-wR-Pzw" secondAttribute="leading" id="HDs-7H-fAd"/>
+                            <constraint firstAttribute="trailing" secondItem="qm9-Xf-Inx" secondAttribute="trailing" id="NdD-ej-0Un"/>
+                            <constraint firstItem="qm9-Xf-Inx" firstAttribute="top" secondItem="2gJ-wR-Pzw" secondAttribute="top" id="e6d-sd-fdq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cjb-lt-ids">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NAw-Zr-34O">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Rka-G7-4aq" id="hZU-Kz-GQs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="qm9-Xf-Inx" id="vOC-O4-bdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elJ-mo-vvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="1197"/>
         </scene>
         <!--Recipe Detail View Controller-->
         <scene sceneID="2pp-Hw-nkJ">
@@ -311,7 +365,7 @@
         <scene sceneID="Gf7-c1-psd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Emm-QH-Pnt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recipes" id="W4Z-GS-g9K"/>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="tab_icon_recipe_list" id="W4Z-GS-g9K"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1K1-eP-BMQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -338,11 +392,35 @@
                     </tabBar>
                     <connections>
                         <segue destination="Emm-QH-Pnt" kind="relationship" relationship="viewControllers" id="xZz-WQ-kIH"/>
+                        <segue destination="c3W-DV-0QD" kind="relationship" relationship="viewControllers" id="kec-OP-6ry"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNk-pJ-fh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="321" y="441"/>
         </scene>
+        <!--Grocery Lists-->
+        <scene sceneID="4IS-aK-Kse">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c3W-DV-0QD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Grocery Lists" image="tab_icon_grocery_list" id="qf1-5h-8fW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Dj-oj-fny">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rka-G7-4aq" kind="relationship" relationship="rootViewController" id="rZ9-kh-2Q4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLa-pD-Lto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="1197"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="tab_icon_grocery_list" width="26" height="16"/>
+        <image name="tab_icon_recipe_list" width="30" height="23"/>
+    </resources>
 </document>
