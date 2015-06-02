@@ -13,8 +13,6 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     var recipe:Recipe?
     
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var previousRecipeButton: UIButton!
-    @IBOutlet weak var nextRecipeButton: UIButton!
     @IBOutlet weak var recipeTitle: UILabel!
     
     private var expandedCells:Array<NSIndexPath> = Array()
@@ -58,12 +56,6 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func previousRecipePressed(sender: AnyObject) {
-    }
-    
-    @IBAction func nextRecipePressed(sender: AnyObject) {
     }
     
     @IBAction func showInstructionsPressed(sender: AnyObject) {
