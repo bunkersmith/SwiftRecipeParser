@@ -29,37 +29,25 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func populateGroceryLists() {
-        groceryLists = databaseInterface.entitiesOfType("GroceryList", fetchRequestChangeBlock:nil) as! Array<GroceryList>
+        groceryLists = databaseInterface.entitiesOfType("GroceryList", predicate:nil) as! Array<GroceryList>
+        self.tableView.reloadData()
     }
     
     @IBAction func addButtonPressed(sender: AnyObject) {
-        var addListAlert = UIAlertController(title:"Enter grocery list name", message:"", preferredStyle:UIAlertControllerStyle.Alert)
-        var inputTextField:UITextField?
-        
-        addListAlert.addTextFieldWithConfigurationHandler { (textField: UITextField!) -> Void in
-            textField.autocapitalizationType = UITextAutocapitalizationType.Words
-            inputTextField = textField
+        var inputTextField = UITextField()
+        Utilities.showTextFieldAlert(self, title: "Enter grocery list name", message: "", inputTextField: &inputTextField, startingText: "", keyboardType: .Default, capitalizationType: .Words) { action in
+            var groceryListName:String = inputTextField.text
+            
+            var newGroceryList:GroceryList = self.databaseInterface.newManagedObjectOfType("GroceryList") as! GroceryList
+            newGroceryList.name = groceryListName
+            newGroceryList.totalCost = NSNumber(float:0.0)
+            
+            self.databaseInterface.saveContext();
+            GroceryList.setCurrentGroceryList(newGroceryList.name, databaseInterfacePtr:self.databaseInterface)
+            
+            self.populateGroceryLists()
+            self.tableView.reloadData()
         }
-        
-        addListAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { action in
-            if inputTextField != nil {
-                var groceryListName:String = inputTextField!.text
-                
-                var newGroceryList:GroceryList = self.databaseInterface.newManagedObjectOfType("GroceryList") as! GroceryList
-                newGroceryList.name = groceryListName
-                newGroceryList.totalCost = NSNumber(float:0.0)
-                
-                self.databaseInterface.saveContext();
-                GroceryList.setCurrentGroceryList(newGroceryList.name, databaseInterfacePtr:self.databaseInterface)
-                
-                self.populateGroceryLists()
-                self.tableView.reloadData()
-            }
-        }))
-        
-        addListAlert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
-
-        self.presentViewController(addListAlert, animated:true, completion: nil)
     }
     
     // MARK: - Table view data source
@@ -74,13 +62,19 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         var groceryList:GroceryList = groceryLists![indexPath.row]
         
         // Configure the cell...
-        cell.textLabel?.text = groceryList.name
+        if groceryList.isCurrent.boolValue {
+            cell.textLabel?.text = groceryList.name + "*"
+        }
+        else {
+            cell.textLabel?.text = groceryList.name
+        }
         
         return cell
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        GroceryList.setCurrentGroceryList(groceryLists[indexPath.row].name, databaseInterfacePtr: databaseInterface)
+        populateGroceryLists()
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -118,14 +112,14 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
     */
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "selectGroceryListSegue" {
+            var detailViewController:GroceryListDetailViewController = segue.destinationViewController as! GroceryListDetailViewController
+            var indexPath:NSIndexPath = tableView.indexPathForSelectedRow()!
+            detailViewController.groceryList = groceryLists[indexPath.row]
+        }
     }
-    */
 
 }
