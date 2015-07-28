@@ -11,7 +11,6 @@ import Foundation
 class RecipeFiles {
     
     private var totalRecipes:Int = 0;
-    private var recipePathnames:Array<Array<String>> = Array()
     
     func initializeRecipeDatabaseFromResourceFiles() {
         var databaseManager:DatabaseManager = DatabaseManager.instance
@@ -21,7 +20,7 @@ class RecipeFiles {
         })
     }
     
-    func initializeRecipesInDirectory(directoryName:String) {
+    func initializeRecipesInDirectory(directoryName:String) -> Array<String> {
         var directoryContent:Array<AnyObject>
         directoryContent = NSFileManager.defaultManager().contentsOfDirectoryAtPath(directoryName, error: nil)!
         
@@ -53,9 +52,10 @@ class RecipeFiles {
         }
         
         if usableFileCount > 0 {
-            recipePathnames.append(usableFiles)
             totalRecipes += usableFileCount
         }
+        
+        return usableFiles
     }
     
     func returnlRecipeResourcesPath() -> String {
@@ -64,7 +64,9 @@ class RecipeFiles {
         return returnValue.stringByAppendingPathComponent("XML_recipes")
     }
     
-    func initializeRecipePathnames() {
+    func initializeRecipePathnames() -> Array<Array<String>> {
+        var recipePathnames:Array<Array<String>> = Array<Array<String>>()
+        
         var recipesResourcesDirectory:String = returnlRecipeResourcesPath()
         var exists:Bool = Utilities.directoryExistsAtAbsolutePath(recipesResourcesDirectory)
         
@@ -79,19 +81,20 @@ class RecipeFiles {
                 fullDirectoryPathname = recipesResourcesDirectory.stringByAppendingPathComponent(directoryContent[i] as! String)
                 
                 if Utilities.directoryExistsAtAbsolutePath(fullDirectoryPathname) {
-                    initializeRecipesInDirectory(fullDirectoryPathname)
+                    recipePathnames.append(initializeRecipesInDirectory(fullDirectoryPathname))
                 }
             }
             
             NSLog("Recipe resource pathnames added: \(totalRecipes)")
         }
         
+        return recipePathnames
     }
     
     func asyncInitializeRecipeDatabase(databaseInterface:DatabaseInterface) {
-        var asyncInitStartTime:CFAbsoluteTime = Utilities.currentTickCount()
+        var asyncInitStartTime = MillisecondTimer.currentTickCount()
         
-        initializeRecipePathnames()
+        var recipePathnames:Array<Array<String>> = initializeRecipePathnames()
         
         var currentRecipeSection:Array<String> = Array()
         
@@ -125,11 +128,9 @@ class RecipeFiles {
         percentageDictionary = ["percentage": 100.0]
         NSNotificationCenter.defaultCenter().postNotificationName("RecipeProgressNotification", object: self, userInfo: percentageDictionary)
         
-        var asyncInitStopTime:CFAbsoluteTime = Utilities.currentTickCount();
+        var asyncInitStopTime = MillisecondTimer.currentTickCount();
         
-        var asyncInitElapsedTime:CFAbsoluteTime = asyncInitStopTime - asyncInitStartTime
-        
-        NSLog("asyncRecipeDatabaseInit Elapsed Time = %.3f", asyncInitElapsedTime / 1000.0 )
+        NSLog("asyncRecipeDatabaseInit Elapsed Time = %.3f", Float(asyncInitStopTime - asyncInitStartTime) / 1000.0 )
     }
     
     func returnRecipeFromXML(recipePath:NSString, databaseInterface:DatabaseInterface)
