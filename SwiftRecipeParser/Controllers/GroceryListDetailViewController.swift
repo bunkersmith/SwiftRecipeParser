@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class GroceryListDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, AddGroceryListItemDelegate {
+class GroceryListDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddGroceryListItemDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var totalCostLabel: UILabel!
@@ -23,8 +23,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = groceryList.name
-        self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+        navigationItem.title = groceryList.name
+        totalCostLabel.text = String(format:"Total Cost: $%.2f", groceryList.totalCost.floatValue)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -38,48 +38,63 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func groceryListItemAdded(groceryListItem: GroceryListItem) {
-        groceryList.addHasItemsObject(groceryListItem)
-        databaseInterface.saveContext()
+        if groceryList.hasItems.containsObject(groceryListItem) {
+            Utilities.showOkButtonAlert(self, title: "Error Alert", message: "\(groceryListItem.name) is already on your list", okButtonHandler: nil)
+        }
+        else {
+            groceryList.totalCost = NSNumber(float:groceryList.totalCost.floatValue + groceryListItem.cost.floatValue)
+            totalCostLabel.text = String(format:"Total Cost: $%.2f", groceryList.totalCost.floatValue)
+            groceryList.addHasItemsObject(groceryListItem)
+            databaseInterface.saveContext()
+        }
     }
 
     @IBAction func clearTotalButtonPressed(sender: AnyObject) {
-        self.groceryList.totalCost = NSNumber(float:0.0)
-        self.totalCostLabel.text = "Total Cost: $0"
+        groceryList.totalCost = NSNumber(float:0.0)
+        databaseInterface.saveContext()
+        totalCostLabel.text = "Total Cost: $0.00"
     }
     
     @IBAction func buyItemButtonPressed(sender: AnyObject) {
-        var buttonPosition:CGPoint = sender.convertPoint(CGPointZero, toView:self.tableView)
-        var indexPath:NSIndexPath?  = self.tableView!.indexPathForRowAtPoint(buttonPosition)
+        var buttonPosition:CGPoint = sender.convertPoint(CGPointZero, toView:tableView)
+        var indexPath:NSIndexPath?  = tableView!.indexPathForRowAtPoint(buttonPosition)
         if (indexPath != nil)
         {
-            NSLog("indexPath #1 = %d, %d", indexPath!.section, indexPath!.row)
-            
-            var itemToBuy:GroceryListItem = self.groceryList.hasItems[indexPath!.row] as! GroceryListItem
-            var textField:UITextField = UITextField()
-            var buyItemAlert = Utilities.showTextFieldAlert(self, title: "Enter price of \(itemToBuy.name)", message: "", inputTextField: &textField, keyboardType: .DecimalPad, capitalizationType:.None, okButtonHandler: { action in
-                self.processOkButton(textField, itemToBuy: itemToBuy)
-                NSLog("indexPath #2 = %d, %d", indexPath!.section, indexPath!.row)
-                
-                var cell = self.tableView.dequeueReusableCellWithIdentifier("GroceryListItemCell", forIndexPath:indexPath!) as! GroceryListItemTableViewCell
-                cell.groceryListItemName.textColor = UIColor.redColor()
-                self.tableView.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.Automatic)
-            })
+            var itemToBuy:GroceryListItem = groceryList.hasItems[indexPath!.row] as! GroceryListItem
+            if itemToBuy.isBought.boolValue {
+                var putBackItemAlert = Utilities.showOkButtonAlert(self, title: "Do you want to put back \(itemToBuy.name)?", message: "", okButtonHandler: { action in
+                    itemToBuy.isBought = false;
+                    self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue - itemToBuy.cost.floatValue)
+                    self.databaseInterface.saveContext()
+                    
+                    self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+                    self.tableView.reloadData()
+                })
+            }
+            else {
+                var textField:UITextField = UITextField()
+                var buyItemAlert = Utilities.showTextFieldAlert(self, title: "Enter price of \(itemToBuy.name)", message: "", inputTextField: &textField, startingText: String(format: "%.2f", itemToBuy.cost.floatValue), keyboardType: .DecimalPad, capitalizationType:.None, okButtonHandler: { action in
+                    if textField.text != "" {
+                        var oldItemCost = itemToBuy.cost.floatValue
+                        var itemToBuyCost:Float = (textField.text as NSString).floatValue
+                        itemToBuy.cost = NSNumber(float:itemToBuyCost)
+                        itemToBuy.isBought = true
+                        
+                        self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue + itemToBuyCost - oldItemCost)
+                        self.databaseInterface.saveContext()
+                        
+                        self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+                        self.tableView.reloadData()
+                    }
+                    else {
+                        Utilities.showOkButtonAlert(self, title: "Please enter a price", message: "", okButtonHandler: nil)
+                    }
+                })
+            }
         }
     }
     
     func processOkButton(textField: UITextField, itemToBuy: GroceryListItem) {
-        if textField.text != "" {
-            var itemToBuyCost:Float = (textField.text as NSString).floatValue
-            itemToBuy.cost = NSNumber(float:itemToBuyCost)
-            
-            self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue + itemToBuyCost)
-            self.databaseInterface.saveContext()
-            
-            self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
-        }
-        else {
-            Utilities.showOkButtonAlert(self, title: "Please enter a price", message: "", okButtonHandler: nil)
-        }
     }
     
     // MARK: - Segues
@@ -94,93 +109,44 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     // MARK: - Table View
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return self.fetchedResultsController.sections?.count ?? 0
+        return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section] as! NSFetchedResultsSectionInfo
-        return sectionInfo.numberOfObjects
+        return groceryList.hasItems.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("GroceryListItemCell", forIndexPath: indexPath) as! UITableViewCell
-        self.configureCell(cell, atIndexPath: indexPath)
+        configureCell(cell, atIndexPath: indexPath)
         return cell
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            databaseInterface.deleteObject(self.fetchedResultsController.objectAtIndexPath(indexPath) as! GroceryListItem)
-            databaseInterface.saveContext()
-            tableView.reloadData()
+            if let itemToPutBack = groceryList.hasItems[indexPath.row] as? GroceryListItem {
+                groceryList.totalCost = NSNumber(float:groceryList.totalCost.floatValue - itemToPutBack.cost.floatValue)
+                totalCostLabel.text = String(format:"Total Cost: $%.2f", groceryList.totalCost.floatValue)
+                groceryList.removeHasItemsObject(itemToPutBack)
+                databaseInterface.saveContext()
+                tableView.reloadData()
+            }
         }
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let groceryListItemCell = cell as! GroceryListItemTableViewCell
-        let groceryListItem = self.fetchedResultsController.objectAtIndexPath(indexPath) as! GroceryListItem
+        let groceryListItem = groceryList.hasItems[indexPath.row] as! GroceryListItem
         groceryListItemCell.groceryListItemName.text = groceryListItem.name
-    }
-    
-    // MARK: - Fetched results controller
-    
-
-    var fetchedResultsController: NSFetchedResultsController {
-        if _fetchedResultsController != nil {
-            return _fetchedResultsController!
+        groceryListItemCell.groceryListItemCost.text = String(format: "%.2f", groceryListItem.cost.floatValue)
+        if groceryListItem.isBought.boolValue {
+            groceryListItemCell.groceryListItemButton.setTitle("Put Back", forState: .Normal)
+            groceryListItemCell.groceryListItemName.textColor = UIColor.redColor()
         }
-        
-        return databaseInterface.createFetchedResultsController("GroceryListItem", sortKey: "name", secondarySortKey: nil, sectionNameKeyPath: nil, fetchRequestChangeBlock:{
-            inputFetchRequest in
-            var predicate:NSPredicate = NSPredicate(format: "ANY inGroceryLists.name matches %@", self.groceryList.name)
-            inputFetchRequest.predicate = predicate
-            return inputFetchRequest
-        })
-    }
-    var _fetchedResultsController: NSFetchedResultsController? = nil
-    
-    func controllerWillChangeContent(controller: NSFetchedResultsController) {
-        self.tableView.beginUpdates()
-    }
-    
-    func controller(controller: NSFetchedResultsController, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
-        switch type {
-        case .Insert:
-            self.tableView.insertSections(NSIndexSet(index: sectionIndex), withRowAnimation: .Fade)
-        case .Delete:
-            self.tableView.deleteSections(NSIndexSet(index: sectionIndex), withRowAnimation: .Fade)
-        default:
-            return
+        else {
+            groceryListItemCell.groceryListItemButton.setTitle("Buy", forState: .Normal)
+            groceryListItemCell.groceryListItemName.textColor = UIColor.blackColor()
         }
     }
-    
-    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
-        switch type {
-        case .Insert:
-            tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: .Fade)
-        case .Delete:
-            tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
-        case .Update:
-            self.configureCell(tableView.cellForRowAtIndexPath(indexPath!)!, atIndexPath: indexPath!)
-        case .Move:
-            tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
-            tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: .Fade)
-        default:
-            return
-        }
-    }
-    
-    func controllerDidChangeContent(controller: NSFetchedResultsController) {
-        self.tableView.endUpdates()
-    }
-    
-    /*
-    // Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed.
-    
-    func controllerDidChangeContent(controller: NSFetchedResultsController) {
-    // In the simplest, most efficient, case, reload the table view.
-    self.tableView.reloadData()
-    }
-    */
     
 }
