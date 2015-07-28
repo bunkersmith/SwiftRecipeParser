@@ -12,19 +12,42 @@ import CoreData
 
 class Utilities {
     
-    class var instance: Utilities {
-    struct Singleton {
-        static let instance = Utilities()
+    class func showOkButtonAlert(viewController:UIViewController, title: String, message:String, okButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
+        var okButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.Alert)
+        okButtonAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: okButtonHandler))
+        viewController.presentViewController(okButtonAlert, animated:true, completion: nil)
+        return okButtonAlert
+    }
+
+    class func showYesNoAlert(viewController:UIViewController, title: String, message:String, yesButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
+        var yesNoButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.Alert)
+        yesNoButtonAlert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: yesButtonHandler))
+        yesNoButtonAlert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: nil))
+        viewController.presentViewController(yesNoButtonAlert, animated:true, completion: nil)
+        return yesNoButtonAlert
+    }
+    
+    class func showTextFieldAlert(viewController:UIViewController,
+                                           title: String, message:String?,
+                            inout inputTextField:UITextField,
+                                    startingText:String,
+                                    keyboardType:UIKeyboardType,
+                              capitalizationType:UITextAutocapitalizationType,
+                                   okButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
+        var textFieldAlert = UIAlertController(title:title, message:message, preferredStyle:.Alert)
+    
+        textFieldAlert.addTextFieldWithConfigurationHandler { (textField: UITextField!) -> Void in
+            inputTextField = textField
+            textField.keyboardType = keyboardType
+            textField.autocapitalizationType = capitalizationType
+            textField.text = startingText
         }
-        return Singleton.instance
+        textFieldAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: okButtonHandler))
+        textFieldAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        viewController.presentViewController(textFieldAlert, animated: true, completion: nil)
+        return textFieldAlert
     }
-    
-    var appStartupTime:CFAbsoluteTime!
-    
-    class func currentTickCount() -> CFAbsoluteTime {
-        return CFAbsoluteTimeGetCurrent()
-    }
-    
+
     class func convertSectionTitles(fetchedResultsController:NSFetchedResultsController) -> Array<String> {
         var returnValue:Array<String> = [" "]
         var sections:Array = fetchedResultsController.sections!
