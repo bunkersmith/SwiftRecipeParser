@@ -11,6 +11,7 @@ import UIKit
 class GroceryListItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var groceryListItemName: UILabel!
+    @IBOutlet weak var groceryListItemCost: UILabel!
     @IBOutlet weak var groceryListItemButton: UIButton!
     
     override func awakeFromNib() {
