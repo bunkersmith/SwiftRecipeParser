@@ -30,6 +30,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
     var currentStateStack:Array<currentElementState>
     var localDatabaseInterface:DatabaseInterface?
     var currentRecipe:Recipe?
+    var currentRecipeTitle:RecipeTitle?
     var currentIngredient:Ingredient?
     var currentElementString:String
     
@@ -146,13 +147,14 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             
             case currentElementState.nameState:
                 if currentRecipe != nil {
-                    currentRecipe!.name = elementValue as String
+                    currentRecipeTitle = localDatabaseInterface?.newManagedObjectOfType("RecipeTitle") as? RecipeTitle
+                    currentRecipeTitle!.name = elementValue as String
                 }
             break
             
             case currentElementState.indexCharacterState:
-                if currentRecipe != nil {
-                    currentRecipe!.indexCharacter = elementValue as String
+                if currentRecipe != nil && currentRecipeTitle != nil {
+                    currentRecipeTitle!.indexCharacter = elementValue as String
                 }
             break
             
@@ -233,6 +235,9 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         else {
             if currentState == currentElementState.recipeState {
                 //NSLog("currentRecipe: \(currentRecipe!.recipeDescription())")
+                if (currentRecipe != nil && currentRecipeTitle != nil) {
+                    currentRecipe!.title = currentRecipeTitle!
+                }
                 if localDatabaseInterface != nil {
                     localDatabaseInterface!.saveContext()
                 }
