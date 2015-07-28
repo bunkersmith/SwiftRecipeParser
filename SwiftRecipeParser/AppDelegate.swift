@@ -16,15 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        
-        let utilities:Utilities = Utilities.instance
-        utilities.appStartupTime = Utilities.currentTickCount()
-        
-        //let databaseManager:DatabaseManager = DatabaseManager.instance
-        //let mainDatabaseInterface:DatabaseInterface = DatabaseInterface()
-        
-        //NSLog("GroceryItem.count() = \(GroceryItem.count())")
-
         return true
     }
 
