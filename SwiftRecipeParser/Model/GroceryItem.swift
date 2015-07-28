@@ -14,7 +14,6 @@ class GroceryItem: NSManagedObject {
     @NSManaged var name: String
     @NSManaged var containedInIngredients: NSSet
     @NSManaged var hasLocations: NSSet
-    @NSManaged var inGroceryLists: NSSet
     
     override var description: String {
         var returnValue:String
@@ -28,7 +27,7 @@ class GroceryItem: NSManagedObject {
     class func count() -> Int {
         var groceryItemCount:Int
         var databaseInterface:DatabaseInterface = DatabaseInterface()
-        groceryItemCount = databaseInterface.countOfEntitiesOfType("GroceryItem", fetchRequestChangeBlock:nil)
+        groceryItemCount = databaseInterface.countOfEntitiesOfType("GroceryItem", predicate:nil)
         
         return groceryItemCount
     }
