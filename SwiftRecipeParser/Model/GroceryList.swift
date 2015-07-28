@@ -16,9 +16,28 @@ class GroceryList: NSManagedObject {
     @NSManaged var totalCost: NSNumber
     @NSManaged var hasItems: NSOrderedSet
     
+    
+    func addHasItemsObject(value:GroceryListItem)
+    {
+        self.willChangeValueForKey("hasItems");
+        var tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems);
+        tempSet.addObject(value);
+        self.hasItems = tempSet;
+        self.didChangeValueForKey("hasItems");
+    }
+    
+    func removeHasItemsObject(value:GroceryListItem)
+    {
+        self.willChangeValueForKey("hasItems");
+        var tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems);
+        tempSet.removeObject(value);
+        self.hasItems = tempSet;
+        self.didChangeValueForKey("hasItems");
+    }
+    
     class func setCurrentGroceryList(groceryListName:String, databaseInterfacePtr:DatabaseInterface)
     {
-        var groceryLists:Array<GroceryList> = databaseInterfacePtr.entitiesOfType("GroceryList", fetchRequestChangeBlock:nil) as! Array<GroceryList>
+        var groceryLists:Array<GroceryList> = databaseInterfacePtr.entitiesOfType("GroceryList", predicate:nil) as! Array<GroceryList>
         for groceryList:GroceryList in groceryLists {
             if groceryList.name == groceryListName {
                 groceryList.isCurrent = NSNumber(bool: true);
@@ -34,11 +53,7 @@ class GroceryList: NSManagedObject {
     {
         var returnValue:GroceryList?
     
-        var groceryLists:Array<GroceryList> = databaseInterfacePtr.entitiesOfType("GroceryList", fetchRequestChangeBlock:{
-            inputFetchRequest in
-            inputFetchRequest.predicate = NSPredicate(format:"isCurrent == %@", NSNumber(bool: true))
-            return inputFetchRequest;
-        }) as! Array<GroceryList>
+        var groceryLists:Array<GroceryList> = databaseInterfacePtr.entitiesOfType("GroceryList", predicate:NSPredicate(format:"isCurrent == %@", NSNumber(bool: true))) as! Array<GroceryList>
     
         if (groceryLists.count == 1) {
             returnValue = groceryLists.first
