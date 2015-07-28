@@ -28,7 +28,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
 
         if recipe != nil {
-            self.recipeTitle.text = recipe!.name
+            self.recipeTitle.text = recipe!.title.name
         }
     }
 
@@ -168,11 +168,34 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
+    func showAddIngredientAlert(object: AnyObject)
+    {
+        var databaseInterface = DatabaseInterface()
+        var selectedIngredient:Ingredient = object as! Ingredient;
+        var currentGroceryList = GroceryList.returnCurrentGroceryListWithDatabaseInterfacePtr(databaseInterface)
+    
+        if (currentGroceryList == nil)
+        {
+            Utilities.showOkButtonAlert(self, title: "Error Alert", message: "No current grocery list", okButtonHandler: nil)
+        }
+        else
+        {
+            var quantityString:String = FractionMath.doubleToString(selectedIngredient.quantity.doubleValue);
+            var addString = "Add \(quantityString) \(selectedIngredient.unitOfMeasure) \(selectedIngredient.ingredientItem.name) to the \(currentGroceryList!.name) grocery list?"
+            Utilities.showYesNoAlert(self, title: "Add Item", message: addString, yesButtonHandler: { action in
+                var groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType("GroceryListItem") as! GroceryListItem
+                groceryListItem.name = selectedIngredient.ingredientItem.name
+                currentGroceryList!.addHasItemsObject(groceryListItem)
+                databaseInterface.saveContext()
+            })
+        }
+    }
+    
     // MARK: - Table View Delegate
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // Prompt user for adding ingredient to grocery list
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        showAddIngredientAlert(recipe!.containsIngredients[indexPath.row])
     }
     
     // MARK: - Table View Data Source
