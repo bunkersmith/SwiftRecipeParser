@@ -9,17 +9,18 @@
 import UIKit
 import CoreData
 
-class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIGestureRecognizerDelegate, NSFetchedResultsControllerDelegate {
+class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate, UIGestureRecognizerDelegate, NSFetchedResultsControllerDelegate {
 
-    @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var progressLabel: UILabel!
     
+    var resultSearchController: UISearchController!
+    var resultTableViewController: UITableViewController!
+    var searchString: String!
+
     private var selectedRow:NSInteger = -1
     private var selectedSection:NSInteger = -1
     private var expandedCells:Array<NSIndexPath> = Array()
-
-    private var searchBarText:String?
 
     private var initializationCompleted:Bool = false
 
@@ -34,10 +35,16 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         //selectedSection = -1
         
         progressLabel.alpha = 0.0
-        searchBar.alpha = 0.0
-        searchBarText = nil
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        addScrollAreaView()
+        createFetchedResultsController(nil)
+        createSearchController()
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -58,8 +65,6 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             }
         
             initializationCompleted = true
-            let utilities:Utilities = Utilities.instance
-            NSLog("App Startup Time = %.3f", Utilities.currentTickCount()-utilities.appStartupTime)
         }
     }
     
@@ -68,19 +73,60 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         // Dispose of any resources that can be recreated.
     }
 
-    func createNewFetchedResultsController(searchString:String?) {
+    func addScrollAreaView() {
+        var frame = tableView.bounds
+        frame.origin.y = -frame.size.height;
+        var blackView = UIView(frame: frame)
+        blackView.backgroundColor = UIColor.blackColor()
+        tableView.addSubview(blackView)
+    }
+    
+    func createSearchController() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        resultTableViewController = storyboard.instantiateViewControllerWithIdentifier("ResultsTableViewController") as! UITableViewController
+        resultTableViewController.tableView.delegate = self
+        resultTableViewController.tableView.dataSource = self
+        
+        resultSearchController = UISearchController(searchResultsController: resultTableViewController)
+        resultSearchController.delegate = self
+        resultSearchController.searchResultsUpdater = self
+        resultSearchController.dimsBackgroundDuringPresentation = true
+        resultSearchController.searchBar.sizeToFit()
+        resultSearchController.searchBar.barStyle = .Default
+        resultSearchController.searchBar.showsCancelButton = true
+        resultSearchController.searchBar.delegate = self
+        
+        if let searchTextField = resultSearchController.searchBar.valueForKey("searchField") as? UITextField {
+            searchTextField.textColor = UIColor.blackColor()
+        }
+        
+        self.tableView.tableHeaderView = resultSearchController.searchBar
+        hideSearchBar()
+    }
+    
+    func showSearchBar() {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 10 * Int64(NSEC_PER_MSEC)), dispatch_get_main_queue(), { () -> Void in
+            self.tableView.contentOffset = CGPointZero
+        })
+    }
+    
+    func hideSearchBar() {
+        if self.tableView.contentOffset == CGPointZero {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 10 * Int64(NSEC_PER_MSEC)), dispatch_get_main_queue(), { () -> Void in
+                self.tableView.contentOffset = CGPointMake(0.0, self.tableView.tableHeaderView!.frame.height)
+            })
+        }
+    }
+    
+    func createFetchedResultsController(searchString:String?) {
         let databaseInterface:DatabaseInterface = DatabaseInterface()
         
         if searchString != nil {
-            fetchedResultsController = databaseInterface.createFetchedResultsController("Recipe", sortKey: "indexCharacter", secondarySortKey: nil, fetchRequestChangeBlock:{
-            inputFetchRequest in
-                var predicate:NSPredicate = NSPredicate(format: "name contains[cd] %@", searchString!)
-                inputFetchRequest.predicate = predicate
-                return inputFetchRequest
-            })
+            fetchedResultsController = databaseInterface.createFetchedResultsController("Recipe", sortKey: "title.indexCharacter", secondarySortKey: nil, sectionNameKeyPath:"title.indexCharacter", predicate:NSPredicate(format: "title.name contains[cd] %@", searchString!))
         }
         else {
-            fetchedResultsController = databaseInterface.createFetchedResultsController("Recipe", sortKey: "indexCharacter", secondarySortKey: nil, fetchRequestChangeBlock:nil)
+            fetchedResultsController = databaseInterface.createFetchedResultsController("Recipe", sortKey: "title.indexCharacter", secondarySortKey: nil, sectionNameKeyPath: "title.indexCharacter", predicate:nil)
         }
         
         sectionTitles = Utilities.convertSectionTitles(fetchedResultsController)
@@ -209,7 +255,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         var recipe:Recipe = fetchedResultsController.objectAtIndexPath(realIndexPath) as! Recipe
         
         // Configure the cell...
-        configureLabelForCell(cell, expandedFlag:cellIsExpanded, recipeTitle:recipe.name)
+        configureLabelForCell(cell, expandedFlag:cellIsExpanded, recipeTitle:recipe.title.name)
         
         //Recipe *currentRecipe = [fetchedResultsController objectAtIndexPath:indexPath];
         
@@ -258,36 +304,44 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     }
     
     func loadRecipeTable() {
-        createNewFetchedResultsController(searchBarText)
+        createFetchedResultsController(searchString)
     
         //tableView.reloadData()
     
         //RecipeUtilities.outputAllRecipesToFiles(true);
     }
     
-    func showHideSearchBar()
-    {
-        if searchBar.alpha == 0.0 {
-            searchBar.alpha = 1.0
-            resizeTableView(55.0)
-        }
-        else {
-            self.searchBar.alpha = 0.0
-            resizeTableView(-55.0)
-            tableView.reloadData()
-        }
-    }
-    
-    func resizeTableView(amount: CGFloat)
-    {
-        var tableFrame:CGRect = tableView.frame
-        tableFrame.origin.y += amount
-        tableFrame.size.height -= amount
-        tableView.frame = tableFrame
-    }
-    
     // MARK: - Table view data source
 
+    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
+        if index == 0 {
+            showSearchBar()
+        }
+        
+        return index
+    }
+    
+    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
+        return sectionIndexTitles
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section > 0 {
+            return 22.0
+        }
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var returnValue:String = ""
+        
+        if section != 0 {
+            returnValue = self.sectionTitles[section]
+        }
+        
+        return returnValue
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // Return the number of sections.
         var returnValue:Int = 0
@@ -322,28 +376,6 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         return returnValue;
     }
 
-    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
-        return sectionIndexTitles
-    }
-    
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        var returnValue:String = ""
-        
-        if section != 0 {
-            returnValue = self.sectionTitles[section]
-        }
-        
-        return returnValue
-    }
-    
-    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
-        if index == 0 {
-            showHideSearchBar()
-        }
-        
-        return index
-    }
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeTableCell", forIndexPath: indexPath) as! UITableViewCell
 
@@ -366,37 +398,45 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         if segue.identifier == "RecipeDetailSegue" {
             let detailViewController:RecipeDetailViewController = segue.destinationViewController as! RecipeDetailViewController
             
-            var indexPath:NSIndexPath = tableView.indexPathForSelectedRow()!
-            var realIndexPath:NSIndexPath = NSIndexPath(forRow: indexPath.row , inSection: indexPath.section-1)
-            
-            detailViewController.recipe = fetchedResultsController.objectAtIndexPath(realIndexPath) as? Recipe
+            var selectedIndexPath:NSIndexPath? = resultTableViewController.tableView.indexPathForSelectedRow()
+            if selectedIndexPath != nil {
+                if let cell = resultTableViewController.tableView.cellForRowAtIndexPath(selectedIndexPath!) {
+                    if cell.textLabel != nil && cell.textLabel!.text != nil {
+                        if let recipe = RecipeUtilities.fetchRecipeWithName(cell.textLabel!.text!) {
+                            detailViewController.recipe = recipe
+                            resultSearchController.active = false
+                        }
+                    }
+                }
+            }
+            else {
+                var indexPath:NSIndexPath = tableView.indexPathForSelectedRow()!
+                var realIndexPath:NSIndexPath = NSIndexPath(forRow: indexPath.row , inSection: indexPath.section-1)
+                
+                detailViewController.recipe = fetchedResultsController.objectAtIndexPath(realIndexPath) as? Recipe
+            }
         }
     }
 
-    // MARK: - UISearchBar Delegate Methods
-    
-    func clearSearchBarText() {
-        searchBar.text = ""
-        searchBarText = nil
-    }
-
+    // MARK: - Search Bar Delegate
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        clearSearchBarText()
-        searchBar.resignFirstResponder()
-        showHideSearchBar()
-        createNewFetchedResultsController(searchBarText)
+        hideSearchBar()
     }
     
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText == "" {
-            self.searchBarText = nil
+    // MARK: - Search Results Updater
+    func updateSearchResultsForSearchController(searchController: UISearchController)
+    {
+        var searchSring:String?
+        
+        if searchController.searchBar.text == "" {
+            searchString = nil
         }
         else {
-            searchBarText = searchText
+            searchString = searchController.searchBar.text
         }
+        createFetchedResultsController(searchString)
         
-        createNewFetchedResultsController(searchBarText)
+        resultTableViewController.tableView.reloadData()
     }
     
-
 }
