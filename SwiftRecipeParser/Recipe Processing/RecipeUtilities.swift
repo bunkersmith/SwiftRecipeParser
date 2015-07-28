@@ -10,10 +10,21 @@ import Foundation
 import CoreData
 
 class RecipeUtilities {
+    
+    class func fetchRecipeWithName(recipeName: String) -> Recipe? {
+        var recipeObjects = DatabaseInterface().entitiesOfType("Recipe", predicate: NSPredicate(format: "title.name == %@", recipeName)) as! [Recipe]
+        
+        if recipeObjects.count == 1 {
+            return recipeObjects.first
+        }
+        
+        return nil
+    }
+    
     class func countOfRecipes() -> Int {
         let databaseInterface:DatabaseInterface = DatabaseInterface()
         
-        return databaseInterface.countOfEntitiesOfType("Recipe", fetchRequestChangeBlock: nil)
+        return databaseInterface.countOfEntitiesOfType("Recipe", predicate: nil)
     }
 
     class func componentsJoinedByString(components:Array<String>, joinString:String) -> String {
@@ -101,8 +112,8 @@ class RecipeUtilities {
         if recipe != nil {
             returnValue = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
             returnValue = returnValue.stringByAppendingString("<recipe>\n")
-            returnValue = returnValue.stringByAppendingString("    <name>\(recipe!.name)</name>\n")
-            returnValue = returnValue.stringByAppendingString("    <indexCharacter>\(recipe!.indexCharacter)</indexCharacter>\n")
+            returnValue = returnValue.stringByAppendingString("    <name>\(recipe!.title.name)</name>\n")
+            returnValue = returnValue.stringByAppendingString("    <indexCharacter>\(recipe!.title.indexCharacter)</indexCharacter>\n")
             returnValue = returnValue.stringByAppendingString("    <notes>\(recipe!.notes)</notes>\n")
             returnValue = returnValue.stringByAppendingString("    <servings>\(recipe!.servings.intValue)</servings>\n")
             returnValue = returnValue.stringByAppendingString("    <instructions>\(recipe!.instructions)</instructions>\n")
@@ -185,7 +196,7 @@ class RecipeUtilities {
         var request:NSFetchRequest = NSFetchRequest()
         request.entity = NSEntityDescription.entityForName("Recipe", inManagedObjectContext: context)
         
-        request.predicate = NSPredicate(format: "name == %@", fileName)
+        request.predicate = NSPredicate(format: "title.name == %@", fileName)
         
         var error:NSError?
         var recipeObjects:Array<Recipe> = context.executeFetchRequest(request, error:&error) as! Array<Recipe>
@@ -222,7 +233,7 @@ class RecipeUtilities {
             {
                 currentRecipe = recipes[i]
                 
-                self.outputRecipeToFile(currentRecipe.name, recipeIndexChar:currentRecipe.indexCharacter, fileIsXML:inXMLFormat)
+                self.outputRecipeToFile(currentRecipe.title.name, recipeIndexChar:currentRecipe.title.indexCharacter, fileIsXML:inXMLFormat)
             }
         })
     }
