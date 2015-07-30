@@ -27,6 +27,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     private var fetchedResultsController:NSFetchedResultsController = NSFetchedResultsController()
     private var sectionIndexTitles:Array<String> = Array()
     private var sectionTitles:Array<String> = Array()
+    private var searchTextField:UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,8 +98,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         resultSearchController.searchBar.showsCancelButton = true
         resultSearchController.searchBar.delegate = self
         
-        if let searchTextField = resultSearchController.searchBar.valueForKey("searchField") as? UITextField {
-            searchTextField.textColor = UIColor.blackColor()
+        if let localSearchTextField = resultSearchController.searchBar.valueForKey("searchField") as? UITextField {
+            searchTextField = localSearchTextField
+            searchTextField!.textColor = UIColor.blackColor()
         }
         
         self.tableView.tableHeaderView = resultSearchController.searchBar
@@ -108,6 +110,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     func showSearchBar() {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 10 * Int64(NSEC_PER_MSEC)), dispatch_get_main_queue(), { () -> Void in
             self.tableView.contentOffset = CGPointZero
+            if self.searchTextField != nil {
+                self.searchTextField!.becomeFirstResponder()
+            }
         })
     }
     
@@ -439,4 +444,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         resultTableViewController.tableView.reloadData()
     }
     
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if tableView.contentOffset.y <= 0 && searchTextField != nil {
+            searchTextField!.becomeFirstResponder()
+        }
+    }
 }
