@@ -77,9 +77,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     func addScrollAreaView() {
         var frame = tableView.bounds
         frame.origin.y = -frame.size.height;
-        var blackView = UIView(frame: frame)
-        blackView.backgroundColor = UIColor.blackColor()
-        tableView.addSubview(blackView)
+        var whiteView = UIView(frame: frame)
+        whiteView.backgroundColor = UIColor.whiteColor()
+        tableView.addSubview(whiteView)
     }
     
     func createSearchController() {
