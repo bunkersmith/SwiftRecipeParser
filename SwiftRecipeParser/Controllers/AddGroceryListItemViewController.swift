@@ -97,7 +97,9 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         if let groceryListItem = self.fetchedResultsController.objectAtIndexPath(indexPath) as? GroceryListItem {
             if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
                 groceryListItemCell.nameLabel.text = groceryListItem.name
-                groceryListItemCell.costLabel.text = String(format: "%.2f", groceryListItem.cost.floatValue)
+                if groceryListItem.cost.floatValue > 0.0 {
+                    groceryListItemCell.costLabel.text = String(format: "%.2f", groceryListItem.cost.floatValue)
+                }
             }
         }
     }
