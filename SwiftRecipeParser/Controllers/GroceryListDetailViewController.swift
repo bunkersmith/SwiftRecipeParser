@@ -62,7 +62,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         {
             var itemToBuy:GroceryListItem = groceryList.hasItems[indexPath!.row] as! GroceryListItem
             if itemToBuy.isBought.boolValue {
-                var putBackItemAlert = Utilities.showOkButtonAlert(self, title: "Do you want to put back \(itemToBuy.name)?", message: "", okButtonHandler: { action in
+                var putBackItemAlert = Utilities.showYesNoAlert(self, title: "Do you want to put back \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
                     itemToBuy.isBought = false;
                     self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue - itemToBuy.cost.floatValue)
                     self.databaseInterface.saveContext()
@@ -73,14 +73,17 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             }
             else {
                 var textField:UITextField = UITextField()
-                var buyItemAlert = Utilities.showTextFieldAlert(self, title: "Enter price of \(itemToBuy.name)", message: "", inputTextField: &textField, startingText: String(format: "%.2f", itemToBuy.cost.floatValue), keyboardType: .DecimalPad, capitalizationType:.None, okButtonHandler: { action in
+                var startingText = ""
+                if (itemToBuy.cost.floatValue > 0.0) {
+                    startingText = String(format: "%.2f", itemToBuy.cost.floatValue);
+                }
+                var buyItemAlert = Utilities.showTextFieldAlert(self, title: "Enter price of \(itemToBuy.name)", message: "", inputTextField: &textField, startingText: startingText, keyboardType: .DecimalPad, capitalizationType:.None, okButtonHandler: { action in
                     if textField.text != "" {
-                        var oldItemCost = itemToBuy.cost.floatValue
                         var itemToBuyCost:Float = (textField.text as NSString).floatValue
                         itemToBuy.cost = NSNumber(float:itemToBuyCost)
                         itemToBuy.isBought = true
                         
-                        self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue + itemToBuyCost - oldItemCost)
+                        self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue + itemToBuyCost)
                         self.databaseInterface.saveContext()
                         
                         self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
