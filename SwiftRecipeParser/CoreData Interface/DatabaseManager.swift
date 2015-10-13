@@ -9,25 +9,12 @@
 import Foundation
 import CoreData
 
-class DatabaseManager {
+class DatabaseManager : NSObject {
     class var instance: DatabaseManager {
     struct Singleton {
         static let instance = DatabaseManager()
         }
         return Singleton.instance
-    }
-    
-    init() {
-    
-        NSLog("storeURL = \(self.storeURL)")
-        NSLog("modelURL = \(self.modelURL)")
-/*
-        var fileManager:NSFileManager = NSFileManager.defaultManager()
-        if fileManager.fileExistsAtPath(storeURL.path)
-        {
-            NSLog("Found store URL file")
-        }
-*/
     }
     
     func backgroundOperation(block: (() -> Void)!)
@@ -41,6 +28,17 @@ class DatabaseManager {
     
     func returnMainManagedObjectContext() -> NSManagedObjectContext {
         return mainContext
+    }
+    
+    func contextSaved(notification: NSNotification) {
+        if NSThread.isMainThread() {
+            mainContext.mergeChangesFromContextDidSaveNotification(notification)
+        }
+        else {
+            dispatch_sync(dispatch_get_main_queue(), { () -> Void in
+                self.mainContext.mergeChangesFromContextDidSaveNotification(notification)
+            })
+        }
     }
     
     lazy private var operationQueue:NSOperationQueue = {
@@ -79,6 +77,7 @@ class DatabaseManager {
     lazy private var mainContext:NSManagedObjectContext = {
         let mainContext = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.ConfinementConcurrencyType)
         mainContext.persistentStoreCoordinator = self.storeCoordinator
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"contextSaved:", name: NSManagedObjectContextDidSaveNotification, object: nil)
         return mainContext
     }()
     
