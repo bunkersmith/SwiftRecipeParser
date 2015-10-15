@@ -32,7 +32,7 @@ class Recipe: NSManagedObject {
     {
         self.willChangeValueForKey("containsIngredients")
         
-        var tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet: containsIngredients)
+        let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet: containsIngredients)
         
         tempSet.addObject(value)
         

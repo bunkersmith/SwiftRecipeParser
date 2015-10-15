@@ -12,21 +12,24 @@ import CoreData
 
 class Utilities {
     
+    @available(iOS 8.0, *)
     class func showOkButtonAlert(viewController:UIViewController, title: String, message:String, okButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
-        var okButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.Alert)
+        let okButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.Alert)
         okButtonAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: okButtonHandler))
         viewController.presentViewController(okButtonAlert, animated:true, completion: nil)
         return okButtonAlert
     }
 
+    @available(iOS 8.0, *)
     class func showYesNoAlert(viewController:UIViewController, title: String, message:String, yesButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
-        var yesNoButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.Alert)
+        let yesNoButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.Alert)
         yesNoButtonAlert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: yesButtonHandler))
         yesNoButtonAlert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: nil))
         viewController.presentViewController(yesNoButtonAlert, animated:true, completion: nil)
         return yesNoButtonAlert
     }
     
+    @available(iOS 8.0, *)
     class func showTextFieldAlert(viewController:UIViewController,
                                            title: String, message:String?,
                             inout inputTextField:UITextField,
@@ -34,7 +37,7 @@ class Utilities {
                                     keyboardType:UIKeyboardType,
                               capitalizationType:UITextAutocapitalizationType,
                                    okButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
-        var textFieldAlert = UIAlertController(title:title, message:message, preferredStyle:.Alert)
+        let textFieldAlert = UIAlertController(title:title, message:message, preferredStyle:.Alert)
     
         textFieldAlert.addTextFieldWithConfigurationHandler { (textField: UITextField!) -> Void in
             inputTextField = textField
@@ -62,7 +65,7 @@ class Utilities {
     class func convertSectionIndexTitles(fetchedResultsController:NSFetchedResultsController) -> Array<String> {
         var returnValue:Array<String> = [UITableViewIndexSearch]
         for i in 0 ..< fetchedResultsController.sectionIndexTitles.count {
-            returnValue.append(fetchedResultsController.sectionIndexTitles[i] as! String)
+            returnValue.append(fetchedResultsController.sectionIndexTitles[i] )
         }
         
         return returnValue
@@ -70,21 +73,21 @@ class Utilities {
     
     class func fileExistsAtAbsolutePath(pathname:String) -> Bool {
         var isDirectory:ObjCBool = ObjCBool(false)
-        var existsAtPath:Bool = NSFileManager.defaultManager().fileExistsAtPath(pathname, isDirectory: &isDirectory)
+        let existsAtPath:Bool = NSFileManager.defaultManager().fileExistsAtPath(pathname, isDirectory: &isDirectory)
         
         return existsAtPath && !isDirectory
     }
     
     class func directoryExistsAtAbsolutePath(pathname:String) -> Bool {
         var isDirectory:ObjCBool = ObjCBool(false)
-        var existsAtPath:Bool = NSFileManager.defaultManager().fileExistsAtPath(pathname, isDirectory: &isDirectory)
+        let existsAtPath:Bool = NSFileManager.defaultManager().fileExistsAtPath(pathname, isDirectory: &isDirectory)
         
         return existsAtPath && isDirectory
     }
     
     class func writelnToStandardOut(stringToWrite:String) {
             dispatch_async(dispatch_get_main_queue(), {
-                println(stringToWrite)
+                print(stringToWrite)
             })
     }
     
@@ -92,6 +95,6 @@ class Utilities {
     class func applicationDocumentsDirectory() -> NSURL
     {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as! NSURL
+        return urls[urls.count-1] 
     }
 }

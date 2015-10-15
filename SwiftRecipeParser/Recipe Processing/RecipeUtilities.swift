@@ -12,7 +12,7 @@ import CoreData
 class RecipeUtilities {
     
     class func fetchRecipeWithName(recipeName: String) -> Recipe? {
-        var recipeObjects = DatabaseInterface().entitiesOfType("Recipe", predicate: NSPredicate(format: "title.name == %@", recipeName)) as! [Recipe]
+        let recipeObjects = DatabaseInterface().entitiesOfType("Recipe", predicate: NSPredicate(format: "title.name == %@", recipeName)) as! [Recipe]
         
         if recipeObjects.count == 1 {
             return recipeObjects.first
@@ -44,35 +44,37 @@ class RecipeUtilities {
     {
         let fileManager:NSFileManager = NSFileManager.defaultManager()
         
-        var recipeDirectory:String = Utilities.applicationDocumentsDirectory().path!
+        var recipeDirectory:NSURL = Utilities.applicationDocumentsDirectory()
         
         if (fileIsXML) {
-            recipeDirectory = recipeDirectory.stringByAppendingPathComponent("XML_recipes")
+            recipeDirectory = recipeDirectory.URLByAppendingPathComponent("XML_recipes")
         }
-        recipeDirectory = recipeDirectory.stringByAppendingPathComponent(recipeIndexChar)
+        recipeDirectory = recipeDirectory.URLByAppendingPathComponent(recipeIndexChar)
         
         let separatorCharacters:NSCharacterSet = NSCharacterSet(charactersInString: " ,/'")
         
-        var fileNameComponents:Array<String> = recipeName.componentsSeparatedByCharactersInSet(separatorCharacters)
-        var fileName:String = componentsJoinedByString(fileNameComponents, joinString: "_")
+        let fileNameComponents:Array<String> = recipeName.componentsSeparatedByCharactersInSet(separatorCharacters)
+        let fileName:String = componentsJoinedByString(fileNameComponents, joinString: "_")
         
         var filePathname: String
         
         if fileIsXML {
-            filePathname = recipeDirectory.stringByAppendingPathComponent(fileName.stringByAppendingPathExtension("xml")!)
+            filePathname = recipeDirectory.URLByAppendingPathComponent(fileName).URLByAppendingPathExtension("xml").path!
         }
         else {
-            filePathname = recipeDirectory.stringByAppendingPathComponent(fileName.stringByAppendingPathExtension("txt")!)
+            filePathname = recipeDirectory.URLByAppendingPathComponent(fileName).URLByAppendingPathExtension("txt").path!
         }
         
-        var error:NSError?
-        
-        if !Utilities.directoryExistsAtAbsolutePath(recipeDirectory) {
-            fileManager.createDirectoryAtPath(recipeDirectory, withIntermediateDirectories: true, attributes: nil, error: &error)
+        if !Utilities.directoryExistsAtAbsolutePath(recipeDirectory.path!) {
+            do {
+                try fileManager.createDirectoryAtPath(recipeDirectory.path!, withIntermediateDirectories: true, attributes: nil)
+            } catch let error as NSError {
+                NSLog("Error creating directory at path \(recipeDirectory.path!): \(error)")
+            }
             //NSLog(@"recipeDirectory = %@", recipeDirectory)
         }
         
-        if Utilities.directoryExistsAtAbsolutePath(recipeDirectory) {
+        if Utilities.directoryExistsAtAbsolutePath(recipeDirectory.path!) {
             var fileContents: String
             
             if fileIsXML {
@@ -82,20 +84,12 @@ class RecipeUtilities {
                 fileContents = RecipeUtilities.convertRecipeNameToFormattedText(recipeName)
             }
             
-            var fileWritten: Bool
-            
-            fileWritten = fileContents.writeToFile(filePathname, atomically: true, encoding: NSUTF8StringEncoding, error: &error)
-            
-            
-            if fileWritten == false {
-                NSLog("Error writing to %@", filePathname)
-                
-                if error != nil {
-                    NSLog("error: \(error)")
-                    
-                    if error!.code == 517 {
-                        NSLog("fileContents = *%@*", fileContents)
-                    }
+            do {
+                try fileContents.writeToFile(filePathname, atomically: true, encoding: NSUTF8StringEncoding)
+            } catch let error as NSError {
+                NSLog("Error writing file at path \(filePathname): \(error)")
+                if error.code == 517 {
+                    NSLog("fileContents = *%@*", fileContents)
                 }
             }
         }
@@ -107,7 +101,7 @@ class RecipeUtilities {
     class func convertRecipeNameToXMLText(recipeName:String) -> String {
         var returnValue:String = ""
 
-        var recipe:Recipe? = RecipeUtilities.convertRecipeNameToObject(recipeName)
+        let recipe:Recipe? = RecipeUtilities.convertRecipeNameToObject(recipeName)
         
         if recipe != nil {
             returnValue = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
@@ -145,7 +139,7 @@ class RecipeUtilities {
     class func convertRecipeNameToFormattedText(recipeName:String) -> String {
         var returnValue:String = "\(recipeName)\n\n"
         
-        var recipe:Recipe? = RecipeUtilities.convertRecipeNameToObject(recipeName)
+        let recipe:Recipe? = RecipeUtilities.convertRecipeNameToObject(recipeName)
         
         returnValue = returnValue.stringByAppendingString("Notes:\n\(recipe!.notes)\n\n")
     
@@ -171,7 +165,7 @@ class RecipeUtilities {
                 }
             }
             else {
-                var quantityString:String = FractionMath.doubleToString(ingredient.quantity.doubleValue)
+                let quantityString:String = FractionMath.doubleToString(ingredient.quantity.doubleValue)
                 returnValue = returnValue.stringByAppendingString("\(quantityString)\t\(ingredient.unitOfMeasure)\t\(ingredient.ingredientItem.name)\n")
             }
         }
@@ -189,20 +183,24 @@ class RecipeUtilities {
     {
         var recipe:Recipe? = nil
         
-        var databaseManager:DatabaseManager = DatabaseManager.instance
+        let databaseManager:DatabaseManager = DatabaseManager.instance
         
-        var context:NSManagedObjectContext = databaseManager.returnMainManagedObjectContext()
+        let context:NSManagedObjectContext = databaseManager.returnMainManagedObjectContext()
         
-        var request:NSFetchRequest = NSFetchRequest()
+        let request:NSFetchRequest = NSFetchRequest()
         request.entity = NSEntityDescription.entityForName("Recipe", inManagedObjectContext: context)
         
         request.predicate = NSPredicate(format: "title.name == %@", fileName)
         
-        var error:NSError?
-        var recipeObjects:Array<Recipe> = context.executeFetchRequest(request, error:&error) as! Array<Recipe>
-        
-        if recipeObjects.count == 1 {
-            recipe = recipeObjects[0] as Recipe
+        var recipeObjects:[AnyObject]
+        do {
+            recipeObjects = try context.executeFetchRequest(request)
+            
+            if recipeObjects.count == 1 {
+                recipe = recipeObjects[0] as? Recipe
+            }
+        } catch let error as NSError {
+            NSLog("Error retrieving recipe named \(fileName): \(error)")
         }
         
         return recipe

@@ -26,7 +26,7 @@ class GroceryItem: NSManagedObject {
     
     class func count() -> Int {
         var groceryItemCount:Int
-        var databaseInterface:DatabaseInterface = DatabaseInterface()
+        let databaseInterface:DatabaseInterface = DatabaseInterface()
         groceryItemCount = databaseInterface.countOfEntitiesOfType("GroceryItem", predicate:nil)
         
         return groceryItemCount

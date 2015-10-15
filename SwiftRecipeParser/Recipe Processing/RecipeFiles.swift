@@ -13,7 +13,7 @@ class RecipeFiles {
     private var totalRecipes:Int = 0;
     
     func initializeRecipeDatabaseFromResourceFiles() {
-        var databaseManager:DatabaseManager = DatabaseManager.instance
+        let databaseManager:DatabaseManager = DatabaseManager.instance
         
         databaseManager.backgroundOperation({
             self.asyncInitializeRecipeDatabase(DatabaseInterface())
@@ -22,33 +22,38 @@ class RecipeFiles {
     
     func initializeRecipesInDirectory(directoryName:String) -> Array<String> {
         var directoryContent:Array<AnyObject>
-        directoryContent = NSFileManager.defaultManager().contentsOfDirectoryAtPath(directoryName, error: nil)!
-        
         var usableFiles:Array<String> = Array()
         var usableFileCount:Int = 0
-        var fullRecipePathname:String
-        var recipeTitle:String
         
-        //NSLog("\(directoryName.lastPathComponent) count = \(directoryContent.count)")
-        
-        for i in 0 ..< directoryContent.count {
-            fullRecipePathname = directoryName.stringByAppendingPathComponent(directoryContent[i] as! String)
-            //Utilities.writelnToStandardOut(fullRecipePathname)
+        do {
+            directoryContent = try NSFileManager.defaultManager().contentsOfDirectoryAtPath(directoryName)
             
-            if Utilities.fileExistsAtAbsolutePath(fullRecipePathname) {
-                if fullRecipePathname.rangeOfString(".xml") != nil {
-                    usableFiles.append(fullRecipePathname)
-                    recipeTitle = RecipeFiles.returnRecipeTitleFromPath(fullRecipePathname)
-                    //Utilities.writelnToStandardOut("recipeTitle = \(recipeTitle)")
-                    usableFileCount++
+            var fullRecipePathname:String
+            //var recipeTitle:String
+            
+            //NSLog("\(directoryName.lastPathComponent) count = \(directoryContent.count)")
+            
+            for i in 0 ..< directoryContent.count {
+                fullRecipePathname = directoryName + "/" + (directoryContent[i] as! String)
+                //Utilities.writelnToStandardOut(fullRecipePathname)
+                
+                if Utilities.fileExistsAtAbsolutePath(fullRecipePathname) {
+                    if fullRecipePathname.rangeOfString(".xml") != nil {
+                        usableFiles.append(fullRecipePathname)
+                        //recipeTitle = RecipeFiles.returnRecipeTitleFromPath(fullRecipePathname)
+                        //Utilities.writelnToStandardOut("recipeTitle = \(recipeTitle)")
+                        usableFileCount++
+                    }
+                    else {
+                        NSLog("Recipe Pathname \(fullRecipePathname) does not contain .xml")
+                    }
                 }
                 else {
-                    NSLog("Recipe Pathname \(fullRecipePathname) does not contain .xml")
+                    NSLog("Utilities.fileExistsAtAbsolutPath returned fals for file \(fullRecipePathname)")
                 }
             }
-            else {
-                NSLog("Utilities.fileExistsAtAbsolutPath returned fals for file \(fullRecipePathname)")
-            }
+        } catch let error as NSError {
+            NSLog("Error retrieving contents of directory at path \(directoryName): \(error)")
         }
         
         if usableFileCount > 0 {
@@ -58,47 +63,54 @@ class RecipeFiles {
         return usableFiles
     }
     
-    func returnlRecipeResourcesPath() -> String {
-        var returnValue:String = NSBundle.mainBundle().resourcePath!
+    func returnRecipeResourcesURL() -> NSURL {
+        let resourcePath:String = NSBundle.mainBundle().resourcePath!
+        let returnValue = NSURL(fileURLWithPath:resourcePath).URLByAppendingPathComponent("XML_recipes")
         
-        return returnValue.stringByAppendingPathComponent("XML_recipes")
+        return returnValue
     }
     
     func initializeRecipePathnames() -> Array<Array<String>> {
         var recipePathnames:Array<Array<String>> = Array<Array<String>>()
         
-        var recipesResourcesDirectory:String = returnlRecipeResourcesPath()
-        var exists:Bool = Utilities.directoryExistsAtAbsolutePath(recipesResourcesDirectory)
+        let recipesResourcesDirectory:NSURL = returnRecipeResourcesURL()
+        let exists:Bool = Utilities.directoryExistsAtAbsolutePath(recipesResourcesDirectory.path!)
         
         NSLog("recipesResourcesDirectory = \(recipesResourcesDirectory), exists = \(exists)")
         
         if exists {
             var directoryContent:Array<AnyObject>
-            directoryContent = NSFileManager.defaultManager().contentsOfDirectoryAtPath(recipesResourcesDirectory, error: nil)!
-            var fullDirectoryPathname:String
             
-            for i in 0 ..< directoryContent.count {
-                fullDirectoryPathname = recipesResourcesDirectory.stringByAppendingPathComponent(directoryContent[i] as! String)
+            do {
+            directoryContent = try NSFileManager.defaultManager().contentsOfDirectoryAtPath(recipesResourcesDirectory.path!)
                 
-                if Utilities.directoryExistsAtAbsolutePath(fullDirectoryPathname) {
-                    recipePathnames.append(initializeRecipesInDirectory(fullDirectoryPathname))
+                var fullDirectoryPathname:String
+                
+                for i in 0 ..< directoryContent.count {
+                    fullDirectoryPathname = recipesResourcesDirectory.URLByAppendingPathComponent(directoryContent[i] as! String).path!
+                    
+                    if Utilities.directoryExistsAtAbsolutePath(fullDirectoryPathname) {
+                        recipePathnames.append(initializeRecipesInDirectory(fullDirectoryPathname))
+                    }
                 }
+                
+                NSLog("Recipe resource pathnames added: \(totalRecipes)")
+            } catch let error as NSError {
+                NSLog("Error retrieving contents of directory at path \(recipesResourcesDirectory.path): \(error)")
             }
-            
-            NSLog("Recipe resource pathnames added: \(totalRecipes)")
         }
         
         return recipePathnames
     }
     
     func asyncInitializeRecipeDatabase(databaseInterface:DatabaseInterface) {
-        var asyncInitStartTime = MillisecondTimer.currentTickCount()
+        let asyncInitStartTime = MillisecondTimer.currentTickCount()
         
         var recipePathnames:Array<Array<String>> = initializeRecipePathnames()
         
         var currentRecipeSection:Array<String> = Array()
         
-        var fivePercent:Int = totalRecipes / 20
+        let fivePercent:Int = totalRecipes / 20
 
         NSLog("totalRecipes = \(totalRecipes)")
         NSLog("fivePercent = \(fivePercent)")
@@ -128,28 +140,26 @@ class RecipeFiles {
         percentageDictionary = ["percentage": 100.0]
         NSNotificationCenter.defaultCenter().postNotificationName("RecipeProgressNotification", object: self, userInfo: percentageDictionary)
         
-        var asyncInitStopTime = MillisecondTimer.currentTickCount();
+        let asyncInitStopTime = MillisecondTimer.currentTickCount();
         
         NSLog("asyncRecipeDatabaseInit Elapsed Time = %.3f", Float(asyncInitStopTime - asyncInitStartTime) / 1000.0 )
     }
     
     func returnRecipeFromXML(recipePath:NSString, databaseInterface:DatabaseInterface)
     {
-        var recipeFileData:NSData = NSFileManager.defaultManager().contentsAtPath(recipePath as String)!;
+        let recipeFileData:NSData = NSFileManager.defaultManager().contentsAtPath(recipePath as String)!;
         
-        var xmlRecipeParser:ParseXMLRecipe = ParseXMLRecipe();
+        let xmlRecipeParser:ParseXMLRecipe = ParseXMLRecipe();
         xmlRecipeParser.parseRecipeFromXMLData(recipeFileData, databaseInterface: databaseInterface)
     }
     
     class func readRecipeFile(filePath:String) -> String {
-        var error:NSError?
         var fileContents:String = ""
         
         if Utilities.fileExistsAtAbsolutePath(filePath) {
-            var error:NSError?
-            fileContents = String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding, error: &error)!
-            
-            if error != nil {
+            do {
+                fileContents = try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
+            } catch let error as NSError {
                 fileContents = ""
                 NSLog("readRecipeFile encountered error \(error) reading file with path \(filePath)")
             }
@@ -162,7 +172,7 @@ class RecipeFiles {
     }
     
     class func returnRecipeTitleFromPath(recipeResourceFilePath:String) -> String {
-        var fileContents:String = readRecipeFile(recipeResourceFilePath)
+        let fileContents:String = readRecipeFile(recipeResourceFilePath)
         
         if fileContents == "" {
             return ""

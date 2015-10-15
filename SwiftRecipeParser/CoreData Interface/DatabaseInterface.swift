@@ -33,9 +33,10 @@ class DatabaseInterface: NSObject {
     }
     
     func saveContext() {
-        var error:NSError?
         if context != nil {
-            if !context.save(&error) {
+            do {
+                try context.save()
+            } catch let error as NSError {
                 NSLog("Error saving context in DatabaseInterface.saveContext(): \(error)")
             }
         }
@@ -52,32 +53,33 @@ class DatabaseInterface: NSObject {
         }
         fetchRequest.returnsObjectsAsFaults = false
         
-        var error:NSError?
-        var result:[AnyObject] = context.executeFetchRequest(fetchRequest, error: &error)!
-        
-        if error != nil {
+        do {
+            let result:[AnyObject] = try context.executeFetchRequest(fetchRequest)
+            return result
+        } catch let error as NSError {
             NSLog("entitiesOfType error = \(error)")
         }
         
-        return result
+        return [AnyObject]()
     }
     
     func entitiesOfType(entityTypeName:String, predicate: NSPredicate?) -> [AnyObject] {
-        var fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
+        let fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
         
         if predicate != nil {
             fetchRequest.predicate = predicate
         }
         fetchRequest.returnsObjectsAsFaults = false
         
-        var error:NSError?
-        var result:[AnyObject] = context.executeFetchRequest(fetchRequest, error: &error)!
-        
-        if error != nil {
+        do {
+            let result:[AnyObject] = try context.executeFetchRequest(fetchRequest)
+            return result
+        }
+        catch let error as NSError  {
             NSLog("entitiesOfType error = \(error)")
         }
         
-        return result
+        return [AnyObject]()
     }
     
     func countOfEntitiesOfType(entityTypeName:String, fetchRequestChangeBlock:((inputFetchRequest:NSFetchRequest) -> NSFetchRequest)?) -> Int {
@@ -88,7 +90,7 @@ class DatabaseInterface: NSObject {
         }
         
         var error:NSError?
-        var result:Int = context.countForFetchRequest(fetchRequest, error: &error)
+        let result:Int = context.countForFetchRequest(fetchRequest, error: &error)
         
         if error != nil {
             NSLog("countOfEntitiesOfType error = \(error)")
@@ -98,14 +100,14 @@ class DatabaseInterface: NSObject {
     }
     
     func countOfEntitiesOfType(entityTypeName:String, predicate:NSPredicate?) -> Int {
-        var fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
+        let fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
         
         if predicate != nil {
             fetchRequest.predicate = predicate
         }
         
         var error:NSError?
-        var result:Int = context.countForFetchRequest(fetchRequest, error: &error)
+        let result:Int = context.countForFetchRequest(fetchRequest, error: &error)
         
         if error != nil {
             NSLog("countOfEntitiesOfType error = \(error)")
@@ -116,16 +118,16 @@ class DatabaseInterface: NSObject {
 
     func createFetchedResultsController(entityName:String, sortKey:String, secondarySortKey:String?, sectionNameKeyPath:String?, predicate:NSPredicate?) -> NSFetchedResultsController {
         var fetchedResultsController:NSFetchedResultsController
-        var fetchRequest:NSFetchRequest = NSFetchRequest(entityName: entityName)
+        let fetchRequest:NSFetchRequest = NSFetchRequest(entityName: entityName)
         
         if predicate != nil {
             fetchRequest.predicate = predicate
         }
         
-        var sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: sortKey, ascending: true)
+        let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: sortKey, ascending: true)
         var sortDescriptors = [sortDescriptor]
-        if var localSecondarySortKey = secondarySortKey {
-            var secondarySortDescriptor:NSSortDescriptor = NSSortDescriptor(key: localSecondarySortKey, ascending: true)
+        if let localSecondarySortKey = secondarySortKey {
+            let secondarySortDescriptor:NSSortDescriptor = NSSortDescriptor(key: localSecondarySortKey, ascending: true)
             sortDescriptors = [sortDescriptor, secondarySortDescriptor]
         }
         fetchRequest.sortDescriptors = sortDescriptors
@@ -135,8 +137,9 @@ class DatabaseInterface: NSObject {
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: sectionNameKeyPath, cacheName: nil)
         
-        var error:NSError?
-        if !fetchedResultsController.performFetch(&error) {
+        do {
+            try fetchedResultsController.performFetch()
+        } catch let error as NSError {
             NSLog("Error initializing fetchedResultsController for \(entityName): \(error)")
         }
         
@@ -147,5 +150,27 @@ class DatabaseInterface: NSObject {
     {
         context.deleteObject(coreDataObject as! NSManagedObject);
         saveContext()
+    }
+    
+    func deleteAllObjectsWithEntityName(entityName: String)
+    {
+        let fetchRequest = NSFetchRequest()
+        let entity = NSEntityDescription.entityForName(entityName, inManagedObjectContext:context)
+        fetchRequest.entity = entity
+        
+        do {
+            if let items:[NSManagedObject] = try context.executeFetchRequest(fetchRequest) as? [NSManagedObject] {
+                for managedObject:NSManagedObject in items {
+                    context.deleteObject(managedObject)
+                }
+                saveContext()
+            }
+            else {
+                NSLog("Could not downcast entities named \(entityName) in deleteAllObjectsWithEntityName")
+            }
+        }
+        catch let error as NSError {
+            NSLog("Error fetching (before deleting) all entities named \(entityName): \(error)")
+        }
     }
 }

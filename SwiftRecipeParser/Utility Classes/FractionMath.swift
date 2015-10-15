@@ -45,8 +45,8 @@ class FractionMath {
                 }
                 else {
                     // The number has a fractional part
-                    var numeratorString:NSString = slashDividedString[0];
-                    var denominatorString:NSString = slashDividedString[1];
+                    let numeratorString:NSString = slashDividedString[0];
+                    let denominatorString:NSString = slashDividedString[1];
                     
                     //NSLog(@"Fraction value = %f", [numeratorString doubleValue] / [denominatorString doubleValue]);
                     returnValue +=  numeratorString.doubleValue / denominatorString.doubleValue

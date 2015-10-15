@@ -35,18 +35,22 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBAction func addButtonPressed(sender: AnyObject) {
         var inputTextField = UITextField()
-        Utilities.showTextFieldAlert(self, title: "Enter grocery list name", message: "", inputTextField: &inputTextField, startingText: "", keyboardType: .Default, capitalizationType: .Words) { action in
-            var groceryListName:String = inputTextField.text
-            
-            var newGroceryList:GroceryList = self.databaseInterface.newManagedObjectOfType("GroceryList") as! GroceryList
-            newGroceryList.name = groceryListName
-            newGroceryList.totalCost = NSNumber(float:0.0)
-            
-            self.databaseInterface.saveContext();
-            GroceryList.setCurrentGroceryList(newGroceryList.name, databaseInterfacePtr:self.databaseInterface)
-            
-            self.populateGroceryLists()
-            self.tableView.reloadData()
+        if #available(iOS 8.0, *) {
+            Utilities.showTextFieldAlert(self, title: "Enter grocery list name", message: "", inputTextField: &inputTextField, startingText: "", keyboardType: .Default, capitalizationType: .Words) { action in
+                let groceryListName:String = inputTextField.text!
+                
+                let newGroceryList:GroceryList = self.databaseInterface.newManagedObjectOfType("GroceryList") as! GroceryList
+                newGroceryList.name = groceryListName
+                newGroceryList.totalCost = NSNumber(float:0.0)
+                
+                self.databaseInterface.saveContext();
+                GroceryList.setCurrentGroceryList(newGroceryList.name, databaseInterfacePtr:self.databaseInterface)
+                
+                self.populateGroceryLists()
+                self.tableView.reloadData()
+            }
+        } else {
+            // Fallback on earlier versions
         }
     }
     
@@ -58,8 +62,8 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("GroceryListsTableCell", forIndexPath: indexPath) as! UITableViewCell
-        var groceryList:GroceryList = groceryLists![indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("GroceryListsTableCell", forIndexPath: indexPath) 
+        let groceryList:GroceryList = groceryLists![indexPath.row]
         
         // Configure the cell...
         if groceryList.isCurrent.boolValue {
@@ -80,7 +84,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the model and data source
-            var groceryList:GroceryList = groceryLists[indexPath.row]
+            let groceryList:GroceryList = groceryLists[indexPath.row]
             databaseInterface.deleteObject(groceryList)
             groceryLists.removeAtIndex(indexPath.row)
             
@@ -116,8 +120,8 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "selectGroceryListSegue" {
-            var detailViewController:GroceryListDetailViewController = segue.destinationViewController as! GroceryListDetailViewController
-            var indexPath:NSIndexPath = tableView.indexPathForSelectedRow()!
+            let detailViewController:GroceryListDetailViewController = segue.destinationViewController as! GroceryListDetailViewController
+            let indexPath:NSIndexPath = tableView.indexPathForSelectedRow!
             detailViewController.groceryList = groceryLists[indexPath.row]
         }
     }

@@ -39,7 +39,11 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     
     func groceryListItemAdded(groceryListItem: GroceryListItem) {
         if groceryList.hasItems.containsObject(groceryListItem) {
-            Utilities.showOkButtonAlert(self, title: "Error Alert", message: "\(groceryListItem.name) is already on your list", okButtonHandler: nil)
+            if #available(iOS 8.0, *) {
+                Utilities.showOkButtonAlert(self, title: "Error Alert", message: "\(groceryListItem.name) is already on your list", okButtonHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            }
         }
         else {
             groceryList.totalCost = NSNumber(float:groceryList.totalCost.floatValue + groceryListItem.cost.floatValue)
@@ -56,20 +60,24 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     @IBAction func buyItemButtonPressed(sender: AnyObject) {
-        var buttonPosition:CGPoint = sender.convertPoint(CGPointZero, toView:tableView)
-        var indexPath:NSIndexPath?  = tableView!.indexPathForRowAtPoint(buttonPosition)
+        let buttonPosition:CGPoint = sender.convertPoint(CGPointZero, toView:tableView)
+        let indexPath:NSIndexPath?  = tableView!.indexPathForRowAtPoint(buttonPosition)
         if (indexPath != nil)
         {
-            var itemToBuy:GroceryListItem = groceryList.hasItems[indexPath!.row] as! GroceryListItem
+            let itemToBuy:GroceryListItem = groceryList.hasItems[indexPath!.row] as! GroceryListItem
             if itemToBuy.isBought.boolValue {
-                var putBackItemAlert = Utilities.showYesNoAlert(self, title: "Do you want to put back \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
-                    itemToBuy.isBought = false;
-                    self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue - itemToBuy.cost.floatValue)
-                    self.databaseInterface.saveContext()
-                    
-                    self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
-                    self.tableView.reloadData()
-                })
+                if #available(iOS 8.0, *) {
+                    Utilities.showYesNoAlert(self, title: "Do you want to put back \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
+                        itemToBuy.isBought = false;
+                        self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue - itemToBuy.cost.floatValue)
+                        self.databaseInterface.saveContext()
+                        
+                        self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+                        self.tableView.reloadData()
+                    })
+                } else {
+                    // Fallback on earlier versions
+                }
             }
             else {
                 var textField:UITextField = UITextField()
@@ -77,22 +85,26 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                 if (itemToBuy.cost.floatValue > 0.0) {
                     startingText = String(format: "%.2f", itemToBuy.cost.floatValue);
                 }
-                var buyItemAlert = Utilities.showTextFieldAlert(self, title: "Enter price of \(itemToBuy.name)", message: "", inputTextField: &textField, startingText: startingText, keyboardType: .DecimalPad, capitalizationType:.None, okButtonHandler: { action in
-                    if textField.text != "" {
-                        var itemToBuyCost:Float = (textField.text as NSString).floatValue
-                        itemToBuy.cost = NSNumber(float:itemToBuyCost)
-                        itemToBuy.isBought = true
-                        
-                        self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue + itemToBuyCost)
-                        self.databaseInterface.saveContext()
-                        
-                        self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
-                        self.tableView.reloadData()
-                    }
-                    else {
-                        Utilities.showOkButtonAlert(self, title: "Please enter a price", message: "", okButtonHandler: nil)
-                    }
-                })
+                if #available(iOS 8.0, *) {
+                    Utilities.showTextFieldAlert(self, title: "Enter price of \(itemToBuy.name)", message: "", inputTextField: &textField, startingText: startingText, keyboardType: .DecimalPad, capitalizationType:.None, okButtonHandler: { action in
+                        if textField.text != "" {
+                            let itemToBuyCost:Float = (textField.text as NSString!).floatValue
+                            itemToBuy.cost = NSNumber(float:itemToBuyCost)
+                            itemToBuy.isBought = true
+                            
+                            self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue + itemToBuyCost)
+                            self.databaseInterface.saveContext()
+                            
+                            self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+                            self.tableView.reloadData()
+                        }
+                        else {
+                            Utilities.showOkButtonAlert(self, title: "Please enter a price", message: "", okButtonHandler: nil)
+                        }
+                    })
+                } else {
+                    // Fallback on earlier versions
+                }
             }
         }
     }
@@ -104,7 +116,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "addGroceryListItemSegue" {
-            var addViewController:AddGroceryListItemViewController = segue.destinationViewController as! AddGroceryListItemViewController
+            let addViewController:AddGroceryListItemViewController = segue.destinationViewController as! AddGroceryListItemViewController
             addViewController.delegate = self
         }
     }
@@ -120,7 +132,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("GroceryListItemCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("GroceryListItemCell", forIndexPath: indexPath) 
         configureCell(cell, atIndexPath: indexPath)
         return cell
     }

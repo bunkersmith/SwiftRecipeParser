@@ -34,7 +34,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
 
     override func viewWillAppear(animated: Bool) {
         
-        var deviceString:String =  UIDevice.currentDevice().model
+        let deviceString:String =  UIDevice.currentDevice().model
         if deviceString.rangeOfString("iPad") != nil {
             instructionsVerticalSpaceConstraint.constant = 15.0
         }
@@ -68,8 +68,8 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBAction func handleLongPress(recognizer: UILongPressGestureRecognizer) {
         if recognizer.state == UIGestureRecognizerState.Ended {
-            var point:CGPoint = recognizer.locationInView(ingredientsTable)
-            var indexPath:NSIndexPath? = ingredientsTable.indexPathForRowAtPoint(point)
+            let point:CGPoint = recognizer.locationInView(ingredientsTable)
+            let indexPath:NSIndexPath? = ingredientsTable.indexPathForRowAtPoint(point)
             if indexPath != nil {
                 expandOrContractCellLabel(indexPath!)
             }
@@ -80,7 +80,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     {
         //NSLog(@"%s called for indexPath.section = %ld and indexPath.row = %ld", __PRETTY_FUNCTION__, (long)indexPath.section, (long)indexPath.row);
         
-        var itemIndex:Int? = find(expandedCells, indexPath)
+        let itemIndex:Int? = expandedCells.indexOf(indexPath)
         
         if newValue == false && itemIndex != nil {
             expandedCells.removeAtIndex(itemIndex!)
@@ -96,7 +96,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     {
         //NSLog(@"%s called for indexPath = %i, %i", __PRETTY_FUNCTION__, indexPath.section, indexPath.row );
         
-        var currentValue:Bool = fetchCellIsExpandedValueForIndexPath(indexPath)
+        let currentValue:Bool = fetchCellIsExpandedValueForIndexPath(indexPath)
         
         if currentValue {
             storeCellIsExpandedValueForIndexPath(indexPath, newValue:false);
@@ -117,7 +117,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         
         //NSLog(@"%s called for indexPath.section = %ld and indexPath.row = %ld", __PRETTY_FUNCTION__, (long)indexPath.section, (long)indexPath.row);
         
-        if find(self.expandedCells, indexPath) != nil {
+        if self.expandedCells.indexOf(indexPath) != nil {
             returnValue = true
         }
         
@@ -170,24 +170,32 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     
     func showAddIngredientAlert(object: AnyObject)
     {
-        var databaseInterface = DatabaseInterface()
-        var selectedIngredient:Ingredient = object as! Ingredient;
-        var currentGroceryList = GroceryList.returnCurrentGroceryListWithDatabaseInterfacePtr(databaseInterface)
+        let databaseInterface = DatabaseInterface()
+        let selectedIngredient:Ingredient = object as! Ingredient;
+        let currentGroceryList = GroceryList.returnCurrentGroceryListWithDatabaseInterfacePtr(databaseInterface)
     
         if (currentGroceryList == nil)
         {
-            Utilities.showOkButtonAlert(self, title: "Error Alert", message: "No current grocery list", okButtonHandler: nil)
+            if #available(iOS 8.0, *) {
+                Utilities.showOkButtonAlert(self, title: "Error Alert", message: "No current grocery list", okButtonHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            }
         }
         else
         {
-            var quantityString:String = FractionMath.doubleToString(selectedIngredient.quantity.doubleValue);
-            var addString = "Add \(quantityString) \(selectedIngredient.unitOfMeasure) \(selectedIngredient.ingredientItem.name) to the \(currentGroceryList!.name) grocery list?"
-            Utilities.showYesNoAlert(self, title: "Add Item", message: addString, yesButtonHandler: { action in
-                var groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType("GroceryListItem") as! GroceryListItem
-                groceryListItem.name = selectedIngredient.ingredientItem.name
-                currentGroceryList!.addHasItemsObject(groceryListItem)
-                databaseInterface.saveContext()
-            })
+            let quantityString:String = FractionMath.doubleToString(selectedIngredient.quantity.doubleValue);
+            let addString = "Add \(quantityString) \(selectedIngredient.unitOfMeasure) \(selectedIngredient.ingredientItem.name) to the \(currentGroceryList!.name) grocery list?"
+            if #available(iOS 8.0, *) {
+                Utilities.showYesNoAlert(self, title: "Add Item", message: addString, yesButtonHandler: { action in
+                    let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType("GroceryListItem") as! GroceryListItem
+                    groceryListItem.name = selectedIngredient.ingredientItem.name
+                    currentGroceryList!.addHasItemsObject(groceryListItem)
+                    databaseInterface.saveContext()
+                })
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
@@ -225,7 +233,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "emailRecipeSegue" {
-            var emailRecipeViewController:EmailRecipeViewController = segue.destinationViewController as! EmailRecipeViewController
+            let emailRecipeViewController:EmailRecipeViewController = segue.destinationViewController as! EmailRecipeViewController
             
             emailRecipeViewController.initRecipeTitle( recipeTitle.text! )
             emailRecipeViewController.requestMailComposeViewController()

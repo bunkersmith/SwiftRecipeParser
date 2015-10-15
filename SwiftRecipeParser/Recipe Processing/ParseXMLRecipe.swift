@@ -42,26 +42,26 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
     }
     
     func parseRecipeFromXMLData(recipeFileData:NSData,  databaseInterface:DatabaseInterface) {
-        var xmlparser:NSXMLParser = NSXMLParser(data: recipeFileData)
+        let xmlparser:NSXMLParser = NSXMLParser(data: recipeFileData)
         
         localDatabaseInterface = databaseInterface
         
         xmlparser.delegate = self
         
-        var success:Bool = xmlparser.parse()
+        let success:Bool = xmlparser.parse()
         
         if (!success) {
             NSLog("Error Error Error!!!")
         }
     }
     
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject])
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
     {
         //NSLog("didStartElement: %@", elementName)
     
         currentElementString = ""
         
-        var currentState:currentElementState = startProcessingForElement(elementName)
+        let currentState:currentElementState = startProcessingForElement(elementName)
         currentStateStack.append(currentState)
     }
     
@@ -126,13 +126,11 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         return currentElementState.noState
     }
     
-    func parser(parser: NSXMLParser, foundCharacters string: String?) {
-        if (string != nil) {
-            var squashed:NSString = string!
-            squashed.stringByReplacingOccurrencesOfString("\\s+", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: NSMakeRange(0, squashed.length))
-            if (squashed.length > 0) {
-                currentElementString += string!
-            }
+    func parser(parser: NSXMLParser, foundCharacters string: String) {
+        let squashed:NSString = string
+        squashed.stringByReplacingOccurrencesOfString("\\s+", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: NSMakeRange(0, squashed.length))
+        if (squashed.length > 0) {
+            currentElementString += string
         }
     }
     
@@ -204,7 +202,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             case currentElementState.ingredientNameState:
             //NSLog(@"Ingredient Name: %@", elementValue)
                 if localDatabaseInterface != nil {
-                    var groceryItem:GroceryItem = localDatabaseInterface!.newManagedObjectOfType("GroceryItem") as! GroceryItem
+                    let groceryItem:GroceryItem = localDatabaseInterface!.newManagedObjectOfType("GroceryItem") as! GroceryItem
                     groceryItem.name = elementValue as String
                     if currentIngredient != nil {
                         currentIngredient!.processingInstructions = ""
@@ -223,7 +221,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         //NSLog(@"didEndElement: %@", elementName)
-        var currentState:currentElementState  = currentStateStack[currentStateStack.endIndex - 1]
+        let currentState:currentElementState  = currentStateStack[currentStateStack.endIndex - 1]
         
         processValueForState(currentState, elementValue:currentElementString)
 

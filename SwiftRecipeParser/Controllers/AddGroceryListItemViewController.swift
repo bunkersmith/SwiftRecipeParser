@@ -48,9 +48,13 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     @IBAction func addItemButtonPressed(sender: AnyObject) {
-        var nameTextFieldText = nameTextField.text
+        let nameTextFieldText = nameTextField.text!
         if nameTextFieldText == "" {
-            Utilities.showOkButtonAlert(self, title: "Error alert", message:"Name is a required field", okButtonHandler: nil)
+            if #available(iOS 8.0, *) {
+                Utilities.showOkButtonAlert(self, title: "Error alert", message:"Name is a required field", okButtonHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            }
         }
         else {
             if let existingItem = GroceryListItem.findGroceryListItemWithName(nameTextFieldText) {
@@ -74,12 +78,12 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section] as! NSFetchedResultsSectionInfo
+        let sectionInfo = self.fetchedResultsController.sections![section] 
         return sectionInfo.numberOfObjects
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("AddGroceryListItemCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("AddGroceryListItemCell", forIndexPath: indexPath) 
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }
@@ -139,8 +143,6 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         case .Move:
             tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
             tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: .Fade)
-        default:
-            return
         }
     }
     
@@ -149,7 +151,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     func textFieldChanged(textField: UITextField) {
-        createFetchedResultsController(NSPredicate(format: "name contains[cd] %@", textField.text))
+        createFetchedResultsController(NSPredicate(format: "name contains[cd] %@", textField.text!))
     }
     
     /*
