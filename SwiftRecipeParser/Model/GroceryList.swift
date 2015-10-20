@@ -35,6 +35,13 @@ class GroceryList: NSManagedObject {
         self.didChangeValueForKey("hasItems");
     }
     
+    func removeAllHasItemsObjects()
+    {
+        self.willChangeValueForKey("hasItems")
+        self.hasItems = NSMutableOrderedSet()
+        self.didChangeValueForKey("hasItems")
+    }
+    
     class func setCurrentGroceryList(groceryListName:String, databaseInterfacePtr:DatabaseInterface)
     {
         let groceryLists:Array<GroceryList> = databaseInterfacePtr.entitiesOfType("GroceryList", predicate:nil) as! Array<GroceryList>
@@ -51,7 +58,7 @@ class GroceryList: NSManagedObject {
     
     class func returnCurrentGroceryListWithDatabaseInterfacePtr(databaseInterfacePtr:DatabaseInterface) -> GroceryList?
     {
-        var returnValue:GroceryList?
+        var returnValue:GroceryList? = nil
     
         let groceryLists:Array<GroceryList> = databaseInterfacePtr.entitiesOfType("GroceryList", predicate:NSPredicate(format:"isCurrent == %@", NSNumber(bool: true))) as! Array<GroceryList>
     
@@ -59,7 +66,21 @@ class GroceryList: NSManagedObject {
             returnValue = groceryLists.first
         }
     
-    return returnValue;
+        return returnValue;
     }
 
+    class func returnGroceryListWithName(name: String) -> GroceryList? {
+        var returnValue:GroceryList? = nil
+        
+        let databaseInterfacePtr = DatabaseInterface()
+        
+        let groceryLists:Array<GroceryList> = databaseInterfacePtr.entitiesOfType("GroceryList", predicate:NSPredicate(format:"name == %@", name)) as! Array<GroceryList>
+        
+        if (groceryLists.count == 1) {
+            returnValue = groceryLists.first
+        }
+        
+        return returnValue
+    }
+    
 }
