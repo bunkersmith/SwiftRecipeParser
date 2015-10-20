@@ -9,7 +9,7 @@
         <!--Smith Family Recipes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RecipeMasterTableViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeMasterTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RecipeMasterTableViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -85,7 +85,7 @@
         <!--Grocery Lists-->
         <scene sceneID="s90-UY-kWN">
             <objects>
-                <viewController title="Grocery Lists" id="Rka-G7-4aq" customClass="GroceryListsViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroceryListsViewController" title="Grocery Lists" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rka-G7-4aq" customClass="GroceryListsViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NlE-8c-vmH"/>
                         <viewControllerLayoutGuide type="bottom" id="pUN-bb-mrF"/>
@@ -142,7 +142,7 @@
         <!--Grocery List Detail View Controller-->
         <scene sceneID="bRW-rc-fV8">
             <objects>
-                <viewController id="Aem-yq-cyd" customClass="GroceryListDetailViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroceryListDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Aem-yq-cyd" customClass="GroceryListDetailViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T3d-l3-Xs0"/>
                         <viewControllerLayoutGuide type="bottom" id="o1U-ES-QRM"/>
@@ -162,7 +162,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="G3t-Wr-TnD">
-                                <rect key="frame" x="0.0" y="104" width="600" height="447"/>
+                                <rect key="frame" x="0.0" y="142" width="600" height="409"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroceryListItemCell" id="Et7-wc-NTW" customClass="GroceryListItemTableViewCell" customModule="SwiftRecipeParser" customModuleProvider="target">
@@ -226,13 +226,23 @@
                                     <outlet property="delegate" destination="Aem-yq-cyd" id="VTB-pW-1hD"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atP-oM-XSV">
-                                <rect key="frame" x="511" y="71" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atP-oM-XSV">
+                                <rect key="frame" x="506" y="71" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="xA6-U7-f9H"/>
+                                </constraints>
                                 <state key="normal" title="Clear Total">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clearTotalButtonPressed:" destination="Aem-yq-cyd" eventType="touchUpInside" id="PbN-97-npo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYK-pN-alv">
+                                <rect key="frame" x="485" y="104" width="99" height="30"/>
+                                <state key="normal" title="Clear All Items"/>
+                                <connections>
+                                    <action selector="clearAllItemsButtonPressed:" destination="Aem-yq-cyd" eventType="touchUpInside" id="GZU-5e-UPU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -241,11 +251,13 @@
                             <constraint firstAttribute="trailing" secondItem="G3t-Wr-TnD" secondAttribute="trailing" id="0k6-9a-9zY"/>
                             <constraint firstItem="G3t-Wr-TnD" firstAttribute="leading" secondItem="UUF-6S-cil" secondAttribute="leading" id="F1a-GL-cYp"/>
                             <constraint firstAttribute="trailing" secondItem="atP-oM-XSV" secondAttribute="trailing" constant="16" id="JmJ-71-Qpi"/>
+                            <constraint firstItem="MYK-pN-alv" firstAttribute="top" secondItem="atP-oM-XSV" secondAttribute="bottom" constant="3" id="THF-BV-hDM"/>
                             <constraint firstAttribute="bottom" secondItem="G3t-Wr-TnD" secondAttribute="bottom" id="ZNM-Fj-oKj"/>
                             <constraint firstItem="6me-gb-KOJ" firstAttribute="leading" secondItem="UUF-6S-cil" secondAttribute="leading" constant="16" id="arA-Q0-e5I"/>
+                            <constraint firstItem="G3t-Wr-TnD" firstAttribute="top" secondItem="MYK-pN-alv" secondAttribute="bottom" constant="8" id="cZa-Bn-Ukh"/>
                             <constraint firstItem="6me-gb-KOJ" firstAttribute="centerY" secondItem="atP-oM-XSV" secondAttribute="centerY" id="gHE-bb-KND"/>
                             <constraint firstItem="6me-gb-KOJ" firstAttribute="top" secondItem="UUF-6S-cil" secondAttribute="top" constant="75" id="lpe-tk-APP"/>
-                            <constraint firstItem="G3t-Wr-TnD" firstAttribute="top" secondItem="6me-gb-KOJ" secondAttribute="bottom" constant="8" id="n2x-K3-hJQ"/>
+                            <constraint firstItem="MYK-pN-alv" firstAttribute="trailing" secondItem="atP-oM-XSV" secondAttribute="trailing" id="m6H-B2-QPf"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
@@ -268,7 +280,7 @@
         <!--Add Grocery List Item View Controller-->
         <scene sceneID="yPZ-Xp-E0q">
             <objects>
-                <viewController id="sOC-LX-Geb" customClass="AddGroceryListItemViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddGroceryListItemViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sOC-LX-Geb" customClass="AddGroceryListItemViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bn8-io-z7H"/>
                         <viewControllerLayoutGuide type="bottom" id="kl1-Yg-Obv"/>
@@ -277,7 +289,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4r-BR-LDE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4r-BR-LDE">
                                 <rect key="frame" x="16" y="80" width="51" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="Ajn-Yb-Hx8"/>
@@ -287,7 +299,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ATM-Vd-HXb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ATM-Vd-HXb">
                                 <rect key="frame" x="16" y="109" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1dH-Ja-r3O"/>
@@ -296,7 +308,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DHB-UC-Skc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DHB-UC-Skc">
                                 <rect key="frame" x="16" y="157" width="288" height="386"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -349,7 +361,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="H4r-BR-LDE" firstAttribute="leading" secondItem="1ZM-0q-GhW" secondAttribute="leadingMargin" id="0Ca-C8-q8V"/>
+                            <constraint firstItem="H4r-BR-LDE" firstAttribute="leading" secondItem="1ZM-0q-GhW" secondAttribute="leadingMargin" constant="-4" id="0Ca-C8-q8V"/>
                             <constraint firstItem="DHB-UC-Skc" firstAttribute="leading" secondItem="ATM-Vd-HXb" secondAttribute="leading" id="639-4X-hIh"/>
                             <constraint firstItem="ATM-Vd-HXb" firstAttribute="top" secondItem="H4r-BR-LDE" secondAttribute="bottom" constant="8" symbolic="YES" id="HX9-oN-Wn9"/>
                             <constraint firstItem="H4r-BR-LDE" firstAttribute="leading" secondItem="ATM-Vd-HXb" secondAttribute="leading" id="IqS-b1-ui5"/>
@@ -378,7 +390,7 @@
         <!--Table View Controller-->
         <scene sceneID="dOc-CE-b6d">
             <objects>
-                <tableViewController storyboardIdentifier="ResultsTableViewController" id="xTE-Ni-KkY" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ResultsTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xTE-Ni-KkY" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f3b-JD-9aF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -416,7 +428,7 @@
         <!--Recipe Detail View Controller-->
         <scene sceneID="2pp-Hw-nkJ">
             <objects>
-                <viewController id="xst-t7-a6v" customClass="RecipeDetailViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xst-t7-a6v" customClass="RecipeDetailViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="17d-nw-pj9"/>
                         <viewControllerLayoutGuide type="bottom" id="PXq-rc-OHR"/>
@@ -428,8 +440,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDr-gt-De4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ingredients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKP-Za-KuD">
-                                        <rect key="frame" x="253.5" y="52" width="93.5" height="21.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKP-Za-KuD">
+                                        <rect key="frame" x="251" y="52" width="99" height="22"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -461,7 +473,7 @@
                                         </connections>
                                     </tableView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScZ-Nx-nOX">
-                                        <rect key="frame" x="12" y="538" width="576" height="368"/>
+                                        <rect key="frame" x="12" y="537" width="576" height="368"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="368" id="aYg-br-FP3"/>
@@ -512,8 +524,8 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aov-hU-8xt">
-                                        <rect key="frame" x="251.5" y="506.5" width="98.5" height="21.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aov-hU-8xt">
+                                        <rect key="frame" x="248" y="506" width="104" height="22"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -613,7 +625,7 @@
         <!--Email Recipe View Controller-->
         <scene sceneID="xvs-uH-PUS">
             <objects>
-                <viewController id="Xlt-O0-htB" customClass="EmailRecipeViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailRecipeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xlt-O0-htB" customClass="EmailRecipeViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CFI-Rz-inK"/>
                         <viewControllerLayoutGuide type="bottom" id="BDG-c5-3tI"/>
@@ -631,7 +643,7 @@
         <!--Recipes-->
         <scene sceneID="Gf7-c1-psd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Emm-QH-Pnt" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RecipesNavController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Emm-QH-Pnt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Recipes" image="tab_icon_recipe_list" id="W4Z-GS-g9K"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1K1-eP-BMQ">
@@ -650,7 +662,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Azv-Hx-oB4">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c3m-Kk-ogg" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c3m-Kk-ogg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="rgE-yR-rH3">
@@ -669,7 +681,7 @@
         <!--Grocery Lists-->
         <scene sceneID="4IS-aK-Kse">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c3W-DV-0QD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GroceryListsNavController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c3W-DV-0QD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Grocery Lists" image="tab_icon_grocery_list" id="qf1-5h-8fW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Dj-oj-fny">
