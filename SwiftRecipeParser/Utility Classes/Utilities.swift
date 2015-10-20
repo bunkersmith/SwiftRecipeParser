@@ -97,4 +97,17 @@ class Utilities {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1] 
     }
+    
+    class func nsFetchedResultsChangeTypeToString( nsFetchedResultsChangeType: NSFetchedResultsChangeType) -> String {
+        switch nsFetchedResultsChangeType {
+            case .Insert:
+                return "NSFetchedResultsChangeInsert"
+            case .Delete:
+                return "NSFetchedResultsChangeDelete"
+            case .Move:
+                return "NSFetchedResultsChangeMove"
+            case .Update:
+                return "NSFetchedResultsChangeUpdate"
+        }
+    }
 }
