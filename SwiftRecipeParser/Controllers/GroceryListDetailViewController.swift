@@ -20,16 +20,26 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
        return DatabaseInterface()
     }()
     
+    override func encodeRestorableStateWithCoder(aCoder: NSCoder) {
+        super.encodeRestorableStateWithCoder(aCoder)
+        aCoder.encodeObject(groceryList.name, forKey: "groceryListName")
+    }
+    
+    override func decodeRestorableStateWithCoder(aDecoder: NSCoder) {
+        super.decodeRestorableStateWithCoder(aDecoder)
+        guard let groceryListName = aDecoder.decodeObjectForKey("groceryListName") as? String else { return }
+        groceryList = GroceryList.returnGroceryListWithName(groceryListName)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationItem.title = groceryList.name
-        totalCostLabel.text = String(format:"Total Cost: $%.2f", groceryList.totalCost.floatValue)
     }
-
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+        navigationItem.title = groceryList.name
+        totalCostLabel.text = String(format:"Total Cost: $%.2f", groceryList.totalCost.floatValue)
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,57 +69,70 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         totalCostLabel.text = "Total Cost: $0.00"
     }
     
+    @IBAction func clearAllItemsButtonPressed(sender: AnyObject) {
+        if #available(iOS 8.0, *) {
+            Utilities.showYesNoAlert(self, title: "Do you want to clear all the items in this grocery list?", message: "", yesButtonHandler: { action in
+                self.groceryList.hasItems.enumerateObjectsUsingBlock({ (groceryListObject, idx, stop) -> Void in
+                    let groceryListItem = groceryListObject as! GroceryListItem
+                    groceryListItem.isBought = false
+                    self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue - groceryListItem.cost.floatValue)
+                })
+                self.groceryList.removeAllHasItemsObjects()
+                self.databaseInterface.saveContext()
+                self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+                self.tableView.reloadData()
+            })
+        }
+    }
+    
     @IBAction func buyItemButtonPressed(sender: AnyObject) {
         let buttonPosition:CGPoint = sender.convertPoint(CGPointZero, toView:tableView)
         let indexPath:NSIndexPath?  = tableView!.indexPathForRowAtPoint(buttonPosition)
-        if (indexPath != nil)
-        {
-            let itemToBuy:GroceryListItem = groceryList.hasItems[indexPath!.row] as! GroceryListItem
-            if itemToBuy.isBought.boolValue {
-                if #available(iOS 8.0, *) {
-                    Utilities.showYesNoAlert(self, title: "Do you want to put back \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
-                        itemToBuy.isBought = false;
-                        self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue - itemToBuy.cost.floatValue)
+        guard indexPath != nil else { return }
+        
+        guard let itemToBuy:GroceryListItem = groceryList.hasItems[indexPath!.row] as? GroceryListItem else { return }
+        
+        if itemToBuy.isBought.boolValue {
+            if #available(iOS 8.0, *) {
+                Utilities.showYesNoAlert(self, title: "Do you want to put back \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
+                    (self.groceryList.hasItems[indexPath!.row] as! GroceryListItem).isBought = false
+                    self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue - itemToBuy.cost.floatValue)
+                    self.databaseInterface.saveContext()
+                    
+                    self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+                    self.tableView.reloadData()
+                })
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+        else {
+            var textField:UITextField = UITextField()
+            var startingText = ""
+            if (itemToBuy.cost.floatValue > 0.0) {
+                startingText = String(format: "%.2f", itemToBuy.cost.floatValue);
+            }
+            if #available(iOS 8.0, *) {
+                Utilities.showTextFieldAlert(self, title: "Enter price of \(itemToBuy.name)", message: "", inputTextField: &textField, startingText: startingText, keyboardType: .DecimalPad, capitalizationType:.None, okButtonHandler: { action in
+                    if textField.text != "" {
+                        let itemToBuyCost:Float = (textField.text as NSString!).floatValue
+                        (self.groceryList.hasItems[indexPath!.row] as! GroceryListItem).cost = NSNumber(float:itemToBuyCost)
+                        (self.groceryList.hasItems[indexPath!.row] as! GroceryListItem).isBought = true
+                        
+                        self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue + itemToBuyCost)
                         self.databaseInterface.saveContext()
                         
                         self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
                         self.tableView.reloadData()
-                    })
-                } else {
-                    // Fallback on earlier versions
-                }
-            }
-            else {
-                var textField:UITextField = UITextField()
-                var startingText = ""
-                if (itemToBuy.cost.floatValue > 0.0) {
-                    startingText = String(format: "%.2f", itemToBuy.cost.floatValue);
-                }
-                if #available(iOS 8.0, *) {
-                    Utilities.showTextFieldAlert(self, title: "Enter price of \(itemToBuy.name)", message: "", inputTextField: &textField, startingText: startingText, keyboardType: .DecimalPad, capitalizationType:.None, okButtonHandler: { action in
-                        if textField.text != "" {
-                            let itemToBuyCost:Float = (textField.text as NSString!).floatValue
-                            itemToBuy.cost = NSNumber(float:itemToBuyCost)
-                            itemToBuy.isBought = true
-                            
-                            self.groceryList.totalCost = NSNumber(float:self.groceryList.totalCost.floatValue + itemToBuyCost)
-                            self.databaseInterface.saveContext()
-                            
-                            self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
-                            self.tableView.reloadData()
-                        }
-                        else {
-                            Utilities.showOkButtonAlert(self, title: "Please enter a price", message: "", okButtonHandler: nil)
-                        }
-                    })
-                } else {
-                    // Fallback on earlier versions
-                }
+                    }
+                    else {
+                        Utilities.showOkButtonAlert(self, title: "Please enter a price", message: "", okButtonHandler: nil)
+                    }
+                })
+            } else {
+                // Fallback on earlier versions
             }
         }
-    }
-    
-    func processOkButton(textField: UITextField, itemToBuy: GroceryListItem) {
     }
     
     // MARK: - Segues
@@ -128,6 +151,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard groceryList != nil else { return 0 }
         return groceryList.hasItems.count
     }
     
