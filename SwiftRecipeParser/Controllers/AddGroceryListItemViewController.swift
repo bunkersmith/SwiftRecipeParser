@@ -48,26 +48,25 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     @IBAction func addItemButtonPressed(sender: AnyObject) {
-        let nameTextFieldText = nameTextField.text!
-        if nameTextFieldText == "" {
-            if #available(iOS 8.0, *) {
-                Utilities.showOkButtonAlert(self, title: "Error alert", message:"Name is a required field", okButtonHandler: nil)
-            } else {
-                // Fallback on earlier versions
-            }
-        }
-        else {
-            if let existingItem = GroceryListItem.findGroceryListItemWithName(nameTextFieldText) {
-                delegate?.groceryListItemAdded(existingItem)
+        if #available(iOS 8.0, *) {
+            let nameTextFieldText = nameTextField.text!
+            if nameTextFieldText == "" {
+                    Utilities.showOkButtonAlert(self, title: "Error alert", message:"Name is a required field", okButtonHandler: nil)
             }
             else {
-                if let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType("GroceryListItem") as? GroceryListItem {
-                    groceryListItem.name = nameTextFieldText
-                    groceryListItem.isBought = false
-                    delegate?.groceryListItemAdded(groceryListItem)
+                fetchedResultsController = nil
+                if let existingItem = GroceryListItem.findGroceryListItemWithName(nameTextFieldText) {
+                    delegate?.groceryListItemAdded(existingItem)
                 }
+                else {
+                    if let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType("GroceryListItem") as? GroceryListItem {
+                        groceryListItem.name = nameTextFieldText
+                        groceryListItem.isBought = false
+                        delegate?.groceryListItemAdded(groceryListItem)
+                    }
+                }
+                navigationController?.popViewControllerAnimated(true)
             }
-            navigationController?.popViewControllerAnimated(true)
         }
     }
     
