@@ -105,6 +105,9 @@ class RecipeFiles {
     
     func asyncInitializeRecipeDatabase(databaseInterface:DatabaseInterface) {
         let asyncInitStartTime = MillisecondTimer.currentTickCount()
+
+//        databaseInterface.deleteAllObjectsWithEntityName("Ingredient")
+//        databaseInterface.deleteAllObjectsWithEntityName("Recipe")
         
         var recipePathnames:Array<Array<String>> = initializeRecipePathnames()
         
