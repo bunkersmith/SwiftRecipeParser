@@ -29,26 +29,28 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func populateGroceryLists() {
-        groceryLists = databaseInterface.entitiesOfType("GroceryList", predicate:nil) as! Array<GroceryList>
+        groceryLists = databaseInterface.entitiesOfType(entityTypeName: "GroceryList", predicate:nil) as! Array<GroceryList>
         self.tableView.reloadData()
     }
     
-    @IBAction func addButtonPressed(sender: AnyObject) {
+    @IBAction func addButtonPressed(_ sender: Any) {
         var inputTextField = UITextField()
         if #available(iOS 8.0, *) {
-            Utilities.showTextFieldAlert(self, title: "Enter grocery list name", message: "", inputTextField: &inputTextField, startingText: "", keyboardType: .Default, capitalizationType: .Words) { action in
+            let _ = Utilities.showTextFieldAlert(viewController: self, title: "Enter grocery list name", message: "", startingText: "", keyboardType: .default, capitalizationType: .words, okButtonHandler: { action in
                 let groceryListName:String = inputTextField.text!
                 
-                let newGroceryList:GroceryList = self.databaseInterface.newManagedObjectOfType("GroceryList") as! GroceryList
-                newGroceryList.name = groceryListName
-                newGroceryList.totalCost = NSNumber(float:0.0)
+                let newGroceryList:GroceryList = self.databaseInterface.newManagedObjectOfType(managedObjectClassName: "GroceryList") as! GroceryList
+                newGroceryList.name = groceryListName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+                newGroceryList.totalCost = NSNumber(value:0.0)
                 
                 self.databaseInterface.saveContext();
-                GroceryList.setCurrentGroceryList(newGroceryList.name, databaseInterfacePtr:self.databaseInterface)
+                GroceryList.setCurrentGroceryList(groceryListName: newGroceryList.name, databaseInterfacePtr:self.databaseInterface)
                 
                 self.populateGroceryLists()
                 self.tableView.reloadData()
-            }
+            }, completionHandler: { (txtField) in
+                inputTextField = txtField
+            })
         } else {
             // Fallback on earlier versions
         }
@@ -56,13 +58,13 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     
     // MARK: - Table view data source
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
         return groceryLists.count
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("GroceryListsTableCell", forIndexPath: indexPath) 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroceryListsTableCell", for: indexPath)
         let groceryList:GroceryList = groceryLists![indexPath.row]
         
         // Configure the cell...
@@ -76,20 +78,20 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        GroceryList.setCurrentGroceryList(groceryLists[indexPath.row].name, databaseInterfacePtr: databaseInterface)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        GroceryList.setCurrentGroceryList(groceryListName: groceryLists[indexPath.row].name, databaseInterfacePtr: databaseInterface)
         populateGroceryLists()
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
             // Delete the row from the model and data source
             let groceryList:GroceryList = groceryLists[indexPath.row]
-            databaseInterface.deleteObject(groceryList)
-            groceryLists.removeAtIndex(indexPath.row)
+            databaseInterface.deleteObject(coreDataObject: groceryList)
+            groceryLists.remove(at: indexPath.row)
             
             // Delete the row from the table view
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
@@ -118,10 +120,10 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
 
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "selectGroceryListSegue" {
-            let detailViewController:GroceryListDetailViewController = segue.destinationViewController as! GroceryListDetailViewController
-            let indexPath:NSIndexPath = tableView.indexPathForSelectedRow!
+            let detailViewController:GroceryListDetailViewController = segue.destination as! GroceryListDetailViewController
+            let indexPath:NSIndexPath = tableView.indexPathForSelectedRow! as NSIndexPath
             detailViewController.groceryList = groceryLists[indexPath.row]
         }
     }

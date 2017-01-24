@@ -15,7 +15,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var recipeTitle: UILabel!
     
-    private var expandedCells:Array<NSIndexPath> = Array()
+    private var expandedCells:Array<IndexPath> = Array()
     @IBOutlet weak var ingredientsTable: UITableView!
     @IBOutlet weak var instructionsLabel: UILabel!
     @IBOutlet weak var instructionsTextView: UITextView!
@@ -27,29 +27,32 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.ingredientsTable.estimatedRowHeight = 50.0
+        self.ingredientsTable.rowHeight = UITableViewAutomaticDimension
+        
         if recipe != nil {
             self.recipeTitle.text = recipe!.title.name
         }
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
-        let deviceString:String =  UIDevice.currentDevice().model
-        if deviceString.rangeOfString("iPad") != nil {
+        let deviceString:String =  UIDevice.current.model
+        if deviceString.range(of: "iPad") != nil {
             instructionsVerticalSpaceConstraint.constant = 15.0
         }
         
         super.viewWillAppear(animated)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.showIngredientsButton.frame.origin.y + 40)
+        self.scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: self.showIngredientsButton.frame.origin.y + 40)
         
         if recipe != nil {
             instructionsTextView.text = recipe!.instructions
-            instructionsTextView.contentOffset = CGPointZero
+            instructionsTextView.contentOffset = CGPoint(x: 0.0, y: 0.0)
         }
     }
     
@@ -57,33 +60,33 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func showInstructionsPressed(sender: AnyObject) {
-        self.scrollView.contentOffset = CGPointMake(self.scrollView.contentOffset.x, 452)
+ 
+    @IBAction func showInstructionsPressed(_ sender: Any) {
+        self.scrollView.contentOffset = CGPoint(x: self.scrollView.contentOffset.x, y: 452.0)
+    }
+
+    @IBAction func showIngredientsPressed(_ sender: Any) {
+        self.scrollView.contentOffset = CGPoint(x: self.scrollView.contentOffset.x, y: 0.0)
     }
     
-    @IBAction func showIngredientsPressed(sender: AnyObject) {
-        self.scrollView.contentOffset = CGPointMake(self.scrollView.contentOffset.x, 0)
-    }
-    
-    @IBAction func handleLongPress(recognizer: UILongPressGestureRecognizer) {
-        if recognizer.state == UIGestureRecognizerState.Ended {
-            let point:CGPoint = recognizer.locationInView(ingredientsTable)
-            let indexPath:NSIndexPath? = ingredientsTable.indexPathForRowAtPoint(point)
+    @IBAction func handleLongPress(_ recognizer: UILongPressGestureRecognizer) {
+        if recognizer.state == UIGestureRecognizerState.ended {
+            let point:CGPoint = recognizer.location(in: ingredientsTable)
+            let indexPath:IndexPath? = ingredientsTable.indexPathForRow(at: point)
             if indexPath != nil {
-                expandOrContractCellLabel(indexPath!)
+                expandOrContractCellLabel(indexPath: indexPath!)
             }
         }
     }
     
-    func storeCellIsExpandedValueForIndexPath(indexPath: NSIndexPath, newValue: Bool)
+    func storeCellIsExpandedValueForIndexPath(indexPath: IndexPath, newValue: Bool)
     {
         //NSLog(@"%s called for indexPath.section = %ld and indexPath.row = %ld", __PRETTY_FUNCTION__, (long)indexPath.section, (long)indexPath.row);
         
-        let itemIndex:Int? = expandedCells.indexOf(indexPath)
+        let itemIndex:Int? = expandedCells.index(of: indexPath)
         
         if newValue == false && itemIndex != nil {
-            expandedCells.removeAtIndex(itemIndex!)
+            expandedCells.remove(at: itemIndex!)
         }
         else {
             if newValue == true && itemIndex == nil {
@@ -92,32 +95,32 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
-    func expandOrContractCellLabel(indexPath:NSIndexPath)
+    func expandOrContractCellLabel(indexPath:IndexPath)
     {
         //NSLog(@"%s called for indexPath = %i, %i", __PRETTY_FUNCTION__, indexPath.section, indexPath.row );
         
-        let currentValue:Bool = fetchCellIsExpandedValueForIndexPath(indexPath)
+        let currentValue:Bool = fetchCellIsExpandedValueForIndexPath(indexPath: indexPath)
         
         if currentValue {
-            storeCellIsExpandedValueForIndexPath(indexPath, newValue:false);
+            storeCellIsExpandedValueForIndexPath(indexPath: indexPath, newValue:false);
         }
         else {
-            storeCellIsExpandedValueForIndexPath(indexPath, newValue:true);
+            storeCellIsExpandedValueForIndexPath(indexPath: indexPath, newValue:true);
         }
         
         ingredientsTable.beginUpdates()
-        ingredientsTable.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
+        ingredientsTable.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
         ingredientsTable.endUpdates()
     }
     
-    func fetchCellIsExpandedValueForIndexPath(indexPath:NSIndexPath) -> Bool
+    func fetchCellIsExpandedValueForIndexPath(indexPath:IndexPath) -> Bool
     {
         var returnValue:Bool = false
         //return returnValue;
         
         //NSLog(@"%s called for indexPath.section = %ld and indexPath.row = %ld", __PRETTY_FUNCTION__, (long)indexPath.section, (long)indexPath.row);
         
-        if self.expandedCells.indexOf(indexPath) != nil {
+        if self.expandedCells.index(of: indexPath) != nil {
             returnValue = true
         }
         
@@ -131,7 +134,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         if recipe != nil {
             let ingredient:Ingredient = recipe!.containsIngredients[itemRowNumber] as! Ingredient
             
-            if ingredient.quantity.integerValue == 0 && ingredient.unitOfMeasure == "-" {
+            if ingredient.quantity.intValue == 0 && ingredient.unitOfMeasure == "-" {
                 if ingredient.ingredientItem.name == "-" {
                     returnValue = " "
                 }
@@ -140,10 +143,10 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
                 }
             }
             else {
-                returnValue = "\(FractionMath.doubleToString(ingredient.quantity.doubleValue)) \(ingredient.unitOfMeasure) \(ingredient.ingredientItem.name)"
+                returnValue = "\(FractionMath.doubleToString(inputDouble: ingredient.quantity.doubleValue)) \(ingredient.unitOfMeasure) \(ingredient.ingredientItem.name)"
                 
                 if ingredient.processingInstructions != "" {
-                    returnValue = returnValue.stringByAppendingFormat(", %@", ingredient.processingInstructions)
+                    returnValue = returnValue.appendingFormat(", %@", ingredient.processingInstructions)
                 }
             }
         }
@@ -151,63 +154,32 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         return returnValue;
     }
     
-    func configureLabelForCell(cell:UITableViewCell, indexPath:NSIndexPath, expandedFlag:Bool, ingredientText:String)
+    func configureLabelForCell(cell:IngredientTableViewCell, indexPath:IndexPath, expandedFlag:Bool, ingredientText:String)
     {
         if (expandedFlag) {
             cell.layoutIfNeeded()
 
-            cell.textLabel!.numberOfLines = 0;
-            cell.textLabel!.lineBreakMode = NSLineBreakMode.ByWordWrapping
-            cell.textLabel!.text = ingredientText;
+            cell.ingredientLabel!.numberOfLines = 0;
+            cell.ingredientLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
+            cell.ingredientLabel!.text = ingredientText;
         }
         else
         {
-            cell.textLabel!.text = ingredientText;
-            cell.textLabel!.numberOfLines = 1;
-            cell.textLabel!.lineBreakMode = NSLineBreakMode.ByTruncatingTail
-        }
-    }
-    
-    func showAddIngredientAlert(object: AnyObject)
-    {
-        let databaseInterface = DatabaseInterface()
-        let selectedIngredient:Ingredient = object as! Ingredient;
-        let currentGroceryList = GroceryList.returnCurrentGroceryListWithDatabaseInterfacePtr(databaseInterface)
-    
-        if (currentGroceryList == nil)
-        {
-            if #available(iOS 8.0, *) {
-                Utilities.showOkButtonAlert(self, title: "Error Alert", message: "No current grocery list", okButtonHandler: nil)
-            } else {
-                // Fallback on earlier versions
-            }
-        }
-        else
-        {
-            let quantityString:String = FractionMath.doubleToString(selectedIngredient.quantity.doubleValue);
-            let addString = "Add \(quantityString) \(selectedIngredient.unitOfMeasure) \(selectedIngredient.ingredientItem.name) to the \(currentGroceryList!.name) grocery list?"
-            if #available(iOS 8.0, *) {
-                Utilities.showYesNoAlert(self, title: "Add Item", message: addString, yesButtonHandler: { action in
-                    let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType("GroceryListItem") as! GroceryListItem
-                    groceryListItem.name = selectedIngredient.ingredientItem.name
-                    currentGroceryList!.addHasItemsObject(groceryListItem)
-                    databaseInterface.saveContext()
-                })
-            } else {
-                // Fallback on earlier versions
-            }
+            cell.ingredientLabel!.text = ingredientText;
+            cell.ingredientLabel!.numberOfLines = 1;
+            cell.ingredientLabel!.lineBreakMode = NSLineBreakMode.byTruncatingTail
         }
     }
     
     // MARK: - Table View Delegate
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: false)
-        showAddIngredientAlert(recipe!.containsIngredients[indexPath.row])
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        Utilities.showAddIngredientAlert(object: recipe!.containsIngredients[indexPath.row] as AnyObject, viewController: self)
     }
     
     // MARK: - Table View Data Source
-    func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
+    func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
         if recipe != nil {
             return recipe!.containsIngredients.count
         }
@@ -216,14 +188,17 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "IngredientCell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath)
         
-        let ingredientText: String = ingredientTextForRow(indexPath.row)
+        let ingredientText: String = ingredientTextForRow(itemRowNumber: indexPath.row)
         
-        let cellIsExpanded: Bool = fetchCellIsExpandedValueForIndexPath(indexPath)
+        let cellIsExpanded: Bool = fetchCellIsExpandedValueForIndexPath(indexPath: indexPath)
         
-        configureLabelForCell(cell, indexPath:indexPath, expandedFlag:cellIsExpanded, ingredientText:ingredientText)
+        if let ingredientCell = cell as? IngredientTableViewCell {
+            configureLabelForCell(cell: ingredientCell, indexPath:indexPath, expandedFlag:cellIsExpanded, ingredientText:ingredientText)
+            return ingredientCell
+        }
         
         return cell
     }
@@ -231,11 +206,11 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if segue.identifier == "emailRecipeSegue" {
-            let emailRecipeViewController:EmailRecipeViewController = segue.destinationViewController as! EmailRecipeViewController
+            let emailRecipeViewController:EmailRecipeViewController = segue.destination as! EmailRecipeViewController
             
-            emailRecipeViewController.initRecipeTitle( recipeTitle.text! )
+            emailRecipeViewController.initRecipeTitle( recipeTitle: recipeTitle.text! )
             emailRecipeViewController.requestMailComposeViewController()
         }
     }

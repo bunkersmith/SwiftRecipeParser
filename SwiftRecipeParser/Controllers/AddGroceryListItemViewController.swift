@@ -16,7 +16,7 @@ protocol AddGroceryListItemDelegate {
 class AddGroceryListItemViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
 
     var delegate:AddGroceryListItemDelegate?
-    var fetchedResultsController:NSFetchedResultsController!
+    var fetchedResultsController:NSFetchedResultsController<NSFetchRequestResult>!
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -29,13 +29,13 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         super.viewDidLoad()
 
         nameTextField.becomeFirstResponder()
-        nameTextField.addTarget(self, action: "textFieldChanged:", forControlEvents: .EditingChanged)
+        nameTextField.addTarget(self, action: #selector(AddGroceryListItemViewController.textFieldChanged(textField:)), for: .editingChanged)
         
-        createFetchedResultsController(nil)
+        createFetchedResultsController(predicate: nil)
     }
 
     func createFetchedResultsController(predicate: NSPredicate?) {
-        fetchedResultsController = databaseInterface.createFetchedResultsController("GroceryListItem", sortKey: "name", secondarySortKey: nil, sectionNameKeyPath: nil, predicate: predicate)
+        fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "GroceryListItem", sortKey: "name", secondarySortKey: nil, sectionNameKeyPath: nil, predicate: predicate)
             if fetchedResultsController != nil {
             fetchedResultsController.delegate = self
             tableView.reloadData()
@@ -47,25 +47,34 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func addItemButtonPressed(sender: AnyObject) {
+    @IBAction func addItemButtonPressed(_ sender: Any) {
         if #available(iOS 8.0, *) {
             let nameTextFieldText = nameTextField.text!
             if nameTextFieldText == "" {
-                    Utilities.showOkButtonAlert(self, title: "Error alert", message:"Name is a required field", okButtonHandler: nil)
+                    Utilities.showOkButtonAlert(viewController: self, title: "Error alert", message:"Name is a required field", okButtonHandler: nil)
             }
             else {
                 fetchedResultsController = nil
-                if let existingItem = GroceryListItem.findGroceryListItemWithName(nameTextFieldText) {
-                    delegate?.groceryListItemAdded(existingItem)
+                if let existingItem = GroceryListItem.findGroceryListItemWithName(name: nameTextFieldText) {
+                    delegate?.groceryListItemAdded(groceryListItem: existingItem)
                 }
                 else {
-                    if let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType("GroceryListItem") as? GroceryListItem {
-                        groceryListItem.name = nameTextFieldText
-                        groceryListItem.isBought = false
-                        delegate?.groceryListItemAdded(groceryListItem)
+                    if let groceryListItem = GroceryListItem.create(databaseInterface: databaseInterface, name: nameTextFieldText, cost: 0.0) {
+                        delegate?.groceryListItemAdded(groceryListItem: groceryListItem)
                     }
                 }
-                navigationController?.popViewControllerAnimated(true)
+                let _ = navigationController?.popViewController(animated: true)
+            }
+        }
+    }
+    
+    @IBAction func importFileButtonPressed(_ sender: Any) {
+        GroceryListItem.importFile { (isSuccessful) in
+            if !isSuccessful {
+                DispatchQueue.main.async {
+                    Utilities.showOkButtonAlert(viewController: self, title: "Error alert", message:"File import failed", okButtonHandler: nil)
+                    Logger.logDetails(msg: "File import failed")
+                }
             }
         }
     }
@@ -76,28 +85,29 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         return self.fetchedResultsController.sections?.count ?? 0
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionInfo = self.fetchedResultsController.sections![section] 
         return sectionInfo.numberOfObjects
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("AddGroceryListItemCell", forIndexPath: indexPath) 
-        self.configureCell(cell, atIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AddGroceryListItemCell", for: indexPath)
+        self.configureCell(cell: cell, atIndexPath: indexPath)
         return cell
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            if let groceryListItem = self.fetchedResultsController.objectAtIndexPath(indexPath) as? GroceryListItem {
-                databaseInterface.deleteObject(groceryListItem)
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+                databaseInterface.deleteObject(coreDataObject: groceryListItem)
                 tableView.reloadData()
             }
         }
     }
     
-    func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        if let groceryListItem = self.fetchedResultsController.objectAtIndexPath(indexPath) as? GroceryListItem {
+    func configureCell(cell: UITableViewCell, atIndexPath indexPath:
+        IndexPath) {
+        if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
             if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
                 groceryListItemCell.nameLabel.text = groceryListItem.name
                 if groceryListItem.cost.floatValue > 0.0 {
@@ -107,50 +117,50 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        if let groceryListItem = self.fetchedResultsController.objectAtIndexPath(indexPath) as? GroceryListItem {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
             nameTextField.text = groceryListItem.name
         }
     }
     
     // MARK: - Fetched results controller
     
-    func controllerWillChangeContent(controller: NSFetchedResultsController) {
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         self.tableView.beginUpdates()
     }
     
-    func controller(controller: NSFetchedResultsController, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
+    func controller(controller: NSFetchedResultsController<NSFetchRequestResult>, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
         switch type {
-        case .Insert:
-            self.tableView.insertSections(NSIndexSet(index: sectionIndex), withRowAnimation: .Fade)
-        case .Delete:
-            self.tableView.deleteSections(NSIndexSet(index: sectionIndex), withRowAnimation: .Fade)
+        case .insert:
+            self.tableView.insertSections(NSIndexSet(index: sectionIndex) as IndexSet, with: .fade)
+        case .delete:
+            self.tableView.deleteSections(NSIndexSet(index: sectionIndex) as IndexSet, with: .fade)
         default:
             return
         }
     }
     
-    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
-        case .Insert:
-            tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: .Fade)
-        case .Delete:
-            tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
-        case .Update:
-            self.configureCell(tableView.cellForRowAtIndexPath(indexPath!)!, atIndexPath: indexPath!)
-        case .Move:
-            tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
-            tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: .Fade)
+        case .insert:
+            tableView.insertRows(at: [newIndexPath!], with: .fade)
+        case .delete:
+            tableView.deleteRows(at: [indexPath!], with: .fade)
+        case .update:
+            self.configureCell(cell: tableView.cellForRow(at: indexPath!)!, atIndexPath: indexPath!)
+        case .move:
+            tableView.deleteRows(at: [indexPath!], with: .fade)
+            tableView.insertRows(at: [newIndexPath!], with: .fade)
         }
     }
     
-    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         self.tableView.endUpdates()
     }
     
     func textFieldChanged(textField: UITextField) {
-        createFetchedResultsController(NSPredicate(format: "name contains[cd] %@", textField.text!))
+        createFetchedResultsController(predicate: NSPredicate(format: "name contains[cd] %@", textField.text!))
     }
     
     /*

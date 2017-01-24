@@ -15,11 +15,11 @@ class DatabaseInterface: NSObject {
     override init() {
         super.init()
         let databaseManager:DatabaseManager = DatabaseManager.instance;
-        if NSThread.isMainThread() {
+        if Thread.isMainThread {
             context = databaseManager.returnMainManagedObjectContext()
         }
         else {
-            context = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.ConfinementConcurrencyType)
+            context = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.confinementConcurrencyType)
             context.persistentStoreCoordinator = databaseManager.returnPersistentStoreCoordinator()
         }
         
@@ -27,9 +27,9 @@ class DatabaseInterface: NSObject {
     }
     
     func newManagedObjectOfType(managedObjectClassName:String) -> NSManagedObject {
-        let entityDescription:NSEntityDescription = NSEntityDescription.entityForName(managedObjectClassName, inManagedObjectContext: context)!
+        let entityDescription:NSEntityDescription = NSEntityDescription.entity(forEntityName: managedObjectClassName, in: context)!
         
-        return NSManagedObject(entity: entityDescription, insertIntoManagedObjectContext: context)
+        return NSManagedObject(entity: entityDescription, insertInto: context)
     }
     
     func saveContext() {
@@ -37,34 +37,34 @@ class DatabaseInterface: NSObject {
             do {
                 try context.save()
             } catch let error as NSError {
-                NSLog("Error saving context in DatabaseInterface.saveContext(): \(error)")
+                Logger.logDetails(msg: "Error saving context in DatabaseInterface.saveContext(): \(error)")
             }
         }
         else {
-            NSLog("No context in DatabaseInterface.saveContext()")
+            Logger.logDetails(msg: "No context in DatabaseInterface.saveContext()")
         }
     }
     
-    func entitiesOfType(entityTypeName:String, fetchRequestChangeBlock:((inputFetchRequest:NSFetchRequest) -> NSFetchRequest)?) -> [AnyObject] {
-        var fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
+    func entitiesOfType(entityTypeName:String, fetchRequestChangeBlock:((_ inputFetchRequest:NSFetchRequest<NSFetchRequestResult>) -> NSFetchRequest<NSFetchRequestResult>)?) -> [AnyObject] {
+        var fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName:entityTypeName)
         
         if fetchRequestChangeBlock != nil {
-            fetchRequest = fetchRequestChangeBlock!(inputFetchRequest: fetchRequest)
+            fetchRequest = fetchRequestChangeBlock!(fetchRequest)
         }
         fetchRequest.returnsObjectsAsFaults = false
         
         do {
-            let result:[AnyObject] = try context.executeFetchRequest(fetchRequest)
+            let result:[AnyObject] = try context.fetch(fetchRequest)
             return result
         } catch let error as NSError {
-            NSLog("entitiesOfType error = \(error)")
+            Logger.logDetails(msg: "entitiesOfType error = \(error)")
         }
         
         return [AnyObject]()
     }
     
     func entitiesOfType(entityTypeName:String, predicate: NSPredicate?) -> [AnyObject] {
-        let fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName:entityTypeName)
         
         if predicate != nil {
             fetchRequest.predicate = predicate
@@ -72,53 +72,56 @@ class DatabaseInterface: NSObject {
         fetchRequest.returnsObjectsAsFaults = false
         
         do {
-            let result:[AnyObject] = try context.executeFetchRequest(fetchRequest)
+            let result:[AnyObject] = try context.fetch(fetchRequest)
             return result
         }
         catch let error as NSError  {
-            NSLog("entitiesOfType error = \(error)")
+            Logger.logDetails(msg: "entitiesOfType error = \(error)")
         }
         
         return [AnyObject]()
     }
     
-    func countOfEntitiesOfType(entityTypeName:String, fetchRequestChangeBlock:((inputFetchRequest:NSFetchRequest) -> NSFetchRequest)?) -> Int {
-        var fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
+    func countOfEntitiesOfType(entityTypeName:String, fetchRequestChangeBlock:((_ inputFetchRequest:NSFetchRequest<NSFetchRequestResult>) -> NSFetchRequest<NSFetchRequestResult>)?) -> Int {
+        var fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName:entityTypeName)
         
         if fetchRequestChangeBlock != nil {
-            fetchRequest = fetchRequestChangeBlock!(inputFetchRequest: fetchRequest)
-        }
-        
-        var error:NSError?
-        let result:Int = context.countForFetchRequest(fetchRequest, error: &error)
-        
-        if error != nil {
-            NSLog("countOfEntitiesOfType error = \(error)")
+            fetchRequest = fetchRequestChangeBlock!(fetchRequest)
         }
 
+        var result:Int = 0
+        
+        do {
+            result = try context.count(for: fetchRequest)
+        } catch let error as NSError {
+            Logger.logDetails(msg: "countOfEntitiesOfType error = \(error)")
+        }
+        
         return result
     }
     
     func countOfEntitiesOfType(entityTypeName:String, predicate:NSPredicate?) -> Int {
-        let fetchRequest:NSFetchRequest = NSFetchRequest(entityName:entityTypeName)
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName:entityTypeName)
         
         if predicate != nil {
             fetchRequest.predicate = predicate
         }
         
-        var error:NSError?
-        let result:Int = context.countForFetchRequest(fetchRequest, error: &error)
+        var result:Int = 0
         
-        if error != nil {
-            NSLog("countOfEntitiesOfType error = \(error)")
+        do {
+            result = try context.count(for: fetchRequest)
+        }
+        catch let error as NSError {
+            Logger.logDetails(msg: "countOfEntitiesOfType error = \(error)")
         }
         
         return result
     }
 
-    func createFetchedResultsController(entityName:String, sortKey:String, secondarySortKey:String?, sectionNameKeyPath:String?, predicate:NSPredicate?) -> NSFetchedResultsController {
-        var fetchedResultsController:NSFetchedResultsController
-        let fetchRequest:NSFetchRequest = NSFetchRequest(entityName: entityName)
+    func createFetchedResultsController(entityName:String, sortKey:String, secondarySortKey:String?, sectionNameKeyPath:String?, predicate:NSPredicate?) -> NSFetchedResultsController<NSFetchRequestResult> {
+        var fetchedResultsController:NSFetchedResultsController<NSFetchRequestResult>
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entityName)
         
         if predicate != nil {
             fetchRequest.predicate = predicate
@@ -140,7 +143,7 @@ class DatabaseInterface: NSObject {
         do {
             try fetchedResultsController.performFetch()
         } catch let error as NSError {
-            NSLog("Error initializing fetchedResultsController for \(entityName): \(error)")
+            Logger.logDetails(msg: "Error initializing fetchedResultsController for \(entityName): \(error)")
         }
         
         return fetchedResultsController
@@ -148,29 +151,29 @@ class DatabaseInterface: NSObject {
     
     func deleteObject(coreDataObject:AnyObject)
     {
-        context.deleteObject(coreDataObject as! NSManagedObject);
+        context.delete(coreDataObject as! NSManagedObject);
         saveContext()
     }
     
     func deleteAllObjectsWithEntityName(entityName: String)
     {
-        let fetchRequest = NSFetchRequest()
-        let entity = NSEntityDescription.entityForName(entityName, inManagedObjectContext:context)
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest()
+        let entity = NSEntityDescription.entity(forEntityName: entityName, in:context)
         fetchRequest.entity = entity
         
         do {
-            if let items:[NSManagedObject] = try context.executeFetchRequest(fetchRequest) as? [NSManagedObject] {
+            if let items:[NSManagedObject] = try context.fetch(fetchRequest) as? [NSManagedObject] {
                 for managedObject:NSManagedObject in items {
-                    context.deleteObject(managedObject)
+                    context.delete(managedObject)
                 }
                 saveContext()
             }
             else {
-                NSLog("Could not downcast entities named \(entityName) in deleteAllObjectsWithEntityName")
+                Logger.logDetails(msg: "Could not downcast entities named \(entityName) in deleteAllObjectsWithEntityName")
             }
         }
         catch let error as NSError {
-            NSLog("Error fetching (before deleting) all entities named \(entityName): \(error)")
+            Logger.logDetails(msg: "Error fetching (before deleting) all entities named \(entityName): \(error)")
         }
     }
 }

@@ -17,7 +17,7 @@ class Recipe: NSManagedObject {
     @NSManaged var containsIngredients: NSOrderedSet
     @NSManaged var title: RecipeTitle
     
-    func recipeDescription() -> NSString {
+    func recipeDescription() -> String {
         var returnValue: String = "\name: \(title.name)"
         returnValue += "\ninstructions: \(instructions)"
         returnValue += "\nnotes: \(notes)"
@@ -30,14 +30,14 @@ class Recipe: NSManagedObject {
     
     func addContainsIngredientsObject(value:Ingredient)
     {
-        self.willChangeValueForKey("containsIngredients")
+        self.willChangeValue(forKey: "containsIngredients")
         
         let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet: containsIngredients)
         
-        tempSet.addObject(value)
+        tempSet.add(value)
         
         self.containsIngredients = tempSet
         
-        self.didChangeValueForKey("containsIngredients")
+        self.didChangeValue(forKey: "containsIngredients")
     }
 }

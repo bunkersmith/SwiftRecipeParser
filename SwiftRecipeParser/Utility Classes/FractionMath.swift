@@ -18,7 +18,7 @@ class FractionMath {
     class func stringToDouble(inputString: String) -> Double {
         var returnValue:Double = -1
 
-        var dashDividedString:Array<String> = inputString.componentsSeparatedByString("-")
+        var dashDividedString:Array<String> = inputString.components(separatedBy: "-")
         
         if dashDividedString.count == 1 || dashDividedString.count == 2 {
             var fractionString:String
@@ -35,7 +35,7 @@ class FractionMath {
                 fractionString = dashDividedString[1]
             }
             
-            var slashDividedString:Array<String> = fractionString.componentsSeparatedByString("/")
+            var slashDividedString:Array<String> = fractionString.components(separatedBy: "/")
             
             if slashDividedString.count == 1 || slashDividedString.count == 2 {
                 if slashDividedString.count == 1 {
@@ -45,11 +45,11 @@ class FractionMath {
                 }
                 else {
                     // The number has a fractional part
-                    let numeratorString:NSString = slashDividedString[0];
-                    let denominatorString:NSString = slashDividedString[1];
+                    let numeratorString:String = slashDividedString[0];
+                    let denominatorString:String = slashDividedString[1];
                     
                     //NSLog(@"Fraction value = %f", [numeratorString doubleValue] / [denominatorString doubleValue]);
-                    returnValue +=  numeratorString.doubleValue / denominatorString.doubleValue
+                    returnValue +=  Double(numeratorString)! / Double(denominatorString)!
                 }
             }
         }

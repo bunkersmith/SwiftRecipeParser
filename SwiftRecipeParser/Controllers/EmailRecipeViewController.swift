@@ -23,10 +23,10 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
 
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:  Selector("handleExitEmailLogNotification:"), name: "exitEmailLogScreenNotification", object: nil)
+        NotificationCenter.default.addObserver(self, selector:  #selector(EmailRecipeViewController.handleExitEmailLogNotification(notification:)), name: Notification.Name(rawValue:"exitEmailLogScreenNotification"), object: nil)
         
         if composeMailViewControllerRequested {
             composeMailViewControllerRequested = false
@@ -39,18 +39,18 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
         // Dispose of any resources that can be recreated.
     }
     
-    func initRecipeTitle(recipeTitle:NSString) {
-        emailRecipeTitle = recipeTitle as String;
+    func initRecipeTitle(recipeTitle:String) {
+        emailRecipeTitle = recipeTitle;
     }
     
     func handleExitEmailLogNotification(notification:NSNotification) {
-        dispatch_async(dispatch_get_main_queue(), {
-            self.popViewController(self)
-        })
+        DispatchQueue.main.async {
+            self.popViewController(sender: self)
+        }
     }
     
     func popViewController(sender:AnyObject) {
-        navigationController!.popViewControllerAnimated(true)
+        let _ = navigationController!.popViewController(animated: true)
     }
     
     func requestMailComposeViewController() {
@@ -78,53 +78,50 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
         composeViewController.setSubject("SwiftRecipeParser \(emailRecipeTitle) Recipe")
         
         // Fill out the email body text
-        emailBody = RecipeUtilities.convertRecipeNameToFormattedText(emailRecipeTitle)
+        emailBody = RecipeUtilities.convertRecipeNameToFormattedText(recipeName: emailRecipeTitle)
         composeViewController.setMessageBody(emailBody, isHTML: false)
         
-        presentViewController(composeViewController, animated: false, completion: nil)
+        present(composeViewController, animated: false, completion: nil)
     }
     
     // MARK - MFMailComposeViewControllerDelegate
     
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         var resultString:String
-        let toastDuration:NSTimeInterval = 2.0
+        let toastDuration:TimeInterval = 2.0
         
-        switch result.rawValue {
-            case MFMailComposeResultCancelled.rawValue:
+        switch result {
+            case .cancelled:
                 resultString = "Result: Mail sending canceled"
             break
             
-            case MFMailComposeResultSaved.rawValue:
+            case .saved:
                 resultString = "Result: Mail saved"
             break
             
-            case MFMailComposeResultSent.rawValue:
+            case .sent:
                 resultString = "Result: Mail sent"
             break
             
-            case MFMailComposeResultFailed.rawValue:
+            case .failed:
                 resultString = "Result: Mail sending failed"
             break
-            
-            default:
-                resultString = "Result: Mail not sent"
-            break
+
         }
         
-        dismissViewControllerAnimated(false, completion: {})
+        dismiss(animated: false, completion: {})
         
         resultToast = IToast()
         if resultToast != nil {
-            resultToast!.showToast("SwiftRecipeParser Alert", alertMessage:resultString, duration:toastDuration, completionHandler: {
-                NSNotificationCenter.defaultCenter().postNotificationName("exitEmailLogScreenNotification", object:self)
+            resultToast!.showToast(alertTitle: "SwiftRecipeParser Alert", alertMessage:resultString, duration:toastDuration, completionHandler: {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "exitEmailLogScreenNotification"), object:self)
             })
         }
     }
     
     // MARK: - UIAlertViewDelegate
     
-    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
-        navigationController!.popViewControllerAnimated(false)
+    func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int) {
+        navigationController!.popViewController(animated: false)
     }
 }

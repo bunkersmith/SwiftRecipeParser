@@ -11,10 +11,10 @@ import UIKit
 class IToast: NSObject, UIAlertViewDelegate {
     
     var toast: UIAlertView = UIAlertView()
-    var timer:NSTimer = NSTimer()
+    var timer:Timer = Timer()
     var completionHandler: () -> (Void) = {}
     
-    func showToast(alertTitle:String, alertMessage:String, duration:NSTimeInterval, completionHandler: (() -> Void))
+    func showToast(alertTitle:String, alertMessage:String, duration:TimeInterval, completionHandler: @escaping (() -> Void))
     {
         self.completionHandler = completionHandler;
         
@@ -23,14 +23,14 @@ class IToast: NSObject, UIAlertViewDelegate {
         toast = UIAlertView(title: alertTitle, message: alertMessage, delegate: self, cancelButtonTitle: "")
         toast.show()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: Selector("cancelToast:"), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(IToast.cancelToast(timer:)), userInfo: nil, repeats: false)
     }
     
-    func cancelToast( timer: NSTimer )
+    func cancelToast( timer: Timer )
     {
         //[Logger writeToLogFile:[NSString stringWithFormat:@"%s called", __PRETTY_FUNCTION__]];
         
-        toast.dismissWithClickedButtonIndex(0, animated: true)
+        toast.dismiss(withClickedButtonIndex: 0, animated: true)
         
         self.completionHandler()
     }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Cheesy Frittata Muffins</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>8</servings>
+    <instructions>1. Preheat oven to 375 degrees
+2. Mix eggs and half n’ half in a bowl until almost scrambled, leaving streaks of egg white
+3. Fold in the bacon, cheese, and spices. Add any other additional ingredients now.
+4. Grease a muffin tin with butter. This recipe makes about 8 frittata muffins.
+5. Pour the mixture, filling each cup about 3/4 way.
+6. Stick them in the oven for 15-18 minutes, or until puffy and golden onthe edges.
+7. Remove from the oven and let cool for 1 minute. These freeze well and
+can be heated individually.
+
+Each Serving Has:
+205 Calories, 16.1g Fats, 1.3g Net Carbs, and 13.6g Protein.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>Large</unitOfMeasure>
+            <ingredientName>Eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>Cup</unitOfMeasure>
+            <ingredientName>Half n’ Half</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>Oz.</unitOfMeasure>
+            <ingredientName>Bacon</ingredientName>
+            <processingInstructions>precooked and chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>Cup</unitOfMeasure>
+            <ingredientName>Cheddar Cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>Tbsp.</unitOfMeasure>
+            <ingredientName>Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp.</unitOfMeasure>
+            <ingredientName>Dried Parsley</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp.</unitOfMeasure>
+            <ingredientName>Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp.</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

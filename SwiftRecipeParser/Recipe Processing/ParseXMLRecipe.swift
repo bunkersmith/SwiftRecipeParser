@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
+class ParseXMLRecipe : NSObject, XMLParserDelegate {
     
     enum currentElementState
     {
@@ -42,7 +42,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
     }
     
     func parseRecipeFromXMLData(recipeFileData:NSData,  databaseInterface:DatabaseInterface) {
-        let xmlparser:NSXMLParser = NSXMLParser(data: recipeFileData)
+        let xmlparser:XMLParser = XMLParser(data: recipeFileData as Data)
         
         localDatabaseInterface = databaseInterface
         
@@ -51,71 +51,71 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         let success:Bool = xmlparser.parse()
         
         if (!success) {
-            NSLog("Error Error Error!!!")
+            Logger.logDetails(msg: "Error Error Error!!!")
         }
     }
     
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
     {
-        //NSLog("didStartElement: %@", elementName)
+        // NSLog("didStartElement: %@", elementName)
     
         currentElementString = ""
         
-        let currentState:currentElementState = startProcessingForElement(elementName)
+        let currentState:currentElementState = startProcessingForElement(elementName: elementName as NSString)
         currentStateStack.append(currentState)
     }
     
     func startProcessingForElement(elementName:NSString) -> currentElementState {
-        if elementName.isEqualToString("quantity") {
-            //NSLog(@"notes element found...")
+        if elementName.isEqual(to: "quantity") {
+            // NSLog("notes element found...")
             return currentElementState.quantityState
         }
-        if elementName.isEqualToString("unitOfMeasure") {
-            //NSLog(@"notes element found...")
+        if elementName.isEqual(to: "unitOfMeasure") {
+            // NSLog("notes element found...")
             return currentElementState.unitOfMeasureState
         }
-        if elementName.isEqualToString("ingredientName") {
-            //NSLog(@"notes element found...")
+        if elementName.isEqual(to: "ingredientName") {
+            // NSLog("notes element found...")
             return currentElementState.ingredientNameState
         }
-        if elementName.isEqualToString("processingInstructions") {
-            //NSLog(@"notes element found...")
+        if elementName.isEqual(to: "processingInstructions") {
+            // NSLog("notes element found...")
             return currentElementState.processingInstructionsState
         }
-        if elementName.isEqualToString("ingredient") {
-            //NSLog(@"ingredient element found – create a new instance of Ingredient class...")
+        if elementName.isEqual(to: "ingredient") {
+            // NSLog("ingredient element found – create a new instance of Ingredient class...")
             if localDatabaseInterface != nil {
-                currentIngredient = (localDatabaseInterface!.newManagedObjectOfType("Ingredient") as! Ingredient)
+                currentIngredient = (localDatabaseInterface!.newManagedObjectOfType(managedObjectClassName: "Ingredient") as! Ingredient)
                 return currentElementState.ingredientState
             }
         }
-        if elementName.isEqualToString("ingredients") {
+        if elementName.isEqual(to: "ingredients") {
             return currentElementState.ingredientsState
         }
-        if elementName.isEqualToString("name") {
-            //NSLog(@"notes element found...")
+        if elementName.isEqual(to: "name") {
+            // NSLog("notes element found...")
             return currentElementState.nameState
         }
-        if elementName.isEqualToString("indexCharacter") {
-            //NSLog(@"indexCharacter element found...")
+        if elementName.isEqual(to: "indexCharacter") {
+            // NSLog("indexCharacter element found...")
             return currentElementState.indexCharacterState
         }
-        if elementName.isEqualToString("notes") {
-            //NSLog(@"notes element found...")
+        if elementName.isEqual(to: "notes") {
+            // NSLog("notes element found...")
             return currentElementState.notesState
         }
-        if elementName.isEqualToString("servings") {
-            //NSLog(@"servings element found...")
+        if elementName.isEqual(to: "servings") {
+            // NSLog("servings element found...")
             return currentElementState.servingsState
         }
-        if elementName.isEqualToString("instructions") {
-            //NSLog(@"instructions element found...")
+        if elementName.isEqual(to: "instructions") {
+            // NSLog("instructions element found...")
             return currentElementState.instructionsState
         }
-        if elementName.isEqualToString("recipe") {
-            //NSLog(@"recipe element found – create a new instance of Recipe class...")
+        if elementName.isEqual(to: "recipe") {
+            // NSLog("recipe element found – create a new instance of Recipe class...")
             if localDatabaseInterface != nil {
-                currentRecipe = (localDatabaseInterface!.newManagedObjectOfType("Recipe") as! Recipe)
+                currentRecipe = (localDatabaseInterface!.newManagedObjectOfType(managedObjectClassName: "Recipe") as! Recipe)
                 if currentRecipe != nil {
                     currentRecipe!.notes = ""
                 }
@@ -126,9 +126,11 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         return currentElementState.noState
     }
     
-    func parser(parser: NSXMLParser, foundCharacters string: String) {
-        let squashed:NSString = string
-        squashed.stringByReplacingOccurrencesOfString("\\s+", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: NSMakeRange(0, squashed.length))
+    func parser(_ parser: XMLParser, foundCharacters string: String) {
+        let squashed:NSString = string as NSString
+        squashed.replacingOccurrences(of: "\\s+", with: "", options: NSString.CompareOptions.regularExpression, range: NSMakeRange(0, squashed.length))
+        //squashed.stringByReplacingOccurrencesOfString("\\s+", withString: "", options: NSString.CompareOptions.RegularExpressionSearch, range: NSMakeRange(0, squashed.length))
+        
         if (squashed.length > 0) {
             currentElementString += string
         }
@@ -145,7 +147,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             
             case currentElementState.nameState:
                 if currentRecipe != nil {
-                    currentRecipeTitle = localDatabaseInterface?.newManagedObjectOfType("RecipeTitle") as? RecipeTitle
+                    currentRecipeTitle = localDatabaseInterface?.newManagedObjectOfType(managedObjectClassName: "RecipeTitle") as? RecipeTitle
                     currentRecipeTitle!.name = elementValue as String
                 }
             break
@@ -157,7 +159,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             break
             
             case currentElementState.notesState:
-                if elementValue.isEqualToString("(null)") {
+                if elementValue.isEqual(to: "(null)") {
                     if currentRecipe != nil {
                         currentRecipe!.notes = ""
                     }
@@ -171,7 +173,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             
             case currentElementState.servingsState:
                 if currentRecipe != nil {
-                    currentRecipe!.servings = NSNumber(integer: elementValue.integerValue)
+                    currentRecipe!.servings = NSNumber(value: elementValue.integerValue)
                 }
             break
             
@@ -189,7 +191,7 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             
             case currentElementState.quantityState:
                 if currentIngredient != nil {
-                    currentIngredient!.quantity = NSNumber(double: FractionMath.stringToDouble(elementValue as String))
+                    currentIngredient!.quantity = NSNumber(value: FractionMath.stringToDouble(inputString: elementValue as String))
                 }
             break
             
@@ -200,9 +202,9 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
             break
             
             case currentElementState.ingredientNameState:
-            //NSLog(@"Ingredient Name: %@", elementValue)
+            // NSLog("Ingredient Name: %@", elementValue)
                 if localDatabaseInterface != nil {
-                    let groceryItem:GroceryItem = localDatabaseInterface!.newManagedObjectOfType("GroceryItem") as! GroceryItem
+                    let groceryItem:GroceryItem = localDatabaseInterface!.newManagedObjectOfType(managedObjectClassName: "GroceryItem") as! GroceryItem
                     groceryItem.name = elementValue as String
                     if currentIngredient != nil {
                         currentIngredient!.processingInstructions = ""
@@ -219,20 +221,20 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         }
     }
     
-    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        //NSLog(@"didEndElement: %@", elementName)
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        // NSLog("didEndElement: %@", elementName)
         let currentState:currentElementState  = currentStateStack[currentStateStack.endIndex - 1]
         
-        processValueForState(currentState, elementValue:currentElementString)
+        processValueForState(currentState: currentState, elementValue:currentElementString as NSString)
 
         if currentState == currentElementState.ingredientState {
             if currentRecipe != nil && currentIngredient != nil {
-                currentRecipe!.addContainsIngredientsObject(currentIngredient!)
+                currentRecipe!.addContainsIngredientsObject(value: currentIngredient!)
             }
         }
         else {
             if currentState == currentElementState.recipeState {
-                //NSLog("currentRecipe: \(currentRecipe!.recipeDescription())")
+                // NSLog("currentRecipe: \(currentRecipe!.recipeDescription())")
                 if (currentRecipe != nil && currentRecipeTitle != nil) {
                     currentRecipe!.title = currentRecipeTitle!
                 }
@@ -244,8 +246,8 @@ class ParseXMLRecipe : NSObject, NSXMLParserDelegate {
         currentStateStack.removeLast()
     }
     
-    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError)  {
-        NSLog("ParseXMLRecipe:parseErrorOccurred called with error %@", parseError)
+    func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error)  {
+        Logger.logDetails(msg: "ParseXMLRecipe:parseErrorOccurred called with error \(parseError as NSError)")
     }
     
 }

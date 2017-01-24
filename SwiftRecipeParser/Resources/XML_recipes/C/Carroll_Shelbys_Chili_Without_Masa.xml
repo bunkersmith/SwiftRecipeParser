@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Carroll Shelby's Chili Without Masa</name>
+    <indexCharacter>S</indexCharacter>
+    <notes>Per serving nutrition info: 329 cal, 18g fat, 19g carbs, 2g fiber, 23 g protein</notes>
+    <servings>6</servings>
+    <instructions>1. Chop onion
+2. Brown onion and beef
+3. Add tomato sauce, water, spice packet and salt
+4. Simmer for 15 minutes or more</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Shelby's Chili Mix</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Tomato Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>can</unitOfMeasure>
+            <ingredientName>Diced Tomatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Beef</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Onion</ingredientName>
+            <processingInstructions>Chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <ingredientName>Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

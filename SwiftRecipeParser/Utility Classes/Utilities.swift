@@ -13,45 +13,80 @@ import CoreData
 class Utilities {
     
     @available(iOS 8.0, *)
-    class func showOkButtonAlert(viewController:UIViewController, title: String, message:String, okButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
-        let okButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.Alert)
-        okButtonAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: okButtonHandler))
-        viewController.presentViewController(okButtonAlert, animated:true, completion: nil)
-        return okButtonAlert
+    class func showOkButtonAlert(viewController:UIViewController, title: String, message:String, okButtonHandler:((UIAlertAction?) -> Void)?) /*-> UIAlertController*/ {
+        let okButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.alert)
+        okButtonAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: okButtonHandler))
+        viewController.present(okButtonAlert, animated:true, completion: nil)
+        //return okButtonAlert
     }
 
     @available(iOS 8.0, *)
-    class func showYesNoAlert(viewController:UIViewController, title: String, message:String, yesButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
-        let yesNoButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.Alert)
-        yesNoButtonAlert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: yesButtonHandler))
-        yesNoButtonAlert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: nil))
-        viewController.presentViewController(yesNoButtonAlert, animated:true, completion: nil)
-        return yesNoButtonAlert
+    class func showYesNoAlert(viewController:UIViewController, title: String, message:String, yesButtonHandler:((UIAlertAction?) -> Void)?, noButtonHandler:((UIAlertAction?) -> Void)?) /*-> UIAlertController*/ {
+        let yesNoButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.alert)
+        yesNoButtonAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: yesButtonHandler))
+        yesNoButtonAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: noButtonHandler))
+        viewController.present(yesNoButtonAlert, animated:true, completion: nil)
+        //return yesNoButtonAlert
     }
     
     @available(iOS 8.0, *)
     class func showTextFieldAlert(viewController:UIViewController,
-                                           title: String, message:String?,
-                            inout inputTextField:UITextField,
+                                           title: String,
+                                         message:String?,
                                     startingText:String,
                                     keyboardType:UIKeyboardType,
                               capitalizationType:UITextAutocapitalizationType,
-                                   okButtonHandler:((UIAlertAction!) -> Void)?) -> UIAlertController {
-        let textFieldAlert = UIAlertController(title:title, message:message, preferredStyle:.Alert)
+                                 okButtonHandler:((UIAlertAction?) -> Void)? /*-> UIAlertController*/,
+                               completionHandler:@escaping ((UITextField) -> Void)) {
+        
+        let textFieldAlert = UIAlertController(title:title, message:message, preferredStyle:.alert)
+        textFieldAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: okButtonHandler))
+        textFieldAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
     
-        textFieldAlert.addTextFieldWithConfigurationHandler { (textField: UITextField!) -> Void in
-            inputTextField = textField
-            textField.keyboardType = keyboardType
-            textField.autocapitalizationType = capitalizationType
-            textField.text = startingText
+        textFieldAlert.addTextField { (textField: UITextField!) -> Void in
+            let textField = textField
+            textField!.keyboardType = keyboardType
+            textField!.autocapitalizationType = capitalizationType
+            textField!.text = startingText
+            completionHandler(textField!)
         }
-        textFieldAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: okButtonHandler))
-        textFieldAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
-        viewController.presentViewController(textFieldAlert, animated: true, completion: nil)
-        return textFieldAlert
+        
+        viewController.present(textFieldAlert, animated: true, completion: nil)
+        //return textFieldAlert
     }
 
-    class func convertSectionTitles(fetchedResultsController:NSFetchedResultsController) -> Array<String> {
+    class func showAddIngredientAlert(object: AnyObject, viewController: UIViewController)
+    {
+        let databaseInterface = DatabaseInterface()
+        let selectedIngredient:Ingredient = object as! Ingredient;
+        let currentGroceryList = GroceryList.returnCurrentGroceryListWithDatabaseInterfacePtr(databaseInterfacePtr: databaseInterface)
+        
+        if (currentGroceryList == nil)
+        {
+            if #available(iOS 8.0, *) {
+                Utilities.showOkButtonAlert(viewController: viewController, title: "Error Alert", message: "No current grocery list", okButtonHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+        else
+        {
+            let quantityString:String = FractionMath.doubleToString(inputDouble: selectedIngredient.quantity.doubleValue);
+            let addString = "Add \(quantityString) \(selectedIngredient.unitOfMeasure) \(selectedIngredient.ingredientItem.name) to the \(currentGroceryList!.name) grocery list?"
+            if #available(iOS 8.0, *) {
+                let _ = Utilities.showYesNoAlert(viewController: viewController, title: "Add Item", message: addString, yesButtonHandler: { action in
+                    let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType(managedObjectClassName: "GroceryListItem") as! GroceryListItem
+                    groceryListItem.name = selectedIngredient.ingredientItem.name
+                    currentGroceryList!.addHasItemsObject(value: groceryListItem)
+                    databaseInterface.saveContext()
+                }, noButtonHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+    }
+    
+    class func convertSectionTitles(fetchedResultsController:NSFetchedResultsController<NSFetchRequestResult>) -> Array<String> {
         var returnValue:Array<String> = [" "]
         var sections:Array = fetchedResultsController.sections!
         
@@ -62,7 +97,7 @@ class Utilities {
         return returnValue
     }
     
-    class func convertSectionIndexTitles(fetchedResultsController:NSFetchedResultsController) -> Array<String> {
+    class func convertSectionIndexTitles(fetchedResultsController:NSFetchedResultsController<NSFetchRequestResult>) -> Array<String> {
         var returnValue:Array<String> = [UITableViewIndexSearch]
         for i in 0 ..< fetchedResultsController.sectionIndexTitles.count {
             returnValue.append(fetchedResultsController.sectionIndexTitles[i] )
@@ -73,41 +108,59 @@ class Utilities {
     
     class func fileExistsAtAbsolutePath(pathname:String) -> Bool {
         var isDirectory:ObjCBool = ObjCBool(false)
-        let existsAtPath:Bool = NSFileManager.defaultManager().fileExistsAtPath(pathname, isDirectory: &isDirectory)
+        let existsAtPath:Bool = FileManager.default.fileExists(atPath: pathname, isDirectory: &isDirectory)
         
-        return existsAtPath && !isDirectory
+        return existsAtPath && !isDirectory.boolValue
     }
     
     class func directoryExistsAtAbsolutePath(pathname:String) -> Bool {
         var isDirectory:ObjCBool = ObjCBool(false)
-        let existsAtPath:Bool = NSFileManager.defaultManager().fileExistsAtPath(pathname, isDirectory: &isDirectory)
+        let existsAtPath:Bool = FileManager.default.fileExists(atPath: pathname, isDirectory: &isDirectory)
         
-        return existsAtPath && isDirectory
+        return existsAtPath && isDirectory.boolValue
     }
     
     class func writelnToStandardOut(stringToWrite:String) {
-            dispatch_async(dispatch_get_main_queue(), {
-                print(stringToWrite)
-            })
+        DispatchQueue.main.async {
+            print(stringToWrite)
+        }
     }
     
     // Returns the URL to the application's Documents directory.
-    class func applicationDocumentsDirectory() -> NSURL
+    class func applicationDocumentsDirectory() -> URL
     {
-        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return urls[urls.count-1] 
     }
     
     class func nsFetchedResultsChangeTypeToString( nsFetchedResultsChangeType: NSFetchedResultsChangeType) -> String {
         switch nsFetchedResultsChangeType {
-            case .Insert:
+            case .insert:
                 return "NSFetchedResultsChangeInsert"
-            case .Delete:
+            case .delete:
                 return "NSFetchedResultsChangeDelete"
-            case .Move:
+            case .move:
                 return "NSFetchedResultsChangeMove"
-            case .Update:
+            case .update:
                 return "NSFetchedResultsChangeUpdate"
         }
+    }
+    
+    class func forceLoadDatabase() -> Bool {
+        guard let path = Bundle.main.path(forResource: "Info", ofType: "plist") else {
+            return false
+        }
+        guard let dict = NSDictionary(contentsOfFile: path) else {
+            return false
+        }
+        guard let obj = dict.object(forKey: "forceLoadDatabase") as? NSNumber else {
+            return false
+        }
+        /*
+        guard let bool = obj.boolValue else {
+            return false
+        }
+        */
+        return obj.boolValue
     }
 }

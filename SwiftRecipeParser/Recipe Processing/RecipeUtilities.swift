@@ -12,7 +12,7 @@ import CoreData
 class RecipeUtilities {
     
     class func fetchRecipeWithName(recipeName: String) -> Recipe? {
-        let recipeObjects = DatabaseInterface().entitiesOfType("Recipe", predicate: NSPredicate(format: "title.name == %@", recipeName)) as! [Recipe]
+        let recipeObjects = DatabaseInterface().entitiesOfType(entityTypeName: "Recipe", predicate: NSPredicate(format: "title.name == %@", recipeName)) as! [Recipe]
         
         if recipeObjects.count == 1 {
             return recipeObjects.first
@@ -21,10 +21,10 @@ class RecipeUtilities {
         return nil
     }
     
-    class func countOfRecipes() -> Int {
+    class func countOfDatabaseRecipes() -> Int {
         let databaseInterface:DatabaseInterface = DatabaseInterface()
         
-        return databaseInterface.countOfEntitiesOfType("Recipe", predicate: nil)
+        return databaseInterface.countOfEntitiesOfType(entityTypeName: "Recipe", predicate: nil)
     }
 
     class func componentsJoinedByString(components:Array<String>, joinString:String) -> String {
@@ -42,95 +42,95 @@ class RecipeUtilities {
     
     class func outputRecipeToFile(recipeName:String, recipeIndexChar:String, fileIsXML:Bool)
     {
-        let fileManager:NSFileManager = NSFileManager.defaultManager()
+        let fileManager:FileManager = FileManager.default
         
-        var recipeDirectory:NSURL = Utilities.applicationDocumentsDirectory()
+        var recipeDirectory:URL = Utilities.applicationDocumentsDirectory()
         
         if (fileIsXML) {
-            recipeDirectory = recipeDirectory.URLByAppendingPathComponent("XML_recipes")
+            recipeDirectory = recipeDirectory.appendingPathComponent("XML_recipes")
         }
-        recipeDirectory = recipeDirectory.URLByAppendingPathComponent(recipeIndexChar)
+        recipeDirectory = recipeDirectory.appendingPathComponent(recipeIndexChar)
         
-        let separatorCharacters:NSCharacterSet = NSCharacterSet(charactersInString: " ,/'")
+        let separatorCharacters:NSCharacterSet = NSCharacterSet(charactersIn: " ,/'")
         
-        let fileNameComponents:Array<String> = recipeName.componentsSeparatedByCharactersInSet(separatorCharacters)
-        let fileName:String = componentsJoinedByString(fileNameComponents, joinString: "_")
+        let fileNameComponents:Array<String> = recipeName.components(separatedBy: separatorCharacters as CharacterSet)
+        let fileName:String = componentsJoinedByString(components: fileNameComponents, joinString: "_")
         
-        var filePathname: String
+        var filePathname: URL
         
         if fileIsXML {
-            filePathname = recipeDirectory.URLByAppendingPathComponent(fileName).URLByAppendingPathExtension("xml").path!
+            filePathname = recipeDirectory.appendingPathComponent(fileName).appendingPathExtension("xml")
         }
         else {
-            filePathname = recipeDirectory.URLByAppendingPathComponent(fileName).URLByAppendingPathExtension("txt").path!
+            filePathname = recipeDirectory.appendingPathComponent(fileName).appendingPathExtension("txt")
         }
         
-        if !Utilities.directoryExistsAtAbsolutePath(recipeDirectory.path!) {
+        if !Utilities.directoryExistsAtAbsolutePath(pathname: recipeDirectory.path) {
             do {
-                try fileManager.createDirectoryAtPath(recipeDirectory.path!, withIntermediateDirectories: true, attributes: nil)
+                try fileManager.createDirectory(atPath: recipeDirectory.path, withIntermediateDirectories: true, attributes: nil)
             } catch let error as NSError {
-                NSLog("Error creating directory at path \(recipeDirectory.path!): \(error)")
+                Logger.logDetails(msg: "Error creating directory at path \(recipeDirectory.path): \(error)")
             }
             //NSLog(@"recipeDirectory = %@", recipeDirectory)
         }
         
-        if Utilities.directoryExistsAtAbsolutePath(recipeDirectory.path!) {
+        if Utilities.directoryExistsAtAbsolutePath(pathname: recipeDirectory.path) {
             var fileContents: String
             
             if fileIsXML {
-                fileContents = RecipeUtilities.convertRecipeNameToXMLText(recipeName)
+                fileContents = RecipeUtilities.convertRecipeNameToXMLText(recipeName: recipeName)
             }
             else {
-                fileContents = RecipeUtilities.convertRecipeNameToFormattedText(recipeName)
+                fileContents = RecipeUtilities.convertRecipeNameToFormattedText(recipeName: recipeName)
             }
             
             do {
-                try fileContents.writeToFile(filePathname, atomically: true, encoding: NSUTF8StringEncoding)
+                try fileContents.write(toFile: filePathname.path, atomically: true, encoding: String.Encoding.utf8)
             } catch let error as NSError {
-                NSLog("Error writing file at path \(filePathname): \(error)")
+                Logger.logDetails(msg: "Error writing file at path \(filePathname): \(error)")
                 if error.code == 517 {
-                    NSLog("fileContents = *%@*", fileContents)
+                    Logger.logDetails(msg: "fileContents = *\(fileContents)*")
                 }
             }
         }
         else {
-            NSLog("%@ does not exist, and could not be created", recipeDirectory)
+            Logger.logDetails(msg: "\(recipeDirectory) does not exist, and could not be created")
         }
     }
     
     class func convertRecipeNameToXMLText(recipeName:String) -> String {
         var returnValue:String = ""
 
-        let recipe:Recipe? = RecipeUtilities.convertRecipeNameToObject(recipeName)
+        let recipe:Recipe? = RecipeUtilities.convertRecipeNameToObject(fileName: recipeName)
         
         if recipe != nil {
             returnValue = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-            returnValue = returnValue.stringByAppendingString("<recipe>\n")
-            returnValue = returnValue.stringByAppendingString("    <name>\(recipe!.title.name)</name>\n")
-            returnValue = returnValue.stringByAppendingString("    <indexCharacter>\(recipe!.title.indexCharacter)</indexCharacter>\n")
-            returnValue = returnValue.stringByAppendingString("    <notes>\(recipe!.notes)</notes>\n")
-            returnValue = returnValue.stringByAppendingString("    <servings>\(recipe!.servings.intValue)</servings>\n")
-            returnValue = returnValue.stringByAppendingString("    <instructions>\(recipe!.instructions)</instructions>\n")
+            returnValue = returnValue.appending("<recipe>\n")
+            returnValue = returnValue.appending("    <name>\(recipe!.title.name)</name>\n")
+            returnValue = returnValue.appending("    <indexCharacter>\(recipe!.title.indexCharacter)</indexCharacter>\n")
+            returnValue = returnValue.appending("    <notes>\(recipe!.notes)</notes>\n")
+            returnValue = returnValue.appending("    <servings>\(recipe!.servings.intValue)</servings>\n")
+            returnValue = returnValue.appending("    <instructions>\(recipe!.instructions)</instructions>\n")
             
             var ingredient:Ingredient
             
-            returnValue = returnValue.stringByAppendingString("    <ingredients>\n")
+            returnValue = returnValue.appending("    <ingredients>\n")
             
             for i in 0 ..< recipe!.containsIngredients.count {
                 ingredient = recipe!.containsIngredients[i] as! Ingredient
                     
-                returnValue = returnValue.stringByAppendingString("        <ingredient>\n")
+                returnValue = returnValue.appending("        <ingredient>\n")
                 
-                returnValue = returnValue.stringByAppendingString("            <quantity>\(ingredient.quantity.doubleValue)</quantity>\n")
-                returnValue = returnValue.stringByAppendingString("            <unitOfMeasure>\(ingredient.unitOfMeasure)</unitOfMeasure>\n")
-                returnValue = returnValue.stringByAppendingString("            <ingredientName>\(ingredient.ingredientItem.name)</ingredientName>\n")
-                returnValue = returnValue.stringByAppendingString("            <processingInstructions>\(ingredient.processingInstructions)</processingInstructions>\n")
+                returnValue = returnValue.appending("            <quantity>\(ingredient.quantity.doubleValue)</quantity>\n")
+                returnValue = returnValue.appending("            <unitOfMeasure>\(ingredient.unitOfMeasure)</unitOfMeasure>\n")
+                returnValue = returnValue.appending("            <ingredientName>\(ingredient.ingredientItem.name)</ingredientName>\n")
+                returnValue = returnValue.appending("            <processingInstructions>\(ingredient.processingInstructions)</processingInstructions>\n")
                 
-                returnValue = returnValue.stringByAppendingString("        </ingredient>\n")
+                returnValue = returnValue.appending("        </ingredient>\n")
             }
     
-            returnValue = returnValue.stringByAppendingString("    </ingredients>\n")
-            returnValue = returnValue.stringByAppendingString("</recipe>\n")
+            returnValue = returnValue.appending("    </ingredients>\n")
+            returnValue = returnValue.appending("</recipe>\n")
         }
     
         return returnValue
@@ -139,18 +139,18 @@ class RecipeUtilities {
     class func convertRecipeNameToFormattedText(recipeName:String) -> String {
         var returnValue:String = "\(recipeName)\n\n"
         
-        let recipe:Recipe? = RecipeUtilities.convertRecipeNameToObject(recipeName)
+        let recipe:Recipe? = RecipeUtilities.convertRecipeNameToObject(fileName: recipeName)
         
-        returnValue = returnValue.stringByAppendingString("Notes:\n\(recipe!.notes)\n\n")
+        returnValue = returnValue.appending("Notes:\n\(recipe!.notes)\n\n")
     
-        if recipe!.servings.integerValue > 0 {
-            returnValue = returnValue.stringByAppendingString("Servings:\(recipe!.servings.integerValue)\n\n")
+        if recipe!.servings.intValue > 0 {
+            returnValue = returnValue.appending("Servings:\(recipe!.servings.intValue)\n\n")
         }
         
         var ingredient:Ingredient
         
         if recipe!.containsIngredients.count > 0 {
-            returnValue = returnValue.stringByAppendingString("Ingredients:\n")
+            returnValue = returnValue.appending("Ingredients:\n")
         }
         
         for i in 0 ..< recipe!.containsIngredients.count {
@@ -158,23 +158,23 @@ class RecipeUtilities {
             
             if ingredient.quantity.doubleValue == 0 && ingredient.unitOfMeasure == "-" {
                 if ingredient.ingredientItem.name == "-" {
-                    returnValue = returnValue.stringByAppendingString("\n")
+                    returnValue = returnValue.appending("\n")
                 }
                 else {
-                    returnValue = returnValue.stringByAppendingString("\(ingredient.ingredientItem.name)\n")
+                    returnValue = returnValue.appending("\(ingredient.ingredientItem.name)\n")
                 }
             }
             else {
-                let quantityString:String = FractionMath.doubleToString(ingredient.quantity.doubleValue)
-                returnValue = returnValue.stringByAppendingString("\(quantityString)\t\(ingredient.unitOfMeasure)\t\(ingredient.ingredientItem.name)\n")
+                let quantityString:String = FractionMath.doubleToString(inputDouble: ingredient.quantity.doubleValue)
+                returnValue = returnValue.appending("\(quantityString)\t\(ingredient.unitOfMeasure)\t\(ingredient.ingredientItem.name)\n")
             }
         }
         
         if recipe!.containsIngredients.count > 0 {
-            returnValue = returnValue.stringByAppendingString("\n")
+            returnValue = returnValue.appending("\n")
         }
         
-        returnValue = returnValue.stringByAppendingString("Instructions:\n%\(recipe!.instructions)\n\n")
+        returnValue = returnValue.appending("Instructions:\n%\(recipe!.instructions)\n\n")
     
         return returnValue
     }
@@ -187,20 +187,19 @@ class RecipeUtilities {
         
         let context:NSManagedObjectContext = databaseManager.returnMainManagedObjectContext()
         
-        let request:NSFetchRequest = NSFetchRequest()
-        request.entity = NSEntityDescription.entityForName("Recipe", inManagedObjectContext: context)
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Recipe")
         
         request.predicate = NSPredicate(format: "title.name == %@", fileName)
         
-        var recipeObjects:[AnyObject]
+        var recipeObjects:[Any]
         do {
-            recipeObjects = try context.executeFetchRequest(request)
+            recipeObjects = try context.fetch(request)
             
             if recipeObjects.count == 1 {
                 recipe = recipeObjects[0] as? Recipe
             }
         } catch let error as NSError {
-            NSLog("Error retrieving recipe named \(fileName): \(error)")
+            Logger.logDetails(msg: "Error retrieving recipe named \(fileName): \(error)")
         }
         
         return recipe
@@ -210,11 +209,10 @@ class RecipeUtilities {
     {
         let databaseManager:DatabaseManager = DatabaseManager.instance
         
-        databaseManager.backgroundOperation(
-        {
+        databaseManager.backgroundOperation(block: {
             let databaseInterface:DatabaseInterface = DatabaseInterface()
             
-            let recipes:Array<Recipe> = databaseInterface.entitiesOfType("Recipe", fetchRequestChangeBlock:{
+            let recipes:Array<Recipe> = databaseInterface.entitiesOfType(entityTypeName: "Recipe", fetchRequestChangeBlock:{
                 inputFetchRequest in
                 inputFetchRequest.propertiesToFetch = ["name", "indexCharacter"]
                 let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: false)
@@ -224,14 +222,14 @@ class RecipeUtilities {
             
             var currentRecipe:Recipe
             
-            let recipeDirectory:String = Utilities.applicationDocumentsDirectory().path!
-            NSLog("recipeDirectory = %@", recipeDirectory)
+            let recipeDirectory:String = Utilities.applicationDocumentsDirectory().path
+            Logger.logDetails(msg: "recipeDirectory = %\(recipeDirectory)")
             
             for i in 0 ..< recipes.count
             {
                 currentRecipe = recipes[i]
                 
-                self.outputRecipeToFile(currentRecipe.title.name, recipeIndexChar:currentRecipe.title.indexCharacter, fileIsXML:inXMLFormat)
+                self.outputRecipeToFile(recipeName: currentRecipe.title.name, recipeIndexChar:currentRecipe.title.indexCharacter, fileIsXML:inXMLFormat)
             }
         })
     }

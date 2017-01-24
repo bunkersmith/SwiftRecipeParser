@@ -10,19 +10,19 @@ import Foundation
 
 class ParseRecipe {
     
-    class func replaceString(stringToReplace:NSString, inputString:NSString, replacementString:NSString) -> NSString {
-        let components:NSArray = inputString.componentsSeparatedByString(stringToReplace as String)
+    class func replaceString(stringToReplace:String, inputString:String, replacementString:String) -> String {
+        let components = inputString.components(separatedBy: stringToReplace)
         
-        return components.componentsJoinedByString(replacementString as String);
+        return components.joined(separator: replacementString);
     }
     
-    class func textBetweenStrings(inputString:NSString, startString:NSString, endString:NSString, keepStrings:Bool) -> Array<NSString> {
-        var returnValue:Array<NSString> = Array()
-        var returnString:NSString
+    class func textBetweenStrings(inputString:NSString, startString:NSString, endString:NSString, keepStrings:Bool) -> Array<String> {
+        var returnValue:Array<String> = Array()
+        var returnString:String
         
         let stringToFind:String = "\(startString).*?\(endString)"
         do {
-            let regex:NSRegularExpression = try NSRegularExpression(pattern: stringToFind, options: [NSRegularExpressionOptions.DotMatchesLineSeparators, NSRegularExpressionOptions.CaseInsensitive])
+            let regex:NSRegularExpression = try NSRegularExpression(pattern: stringToFind, options: [NSRegularExpression.Options.dotMatchesLineSeparators, NSRegularExpression.Options.caseInsensitive])
             
             var matches:Array<NSTextCheckingResult>
             let entireStringRange:NSRange = NSMakeRange(0, inputString.length-1)
@@ -30,7 +30,7 @@ class ParseRecipe {
             //NSLog("entireStringRange = \(entireStringRange)")
             //NSLog("inputString = \(inputString)")
             
-            matches = regex.matchesInString(inputString as String, options: [], range: entireStringRange)
+            matches = regex.matches(in: inputString as String, options: [], range: entireStringRange)
             
             if matches.count == 0
             {
@@ -44,20 +44,20 @@ class ParseRecipe {
                     match = matches[i]
                     
                     if keepStrings {
-                        returnString = inputString.substringWithRange(match.range)
+                        returnString = inputString.substring(with: match.range)
                     }
                     else {
                         rangeToReturn.location = match.range.location + startString.length
                         rangeToReturn.length = match.range.length - startString.length - endString.length
                         
-                        returnString = inputString.substringWithRange(rangeToReturn)
+                        returnString = inputString.substring(with: rangeToReturn)
                     }
                     
                     returnValue.append(returnString)
                 }
             }
         } catch let error as NSError {
-            NSLog("error in regular expression \(error)")
+            Logger.logDetails(msg: "error in regular expression \(error)")
         }
         
         return returnValue

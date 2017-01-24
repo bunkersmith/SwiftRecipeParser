@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Drunken Five Spice Beef</name>
+    <indexCharacter>D</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>1. Chop up broccoli florets.
+2. Slice mushrooms.
+3. Bring cast iron to high heat and add ground beef.
+4. Brown all ground beef, then add ginger and garlic to the pan.
+5. Add broccoli, soy sauce and spices, and stir everything together.
+6. Pour broth into the pan. Add mushrooms and spinach and mix everything in together.
+7. Once spinach has wilted, add ketchup, mix, and serve!
+
+Each serving has:
+515 Calories, 35g Fats, 6g Net Carbs, and 33.3g Protein.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>135</quantity>
+            <unitOfMeasure>g</unitOfMeasure>
+            <ingredientName>Chopped Broccoli</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>150</quantity>
+            <unitOfMeasure>g</unitOfMeasure>
+            <ingredientName>Sliced Mushrooms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lbs</unitOfMeasure>
+            <ingredientName>Ground Beef</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Minced ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <ingredientName>Soy Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <ingredientName>Five Spice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <ingredientName>Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Cayenne Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Onion Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Chicken or Beef Broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>75</quantity>
+            <unitOfMeasure>g</unitOfMeasure>
+            <ingredientName>Raw Spinach</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <ingredientName>Reduced Sugar Ketchup</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
