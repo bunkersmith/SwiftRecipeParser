@@ -13,11 +13,11 @@ class RecipeFiles {
     private var totalRecipes:Int = 0;
     
     func initializeRecipeDatabaseFromResourceFiles() {
-        let databaseManager:DatabaseManager = DatabaseManager.instance
+        let databaseInterface = DatabaseInterface(concurrencyType: .privateQueueConcurrencyType)
         
-        databaseManager.backgroundOperation(block: {
-            self.asyncInitializeRecipeDatabase(databaseInterface: DatabaseInterface())
-        })
+        databaseInterface.performInBackground {
+            self.asyncInitializeRecipeDatabase(databaseInterface: databaseInterface)
+        }
     }
     
     func initializeRecipesInDirectory(directoryName:String) -> Array<String> {
@@ -217,13 +217,13 @@ class RecipeFiles {
                     currentPercentage = (recipesProcessed * 100) / totalRecipes
                     percentageDictionary = ["percentage":NSNumber(value: currentPercentage)]
                     
-                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "RecipeProgressNotification"), object: self, userInfo: percentageDictionary)
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SwiftRecipeParser.RecipeProgressNotification"), object: self, userInfo: percentageDictionary)
                 }
             }
         }
         
         percentageDictionary = ["percentage": 100.0]
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "RecipeProgressNotification"), object: self, userInfo: percentageDictionary)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SwiftRecipeParser.RecipeProgressNotification"), object: self, userInfo: percentageDictionary)
         
         let asyncInitStopTime = MillisecondTimer.currentTickCount();
         
