@@ -27,6 +27,8 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ingredientsTable.tableFooterView = UIView(frame: .zero)
+        
         self.ingredientsTable.estimatedRowHeight = 50.0
         self.ingredientsTable.rowHeight = UITableViewAutomaticDimension
         
