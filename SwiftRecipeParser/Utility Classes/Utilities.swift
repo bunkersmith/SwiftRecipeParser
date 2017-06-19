@@ -57,9 +57,9 @@ class Utilities {
 
     class func showAddIngredientAlert(object: AnyObject, viewController: UIViewController)
     {
-        let databaseInterface = DatabaseInterface()
+        //let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         let selectedIngredient:Ingredient = object as! Ingredient;
-        let currentGroceryList = GroceryList.returnCurrentGroceryListWithDatabaseInterfacePtr(databaseInterfacePtr: databaseInterface)
+        let currentGroceryList = GroceryList.returnCurrentGroceryList()
         
         if (currentGroceryList == nil)
         {
@@ -75,10 +75,9 @@ class Utilities {
             let addString = "Add \(quantityString) \(selectedIngredient.unitOfMeasure) \(selectedIngredient.ingredientItem.name) to the \(currentGroceryList!.name) grocery list?"
             if #available(iOS 8.0, *) {
                 let _ = Utilities.showYesNoAlert(viewController: viewController, title: "Add Item", message: addString, yesButtonHandler: { action in
-                    let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType(managedObjectClassName: "GroceryListItem") as! GroceryListItem
-                    groceryListItem.name = selectedIngredient.ingredientItem.name
-                    currentGroceryList!.addHasItemsObject(value: groceryListItem)
-                    databaseInterface.saveContext()
+
+                    GroceryList.addItemToCurrent(itemName: selectedIngredient.ingredientItem.name, quantity: quantityString, unitOfMeasure: selectedIngredient.unitOfMeasure)
+                    
                 }, noButtonHandler: nil)
             } else {
                 // Fallback on earlier versions
@@ -157,10 +156,31 @@ class Utilities {
             return false
         }
         /*
+         guard let bool = obj.boolValue else {
+         return false
+         }
+         */
+        return obj.boolValue
+    }
+    
+/*
+    class func updateGroceryListItems() -> Bool {
+        guard let path = Bundle.main.path(forResource: "Info", ofType: "plist") else {
+            return false
+        }
+        guard let dict = NSDictionary(contentsOfFile: path) else {
+            return false
+        }
+        guard let obj = dict.object(forKey: "updateGroceryListItems") as? NSNumber else {
+            return false
+        }
+        /*
         guard let bool = obj.boolValue else {
             return false
         }
         */
         return obj.boolValue
     }
+*/
+    
 }
