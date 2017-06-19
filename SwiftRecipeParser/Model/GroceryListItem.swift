@@ -14,10 +14,38 @@ class GroceryListItem: NSManagedObject {
     @NSManaged var cost: NSNumber
     @NSManaged var isBought: NSNumber
     @NSManaged var name: String
+    @NSManaged var quantity: NSNumber
+    @NSManaged var unitOfMeasure: String
+    @NSManaged var isTaxable: NSNumber
     @NSManaged var inGroceryList: GroceryList
 
+    override var description: String {
+        var returnValue:String
+        
+        returnValue = "\n***** GroceryListItem"
+        returnValue += "\nname = \(name)"
+        returnValue += "\ncost = \(cost)"
+        returnValue += "\nquantity = \(quantity)"
+        returnValue += "\nunitOfMeasure = \(unitOfMeasure)"
+        returnValue += "\nisBought = \(isBought)"
+        returnValue += "\nisTaxable = \(isTaxable)"
+        
+        return returnValue
+    }
+    
     class func findGroceryListItemWithName(name: String) -> GroceryListItem? {
-        if let groceryListItems = DatabaseInterface().entitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "name MATCHES %@", name)) as? Array<GroceryListItem> {
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        if let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "name MATCHES %@", name)) as? Array<GroceryListItem> {
+            if groceryListItems.count == 1 {
+                return groceryListItems.first
+            }
+        }
+        return nil
+    }
+    
+    class func findGroceryListItemWithName(name: String, inListNamed: String) -> GroceryListItem? {
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        if let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "name MATCHES %@ AND inGroceryList.name MATCHES %@", name, inListNamed)) as? Array<GroceryListItem> {
             if groceryListItems.count == 1 {
                 return groceryListItems.first
             }
@@ -25,15 +53,19 @@ class GroceryListItem: NSManagedObject {
         return nil
     }
 
-    class func create(databaseInterface:DatabaseInterface, name: String, cost: Float) -> GroceryListItem? {
+    class func create(name: String, cost: Float, quantity: Float, unitOfMeasure: String) -> GroceryListItem? {
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
         if let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType(managedObjectClassName: "GroceryListItem") as? GroceryListItem {
             groceryListItem.name = name.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
             groceryListItem.isBought = NSNumber(value: false)
             groceryListItem.cost = NSNumber(value: cost)
+            groceryListItem.quantity = NSNumber(value: quantity)
+            groceryListItem.unitOfMeasure = unitOfMeasure
             
             databaseInterface.saveContext()
             
-            logAll(databaseInterface: databaseInterface)
+            logAll()
             
             return groceryListItem
         }
@@ -41,12 +73,14 @@ class GroceryListItem: NSManagedObject {
         return nil
     }
 
-    class func createOrReturn(databaseInterface:DatabaseInterface, name: String, cost: Float) -> GroceryListItem? {
+    class func createOrReturn(name: String, cost: Float, quantity: Float, unitOfMeasure: String) -> GroceryListItem? {
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
         let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "name MATCHES %@", name))
         
         if groceryListItems.count == 0 {
             //Logger.logDetails(msg: "Returning created item")
-            return create(databaseInterface: databaseInterface, name: name, cost: cost)
+            return create(name: name, cost: cost, quantity: quantity, unitOfMeasure: unitOfMeasure)
         }
         
         if groceryListItems.count == 1 {
@@ -63,7 +97,9 @@ class GroceryListItem: NSManagedObject {
         return nil
     }
     
-    class func logAll(databaseInterface: DatabaseInterface) {
+    class func logAll() {
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
         let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem") { inputFetchRequest in
             let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
             inputFetchRequest.propertiesToFetch = ["name", "cost"]
@@ -85,8 +121,25 @@ class GroceryListItem: NSManagedObject {
         }
     }
     
+    class func fetchAll() -> Array<GroceryListItem>? {
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
+        let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem") { inputFetchRequest in
+            let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+            inputFetchRequest.sortDescriptors = [sortDescriptor]
+            
+            return inputFetchRequest
+        } as? Array<GroceryListItem>
+        
+        if groceryListItems != nil {
+            Logger.logDetails(msg: "Count of groceryListItems = \(groceryListItems!.count)")
+        }
+        
+        return groceryListItems
+    }
+    
     class func addItemToString(groceryListItem:GroceryListItem, string: String) -> String {
-        let itemString = "\(groceryListItem.name)\t\(groceryListItem.cost)"
+        let itemString = "\(groceryListItem.name)\t\(groceryListItem.cost)\t\(groceryListItem.quantity)\t\(groceryListItem.unitOfMeasure)"
         
         return "\(string)\n\(itemString)"
     }
@@ -115,10 +168,9 @@ class GroceryListItem: NSManagedObject {
         
         //Logger.logDetails(msg: "Count of lines in file = \(importFileLines.count)")
         
-        let databaseManager:DatabaseManager = DatabaseManager.instance
+        let databaseInterface = DatabaseInterface(concurrencyType: .privateQueueConcurrencyType)
         
-        databaseManager.backgroundOperation(block: {
-            let databaseInterface = DatabaseInterface()
+        databaseInterface.performInBackground {
             
             for line in importFileLines {
                 //NSLog("Line: \"\(line)\"")
@@ -134,7 +186,9 @@ class GroceryListItem: NSManagedObject {
                     }
                 }
                 
-                if createOrReturn(databaseInterface: databaseInterface, name: itemName, cost: itemCost) == nil {
+                // FIX THIS TO IMPORT THE quantity and unitOfMeasure values from the file
+                
+                if createOrReturn(name: itemName, cost: itemCost, quantity: 1, unitOfMeasure: "ea") == nil {
                     Logger.logDetails(msg: "Creation of grocery list item named \(itemName) with cost \(itemCost) failed!")
                     
                     completionHandler(false)
@@ -142,7 +196,18 @@ class GroceryListItem: NSManagedObject {
                 }
             }
             
+            databaseInterface.saveContext()
+            
             completionHandler(true)
-        })
+        }
+    }
+    
+    func update(quantity: Float, taxable: Bool) -> GroceryListItem {
+        self.quantity = NSNumber(value: quantity)
+        isTaxable = NSNumber(value: taxable)
+        
+        DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
+        
+        return self
     }
 }
