@@ -9,19 +9,19 @@
 import UIKit
 import CoreData
 
-class GroceryListDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddGroceryListItemDelegate {
+class GroceryListDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddGroceryListItemDelegate, ModifyGroceryListItemDelegate {
 
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var totalCostLabel: UILabel!
     @IBOutlet weak var projectedCostLabel: UILabel!
+    @IBOutlet weak var clearAllItemsButton: UIButton!
+    
+    fileprivate var textFieldBottom: CGFloat = 0.0
+    fileprivate var textFieldIndexPath: IndexPath? = nil
     
     var groceryList:GroceryList!
-    
-    lazy private var databaseInterface:DatabaseInterface = {
-       return DatabaseInterface()
-    }()
-    
+
     override func encodeRestorableState(with aCoder: NSCoder) {
         super.encodeRestorableState(with: aCoder)
         aCoder.encode(groceryList.name, forKey: "groceryListName")
@@ -35,19 +35,30 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.tableFooterView = UIView(frame: .zero)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         tableView.reloadData()
         navigationItem.title = groceryList.name
-        totalCostLabel.text = String(format:"Total Cost: $%.2f", groceryList.totalCost.floatValue)
-        projectedCostLabel.text = String(format:"Projected Cost: $%.2f", groceryList.updateProjectedCost())
+
+        updateCostLabels()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateCostLabels() {
+        let totalCost = groceryList.updateAndReturnTotalCost()
+        totalCostLabel.text = String(format:"Total Cost: $%.2f", totalCost)
+        
+        let projectedCost = groceryList.updateAndReturnProjectedCost()
+        projectedCostLabel.text = String(format:"Projected Cost: $%.2f", projectedCost)
     }
     
     func groceryListItemAdded(groceryListItem: GroceryListItem) {
@@ -59,34 +70,19 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             }
         }
         else {
-            totalCostLabel.text = String(format:"Total Cost: $%.2f", groceryList.totalCost.floatValue)
-            projectedCostLabel.text = String(format:"Projected Cost: $%.2f", groceryList.updateProjectedCost())
             groceryList.addHasItemsObject(value: groceryListItem)
-            databaseInterface.saveContext()
+            updateCostLabels()
         }
     }
 
-    @IBAction func clearTotalButtonPressed(_ sender: Any) {
-        groceryList.totalCost = NSNumber(value:0.0)
-        databaseInterface.saveContext()
-        totalCostLabel.text = "Total Cost: $0.00"
-    }
-    
     @IBAction func clearAllItemsButtonPressed(_ sender: Any) {
         if #available(iOS 8.0, *) {
             let _ = Utilities.showYesNoAlert(viewController: self, title: "Do you want to clear all the items in this grocery list?", message: "", yesButtonHandler: { action in
-                self.groceryList.hasItems.enumerateObjects({ (groceryListObject, idx, stop) -> Void in
-                    let groceryListItem = groceryListObject as! GroceryListItem
-                    if groceryListItem.isBought.boolValue {
-                        self.groceryList.totalCost = NSNumber(value:self.groceryList.totalCost.floatValue - groceryListItem.cost.floatValue)
-                        groceryListItem.isBought = NSNumber(value: false)
-                        self.databaseInterface.saveContext()
-                    }
-                })
-                self.groceryList.removeAllHasItemsObjects()
-                self.databaseInterface.saveContext()
+                
+                self.groceryList.clearAllItems()
+                self.updateCostLabels()
                 self.totalCostLabel.text = "Total Cost: $0.00"
-                self.projectedCostLabel.text = String(format:"Projected Cost: $%.2f", self.groceryList.updateProjectedCost())
+                self.projectedCostLabel.text = "Projected Cost: $0.00"
                 self.tableView.reloadData()
             }, noButtonHandler: nil)
         }
@@ -94,19 +90,19 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     
     @IBAction func buyItemButtonPressed(_ sender: UIButton!) {
         let buttonPosition:CGPoint = sender.convert(CGPoint(x:0, y:0), to: tableView)
-        let indexPath:NSIndexPath?  = tableView!.indexPathForRow(at: buttonPosition) as NSIndexPath?
-        guard indexPath != nil else { return }
+        guard let indexPath  = tableView!.indexPathForRow(at: buttonPosition) else {
+            return
+        }
         
-        guard let itemToBuy:GroceryListItem = groceryList.hasItems[indexPath!.row] as? GroceryListItem else { return }
+        guard let itemToBuy:GroceryListItem = groceryList.hasItems[indexPath.row] as? GroceryListItem else { return }
         
         if itemToBuy.isBought.boolValue {
             if #available(iOS 8.0, *) {
-                let _ = Utilities.showYesNoAlert(viewController: self, title: "Do you want to put back \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
-                    (self.groceryList.hasItems[indexPath!.row] as! GroceryListItem).isBought = NSNumber(value: false)
-                    self.groceryList.totalCost = NSNumber(value:self.groceryList.totalCost.floatValue - itemToBuy.cost.floatValue)
-                    self.databaseInterface.saveContext()
+                let _ = Utilities.showYesNoAlert(viewController: self, title: "Do you want to return \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
                     
-                    self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+                    (self.groceryList.hasItems[indexPath.row] as! GroceryListItem).isBought = NSNumber(value: false)
+                    self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.updateAndReturnTotalCost())
+                    
                     self.tableView.reloadData()
                 }, noButtonHandler: nil)
             } else {
@@ -122,15 +118,13 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             if #available(iOS 8.0, *) {
                 let _ = Utilities.showTextFieldAlert(viewController: self, title: "Enter price of \(itemToBuy.name)", message: "", startingText: startingText, keyboardType: .decimalPad, capitalizationType:.none, okButtonHandler: { action in
                     if textField.text != "" {
+                        
                         let itemToBuyCost:Float = (textField.text as NSString!).floatValue
-                        (self.groceryList.hasItems[indexPath!.row] as! GroceryListItem).cost = NSNumber(value:itemToBuyCost)
-                        (self.groceryList.hasItems[indexPath!.row] as! GroceryListItem).isBought = NSNumber(value: true)
                         
-                        self.groceryList.totalCost = NSNumber(value:self.groceryList.totalCost.floatValue + itemToBuyCost)
-                        self.projectedCostLabel.text = String(format:"Projected Cost: $%.2f", self.groceryList.updateProjectedCost())
-                        self.databaseInterface.saveContext()
+                        self.groceryList.buyItem(item: self.groceryList.hasItems[indexPath.row] as! GroceryListItem, quantity: itemToBuy.quantity.floatValue, cost: itemToBuyCost, taxableStatus: itemToBuy.isTaxable.boolValue)
                         
-                        self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.totalCost.floatValue)
+                        self.updateCostLabels()
+                        
                         self.tableView.reloadData()
                     }
                     else {
@@ -144,13 +138,41 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             }
         }
     }
-    
+
     // MARK: - Segues
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addGroceryListItemSegue" {
             let addViewController:AddGroceryListItemViewController = segue.destination as! AddGroceryListItemViewController
             addViewController.delegate = self
+            return
+        }
+        
+        if segue.identifier == "modifyGroceryListItemSegue" {
+            let modifyViewController:ModifyGroceryListItemViewController = segue.destination as! ModifyGroceryListItemViewController
+            
+            guard let selectedRowIndexPath = tableView.indexPathForSelectedRow else {
+                return
+            }
+            
+            guard let selectedCell = tableView.cellForRow(at: selectedRowIndexPath) as? GroceryListItemTableViewCell else {
+                return
+            }
+            
+            let itemName = selectedCell.returnItemName()
+            
+            guard let glItem = GroceryListItem.findGroceryListItemWithName(name: itemName) else {
+                return
+            }
+            
+            let modStruct = ModGliVCStruct(itemName: itemName,
+                                           quantity: glItem.quantity.floatValue,
+                                           unitOfMeasure: glItem.unitOfMeasure,
+                                           taxable: glItem.isTaxable.boolValue,
+                                           indexPath: selectedRowIndexPath)
+            modifyViewController.modStruct = modStruct
+            
+            modifyViewController.delegate = self
         }
     }
     
@@ -161,45 +183,64 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard groceryList != nil else { return 0 }
+        guard groceryList != nil else {
+            return 0
+        }
         return groceryList.hasItems.count
     }
     
     @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GroceryListItemCell", for: indexPath) 
-        configureCell(cell: cell, atIndexPath: indexPath as NSIndexPath)
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroceryListItemCell", for: indexPath)
+        
+        guard let groceryListItemCell = cell as? GroceryListItemTableViewCell else {
+            return cell
+        }
+        
+        guard let groceryListItem = groceryList.hasItems[indexPath.row] as? GroceryListItem else {
+            return cell
+        }
+        
+        groceryListItemCell.configure(item:groceryListItem)
+        
+        return groceryListItemCell
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let itemToPutBack = groceryList.hasItems[indexPath.row] as? GroceryListItem {
-                if itemToPutBack.isBought.boolValue {
-                    groceryList.totalCost = NSNumber(value:groceryList.totalCost.floatValue - itemToPutBack.cost.floatValue)
-                    totalCostLabel.text = String(format:"Total Cost: $%.2f", groceryList.totalCost.floatValue)
-                }
                 groceryList.removeHasItemsObject(value: itemToPutBack)
-                projectedCostLabel.text = String(format:"Projected Cost: $%.2f", groceryList.updateProjectedCost())
-                databaseInterface.saveContext()
+                updateCostLabels()
+
                 tableView.reloadData()
             }
         }
     }
     
-    func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let groceryListItemCell = cell as! GroceryListItemTableViewCell
-        let groceryListItem = groceryList.hasItems[indexPath.row] as! GroceryListItem
-        groceryListItemCell.groceryListItemName.text = groceryListItem.name
-        groceryListItemCell.groceryListItemCost.text = String(format: "%.2f", groceryListItem.cost.floatValue)
-        if groceryListItem.isBought.boolValue {
-            groceryListItemCell.groceryListItemButton.setTitle("Put Back", for: .normal)
-            groceryListItemCell.groceryListItemName.textColor = UIColor.red
-        }
-        else {
-            groceryListItemCell.groceryListItemButton.setTitle("Buy", for: .normal)
-            groceryListItemCell.groceryListItemName.textColor = UIColor.black
-        }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+
+    // MARK: - ModifyGroceryListItemDelegate
+    
+    func groceryListItemModified(modStruct: ModGliVCStruct) {
+        let cell = tableView.cellForRow(at: modStruct.indexPath)
+        
+        guard let groceryListItemCell = cell as? GroceryListItemTableViewCell else {
+            return
+        }
+        
+        guard var groceryListItem = GroceryListItem.findGroceryListItemWithName(name: modStruct.itemName, inListNamed: groceryList.name) else {
+            return
+        }
+        
+        groceryListItem = groceryListItem.update(quantity: modStruct.quantity, taxable: modStruct.taxable)
+        
+        groceryListItemCell.configure(item: groceryListItem)
+    }
+
 }
