@@ -12,7 +12,9 @@ import CoreData
 class RecipeUtilities {
     
     class func fetchRecipeWithName(recipeName: String) -> Recipe? {
-        let recipeObjects = DatabaseInterface().entitiesOfType(entityTypeName: "Recipe", predicate: NSPredicate(format: "title.name == %@", recipeName)) as! [Recipe]
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
+        let recipeObjects = databaseInterface.entitiesOfType(entityTypeName: "Recipe", predicate: NSPredicate(format: "title.name == %@", recipeName)) as! [Recipe]
         
         if recipeObjects.count == 1 {
             return recipeObjects.first
@@ -22,7 +24,7 @@ class RecipeUtilities {
     }
     
     class func countOfDatabaseRecipes() -> Int {
-        let databaseInterface:DatabaseInterface = DatabaseInterface()
+        let databaseInterface:DatabaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
         return databaseInterface.countOfEntitiesOfType(entityTypeName: "Recipe", predicate: nil)
     }
@@ -207,10 +209,9 @@ class RecipeUtilities {
     
     class func outputAllRecipesToFiles(inXMLFormat:Bool)
     {
-        let databaseManager:DatabaseManager = DatabaseManager.instance
+        let databaseInterface = DatabaseInterface(concurrencyType: .privateQueueConcurrencyType)
         
-        databaseManager.backgroundOperation(block: {
-            let databaseInterface:DatabaseInterface = DatabaseInterface()
+        databaseInterface.performInBackground {
             
             let recipes:Array<Recipe> = databaseInterface.entitiesOfType(entityTypeName: "Recipe", fetchRequestChangeBlock:{
                 inputFetchRequest in
@@ -231,7 +232,7 @@ class RecipeUtilities {
                 
                 self.outputRecipeToFile(recipeName: currentRecipe.title.name, recipeIndexChar:currentRecipe.title.indexCharacter, fileIsXML:inXMLFormat)
             }
-        })
+        }
     }
     
 }
