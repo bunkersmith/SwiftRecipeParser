@@ -9,29 +9,31 @@
 import UIKit
 import CoreData
 
-protocol AddGroceryListItemDelegate {
+protocol AddGroceryListItemDelegate: class {
     func groceryListItemAdded(groceryListItem: GroceryListItem)
 }
 
 class AddGroceryListItemViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
 
-    var delegate:AddGroceryListItemDelegate?
+    weak var delegate:AddGroceryListItemDelegate?
     var fetchedResultsController:NSFetchedResultsController<NSFetchRequestResult>!
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
     lazy private var databaseInterface:DatabaseInterface = {
-        return DatabaseInterface()
+        return DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         nameTextField.becomeFirstResponder()
         nameTextField.addTarget(self, action: #selector(AddGroceryListItemViewController.textFieldChanged(textField:)), for: .editingChanged)
         
         createFetchedResultsController(predicate: nil)
+        
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     func createFetchedResultsController(predicate: NSPredicate?) {
@@ -56,10 +58,13 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
             else {
                 fetchedResultsController = nil
                 if let existingItem = GroceryListItem.findGroceryListItemWithName(name: nameTextFieldText) {
+                    existingItem.quantity = 1.0
+                    existingItem.unitOfMeasure = "ea"
                     delegate?.groceryListItemAdded(groceryListItem: existingItem)
                 }
                 else {
-                    if let groceryListItem = GroceryListItem.create(databaseInterface: databaseInterface, name: nameTextFieldText, cost: 0.0) {
+                    
+                    if let groceryListItem = GroceryListItem.create(name: nameTextFieldText, cost: 0.0, quantity: 1.0, unitOfMeasure: "ea") {
                         delegate?.groceryListItemAdded(groceryListItem: groceryListItem)
                     }
                 }
