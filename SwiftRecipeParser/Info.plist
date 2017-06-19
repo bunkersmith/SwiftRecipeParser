@@ -45,6 +45,8 @@
 	</array>
 	<key>forceLoadDatabase</key>
 	<false/>
+	<key>updateGroceryListItems</key>
+	<false/>
 	<key>UIFileSharingEnabled</key>
 	<true/>
 </dict>
