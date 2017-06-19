@@ -26,7 +26,7 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        NotificationCenter.default.addObserver(self, selector:  #selector(EmailRecipeViewController.handleExitEmailLogNotification(notification:)), name: Notification.Name(rawValue:"exitEmailLogScreenNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector:  #selector(EmailRecipeViewController.handleExitEmailLogNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.exitEmailLogScreenNotification"), object: nil)
         
         if composeMailViewControllerRequested {
             composeMailViewControllerRequested = false
@@ -114,7 +114,7 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
         resultToast = IToast()
         if resultToast != nil {
             resultToast!.showToast(alertTitle: "SwiftRecipeParser Alert", alertMessage:resultString, duration:toastDuration, completionHandler: {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "exitEmailLogScreenNotification"), object:self)
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SwiftRecipeParser.exitEmailLogScreenNotification"), object:self)
             })
         }
     }
