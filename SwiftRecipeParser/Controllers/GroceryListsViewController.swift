@@ -13,14 +13,14 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var databaseInterface:DatabaseInterface!
     private var groceryLists:Array<GroceryList>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        databaseInterface = DatabaseInterface()
+        
         populateGroceryLists()
+        
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +29,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func populateGroceryLists() {
-        groceryLists = databaseInterface.entitiesOfType(entityTypeName: "GroceryList", predicate:nil) as! Array<GroceryList>
+        groceryLists = GroceryList.returnAll()
         self.tableView.reloadData()
     }
     
@@ -39,12 +39,8 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
             let _ = Utilities.showTextFieldAlert(viewController: self, title: "Enter grocery list name", message: "", startingText: "", keyboardType: .default, capitalizationType: .words, okButtonHandler: { action in
                 let groceryListName:String = inputTextField.text!
                 
-                let newGroceryList:GroceryList = self.databaseInterface.newManagedObjectOfType(managedObjectClassName: "GroceryList") as! GroceryList
-                newGroceryList.name = groceryListName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-                newGroceryList.totalCost = NSNumber(value:0.0)
-                
-                self.databaseInterface.saveContext();
-                GroceryList.setCurrentGroceryList(groceryListName: newGroceryList.name, databaseInterfacePtr:self.databaseInterface)
+                GroceryList.create(name: groceryListName)
+                GroceryList.setCurrentGroceryList(groceryListName: groceryListName)
                 
                 self.populateGroceryLists()
                 self.tableView.reloadData()
@@ -79,7 +75,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        GroceryList.setCurrentGroceryList(groceryListName: groceryLists[indexPath.row].name, databaseInterfacePtr: databaseInterface)
+        GroceryList.setCurrentGroceryList(groceryListName: groceryLists[indexPath.row].name)
         populateGroceryLists()
     }
     
@@ -87,7 +83,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         if editingStyle == .delete {
             // Delete the row from the model and data source
             let groceryList:GroceryList = groceryLists[indexPath.row]
-            databaseInterface.deleteObject(coreDataObject: groceryList)
+            GroceryList.delete(groceryList:groceryList)
             groceryLists.remove(at: indexPath.row)
             
             // Delete the row from the table view
