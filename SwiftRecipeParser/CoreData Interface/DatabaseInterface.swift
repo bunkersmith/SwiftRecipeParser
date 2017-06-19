@@ -10,20 +10,26 @@ import Foundation
 import CoreData
 
 class DatabaseInterface: NSObject {
-    private var context:NSManagedObjectContext!
+    fileprivate var context:NSManagedObjectContext!
     
-    override init() {
+    private override init() {} //This prevents others from using the default '()' initializer for this class.
+    
+    init(concurrencyType: NSManagedObjectContextConcurrencyType) {
         super.init()
-        let databaseManager:DatabaseManager = DatabaseManager.instance;
-        if Thread.isMainThread {
+        let databaseManager = DatabaseManager.instance
+        if concurrencyType == .mainQueueConcurrencyType {
             context = databaseManager.returnMainManagedObjectContext()
         }
         else {
-            context = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.confinementConcurrencyType)
+            context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
             context.persistentStoreCoordinator = databaseManager.returnPersistentStoreCoordinator()
         }
         
-        //NSLog("context = \(context)")
+        //Logger.writeToLogFile("context = \(context)")
+    }
+    
+    func performInBackground(_ block: @escaping () -> Void) {
+        context.perform(block)
     }
     
     func newManagedObjectOfType(managedObjectClassName:String) -> NSManagedObject {
