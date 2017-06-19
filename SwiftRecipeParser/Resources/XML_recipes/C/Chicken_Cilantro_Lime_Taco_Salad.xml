@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Cilantro Lime Taco Salad</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>4</servings>
+    <instructions>1. To make the salad, divide the chopped romaine among two large salad bowls. Add half each of the shredded chicken, black beans, corn, bell pepper, and avocado to each bowl. Top each with crushed tortilla chips.
+
+2. To make the dressing, combine all dressing ingredients in a blender or mini food processor and pulse until the ingredients come together, 15-20 seconds.
+
+3. Top each salad with about 2 Tablespoons of the dressing, or to taste. Season with additional salt and pepper as needed.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>the</unitOfMeasure>
+            <ingredientName>Salad:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>10</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>chopped romaine lettuce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Del Real Shredded Chicken</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>black beans</ingredientName>
+            <processingInstructions> cooked</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>charred corn (either frozen and defrosted or grilled on a grill)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bell pepper</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>avocado</ingredientName>
+            <processingInstructions> diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>14</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>tortilla chips</ingredientName>
+            <processingInstructions> crushed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>the</unitOfMeasure>
+            <ingredientName>Lime-Cilantro Salad Dressing:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>Tb</unitOfMeasure>
+            <ingredientName>freshly squeezed lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>fresh cilantro leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>red pepper flakes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pinch</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

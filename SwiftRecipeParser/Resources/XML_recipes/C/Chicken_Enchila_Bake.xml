@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Enchila Bake</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Preheat oven to 375°F.
+2. In a large bowl, combine chicken, shredded cheese, sour cream, white portion of scallions and 2/3 cup of enchilada sauce
+3. Coat the bottom of a 9” x 13” baking dish with a thin layer of enchilada sauce
+4. Arrange eight of the tortilla halves in the bottom of the baking dish, creating two squares in each half of the baking dish
+5. Spread half of the chicken mixture over the tortillas
+6. Add another layer of tortilla halves
+7. Spread the remaining chicken mixture over the tortillas
+8. Add another layer of tortilla halves
+9. Cover with enchilada sauce
+10. Bake for 30-40 minutes, or until heated thoroughly
+11. Top with sliced olives and remaining sliced scallions
+12. Top each serving with sour cream</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>32</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Del Real Shredded Chicken</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>C</unitOfMeasure>
+            <ingredientName>shredded Monterey Jack cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>C</unitOfMeasure>
+            <ingredientName>sour cream or crema</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>bunch</unitOfMeasure>
+            <ingredientName>sliced scallions</ingredientName>
+            <processingInstructions> divided</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Corn tortillas</ingredientName>
+            <processingInstructions> halved</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>19</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>red enchilada sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

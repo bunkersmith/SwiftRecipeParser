@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chocolate Fudge Brownie Cheesecake</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>10</servings>
+    <instructions>http://bzfd.it/2jHsfpS
+
+1. Preheat oven to 350˚F/180˚C. 
+2. Prepare the brownie batter and pour into greased springform pan. Bake until set, about 20-25 minutes. 
+3. Meanwhile, beat the cream cheese and sugar until incorporated. Add beaten eggs and vanilla, and beat again until smooth. 
+4. Remove brownies and lower oven temperature to 325˚F/165˚C.
+5. Pour cheesecake batter over brownie bottom, and bake for 50 minutes until set and slightly jiggly. 
+6. Remove cheesecake and refrigerate for 4 hours, or overnight. 
+7. Heat or microwave whipping cream to just before boiling and pour over chocolate chips. 
+8. Stir continuously until the chocolate is melted and smooth. 
+9. Allow the ganache to sit for 10-15 minutes. 
+10. Transfer cheesecake to a baking pan with a wire rack. 
+11. In a circular motion starting from the inside out, pour the ganache glaze over the cheesecake making sure to cover all sides. 
+12. Allow ganache to cool and set for 30 minutes. </instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure></unitOfMeasure>
+            <ingredientName>Cheesecake</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>box</unitOfMeasure>
+            <ingredientName>brownie mix</ingredientName>
+            <processingInstructions> prepared according to package instructions</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>24</quantity>
+            <unitOfMeasure>ounces</unitOfMeasure>
+            <ingredientName>cream cheese</ingredientName>
+            <processingInstructions> softened</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>eggs,</unitOfMeasure>
+            <ingredientName>beaten</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <ingredientName>vanilla extract</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure></unitOfMeasure>
+            <ingredientName>Ganache</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pound</unitOfMeasure>
+            <ingredientName>semi-sweet chocolate chips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>heavy cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
