@@ -21,7 +21,7 @@
     <ingredients>
         <ingredient>
             <quantity>0</quantity>
-            <unitOfMeasure></unitOfMeasure>
+            <unitOfMeasure>-</unitOfMeasure>
             <ingredientName>Cheesecake</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,7 +38,7 @@
             <processingInstructions> softened</processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>0</quantity>
+            <quantity>3/4</quantity>
             <unitOfMeasure>cup</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
@@ -57,7 +57,7 @@
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
-            <unitOfMeasure></unitOfMeasure>
+            <unitOfMeasure>-</unitOfMeasure>
             <ingredientName>Ganache</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
