@@ -42,6 +42,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         self.tableView.rowHeight = UITableViewAutomaticDimension
 
         progressLabel.alpha = 0.0
+        
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -81,8 +83,15 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             }
             else {
                 Logger.logDetails(msg: "Database contains \(databaseRecipeCount) recipes - no updates will be made from recipe resource files");
-                self.loadRecipeTable()
+                loadRecipeTable()
             }
+
+/*
+            if Utilities.updateGroceryListItems() {
+                updateGroceryListItems()
+            }
+*/
+            
             initializationCompleted = true
         }
     }
@@ -101,6 +110,27 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         let recipeFiles:RecipeFiles = RecipeFiles()
         recipeFiles.initializeRecipeDatabaseFromResourceFiles()
     }
+
+/*
+    func updateGroceryListItems() {
+        let databaseInterface = DatabaseInterface()
+        
+        let groceryListItems = GroceryListItem.fetchAll(databaseInterface: databaseInterface)
+        
+        guard let gListItems = groceryListItems else {
+            Logger.logDetails(msg: "groceryListItems is nil")
+            return
+        }
+        
+        for groceryListItem in gListItems  {
+            groceryListItem.isBought = NSNumber(value: false)
+            groceryListItem.isTaxable = NSNumber(value: false)
+            
+            NSLog("groceryListItem = \(groceryListItem)")
+       }
+
+    }
+*/
     
     func addScrollAreaView() {
         var frame = tableView.bounds
@@ -128,7 +158,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     }
     
     func createFetchedResultsController(searchString:String?) {
-        let databaseInterface:DatabaseInterface = DatabaseInterface()
+        let databaseInterface:DatabaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
         if searchString != nil {
             fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "Recipe", sortKey: "title.indexCharacter", secondarySortKey: "title.name", sectionNameKeyPath:"title.indexCharacter", predicate:NSPredicate(format: "title.name contains[cd] %@", searchString!))
@@ -272,12 +302,12 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     func registerForNotifications() {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(RecipeMasterTableViewController.handleRecipeProgressNotification(notification:)), name: NSNotification.Name(rawValue: "RecipeProgressNotification"), object: nil)
+        notificationCenter.addObserver(self, selector: #selector(RecipeMasterTableViewController.handleRecipeProgressNotification(notification:)), name: NSNotification.Name(rawValue: "SwiftRecipeParser.RecipeProgressNotification"), object: nil)
     }
     
     func deregisterFromNotifications() {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self, name: NSNotification.Name(rawValue: "RecipeProgressNotification"), object: nil)
+        notificationCenter.removeObserver(self, name: NSNotification.Name(rawValue: "SwiftRecipeParser.RecipeProgressNotification"), object: nil)
     }
     
     func handleRecipeProgressNotification(notification:NSNotification)
