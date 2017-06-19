@@ -26,7 +26,7 @@ class GroceryItem: NSManagedObject {
     
     class func count() -> Int {
         var groceryItemCount:Int
-        let databaseInterface:DatabaseInterface = DatabaseInterface()
+        let databaseInterface:DatabaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         groceryItemCount = databaseInterface.countOfEntitiesOfType(entityTypeName:"GroceryItem", predicate:nil)
         
         return groceryItemCount
