@@ -26,7 +26,7 @@ class ProcessTextFile: NSObject {
         do {
             try _fileContent = String(contentsOfFile:_fileName, encoding:String.Encoding.utf8)
         } catch let error as NSError {
-            Logger.logDetails(msg: "Error reading file named \(_fileName): \(error)")
+            Logger.logDetails(msg: "Error reading file named \(String(describing: _fileName)): \(error)")
             return false
         }
         

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Green Curry Chicken by Tyler Florence</name>
+    <indexCharacter>G</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Place a large, deep skillet over medium heat and coat with the oil. Saute the onion and green peppers for 3 minutes to soften. Split the piece of lemongrass down the middle and whack it with the flat side of a knife to open the flavor. Add the lemongrass, ginger, curry paste and lime leaves to the skillet and stir for 2 minutes. Pour in the coconut milk and chicken broth. Lay the chicken pieces in the mixture to poach; add a pinch of salt. Stir together and simmer over low heat for 10 to 15 minutes. Squeeze in the lime juice and shower with basil and cilantro; serve in dinner bowls with lime wedges.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium onion</ingredientName>
+            <processingInstructions> cut in 8 wedges</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bell pepper</ingredientName>
+            <processingInstructions> cut in 8 wedges</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>stalk lemongrass</ingredientName>
+            <processingInstructions> white bulb only</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>coarsely chopped fresh ginger</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>Thai Green Curry Paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>kaffir lime leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>unsweetened coconut milk</ingredientName>
+            <processingInstructions> two 13.5-ounce cans</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>boneless skinless chicken breasts</ingredientName>
+            <processingInstructions> cut in 1-inch strips</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Sea salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lime</ingredientName>
+            <processingInstructions> juiced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Thai basil leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>cilantro leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>lime wedges for garnish</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

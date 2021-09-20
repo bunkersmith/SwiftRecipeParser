@@ -24,6 +24,26 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var showInstructionsButton: UIButton!
     @IBOutlet weak var showIngredientsButton: UIButton!
     
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        
+        guard let recipe = recipe else {
+            return
+        }
+        
+        coder.encode(recipe.title.name, forKey: "currentRecipeName")
+    }
+    
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+        
+        guard let recipeName = coder.decodeObject(forKey: "currentRecipeName") as? String else {
+            return
+        }
+        
+        recipe = Recipe.fetchRecipeWithName(recipeName: recipeName)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,19 +52,21 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         self.ingredientsTable.estimatedRowHeight = 50.0
         self.ingredientsTable.rowHeight = UITableViewAutomaticDimension
         
-        if recipe != nil {
-            self.recipeTitle.text = recipe!.title.name
-        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        
+        super.viewWillAppear(animated)
+       
         let deviceString:String =  UIDevice.current.model
         if deviceString.range(of: "iPad") != nil {
             instructionsVerticalSpaceConstraint.constant = 15.0
         }
         
-        super.viewWillAppear(animated)
+        if recipe != nil {
+            self.recipeTitle.text = recipe!.title.name
+            instructionsTextView.text = recipe!.instructions
+            instructionsTextView.contentOffset = CGPoint(x: 0.0, y: 0.0)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -52,10 +74,6 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
 
         self.scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: self.showIngredientsButton.frame.origin.y + 40)
         
-        if recipe != nil {
-            instructionsTextView.text = recipe!.instructions
-            instructionsTextView.contentOffset = CGPoint(x: 0.0, y: 0.0)
-        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,6 +81,39 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         // Dispose of any resources that can be recreated.
     }
  
+    @IBAction func addAllPressed(_ sender: Any) {
+        let currentGroceryList = GroceryList.returnCurrentGroceryList()
+        
+        if currentGroceryList == nil {
+            AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "No current grocery list", buttonHandler: nil)
+        }
+        else {
+            let addString = "Add all ingredients to the \(currentGroceryList!.name) grocery list?"
+            AlertUtilities.showYesNoAlert(viewController: self, title: "Add Item", message: addString, yesButtonHandler: { action in
+                
+                Logger.logDetails(msg: "Make Core Data call")
+                
+                guard let recipe = self.recipe else {
+                    return
+                }
+                
+                var groceryListItems = [GroceryListItem]()
+                
+                for ingredientAny in recipe.containsIngredients {
+                    let ingredient = ingredientAny as! Ingredient
+
+                    groceryListItems.append(GroceryListItem.createOrReturn(name: ingredient.ingredientItem.name,
+                                                                           cost: 0.0,
+                                                                           quantity: ingredient.quantity.floatValue,
+                                                                           unitOfMeasure: ingredient.unitOfMeasure)!)
+                }
+                
+                GroceryList.addItemsToCurrent(items: groceryListItems)
+                
+            }, noButtonHandler: nil)
+        }
+    }
+    
     @IBAction func showInstructionsPressed(_ sender: Any) {
         self.scrollView.contentOffset = CGPoint(x: self.scrollView.contentOffset.x, y: 452.0)
     }
@@ -146,10 +197,10 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
             }
             else {
                 returnValue = "\(FractionMath.doubleToString(inputDouble: ingredient.quantity.doubleValue)) \(ingredient.unitOfMeasure) \(ingredient.ingredientItem.name)"
-                
-                if ingredient.processingInstructions != "" {
-                    returnValue = returnValue.appendingFormat(", %@", ingredient.processingInstructions)
-                }
+            }
+            
+            if ingredient.ingredientItem.name != "-" && ingredient.processingInstructions != "" {
+                returnValue = returnValue.appendingFormat(", %@", ingredient.processingInstructions)
             }
         }
     
@@ -177,7 +228,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        Utilities.showAddIngredientAlert(object: recipe!.containsIngredients[indexPath.row] as AnyObject, viewController: self)
+        AlertUtilities.showAddIngredientAlert(object: recipe!.containsIngredients[indexPath.row] as AnyObject, viewController: self)
     }
     
     // MARK: - Table View Data Source
@@ -214,6 +265,15 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
             
             emailRecipeViewController.initRecipeTitle( recipeTitle: recipeTitle.text! )
             emailRecipeViewController.requestMailComposeViewController()
+            return
+        }
+
+        if segue.identifier == "textRecipeSegue" {
+            let textRecipeViewController:TextIngredientsViewController = segue.destination as! TextIngredientsViewController
+            
+            textRecipeViewController.initRecipeTitle( recipeTitle: recipeTitle.text! )
+            textRecipeViewController.requestMessageComposeViewController()
+            return
         }
     }
 

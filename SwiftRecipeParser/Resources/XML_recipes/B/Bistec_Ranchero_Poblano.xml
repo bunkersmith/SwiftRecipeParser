@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Bistec Ranchero Poblano</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. After slicing the steak as thin as you can, transfer to a bowl or plate and season lightly with salt, pepper and garlic powder. Let the steak come back to room temperature before cooking. In a large skillet, preheat 2 tablespoons of olive oil to medium/high heat for 3 to 4 minutes. Add the steak to the hot skillet and brown and sear the beef for 5 to 6 minutes or until most of the liquid has evaporated. Remove steak from pan onto a plate, set aside. If pan is too dry, add just 1/2 tablespoon more of olive oil and again heat to medium/high.
+		
+2. Take 1/3 of the diced poblanos and add them to the blender. Along with the poblanos, you will add 1 teaspoon bouillon granules, 1 teaspoon of oregano, 1 teaspoon cumin, 1 tablespoon of Worcestershire, 1/2 tablespoon flour and 3/4 cup of water. Blend on high until smooth. Set aside.
+		
+3. To the skillet, add the onions and all remaining peppers. Again, season lightly with salt and pepper and stir fry for 5 minutes. Add the garlic and tomatoes and cook for another few minutes. Add the poblano sauce from the blender to the skillet. Bring to a boil, reduce to a simmer. Taste for salt, add the steak back in, cover and continue cooking for 15 minutes or until sauce becomes thick and reduces.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>FLAT-IRON STEAKS</ingredientName>
+            <processingInstructions> SLICED THIN (1-1 1/4 POUNDS EACH) *I SUGGEST A CUT OF BEEF WITH SOME MARBLING. THE LITTLE BIT OF EXTRA FAT WILL RESULT IN A TENDER BISTEC RANCHERO</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>SALT AND PEPPER</ingredientName>
+            <processingInstructions> NO MEASUREMENT GIVEN </processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>GARLIC POWDER</ingredientName>
+            <processingInstructions> NO MEASUREMENT GIVEN </processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>TABLESPOON</unitOfMeasure>
+            <ingredientName>OLIVE OIL </ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>CUP</unitOfMeasure>
+            <ingredientName>RED ONION DICED</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>JALAPEÑO PEPPER SLICED</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>FRESNO PEPPER SLICED</ingredientName>
+            <processingInstructions> IF YOU CAN’T FIND RED FRESNO, USE 2 JALAPEÑO PEPPERS</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>SMALL RED BELL PEPPER DICED</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>POBLANO PEPPERS DICED</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>CLOVES GARLIC MINCED</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>EA</unitOfMeasure>
+            <ingredientName>ROMA TOMATOES</ingredientName>
+            <processingInstructions> OR 1 VINE RIPE TOMATO, DICED</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>TEASPOON</unitOfMeasure>
+            <ingredientName>CHICKEN OR BEEF BOUILLON GRANULES </ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>TEASPOON</unitOfMeasure>
+            <ingredientName>MEXICAN OREGANO </ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>TEASPOON</unitOfMeasure>
+            <ingredientName>CUMIN</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>TABLESPOON</unitOfMeasure>
+            <ingredientName>WORCESTERSHIRE SAUCE</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>TABLESPOON</unitOfMeasure>
+            <ingredientName>FLOUR CORNSTARCH OR MASA HARINA</ingredientName>
+            <processingInstructions> OPTIONAL (I ADD IT TO THICKEN THE SAUCE A LITTLE)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>CUP</unitOfMeasure>
+            <ingredientName>WATER</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -11,7 +11,7 @@ import UIKit
 class AddGroceryListItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var costLabel: UILabel!
+//    @IBOutlet weak var costLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Frijoles Charros (Mexican Pinto Beans With Bacon and Chilies) Recipe</name>
+    <indexCharacter>F</indexCharacter>
+    <notes></notes>
+    <servings>10</servings>
+    <instructions>1. Place beans in a large bowl and cover with water by double. Add 2 tablespoons (30g) kosher salt and stir to dissolve. Let soak 8 to 12 hours. Drain and rinse.
+
+2. Heat bacon in a large Dutch oven over medium-high heat, stirring constantly, until fat is rendered and bacon is just starting to brown around the edges, about 5 minutes. Add onion and chilies and cook, stirring, until softened and just starting to brown, about 4 minutes. Add garlic and cook, stirring, until fragrant, about 30 seconds. Add tomatoes (see note above) and cook, stirring and scraping up browned bits from the bottom of the pan, until the liquid is thick and the mixture begins to sizzle, about 3 minutes.
+
+3. Add beans, stock, bay leaves, 2 teaspoons (10g) kosher salt, and epazote (if using). Bring to a boil over high heat, reduce to a bare simmer, cover, and cook until beans are just tender, about 45 minutes. Remove lid and continue cooking, stirring occasionally, until beans are completely creamy and liquid has thickened into a rich, creamy broth. Season to taste with salt. Discard bay leaves, stir in cilantro, and serve. Beans can be stored in the refrigerator for up to 1 week.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pound</unitOfMeasure>
+            <ingredientName>dried pinto beans</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure></unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>ounces</unitOfMeasure>
+            <ingredientName>diced bacon (see note above)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>medium</unitOfMeasure>
+            <ingredientName>white or yellow onion</ingredientName>
+            <processingInstructions> diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>serrano</unitOfMeasure>
+            <ingredientName>chilies or 1 jalapeño</ingredientName>
+            <processingInstructions> minced (remove seeds and ribs if you prefer less heat)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>medium</unitOfMeasure>
+            <ingredientName>cloves garlic</ingredientName>
+            <processingInstructions> minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>cans</unitOfMeasure>
+            <ingredientName>(14-ounce ) diced fire-roasted tomatoes (see note above)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>homemade or store-bought low-sodium chicken stock</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>bay</unitOfMeasure>
+            <ingredientName>leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>sprigs</unitOfMeasure>
+            <ingredientName>epazote (optional; see note above)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>large-handful</unitOfMeasure>
+            <ingredientName>chopped fresh cilantro leaves and fine stems</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pickled Mustard Seeds</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Combine the vinegar, water, sugar, and salt in a small pot over medium heat. 
+
+2. Bring to a simmer, stir in mustard seeds, reduce the heat, and cook over low heat for 30 minutes or until the mustard seeds are plump. 
+
+3. Remove from the heat and let cool to room temperature. Store in the refrigerator for up to 2 weeks.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>apple cider vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>cane sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>sea salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>yellow mustard seeds</ingredientName>
+            <processingInstructions> or exactly 8 tsp per recipe</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

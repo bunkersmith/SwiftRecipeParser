@@ -18,7 +18,7 @@ class FractionMath {
     class func stringToDouble(inputString: String) -> Double {
         var returnValue:Double = -1
 
-        var dashDividedString:Array<String> = inputString.components(separatedBy: "-")
+        let dashDividedString:Array<String> = inputString.components(separatedBy: "-")
         
         if dashDividedString.count == 1 || dashDividedString.count == 2 {
             var fractionString:String
@@ -35,7 +35,7 @@ class FractionMath {
                 fractionString = dashDividedString[1]
             }
             
-            var slashDividedString:Array<String> = fractionString.components(separatedBy: "/")
+            let slashDividedString:Array<String> = fractionString.components(separatedBy: "/")
             
             if slashDividedString.count == 1 || slashDividedString.count == 2 {
                 if slashDividedString.count == 1 {

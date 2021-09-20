@@ -130,7 +130,7 @@ class IngredientsTableViewController: UITableViewController, UIGestureRecognizer
         var sizeRect = CGRect(x: 0.0, y: 0.0, width: 0.0, height: 0.0)
         
         if rowIsExpanded {
-            sizeRect = text.boundingRect(with: constraint, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName : UIFont.systemFont(ofSize: FONT_SIZE)], context: nil)
+            sizeRect = text.boundingRect(with: constraint, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: FONT_SIZE)], context: nil)
         }
         else {
             sizeRect.size.height = CELL_TEXT_MIN_HEIGHT
@@ -183,7 +183,7 @@ class IngredientsTableViewController: UITableViewController, UIGestureRecognizer
         
         tableView.deselectRow(at: indexPath, animated:false)
         
-        Utilities.showAddIngredientAlert(object: ingredient as AnyObject, viewController: self)
+        AlertUtilities.showAddIngredientAlert(object: ingredient as AnyObject, viewController: self)
     }
     
 }

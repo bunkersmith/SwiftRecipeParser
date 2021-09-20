@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
-    <name>Corned (Soused) In Horseradish Sauce</name>
+    <name>Corned Beef (Soused) In Horseradish Sauce</name>
     <indexCharacter>C</indexCharacter>
     <notes></notes>
     <servings>8</servings>
@@ -111,8 +111,8 @@
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Prepared white horseradish</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

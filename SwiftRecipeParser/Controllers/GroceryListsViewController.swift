@@ -19,10 +19,32 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         
         populateGroceryLists()
-        
+
         tableView.tableFooterView = UIView(frame: .zero)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        NotificationCenter.default.addObserver(self, selector:  #selector(handleGroceryListCheckBoxNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
+        
+        GroceryListItem.calculateAllTotalCosts()
+        
+        caculateSelectedGroceryListCosts()
+        
+        populateGroceryLists()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,20 +57,39 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBAction func addButtonPressed(_ sender: Any) {
         var inputTextField = UITextField()
-        if #available(iOS 8.0, *) {
-            let _ = Utilities.showTextFieldAlert(viewController: self, title: "Enter grocery list name", message: "", startingText: "", keyboardType: .default, capitalizationType: .words, okButtonHandler: { action in
-                let groceryListName:String = inputTextField.text!
-                
-                GroceryList.create(name: groceryListName)
-                GroceryList.setCurrentGroceryList(groceryListName: groceryListName)
-                
-                self.populateGroceryLists()
-                self.tableView.reloadData()
-            }, completionHandler: { (txtField) in
-                inputTextField = txtField
-            })
-        } else {
-            // Fallback on earlier versions
+
+        let _ = AlertUtilities.showTextFieldAlert(viewController: self, title: "Enter grocery list name", message: "", startingText: "", keyboardType: .default, capitalizationType: .words, okButtonHandler: { action in
+            let groceryListName:String = inputTextField.text!
+            
+            GroceryList.create(name: groceryListName)
+            GroceryList.setCurrentGroceryList(groceryListName: groceryListName)
+            
+            self.populateGroceryLists()
+            self.tableView.reloadData()
+        }, textFieldHandler: { (txtField) in
+            inputTextField = txtField
+        })
+    }
+    
+    @objc func handleGroceryListCheckBoxNotification(notification:NSNotification) {
+        caculateSelectedGroceryListCosts()
+    }
+
+    func caculateSelectedGroceryListCosts() {
+        navigationItem.title = ""
+        
+        var grandTotalCost:Float = 0
+        
+        for indexPath in tableView.getAllIndexes() {
+            if let cell = tableView.cellForRow(at: indexPath) as? GroceryListTableViewCell {
+                if cell.isSelectedCheckBox.isChecked {
+                    grandTotalCost += groceryLists[indexPath.row].projectedCost.floatValue
+                }
+            }
+        }
+        
+        if grandTotalCost > 0 {
+            navigationItem.title = String(format: "Grand Total: $%.2f", grandTotalCost)
         }
     }
     
@@ -60,17 +101,20 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GroceryListsTableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroceryListTableCell", for: indexPath)
+        
+        let groceryListTableViewCell = cell as? GroceryListTableViewCell
         let groceryList:GroceryList = groceryLists![indexPath.row]
         
         // Configure the cell...
         if groceryList.isCurrent.boolValue {
-            cell.textLabel?.text = groceryList.name + "*"
+            groceryListTableViewCell!.nameLabel?.text = groceryList.name + "*"
         }
         else {
-            cell.textLabel?.text = groceryList.name
+            groceryListTableViewCell!.nameLabel?.text = groceryList.name
         }
-        
+        groceryListTableViewCell!.projectedCostLabel?.text = groceryList.projectedCostString()
+
         return cell
     }
 
@@ -90,29 +134,6 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-    
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     // MARK: - Navigation
 
@@ -121,6 +142,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
             let detailViewController:GroceryListDetailViewController = segue.destination as! GroceryListDetailViewController
             let indexPath:NSIndexPath = tableView.indexPathForSelectedRow! as NSIndexPath
             detailViewController.groceryList = groceryLists[indexPath.row]
+            return
         }
     }
 

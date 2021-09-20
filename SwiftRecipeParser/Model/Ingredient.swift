@@ -15,6 +15,6 @@ class Ingredient: NSManagedObject {
     @NSManaged var quantity: NSNumber
     @NSManaged var unitOfMeasure: String
     @NSManaged var containedInRecipes: NSSet
-    @NSManaged var ingredientItem: GroceryItem
+    @NSManaged var ingredientItem: RecipeItem
 
 }

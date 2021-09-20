@@ -170,7 +170,7 @@ class RecipeFiles {
     }
     
     func deleteExistingRecipes(databaseInterface:DatabaseInterface) {
-        if RecipeUtilities.countOfDatabaseRecipes() > 0 {
+        if Recipe.countOfDatabaseRecipes() > 0 {
             databaseInterface.deleteAllObjectsWithEntityName(entityName: "Ingredient")
             databaseInterface.deleteAllObjectsWithEntityName(entityName: "RecipeTitle")
             databaseInterface.deleteAllObjectsWithEntityName(entityName: "Recipe")
@@ -188,10 +188,7 @@ class RecipeFiles {
         
         Logger.logDetails(msg: logString)
         
-//      databaseInterface.deleteAllObjectsWithEntityName("Ingredient")
-//      databaseInterface.deleteAllObjectsWithEntityName("Recipe")
-        
-        var recipePathnames:Array<Array<String>> = initializeRecipePathnames()
+        let recipePathnames:Array<Array<String>> = initializeRecipePathnames()
         
         var currentRecipeSection:Array<String> = Array()
         
@@ -209,7 +206,7 @@ class RecipeFiles {
             currentRecipeSection = recipePathnames[i]
             
             for j in 0 ..< currentRecipeSection.count {
-                returnRecipeFromXML(recipePath: currentRecipeSection[j], databaseInterface:databaseInterface)
+                let _ = returnRecipeFromXML(recipePath: currentRecipeSection[j], databaseInterface:databaseInterface)
                 recipesProcessed += 1
                 
                 //RecipeFiles.initRecipeFromPath(currentRecipeSection[j], databaseInterface:databaseInterface)
@@ -232,12 +229,11 @@ class RecipeFiles {
         Logger.logDetails(msg: logString)
     }
     
-    func returnRecipeFromXML(recipePath:String, databaseInterface:DatabaseInterface)
-    {
-        let recipeFileData:NSData = FileManager.default.contents(atPath: recipePath)! as NSData;
+    func returnRecipeFromXML(recipePath:String, databaseInterface:DatabaseInterface) -> Bool {
+        let recipeFileData:NSData = FileManager.default.contents(atPath: recipePath)! as NSData
         
-        let xmlRecipeParser:ParseXMLRecipe = ParseXMLRecipe();
-        xmlRecipeParser.parseRecipeFromXMLData(recipeFileData: recipeFileData, databaseInterface: databaseInterface)
+        let xmlRecipeParser:ParseXMLRecipe = ParseXMLRecipe()
+        return xmlRecipeParser.parseRecipeFromXMLData(recipeFileData: recipeFileData, databaseInterface: databaseInterface)
     }
     
     class func readRecipeFile(filePath:String) -> String {
@@ -270,7 +266,7 @@ class RecipeFiles {
     }
     
     class func returnRecipeTitleFromFileContents(recipeFileContents:String) -> String {
-        var titleData:Array<NSString> = ParseRecipe.textBetweenStrings(inputString: recipeFileContents as NSString, startString: "<name>", endString: "</name>", keepStrings: false) as Array<NSString>
+        let titleData:Array<NSString> = ParseRecipe.textBetweenStrings(inputString: recipeFileContents as NSString, startString: "<name>", endString: "</name>", keepStrings: false) as Array<NSString>
         var titleString:NSString = titleData[0]
         
         if titleString.length > 0 {

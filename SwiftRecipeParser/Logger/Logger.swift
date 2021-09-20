@@ -10,6 +10,8 @@ import UIKit
 
 class Logger: NSObject, NSCoding {
 
+    static let maxLogMessageCount = 10000
+    
     // Singleton instance
     static let instance = Logger.loadInstance()
     
@@ -49,7 +51,7 @@ class Logger: NSObject, NSCoding {
         
         do {
             if #available(iOS 9.0, *) {
-                let decodedDataObject = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dat)
+                let decodedDataObject = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dat as Data)
                 
                 guard let logger = decodedDataObject as? Logger else {
                     return Logger()
@@ -66,11 +68,11 @@ class Logger: NSObject, NSCoding {
     }
     
     class func writeToLogFile(_ string: String) {
-        Logger.commonDiskLogger(string, withTimeStamp:true)
+        Logger.commonMemoryLogger(string, withTimeStamp:true)
     }
     
     class func writeToLogFileSpecial(_ string: String) {
-        Logger.commonDiskLogger(string, withTimeStamp:true)
+        Logger.commonMemoryLogger(string, withTimeStamp:true)
     }
     
     class func commonMemoryLogger(_ stringToWrite: String, withTimeStamp: Bool) {
@@ -83,62 +85,24 @@ class Logger: NSObject, NSCoding {
         }
     
         logString = logString + stringToWrite
+        
+        // Insure that the Log file doesn't grow to infinte size
+        if Logger.instance.logMessages.count > maxLogMessageCount {
+            Logger.instance.logMessages.removeFirst()
+        }
+
         Logger.instance.logMessages.append(logString)
     }
     
-    class func commonDiskLogger(_ stringToWrite: String, withTimeStamp: Bool) {
-        NSLog(stringToWrite)
-    
-        let logFilePath = FileUtilities.logFilePath()
-        var error:NSError?
-        var contents = ""
-        
-        do {
-            let oldContents = try String(contentsOfFile: logFilePath, encoding: String.Encoding.utf8)
-            contents = oldContents + "\n"
-        } catch let error1 as NSError {
-            error = error1
-            // Assume that we're writing to the file for the first time
-            NSLog(logFilePath)
-        }
-    
-    
-        if withTimeStamp {
-            contents = contents + DateTimeUtilities.dateToString(Date()) + ": "
-        }
-    
-        contents = contents + stringToWrite
-    
-        do {
-            try contents.write(toFile: logFilePath, atomically: false, encoding: String.Encoding.utf8)
-        } catch let error1 as NSError {
-            error = error1
-            if error != nil {
-                NSLog("Error writing to log file (\(logFilePath)): \(error!)")
-            }
-            else {
-                NSLog("Unspedified error writing to log file (\(logFilePath))")
-            }
-        }
-    }
-    
     class func writeSeparatorToLogFile() {
-    Logger.commonDiskLogger("#################################################################################################################################################", withTimeStamp:false)
+    Logger.commonMemoryLogger("#################################################################################################################################################", withTimeStamp:false)
     }
     
     class func writeLogFileToDisk() {
+        deleteFile()
+    
         let logFilePath = FileUtilities.logFilePath()
-    
-        let fileManager = FileManager.default
-    
-        if fileManager.fileExists(atPath: logFilePath) {
-            do {
-                try fileManager.removeItem(atPath: logFilePath)
-            } catch let error as NSError {
-                NSLog("Error deleting log file (at path \(logFilePath)): \(error)")
-            }
-        }
-    
+        
         let joiner = "\n"
         let joinedStrings = Logger.instance.logMessages.joined(separator: joiner)
 
@@ -156,12 +120,32 @@ class Logger: NSObject, NSCoding {
     }
 
     class func logDetails(msg:String, function: String = #function, file: String = #file, line: Int = #line){
-        Logger.commonDiskLogger("\(makeTag(function: function, file: file, line: line)) : \(msg)", withTimeStamp: true)
+        Logger.commonMemoryLogger("\(makeTag(function: function, file: file, line: line)) : \(msg)", withTimeStamp: true)
     }
     
     private class func makeTag(function: String, file: String, line: Int) -> String{
         let url = NSURL(fileURLWithPath: file)
         let className = url.lastPathComponent ?? file
         return "\(className) \(function)[\(line)]"
+    }
+    
+    class func deleteFile() {
+        let logFilePath = FileUtilities.logFilePath()
+        
+        let fileManager = FileManager.default
+        
+        if fileManager.fileExists(atPath: logFilePath) {
+            do {
+                try fileManager.removeItem(atPath: logFilePath)
+            } catch let error as NSError {
+                NSLog("Error deleting log file (at path \(logFilePath)): \(error)")
+            }
+        }
+    }
+    
+    class func deleteAll() {
+        Logger.instance.logMessages = []
+        
+        deleteFile()
     }
 }

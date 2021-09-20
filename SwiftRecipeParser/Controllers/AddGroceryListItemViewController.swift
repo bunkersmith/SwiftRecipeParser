@@ -11,6 +11,7 @@ import CoreData
 
 protocol AddGroceryListItemDelegate: class {
     func groceryListItemAdded(groceryListItem: GroceryListItem)
+    func groceryListItemAddedAndBought(groceryListItem: GroceryListItem)
 }
 
 class AddGroceryListItemViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
@@ -28,17 +29,24 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        createFetchedResultsController(predicate: nil)
+
+        tableView.tableFooterView = UIView(frame: .zero)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         nameTextField.becomeFirstResponder()
         nameTextField.addTarget(self, action: #selector(AddGroceryListItemViewController.textFieldChanged(textField:)), for: .editingChanged)
         
         createFetchedResultsController(predicate: nil)
-        
-        tableView.tableFooterView = UIView(frame: .zero)
     }
-
+    
     func createFetchedResultsController(predicate: NSPredicate?) {
         fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "GroceryListItem", sortKey: "name", secondarySortKey: nil, sectionNameKeyPath: nil, predicate: predicate)
-            if fetchedResultsController != nil {
+        
+        if fetchedResultsController != nil {
             fetchedResultsController.delegate = self
             tableView.reloadData()
         }
@@ -49,40 +57,50 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         // Dispose of any resources that can be recreated.
     }
     
+    func returnNameTextFieldText() -> String? {
+        let nameTextFieldText = nameTextField.text!
+        if nameTextFieldText == "" {
+            AlertUtilities.showOkButtonAlert(self, title: "Error alert", message:"Name is a required field", buttonHandler: nil)
+            return nil
+        }
+        
+        return nameTextFieldText
+    }
+    
     @IBAction func addItemButtonPressed(_ sender: Any) {
-        if #available(iOS 8.0, *) {
-            let nameTextFieldText = nameTextField.text!
-            if nameTextFieldText == "" {
-                    Utilities.showOkButtonAlert(viewController: self, title: "Error alert", message:"Name is a required field", okButtonHandler: nil)
+        if let nameTextFieldText = returnNameTextFieldText() {
+            fetchedResultsController = nil
+            if let groceryListItem = GroceryListItem.createOrReturn(name: nameTextFieldText, cost: 0.0, quantity: 1.0, unitOfMeasure: "ea") {
+                delegate?.groceryListItemAdded(groceryListItem: groceryListItem)
             }
-            else {
-                fetchedResultsController = nil
-                if let existingItem = GroceryListItem.findGroceryListItemWithName(name: nameTextFieldText) {
-                    existingItem.quantity = 1.0
-                    existingItem.unitOfMeasure = "ea"
-                    delegate?.groceryListItemAdded(groceryListItem: existingItem)
-                }
-                else {
-                    
-                    if let groceryListItem = GroceryListItem.create(name: nameTextFieldText, cost: 0.0, quantity: 1.0, unitOfMeasure: "ea") {
-                        delegate?.groceryListItemAdded(groceryListItem: groceryListItem)
-                    }
-                }
-                let _ = navigationController?.popViewController(animated: true)
-            }
+
+            let _ = navigationController?.popViewController(animated: true)
         }
     }
     
+    @IBAction func addAndBuyItemButtonPressed(_ sender: Any) {
+        if let nameTextFieldText = returnNameTextFieldText() {
+            fetchedResultsController = nil
+            if let groceryListItem = GroceryListItem.createOrReturn(name: nameTextFieldText, cost: 0.0, quantity: 1.0, unitOfMeasure: "ea") {
+                delegate?.groceryListItemAddedAndBought(groceryListItem: groceryListItem)
+            }
+
+            let _ = navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    /*
     @IBAction func importFileButtonPressed(_ sender: Any) {
         GroceryListItem.importFile { (isSuccessful) in
             if !isSuccessful {
                 DispatchQueue.main.async {
-                    Utilities.showOkButtonAlert(viewController: self, title: "Error alert", message:"File import failed", okButtonHandler: nil)
+                    AlertUtilities.showOkButtonAlert(self, title: "Error alert", message:"File import failed", buttonHandler: nil)
                     Logger.logDetails(msg: "File import failed")
                 }
             }
         }
     }
+*/
     
     // MARK: - Table View
     
@@ -91,13 +109,19 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section] 
+        let sectionInfo = self.fetchedResultsController.sections![section]
+//              Logger.logDetails(msg: "Returning \(sectionInfo.numberOfObjects) for section \(section)")
         return sectionInfo.numberOfObjects
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AddGroceryListItemCell", for: indexPath)
         self.configureCell(cell: cell, atIndexPath: indexPath)
+/*
+        if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
+            print("Name is '\(groceryListItemCell.nameLabel.text ?? "none")' for row at indexPath \(indexPath)")
+        }
+*/
         return cell
     }
     
@@ -115,9 +139,9 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
             if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
                 groceryListItemCell.nameLabel.text = groceryListItem.name
-                if groceryListItem.cost.floatValue > 0.0 {
-                    groceryListItemCell.costLabel.text = String(format: "%.2f", groceryListItem.cost.floatValue)
-                }
+//                if groceryListItem.cost.floatValue > 0.0 {
+//                    groceryListItemCell.costLabel.text = String(format: "%.2f", groceryListItem.cost.floatValue)
+//                }
             }
         }
     }
@@ -164,8 +188,14 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         self.tableView.endUpdates()
     }
     
-    func textFieldChanged(textField: UITextField) {
-        createFetchedResultsController(predicate: NSPredicate(format: "name contains[cd] %@", textField.text!))
+    @objc func textFieldChanged(textField: UITextField) {
+        if let textFieldText = textField.text {
+            if textFieldText.count == 0 {
+                createFetchedResultsController(predicate: nil)
+            } else {
+                createFetchedResultsController(predicate: NSPredicate(format: "name contains[cd] %@", textFieldText))
+            }
+        }
     }
     
     /*

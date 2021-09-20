@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Carne Adobada</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. In a medium saucepan, bring the dried chiles and water to a boil
+over high heat. Cover, reduce the heat to low, and simmer for about 5
+minutes, until the chiles have softened. Remove from the heat and
+cool to room temperature. Drain.
+
+2. Blend the softened chiles, garlic, onion, vinegar, salt, cumin,pepper,
+oregano, and cinnamon in a blender until smooth.
+
+3. In a large bowl or baking dish, mix together the pork and chile purée
+until the meat is coated. Cover with plastic wrap and refrigerate for at
+least 3 hours and up to overnight.
+
+4. In a large skillet, heat the oil over high heat. Add the carne adobada
+and cook for 10 to 15 minutes, until the meat is cooked through.
+Cover, reduce the heat to low, and simmer, stirring occasionally, for 12
+to 15 minutes, until all of the juices from the meat and adobo sauce
+have evaporated and the meat has started to brown. Serve with beans
+and rice, or use as a filling for tacos.
+
+NOTE: If dried pasilla chiles aren’t available, increase the number of dried ancho chiles to 6. Also, you can substitute one (14-ounce) can mild enchilada sauce for the dried chiles and water.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dried ancho chiles</ingredientName>
+            <processingInstructions> stemmed and seeded</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dried guajillo chiles</ingredientName>
+            <processingInstructions> stemmed and seeded</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dried pasilla chiles</ingredientName>
+            <processingInstructions> stemmed and seeded</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>white vinegar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <ingredientName>coarse salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>dried oregano</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>ground cinnamon</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>pounds</unitOfMeasure>
+            <ingredientName>pork shoulder roast</ingredientName>
+            <processingInstructions> finely chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

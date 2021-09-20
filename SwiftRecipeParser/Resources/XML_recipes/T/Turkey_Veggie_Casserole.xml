@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Turkey Veggie Casserole</name>
+    <indexCharacter>T</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Preheat the oven to 450 degrees F.
+
+2. Cook the al pasta until al dente according to the package directions. Drain and set aside.
+
+3. Meanwhile, in a medium skillet, heat the oil over medium heat. Add the onions and cook, stirring often, until translucent, about 5 minutes.
+
+4. Add the turkey, salt, and pepper and cook, breaking up the meat with a wooden spoon as it cooks, for 5 minutes.
+
+5. Add the basil, zucchini, mushrooms, and spinach and cook for 5 minutes more. Remove from the heat.
+
+6. In a 9 x 13-inch baking dish, layer half the pasta, then the vegetables and turkey, then half the mozzarella. Top with the remaining pasta and sprinkle evenly with the remaining mozzarella.
+
+7. Bake, uncovered, for 15 minutes, or until the pasta is golden is brown and crispy. Serve with a side salad and sauerkraut.
+
+*Make sure to have enough for tomorrow's lunch.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>16-ounce package lentil pasta</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>avocado oil or tea seed oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>onions</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>ground turkey</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>sea salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>freshly ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tb</unitOfMeasure>
+            <ingredientName>chopped fresh basil</ingredientName>
+            <processingInstructions> or 1/2 teaspoon dried</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>zucchini</ingredientName>
+            <processingInstructions> cut into matchsticks</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>mushrooms</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>fresh spinach</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>shredded whole-milk mozzarella cheese (use parmesan if doing skillet)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

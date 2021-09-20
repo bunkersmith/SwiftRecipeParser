@@ -48,7 +48,7 @@ class ThanksgivingRecipesViewController: UIViewController, UITableViewDataSource
     func populateRecipeDisplayFields(cell: ThanksgivingRecipeCell) {
         cell.instructionsTextView.textAlignment = .justified
         
-        let recipe = RecipeUtilities.convertRecipeNameToObject(fileName: cell.recipeTitle.text!)
+        let recipe = Recipe.findRecipeByName(cell.recipeTitle.text!)
         
         cell.instructionsTextView.text = recipe!.instructions
         

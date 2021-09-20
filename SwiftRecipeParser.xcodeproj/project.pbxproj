@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67005B3C26A54C690080BC8C /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67005B3B26A54C690080BC8C /* UITextFieldExtensions.swift */; };
 		670862C61E2DBE6100D21AFE /* TextDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670862C51E2DBE6100D21AFE /* TextDoc.swift */; };
 		670862C91E2DBE7400D21AFE /* ICloudDocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670862C71E2DBE7400D21AFE /* ICloudDocManager.swift */; };
 		670862CA1E2DBE7400D21AFE /* ICloudDocWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670862C81E2DBE7400D21AFE /* ICloudDocWrapper.swift */; };
 		6709380519859BAC004AC92D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6709380419859BAC004AC92D /* Utilities.swift */; };
+		6710451F1EFCF7230013EF27 /* EmailLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710451E1EFCF7230013EF27 /* EmailLogViewController.swift */; };
+		671045211EFCF7810013EF27 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671045201EFCF7810013EF27 /* EmailViewController.swift */; };
+		671045231EFCFAFD0013EF27 /* AlertUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671045221EFCFAFD0013EF27 /* AlertUtilities.swift */; };
+		671045251EFCFB130013EF27 /* ObjectToStringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671045241EFCFB130013EF27 /* ObjectToStringUtilities.swift */; };
 		671953491B4B4198000A9863 /* MillisecondTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671953481B4B4198000A9863 /* MillisecondTimer.swift */; };
-		6719534C1B4B6557000A9863 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6719534B1B4B6557000A9863 /* GroceryItem.swift */; };
 		6719534E1B4B6558000A9863 /* RecipeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6719534D1B4B6558000A9863 /* RecipeTitle.swift */; };
-		671953501B4B6558000A9863 /* GroceryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6719534F1B4B6558000A9863 /* GroceryLocation.swift */; };
 		671953521B4B6558000A9863 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671953511B4B6558000A9863 /* GroceryList.swift */; };
 		671953541B4B6558000A9863 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671953531B4B6558000A9863 /* Recipe.swift */; };
 		671953561B4B6558000A9863 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671953551B4B6558000A9863 /* Ingredient.swift */; };
 		6719535D1B4C9315000A9863 /* GroceryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6719535C1B4C9315000A9863 /* GroceryListItem.swift */; };
 		6719535F1B4C9FE6000A9863 /* AddGroceryListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6719535E1B4C9FE6000A9863 /* AddGroceryListItemTableViewCell.swift */; };
+		67207C891F579BFD00AEFB83 /* SRPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67207C881F579BFD00AEFB83 /* SRPError.swift */; };
 		672187101995B8850051BA99 /* FractionMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721870F1995B8850051BA99 /* FractionMath.swift */; };
+		672705AD1F47DEB500A5ECDE /* RecipeMasterTableViewController+CameraAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672705AC1F47DEB500A5ECDE /* RecipeMasterTableViewController+CameraAuth.swift */; };
+		672BF40B1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BF40A1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift */; };
 		6730A4361CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730A4351CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift */; };
 		6730A4381CD2C969003D4861 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730A4371CD2C969003D4861 /* IngredientTableViewCell.swift */; };
 		673302711C077B650074DD8F /* ThanksgivingRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673302701C077B650074DD8F /* ThanksgivingRecipesViewController.swift */; };
 		673302731C077D830074DD8F /* ThanksgivingRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673302721C077D830074DD8F /* ThanksgivingRecipeCell.swift */; };
 		673302751C07AD6C0074DD8F /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673302741C07AD6C0074DD8F /* IngredientsTableViewController.swift */; };
+		673A050C26A41B7A00C71F21 /* AlertDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673A050B26A41B7A00C71F21 /* AlertDialog.storyboard */; };
+		673A050E26A41D1400C71F21 /* AlertDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A050D26A41D1400C71F21 /* AlertDialogViewController.swift */; };
 		673A6002199EE38F0087B4A1 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A6001199EE38F0087B4A1 /* RecipeDetailViewController.swift */; };
 		673BD0081983B20400D8D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673BD0061983B20400D8D2AC /* Main.storyboard */; };
 		673BD00A1983B24400D8D2AC /* RecipeMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BD0091983B24400D8D2AC /* RecipeMasterTableViewController.swift */; };
@@ -35,24 +43,41 @@
 		6743DAC61E20E21800FF76C8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743DAC51E20E21800FF76C8 /* Logger.swift */; };
 		6743DAC81E20E27200FF76C8 /* FileUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743DAC71E20E27200FF76C8 /* FileUtilities.swift */; };
 		6743DACA1E20E2EA00FF76C8 /* DateTimeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743DAC91E20E2EA00FF76C8 /* DateTimeUtilities.swift */; };
+		675094C926E602950013FC2D /* TextGroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675094C826E602950013FC2D /* TextGroceryListViewController.swift */; };
 		6753214F19A6AC9000B3BE74 /* EmailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */; };
 		6753215119A6BCD600B3BE74 /* IToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6753215019A6BCD600B3BE74 /* IToast.swift */; };
 		675A2A071B1FBB4C00C6A652 /* GroceryListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A2A061B1FBB4C00C6A652 /* GroceryListDetailViewController.swift */; };
 		675A2A3E1B1FD34800C6A652 /* AddGroceryListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A2A3D1B1FD34800C6A652 /* AddGroceryListItemViewController.swift */; };
 		675A2A531B22569100C6A652 /* GroceryListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A2A521B22569100C6A652 /* GroceryListItemTableViewCell.swift */; };
+		675DCE3426A64B73000F5F99 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675DCE3326A64B73000F5F99 /* StringExtensions.swift */; };
+		675DCE3726A69CFD000F5F99 /* TripleTextAlertDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675DCE3526A69CFD000F5F99 /* TripleTextAlertDialog.storyboard */; };
+		6766910F261A844900605201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6766910E261A844900605201 /* LaunchScreen.storyboard */; };
 		677A4CF61D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677A4CF51D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift */; };
 		677A4CF81D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677A4CF71D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib */; };
+		6780F8642650DFDB00CA950E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780F8632650DFDB00CA950E /* CheckBox.swift */; };
 		67810B941EEC9CF300E9FB95 /* ModifyGroceryListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67810B931EEC9CF300E9FB95 /* ModifyGroceryListItemViewController.swift */; };
+		6782783A26A6B8C000999E3B /* FloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6782783926A6B8C000999E3B /* FloatExtensions.swift */; };
+		679101DA1F46611F00A6D842 /* AuthUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679101D91F46611F00A6D842 /* AuthUtilities.swift */; };
 		6791A2091EEB8DFC007CAE2D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791A2081EEB8DFC007CAE2D /* Extensions.swift */; };
+		679E9D59262981E000BE5C40 /* TextMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679E9D58262981E000BE5C40 /* TextMessageViewController.swift */; };
 		679ED42E19839DA300E22DDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ED42D19839DA300E22DDB /* AppDelegate.swift */; };
 		679ED43519839DA300E22DDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 679ED43419839DA300E22DDB /* Images.xcassets */; };
-		679ED44119839DA300E22DDB /* SwiftRecipeParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ED44019839DA300E22DDB /* SwiftRecipeParserTests.swift */; };
 		679ED45119839E8B00E22DDB /* DatabaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ED44F19839E8B00E22DDB /* DatabaseInterface.swift */; };
 		679ED45219839E8B00E22DDB /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ED45019839E8B00E22DDB /* DatabaseManager.swift */; };
 		679ED45519839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */; };
+		67A8B3601FC124E8009E44EF /* GroceryItemPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */; };
+		67B2DD5A26184BF100B8C0E8 /* SelectGroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */; };
+		67B630BD25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B630BB25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift */; };
+		67B630BE25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B630BC25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift */; };
 		67B82AC91985E3F000344AE3 /* RecipeFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82AC81985E3F000344AE3 /* RecipeFiles.swift */; };
 		67B82ACE198628E100344AE3 /* ParseRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82ACD198628E100344AE3 /* ParseRecipe.swift */; };
-		67F24208199350D900768DC3 /* RecipeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F24207199350D900768DC3 /* RecipeUtilities.swift */; };
+		67BE510E26A6B1E900BB262B /* TripleTextAlertDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE510D26A6B1E900BB262B /* TripleTextAlertDialogViewController.swift */; };
+		67C004902651F9D500D7E4CC /* UITableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C0048F2651F9D500D7E4CC /* UITableView+Helpers.swift */; };
+		67C06A47262048BE00D0DDEA /* GroceryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C06A46262048BE00D0DDEA /* GroceryListTableViewCell.swift */; };
+		67E8FADF245E78F000F67305 /* TextIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8FADE245E78F000F67305 /* TextIngredientsViewController.swift */; };
+		67F1F0501F56351B00D4442F /* Recipe+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F1F04F1F56351B00D4442F /* Recipe+Helpers.swift */; };
+		67F1F0531F563F6700D4442F /* CGSize+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F1F0521F563F6700D4442F /* CGSize+Helpers.swift */; };
+		67F1F0551F563F8800D4442F /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F1F0541F563F8800D4442F /* UIImage+Helpers.swift */; };
 		67F2420A199356C500768DC3 /* ParseXMLRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F24209199356C500768DC3 /* ParseXMLRecipe.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,17 +92,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67005B3B26A54C690080BC8C /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		670862C51E2DBE6100D21AFE /* TextDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDoc.swift; sourceTree = "<group>"; };
 		670862C71E2DBE7400D21AFE /* ICloudDocManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICloudDocManager.swift; sourceTree = "<group>"; };
 		670862C81E2DBE7400D21AFE /* ICloudDocWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICloudDocWrapper.swift; sourceTree = "<group>"; };
 		670862CB1E2DBE9200D21AFE /* SwiftRecipeParser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftRecipeParser.entitlements; sourceTree = "<group>"; };
 		6709380419859BAC004AC92D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		670BC3EA1CDD38C900937F70 /* SwiftRecipeParser1.9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.9.xcdatamodel; sourceTree = "<group>"; };
+		670DD12B23CC8EAD00ABCDA1 /* SwiftRecipeParser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SwiftRecipeParser-Bridging-Header.h"; path = "SwiftRecipeParserTests/SwiftRecipeParser-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		670FA8111F2A534100E867C2 /* SwiftRecipeParser1.12.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.12.xcdatamodel; sourceTree = "<group>"; };
+		6710451E1EFCF7230013EF27 /* EmailLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailLogViewController.swift; sourceTree = "<group>"; };
+		671045201EFCF7810013EF27 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		671045221EFCFAFD0013EF27 /* AlertUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtilities.swift; sourceTree = "<group>"; };
+		671045241EFCFB130013EF27 /* ObjectToStringUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectToStringUtilities.swift; sourceTree = "<group>"; };
 		671953481B4B4198000A9863 /* MillisecondTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MillisecondTimer.swift; sourceTree = "<group>"; };
 		6719534A1B4B6464000A9863 /* SwiftRecipeParser1.7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.7.xcdatamodel; sourceTree = "<group>"; };
-		6719534B1B4B6557000A9863 /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GroceryItem.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6719534D1B4B6558000A9863 /* RecipeTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTitle.swift; sourceTree = "<group>"; };
-		6719534F1B4B6558000A9863 /* GroceryLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryLocation.swift; sourceTree = "<group>"; };
 		671953511B4B6558000A9863 /* GroceryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 		671953531B4B6558000A9863 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		671953551B4B6558000A9863 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
@@ -85,12 +115,18 @@
 		6719535C1B4C9315000A9863 /* GroceryListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListItem.swift; sourceTree = "<group>"; };
 		6719535E1B4C9FE6000A9863 /* AddGroceryListItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroceryListItemTableViewCell.swift; sourceTree = "<group>"; };
 		671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.1.xcdatamodel; sourceTree = "<group>"; };
+		67207C881F579BFD00AEFB83 /* SRPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRPError.swift; sourceTree = "<group>"; };
 		6721870F1995B8850051BA99 /* FractionMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FractionMath.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		672705AC1F47DEB500A5ECDE /* RecipeMasterTableViewController+CameraAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecipeMasterTableViewController+CameraAuth.swift"; sourceTree = "<group>"; };
+		672BF40A1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModifyGroceryListItemViewController+PhotoActions.swift"; sourceTree = "<group>"; };
+		673033FC262196DC007C0FE6 /* SwiftRecipeParser1.24.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.24.xcdatamodel; sourceTree = "<group>"; };
 		6730A4351CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterRecipeTableViewCell.swift; sourceTree = "<group>"; };
 		6730A4371CD2C969003D4861 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
-		673302701C077B650074DD8F /* ThanksgivingRecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanksgivingRecipesViewController.swift; sourceTree = "<group>"; };
+		673302701C077B650074DD8F /* ThanksgivingRecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ThanksgivingRecipesViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		673302721C077D830074DD8F /* ThanksgivingRecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanksgivingRecipeCell.swift; sourceTree = "<group>"; };
 		673302741C07AD6C0074DD8F /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
+		673A050B26A41B7A00C71F21 /* AlertDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlertDialog.storyboard; sourceTree = "<group>"; };
+		673A050D26A41D1400C71F21 /* AlertDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialogViewController.swift; sourceTree = "<group>"; };
 		673A6001199EE38F0087B4A1 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RecipeDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		673BD0071983B20400D8D2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		673BD0091983B24400D8D2AC /* RecipeMasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RecipeMasterTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -102,7 +138,9 @@
 		6743DAC51E20E21800FF76C8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Logger.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6743DAC71E20E27200FF76C8 /* FileUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtilities.swift; sourceTree = "<group>"; };
 		6743DAC91E20E2EA00FF76C8 /* DateTimeUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeUtilities.swift; sourceTree = "<group>"; };
-		6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailRecipeViewController.swift; sourceTree = "<group>"; };
+		6749802825AAF4D80046E5C0 /* SwiftRecipeParser1.14.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.14.xcdatamodel; sourceTree = "<group>"; };
+		675094C826E602950013FC2D /* TextGroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGroceryListViewController.swift; sourceTree = "<group>"; };
+		6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = EmailRecipeViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6753215019A6BCD600B3BE74 /* IToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IToast.swift; sourceTree = "<group>"; };
 		675A2A061B1FBB4C00C6A652 /* GroceryListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListDetailViewController.swift; sourceTree = "<group>"; };
 		675A2A3D1B1FD34800C6A652 /* AddGroceryListItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroceryListItemViewController.swift; sourceTree = "<group>"; };
@@ -110,25 +148,48 @@
 		675A2A441B1FDFB100C6A652 /* SwiftRecipeParser1.5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.5.xcdatamodel; sourceTree = "<group>"; };
 		675A2A4C1B21447C00C6A652 /* SwiftRecipeParser1.6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.6.xcdatamodel; sourceTree = "<group>"; };
 		675A2A521B22569100C6A652 /* GroceryListItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListItemTableViewCell.swift; sourceTree = "<group>"; };
+		675DCE3326A64B73000F5F99 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		675DCE3526A69CFD000F5F99 /* TripleTextAlertDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripleTextAlertDialog.storyboard; sourceTree = "<group>"; };
+		6766910E261A844900605201 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		677A4CF51D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableSearchHeaderViewController.swift; sourceTree = "<group>"; };
 		677A4CF71D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeTableSearchHeaderView.xib; sourceTree = "<group>"; };
+		6780F8632650DFDB00CA950E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		67810B931EEC9CF300E9FB95 /* ModifyGroceryListItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifyGroceryListItemViewController.swift; sourceTree = "<group>"; };
+		6782783926A6B8C000999E3B /* FloatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtensions.swift; sourceTree = "<group>"; };
+		678B88FF25E249D60071DA9B /* SwiftRecipeParser1.22.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.22.xcdatamodel; sourceTree = "<group>"; };
+		679101D91F46611F00A6D842 /* AuthUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthUtilities.swift; sourceTree = "<group>"; };
 		6791A2081EEB8DFC007CAE2D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		679C147B1E4FD4FF0032ED11 /* SwiftRecipeParser1.10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.10.xcdatamodel; sourceTree = "<group>"; };
 		679C147C1E513CE40032ED11 /* SwiftRecipeParser1.11.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.11.xcdatamodel; sourceTree = "<group>"; };
+		679E9D58262981E000BE5C40 /* TextMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageViewController.swift; sourceTree = "<group>"; };
 		679ED42819839DA300E22DDB /* SwiftRecipeParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRecipeParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		679ED42C19839DA300E22DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679ED42D19839DA300E22DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		679ED43419839DA300E22DDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		679ED43A19839DA300E22DDB /* SwiftRecipeParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRecipeParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		679ED43F19839DA300E22DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		679ED44019839DA300E22DDB /* SwiftRecipeParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRecipeParserTests.swift; sourceTree = "<group>"; };
+		679ED43F19839DA300E22DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftRecipeParserTests/Info.plist; sourceTree = "<group>"; };
 		679ED44F19839E8B00E22DDB /* DatabaseInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DatabaseInterface.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		679ED45019839E8B00E22DDB /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser.xcdatamodel; sourceTree = "<group>"; };
+		67A1A6A91F661C85005C81A3 /* SwiftRecipeParser1.13.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.13.xcdatamodel; sourceTree = "<group>"; };
+		67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemPhotoViewController.swift; sourceTree = "<group>"; };
+		67ABA5A52622D25E00553773 /* SwiftRecipeParser1.25.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.25.xcdatamodel; sourceTree = "<group>"; };
+		67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroceryListViewController.swift; sourceTree = "<group>"; };
+		67B630B825B03BA100CDD4B2 /* SwiftRecipeParser1.20.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.20.xcdatamodel; sourceTree = "<group>"; };
+		67B630BB25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		67B630BC25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		67B630C325B03DB700CDD4B2 /* SwiftRecipeParser1.21.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.21.xcdatamodel; sourceTree = "<group>"; };
 		67B82AC81985E3F000344AE3 /* RecipeFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RecipeFiles.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67B82ACD198628E100344AE3 /* ParseRecipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ParseRecipe.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		67F24207199350D900768DC3 /* RecipeUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RecipeUtilities.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		67BE510D26A6B1E900BB262B /* TripleTextAlertDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripleTextAlertDialogViewController.swift; sourceTree = "<group>"; };
+		67C0048F2651F9D500D7E4CC /* UITableView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Helpers.swift"; sourceTree = "<group>"; };
+		67C06A46262048BE00D0DDEA /* GroceryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewCell.swift; sourceTree = "<group>"; };
+		67C5D900261B01E8009BB32B /* SwiftRecipeParser1.23.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.23.xcdatamodel; sourceTree = "<group>"; };
+		67E8FADE245E78F000F67305 /* TextIngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextIngredientsViewController.swift; sourceTree = "<group>"; };
+		67E91DC126C4D342008EE000 /* SwiftRecipeParser1.26.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.26.xcdatamodel; sourceTree = "<group>"; };
+		67F1F04F1F56351B00D4442F /* Recipe+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+Helpers.swift"; sourceTree = "<group>"; };
+		67F1F0521F563F6700D4442F /* CGSize+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Helpers.swift"; sourceTree = "<group>"; };
+		67F1F0541F563F8800D4442F /* UIImage+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
 		67F24209199356C500768DC3 /* ParseXMLRecipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ParseXMLRecipe.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -150,6 +211,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		673A050A26A41A3D00C71F21 /* Reusable View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				673A050B26A41B7A00C71F21 /* AlertDialog.storyboard */,
+				673A050D26A41D1400C71F21 /* AlertDialogViewController.swift */,
+				675DCE3526A69CFD000F5F99 /* TripleTextAlertDialog.storyboard */,
+				67BE510D26A6B1E900BB262B /* TripleTextAlertDialogViewController.swift */,
+			);
+			path = "Reusable View Controllers";
+			sourceTree = "<group>";
+		};
 		6743DAC41E20E18A00FF76C8 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				6719535E1B4C9FE6000A9863 /* AddGroceryListItemTableViewCell.swift */,
+				67C06A46262048BE00D0DDEA /* GroceryListTableViewCell.swift */,
 				675A2A521B22569100C6A652 /* GroceryListItemTableViewCell.swift */,
 				673302721C077D830074DD8F /* ThanksgivingRecipeCell.swift */,
 				6730A4351CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift */,
@@ -176,7 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				679ED42A19839DA300E22DDB /* SwiftRecipeParser */,
-				679ED43D19839DA300E22DDB /* SwiftRecipeParserTests */,
+				679ED43F19839DA300E22DDB /* Info.plist */,
 				679ED42919839DA300E22DDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -193,16 +266,18 @@
 		679ED42A19839DA300E22DDB /* SwiftRecipeParser */ = {
 			isa = PBXGroup;
 			children = (
-				670862CB1E2DBE9200D21AFE /* SwiftRecipeParser.entitlements */,
-				679ED44C19839DF800E22DDB /* Controllers */,
 				679ED44E19839E3600E22DDB /* CoreData Interface */,
 				675A2A511B22562400C6A652 /* Custom Table View Cells */,
+				67F1F0511F563EE300D4442F /* Extensions */,
 				6743DAC41E20E18A00FF76C8 /* Logger */,
 				679ED44A19839DD000E22DDB /* Model */,
-				67B82AC71985E37500344AE3 /* Recipe Processing */,
 				67A55C341B1CFC60000F98C0 /* Resources */,
+				673A050A26A41A3D00C71F21 /* Reusable View Controllers */,
 				679ED42B19839DA300E22DDB /* Supporting Files */,
 				679ED44D19839E1D00E22DDB /* Utility Classes */,
+				679ED44C19839DF800E22DDB /* View Controllers */,
+				670862CB1E2DBE9200D21AFE /* SwiftRecipeParser.entitlements */,
+				6766910E261A844900605201 /* LaunchScreen.storyboard */,
 				673BD0061983B20400D8D2AC /* Main.storyboard */,
 				679ED42D19839DA300E22DDB /* AppDelegate.swift */,
 				679ED43419839DA300E22DDB /* Images.xcassets */,
@@ -213,24 +288,9 @@
 		679ED42B19839DA300E22DDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				67B82AC71985E37500344AE3 /* Recipe Processing */,
 				679ED42C19839DA300E22DDB /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		679ED43D19839DA300E22DDB /* SwiftRecipeParserTests */ = {
-			isa = PBXGroup;
-			children = (
-				679ED44019839DA300E22DDB /* SwiftRecipeParserTests.swift */,
-				679ED43E19839DA300E22DDB /* Supporting Files */,
-			);
-			path = SwiftRecipeParserTests;
-			sourceTree = "<group>";
-		};
-		679ED43E19839DA300E22DDB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				679ED43F19839DA300E22DDB /* Info.plist */,
+				670DD12B23CC8EAD00ABCDA1 /* SwiftRecipeParser-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -239,45 +299,60 @@
 			isa = PBXGroup;
 			children = (
 				679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */,
-				6719534B1B4B6557000A9863 /* GroceryItem.swift */,
 				671953511B4B6558000A9863 /* GroceryList.swift */,
 				6719535C1B4C9315000A9863 /* GroceryListItem.swift */,
-				6719534F1B4B6558000A9863 /* GroceryLocation.swift */,
 				671953551B4B6558000A9863 /* Ingredient.swift */,
 				671953531B4B6558000A9863 /* Recipe.swift */,
+				67F1F04F1F56351B00D4442F /* Recipe+Helpers.swift */,
+				67B630BB25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift */,
 				6719534D1B4B6558000A9863 /* RecipeTitle.swift */,
+				67B630BC25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		679ED44C19839DF800E22DDB /* Controllers */ = {
+		679ED44C19839DF800E22DDB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				675A2A3D1B1FD34800C6A652 /* AddGroceryListItemViewController.swift */,
+				6710451E1EFCF7230013EF27 /* EmailLogViewController.swift */,
 				6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */,
-				673E65481B1D4016009B8DC5 /* GroceryListsViewController.swift */,
+				671045201EFCF7810013EF27 /* EmailViewController.swift */,
+				67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */,
 				675A2A061B1FBB4C00C6A652 /* GroceryListDetailViewController.swift */,
+				673E65481B1D4016009B8DC5 /* GroceryListsViewController.swift */,
 				673302741C07AD6C0074DD8F /* IngredientsTableViewController.swift */,
 				67810B931EEC9CF300E9FB95 /* ModifyGroceryListItemViewController.swift */,
-				673BD0091983B24400D8D2AC /* RecipeMasterTableViewController.swift */,
+				672BF40A1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift */,
 				673A6001199EE38F0087B4A1 /* RecipeDetailViewController.swift */,
+				673BD0091983B24400D8D2AC /* RecipeMasterTableViewController.swift */,
+				672705AC1F47DEB500A5ECDE /* RecipeMasterTableViewController+CameraAuth.swift */,
+				67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */,
+				675094C826E602950013FC2D /* TextGroceryListViewController.swift */,
+				67E8FADE245E78F000F67305 /* TextIngredientsViewController.swift */,
+				679E9D58262981E000BE5C40 /* TextMessageViewController.swift */,
 				673302701C077B650074DD8F /* ThanksgivingRecipesViewController.swift */,
 			);
+			name = "View Controllers";
 			path = Controllers;
 			sourceTree = "<group>";
 		};
 		679ED44D19839E1D00E22DDB /* Utility Classes */ = {
 			isa = PBXGroup;
 			children = (
+				671045221EFCFAFD0013EF27 /* AlertUtilities.swift */,
+				679101D91F46611F00A6D842 /* AuthUtilities.swift */,
 				6743DAC91E20E2EA00FF76C8 /* DateTimeUtilities.swift */,
 				6791A2081EEB8DFC007CAE2D /* Extensions.swift */,
 				6743DAC71E20E27200FF76C8 /* FileUtilities.swift */,
-				6721870F1995B8850051BA99 /* FractionMath.swift */,
 				670862C71E2DBE7400D21AFE /* ICloudDocManager.swift */,
 				670862C81E2DBE7400D21AFE /* ICloudDocWrapper.swift */,
 				6753215019A6BCD600B3BE74 /* IToast.swift */,
 				671953481B4B4198000A9863 /* MillisecondTimer.swift */,
+				6721870F1995B8850051BA99 /* FractionMath.swift */,
+				671045241EFCFB130013EF27 /* ObjectToStringUtilities.swift */,
 				6743DAC21E20DA1900FF76C8 /* ProcessTextFile.swift */,
+				67207C881F579BFD00AEFB83 /* SRPError.swift */,
 				670862C51E2DBE6100D21AFE /* TextDoc.swift */,
 				6709380419859BAC004AC92D /* Utilities.swift */,
 			);
@@ -306,10 +381,23 @@
 			children = (
 				67B82AC81985E3F000344AE3 /* RecipeFiles.swift */,
 				67B82ACD198628E100344AE3 /* ParseRecipe.swift */,
-				67F24207199350D900768DC3 /* RecipeUtilities.swift */,
 				67F24209199356C500768DC3 /* ParseXMLRecipe.swift */,
 			);
 			path = "Recipe Processing";
+			sourceTree = "<group>";
+		};
+		67F1F0511F563EE300D4442F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67F1F0521F563F6700D4442F /* CGSize+Helpers.swift */,
+				6780F8632650DFDB00CA950E /* CheckBox.swift */,
+				6782783926A6B8C000999E3B /* FloatExtensions.swift */,
+				675DCE3326A64B73000F5F99 /* StringExtensions.swift */,
+				67F1F0541F563F8800D4442F /* UIImage+Helpers.swift */,
+				67C0048F2651F9D500D7E4CC /* UITableView+Helpers.swift */,
+				67005B3B26A54C690080BC8C /* UITextFieldExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +453,7 @@
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = 87SHVH92BD;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -384,6 +473,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -407,6 +497,9 @@
 				673BD0081983B20400D8D2AC /* Main.storyboard in Resources */,
 				677A4CF81D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib in Resources */,
 				673E65471B1D041A009B8DC5 /* XML_recipes in Resources */,
+				675DCE3726A69CFD000F5F99 /* TripleTextAlertDialog.storyboard in Resources */,
+				6766910F261A844900605201 /* LaunchScreen.storyboard in Resources */,
+				673A050C26A41B7A00C71F21 /* AlertDialog.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +517,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67005B3C26A54C690080BC8C /* UITextFieldExtensions.swift in Sources */,
+				675094C926E602950013FC2D /* TextGroceryListViewController.swift in Sources */,
+				67B630BE25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift in Sources */,
+				67E8FADF245E78F000F67305 /* TextIngredientsViewController.swift in Sources */,
 				679ED45519839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld in Sources */,
 				679ED45219839E8B00E22DDB /* DatabaseManager.swift in Sources */,
+				679101DA1F46611F00A6D842 /* AuthUtilities.swift in Sources */,
 				670862C91E2DBE7400D21AFE /* ICloudDocManager.swift in Sources */,
 				6743DAC81E20E27200FF76C8 /* FileUtilities.swift in Sources */,
 				6753214F19A6AC9000B3BE74 /* EmailRecipeViewController.swift in Sources */,
@@ -434,36 +532,54 @@
 				67F2420A199356C500768DC3 /* ParseXMLRecipe.swift in Sources */,
 				675A2A071B1FBB4C00C6A652 /* GroceryListDetailViewController.swift in Sources */,
 				6753215119A6BCD600B3BE74 /* IToast.swift in Sources */,
-				671953501B4B6558000A9863 /* GroceryLocation.swift in Sources */,
 				67810B941EEC9CF300E9FB95 /* ModifyGroceryListItemViewController.swift in Sources */,
 				6719535D1B4C9315000A9863 /* GroceryListItem.swift in Sources */,
 				673302711C077B650074DD8F /* ThanksgivingRecipesViewController.swift in Sources */,
 				6730A4361CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift in Sources */,
-				67F24208199350D900768DC3 /* RecipeUtilities.swift in Sources */,
+				671045251EFCFB130013EF27 /* ObjectToStringUtilities.swift in Sources */,
 				673E65491B1D4016009B8DC5 /* GroceryListsViewController.swift in Sources */,
+				679E9D59262981E000BE5C40 /* TextMessageViewController.swift in Sources */,
 				6719534E1B4B6558000A9863 /* RecipeTitle.swift in Sources */,
+				6782783A26A6B8C000999E3B /* FloatExtensions.swift in Sources */,
 				671953491B4B4198000A9863 /* MillisecondTimer.swift in Sources */,
+				67F1F0531F563F6700D4442F /* CGSize+Helpers.swift in Sources */,
+				6710451F1EFCF7230013EF27 /* EmailLogViewController.swift in Sources */,
+				67B2DD5A26184BF100B8C0E8 /* SelectGroceryListViewController.swift in Sources */,
+				671045231EFCFAFD0013EF27 /* AlertUtilities.swift in Sources */,
 				671953561B4B6558000A9863 /* Ingredient.swift in Sources */,
 				6709380519859BAC004AC92D /* Utilities.swift in Sources */,
 				67B82ACE198628E100344AE3 /* ParseRecipe.swift in Sources */,
 				675A2A531B22569100C6A652 /* GroceryListItemTableViewCell.swift in Sources */,
+				67F1F0551F563F8800D4442F /* UIImage+Helpers.swift in Sources */,
 				671953541B4B6558000A9863 /* Recipe.swift in Sources */,
 				673302731C077D830074DD8F /* ThanksgivingRecipeCell.swift in Sources */,
+				673A050E26A41D1400C71F21 /* AlertDialogViewController.swift in Sources */,
 				6791A2091EEB8DFC007CAE2D /* Extensions.swift in Sources */,
+				67207C891F579BFD00AEFB83 /* SRPError.swift in Sources */,
 				670862CA1E2DBE7400D21AFE /* ICloudDocWrapper.swift in Sources */,
 				67B82AC91985E3F000344AE3 /* RecipeFiles.swift in Sources */,
 				679ED45119839E8B00E22DDB /* DatabaseInterface.swift in Sources */,
 				670862C61E2DBE6100D21AFE /* TextDoc.swift in Sources */,
+				67F1F0501F56351B00D4442F /* Recipe+Helpers.swift in Sources */,
+				671045211EFCF7810013EF27 /* EmailViewController.swift in Sources */,
 				6743DACA1E20E2EA00FF76C8 /* DateTimeUtilities.swift in Sources */,
+				67B630BD25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift in Sources */,
+				672BF40B1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift in Sources */,
+				6780F8642650DFDB00CA950E /* CheckBox.swift in Sources */,
+				67C06A47262048BE00D0DDEA /* GroceryListTableViewCell.swift in Sources */,
 				673BD00A1983B24400D8D2AC /* RecipeMasterTableViewController.swift in Sources */,
+				672705AD1F47DEB500A5ECDE /* RecipeMasterTableViewController+CameraAuth.swift in Sources */,
 				6743DAC61E20E21800FF76C8 /* Logger.swift in Sources */,
 				6719535F1B4C9FE6000A9863 /* AddGroceryListItemTableViewCell.swift in Sources */,
 				675A2A3E1B1FD34800C6A652 /* AddGroceryListItemViewController.swift in Sources */,
 				679ED42E19839DA300E22DDB /* AppDelegate.swift in Sources */,
+				675DCE3426A64B73000F5F99 /* StringExtensions.swift in Sources */,
 				672187101995B8850051BA99 /* FractionMath.swift in Sources */,
-				6719534C1B4B6557000A9863 /* GroceryItem.swift in Sources */,
 				677A4CF61D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift in Sources */,
+				67A8B3601FC124E8009E44EF /* GroceryItemPhotoViewController.swift in Sources */,
+				67BE510E26A6B1E900BB262B /* TripleTextAlertDialogViewController.swift in Sources */,
 				673302751C07AD6C0074DD8F /* IngredientsTableViewController.swift in Sources */,
+				67C004902651F9D500D7E4CC /* UITableView+Helpers.swift in Sources */,
 				6743DAC31E20DA1900FF76C8 /* ProcessTextFile.swift in Sources */,
 				673A6002199EE38F0087B4A1 /* RecipeDetailViewController.swift in Sources */,
 			);
@@ -473,7 +589,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				679ED44119839DA300E22DDB /* SwiftRecipeParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,11 +654,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/SwiftRecipeParser-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -581,10 +698,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/SwiftRecipeParser-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -594,21 +713,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftRecipeParser/SwiftRecipeParser.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Carleton Smith (9U6FNW9USX)";
-				DEVELOPMENT_TEAM = 87SHVH92BD;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftRecipeParser/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "800db2d3-e7cd-45b4-aa95-133a62ad22c2";
-				PROVISIONING_PROFILE_SPECIFIER = "Swift Recipe Parser";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -616,21 +736,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftRecipeParser/SwiftRecipeParser.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 87SHVH92BD;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftRecipeParser/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "800db2d3-e7cd-45b4-aa95-133a62ad22c2";
-				PROVISIONING_PROFILE_SPECIFIER = "Swift Recipe Parser";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -708,6 +828,16 @@
 		679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				67E91DC126C4D342008EE000 /* SwiftRecipeParser1.26.xcdatamodel */,
+				67ABA5A52622D25E00553773 /* SwiftRecipeParser1.25.xcdatamodel */,
+				673033FC262196DC007C0FE6 /* SwiftRecipeParser1.24.xcdatamodel */,
+				67C5D900261B01E8009BB32B /* SwiftRecipeParser1.23.xcdatamodel */,
+				678B88FF25E249D60071DA9B /* SwiftRecipeParser1.22.xcdatamodel */,
+				67B630C325B03DB700CDD4B2 /* SwiftRecipeParser1.21.xcdatamodel */,
+				67B630B825B03BA100CDD4B2 /* SwiftRecipeParser1.20.xcdatamodel */,
+				6749802825AAF4D80046E5C0 /* SwiftRecipeParser1.14.xcdatamodel */,
+				67A1A6A91F661C85005C81A3 /* SwiftRecipeParser1.13.xcdatamodel */,
+				670FA8111F2A534100E867C2 /* SwiftRecipeParser1.12.xcdatamodel */,
 				679C147C1E513CE40032ED11 /* SwiftRecipeParser1.11.xcdatamodel */,
 				679C147B1E4FD4FF0032ED11 /* SwiftRecipeParser1.10.xcdatamodel */,
 				670BC3EA1CDD38C900937F70 /* SwiftRecipeParser1.9.xcdatamodel */,
@@ -721,7 +851,7 @@
 				671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */,
 				679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */,
 			);
-			currentVersion = 679C147C1E513CE40032ED11 /* SwiftRecipeParser1.11.xcdatamodel */;
+			currentVersion = 67E91DC126C4D342008EE000 /* SwiftRecipeParser1.26.xcdatamodel */;
 			path = SwiftRecipeParser.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

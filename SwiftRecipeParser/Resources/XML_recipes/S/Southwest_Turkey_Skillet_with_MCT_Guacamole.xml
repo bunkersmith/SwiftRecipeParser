@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Southwest Turkey Skillet with MCT Guacamole</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>DIRECTIONS:
+1. Heat the oil in a large, heavy-bottom skillet on medium heat. Add the shallot and cook until soft and translucent, a few minutes. Add ground turkey, onion powder, dried oregano, smoked paprika, cumin and sauté until the meat has browned.
+
+2. Add red bell pepper and continue to cook until the pepper has softened. Stir in the green chills.
+
+3. Mix in arugula and cook just until wilted.
+
+4. Sprinkle the shredded cheese on top and cook until the cheese has melted. Remove from the heat. Serve topped with cilantro, broccoli sprouts and garnish with fresh lime. Serve with MCT Guacamole on the side.
+
+*Makes enough to have leftovers for tomorrow's lunch.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>avocado oil</ingredientName>
+            <processingInstructions>or tea seed oil</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>shallot</ingredientName>
+            <processingInstructions>diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>ground beef</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>onion powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>dried oregano</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>smoked paprika</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red bell pepper</ingredientName>
+            <processingInstructions>de-seeded and diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>4.5 oz can mild green chilies</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>arugula</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Monterey Jack cheese</ingredientName>
+            <processingInstructions>shredded</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>clinatro</ingredientName>
+            <processingInstructions>chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>broccoli sprouts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>lime wedges</ingredientName>
+            <processingInstructions>for garnish</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

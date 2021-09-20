@@ -44,6 +44,8 @@ class ICloudDocWrapper: NSObject {
     }
     
     func openTextDoc(completionHandler: @escaping (DocResult) -> ()) {
+        Logger.logDetails(msg: "documentURL: \(String(describing: documentURL))")
+        
         document?.open(completionHandler: {(success: Bool) -> Void in
             if success {
                 completionHandler(.docOpened)
@@ -54,6 +56,8 @@ class ICloudDocWrapper: NSObject {
     }
     
     func readDocText(completionHandler: @escaping (DocResult, String?) -> ()) {
+        Logger.logDetails(msg: "documentURL: \(String(describing: documentURL))")
+        
         openOrCreateDoc { (docResult) in
             if docResult == .docError {
                 completionHandler(docResult, nil)
@@ -69,7 +73,8 @@ class ICloudDocWrapper: NSObject {
     }
     
     func writeTextToDoc(text:String, completionHandler: @escaping (DocResult) -> ()) {
-
+        Logger.logDetails(msg: "documentURL: \(String(describing: documentURL))")
+        
         openOrCreateDoc { (docResult) in
             if docResult == .docError {
                 completionHandler(docResult)

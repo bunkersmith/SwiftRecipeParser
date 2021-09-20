@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken Korma</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Marination for chicken korma recipe
+1. Marinate chicken with 3 tbsps yogurt, 1 tbsp ginger garlic paste, ¼ tsp turmeric, ½ tsp salt, 1 to 1¼ tsp red chili powder and ¾ to 1 tsp garam masala.  
+2. Cover this and set aside until needed. 
+Make onion paste
+1. Heat a pan with 1½ to 2 tbsps oil and add 2 cardamoms.  
+2. Add sliced onions and fry them evenly until golden brown.  
+3. Next add cashews and almonds. Cool these completely.  
+4. Later add the cooled onions and nuts to a blender jar along with yogurt. 
+5. Make a smooth paste of these. Set this aside. 
+How to make chicken korma
+1. To the same pan, add 1 tsp oil and heat it.
+
+2. Saute whole spices – bay leaf, cinnamon stick, cloves and cardamom in oil for a min.  
+3. Add green chilli and marinated chicken.  
+4. Fry on a medium heat until the raw smell of ginger garlic paste goes away. 
+5. Then add the onion curd paste. Pour ¾ cup water and mix well. 
+6. Add salt, coriander powder and garam masala. If desired you can also add more chili powder for color. 
+7. Mix well. Cover and cook on a low flame until chicken is cooked to tender. 
+8. Cook further till the gravy reaches a desired consistency. If it is too thick then pour some hot water to bring it to consistency. 
+9. Garnish with coriander leaves.
+
+10. Serve chicken korma with plain basmati rice, naan, roti or paratha.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For marinate:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>chicken</ingredientName>
+            <processingInstructions> bone-in</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground turmeric</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsps</unitOfMeasure>
+            <ingredientName>yogurt</ingredientName>
+            <processingInstructions> plain</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>ginger garlic paste</ingredientName>
+            <processingInstructions> ground or crushed in equal quantities</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>garam masala or korma masala</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>red chili powder</ingredientName>
+            <processingInstructions> less spicy variety, minimum 1/2 tsp</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>salt for gravy</ingredientName>
+            <processingInstructions>as needed, I used 1/2 tsp sea salt</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>To saute and make paste:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-3/4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>oil or ghee</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green cardamoms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>onions</ingredientName>
+            <processingInstructions>sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cashews</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>almonds</ingredientName>
+            <processingInstructions>optional</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsps</unitOfMeasure>
+            <ingredientName>yogurt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For chicken korma gravy:</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small bay leaf</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>inch</unitOfMeasure>
+            <ingredientName>cinnamon piece</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cardamom pod</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>green chili</ingredientName>
+            <processingInstructions>slit (orinigal recipe was 1 to 2)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>water for gravy</ingredientName>
+            <processingInstructions>3/4 to 1-1/4 cup, as needed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions>for gravy as needed, I used about 1/2 tsp</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>garam masala</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>coriander powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>red chili powder</ingredientName>
+            <processingInstructions> optional, for color</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsps</unitOfMeasure>
+            <ingredientName>coriander leaves or cilantro</ingredientName>
+            <processingInstructions>chopped</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

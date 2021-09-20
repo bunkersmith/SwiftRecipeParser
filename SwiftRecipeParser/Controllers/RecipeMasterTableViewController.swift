@@ -10,12 +10,11 @@ import UIKit
 import CoreData
 
 @available(iOS 8.0, *)
-class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIGestureRecognizerDelegate, NSFetchedResultsControllerDelegate {
+class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, RecipeSearchTypeDelegate, UIGestureRecognizerDelegate, NSFetchedResultsControllerDelegate {
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var progressLabel: UILabel!
     
-    var resultSearchController: UISearchController!
     var resultTableViewController: UITableViewController!
     var searchString: String!
 
@@ -31,52 +30,79 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     private var searchTextField:UITextField?
 
     private var searchHeaderViewController: RecipeTableSearchHeaderViewController?
+
+// If you see a "UITableViewAlertForLayoutOutsideViewHierarchy error: Warning once only" message, before going crazy and trying to debug it...
+//
+// CLEAN THE PROJECT AND RESTART XCODE!!!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //selectedRow = -1
-        //selectedSection = -1
-        
-        self.tableView.estimatedRowHeight = 50.0
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 50.0
+        tableView.rowHeight = UITableViewAutomaticDimension
 
         progressLabel.alpha = 0.0
         
+        // Called before warning appears (first call)
         tableView.tableFooterView = UIView(frame: .zero)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+         
         addScrollAreaView()
         createFetchedResultsController(searchString: nil)
 
         if searchHeaderViewController == nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            resultTableViewController = storyboard.instantiateViewController(withIdentifier: "ResultsTableViewController") as! UITableViewController
+            resultTableViewController = storyboard.instantiateViewController(withIdentifier: "ResultsTableViewController") as? UITableViewController
             resultTableViewController.tableView.delegate = self
             resultTableViewController.tableView.dataSource = self
-            
+
             searchHeaderViewController = RecipeTableSearchHeaderViewController(nibName: "RecipeTableSearchHeaderView", bundle: nil)
             searchHeaderViewController!.view.frame = CGRect(x: 0.0, y: 0.0, width: 600.0, height: 108.0)
             searchHeaderViewController!.searchBar.delegate = self
+            searchHeaderViewController!.delegate = self
+
+            if #available(iOS 13.0, *) {
+                searchTextField = searchHeaderViewController!.searchBar.searchTextField
+            } else {
+                if let searchField = searchHeaderViewController!.searchBar.value(forKey: "searchField") as? UITextField {
+                    searchTextField = searchField
+                }
+            }
         }
- 
+
         tableView.tableHeaderView = UIView(frame: searchHeaderViewController!.view.frame /*CGRectMake(0.0, 0.0, 600.0, 108.0)*/)
         tableView.tableHeaderView?.addSubview(searchHeaderViewController!.view)
-        
-        hideSearchBar()
+
+        hideSearchBar(nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
+        let items = GroceryListItem.fetchAll()
+        for item in items! {
+            if item.name == "\"Eggs, 18 Count\"" {
+                print("Found it")
+                databaseInterface.deleteObject(coreDataObject: item)
+                databaseInterface.saveContext()
+            }
+//            if item.name.count == 0 {
+//                print("Item with no name")
+//                databaseInterface.deleteObject(coreDataObject: item)
+//                databaseInterface.saveContext()
+//            }
+        }
+        
         if !initializationCompleted {
             let recipeFiles = RecipeFiles()
             let resourceRecipeCount = recipeFiles.countOfRecipeResourceFiles()
             
-            let databaseRecipeCount:Int = RecipeUtilities.countOfDatabaseRecipes()
+            let databaseRecipeCount:Int = Recipe.countOfDatabaseRecipes()
             
             if resourceRecipeCount != databaseRecipeCount || Utilities.forceLoadDatabase() {
                 buildRecipeDatabase()
@@ -94,13 +120,71 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             
             initializationCompleted = true
         }
+                
+        checkCameraAndLibrary()
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+//    @IBAction func emailLogButtonPressed(_ sender: Any)
+//    {
+//        performSegue(withIdentifier: "EmailLogSegue", sender: self)
+//    }
+    
+    @IBAction func addButtonPressed(_ sender: Any) {
+        var inputTextField = UITextField()
+
+        AlertUtilities.showTextFieldAlert(viewController: self,
+                                          title: "Enter recipe name:",
+                                          message: "",
+                                          startingText: "",
+                                          keyboardType: .default,
+                                          capitalizationType: .words) { alertAction in
+                var xmlFilename = inputTextField.text!
+                print("User entered: \(xmlFilename)")
+                
+                xmlFilename = xmlFilename.replacingOccurrences(of: " ", with: "_")
+            
+                let documentsDirectory = FileUtilities.applicationDocumentsDirectory()
+                let pathname = documentsDirectory.appendingPathComponent(xmlFilename).appendingPathExtension("xml")
+                
+                print("\(pathname)")
+                
+                if Utilities.fileExistsAtAbsolutePath(pathname: pathname.path) {
+                    let recipeName = RecipeFiles.returnRecipeTitleFromPath(recipeResourceFilePath: pathname.path)
+                    print("Recipe name: \(recipeName)")
+                    
+                    if Recipe.findRecipeByName(recipeName) != nil {
+                        // If the recipe is already in the database, ask if the user wants to update it
+                    } else {
+                        // If not, parse and add it
+                        let recipeFiles:RecipeFiles = RecipeFiles()
+                        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+                        let recipeAddResult = recipeFiles.returnRecipeFromXML(recipePath: pathname.path, databaseInterface: databaseInterface)
+                        
+                        if recipeAddResult {
+                            AlertUtilities.showOkButtonAlert(self, title: "Recipe added", message: "", buttonHandler: nil)
+                            self.tableView.reloadData()
+                        } else {
+                            AlertUtilities.showOkButtonAlert(self, title: "Error adding recipe", message: "", buttonHandler: nil)
+                        }
+                    }
+                } else {
+                    AlertUtilities.showOkButtonAlert(self, title: "Recipe file not found", message: "", buttonHandler: nil)
+                }
+            
+            } textFieldHandler: { textField in
+            inputTextField = textField
+        }
+
+    }
+    
+    @IBAction func buildButtonPressed(_ sender: Any) {
+        buildRecipeDatabase()
+    }
+    
     func buildRecipeDatabase() {
         registerForNotifications()
         
@@ -140,18 +224,15 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         tableView.addSubview(whiteView)
     }
     
-    func showSearchBar() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10)) {
-            self.tableView.contentOffset = CGPoint(x: 0.0, y: 0.0)
-            if self.searchTextField != nil {
-                self.searchTextField!.becomeFirstResponder()
-            }
-        }
-    }
-    
-    func hideSearchBar() {
+    func hideSearchBar(_ searchBar: UISearchBar?) {
+        searchBar?.resignFirstResponder()
+        
         if self.tableView.contentOffset == CGPoint(x: 0.0, y: 0.0) {
             DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10)) {
+                if self.searchHeaderViewController != nil {
+                    self.searchHeaderViewController?.searchType = .RecipeTitle
+                    self.searchHeaderViewController?.segmentedControl.selectedSegmentIndex = 0
+                }
                 self.tableView.contentOffset = CGPoint(x: 0.0, y: self.tableView.tableHeaderView!.frame.height)
             }
         }
@@ -161,7 +242,11 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         let databaseInterface:DatabaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
         if searchString != nil {
-            fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "Recipe", sortKey: "title.indexCharacter", secondarySortKey: "title.name", sectionNameKeyPath:"title.indexCharacter", predicate:NSPredicate(format: "title.name contains[cd] %@", searchString!))
+            if searchHeaderViewController != nil, searchHeaderViewController?.searchType == .Ingredient {
+                fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "Recipe", sortKey: "title.indexCharacter", secondarySortKey: "title.name", sectionNameKeyPath:"title.indexCharacter", predicate:NSPredicate(format: "ANY containsIngredients.ingredientItem.name  contains[cd] %@", searchString!))
+            } else {
+                fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "Recipe", sortKey: "title.indexCharacter", secondarySortKey: "title.name", sectionNameKeyPath:"title.indexCharacter", predicate:NSPredicate(format: "title.name contains[cd] %@", searchString!))
+            }
         }
         else {
             fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "Recipe", sortKey: "title.indexCharacter", secondarySortKey: "title.name", sectionNameKeyPath: "title.indexCharacter", predicate:nil)
@@ -173,7 +258,12 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         fetchedResultsController.delegate = self
         tableView.reloadData()
     }
-    
+
+    func RecipeSearchTypeChanged(searchType: RecipeSearchType) {
+        Logger.logDetails(msg: "Entered")
+        createFetchedResultsController(searchString: searchString)
+    }
+
     @IBAction func handleLongPress(_ recognizer: UILongPressGestureRecognizer) {
         if recognizer.state == UIGestureRecognizerState.ended {
             let point:CGPoint = recognizer.location(in: tableView)
@@ -310,7 +400,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         notificationCenter.removeObserver(self, name: NSNotification.Name(rawValue: "SwiftRecipeParser.RecipeProgressNotification"), object: nil)
     }
     
-    func handleRecipeProgressNotification(notification:NSNotification)
+    @objc func handleRecipeProgressNotification(notification:NSNotification)
     {
         let userInfo = notification.userInfo as! Dictionary<NSString, NSNumber>
         
@@ -347,20 +437,18 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
         //tableView.reloadData()
     
-        //RecipeUtilities.outputAllRecipesToFiles(true);
+        //Recipe.outputAllRecipesToFiles(true);
     }
     
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
-        if index == 0 {
-            showSearchBar()
-        }
-        
         return index
     }
     
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        // Called before warning appears
+
         return sectionIndexTitles
     }
     
@@ -382,6 +470,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        // Called before warning appears
+
         // Return the number of sections.
         var returnValue:Int = 0
         
@@ -440,9 +530,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             if selectedIndexPath != nil {
                 if let cell = resultTableViewController.tableView.cellForRow(at: selectedIndexPath!) {
                     if cell.textLabel != nil && cell.textLabel!.text != nil {
-                        if let recipe = RecipeUtilities.fetchRecipeWithName(recipeName: cell.textLabel!.text!) {
+                        if let recipe = Recipe.fetchRecipeWithName(recipeName: cell.textLabel!.text!) {
                             detailViewController.recipe = recipe
-                            resultSearchController.isActive = false
                         }
                     }
                 }
@@ -453,14 +542,29 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                 
                 detailViewController.recipe = fetchedResultsController.object(at: realIndexPath) as? Recipe
             }
+            
+            return
         }
+
+//        if segue.identifier == "EmailLogSegue" {
+//            if let emailLogViewController = segue.destination as? EmailLogViewController {
+//                emailLogViewController.requestMailComposeViewController()
+//            }
+//
+//            return
+//        }
     }
 
     // MARK: - Search Bar Delegate
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         updateTableWithSearchString(searchString: "")
         
-        hideSearchBar()
+        hideSearchBar(searchBar)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        hideSearchBar(searchBar)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

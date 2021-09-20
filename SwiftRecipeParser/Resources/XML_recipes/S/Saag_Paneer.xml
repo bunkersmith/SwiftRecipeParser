@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Saag Paneer</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. In a large bowl, whisk together the turmeric, cayenne, 1 teaspoon salt and 3 tablespoons oil. Gently, drop in the cubes of paneer and gently toss, taking care not to break the cubes if you're using the homemade kind. Let the cubes marinate while you get the rest of your ingredients together and prepped.
+
+2. Thaw the spinach in the microwave in a microwave-safe dish, 5 minutes on high, then puree in a food processor until smooth. Alternatively, you can chop it up very finely with your knife.
+
+3. Place a large nonstick skillet over medium heat, and add the paneer as the pan warms. In a couple of minutes give the pan a toss; each piece of paneer should be browned on one side. Fry another minute or so, and then remove the paneer from the pan onto a plate.
+
+4. Add the remaining 1 1/2 tablespoons oil to the pan. Add the onions, ginger, garlic and chile. Now here's the important part: saute the mixture until it's evenly toffee-colored, which should take about 15 minutes. Don't skip this step - this is the foundation of the dish! If you feel like the mixture is drying out and burning, add a couple of tablespoons of water.
+
+5. Add the garam masala, coriander and cumin. If you haven't already, sprinkle a little water to keep the spices from burning. Cook, stirring often, until the raw scent of the spices cook out, and it all smells a bit more melodious, 3 to 5 minutes.
+
+6. Add the spinach and stir well, incorporating the spiced onion mixture into the spinach. Add a little salt and 1/2 cup of water, stir, and cook about 5 minutes with the lid off.
+
+7. Turn the heat off. Add the yogurt, a little at a time to keep it from curdling. Once the yogurt is well mixed into the spinach, add the paneer. Turn the heat back on, cover and cook until everything is warmed through, about 5 minutes. Serve.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>turmeric</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>cayenne</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>vegetable oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>12</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>paneer</ingredientName>
+            <processingInstructions>cut into 1-inch cubes (see Cook's Note)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>16</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>frozen chopped spinach</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>med white onion</ingredientName>
+            <processingInstructions>finely chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>ginger (1-inch thumb)</ingredientName>
+            <processingInstructions>peeled and minced (about 1 tablespoon)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves</ingredientName>
+            <processingInstructions>minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large green serrano chile</ingredientName>
+            <processingInstructions>finely chopped (seeds removed if you don't like it spicy!)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>garam masala</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground coriander</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>yogurt</ingredientName>
+            <processingInstructions>stirred until smooth</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
+

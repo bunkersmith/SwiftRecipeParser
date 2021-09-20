@@ -6,19 +6,95 @@
 //  Copyright (c) 2015 CarlSmith. All rights reserved.
 //
 
+import UIKit
 import Foundation
 import CoreData
+
+struct GroceryListItemStruct: CustomStringConvertible {
+    var name: String
+    var quantity: Float
+    var cost: Float
+    var units: String
+    var isTaxable: Bool
+    var taxablePrice: Float
+    var isCRV: Bool
+    var crvQuantity: Int
+    var crvFluidOunces: Float
+    var isFSA: Bool
+    var notes: String
+    
+    public init(name: String,
+                quantity: Float,
+                cost: Float,
+                units: String,
+                isTaxable: Bool,
+                taxablePrice: Float,
+                isCRV: Bool,
+                crvQuantity: Int,
+                crvFluidOunces: Float,
+                isFSA: Bool,
+                notes: String) {
+        self.name = name
+        self.quantity = quantity
+        self.cost = cost
+        self.units = units
+        self.isTaxable = isTaxable
+        self.taxablePrice = taxablePrice
+        self.isCRV = isCRV
+        self.crvQuantity = crvQuantity
+        self.crvFluidOunces = crvFluidOunces
+        self.isFSA = isFSA
+        self.notes = notes
+    }
+    
+    var description: String {
+        var returnValue:String
+        
+        returnValue = "\n***** GroceryListItemStruct"
+        returnValue += "\nname = \(name)"
+        returnValue += "\ncost = \(cost)"
+        returnValue += "\nquantity = \(quantity)"
+        returnValue += "\nunits = \(units)"
+        if isTaxable {
+            returnValue += "\nisTaxable = \(isTaxable)"
+            if taxablePrice > 0 {
+                returnValue += "\ntaxablePrice = \(taxablePrice)"
+            }
+        }
+        if isCRV {
+            returnValue += "\nisCRV = \(isCRV)"
+            returnValue += "\ncrvQuantity = \(crvQuantity)"
+            returnValue += "\ncrvFluidOunces = \(crvFluidOunces)"
+        }
+        if isFSA {
+            returnValue += "\nisFsa = \(isFSA)"
+        }
+        if !notes.isEmpty {
+            returnValue += "\nnotes = \(notes)"
+        }
+        
+        return returnValue
+    }
+}
 
 class GroceryListItem: NSManagedObject {
 
     @NSManaged var cost: NSNumber
+    @NSManaged var totalCost: NSNumber
     @NSManaged var isBought: NSNumber
     @NSManaged var name: String
     @NSManaged var quantity: NSNumber
     @NSManaged var unitOfMeasure: String
     @NSManaged var isTaxable: NSNumber
+    @NSManaged var taxablePrice: NSNumber
+    @NSManaged var isFsa: NSNumber
+    @NSManaged var isCrv: NSNumber
+    @NSManaged var crvQuantity: NSNumber
+    @NSManaged var crvFluidOunces: NSNumber
+    @NSManaged var imagePath: String?
     @NSManaged var inGroceryList: GroceryList
-
+    @NSManaged var notes: String
+    
     override var description: String {
         var returnValue:String
         
@@ -27,8 +103,29 @@ class GroceryListItem: NSManagedObject {
         returnValue += "\ncost = \(cost)"
         returnValue += "\nquantity = \(quantity)"
         returnValue += "\nunitOfMeasure = \(unitOfMeasure)"
-        returnValue += "\nisBought = \(isBought)"
-        returnValue += "\nisTaxable = \(isTaxable)"
+        if isBought.boolValue {
+            returnValue += "\nisBought = \(isBought)"
+        }
+        if isTaxable.boolValue {
+            returnValue += "\nisTaxable = \(isTaxable)"
+            if taxablePrice.floatValue > 0 {
+                returnValue += "\ntaxablePrice = \(taxablePrice)"
+            }
+        }
+        if isCrv.boolValue {
+            returnValue += "\nisCrv = \(isCrv)"
+            returnValue += "\ncrvQuantity = \(crvQuantity.intValue)"
+            returnValue += "\ncrvFluidOunces = \(crvFluidOunces.floatValue)"
+        }
+        if isFsa.boolValue {
+            returnValue += "\nisFsa = \(isFsa)"
+        }
+        if imagePath != nil {
+            returnValue += "\nimagePath = \(imagePath!)"
+        }
+        if !notes.isEmpty {
+            returnValue += "\nnotes = \(notes)"
+        }
         
         return returnValue
     }
@@ -62,6 +159,11 @@ class GroceryListItem: NSManagedObject {
             groceryListItem.cost = NSNumber(value: cost)
             groceryListItem.quantity = NSNumber(value: quantity)
             groceryListItem.unitOfMeasure = unitOfMeasure
+            groceryListItem.isTaxable = NSNumber(value: false)
+            groceryListItem.isFsa = NSNumber(value: false)
+            groceryListItem.isCrv = NSNumber(value: false)
+
+            groceryListItem.calculateTotalCost()
             
             databaseInterface.saveContext()
             
@@ -83,11 +185,14 @@ class GroceryListItem: NSManagedObject {
             return create(name: name, cost: cost, quantity: quantity, unitOfMeasure: unitOfMeasure)
         }
         
-        if groceryListItems.count == 1 {
+        if groceryListItems.count >= 1 {
             if let groceryListItem = groceryListItems.first as? GroceryListItem {
                 //Logger.logDetails(msg: "Returning existing item")
                 
-                groceryListItem.cost = NSNumber(value: cost)
+                if cost != 0 {
+                    groceryListItem.cost = NSNumber(value: cost)
+                }
+                groceryListItem.quantity = NSNumber(value: quantity)
                 databaseInterface.saveContext()
                 
                 return groceryListItem
@@ -138,6 +243,65 @@ class GroceryListItem: NSManagedObject {
         return groceryListItems
     }
     
+    class func writeItemImagePaths() {
+        
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
+        for groceryItem in fetchAll()! {
+            if groceryItem.imagePath != nil {
+                // The accepted answer to the SO question below indicates that:
+                
+                // URL.path is appropriate for local files
+                // URL.absoluteString is appropriate for remote URLs
+                
+                // https://stackoverflow.com/questions/16176911/nsurl-path-vs-absolutestring
+                groceryItem.imagePath = "\(groceryItem.name).jpg"
+                databaseInterface.saveContext()
+            }
+        }
+        
+    }
+    
+    class func calculateAllTotalCosts() {
+        
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
+        for groceryItem in fetchAll()! {
+            groceryItem.calculateTotalCost()
+            databaseInterface.saveContext()
+        }
+    }
+    
+    func writeImageDataToJpeg(imageData: Data) {
+        guard let image = UIImage(data: imageData) else {
+            return
+        }
+        
+        guard let data = UIImageJPEGRepresentation(image, 0.8) else {
+            return
+        }
+        
+        let filename = FileUtilities.applicationDocumentsDirectory().appendingPathComponent("\(name).jpg")
+        
+        do {
+            try data.write(to: filename)
+        } catch let error as NSError {
+            Logger.logDetails(msg: "File write error: \(error)")
+        }
+    }
+    
+    func readItemImage() -> UIImage? {
+        let filename = FileUtilities.applicationDocumentsDirectory().appendingPathComponent("\(name).jpg")
+
+        do {
+            let imageData = try Data(contentsOf: filename)
+            return UIImage(data: imageData)
+        } catch {
+            print("Error loading image : \(error)")
+            return nil
+        }
+    }
+    
     class func addItemToString(groceryListItem:GroceryListItem, string: String) -> String {
         let itemString = "\(groceryListItem.name)\t\(groceryListItem.cost)\t\(groceryListItem.quantity)\t\(groceryListItem.unitOfMeasure)"
         
@@ -152,6 +316,138 @@ class GroceryListItem: NSManagedObject {
             Logger.logDetails(msg: "docResult = \(docResult)")
         }
         
+    }
+
+    func convertToShortOneLineString() -> String {
+        var returnValue = "name:\t" + name
+        returnValue += "\tquantity:\t\(quantity.floatValue)"
+        returnValue += "\tunits:\t" + unitOfMeasure
+        returnValue += String(format: "\tcost:\t%.2f", cost.floatValue)
+        if isTaxable.boolValue {
+            returnValue += "\tisTaxable:\t\(isTaxable.boolValue)"
+            let taxablePrice = taxablePrice.floatValue
+            if taxablePrice > 0 {
+                returnValue += String(format: "\ttaxablePrice:\t%.2f", taxablePrice)
+            }
+        }
+        if (isCrv.boolValue) {
+            returnValue += "\tisCRV:\t\(isCrv.boolValue)"
+            returnValue += "\tcrvQuantity:\t\(crvQuantity.intValue)"
+            returnValue += "\tcrvFluidOunces:\t\(crvFluidOunces.floatValue)"
+        }
+        if (isFsa.boolValue) {
+            returnValue += "\tisFSA:\t\(isFsa.boolValue)"
+        }
+        if (!notes.isEmpty) {
+            returnValue += "\tnotes:\t" + notes
+        }
+        returnValue += "\n"
+        return returnValue
+    }
+
+    class func parseGroceryListItemString(string: String) -> GroceryListItem? {
+        
+        let tokens = string.components(separatedBy: "\t")
+        
+        var i = 0
+        
+        var groceryListItemStruct = GroceryListItemStruct(name: "",
+                                                          quantity: 0,
+                                                          cost: 0,
+                                                          units: "",
+                                                          isTaxable: false,
+                                                          taxablePrice: 0,
+                                                          isCRV: false,
+                                                          crvQuantity: 0,
+                                                          crvFluidOunces: 0,
+                                                          isFSA: false,
+                                                          notes: "")
+        
+        while i < tokens.count {
+            
+            switch tokens[i] {
+                case "name:":
+                    groceryListItemStruct.name = tokens[i+1]
+                break
+                case "quantity:":
+                    groceryListItemStruct.quantity = Float(tokens[i+1])!
+                break
+                case "units:":
+                    groceryListItemStruct.units = tokens[i+1]
+                break
+                case "cost:":
+                    groceryListItemStruct.cost = Float(tokens[i+1])!
+                break
+                case "isTaxable:":
+                    groceryListItemStruct.isTaxable = tokens[i+1] == "true" ? true : false
+                break
+                case "taxablePrice:":
+                    groceryListItemStruct.taxablePrice = Float(tokens[i+1])!
+                break
+                case "isCRV:":
+                    groceryListItemStruct.isCRV = tokens[i+1] == "true" ? true : false
+                break
+                case "crvQuantity:":
+                    groceryListItemStruct.crvQuantity = Int(tokens[i+1])!
+                break
+                case "crvFluidOunces:":
+                    groceryListItemStruct.crvFluidOunces = Float(tokens[i+1])!
+                break
+                case "isFSA:":
+                    groceryListItemStruct.isFSA = tokens[i+1] == "true" ? true : false
+                break
+                case "notes:":
+                    groceryListItemStruct.notes = tokens[i+1]
+                break
+                default:
+                break
+            }
+            i += 2
+        }
+        
+        print(groceryListItemStruct)
+        
+        guard let groceryListItem = createOrReturn(name: groceryListItemStruct.name,
+                                                   cost: groceryListItemStruct.cost,
+                                                   quantity: groceryListItemStruct.quantity,
+                                                   unitOfMeasure: groceryListItemStruct.units) else {
+            return nil
+        }
+        
+        groceryListItem.update(quantity: groceryListItemStruct.quantity)
+        
+        groceryListItem.update(unitOfMeasure: groceryListItemStruct.units)
+        
+        print(groceryListItem)
+        
+        if groceryListItemStruct.isTaxable {
+            groceryListItem.update(taxable: true)
+            if groceryListItemStruct.taxablePrice > 0 {
+                groceryListItem.update(taxablePrice: groceryListItemStruct.taxablePrice)
+            }
+        }
+        
+        if groceryListItemStruct.isCRV {
+            groceryListItem.update(crv: true)
+            groceryListItem.update(crvQuantity: groceryListItemStruct.crvQuantity)
+            groceryListItem.update(crvFluidOunces: groceryListItemStruct.crvFluidOunces)
+        }
+        
+        if groceryListItemStruct.isFSA {
+            groceryListItem.update(fsa: true)
+        }
+        
+        if !groceryListItemStruct.notes.isEmpty {
+            groceryListItem.update(notes: groceryListItemStruct.notes)
+        }
+        
+        groceryListItem.calculateTotalCost()
+        
+        DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
+        
+        print(groceryListItem)
+        
+        return groceryListItem
     }
     
     class func importFile(completionHandler:@escaping ((Bool) -> Void)) {
@@ -201,13 +497,129 @@ class GroceryListItem: NSManagedObject {
             completionHandler(true)
         }
     }
+
+    func calculateTotalCost() {
+        var localTotalCost = cost.floatValue
+        
+        if isFsa.boolValue {
+            localTotalCost = 0.0
+        } else {
+            if isTaxable.boolValue {
+                if taxablePrice.floatValue > 0 {
+                    localTotalCost += taxablePrice.floatValue * 0.0775
+                } else {
+                    localTotalCost *= 1.0775
+                }
+            }
+            
+            if isCrv.boolValue {
+                localTotalCost += calculateCrvCharge()
+            }
+            
+            if ((unitOfMeasure == "ea") || (unitOfMeasure == "lb")) && quantity.doubleValue != 1 {
+                localTotalCost *= Float(quantity.doubleValue)
+            }
+        }
+        
+        totalCost = NSNumber(value: localTotalCost)
+    }
     
-    func update(quantity: Float, taxable: Bool) -> GroceryListItem {
+    func totalCostString() -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.decimal
+        formatter.roundingMode = NumberFormatter.RoundingMode.halfUp
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+
+        return "$\(formatter.string(from: totalCost)!)"
+    }
+    
+    func calculateCrvCharge() -> Float {
+        let crvCharge:Float = (crvFluidOunces.floatValue < 24.0) ? 0.05 : 0.1
+        return crvCharge * Float(crvQuantity.intValue)
+    }
+    
+    fileprivate func update(cost: Float) {
+        self.cost = NSNumber(value: cost)
+    }
+
+    fileprivate func update(unitOfMeasure: String) {
+        self.unitOfMeasure = unitOfMeasure
+    }
+
+    fileprivate func update(quantity: Float) {
         self.quantity = NSNumber(value: quantity)
+    }
+
+    fileprivate func update(bought: Bool) {
+        isBought = NSNumber(value: bought)
+    }
+
+    fileprivate func update(taxable: Bool) {
         isTaxable = NSNumber(value: taxable)
+    }
+
+    fileprivate func update(taxablePrice: Float) {
+        self.taxablePrice = NSNumber(value: taxablePrice)
+    }
+
+    fileprivate func update(fsa: Bool) {
+        isFsa = NSNumber(value: fsa)
+    }
+
+    fileprivate func update(crv: Bool) {
+        isCrv = NSNumber(value: crv)
+    }
+
+    fileprivate func update(crvQuantity: Int) {
+        self.crvQuantity = NSNumber(value: crvQuantity)
+    }
+
+    fileprivate func update(crvFluidOunces: Float) {
+        self.crvFluidOunces = NSNumber(value: crvFluidOunces)
+    }
+
+    fileprivate func update(notes: String) {
+        self.notes = notes
+    }
+
+    func createImage(image: UIImage, thumbnailSize: CGSize) -> (error: Error?, imageData: NSData?) {
         
-        DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
+        // create Data from UIImage
+        guard let imageData = UIImageJPEGRepresentation(image, 1) else {
+            Logger.logDetails(msg: "jpg error")
+            return (SRPError.jpegError, nil)
+        }
         
-        return self
+        return (nil, imageData as NSData)
+        
+    }
+    
+    func saveImage(imageData: NSData, databaseInterface: DatabaseInterface) -> Error? {
+        
+        imagePath = "\(name).jpg"
+            
+        writeImageDataToJpeg(imageData: imageData as Data)
+        
+        databaseInterface.saveContext()
+        
+        return nil
+    }
+
+    func deleteImage(databaseInterface: DatabaseInterface) -> Error? {
+
+        let fullImagePath = FileUtilities.applicationDocumentsDirectory().appendingPathComponent("\(imagePath!)")
+
+        do {
+            try FileManager.default.removeItem(at: fullImagePath)
+            
+            imagePath = nil
+            databaseInterface.saveContext()
+            
+            return nil
+        } catch let error as NSError {
+            Logger.logDetails(msg: "Error deleting image file: \(error)")
+            return error
+        }
     }
 }

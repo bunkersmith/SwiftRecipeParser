@@ -9,9 +9,8 @@
 import UIKit
 import MessageUI
 
-class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDelegate, UIAlertViewDelegate {
+class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
-    var alertView:UIAlertView = UIAlertView()
     var composeViewController:MFMailComposeViewController = MFMailComposeViewController()
     var composeMailViewControllerRequested:Bool = false
     var emailRecipeTitle:String = ""
@@ -26,7 +25,7 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        NotificationCenter.default.addObserver(self, selector:  #selector(EmailRecipeViewController.handleExitEmailLogNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.exitEmailLogScreenNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector:  #selector(EmailRecipeViewController.handleExitEmailRecipeNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.exitEmailRecipeScreenNotification"), object: nil)
         
         if composeMailViewControllerRequested {
             composeMailViewControllerRequested = false
@@ -43,14 +42,20 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
         emailRecipeTitle = recipeTitle;
     }
     
-    func handleExitEmailLogNotification(notification:NSNotification) {
+    @objc func handleExitEmailRecipeNotification(notification:NSNotification) {
+        NotificationCenter.default.removeObserver(self)
+        
         DispatchQueue.main.async {
-            self.popViewController(sender: self)
+            self.composeViewController.dismiss(animated: false, completion: nil)
+            self.dismiss(animated: false, completion: nil)
         }
     }
     
     func popViewController(sender:AnyObject) {
-        let _ = navigationController!.popViewController(animated: true)
+        guard let navigationController = navigationController else {
+            return
+        }
+        let _ = navigationController.popViewController(animated: true)
     }
     
     func requestMailComposeViewController() {
@@ -66,8 +71,10 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
         }
         else {
             // The device can not send email.
-            alertView = UIAlertView(title: "SwiftRecipeParserAlert", message:"Device not configured to send mail.", delegate: self, cancelButtonTitle: "OK")
-            alertView.show()
+            AlertUtilities.showOkButtonAlert(self, title: "SwiftRecipeParserAlert", message: "Device not configured to send mail.") { (action) in
+                self.composeViewController.dismiss(animated: false, completion: nil)
+                self.dismiss(animated: false, completion: nil)
+            }
         }
     }
     
@@ -78,7 +85,7 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
         composeViewController.setSubject("SwiftRecipeParser \(emailRecipeTitle) Recipe")
         
         // Fill out the email body text
-        emailBody = RecipeUtilities.convertRecipeNameToFormattedText(recipeName: emailRecipeTitle)
+        emailBody = Recipe.convertRecipeNameToFormattedText(emailRecipeTitle)
         composeViewController.setMessageBody(emailBody, isHTML: false)
         
         present(composeViewController, animated: false, completion: nil)
@@ -113,15 +120,9 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
         
         resultToast = IToast()
         if resultToast != nil {
-            resultToast!.showToast(alertTitle: "SwiftRecipeParser Alert", alertMessage:resultString, duration:toastDuration, completionHandler: {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SwiftRecipeParser.exitEmailLogScreenNotification"), object:self)
+            resultToast!.showToast(controller, alertTitle: "SwiftRecipeParser Alert", alertMessage:resultString, duration:toastDuration, completionHandler: {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SwiftRecipeParser.exitEmailRecipeScreenNotification"), object:self)
             })
         }
-    }
-    
-    // MARK: - UIAlertViewDelegate
-    
-    func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int) {
-        navigationController!.popViewController(animated: false)
     }
 }

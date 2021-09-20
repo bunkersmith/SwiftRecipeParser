@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Keto Biscuits</name>
+    <indexCharacter>K</indexCharacter>
+    <notes></notes>
+    <servings>10</servings>
+    <instructions>Chill your almond flour and butter in the fridge for 20 minutes in your food processor's bowl.
+
+Once chilled, pulse the almond flour and butter in your food processor until the butter has been cut in enough that it forms pea-sized pieces.
+
+Add in the baking powder and salt, pulsing once more to combine.
+
+Gradually add in the egg whites while pulsing the dough, until everything is just combined. Do not over process the dough - don't worry it will be lumpy, and that's ok.
+
+Use a cookie scoop to place the biscuits on a parchment paper lined baking sheet, then bake at 400 for 12-14 minutes, until golden brown.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>18</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Almond Flour</ingredientName>
+            <processingInstructions> chilled</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Salted Butter</ingredientName>
+            <processingInstructions> cold</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Baking Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Egg Whites</ingredientName>
+            <processingInstructions> cold</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

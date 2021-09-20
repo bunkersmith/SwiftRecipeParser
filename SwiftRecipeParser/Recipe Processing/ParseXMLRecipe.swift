@@ -41,7 +41,7 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
         super.init()
     }
     
-    func parseRecipeFromXMLData(recipeFileData:NSData,  databaseInterface:DatabaseInterface) {
+    func parseRecipeFromXMLData(recipeFileData:NSData,  databaseInterface:DatabaseInterface) -> Bool {
         let xmlparser:XMLParser = XMLParser(data: recipeFileData as Data)
         
         localDatabaseInterface = databaseInterface
@@ -53,6 +53,8 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
         if (!success) {
             Logger.logDetails(msg: "Error Error Error!!!")
         }
+        
+        return success
     }
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
@@ -204,11 +206,11 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
             case currentElementState.ingredientNameState:
             // NSLog("Ingredient Name: %@", elementValue)
                 if localDatabaseInterface != nil {
-                    let groceryItem:GroceryItem = localDatabaseInterface!.newManagedObjectOfType(managedObjectClassName: "GroceryItem") as! GroceryItem
-                    groceryItem.name = elementValue as String
+                    let recipeItem:RecipeItem = localDatabaseInterface!.newManagedObjectOfType(managedObjectClassName: "RecipeItem") as! RecipeItem
+                    recipeItem.name = elementValue as String
                     if currentIngredient != nil {
                         currentIngredient!.processingInstructions = ""
-                        currentIngredient!.ingredientItem = groceryItem
+                        currentIngredient!.ingredientItem = recipeItem
                     }
                 }
             break

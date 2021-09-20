@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Massaman Curry (Easy)</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>In a large skillet or dutch oven set over medium heat, add the oil. When the oil is hot, saute the onion until tender. Add the carrots and potatoes, cook for 5 minutes. 
+Pour in the coconut milk and chicken broth, bring mixture to a simmer. Add peanut butter, brown sugar, lime juice, fish sauce and curry pastes, mix to combine. Let the potatoes and carrots simmer for 10 minutes, then add the sliced meat. Continue cooking for an additional 10-15 minutes or until the vegetables are tender and the meat is fully cooked. 
+Remove from the heat, serve over freshly cooked white or brown rice. Garnish with additional peanuts, sliced lime and thai basil, if desired.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>coconut oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>yellow onion</ingredientName>
+            <processingInstructions> diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>russet potatoes</ingredientName>
+            <processingInstructions> peeled and cut into 1/2-inch cubes</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>carrots</ingredientName>
+            <processingInstructions> peeled and sliced into 1/8-inch thick slices </processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cauliflower</ingredientName>
+            <processingInstructions> pureed in coconut milk</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>27</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>coconut milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>low-sodium chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>smooth peanut butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>fish sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>red curry paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>can</unitOfMeasure>
+            <ingredientName>massaman curry</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>meat</ingredientName>
+            <processingInstructions> thinly sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>chopped roasted peanuts</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
