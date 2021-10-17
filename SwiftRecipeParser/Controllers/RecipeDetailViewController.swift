@@ -105,7 +105,8 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
                     groceryListItems.append(GroceryListItem.createOrReturn(name: ingredient.ingredientItem.name,
                                                                            cost: 0.0,
                                                                            quantity: ingredient.quantity.floatValue,
-                                                                           unitOfMeasure: ingredient.unitOfMeasure)!)
+                                                                           unitOfMeasure: ingredient.unitOfMeasure,
+                                                                           databaseInterface: nil)!)
                 }
                 
                 GroceryList.addItemsToCurrent(items: groceryListItems)

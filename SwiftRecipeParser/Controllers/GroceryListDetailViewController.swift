@@ -165,7 +165,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                 }
                 let lines = pasteboardString.components(separatedBy: CharacterSet.newlines)
                 for line in lines {
-                    if let groceryListItem = GroceryListItem.parseGroceryListItemString(string: line) {
+                    if let groceryListItem = GroceryListItem.parseGroceryListItemString(string: line, databaseInterface: nil) {
                         groceryList.addItem(item: groceryListItem,
                                             itemQuantity: groceryListItem.quantity.floatValue,
                                             itemUnits: groceryListItem.unitOfMeasure,

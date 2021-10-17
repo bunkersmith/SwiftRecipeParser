@@ -70,7 +70,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     @IBAction func addItemButtonPressed(_ sender: Any) {
         if let nameTextFieldText = returnNameTextFieldText() {
             fetchedResultsController = nil
-            if let groceryListItem = GroceryListItem.createOrReturn(name: nameTextFieldText, cost: 0.0, quantity: 1.0, unitOfMeasure: "ea") {
+            if let groceryListItem = GroceryListItem.createOrReturn(name: nameTextFieldText, cost: 0.0, quantity: 1.0, unitOfMeasure: "ea", databaseInterface: nil) {
                 delegate?.groceryListItemAdded(groceryListItem: groceryListItem)
             }
 
@@ -81,7 +81,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     @IBAction func addAndBuyItemButtonPressed(_ sender: Any) {
         if let nameTextFieldText = returnNameTextFieldText() {
             fetchedResultsController = nil
-            if let groceryListItem = GroceryListItem.createOrReturn(name: nameTextFieldText, cost: 0.0, quantity: 1.0, unitOfMeasure: "ea") {
+            if let groceryListItem = GroceryListItem.createOrReturn(name: nameTextFieldText, cost: 0.0, quantity: 1.0, unitOfMeasure: "ea", databaseInterface: nil) {
                 delegate?.groceryListItemAddedAndBought(groceryListItem: groceryListItem)
             }
 

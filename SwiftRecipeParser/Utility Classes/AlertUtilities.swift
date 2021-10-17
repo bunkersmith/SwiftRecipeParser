@@ -105,7 +105,8 @@ class AlertUtilities {
                 guard let groceryListItem = GroceryListItem.createOrReturn(name: selectedIngredient.ingredientItem.name,
                                                                            cost: 0.0, quantity:
                                                                            selectedIngredient.quantity.floatValue,
-                                                                           unitOfMeasure: selectedIngredient.unitOfMeasure) else {
+                                                                           unitOfMeasure: selectedIngredient.unitOfMeasure,
+                                                                           databaseInterface: nil) else {
                     return
                 }
 

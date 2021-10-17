@@ -175,14 +175,22 @@ class GroceryListItem: NSManagedObject {
         return nil
     }
 
-    class func createOrReturn(name: String, cost: Float, quantity: Float, unitOfMeasure: String) -> GroceryListItem? {
-        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+    class func createOrReturn(name: String, cost: Float, quantity: Float, unitOfMeasure: String, databaseInterface: DatabaseInterface?) -> GroceryListItem? {
+        var localDatabaseInterface: DatabaseInterface
         
-        let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "name MATCHES %@", name))
+        if databaseInterface == nil {
+            localDatabaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        } else {
+            localDatabaseInterface = databaseInterface!
+        }
+        
+        let localName = name.trimmingCharacters(in: .whitespaces)
+        
+        let groceryListItems = localDatabaseInterface.entitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "name MATCHES %@", localName))
         
         if groceryListItems.count == 0 {
             //Logger.logDetails(msg: "Returning created item")
-            return create(name: name, cost: cost, quantity: quantity, unitOfMeasure: unitOfMeasure)
+            return create(name: localName, cost: cost, quantity: quantity, unitOfMeasure: unitOfMeasure)
         }
         
         if groceryListItems.count >= 1 {
@@ -193,7 +201,7 @@ class GroceryListItem: NSManagedObject {
                     groceryListItem.cost = NSNumber(value: cost)
                 }
                 groceryListItem.quantity = NSNumber(value: quantity)
-                databaseInterface.saveContext()
+                localDatabaseInterface.saveContext()
                 
                 return groceryListItem
             }
@@ -207,7 +215,6 @@ class GroceryListItem: NSManagedObject {
         
         let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem") { inputFetchRequest in
             let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
-            inputFetchRequest.propertiesToFetch = ["name", "cost"]
             inputFetchRequest.sortDescriptors = [sortDescriptor]
             
             return inputFetchRequest
@@ -303,7 +310,7 @@ class GroceryListItem: NSManagedObject {
     }
     
     class func addItemToString(groceryListItem:GroceryListItem, string: String) -> String {
-        let itemString = "\(groceryListItem.name)\t\(groceryListItem.cost)\t\(groceryListItem.quantity)\t\(groceryListItem.unitOfMeasure)"
+        let itemString = groceryListItem.convertToShortOneLineString().trimmingCharacters(in: .newlines) + "\timagePath:\(groceryListItem.imagePath ?? "")"
         
         return "\(string)\n\(itemString)"
     }
@@ -345,7 +352,15 @@ class GroceryListItem: NSManagedObject {
         return returnValue
     }
 
-    class func parseGroceryListItemString(string: String) -> GroceryListItem? {
+    class func parseGroceryListItemString(string: String, databaseInterface: DatabaseInterface?) -> GroceryListItem? {
+        
+        var localDatabaseInterface: DatabaseInterface
+        
+        if databaseInterface == nil {
+            localDatabaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        } else {
+            localDatabaseInterface = databaseInterface!
+        }
         
         let tokens = string.components(separatedBy: "\t")
         
@@ -410,7 +425,8 @@ class GroceryListItem: NSManagedObject {
         guard let groceryListItem = createOrReturn(name: groceryListItemStruct.name,
                                                    cost: groceryListItemStruct.cost,
                                                    quantity: groceryListItemStruct.quantity,
-                                                   unitOfMeasure: groceryListItemStruct.units) else {
+                                                   unitOfMeasure: groceryListItemStruct.units,
+                                                   databaseInterface: localDatabaseInterface) else {
             return nil
         }
         
@@ -482,9 +498,27 @@ class GroceryListItem: NSManagedObject {
                     }
                 }
                 
-                // FIX THIS TO IMPORT THE quantity and unitOfMeasure values from the file
-                
-                if createOrReturn(name: itemName, cost: itemCost, quantity: 1, unitOfMeasure: "ea") == nil {
+/*
+ 
+ BEFORE PROCEEDING WITH THE DATABASE CHANGE, FINISH THIS CODE (TO SAVE ALL THE ATTRIBUTES BY CALLING parseGroceryListItemString)!
+ TEST BY IMPORTING ONE ITEM BEFORE BLOWING EVERYTHING AWAY.
+ 
+ \(groceryListItem.name)
+ \(groceryListItem.cost)
+ \(groceryListItem.unitOfMeasure)
+ \(groceryListItem.quantity)
+ \(groceryListItem.isTaxable)
+ \(groceryListItem.taxablePrice)
+ \(groceryListItem.isFsa)
+ \(groceryListItem.isCrv)
+ \(groceryListItem.crvQuantity)
+ \(groceryListItem.crvFluidOunces)
+ \(groceryListItem.notes)
+ 
+ \(groceryListItem.photoPath)
+
+*/
+                if createOrReturn(name: itemName, cost: itemCost, quantity: 1, unitOfMeasure: "ea", databaseInterface: databaseInterface) == nil {
                     Logger.logDetails(msg: "Creation of grocery list item named \(itemName) with cost \(itemCost) failed!")
                     
                     completionHandler(false)

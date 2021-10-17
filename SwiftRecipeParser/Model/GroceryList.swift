@@ -298,7 +298,7 @@ class GroceryList: NSManagedObject {
         
         Logger.logDetails(msg: "\(groceryList)")
         
-        guard let groceryListItem = GroceryListItem.createOrReturn(name: itemName, cost: 0.0, quantity: quantity, unitOfMeasure: unitOfMeasure) else {
+        guard let groceryListItem = GroceryListItem.createOrReturn(name: itemName, cost: 0.0, quantity: quantity, unitOfMeasure: unitOfMeasure, databaseInterface: nil) else {
             return
         }
         
