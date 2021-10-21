@@ -89,18 +89,18 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         }
     }
     
-    /*
     @IBAction func importFileButtonPressed(_ sender: Any) {
-        GroceryListItem.importFile { (isSuccessful) in
-            if !isSuccessful {
-                DispatchQueue.main.async {
-                    AlertUtilities.showOkButtonAlert(self, title: "Error alert", message:"File import failed", buttonHandler: nil)
-                    Logger.logDetails(msg: "File import failed")
+        AlertUtilities.showYesNoAlert(viewController: self, title: "Import Alert", message: "ARE YOU SURE you want to import all the Grocery List Items from the iCloud file?", yesButtonHandler: { action in
+                GroceryListItem.importFile { (isSuccessful) in
+                    if !isSuccessful {
+                        DispatchQueue.main.async {
+                            AlertUtilities.showOkButtonAlert(self, title: "Error alert", message:"File import failed", buttonHandler: nil)
+                            Logger.logDetails(msg: "File import failed")
+                        }
+                    }
                 }
-            }
-        }
+        }, noButtonHandler: nil)
     }
-*/
     
     // MARK: - Table View
     
@@ -198,14 +198,4 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

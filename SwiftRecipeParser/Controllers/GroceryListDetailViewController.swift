@@ -9,12 +9,13 @@
 import UIKit
 import CoreData
 
-class GroceryListDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,
+class GroceryListDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate,
                                        AddGroceryListItemDelegate, ModifyGroceryListItemDelegate, GroceryListSelectionDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var totalCostLabel: UILabel!
     @IBOutlet weak var projectedCostLabel: UILabel!
+    @IBOutlet weak var boughtSwitch: UISwitch!
     @IBOutlet weak var clearAllItemsButton: UIButton!
     
     fileprivate var textFieldBottom: CGFloat = 0.0
@@ -24,7 +25,12 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     fileprivate var addedAndBoughtGroceryListItem:GroceryListItem? = nil
 
     var groceryList:GroceryList!
+    lazy private var databaseInterface:DatabaseInterface = {
+        return DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        }()
     
+    var fetchedResultsController:NSFetchedResultsController<NSFetchRequestResult>!
+
     var titleViewButton:UIButton!
     
     override func encodeRestorableState(with aCoder: NSCoder) {
@@ -41,6 +47,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        createFetchedResultsController(onlyUnbought: false)
+        
         titleViewButton = UIButton(type: .system)
         // Tell the titleViewButton to NOT use its frame for sizing purposes
         titleViewButton.translatesAutoresizingMaskIntoConstraints = false
@@ -73,7 +81,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     
     func viewControllerInit() {
         
-        tableView.reloadData()
+        createFetchedResultsController(onlyUnbought: !boughtSwitch.isOn)
+        
         titleViewButton.setTitle(groceryList.name, for: .normal)
         updateCostLabels()
         
@@ -88,6 +97,20 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         }
     }
 
+    func createFetchedResultsController(onlyUnbought: Bool) {
+
+        let formatString = onlyUnbought ? "inGroceryList.name MATCHES %@ AND isBought == NO" : "inGroceryList.name MATCHES %@"
+        
+        let predicate = NSPredicate(format: formatString, groceryList.name)
+        
+        fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "GroceryListItem", sortKey: nil, secondarySortKey: nil, sectionNameKeyPath: nil, predicate: predicate)
+        
+        if fetchedResultsController != nil {
+            fetchedResultsController.delegate = self
+            tableView.reloadData()
+        }
+    }
+    
     @objc func titleViewTapped(sender: Any) {
         showSelectGroceryListViewController(groceryListItem: nil)
     }
@@ -187,7 +210,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             self.updateCostLabels()
             self.totalCostLabel.text = "Total Cost: $0.00"
             self.projectedCostLabel.text = "Projected Cost: $0.00"
-            self.tableView.reloadData()
+            self.createFetchedResultsController(onlyUnbought: false)
         }, noButtonHandler: nil)
     }
     
@@ -197,14 +220,15 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             return
         }
         
-        guard let itemToBuy:GroceryListItem = groceryList.hasItems[indexPath.row] as? GroceryListItem else {
+        guard let itemToBuy = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem else {
             return
         }
         
         if itemToBuy.isBought.boolValue {
             AlertUtilities.showYesNoAlert(viewController: self, title: "Do you want to return \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
                 
-                (self.groceryList.hasItems[indexPath.row] as! GroceryListItem).isBought = NSNumber(value: false)
+//                (self.groceryList.hasItems[indexPath.row] as! GroceryListItem).isBought = NSNumber(value: false)
+                itemToBuy.isBought = NSNumber(value: false)
                 self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.updateAndReturnTotalCost())
                 
                 self.tableView.reloadData()
@@ -223,7 +247,13 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             }
         }
     }
-
+    
+    @IBAction func boughtSwitchValueChanged(_ sender: UISwitch) {
+        // Switch false, show only unbought
+        // Switch true, show all
+        createFetchedResultsController(onlyUnbought: !sender.isOn)
+    }
+    
     // MARK: - Segues
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -240,9 +270,11 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                 return
             }
             
-            let glItem = groceryList.hasItems.object(at:selectedRowIndexPath.row) as! GroceryListItem
+            guard let groceryListItem = self.fetchedResultsController.object(at: selectedRowIndexPath) as? GroceryListItem else {
+                return
+            }
                             
-            modifyViewController.groceryListItem = glItem
+            modifyViewController.groceryListItem = groceryListItem
             modifyViewController.indexPath = selectedRowIndexPath
                 
             modifyViewController.delegate = self
@@ -259,36 +291,31 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     // MARK: - Table View
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return self.fetchedResultsController.sections?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard groceryList != nil else {
-            return 0
-        }
-        return groceryList.hasItems.count
+        let sectionInfo = self.fetchedResultsController.sections![section]
+//              Logger.logDetails(msg: "Returning \(sectionInfo.numberOfObjects) for section \(section)")
+        return sectionInfo.numberOfObjects
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroceryListItemCell", for: indexPath)
-        
-        guard let groceryListItemCell = cell as? GroceryListItemTableViewCell else {
-            return cell
+        self.configureCell(cell: cell, atIndexPath: indexPath)
+/*
+        if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
+            print("Name is '\(groceryListItemCell.nameLabel.text ?? "none")' for row at indexPath \(indexPath)")
         }
-        
-        guard let groceryListItem = groceryList.hasItems[indexPath.row] as? GroceryListItem else {
-            return cell
-        }
-        
-        groceryListItemCell.configure(item:groceryListItem)
-        
-        return groceryListItemCell
+*/
+        return cell
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            if let itemToPutBack = groceryList.hasItems[indexPath.row] as? GroceryListItem {
-                removeGroceryListItem(groceryList: groceryList, groceryListItem: itemToPutBack)
+            if let itemToDelete = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+                removeGroceryListItem(groceryList: groceryList, groceryListItem: itemToDelete)
+                tableView.reloadData()
             }
         }
     }
@@ -316,7 +343,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         if sender.state == UIGestureRecognizer.State.began {
             let touchPoint = sender.location(in: tableView)
             if let indexPath = tableView.indexPathForRow(at: touchPoint) {
-                guard let groceryListItem = groceryList.hasItems[indexPath.row] as? GroceryListItem else {
+                guard let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem else {
                     return
                 }
 
@@ -352,6 +379,51 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             self.groceryList = groceryList
             GroceryList.setCurrentGroceryList(groceryListName: groceryList.name)
             viewControllerInit()
+        }
+    }
+    
+    // MARK: - Fetched results controller
+    
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    func controller(controller: NSFetchedResultsController<NSFetchRequestResult>, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
+        switch type {
+        case .insert:
+            tableView.insertSections(NSIndexSet(index: sectionIndex) as IndexSet, with: .fade)
+        case .delete:
+            tableView.deleteSections(NSIndexSet(index: sectionIndex) as IndexSet, with: .fade)
+        default:
+            return
+        }
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch type {
+        case .insert:
+            tableView.insertRows(at: [newIndexPath!], with: .fade)
+        case .delete:
+            tableView.deleteRows(at: [indexPath!], with: .fade)
+        case .update:
+            configureCell(cell: tableView.cellForRow(at: indexPath!)!, atIndexPath: indexPath!)
+        case .move:
+            tableView.deleteRows(at: [indexPath!], with: .fade)
+            tableView.insertRows(at: [newIndexPath!], with: .fade)
+        }
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
+    }
+    
+    func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) {
+        guard let groceryListItemCell = cell as? GroceryListItemTableViewCell else {
+            return
+        }
+        
+        if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+            groceryListItemCell.configure(item:groceryListItem)
         }
     }
 }

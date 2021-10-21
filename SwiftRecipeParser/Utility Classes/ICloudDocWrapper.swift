@@ -55,7 +55,7 @@ class ICloudDocWrapper: NSObject {
         })
     }
     
-    func readDocText(completionHandler: @escaping (DocResult, String?) -> ()) {
+    func readTextFromDoc(completionHandler: @escaping (DocResult, String?) -> ()) {
         Logger.logDetails(msg: "documentURL: \(String(describing: documentURL))")
         
         openOrCreateDoc { (docResult) in
@@ -75,6 +75,8 @@ class ICloudDocWrapper: NSObject {
     func writeTextToDoc(text:String, completionHandler: @escaping (DocResult) -> ()) {
         Logger.logDetails(msg: "documentURL: \(String(describing: documentURL))")
         
+        var startTime = MillisecondTimer.currentTickCount()
+        
         openOrCreateDoc { (docResult) in
             if docResult == .docError {
                 completionHandler(docResult)
@@ -84,9 +86,19 @@ class ICloudDocWrapper: NSObject {
                     return
                 }
                 
+                Logger.logDetails(msg: "Document open time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+                startTime = MillisecondTimer.currentTickCount()
+
                 document.docText = text
                 
-                self.saveDoc(saveOp: .forOverwriting, completionHandler: completionHandler)
+                Logger.logDetails(msg: "Text write time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+                startTime = MillisecondTimer.currentTickCount()
+
+                self.saveDoc(saveOp: .forOverwriting) { docResult in
+                    Logger.logDetails(msg: "Document save time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+
+                    completionHandler(docResult)
+                }
              }
         }
     }

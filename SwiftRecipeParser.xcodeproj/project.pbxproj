@@ -16,6 +16,8 @@
 		671045211EFCF7810013EF27 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671045201EFCF7810013EF27 /* EmailViewController.swift */; };
 		671045231EFCFAFD0013EF27 /* AlertUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671045221EFCFAFD0013EF27 /* AlertUtilities.swift */; };
 		671045251EFCFB130013EF27 /* ObjectToStringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671045241EFCFB130013EF27 /* ObjectToStringUtilities.swift */; };
+		6714B324272003250069B5E3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6714B323272003250069B5E3 /* CloudKit.framework */; };
+		6714B326272006A10069B5E3 /* CloudGroceryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6714B325272006A10069B5E3 /* CloudGroceryListItem.swift */; };
 		671953491B4B4198000A9863 /* MillisecondTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671953481B4B4198000A9863 /* MillisecondTimer.swift */; };
 		6719534E1B4B6558000A9863 /* RecipeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6719534D1B4B6558000A9863 /* RecipeTitle.swift */; };
 		671953521B4B6558000A9863 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671953511B4B6558000A9863 /* GroceryList.swift */; };
@@ -67,6 +69,7 @@
 		679ED45519839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */; };
 		67A8B3601FC124E8009E44EF /* GroceryItemPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */; };
 		67B2DD5A26184BF100B8C0E8 /* SelectGroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */; };
+		67B5AACA27200D7600505DB3 /* CKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5AAC927200D7500505DB3 /* CKModel.swift */; };
 		67B630BD25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B630BB25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift */; };
 		67B630BE25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B630BC25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift */; };
 		67B82AC91985E3F000344AE3 /* RecipeFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82AC81985E3F000344AE3 /* RecipeFiles.swift */; };
@@ -105,6 +108,8 @@
 		671045201EFCF7810013EF27 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		671045221EFCFAFD0013EF27 /* AlertUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtilities.swift; sourceTree = "<group>"; };
 		671045241EFCFB130013EF27 /* ObjectToStringUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectToStringUtilities.swift; sourceTree = "<group>"; };
+		6714B323272003250069B5E3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		6714B325272006A10069B5E3 /* CloudGroceryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGroceryListItem.swift; sourceTree = "<group>"; };
 		671953481B4B4198000A9863 /* MillisecondTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MillisecondTimer.swift; sourceTree = "<group>"; };
 		6719534A1B4B6464000A9863 /* SwiftRecipeParser1.7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.7.xcdatamodel; sourceTree = "<group>"; };
 		6719534D1B4B6558000A9863 /* RecipeTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTitle.swift; sourceTree = "<group>"; };
@@ -175,6 +180,7 @@
 		67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemPhotoViewController.swift; sourceTree = "<group>"; };
 		67ABA5A52622D25E00553773 /* SwiftRecipeParser1.25.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.25.xcdatamodel; sourceTree = "<group>"; };
 		67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroceryListViewController.swift; sourceTree = "<group>"; };
+		67B5AAC927200D7500505DB3 /* CKModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKModel.swift; sourceTree = "<group>"; };
 		67B630B825B03BA100CDD4B2 /* SwiftRecipeParser1.20.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.20.xcdatamodel; sourceTree = "<group>"; };
 		67B630BB25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		67B630BC25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -198,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6714B324272003250069B5E3 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +218,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6714B322272003250069B5E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6714B323272003250069B5E3 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		673A050A26A41A3D00C71F21 /* Reusable View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +266,7 @@
 				679ED42A19839DA300E22DDB /* SwiftRecipeParser */,
 				679ED43F19839DA300E22DDB /* Info.plist */,
 				679ED42919839DA300E22DDB /* Products */,
+				6714B322272003250069B5E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */,
+				67B5AAC927200D7500505DB3 /* CKModel.swift */,
 				671953511B4B6558000A9863 /* GroceryList.swift */,
 				6719535C1B4C9315000A9863 /* GroceryListItem.swift */,
 				671953551B4B6558000A9863 /* Ingredient.swift */,
@@ -307,6 +324,7 @@
 				67B630BB25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift */,
 				6719534D1B4B6558000A9863 /* RecipeTitle.swift */,
 				67B630BC25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift */,
+				6714B325272006A10069B5E3 /* CloudGroceryListItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -553,6 +571,7 @@
 				67F1F0551F563F8800D4442F /* UIImage+Helpers.swift in Sources */,
 				671953541B4B6558000A9863 /* Recipe.swift in Sources */,
 				673302731C077D830074DD8F /* ThanksgivingRecipeCell.swift in Sources */,
+				6714B326272006A10069B5E3 /* CloudGroceryListItem.swift in Sources */,
 				673A050E26A41D1400C71F21 /* AlertDialogViewController.swift in Sources */,
 				6791A2091EEB8DFC007CAE2D /* Extensions.swift in Sources */,
 				67207C891F579BFD00AEFB83 /* SRPError.swift in Sources */,
@@ -567,6 +586,7 @@
 				672BF40B1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift in Sources */,
 				6780F8642650DFDB00CA950E /* CheckBox.swift in Sources */,
 				67C06A47262048BE00D0DDEA /* GroceryListTableViewCell.swift in Sources */,
+				67B5AACA27200D7600505DB3 /* CKModel.swift in Sources */,
 				673BD00A1983B24400D8D2AC /* RecipeMasterTableViewController.swift in Sources */,
 				672705AD1F47DEB500A5ECDE /* RecipeMasterTableViewController+CameraAuth.swift in Sources */,
 				6743DAC61E20E21800FF76C8 /* Logger.swift in Sources */,

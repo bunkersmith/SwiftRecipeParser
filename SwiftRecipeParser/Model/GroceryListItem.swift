@@ -22,6 +22,7 @@ struct GroceryListItemStruct: CustomStringConvertible {
     var crvFluidOunces: Float
     var isFSA: Bool
     var notes: String
+    var imagePath: String
     
     public init(name: String,
                 quantity: Float,
@@ -33,7 +34,8 @@ struct GroceryListItemStruct: CustomStringConvertible {
                 crvQuantity: Int,
                 crvFluidOunces: Float,
                 isFSA: Bool,
-                notes: String) {
+                notes: String,
+                imagePath: String) {
         self.name = name
         self.quantity = quantity
         self.cost = cost
@@ -45,6 +47,7 @@ struct GroceryListItemStruct: CustomStringConvertible {
         self.crvFluidOunces = crvFluidOunces
         self.isFSA = isFSA
         self.notes = notes
+        self.imagePath = imagePath
     }
     
     var description: String {
@@ -71,6 +74,9 @@ struct GroceryListItemStruct: CustomStringConvertible {
         }
         if !notes.isEmpty {
             returnValue += "\nnotes = \(notes)"
+        }
+        if !imagePath.isEmpty {
+            returnValue += "\nimagePath = \(imagePath)"
         }
         
         return returnValue
@@ -213,12 +219,18 @@ class GroceryListItem: NSManagedObject {
     class func logAll() {
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
+        var startTime = MillisecondTimer.currentTickCount()
+        
         let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem") { inputFetchRequest in
             let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
             inputFetchRequest.sortDescriptors = [sortDescriptor]
             
             return inputFetchRequest
         } as? Array<GroceryListItem>
+
+        Logger.logDetails(msg: "Fetch request time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+        
+        startTime = MillisecondTimer.currentTickCount()
         
         if groceryListItems != nil {
             Logger.logDetails(msg: "Count of groceryListItems = \(groceryListItems!.count)")
@@ -229,6 +241,8 @@ class GroceryListItem: NSManagedObject {
                 itemsString = addItemToString(groceryListItem: item, string: itemsString)
             }
             
+            Logger.logDetails(msg: "String build time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+
             writeItemsToICloudFile(itemsString: itemsString)
         }
     }
@@ -317,10 +331,12 @@ class GroceryListItem: NSManagedObject {
     
     class func writeItemsToICloudFile(itemsString: String) {
         
+        let startTime = MillisecondTimer.currentTickCount()
+        
         let icDocWrapper = ICloudDocWrapper(filename: FileUtilities.iCloudGroceryListItemsFileName())
         
         icDocWrapper.writeTextToDoc(text: itemsString) { (docResult) in
-            Logger.logDetails(msg: "docResult = \(docResult)")
+            Logger.logDetails(msg: "docResult = \(docResult) in \(MillisecondTimer.secondsSince(startTime: startTime)) seconds ")
         }
         
     }
@@ -376,7 +392,8 @@ class GroceryListItem: NSManagedObject {
                                                           crvQuantity: 0,
                                                           crvFluidOunces: 0,
                                                           isFSA: false,
-                                                          notes: "")
+                                                          notes: "",
+                                                          imagePath: "")
         
         while i < tokens.count {
             
@@ -413,6 +430,9 @@ class GroceryListItem: NSManagedObject {
                 break
                 case "notes:":
                     groceryListItemStruct.notes = tokens[i+1]
+                break
+                case "imagePath:":
+                    groceryListItemStruct.imagePath = tokens[i+1]
                 break
                 default:
                 break
@@ -457,6 +477,10 @@ class GroceryListItem: NSManagedObject {
             groceryListItem.update(notes: groceryListItemStruct.notes)
         }
         
+        if !groceryListItemStruct.imagePath.isEmpty {
+            groceryListItem.update(imagePath: groceryListItemStruct.imagePath)
+        }
+
         groceryListItem.calculateTotalCost()
         
         DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
@@ -467,6 +491,33 @@ class GroceryListItem: NSManagedObject {
     }
     
     class func importFile(completionHandler:@escaping ((Bool) -> Void)) {
+        
+        let startTime = MillisecondTimer.currentTickCount()
+        
+        let icDocWrapper = ICloudDocWrapper(filename: FileUtilities.iCloudGroceryListItemsFileName())
+
+        icDocWrapper.readTextFromDoc { docResult, importFileLines in
+            Logger.logDetails(msg: "readTextFromDoc time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+            
+            guard docResult != .docError else {
+                Logger.logDetails(msg: "readTextFromDoc returned docError")
+                return
+            }
+            
+            guard let importFileLines = importFileLines else {
+                Logger.logDetails(msg: "readTextFromDoc returned a nil string")
+                return
+            }
+
+            print(importFileLines)
+        }
+//        icDocWrapper.writeTextToDoc(text: itemsString) { (docResult) in
+//            Logger.logDetails(msg: "docResult = \(docResult) in \(MillisecondTimer.secondsSince(startTime: startTime)) seconds ")
+//        }
+
+/*
+        writetexttodoc
+ 
         let textFile = ProcessTextFile(fileName: FileUtilities.groceryListItemsFilePath())
         
         guard textFile.open() else {
@@ -485,42 +536,9 @@ class GroceryListItem: NSManagedObject {
         databaseInterface.performInBackground {
             
             for line in importFileLines {
-                //NSLog("Line: \"\(line)\"")
-                let components = line.components(separatedBy: "\t")
                 
-                //NSLog("Components: \(components)")
-                let itemName = components[0]
-                var itemCost:Float = 0.0
-                
-                if components.count >= 2 {
-                    if let costNumber = NumberFormatter().number(from: components[1]) {
-                        itemCost = costNumber.floatValue
-                    }
-                }
-                
-/*
- 
- BEFORE PROCEEDING WITH THE DATABASE CHANGE, FINISH THIS CODE (TO SAVE ALL THE ATTRIBUTES BY CALLING parseGroceryListItemString)!
- TEST BY IMPORTING ONE ITEM BEFORE BLOWING EVERYTHING AWAY.
- 
- \(groceryListItem.name)
- \(groceryListItem.cost)
- \(groceryListItem.unitOfMeasure)
- \(groceryListItem.quantity)
- \(groceryListItem.isTaxable)
- \(groceryListItem.taxablePrice)
- \(groceryListItem.isFsa)
- \(groceryListItem.isCrv)
- \(groceryListItem.crvQuantity)
- \(groceryListItem.crvFluidOunces)
- \(groceryListItem.notes)
- 
- \(groceryListItem.photoPath)
-
-*/
-                if createOrReturn(name: itemName, cost: itemCost, quantity: 1, unitOfMeasure: "ea", databaseInterface: databaseInterface) == nil {
-                    Logger.logDetails(msg: "Creation of grocery list item named \(itemName) with cost \(itemCost) failed!")
-                    
+                if GroceryListItem.parseGroceryListItemString(string: line, databaseInterface: databaseInterface) == nil {
+                    Logger.logDetails(msg: "Error creating GroceryListItem from line: " + "\n\(line)")
                     completionHandler(false)
                     return
                 }
@@ -530,6 +548,7 @@ class GroceryListItem: NSManagedObject {
             
             completionHandler(true)
         }
+*/
     }
 
     func calculateTotalCost() {
@@ -615,6 +634,10 @@ class GroceryListItem: NSManagedObject {
 
     fileprivate func update(notes: String) {
         self.notes = notes
+    }
+
+    fileprivate func update(imagePath: String) {
+        self.imagePath = imagePath
     }
 
     func createImage(image: UIImage, thumbnailSize: CGSize) -> (error: Error?, imageData: NSData?) {
