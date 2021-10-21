@@ -75,13 +75,13 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 
         tableView.tableHeaderView = UIView(frame: searchHeaderViewController!.view.frame /*CGRectMake(0.0, 0.0, 600.0, 108.0)*/)
         tableView.tableHeaderView?.addSubview(searchHeaderViewController!.view)
-
-        hideSearchBar(nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+
+        hideSearchBar(searchHeaderViewController?.searchBar)
+
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
         let items = GroceryListItem.fetchAll()
@@ -226,6 +226,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     func hideSearchBar(_ searchBar: UISearchBar?) {
         searchBar?.resignFirstResponder()
+        
+        Logger.logDetails(msg: "searchBar == nil: \(searchBar == nil), self.tableView.contentOffset: \(self.tableView.contentOffset)")
         
         if self.tableView.contentOffset == CGPoint(x: 0.0, y: 0.0) {
             DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10)) {

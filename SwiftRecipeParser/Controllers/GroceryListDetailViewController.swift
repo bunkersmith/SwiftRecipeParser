@@ -47,6 +47,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tabBarController?.tabBar.isHidden = true
+        
         createFetchedResultsController(onlyUnbought: false)
         
         titleViewButton = UIButton(type: .system)

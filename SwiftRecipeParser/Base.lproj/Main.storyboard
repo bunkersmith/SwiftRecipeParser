@@ -324,7 +324,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WG3-GO-iOe">
                                 <rect key="frame" x="170.66666666666666" y="110" width="51" height="31"/>
                                 <connections>
-                                    <action selector="boughtSwitchValueChanged:" destination="Aem-yq-cyd" eventType="valueChanged" id="vEP-vU-LNr"/>
+                                    <action selector="boughtSwitchValueChanged:" destination="Aem-yq-cyd" eventType="valueChanged" id="d2v-wF-B36"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-8p-Tdn">
@@ -367,7 +367,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="G3t-Wr-TnD">
-                                <rect key="frame" x="0.0" y="226" width="390" height="486"/>
+                                <rect key="frame" x="0.0" y="226" width="390" height="618"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <prototypes>
@@ -459,12 +459,12 @@
                             <constraint firstItem="pP7-dW-zbZ" firstAttribute="top" secondItem="6me-gb-KOJ" secondAttribute="bottom" constant="7" id="BGP-K8-8wf"/>
                             <constraint firstItem="WG3-GO-iOe" firstAttribute="centerX" secondItem="UUF-6S-cil" secondAttribute="centerX" id="DvE-QJ-53W"/>
                             <constraint firstItem="G3t-Wr-TnD" firstAttribute="leading" secondItem="UUF-6S-cil" secondAttribute="leading" id="F1a-GL-cYp"/>
+                            <constraint firstItem="WG3-GO-iOe" firstAttribute="top" secondItem="T3d-l3-Xs0" secondAttribute="bottom" constant="22" id="GYN-nH-QcF"/>
                             <constraint firstItem="GcM-8p-Tdn" firstAttribute="leading" secondItem="WG3-GO-iOe" secondAttribute="trailing" constant="16" id="RA6-61-TLU"/>
                             <constraint firstItem="GcM-8p-Tdn" firstAttribute="centerY" secondItem="WG3-GO-iOe" secondAttribute="centerY" id="Yon-UR-GkG"/>
-                            <constraint firstAttribute="bottom" secondItem="G3t-Wr-TnD" secondAttribute="bottom" id="ZNM-Fj-oKj"/>
+                            <constraint firstAttribute="bottom" secondItem="G3t-Wr-TnD" secondAttribute="bottom" constant="-132" id="ZNM-Fj-oKj"/>
                             <constraint firstItem="6me-gb-KOJ" firstAttribute="leading" secondItem="UUF-6S-cil" secondAttribute="leading" constant="8" id="arA-Q0-e5I"/>
                             <constraint firstAttribute="trailing" secondItem="MYK-pN-alv" secondAttribute="trailing" constant="8" id="bdh-kM-lX5"/>
-                            <constraint firstItem="WG3-GO-iOe" firstAttribute="top" secondItem="T3d-l3-Xs0" secondAttribute="bottom" constant="22" id="luL-uq-9TY"/>
                             <constraint firstItem="yIK-wb-eh2" firstAttribute="centerY" secondItem="WG3-GO-iOe" secondAttribute="centerY" id="nNc-ac-we5"/>
                             <constraint firstItem="WG3-GO-iOe" firstAttribute="leading" secondItem="yIK-wb-eh2" secondAttribute="trailing" constant="16" id="qYH-s7-UvW"/>
                             <constraint firstItem="pP7-dW-zbZ" firstAttribute="leading" secondItem="6me-gb-KOJ" secondAttribute="leading" id="ytS-ZP-GQ7"/>
@@ -493,7 +493,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="boughtSwitch" destination="WG3-GO-iOe" id="8ai-bU-TfI"/>
+                        <outlet property="boughtSwitch" destination="WG3-GO-iOe" id="wom-so-NW3"/>
                         <outlet property="clearAllItemsButton" destination="MYK-pN-alv" id="OvV-CC-zNE"/>
                         <outlet property="projectedCostLabel" destination="pP7-dW-zbZ" id="5RM-Zt-m7E"/>
                         <outlet property="tableView" destination="G3t-Wr-TnD" id="Xiy-Qs-1vY"/>
