@@ -30,10 +30,6 @@ class FileUtilities {
         return fileNameString
     }
     
-    class func iCloudGroceryListItemsFileName() -> String {
-        return "SwiftRecipeParser-iCloudGroceryListItems.txt"
-    }
-    
     class func groceryListItemsFilePath() -> String {
         let documentsDirectory = FileUtilities.applicationDocumentsDirectory()
         return documentsDirectory.appendingPathComponent("SwiftRecipeParser-GroceryListItems.txt").path

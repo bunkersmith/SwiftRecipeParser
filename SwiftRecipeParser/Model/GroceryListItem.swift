@@ -173,7 +173,7 @@ class GroceryListItem: NSManagedObject {
             
             databaseInterface.saveContext()
             
-            logAll()
+            writeAllToIcloud()
             
             return groceryListItem
         }
@@ -216,7 +216,7 @@ class GroceryListItem: NSManagedObject {
         return nil
     }
     
-    class func logAll() {
+    class func writeAllToIcloud() {
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
         var startTime = MillisecondTimer.currentTickCount()
@@ -331,13 +331,9 @@ class GroceryListItem: NSManagedObject {
     
     class func writeItemsToICloudFile(itemsString: String) {
         
-        let startTime = MillisecondTimer.currentTickCount()
+//        let startTime = MillisecondTimer.currentTickCount()
         
-        let icDocWrapper = ICloudDocWrapper(filename: FileUtilities.iCloudGroceryListItemsFileName())
-        
-        icDocWrapper.writeTextToDoc(text: itemsString) { (docResult) in
-            Logger.logDetails(msg: "docResult = \(docResult) in \(MillisecondTimer.secondsSince(startTime: startTime)) seconds ")
-        }
+// DIFFERENT iCloud CODE HERE
         
     }
 
@@ -490,31 +486,10 @@ class GroceryListItem: NSManagedObject {
         return groceryListItem
     }
     
-    class func importFile(completionHandler:@escaping ((Bool) -> Void)) {
+    class func importFromIcloudFile(completionHandler:@escaping ((Bool) -> Void)) {
         
-        let startTime = MillisecondTimer.currentTickCount()
+//        let startTime = MillisecondTimer.currentTickCount()
         
-        let icDocWrapper = ICloudDocWrapper(filename: FileUtilities.iCloudGroceryListItemsFileName())
-
-        icDocWrapper.readTextFromDoc { docResult, importFileLines in
-            Logger.logDetails(msg: "readTextFromDoc time: \(MillisecondTimer.secondsSince(startTime: startTime))")
-            
-            guard docResult != .docError else {
-                Logger.logDetails(msg: "readTextFromDoc returned docError")
-                return
-            }
-            
-            guard let importFileLines = importFileLines else {
-                Logger.logDetails(msg: "readTextFromDoc returned a nil string")
-                return
-            }
-
-            print(importFileLines)
-        }
-//        icDocWrapper.writeTextToDoc(text: itemsString) { (docResult) in
-//            Logger.logDetails(msg: "docResult = \(docResult) in \(MillisecondTimer.secondsSince(startTime: startTime)) seconds ")
-//        }
-
 /*
         writetexttodoc
  

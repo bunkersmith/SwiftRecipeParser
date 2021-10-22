@@ -225,6 +225,10 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     }
     
     func hideSearchBar(_ searchBar: UISearchBar?) {
+        
+// IF THE SEARCH BAR REFUSES TO HIDE, TRY RUNNING THE APP FROM THE PHONE (NOT Xcode)
+// CHANCES ARE IT'S A STUPID Xcode BUG!
+        
         searchBar?.resignFirstResponder()
         
         Logger.logDetails(msg: "searchBar == nil: \(searchBar == nil), self.tableView.contentOffset: \(self.tableView.contentOffset)")

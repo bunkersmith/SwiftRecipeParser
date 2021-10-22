@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		67005B3C26A54C690080BC8C /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67005B3B26A54C690080BC8C /* UITextFieldExtensions.swift */; };
 		670862C61E2DBE6100D21AFE /* TextDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670862C51E2DBE6100D21AFE /* TextDoc.swift */; };
-		670862C91E2DBE7400D21AFE /* ICloudDocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670862C71E2DBE7400D21AFE /* ICloudDocManager.swift */; };
-		670862CA1E2DBE7400D21AFE /* ICloudDocWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670862C81E2DBE7400D21AFE /* ICloudDocWrapper.swift */; };
 		6709380519859BAC004AC92D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6709380419859BAC004AC92D /* Utilities.swift */; };
 		6710451F1EFCF7230013EF27 /* EmailLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710451E1EFCF7230013EF27 /* EmailLogViewController.swift */; };
 		671045211EFCF7810013EF27 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671045201EFCF7810013EF27 /* EmailViewController.swift */; };
@@ -97,8 +95,6 @@
 /* Begin PBXFileReference section */
 		67005B3B26A54C690080BC8C /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		670862C51E2DBE6100D21AFE /* TextDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDoc.swift; sourceTree = "<group>"; };
-		670862C71E2DBE7400D21AFE /* ICloudDocManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICloudDocManager.swift; sourceTree = "<group>"; };
-		670862C81E2DBE7400D21AFE /* ICloudDocWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICloudDocWrapper.swift; sourceTree = "<group>"; };
 		670862CB1E2DBE9200D21AFE /* SwiftRecipeParser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftRecipeParser.entitlements; sourceTree = "<group>"; };
 		6709380419859BAC004AC92D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		670BC3EA1CDD38C900937F70 /* SwiftRecipeParser1.9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.9.xcdatamodel; sourceTree = "<group>"; };
@@ -363,8 +359,6 @@
 				6743DAC91E20E2EA00FF76C8 /* DateTimeUtilities.swift */,
 				6791A2081EEB8DFC007CAE2D /* Extensions.swift */,
 				6743DAC71E20E27200FF76C8 /* FileUtilities.swift */,
-				670862C71E2DBE7400D21AFE /* ICloudDocManager.swift */,
-				670862C81E2DBE7400D21AFE /* ICloudDocWrapper.swift */,
 				6753215019A6BCD600B3BE74 /* IToast.swift */,
 				671953481B4B4198000A9863 /* MillisecondTimer.swift */,
 				6721870F1995B8850051BA99 /* FractionMath.swift */,
@@ -542,7 +536,6 @@
 				679ED45519839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld in Sources */,
 				679ED45219839E8B00E22DDB /* DatabaseManager.swift in Sources */,
 				679101DA1F46611F00A6D842 /* AuthUtilities.swift in Sources */,
-				670862C91E2DBE7400D21AFE /* ICloudDocManager.swift in Sources */,
 				6743DAC81E20E27200FF76C8 /* FileUtilities.swift in Sources */,
 				6753214F19A6AC9000B3BE74 /* EmailRecipeViewController.swift in Sources */,
 				671953521B4B6558000A9863 /* GroceryList.swift in Sources */,
@@ -575,7 +568,6 @@
 				673A050E26A41D1400C71F21 /* AlertDialogViewController.swift in Sources */,
 				6791A2091EEB8DFC007CAE2D /* Extensions.swift in Sources */,
 				67207C891F579BFD00AEFB83 /* SRPError.swift in Sources */,
-				670862CA1E2DBE7400D21AFE /* ICloudDocWrapper.swift in Sources */,
 				67B82AC91985E3F000344AE3 /* RecipeFiles.swift in Sources */,
 				679ED45119839E8B00E22DDB /* DatabaseInterface.swift in Sources */,
 				670862C61E2DBE6100D21AFE /* TextDoc.swift in Sources */,

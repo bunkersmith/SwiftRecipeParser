@@ -91,7 +91,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     
     @IBAction func importFileButtonPressed(_ sender: Any) {
         AlertUtilities.showYesNoAlert(viewController: self, title: "Import Alert", message: "ARE YOU SURE you want to import all the Grocery List Items from the iCloud file?", yesButtonHandler: { action in
-                GroceryListItem.importFile { (isSuccessful) in
+                GroceryListItem.importFromIcloudFile { (isSuccessful) in
                     if !isSuccessful {
                         DispatchQueue.main.async {
                             AlertUtilities.showOkButtonAlert(self, title: "Error alert", message:"File import failed", buttonHandler: nil)
