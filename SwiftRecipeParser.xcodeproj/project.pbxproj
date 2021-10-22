@@ -135,6 +135,7 @@
 		673E65481B1D4016009B8DC5 /* GroceryListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListsViewController.swift; sourceTree = "<group>"; };
 		673E654A1B1D50F9009B8DC5 /* SwiftRecipeParser1.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.2.xcdatamodel; sourceTree = "<group>"; };
 		673E65501B1D59CE009B8DC5 /* SwiftRecipeParser1.3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.3.xcdatamodel; sourceTree = "<group>"; };
+		6740A62427229C010048FEAC /* SwiftRecipeParser1.27.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.27.xcdatamodel; sourceTree = "<group>"; };
 		6743DAC21E20DA1900FF76C8 /* ProcessTextFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ProcessTextFile.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6743DAC51E20E21800FF76C8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Logger.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6743DAC71E20E27200FF76C8 /* FileUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtilities.swift; sourceTree = "<group>"; };
@@ -312,6 +313,7 @@
 			children = (
 				679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */,
 				67B5AAC927200D7500505DB3 /* CKModel.swift */,
+				6714B325272006A10069B5E3 /* CloudGroceryListItem.swift */,
 				671953511B4B6558000A9863 /* GroceryList.swift */,
 				6719535C1B4C9315000A9863 /* GroceryListItem.swift */,
 				671953551B4B6558000A9863 /* Ingredient.swift */,
@@ -320,7 +322,6 @@
 				67B630BB25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift */,
 				6719534D1B4B6558000A9863 /* RecipeTitle.swift */,
 				67B630BC25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift */,
-				6714B325272006A10069B5E3 /* CloudGroceryListItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -840,6 +841,7 @@
 		679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6740A62427229C010048FEAC /* SwiftRecipeParser1.27.xcdatamodel */,
 				67E91DC126C4D342008EE000 /* SwiftRecipeParser1.26.xcdatamodel */,
 				67ABA5A52622D25E00553773 /* SwiftRecipeParser1.25.xcdatamodel */,
 				673033FC262196DC007C0FE6 /* SwiftRecipeParser1.24.xcdatamodel */,
@@ -863,7 +865,7 @@
 				671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */,
 				679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */,
 			);
-			currentVersion = 67E91DC126C4D342008EE000 /* SwiftRecipeParser1.26.xcdatamodel */;
+			currentVersion = 6740A62427229C010048FEAC /* SwiftRecipeParser1.27.xcdatamodel */;
 			path = SwiftRecipeParser.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

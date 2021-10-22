@@ -103,7 +103,10 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
         let formatString = onlyUnbought ? "inGroceryList.name MATCHES %@ AND isBought == NO" : "inGroceryList.name MATCHES %@"
         
-        let predicate = NSPredicate(format: formatString, groceryList.name)
+        var predicate: NSPredicate? = nil
+        if groceryList != nil {
+            predicate = NSPredicate(format: formatString, groceryList.name)
+        }
         
         fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "GroceryListItem", sortKey: nil, secondarySortKey: nil, sectionNameKeyPath: nil, predicate: predicate)
         
@@ -420,11 +423,19 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) {
+        Logger.logDetails(msg: "Called for row: \(indexPath.row)")
+        
         guard let groceryListItemCell = cell as? GroceryListItemTableViewCell else {
             return
         }
         
         if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+            Logger.logDetails(msg: "\(groceryListItem.listPosition.int16Value)")
+            
+            if groceryListItem.listPosition.int16Value != indexPath.row {
+//                groceryListItem.update(listPosition: indexPath.row)
+            }
+            
             groceryListItemCell.configure(item:groceryListItem)
         }
     }

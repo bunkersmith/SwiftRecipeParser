@@ -126,8 +126,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-Xf-Inx">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-Xf-Inx">
+                                <rect key="frame" x="45" y="21" width="390" height="844"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroceryListTableCell" id="fZv-nw-za3" customClass="GroceryListTableViewCell" customModule="SwiftRecipeParser" customModuleProvider="target">
@@ -367,7 +367,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="G3t-Wr-TnD">
-                                <rect key="frame" x="0.0" y="226" width="390" height="618"/>
+                                <rect key="frame" x="0.0" y="226" width="390" height="558"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <prototypes>
@@ -388,7 +388,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxg-TD-FJI">
-                                                    <rect key="frame" x="46" y="11.000000000000002" width="233" height="18.666666666666671"/>
+                                                    <rect key="frame" x="46" y="11.000000000000002" width="227" height="18.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="VOP-JE-JIe"/>
                                                     </constraints>
@@ -397,10 +397,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqC-gu-fgw">
-                                                    <rect key="frame" x="283" y="9.6666666666666643" width="44" height="21"/>
+                                                    <rect key="frame" x="277" y="9.6666666666666643" width="50" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="agm-D0-K59"/>
-                                                        <constraint firstAttribute="width" constant="44" id="cNS-eR-Ba8"/>
+                                                        <constraint firstAttribute="width" constant="50" id="cNS-eR-Ba8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -448,6 +448,13 @@
                                     <outletCollection property="gestureRecognizers" destination="7DO-BQ-KAn" appends="YES" id="iym-lp-Qiz"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-HY-ZM9">
+                                <rect key="frame" x="0.0" y="784" width="390" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fth-lJ-toV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -459,14 +466,17 @@
                             <constraint firstItem="pP7-dW-zbZ" firstAttribute="top" secondItem="6me-gb-KOJ" secondAttribute="bottom" constant="7" id="BGP-K8-8wf"/>
                             <constraint firstItem="WG3-GO-iOe" firstAttribute="centerX" secondItem="UUF-6S-cil" secondAttribute="centerX" id="DvE-QJ-53W"/>
                             <constraint firstItem="G3t-Wr-TnD" firstAttribute="leading" secondItem="UUF-6S-cil" secondAttribute="leading" id="F1a-GL-cYp"/>
+                            <constraint firstItem="nsV-HY-ZM9" firstAttribute="leading" secondItem="UUF-6S-cil" secondAttribute="leading" id="Flj-3R-xqM"/>
                             <constraint firstItem="WG3-GO-iOe" firstAttribute="top" secondItem="T3d-l3-Xs0" secondAttribute="bottom" constant="22" id="GYN-nH-QcF"/>
+                            <constraint firstAttribute="trailing" secondItem="nsV-HY-ZM9" secondAttribute="trailing" id="MDi-0u-ioE"/>
                             <constraint firstItem="GcM-8p-Tdn" firstAttribute="leading" secondItem="WG3-GO-iOe" secondAttribute="trailing" constant="16" id="RA6-61-TLU"/>
                             <constraint firstItem="GcM-8p-Tdn" firstAttribute="centerY" secondItem="WG3-GO-iOe" secondAttribute="centerY" id="Yon-UR-GkG"/>
-                            <constraint firstAttribute="bottom" secondItem="G3t-Wr-TnD" secondAttribute="bottom" constant="-132" id="ZNM-Fj-oKj"/>
                             <constraint firstItem="6me-gb-KOJ" firstAttribute="leading" secondItem="UUF-6S-cil" secondAttribute="leading" constant="8" id="arA-Q0-e5I"/>
                             <constraint firstAttribute="trailing" secondItem="MYK-pN-alv" secondAttribute="trailing" constant="8" id="bdh-kM-lX5"/>
+                            <constraint firstItem="o1U-ES-QRM" firstAttribute="top" secondItem="nsV-HY-ZM9" secondAttribute="bottom" constant="-132" id="flv-DI-10f"/>
                             <constraint firstItem="yIK-wb-eh2" firstAttribute="centerY" secondItem="WG3-GO-iOe" secondAttribute="centerY" id="nNc-ac-we5"/>
                             <constraint firstItem="WG3-GO-iOe" firstAttribute="leading" secondItem="yIK-wb-eh2" secondAttribute="trailing" constant="16" id="qYH-s7-UvW"/>
+                            <constraint firstItem="G3t-Wr-TnD" firstAttribute="bottom" secondItem="nsV-HY-ZM9" secondAttribute="top" id="tgP-1L-No5"/>
                             <constraint firstItem="pP7-dW-zbZ" firstAttribute="leading" secondItem="6me-gb-KOJ" secondAttribute="leading" id="ytS-ZP-GQ7"/>
                         </constraints>
                     </view>
@@ -507,7 +517,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2500" y="1196.4454976303316"/>
+            <point key="canvasLocation" x="2500" y="1195.734597156398"/>
         </scene>
         <!--Add Grocery List Item View Controller-->
         <scene sceneID="yPZ-Xp-E0q">

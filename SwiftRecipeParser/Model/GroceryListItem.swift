@@ -100,6 +100,7 @@ class GroceryListItem: NSManagedObject {
     @NSManaged var imagePath: String?
     @NSManaged var inGroceryList: GroceryList
     @NSManaged var notes: String
+    @NSManaged var listPosition: NSNumber
     
     override var description: String {
         var returnValue:String
@@ -615,6 +616,12 @@ class GroceryListItem: NSManagedObject {
         self.imagePath = imagePath
     }
 
+    func update(listPosition: Int) {
+        self.listPosition = NSNumber(value: listPosition)
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        databaseInterface.saveContext()
+    }
+    
     func createImage(image: UIImage, thumbnailSize: CGSize) -> (error: Error?, imageData: NSData?) {
         
         // create Data from UIImage
