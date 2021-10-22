@@ -47,8 +47,6 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBarController?.tabBar.isHidden = true
-        
         createFetchedResultsController(onlyUnbought: false)
         
         titleViewButton = UIButton(type: .system)
@@ -64,7 +62,14 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
         tableView.tableFooterView = UIView(frame: .zero)
     }
-    
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("tabBarController != nil: \(tabBarController != nil)")
+        tabBarController?.tabBar.isHidden = true
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
@@ -73,7 +78,13 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+
+        fetchedResultsController = nil
         
+        if self.isMovingFromParentViewController {
+            print("tabBarController != nil: \(tabBarController != nil)")
+            tabBarController?.tabBar.isHidden = false
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -82,7 +93,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func viewControllerInit() {
-        
+
         createFetchedResultsController(onlyUnbought: !boughtSwitch.isOn)
         
         titleViewButton.setTitle(groceryList.name, for: .normal)
@@ -108,7 +119,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             predicate = NSPredicate(format: formatString, groceryList.name)
         }
         
-        fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "GroceryListItem", sortKey: nil, secondarySortKey: nil, sectionNameKeyPath: nil, predicate: predicate)
+        fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "GroceryListItem", sortKey: "listPosition", secondarySortKey: nil, sectionNameKeyPath: nil, predicate: predicate)
         
         if fetchedResultsController != nil {
             fetchedResultsController.delegate = self
@@ -411,7 +422,15 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         case .delete:
             tableView.deleteRows(at: [indexPath!], with: .fade)
         case .update:
-            configureCell(cell: tableView.cellForRow(at: indexPath!)!, atIndexPath: indexPath!)
+            guard let indexPath = indexPath else {
+                return
+            }
+
+            guard let cell = tableView.cellForRow(at: indexPath) else {
+                return
+            }
+            
+            configureCell(cell: cell, atIndexPath: indexPath)
         case .move:
             tableView.deleteRows(at: [indexPath!], with: .fade)
             tableView.insertRows(at: [newIndexPath!], with: .fade)
@@ -423,19 +442,11 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) {
-        Logger.logDetails(msg: "Called for row: \(indexPath.row)")
-        
         guard let groceryListItemCell = cell as? GroceryListItemTableViewCell else {
             return
         }
         
         if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
-            Logger.logDetails(msg: "\(groceryListItem.listPosition.int16Value)")
-            
-            if groceryListItem.listPosition.int16Value != indexPath.row {
-//                groceryListItem.update(listPosition: indexPath.row)
-            }
-            
             groceryListItemCell.configure(item:groceryListItem)
         }
     }

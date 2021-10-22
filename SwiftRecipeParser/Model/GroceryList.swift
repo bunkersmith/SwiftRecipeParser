@@ -17,9 +17,12 @@ class GroceryList: NSManagedObject {
     @NSManaged var projectedCost: NSNumber
     @NSManaged var hasItems: NSOrderedSet
     
+// THESE FUNCTIONS NEED TO BE UPDATED TO SET THE listPosition ATTRIBUTE
     
     func addHasItemsObject(value:GroceryListItem)
     {
+        value.listPosition = NSNumber(value: self.hasItems.count + 1)
+                                                                                                                       
         self.willChangeValue(forKey: "hasItems");
         let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems);
         tempSet.add(value);

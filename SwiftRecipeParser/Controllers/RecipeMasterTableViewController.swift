@@ -45,6 +45,23 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         
         // Called before warning appears (first call)
         tableView.tableFooterView = UIView(frame: .zero)
+        
+//        let groceryLists = GroceryList.returnAll()
+//
+//        for groceryList in groceryLists {
+//            print("\(groceryList.name)")
+//            var i = 0
+//            for item in groceryList.hasItems {
+//                guard let groceryListItem = item as? GroceryListItem else {
+//                    return
+//                }
+//
+//                print("\(groceryListItem.name)")
+//                groceryListItem.update(listPosition: i)
+//                i += 1
+//            }
+//        }
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
