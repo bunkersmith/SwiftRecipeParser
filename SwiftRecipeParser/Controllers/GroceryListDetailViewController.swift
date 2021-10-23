@@ -190,9 +190,9 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
     func removeGroceryListItem(groceryList: GroceryList, groceryListItem: GroceryListItem) {
         groceryList.removeHasItemsObject(value: groceryListItem)
-        updateCostLabels()
-
         tableView.reloadData()
+
+        updateCostLabels()
     }
     
     @IBAction func importButtonPressed(_ sender: Any) {

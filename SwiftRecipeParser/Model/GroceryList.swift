@@ -17,11 +17,9 @@ class GroceryList: NSManagedObject {
     @NSManaged var projectedCost: NSNumber
     @NSManaged var hasItems: NSOrderedSet
     
-// THESE FUNCTIONS NEED TO BE UPDATED TO SET THE listPosition ATTRIBUTE
-    
     func addHasItemsObject(value:GroceryListItem)
     {
-        value.listPosition = NSNumber(value: self.hasItems.count + 1)
+        value.listPosition = NSNumber(value: self.hasItems.count)
                                                                                                                        
         self.willChangeValue(forKey: "hasItems");
         let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems);
@@ -30,6 +28,8 @@ class GroceryList: NSManagedObject {
         self.didChangeValue(forKey: "hasItems");
     }
     
+    // THIS FUNCTION NEEDS TO BE UPDATED TO SET THE listPosition ATTRIBUTE FOR ALL THE ADDED ITEMS
+        
     func addHasItemsObjects(values:[GroceryListItem])
     {
         self.willChangeValue(forKey: "hasItems");
@@ -43,7 +43,17 @@ class GroceryList: NSManagedObject {
     {
         self.willChangeValue(forKey: "hasItems");
         let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems);
+        let deletedPosition = tempSet.index(of: value)
         tempSet.remove(value);
+        
+// THESE LINES WOULD BE BEST MOVED INTO A SEPARATE FUNCTION
+        for index in deletedPosition..<tempSet.count {
+            if let groceryListItem = tempSet[index] as? GroceryListItem {
+                groceryListItem.listPosition = NSNumber(value: groceryListItem.listPosition.int16Value - 1)
+            }
+        }
+// THESE LINES WOULD BE BEST MOVED INTO A SEPARATE FUNCTION
+        
         self.hasItems = tempSet;
         self.didChangeValue(forKey: "hasItems");
     }

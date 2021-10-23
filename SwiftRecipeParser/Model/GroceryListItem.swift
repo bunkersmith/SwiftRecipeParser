@@ -134,6 +134,8 @@ class GroceryListItem: NSManagedObject {
             returnValue += "\nnotes = \(notes)"
         }
         
+        returnValue += "\nlistPosition = \(listPosition)"
+        
         return returnValue
     }
     
@@ -616,12 +618,6 @@ class GroceryListItem: NSManagedObject {
         self.imagePath = imagePath
     }
 
-//    func update(listPosition: Int) {
-//        self.listPosition = NSNumber(value: listPosition)
-//        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
-//        databaseInterface.saveContext()
-//    }
-//    
     func createImage(image: UIImage, thumbnailSize: CGSize) -> (error: Error?, imageData: NSData?) {
         
         // create Data from UIImage
