@@ -367,7 +367,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="G3t-Wr-TnD">
-                                <rect key="frame" x="0.0" y="226" width="390" height="528"/>
+                                <rect key="frame" x="0.0" y="226" width="390" height="508"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <prototypes>
@@ -449,10 +449,10 @@
                                 </connections>
                             </tableView>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-HY-ZM9">
-                                <rect key="frame" x="0.0" y="754" width="390" height="90"/>
+                                <rect key="frame" x="0.0" y="734" width="390" height="110"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="fth-lJ-toV"/>
+                                    <constraint firstAttribute="height" constant="110" id="fth-lJ-toV"/>
                                 </constraints>
                             </view>
                         </subviews>
