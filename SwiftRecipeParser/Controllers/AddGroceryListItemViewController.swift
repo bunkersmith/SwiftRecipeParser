@@ -184,7 +184,15 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         case .delete:
             tableView.deleteRows(at: [indexPath!], with: .fade)
         case .update:
-            self.configureCell(cell: tableView.cellForRow(at: indexPath!)!, atIndexPath: indexPath!)
+            guard let indexPath = indexPath else {
+                return
+            }
+
+            guard let cell = tableView.cellForRow(at: indexPath) else {
+                return
+            }
+            
+            self.configureCell(cell: cell, atIndexPath: indexPath)
         case .move:
             tableView.deleteRows(at: [indexPath!], with: .fade)
             tableView.insertRows(at: [newIndexPath!], with: .fade)

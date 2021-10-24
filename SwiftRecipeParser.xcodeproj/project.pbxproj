@@ -251,8 +251,8 @@
 				673302721C077D830074DD8F /* ThanksgivingRecipeCell.swift */,
 				6730A4351CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift */,
 				6730A4371CD2C969003D4861 /* IngredientTableViewCell.swift */,
-				677A4CF51D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift */,
 				677A4CF71D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib */,
+				677A4CF51D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift */,
 			);
 			path = "Custom Table View Cells";
 			sourceTree = "<group>";
@@ -735,7 +735,7 @@
 				INFOPLIST_FILE = SwiftRecipeParser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.carlsoft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlsmithswdev.SwiftRecipeParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -758,7 +758,7 @@
 				INFOPLIST_FILE = SwiftRecipeParser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.carlsoft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlsmithswdev.SwiftRecipeParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -781,7 +781,7 @@
 				);
 				INFOPLIST_FILE = SwiftRecipeParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.carlsoft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlsmithswdev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -798,7 +798,7 @@
 				);
 				INFOPLIST_FILE = SwiftRecipeParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.carlsoft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlsmithswdev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";

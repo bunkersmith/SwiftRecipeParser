@@ -176,7 +176,7 @@ class GroceryListItem: NSManagedObject {
             
             databaseInterface.saveContext()
             
-            writeAllToIcloud()
+//            writeAllToIcloud()
             
             return groceryListItem
         }
@@ -247,6 +247,14 @@ class GroceryListItem: NSManagedObject {
 //            Logger.logDetails(msg: "String build time: \(MillisecondTimer.secondsSince(startTime: startTime))")
 
             writeItemsToICloudFile(itemsString: itemsString)
+        }
+    }
+    
+    func writeToIcloud() {
+        CKModel.currentModel.writeOrUpdateGroceryListItem(groceryListItem: self) { error in
+            if error != nil {
+                Logger.logDetails(msg: "Error writing \(self.name) to iCloud: \(String(describing: error))")
+            }
         }
     }
     
@@ -431,7 +439,9 @@ class GroceryListItem: NSManagedObject {
                     groceryListItemStruct.notes = tokens[i+1]
                 break
                 case "imagePath:":
-                    groceryListItemStruct.imagePath = tokens[i+1]
+                    if i + 1 < tokens.count {
+                        groceryListItemStruct.imagePath = tokens[i+1]
+                    }
                 break
                 default:
                 break
@@ -491,11 +501,6 @@ class GroceryListItem: NSManagedObject {
     
     class func importFromIcloudFile(completionHandler:@escaping ((Bool) -> Void)) {
         
-//        let startTime = MillisecondTimer.currentTickCount()
-        
-/*
-        writetexttodoc
- 
         let textFile = ProcessTextFile(fileName: FileUtilities.groceryListItemsFilePath())
         
         guard textFile.open() else {
@@ -507,7 +512,7 @@ class GroceryListItem: NSManagedObject {
         
         let importFileLines = textFile.linesInFile()
         
-        //Logger.logDetails(msg: "Count of lines in file = \(importFileLines.count)")
+        Logger.logDetails(msg: "Count of lines in file = \(importFileLines.count)")
         
         let databaseInterface = DatabaseInterface(concurrencyType: .privateQueueConcurrencyType)
         
@@ -526,7 +531,6 @@ class GroceryListItem: NSManagedObject {
             
             completionHandler(true)
         }
-*/
     }
 
     func calculateTotalCost() {

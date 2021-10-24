@@ -47,7 +47,7 @@ public class CKModel {
   public static var currentModel = CKModel()
   
   init() {
-    container = CKContainer(identifier: "iCloud.com.carlsoft.SwiftRecipeParser.iCloudContainer")
+    container = CKContainer(identifier: "iCloud.com.carlsmithswdec.SwiftRecipeParser")
     publicDB = container.publicCloudDatabase
     privateDB = container.privateCloudDatabase
   }
@@ -262,41 +262,36 @@ public class CKModel {
         deleteOp.start()
     }
     
-// FIGURE OUT WHICH FIELDS ARE NEEDED TO UNIQUELY IDENTIFY A GroceryListItem (just name, right?)
-    
     func writeOrUpdateGroceryListItem(groceryListItem: GroceryListItem,
                            completion: @escaping(Error?) -> Void) {
-//        findBy(persistentKey: song.summary.persistentKey) { [unowned self] (record) in
-//
-//            if record == nil {
-//                self.writeSong(song: song, lastPlayedTime: lastPlayedTime) { (record, error) in
-//                    guard error == nil else {
-//                        Logger.logDetails(msg: "Error writing new played song record for \(MediaObjectUtilities.titleAndArtistStringForSong(song)): \(String(describing: error))")
-//                        return
-//                    }
-//                    Logger.logDetails(msg: "Wrote new played song record for \(MediaObjectUtilities.titleAndArtistStringForSong(song))")
-//                    completion(error)
-//                }
-//            } else {
-//                record!.setValue(lastPlayedTime, forKey: "lastPlayedTime")
-//                let lastPlayedTimeDisplayString = DateTimeUtilities.timeIntervalToString(lastPlayedTime)
-//                record!.setValue(lastPlayedTimeDisplayString, forKey: "lastPlayedTimeDisplayString")
-//                let records = [record!]
-//                self.writeSongRecords(songRecords: records) { (records, error) in
-//                    guard error == nil else {
-//                        Logger.logDetails(msg: "Error updating existing played song record for \(MediaObjectUtilities.titleAndArtistStringForSong(song)): \(String(describing: error))")
-//                        return
-//                    }
-//                    Logger.logDetails(msg: "Updated existing played song record for \(MediaObjectUtilities.titleAndArtistStringForSong(song))")
-//                    completion(error)
-//                }
-//            }
-//        }
+        findBy(name: groceryListItem.name) { [unowned self] (record) in
+            if record == nil {
+                self.writeGroceryListItem(groceryListItem: groceryListItem) { (record, error) in
+                    guard error == nil else {
+                        Logger.logDetails(msg: "Error writing iCloudGroceryListItem for \(groceryListItem.name): \(String(describing: error))")
+                        completion(error)
+                        return
+                    }
+                    Logger.logDetails(msg: "Wrote iCloudGroceryListItem for \(groceryListItem.name): \(String(describing: error))")
+                    completion(error)
+                }
+            } else {
+                updateCKRecordFromGroceryListItem(groceryListItem: groceryListItem, record: record!)
+                let records = [record!]
+                self.writeGroceryListItemRecords(groceryListItemRecords: records) { (records, error) in
+                    guard error == nil else {
+                        Logger.logDetails(msg: "Error updating iCloudGroceryListItem for \(groceryListItem.name): \(String(describing: error))")
+                        completion(error)
+                        return
+                    }
+                    Logger.logDetails(msg: "Updated iCloudGroceryListItem for \(groceryListItem.name): \(String(describing: error))")
+                    completion(error)
+                }
+            }
+        }
     }
     
-    func writeGroceryListItem(groceryListItem: GroceryListItem,
-                   completion: @escaping(CKRecord?, Error?) -> Void) {
-        let record = CKRecord(recordType: CloudGroceryListItem.recordType)
+    func updateCKRecordFromGroceryListItem(groceryListItem: GroceryListItem, record: CKRecord) {
         record.setValue(groceryListItem.cost, forKey: "cost")
         record.setValue(groceryListItem.crvFluidOunces, forKey: "crvFluidOunces")
         record.setValue(groceryListItem.crvQuantity, forKey: "crvQuantity")
@@ -309,6 +304,13 @@ public class CKModel {
         record.setValue(groceryListItem.quantity, forKey: "quantity")
         record.setValue(groceryListItem.taxablePrice, forKey: "taxablePrice")
         record.setValue(groceryListItem.unitOfMeasure, forKey: "taxablePrice")
+    }
+    
+    func writeGroceryListItem(groceryListItem: GroceryListItem,
+                   completion: @escaping(CKRecord?, Error?) -> Void) {
+        
+        let record = CKRecord(recordType: CloudGroceryListItem.recordType)
+        updateCKRecordFromGroceryListItem(groceryListItem: groceryListItem, record: record)
 
         publicDB.save(record) { (savedRecord, error) in
             guard error == nil else {
@@ -372,6 +374,52 @@ public class CKModel {
         writeOp.start()
     }
     
+//       public func writeSongRecords(songRecords: [CKRecord], completion: @escaping([CKRecord], Error?) -> Void) {
+//           let writeOp = CKModifyRecordsOperation(recordsToSave: songRecords, recordIDsToDelete: [])
+//           writeOp.database = publicDB
+//
+//           writeOp.modifyRecordsCompletionBlock = { [unowned self] (savedRecords, deletedRecordIDs, error) in
+//
+//               guard error == nil else {
+//                   if (error!._code == CKError.Code.limitExceeded.rawValue) {
+//                       var splitIndex = songRecords.count/2
+//
+//                       //Logger.logDetails(msg: "\(splitIndex)")
+//                       let firstHalf = Array(songRecords.prefix(splitIndex))
+//                       //Logger.logDetails(msg: "Prefix count: \(firstHalf.count)")
+//
+//                       // Be sure to catch all the records if there are an odd number, since /2 rounds down
+//                       if (songRecords.count % 2 == 1) {
+//                           splitIndex += 1
+//                       }
+//
+//                       let secondHalf = Array(songRecords.suffix(splitIndex))
+//                       //Logger.logDetails(msg: "Suffix count: \(secondHalf.count)")
+//
+//                       self.writeSongRecords(songRecords: firstHalf, completion: completion)
+//                       self.writeSongRecords(songRecords: secondHalf, completion: completion)
+//                       completion([], nil)
+//                       return
+//                   }
+//
+//                   Logger.logDetails(msg: "writeSongs modify error: \(String(describing: error))")
+//                   completion([], error)
+//                   return
+//               }
+//
+//               guard let savedRecords = savedRecords else {
+//                   Logger.logDetails(msg: "Nil savedRecords")
+//                   completion([], CKModelError.nilSavedRecords)
+//                   return
+//               }
+//
+//               Logger.logDetails(msg: "Recursive routine saved \(savedRecords.count) songs, deleted \(deletedRecordIDs?.count ?? 0) songs")
+//               completion(savedRecords, nil)
+//           }
+//
+//           writeOp.start()
+//       }
+//
     func queryRecords(query: CKQuery, completion: @escaping ([CKRecord]?, Error?) -> Void) {
         let operation = CKQueryOperation(query: query)
         var results = [CKRecord]()

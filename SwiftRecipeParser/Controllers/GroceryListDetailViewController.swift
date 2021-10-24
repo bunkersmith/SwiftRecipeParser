@@ -66,7 +66,6 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
         createFetchedResultsController(onlyUnbought: !boughtSwitch.isOn)
 
-        print("tabBarController != nil: \(tabBarController != nil)")
         tabBarController?.tabBar.isHidden = true
         
         viewControllerInit()
@@ -78,7 +77,6 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         fetchedResultsController = nil
         
         if self.isMovingFromParentViewController {
-            print("tabBarController != nil: \(tabBarController != nil)")
             tabBarController?.tabBar.isHidden = false
         }
     }

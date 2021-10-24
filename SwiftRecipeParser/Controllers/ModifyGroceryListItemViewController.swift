@@ -303,7 +303,9 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
             databaseInterface.saveContext()
             
-            GroceryListItem.writeAllToIcloud()
+//            GroceryListItem.writeAllToIcloud()
+            
+            groceryListItem.writeToIcloud()
             
             delegate?.groceryListItemModified(groceryListItem: groceryListItem, indexPath: indexPath)
         }
