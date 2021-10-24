@@ -68,13 +68,12 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         super.viewWillAppear(animated)
          
         addScrollAreaView()
-        createFetchedResultsController(searchString: nil)
-
+    }
+    
+    func setupSearchHeaderViewController() {
         if searchHeaderViewController == nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             resultTableViewController = storyboard.instantiateViewController(withIdentifier: "ResultsTableViewController") as? UITableViewController
-            resultTableViewController.tableView.delegate = self
-            resultTableViewController.tableView.dataSource = self
 
             searchHeaderViewController = RecipeTableSearchHeaderViewController(nibName: "RecipeTableSearchHeaderView", bundle: nil)
             searchHeaderViewController!.view.frame = CGRect(x: 0.0, y: 0.0, width: 600.0, height: 108.0)
@@ -92,11 +91,18 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 
         tableView.tableHeaderView = UIView(frame: searchHeaderViewController!.view.frame /*CGRectMake(0.0, 0.0, 600.0, 108.0)*/)
         tableView.tableHeaderView?.addSubview(searchHeaderViewController!.view)
+        
+        resultTableViewController.tableView.delegate = self
+        resultTableViewController.tableView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
+        createFetchedResultsController(searchString: nil)
+
+        setupSearchHeaderViewController()
+        
         hideSearchBar(searchHeaderViewController?.searchBar)
 
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)

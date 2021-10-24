@@ -47,8 +47,6 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        createFetchedResultsController(onlyUnbought: false)
-        
         titleViewButton = UIButton(type: .system)
         // Tell the titleViewButton to NOT use its frame for sizing purposes
         titleViewButton.translatesAutoresizingMaskIntoConstraints = false
@@ -65,14 +63,12 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
+        createFetchedResultsController(onlyUnbought: !boughtSwitch.isOn)
+
         print("tabBarController != nil: \(tabBarController != nil)")
         tabBarController?.tabBar.isHidden = true
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
+        
         viewControllerInit()
     }
 
@@ -94,8 +90,6 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     
     func viewControllerInit() {
 
-        createFetchedResultsController(onlyUnbought: !boughtSwitch.isOn)
-        
         titleViewButton.setTitle(groceryList.name, for: .normal)
         updateCostLabels()
         
@@ -311,9 +305,14 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section]
+        guard let fetchedResultsController = fetchedResultsController else {
+            return 0
+        }
+        guard let sectionInfo = fetchedResultsController.sections else {
+            return 0
+        }
 //              Logger.logDetails(msg: "Returning \(sectionInfo.numberOfObjects) for section \(section)")
-        return sectionInfo.numberOfObjects
+        return sectionInfo[section].numberOfObjects
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

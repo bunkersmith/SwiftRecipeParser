@@ -29,8 +29,6 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createFetchedResultsController(predicate: nil)
-
         tableView.tableFooterView = UIView(frame: .zero)
     }
 
@@ -41,6 +39,10 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         nameTextField.addTarget(self, action: #selector(AddGroceryListItemViewController.textFieldChanged(textField:)), for: .editingChanged)
         
         createFetchedResultsController(predicate: nil)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     func createFetchedResultsController(predicate: NSPredicate?) {
@@ -109,9 +111,14 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section]
+        guard let fetchedResultsController = fetchedResultsController else {
+            return 0
+        }
+        guard let sectionInfo = fetchedResultsController.sections else {
+            return 0
+        }
 //              Logger.logDetails(msg: "Returning \(sectionInfo.numberOfObjects) for section \(section)")
-        return sectionInfo.numberOfObjects
+        return sectionInfo[section].numberOfObjects
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

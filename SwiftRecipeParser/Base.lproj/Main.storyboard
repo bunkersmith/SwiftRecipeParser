@@ -367,7 +367,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="G3t-Wr-TnD">
-                                <rect key="frame" x="0.0" y="226" width="390" height="558"/>
+                                <rect key="frame" x="0.0" y="226" width="390" height="528"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <prototypes>
@@ -448,7 +448,7 @@
                                     <outletCollection property="gestureRecognizers" destination="7DO-BQ-KAn" appends="YES" id="iym-lp-Qiz"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-HY-ZM9">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-HY-ZM9">
                                 <rect key="frame" x="0.0" y="754" width="390" height="90"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -476,7 +476,7 @@
                             <constraint firstItem="o1U-ES-QRM" firstAttribute="top" secondItem="nsV-HY-ZM9" secondAttribute="bottom" constant="-132" id="flv-DI-10f"/>
                             <constraint firstItem="yIK-wb-eh2" firstAttribute="centerY" secondItem="WG3-GO-iOe" secondAttribute="centerY" id="nNc-ac-we5"/>
                             <constraint firstItem="WG3-GO-iOe" firstAttribute="leading" secondItem="yIK-wb-eh2" secondAttribute="trailing" constant="16" id="qYH-s7-UvW"/>
-                            <constraint firstItem="G3t-Wr-TnD" firstAttribute="bottom" secondItem="nsV-HY-ZM9" secondAttribute="top" constant="30" id="tgP-1L-No5"/>
+                            <constraint firstItem="G3t-Wr-TnD" firstAttribute="bottom" secondItem="nsV-HY-ZM9" secondAttribute="top" id="tgP-1L-No5"/>
                             <constraint firstItem="pP7-dW-zbZ" firstAttribute="leading" secondItem="6me-gb-KOJ" secondAttribute="leading" id="ytS-ZP-GQ7"/>
                         </constraints>
                     </view>
