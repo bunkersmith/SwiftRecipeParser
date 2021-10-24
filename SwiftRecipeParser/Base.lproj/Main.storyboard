@@ -388,7 +388,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxg-TD-FJI">
-                                                    <rect key="frame" x="46" y="11.000000000000002" width="227" height="18.666666666666671"/>
+                                                    <rect key="frame" x="46" y="9" width="227" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="VOP-JE-JIe"/>
                                                     </constraints>
@@ -397,7 +397,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqC-gu-fgw">
-                                                    <rect key="frame" x="277" y="9.6666666666666643" width="50" height="21"/>
+                                                    <rect key="frame" x="277" y="9" width="50" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="agm-D0-K59"/>
                                                         <constraint firstAttribute="width" constant="50" id="cNS-eR-Ba8"/>
@@ -407,7 +407,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at4-pd-fbA">
-                                                    <rect key="frame" x="336" y="5.3333333333333321" width="46" height="29.999999999999996"/>
+                                                    <rect key="frame" x="336" y="4.6666666666666679" width="46" height="30.000000000000004"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="46" id="XqJ-L2-Lyw"/>
                                                     </constraints>
@@ -427,8 +427,8 @@
                                                 <constraint firstItem="mp5-Yf-te7" firstAttribute="top" secondItem="kqT-sV-9bk" secondAttribute="top" constant="11" id="O4l-Ny-fWO"/>
                                                 <constraint firstItem="WqC-gu-fgw" firstAttribute="leading" secondItem="mxg-TD-FJI" secondAttribute="trailing" constant="4" id="UfP-bP-kcy"/>
                                                 <constraint firstItem="mxg-TD-FJI" firstAttribute="centerY" secondItem="WqC-gu-fgw" secondAttribute="centerY" id="Uja-o3-EFQ"/>
-                                                <constraint firstItem="mxg-TD-FJI" firstAttribute="top" secondItem="kqT-sV-9bk" secondAttribute="top" constant="11" id="ZKg-XU-BvN"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="mxg-TD-FJI" secondAttribute="bottom" constant="7.5" id="fXF-fs-4Ed"/>
+                                                <constraint firstItem="mxg-TD-FJI" firstAttribute="top" secondItem="kqT-sV-9bk" secondAttribute="top" constant="9" id="ZKg-XU-BvN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mxg-TD-FJI" secondAttribute="bottom" priority="750" constant="8" id="fXF-fs-4Ed"/>
                                                 <constraint firstItem="mxg-TD-FJI" firstAttribute="centerY" secondItem="at4-pd-fbA" secondAttribute="centerY" id="fpq-Uj-KfN"/>
                                                 <constraint firstAttribute="trailing" secondItem="at4-pd-fbA" secondAttribute="trailing" constant="8" id="oj9-Cz-FPm"/>
                                             </constraints>

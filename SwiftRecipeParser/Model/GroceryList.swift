@@ -20,42 +20,50 @@ class GroceryList: NSManagedObject {
     func addHasItemsObject(value:GroceryListItem)
     {
         value.listPosition = NSNumber(value: self.hasItems.count)
-                                                                                                                       
-        self.willChangeValue(forKey: "hasItems");
-        let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems);
-        tempSet.add(value);
-        self.hasItems = tempSet;
-        self.didChangeValue(forKey: "hasItems");
+
+        self.willChangeValue(forKey: "hasItems")
+        let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems)
+        tempSet.add(value)
+        self.hasItems = tempSet
+        self.didChangeValue(forKey: "hasItems")
     }
     
-    // THIS FUNCTION NEEDS TO BE UPDATED TO SET THE listPosition ATTRIBUTE FOR ALL THE ADDED ITEMS
-        
     func addHasItemsObjects(values:[GroceryListItem])
     {
-        self.willChangeValue(forKey: "hasItems");
-        let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems);
+        self.willChangeValue(forKey: "hasItems")
+        let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems)
+        let startingPosition = tempSet.count
         tempSet.addObjects(from: values)
-        self.hasItems = tempSet;
-        self.didChangeValue(forKey: "hasItems");
+        adjustListPositionsForAddition(startingPosition: startingPosition, tempSet: tempSet)
+        self.hasItems = tempSet
+        self.didChangeValue(forKey: "hasItems")
+    }
+    
+    func adjustListPositionsForAddition(startingPosition: Int, tempSet: NSMutableOrderedSet) {
+        for index in startingPosition..<tempSet.count {
+            if let groceryListItem = tempSet[index] as? GroceryListItem {
+                groceryListItem.listPosition = NSNumber(value: index)
+            }
+        }
     }
     
     func removeHasItemsObject(value:GroceryListItem)
     {
-        self.willChangeValue(forKey: "hasItems");
-        let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems);
+        self.willChangeValue(forKey: "hasItems")
+        let tempSet:NSMutableOrderedSet = NSMutableOrderedSet(orderedSet:self.hasItems)
         let deletedPosition = tempSet.index(of: value)
-        tempSet.remove(value);
-        
-// THESE LINES WOULD BE BEST MOVED INTO A SEPARATE FUNCTION
+        tempSet.remove(value)
+        adjustListPositionsForDeletion(deletedPosition: deletedPosition, tempSet: tempSet)
+        self.hasItems = tempSet
+        self.didChangeValue(forKey: "hasItems")
+    }
+    
+    func adjustListPositionsForDeletion(deletedPosition: Int, tempSet: NSMutableOrderedSet) {
         for index in deletedPosition..<tempSet.count {
             if let groceryListItem = tempSet[index] as? GroceryListItem {
                 groceryListItem.listPosition = NSNumber(value: groceryListItem.listPosition.int16Value - 1)
             }
         }
-// THESE LINES WOULD BE BEST MOVED INTO A SEPARATE FUNCTION
-        
-        self.hasItems = tempSet;
-        self.didChangeValue(forKey: "hasItems");
     }
     
     func removeAllHasItemsObjects()
@@ -86,7 +94,7 @@ class GroceryList: NSManagedObject {
         groceryList.name = name.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         groceryList.totalCost = NSNumber(value:0.0)
         
-        databaseInterface.saveContext();
+        databaseInterface.saveContext()
     }
     
     class func delete(groceryList: GroceryList) {
@@ -102,13 +110,13 @@ class GroceryList: NSManagedObject {
         let groceryLists:Array<GroceryList> = databaseInterface.entitiesOfType(entityTypeName:"GroceryList", predicate:nil) as! Array<GroceryList>
         for groceryList:GroceryList in groceryLists {
             if groceryList.name == groceryListName {
-                groceryList.isCurrent = NSNumber(value: true);
+                groceryList.isCurrent = NSNumber(value: true)
             }
             else {
-                groceryList.isCurrent = NSNumber(value: false);
+                groceryList.isCurrent = NSNumber(value: false)
             }
         }
-        databaseInterface.saveContext();
+        databaseInterface.saveContext()
     }
     
     class func returnAll() -> Array<GroceryList> {
@@ -151,7 +159,7 @@ class GroceryList: NSManagedObject {
             returnValue = groceryLists.first    
         }
     
-        return returnValue;
+        return returnValue
     }
 
     class func returnGroceryListWithName(name: String) -> GroceryList? {

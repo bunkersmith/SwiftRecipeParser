@@ -222,7 +222,7 @@ class GroceryListItem: NSManagedObject {
     class func writeAllToIcloud() {
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
-        var startTime = MillisecondTimer.currentTickCount()
+//        var startTime = MillisecondTimer.currentTickCount()
         
         let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem") { inputFetchRequest in
             let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
@@ -231,9 +231,9 @@ class GroceryListItem: NSManagedObject {
             return inputFetchRequest
         } as? Array<GroceryListItem>
 
-        Logger.logDetails(msg: "Fetch request time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+//        Logger.logDetails(msg: "Fetch request time: \(MillisecondTimer.secondsSince(startTime: startTime))")
         
-        startTime = MillisecondTimer.currentTickCount()
+//        startTime = MillisecondTimer.currentTickCount()
         
         if groceryListItems != nil {
             Logger.logDetails(msg: "Count of groceryListItems = \(groceryListItems!.count)")
@@ -244,7 +244,7 @@ class GroceryListItem: NSManagedObject {
                 itemsString = addItemToString(groceryListItem: item, string: itemsString)
             }
             
-            Logger.logDetails(msg: "String build time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+//            Logger.logDetails(msg: "String build time: \(MillisecondTimer.secondsSince(startTime: startTime))")
 
             writeItemsToICloudFile(itemsString: itemsString)
         }
