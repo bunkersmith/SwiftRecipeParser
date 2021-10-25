@@ -64,8 +64,6 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        createFetchedResultsController(onlyUnbought: !boughtSwitch.isOn)
-
         tabBarController?.tabBar.isHidden = true
         
         viewControllerInit()
@@ -87,6 +85,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func viewControllerInit() {
+
+        createFetchedResultsController(onlyUnbought: !boughtSwitch.isOn)
 
         titleViewButton.setTitle(groceryList.name, for: .normal)
         updateCostLabels()
