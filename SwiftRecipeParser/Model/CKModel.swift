@@ -47,7 +47,7 @@ public class CKModel {
   public static var currentModel = CKModel()
   
   init() {
-    container = CKContainer(identifier: "iCloud.com.carlsmithswdec.SwiftRecipeParser")
+    container = CKContainer(identifier: "iCloud.com.carlsmithswdev.SwiftRecipeParser")
     publicDB = container.publicCloudDatabase
     privateDB = container.privateCloudDatabase
   }
@@ -272,7 +272,7 @@ public class CKModel {
                         completion(error)
                         return
                     }
-                    Logger.logDetails(msg: "Wrote iCloudGroceryListItem for \(groceryListItem.name): \(String(describing: error))")
+                    Logger.logDetails(msg: "Successfully wrote iCloudGroceryListItem for \(groceryListItem.name)")
                     completion(error)
                 }
             } else {
@@ -284,7 +284,7 @@ public class CKModel {
                         completion(error)
                         return
                     }
-                    Logger.logDetails(msg: "Updated iCloudGroceryListItem for \(groceryListItem.name): \(String(describing: error))")
+                    Logger.logDetails(msg: "Successfully updated iCloudGroceryListItem for \(groceryListItem.name)")
                     completion(error)
                 }
             }
@@ -303,7 +303,7 @@ public class CKModel {
         record.setValue(groceryListItem.notes, forKey: "notes")
         record.setValue(groceryListItem.quantity, forKey: "quantity")
         record.setValue(groceryListItem.taxablePrice, forKey: "taxablePrice")
-        record.setValue(groceryListItem.unitOfMeasure, forKey: "taxablePrice")
+        record.setValue(groceryListItem.unitOfMeasure, forKey: "unitOfMeasure")
     }
     
     func writeGroceryListItem(groceryListItem: GroceryListItem,
@@ -318,7 +318,7 @@ public class CKModel {
                 completion(nil, error)
                 return
             }
-            
+                
             guard savedRecord != nil else {
                 Logger.logDetails(msg: "Nil savedRecord")
                 completion(savedRecord, nil)
