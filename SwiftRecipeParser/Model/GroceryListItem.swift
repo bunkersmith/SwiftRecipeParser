@@ -178,6 +178,8 @@ class GroceryListItem: NSManagedObject {
             
 //            writeAllToIcloud()
             
+            groceryListItem.writeToIcloud()
+            
             return groceryListItem
         }
         

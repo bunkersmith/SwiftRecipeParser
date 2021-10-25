@@ -103,8 +103,8 @@ class AlertUtilities {
             AlertUtilities.showYesNoAlert(viewController: viewController, title: "Add Item", message: addString, yesButtonHandler: { action in
                 
                 guard let groceryListItem = GroceryListItem.createOrReturn(name: selectedIngredient.ingredientItem.name,
-                                                                           cost: 0.0, quantity:
-                                                                           selectedIngredient.quantity.floatValue,
+                                                                           cost: 0.0,
+                                                                           quantity: selectedIngredient.quantity.floatValue,
                                                                            unitOfMeasure: selectedIngredient.unitOfMeasure,
                                                                            databaseInterface: nil) else {
                     return
