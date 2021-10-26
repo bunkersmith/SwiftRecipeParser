@@ -56,7 +56,9 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       
+
+        tabBarController?.tabBar.isHidden = true
+
         let deviceString:String =  UIDevice.current.model
         if deviceString.range(of: "iPad") != nil {
             instructionsVerticalSpaceConstraint.constant = 15.0
@@ -74,6 +76,15 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
 
         self.scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: self.showIngredientsButton.frame.origin.y + 40)
         
+    }
+    
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        if self.isMovingFromParentViewController {
+            tabBarController?.tabBar.isHidden = false
+        }
     }
     
     override func didReceiveMemoryWarning() {
