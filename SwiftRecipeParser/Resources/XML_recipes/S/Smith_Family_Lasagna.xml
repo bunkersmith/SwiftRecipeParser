@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Smith Family Lasagna</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Cut sweet onion into sections, then dice in food processor
+2. Saute onion in olive oil in large pan until glazed
+3. Add Italian Sausage to pan and cook until done
+4. Add tomato paste and spaghetti sauce to pan
+5. Simmer until flavors are mixed
+6. Grate the mozzarella cheese withe a box grater
+7. Put a small amount of spaghetti sauce in the bottom of a 9” x 13” pyrex pan
+8. Layer the lasagna into the pyrex pan in three layers in the following order: noodles, spaghetti sauce, ricotta, parmesan and mozzarella
+9. Bake in a 350-degree oven for ?? minutes</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Sweet Onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pkg</unitOfMeasure>
+            <ingredientName>Hot Italian Sausage</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Tomato Paste (6 oz)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Jar Ragu Simply Spaghetti Sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pkg</unitOfMeasure>
+            <ingredientName>Lasagna Noodles</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Ricotta Cheese Tub (15 oz)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Mozzarella Cheese Ball (16 oz)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Grated Parmesan Cheese Jar (16 oz)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
