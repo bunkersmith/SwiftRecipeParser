@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import CoreData
+import CloudKit
 
 struct GroceryListItemStruct: CustomStringConvertible {
     var name: String
@@ -176,8 +177,6 @@ class GroceryListItem: NSManagedObject {
             
             databaseInterface.saveContext()
             
-//            writeAllToIcloud()
-            
             groceryListItem.writeToIcloud()
             
             return groceryListItem
@@ -224,31 +223,42 @@ class GroceryListItem: NSManagedObject {
     class func writeAllToIcloud() {
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
-//        var startTime = MillisecondTimer.currentTickCount()
+        var startTime = MillisecondTimer.currentTickCount()
         
-        let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem") { inputFetchRequest in
+        guard let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem", fetchRequestChangeBlock: { inputFetchRequest in
             let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
             inputFetchRequest.sortDescriptors = [sortDescriptor]
             
             return inputFetchRequest
-        } as? Array<GroceryListItem>
+        }) as? Array<GroceryListItem> else {
+            Logger.logDetails(msg: "groceryListItems = nil")
+            return
+        }
 
-//        Logger.logDetails(msg: "Fetch request time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+        Logger.logDetails(msg: "Fetch request time: \(MillisecondTimer.secondsSince(startTime: startTime))")
         
-//        startTime = MillisecondTimer.currentTickCount()
+        startTime = MillisecondTimer.currentTickCount()
         
-        if groceryListItems != nil {
-            Logger.logDetails(msg: "Count of groceryListItems = \(groceryListItems!.count)")
+        let model = CKModel.currentModel
+        var records = [CKRecord]()
+        
+        Logger.logDetails(msg: "Count of groceryListItems = \(groceryListItems.count)")
+        
+        for groceryListItem in groceryListItems {
+            let record = CKRecord(recordType: CloudGroceryListItem.recordType)
+            model.updateCKRecordFromGroceryListItem(groceryListItem: groceryListItem, record: record)
+            records.append(record)
+        }
             
-            var itemsString = ""
-            
-            for item in groceryListItems! {
-                itemsString = addItemToString(groceryListItem: item, string: itemsString)
+        model.writeGroceryListItemRecords(groceryListItemRecords: records) { records, error in
+            if error != nil {
+                Logger.logDetails(msg: "Error writing GroceryListItemRecords: \(error!)")
+            } else {
+                let totalWriteTime = MillisecondTimer.secondsSince(startTime: startTime)
+                if records.count > 0 {
+                    Logger.logDetails(msg: String(format: "Wrote \(records.count) GroceryListItemRecords successfully in %.3f seconds (%.3f) per record", totalWriteTime, totalWriteTime/Double(records.count)))
+                }
             }
-            
-//            Logger.logDetails(msg: "String build time: \(MillisecondTimer.secondsSince(startTime: startTime))")
-
-            writeItemsToICloudFile(itemsString: itemsString)
         }
     }
     
@@ -342,14 +352,6 @@ class GroceryListItem: NSManagedObject {
         return "\(string)\n\(itemString)"
     }
     
-    class func writeItemsToICloudFile(itemsString: String) {
-        
-//        let startTime = MillisecondTimer.currentTickCount()
-        
-// DIFFERENT iCloud CODE HERE
-        
-    }
-
     func convertToShortOneLineString() -> String {
         var returnValue = "name:\t" + name
         returnValue += "\tquantity:\t\(quantity.floatValue)"

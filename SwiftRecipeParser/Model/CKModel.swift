@@ -96,8 +96,8 @@ public class CKModel {
             var returnString:String = ""
             
             if (error == nil && lastCloudGroceryListItems.count > 0) {
-                for song in lastCloudGroceryListItems {
-                    returnString += song.description + "\n"
+                for groceryListItem in lastCloudGroceryListItems {
+                    returnString += groceryListItem.description + "\n"
                     returnString += "\n"
                 }
                 
@@ -113,9 +113,9 @@ public class CKModel {
     func populateCloudGroceryListItemsAsData(_ completion: @escaping (Data?, Error?) -> Void) {
         let startTime = MillisecondTimer.currentTickCount()
         
-        populateCloudGroceryListItemsAsText { (songString, error) in
+        populateCloudGroceryListItemsAsText { (groceryListItemString, error) in
             if error == nil {
-                let returnData = songString?.data(using: .utf8)
+                let returnData = groceryListItemString?.data(using: .utf8)
                 
                 Logger.logDetails(msg: "populateCloudGroceryListItemsAsData time: \(MillisecondTimer.secondsSince(startTime: startTime))")
                 
@@ -210,7 +210,7 @@ public class CKModel {
                 allDeletedIDs.append(contentsOf: deletedRecordIDs)
                 
                 if (allDeletedIDs.count == recordIDsArray.count) {
-                    Logger.logDetails(msg: "deleteAll deleted \(allDeletedIDs.count) songs")
+                    Logger.logDetails(msg: "deleteAll deleted \(allDeletedIDs.count) groceryListItems")
                     completion(nil, allDeletedIDs.count)
                     
                     Logger.logDetails(msg: "Elapsed time: \(MillisecondTimer.secondsSince(startTime: startTime))")
@@ -245,7 +245,7 @@ public class CKModel {
                     completion([], nil)
                     return
                 }
-                Logger.logDetails(msg: "deleteSongs modify error: \(String(describing: error))")
+                Logger.logDetails(msg: "deleteGroceryListItems modify error: \(String(describing: error))")
                 return
             }
             
@@ -255,7 +255,7 @@ public class CKModel {
                 return
             }
             
-            Logger.logDetails(msg: "Recursive routine saved \(savedRecords?.count ?? 0) songs, deleted \(deletedRecordIDs.count) songs")
+            Logger.logDetails(msg: "Recursive routine saved \(savedRecords?.count ?? 0) groceryListItems, deleted \(deletedRecordIDs.count) groceryListItems")
             completion(deletedRecordIDs, nil)
         }
         
@@ -356,7 +356,7 @@ public class CKModel {
                     return
                 }
                 
-                Logger.logDetails(msg: "writeSongs modify error: \(String(describing: error))")
+                Logger.logDetails(msg: "writeGroceryListItems modify error: \(String(describing: error))")
                 completion([], error)
                 return
             }
@@ -367,59 +367,13 @@ public class CKModel {
                 return
             }
             
-            Logger.logDetails(msg: "Recursive routine saved \(savedRecords.count) songs, deleted \(deletedRecordIDs?.count ?? 0) songs")
+            Logger.logDetails(msg: "Recursive routine saved \(savedRecords.count) groceryListItems, deleted \(deletedRecordIDs?.count ?? 0) groceryListItems")
             completion(savedRecords, nil)
         }
         
         writeOp.start()
     }
-    
-//       public func writeSongRecords(songRecords: [CKRecord], completion: @escaping([CKRecord], Error?) -> Void) {
-//           let writeOp = CKModifyRecordsOperation(recordsToSave: songRecords, recordIDsToDelete: [])
-//           writeOp.database = publicDB
-//
-//           writeOp.modifyRecordsCompletionBlock = { [unowned self] (savedRecords, deletedRecordIDs, error) in
-//
-//               guard error == nil else {
-//                   if (error!._code == CKError.Code.limitExceeded.rawValue) {
-//                       var splitIndex = songRecords.count/2
-//
-//                       //Logger.logDetails(msg: "\(splitIndex)")
-//                       let firstHalf = Array(songRecords.prefix(splitIndex))
-//                       //Logger.logDetails(msg: "Prefix count: \(firstHalf.count)")
-//
-//                       // Be sure to catch all the records if there are an odd number, since /2 rounds down
-//                       if (songRecords.count % 2 == 1) {
-//                           splitIndex += 1
-//                       }
-//
-//                       let secondHalf = Array(songRecords.suffix(splitIndex))
-//                       //Logger.logDetails(msg: "Suffix count: \(secondHalf.count)")
-//
-//                       self.writeSongRecords(songRecords: firstHalf, completion: completion)
-//                       self.writeSongRecords(songRecords: secondHalf, completion: completion)
-//                       completion([], nil)
-//                       return
-//                   }
-//
-//                   Logger.logDetails(msg: "writeSongs modify error: \(String(describing: error))")
-//                   completion([], error)
-//                   return
-//               }
-//
-//               guard let savedRecords = savedRecords else {
-//                   Logger.logDetails(msg: "Nil savedRecords")
-//                   completion([], CKModelError.nilSavedRecords)
-//                   return
-//               }
-//
-//               Logger.logDetails(msg: "Recursive routine saved \(savedRecords.count) songs, deleted \(deletedRecordIDs?.count ?? 0) songs")
-//               completion(savedRecords, nil)
-//           }
-//
-//           writeOp.start()
-//       }
-//
+
     func queryRecords(query: CKQuery, completion: @escaping ([CKRecord]?, Error?) -> Void) {
         let operation = CKQueryOperation(query: query)
         var results = [CKRecord]()

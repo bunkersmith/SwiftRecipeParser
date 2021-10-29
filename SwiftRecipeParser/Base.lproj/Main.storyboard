@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c3m-Kk-ogg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c3m-Kk-ogg">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -618,6 +618,11 @@
                                 <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-50" maxY="0.0"/>
                                 <connections>
                                     <action selector="importFileButtonPressed:" destination="sOC-LX-Geb" id="hmf-Hd-jfM"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Export" id="9AC-t8-g4b">
+                                <connections>
+                                    <action selector="exportButtonPressed:" destination="sOC-LX-Geb" id="yaL-gc-kqU"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>

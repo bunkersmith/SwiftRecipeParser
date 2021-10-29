@@ -104,6 +104,12 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         }, noButtonHandler: nil)
     }
     
+    @IBAction func exportButtonPressed(_ sender: Any) {
+        AlertUtilities.showYesNoAlert(viewController: self, title: "Export Alert", message: "Do you want to export all the Grocery List Items to the iCloud file?", yesButtonHandler: { action in
+            GroceryListItem.writeAllToIcloud()
+        }, noButtonHandler: nil)
+    }
+    
     // MARK: - Table View
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

@@ -172,7 +172,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                                          quantity: itemQuantity,
                                          units: itemUnits,
                                          cost: itemPrice,
-                                         taxableStatus: groceryListItem.isTaxable.boolValue)
+                                         taxableStatus: groceryListItem.isTaxable.boolValue,
+                                         writeToIcloudNeeded: false)
 
                 self.updateCostLabels()
                 self.tableView.reloadData()
@@ -247,7 +248,9 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                 self.groceryList.buyItem(item: itemToBuy,
                                          quantity: itemQuantity,
                                          units: itemUnits,
-                                         cost: itemPrice, taxableStatus: itemToBuy.isTaxable.boolValue)
+                                         cost: itemPrice,
+                                         taxableStatus: itemToBuy.isTaxable.boolValue,
+                                         writeToIcloudNeeded: true)
                 
                 self.updateCostLabels()
                 

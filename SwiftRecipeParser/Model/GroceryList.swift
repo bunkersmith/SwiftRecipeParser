@@ -271,7 +271,12 @@ class GroceryList: NSManagedObject {
         return groceryListItem
     }
     
-    func buyItem(item: GroceryListItem, quantity: Float, units: String, cost: Float, taxableStatus: Bool) {
+    func buyItem(item: GroceryListItem,
+                 quantity: Float,
+                 units: String,
+                 cost: Float,
+                 taxableStatus: Bool,
+                 writeToIcloudNeeded: Bool) {
         item.isBought = NSNumber(value: true)
         item.isTaxable = NSNumber(value: taxableStatus)
         item.quantity = NSNumber(value: quantity)
@@ -279,6 +284,10 @@ class GroceryList: NSManagedObject {
         item.cost = NSNumber(value:cost)
         item.calculateTotalCost()
         DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
+        
+        if writeToIcloudNeeded {
+            item.writeToIcloud()
+        }
     }
     
     func  addItem(item: GroceryListItem,
@@ -295,6 +304,8 @@ class GroceryList: NSManagedObject {
         
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         databaseInterface.saveContext()
+        
+        item.writeToIcloud()
     }
     
     class func addItemsToCurrent(items: [GroceryListItem]) {
