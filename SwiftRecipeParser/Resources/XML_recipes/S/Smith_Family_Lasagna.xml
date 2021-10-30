@@ -4,20 +4,37 @@
     <indexCharacter>S</indexCharacter>
     <notes></notes>
     <servings>0</servings>
-    <instructions>1. Cut sweet onion into sections, then dice in food processor
-2. Saute onion in olive oil in large pan until glazed
-3. Add Italian Sausage to pan and cook until done
-4. Add tomato paste and spaghetti sauce to pan
-5. Simmer until flavors are mixed
-6. Grate the mozzarella cheese withe a box grater
-7. Put a small amount of spaghetti sauce in the bottom of a 9” x 13” pyrex pan
-8. Layer the lasagna into the pyrex pan in three layers in the following order: noodles, spaghetti sauce, ricotta, parmesan and mozzarella
-9. Bake in a 350-degree oven for ?? minutes</instructions>
+    <instructions>1. Cut sweet onions into sections, then dice in food processor
+2. Mince the garlic cloves
+3. Saute onion in olive oil in large pan until glazed
+4. Add Italian Sausage to pan and cook until done
+5. Add tomato paste and spaghetti sauce to pan
+6. Simmer until flavors are mixed
+7. Grate the mozzarella cheese withe a box grater
+8. Cook the lasagna in boiling water for 8 to 10 minutes
+9. Put a small amount of spaghetti sauce in the bottom of a 9” x 13” pyrex pan
+10. Layer the lasagna into the pyrex pan in three layers in the following order: noodles, spaghetti sauce, ricotta, parmesan and mozzarella
+11. Bake covered in a 350-degree oven for 25 minutes
+12. Remove foil and bake for an additional 20 minutes
+Note: Baking instructions may not be exactly correct
+</instructions>
     <ingredients>
         <ingredient>
-            <quantity>1</quantity>
+            <quantity>2</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Sweet Onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2-1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves</ingredientName>
+            <processingInstructions>Minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Olive Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
