@@ -6,14 +6,14 @@
     <servings>0</servings>
     <instructions>1. Cut sweet onions into sections, then dice in food processor
 2. Mince the garlic cloves
-3. Saute onion in olive oil in large pan until glazed
+3. Saute onions and minced garlic in olive oil in large pan until onions are glazed
 4. Add Italian Sausage to pan and cook until done
-5. Add tomato paste and spaghetti sauce to pan
-6. Simmer until flavors are mixed
+5. Add spaghetti sauce, tomato paste and Italian seasoning to pan
+6. Simmer until flavors are mixed, or simmer on low in a crock pot
 7. Grate the mozzarella cheese withe a box grater
-8. Cook the lasagna in boiling water for 8 to 10 minutes
+8. Cook the lasagna in boiling water for 8 to 10 minutes (check box directions)
 9. Put a small amount of spaghetti sauce in the bottom of a 9” x 13” pyrex pan
-10. Layer the lasagna into the pyrex pan in three layers in the following order: noodles, spaghetti sauce, ricotta, parmesan and mozzarella
+10. Layer the lasagna into the pyrex pan in three layers in the following order: noodles, spaghetti sauce, ricotta, mozzarella and  parmesan 
 11. Bake covered in a 350-degree oven for 25 minutes
 12. Remove foil and bake for an additional 20 minutes
 Note: Baking instructions may not be exactly correct
@@ -22,61 +22,67 @@ Note: Baking instructions may not be exactly correct
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Sweet Onion</ingredientName>
+            <ingredientName>Sweet Onion </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>2-1/2</quantity>
+            <quantity>2</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Garlic Cloves (2 or 3)</ingredientName>
-            <processingInstructions>Minced</processingInstructions>
+            <ingredientName>Garlic Cloves (2 or 3) Minced</ingredientName>
+            <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
             <unitOfMeasure>tbsp</unitOfMeasure>
-            <ingredientName>Olive Oil</ingredientName>
+            <ingredientName>Olive Oil </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>pkg</unitOfMeasure>
-            <ingredientName>Hot Italian Sausage</ingredientName>
+            <ingredientName>Hot Italian Sausage </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Tomato Paste (6 oz)</ingredientName>
+            <ingredientName>Tomato Paste (6 oz) </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Jar Ragu Simply Spaghetti Sauce</ingredientName>
+            <ingredientName>Jar Ragu Simply Spaghetti Sauce </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>1</quantity>
-            <unitOfMeasure>pkg</unitOfMeasure>
-            <ingredientName>Lasagna Noodles</ingredientName>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Italian Seasoning</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>9</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Lasagna Noodles </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Ricotta Cheese Tub (15 oz)</ingredientName>
+            <ingredientName>Ricotta Cheese Tub (15 oz) </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Mozzarella Cheese Ball (16 oz)</ingredientName>
+            <ingredientName>Mozzarella Cheese Ball (16 oz) </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Grated Parmesan Cheese Jar (16 oz)</ingredientName>
+            <ingredientName>Grated Parmesan Cheese Jar (16 oz) </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

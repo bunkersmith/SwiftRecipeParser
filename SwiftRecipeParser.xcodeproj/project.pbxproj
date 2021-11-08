@@ -320,8 +320,8 @@
 				671953531B4B6558000A9863 /* Recipe.swift */,
 				67F1F04F1F56351B00D4442F /* Recipe+Helpers.swift */,
 				67B630BB25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift */,
-				6719534D1B4B6558000A9863 /* RecipeTitle.swift */,
 				67B630BC25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift */,
+				6719534D1B4B6558000A9863 /* RecipeTitle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
