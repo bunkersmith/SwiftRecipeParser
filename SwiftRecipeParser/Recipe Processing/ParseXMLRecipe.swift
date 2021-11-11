@@ -199,7 +199,7 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
             
             case currentElementState.unitOfMeasureState:
                 if currentIngredient != nil {
-                    currentIngredient!.unitOfMeasure = elementValue as String
+                    currentIngredient!.unitOfMeasure = (elementValue as String).lowercased()
                 }
             break
             
@@ -207,7 +207,7 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
             // NSLog("Ingredient Name: %@", elementValue)
                 if localDatabaseInterface != nil {
                     let recipeItem:RecipeItem = localDatabaseInterface!.newManagedObjectOfType(managedObjectClassName: "RecipeItem") as! RecipeItem
-                    recipeItem.name = elementValue as String
+                    recipeItem.name = (elementValue as String).capitalized.trimmingCharacters(in: .whitespaces)
                     if currentIngredient != nil {
                         currentIngredient!.processingInstructions = ""
                         currentIngredient!.ingredientItem = recipeItem
@@ -217,7 +217,7 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
             
             case currentElementState.processingInstructionsState:
                 if currentIngredient != nil {
-                    currentIngredient!.processingInstructions = elementValue as String
+                    currentIngredient!.processingInstructions = (elementValue as String).trimmingCharacters(in: .whitespaces)
                 }
             break
         }

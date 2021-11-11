@@ -12,104 +12,104 @@
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>FLAT-IRON STEAKS</ingredientName>
-            <processingInstructions> SLICED THIN (1-1 1/4 POUNDS EACH) *I SUGGEST A CUT OF BEEF WITH SOME MARBLING. THE LITTLE BIT OF EXTRA FAT WILL RESULT IN A TENDER BISTEC RANCHERO</processingInstructions>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Flat-Iron Steaks</ingredientName>
+            <processingInstructions>sliced thin (1-1 1/4 pounds each) *I suggest a cut of beef with some marbling. The little bit of extra fat will result in a tender bistec ranchero</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>SALT AND PEPPER</ingredientName>
-            <processingInstructions> NO MEASUREMENT GIVEN </processingInstructions>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Salt And Pepper</ingredientName>
+            <processingInstructions>no measurement given </processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>GARLIC POWDER</ingredientName>
-            <processingInstructions> NO MEASUREMENT GIVEN </processingInstructions>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Powder</ingredientName>
+            <processingInstructions>no measurement given </processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>TABLESPOON</unitOfMeasure>
-            <ingredientName>OLIVE OIL </ingredientName>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>Olive Oil </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>CUP</unitOfMeasure>
-            <ingredientName>RED ONION DICED</ingredientName>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>Red Onion Diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>JALAPEÑO PEPPER SLICED</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Jalapeño Pepper Sliced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>FRESNO PEPPER SLICED</ingredientName>
-            <processingInstructions> IF YOU CAN’T FIND RED FRESNO, USE 2 JALAPEÑO PEPPERS</processingInstructions>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Fresno Pepper Sliced</ingredientName>
+            <processingInstructions>If you can’t find red fresno, use 2 jalapeño peppers</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>SMALL RED BELL PEPPER DICED</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Small Red Bell Pepper Diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>POBLANO PEPPERS DICED</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Poblano Peppers Diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>CLOVES GARLIC MINCED</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Cloves Garlic Minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>EA</unitOfMeasure>
-            <ingredientName>ROMA TOMATOES</ingredientName>
-            <processingInstructions> OR 1 VINE RIPE TOMATO, DICED</processingInstructions>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Roma Tomatoes</ingredientName>
+            <processingInstructions>or 1 vine ripe tomato, diced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>TEASPOON</unitOfMeasure>
-            <ingredientName>CHICKEN OR BEEF BOUILLON GRANULES </ingredientName>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>Chicken Or Beef Bouillon Granules </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>TEASPOON</unitOfMeasure>
-            <ingredientName>MEXICAN OREGANO </ingredientName>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>Mexican Oregano </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>TEASPOON</unitOfMeasure>
-            <ingredientName>CUMIN</ingredientName>
+            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <ingredientName>Cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>TABLESPOON</unitOfMeasure>
-            <ingredientName>WORCESTERSHIRE SAUCE</ingredientName>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>Worcestershire Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>1/2</quantity>
-            <unitOfMeasure>TABLESPOON</unitOfMeasure>
-            <ingredientName>FLOUR CORNSTARCH OR MASA HARINA</ingredientName>
-            <processingInstructions> OPTIONAL (I ADD IT TO THICKEN THE SAUCE A LITTLE)</processingInstructions>
+            <quantity>1</quantity>
+            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <ingredientName>Flour Cornstarch Or Masa Harina</ingredientName>
+            <processingInstructions>optional (I add it to thicken the sauce a little)</processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>3/4</quantity>
-            <unitOfMeasure>CUP</unitOfMeasure>
-            <ingredientName>WATER</ingredientName>
+            <quantity>3</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>Water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>
