@@ -206,8 +206,8 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
             case currentElementState.ingredientNameState:
             // NSLog("Ingredient Name: %@", elementValue)
                 if localDatabaseInterface != nil {
-                    let recipeItem:RecipeItem = localDatabaseInterface!.newManagedObjectOfType(managedObjectClassName: "RecipeItem") as! RecipeItem
-                    recipeItem.name = (elementValue as String).capitalized.trimmingCharacters(in: .whitespaces)
+                    let recipeItemName = (elementValue as String).capitalized.trimmingCharacters(in: .whitespaces)
+                    let recipeItem = RecipeItem.createOrReturn(databaseInterface: localDatabaseInterface!, recipeItemName: recipeItemName)
                     if currentIngredient != nil {
                         currentIngredient!.processingInstructions = ""
                         currentIngredient!.ingredientItem = recipeItem
