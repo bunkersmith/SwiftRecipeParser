@@ -106,7 +106,7 @@ extension ModifyGroceryListItemViewController: UINavigationControllerDelegate, U
                 strongSelf.dismiss(animated: true, completion: nil)
             }
         } else {
-            AlertUtilities.showOkButtonAlert(self, title: "Error", message: "Could not obtain image.", buttonHandler: { [weak self] (action) in
+            AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Could not obtain image.", buttonHandler: { [weak self] (action) in
                 guard let strongSelf = self else {
                     return
                 }
@@ -146,7 +146,7 @@ extension ModifyGroceryListItemViewController: UINavigationControllerDelegate, U
     
     func showImageError() {
         DispatchQueue.main.async {
-            AlertUtilities.showOkButtonAlert(self, title: "Error", message: "Could not add photo", buttonHandler: nil )
+            AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Could not add photo", buttonHandler: nil )
         }
     }
 }

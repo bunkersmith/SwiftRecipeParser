@@ -356,4 +356,12 @@ class GroceryList: NSManagedObject {
         return returnValue
     }
     
+    func unboughtItems(databaseInterface: DatabaseInterface) -> [GroceryListItem] {
+        
+        guard let unboughtItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "inGroceryList.name MATCHES %@ AND isBought == NO", name)) as? [GroceryListItem] else {
+            return []
+        }
+        
+        return unboughtItems
+    }
 }

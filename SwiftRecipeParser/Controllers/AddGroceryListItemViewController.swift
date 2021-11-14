@@ -62,7 +62,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     func returnNameTextFieldText() -> String? {
         let nameTextFieldText = nameTextField.text!
         if nameTextFieldText == "" {
-            AlertUtilities.showOkButtonAlert(self, title: "Error alert", message:"Name is a required field", buttonHandler: nil)
+            AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message:"Name is a required field", buttonHandler: nil)
             return nil
         }
         
@@ -96,7 +96,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
                 GroceryListItem.importFromIcloudFile { (isSuccessful) in
                     if !isSuccessful {
                         DispatchQueue.main.async {
-                            AlertUtilities.showOkButtonAlert(self, title: "Error alert", message:"File import failed", buttonHandler: nil)
+                            AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message:"File import failed", buttonHandler: nil)
                             Logger.logDetails(msg: "File import failed")
                         }
                     }

@@ -212,6 +212,17 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         }
     }
     
+    @IBAction func textButtonPressed(_ sender: Any) {
+        if groceryList.unboughtItems(databaseInterface: databaseInterface).count > 0 {
+            performSegue(withIdentifier: "textGroceryListSegue", sender: self)
+        } else {
+            AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "No unbought items to text.", buttonHandler: nil)
+        }
+    }
+    
+    @IBAction func shareButtonPressed(_ sender: Any) {
+    }
+    
     @IBAction func clearAllItemsButtonPressed(_ sender: Any) {
         AlertUtilities.showYesNoAlert(viewController: self, title: "Do you want to clear all the items in this grocery list?", message: "", yesButtonHandler: { action in
             

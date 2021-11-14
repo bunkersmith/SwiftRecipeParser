@@ -491,12 +491,17 @@
                             </barButtonItem>
                             <barButtonItem title="Text" id="aBX-IR-NDT">
                                 <connections>
-                                    <segue destination="vHy-7l-rPw" kind="show" identifier="textGroceryListSegue" id="Ki8-IR-wVN"/>
+                                    <action selector="textButtonPressed:" destination="Aem-yq-cyd" id="pk2-5g-EbA"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Import" id="fEa-Ab-gwO">
                                 <connections>
                                     <action selector="importButtonPressed:" destination="Aem-yq-cyd" id="GRe-8g-ACB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Share" id="2Nr-92-XjM">
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="Aem-yq-cyd" id="czQ-7g-jdn"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -508,6 +513,7 @@
                         <outlet property="projectedCostLabel" destination="pP7-dW-zbZ" id="5RM-Zt-m7E"/>
                         <outlet property="tableView" destination="G3t-Wr-TnD" id="Xiy-Qs-1vY"/>
                         <outlet property="totalCostLabel" destination="6me-gb-KOJ" id="LvM-JV-hVy"/>
+                        <segue destination="vHy-7l-rPw" kind="show" identifier="textGroceryListSegue" id="Qzn-hR-vC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGP-v5-xxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
