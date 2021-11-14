@@ -14,7 +14,7 @@ import CoreData
 public class RecipeItem: NSManagedObject {
 
 // THIS CLASS MERELY EXISTS TO AVOID THE CREATION OF MANY DIFFERENT Ingredients WITH THE SAME NAME,
-// BUT ALL WITH DIFFERENT Quantitys, Units Of Measure and Processing Instructions
+// BUT ALL WITH DIFFERENT Quantitys, Units Of Measure and Processing Instructions (i.e. NO NEED FOR 50 COPIES OF SALT, EACH WITH A DIFFERENT QUANTITY)
         
 
     class func create(databaseInterface: DatabaseInterface, recipeItemName: String) -> RecipeItem {

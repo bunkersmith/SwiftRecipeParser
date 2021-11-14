@@ -79,8 +79,8 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     func configureUI() {
         titleViewLabel.text = groceryListItem.name
         
-        costTextField.text = String(describing: groceryListItem.cost)
-        quantityTextField.text = String(describing: groceryListItem.quantity)
+        costTextField.text = String(format: "%.2f", groceryListItem.cost.floatValue)
+        quantityTextField.text = String(format: "%.2f", groceryListItem.quantity.floatValue)
         unitOfMeasureTextField.text = groceryListItem.unitOfMeasure
         notesTextField.text = groceryListItem.notes
         
@@ -105,7 +105,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         if taxableSegmentedControl.selectedSegmentIndex == yesSegment {
             taxablePriceLabel.alpha = 1.0
             taxablePriceTextField.alpha = 1.0
-            taxablePriceTextField.text = String(groceryListItem.taxablePrice.floatValue)
+            taxablePriceTextField.text = String(format: "%.2f", groceryListItem.taxablePrice.floatValue)
         } else {
             taxablePriceLabel.alpha = 0.0
             taxablePriceTextField.alpha = 0.0
@@ -119,7 +119,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             crvFluidOuncesLabel.alpha = 1.0
             crvFluidOuncesTextField.alpha = 1.0
             crvQuantityTextField.text = String(groceryListItem.crvQuantity.intValue)
-            crvFluidOuncesTextField.text = String(groceryListItem.crvFluidOunces.floatValue)
+            crvFluidOuncesTextField.text = String(format: "%.1f", groceryListItem.crvFluidOunces.floatValue)
         } else {
             crvQuantityLabel.alpha = 0.0
             crvQuantityTextField.alpha = 0.0

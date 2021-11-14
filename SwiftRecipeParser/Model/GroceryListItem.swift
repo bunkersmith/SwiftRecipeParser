@@ -543,16 +543,16 @@ class GroceryListItem: NSManagedObject {
         if isFsa.boolValue {
             localTotalCost = 0.0
         } else {
+            if isCrv.boolValue {
+                localTotalCost += calculateCrvCharge()
+            }
+            
             if isTaxable.boolValue {
                 if taxablePrice.floatValue > 0 {
                     localTotalCost += taxablePrice.floatValue * 0.0775
                 } else {
                     localTotalCost *= 1.0775
                 }
-            }
-            
-            if isCrv.boolValue {
-                localTotalCost += calculateCrvCharge()
             }
             
             if ((unitOfMeasure == "ea") || (unitOfMeasure == "lb")) && quantity.doubleValue != 1 {
