@@ -221,6 +221,13 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     @IBAction func shareButtonPressed(_ sender: Any) {
+
+        let attrs = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12), NSAttributedString.Key.foregroundColor: UIColor.black]
+        let str = NSAttributedString(string: groceryList.stringForPrinting(), attributes: attrs)
+        let print = UISimpleTextPrintFormatter(attributedText: str)
+
+        let vc = UIActivityViewController(activityItems: [print], applicationActivities: nil)
+        present(vc, animated: true)
     }
     
     @IBAction func clearAllItemsButtonPressed(_ sender: Any) {

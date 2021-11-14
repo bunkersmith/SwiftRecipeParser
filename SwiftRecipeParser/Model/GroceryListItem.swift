@@ -563,6 +563,42 @@ class GroceryListItem: NSManagedObject {
         totalCost = NSNumber(value: localTotalCost)
     }
     
+    func calculateTax() -> Float {
+        var totalTax: Float = 0
+        
+        
+        if isCrv.boolValue {
+            totalTax += calculateCrvCharge() * 0.0775
+        }
+        
+        if isTaxable.boolValue {
+            if taxablePrice.floatValue > 0 {
+                totalTax += taxablePrice.floatValue * 0.0775
+            } else {
+                totalTax += cost.floatValue * 0.0775
+            }
+        }
+
+        return totalTax
+    }
+    
+    func stringForPrinting() -> String {
+        var returnValue = ""
+        returnValue += String(format: "\(name) $%.2f", totalCost.floatValue)
+        
+        returnValue += isTaxable.boolValue ? "T\n" : "\n"
+        
+        if quantity.floatValue != 1.0 {
+            returnValue += String(format: "%.2f @ \(cost) /\(unitOfMeasure)\n", quantity.floatValue)
+        }
+        
+        if isCrv.boolValue {
+            returnValue += String(format: "CRV %.2f\n", calculateCrvCharge())
+        }
+        
+        return returnValue
+    }
+    
     func totalCostString() -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = NumberFormatter.Style.decimal
