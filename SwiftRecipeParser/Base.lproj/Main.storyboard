@@ -499,7 +499,7 @@
                                     <action selector="importButtonPressed:" destination="Aem-yq-cyd" id="GRe-8g-ACB"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Share" id="2Nr-92-XjM">
+                            <barButtonItem title="Print" id="2Nr-92-XjM">
                                 <connections>
                                     <action selector="shareButtonPressed:" destination="Aem-yq-cyd" id="czQ-7g-jdn"/>
                                 </connections>

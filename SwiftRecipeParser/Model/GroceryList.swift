@@ -184,6 +184,16 @@ class GroceryList: NSManagedObject {
 
         return "$\(formatter.string(from: projectedCost)!)"
     }
+
+    func totalCostString() -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.decimal
+        formatter.roundingMode = NumberFormatter.RoundingMode.halfUp
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+
+        return "$\(formatter.string(from: totalCost)!)"
+    }
     
     func updateProjectedCost() {
         projectedCost = NSNumber(value: 0.0)
@@ -375,8 +385,10 @@ class GroceryList: NSManagedObject {
         
         let totalTax = calculateTotalTax()
         if totalTax > 0 {
-            returnValue += String(format: "Tax: %.2f\n", totalTax)
+            returnValue += String(format: "Tax: $%.2f\n", totalTax)
         }
+        
+        returnValue += "Total: " + totalCostString() + "\n"
         
         return returnValue
     }

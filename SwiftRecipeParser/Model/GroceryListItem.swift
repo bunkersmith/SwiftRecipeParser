@@ -584,16 +584,17 @@ class GroceryListItem: NSManagedObject {
     
     func stringForPrinting() -> String {
         var returnValue = ""
-        returnValue += String(format: "\(name) $%.2f", totalCost.floatValue)
+        
+        returnValue += String(format: "\(name) $%.2f", cost.floatValue * quantity.floatValue)
         
         returnValue += isTaxable.boolValue ? "T\n" : "\n"
         
-        if quantity.floatValue != 1.0 {
-            returnValue += String(format: "%.2f @ \(cost) /\(unitOfMeasure)\n", quantity.floatValue)
-        }
-        
         if isCrv.boolValue {
-            returnValue += String(format: "CRV %.2f\n", calculateCrvCharge())
+            returnValue += String(format: "CRV $%.2f\n", calculateCrvCharge())
+        }
+
+        if quantity.floatValue != 1.0 {
+            returnValue += String(format: "%.2f @ $\(cost.floatValue) / \(unitOfMeasure)\n", quantity.floatValue)
         }
         
         return returnValue
