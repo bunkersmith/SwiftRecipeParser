@@ -594,7 +594,7 @@ class GroceryListItem: NSManagedObject {
         }
 
         if quantity.floatValue != 1.0 {
-            returnValue += String(format: "%.2f @ $\(cost.floatValue) / \(unitOfMeasure)\n", quantity.floatValue)
+            returnValue += String(format: "%.2f @ $%.2f / \(unitOfMeasure)\n", quantity.floatValue, cost.floatValue)
         }
         
         return returnValue

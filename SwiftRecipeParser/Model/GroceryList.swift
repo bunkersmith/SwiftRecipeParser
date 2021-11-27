@@ -377,13 +377,17 @@ class GroceryList: NSManagedObject {
     
     func stringForPrinting() -> String {
         var returnValue = ""
-        
+        var totalTax: Float = 0
+
         hasItems.enumerateObjects({ (groceryListObject, idx, stop) -> Void in
             let groceryListItem = groceryListObject as! GroceryListItem
             returnValue += groceryListItem.stringForPrinting()
+            
+            if groceryListItem.isTaxable.boolValue {
+                totalTax += groceryListItem.calculateTax()
+            }
         })
         
-        let totalTax = calculateTotalTax()
         if totalTax > 0 {
             returnValue += String(format: "Tax: $%.2f\n", totalTax)
         }
@@ -391,18 +395,5 @@ class GroceryList: NSManagedObject {
         returnValue += "Total: " + totalCostString() + "\n"
         
         return returnValue
-    }
-    
-    func calculateTotalTax() -> Float {
-        var totalTax: Float = 0
-        
-        hasItems.enumerateObjects({ (groceryListObject, idx, stop) -> Void in
-            let groceryListItem = groceryListObject as! GroceryListItem
-            if groceryListItem.isTaxable.boolValue {
-                totalTax += groceryListItem.calculateTax()
-            }
-        })
-        
-        return totalTax
     }
 }
