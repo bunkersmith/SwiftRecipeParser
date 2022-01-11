@@ -24,6 +24,7 @@ struct GroceryListItemStruct: CustomStringConvertible {
     var isFSA: Bool
     var notes: String
     var imagePath: String
+    var produceCode: Int
     
     public init(name: String,
                 quantity: Float,
@@ -36,7 +37,8 @@ struct GroceryListItemStruct: CustomStringConvertible {
                 crvFluidOunces: Float,
                 isFSA: Bool,
                 notes: String,
-                imagePath: String) {
+                imagePath: String,
+                produceCode: Int) {
         self.name = name
         self.quantity = quantity
         self.cost = cost
@@ -49,6 +51,7 @@ struct GroceryListItemStruct: CustomStringConvertible {
         self.isFSA = isFSA
         self.notes = notes
         self.imagePath = imagePath
+        self.produceCode = produceCode
     }
     
     var description: String {
@@ -102,6 +105,7 @@ class GroceryListItem: NSManagedObject {
     @NSManaged var inGroceryList: GroceryList
     @NSManaged var notes: String
     @NSManaged var listPosition: NSNumber
+    @NSManaged var produceCode: NSNumber
     
     override var description: String {
         var returnValue:String
@@ -404,7 +408,8 @@ class GroceryListItem: NSManagedObject {
                                                           crvFluidOunces: 0,
                                                           isFSA: false,
                                                           notes: "",
-                                                          imagePath: "")
+                                                          imagePath: "",
+                                                          produceCode: 0)
         
         while i < tokens.count {
             

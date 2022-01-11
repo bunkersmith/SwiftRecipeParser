@@ -153,6 +153,7 @@
 		675DCE3326A64B73000F5F99 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		675DCE3526A69CFD000F5F99 /* TripleTextAlertDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripleTextAlertDialog.storyboard; sourceTree = "<group>"; };
 		6766910E261A844900605201 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6766F119278D7FBE004CAF4A /* SwiftRecipeParser1.28.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.28.xcdatamodel; sourceTree = "<group>"; };
 		677A4CF51D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableSearchHeaderViewController.swift; sourceTree = "<group>"; };
 		677A4CF71D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeTableSearchHeaderView.xib; sourceTree = "<group>"; };
 		6780F8632650DFDB00CA950E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -841,6 +842,7 @@
 		679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6766F119278D7FBE004CAF4A /* SwiftRecipeParser1.28.xcdatamodel */,
 				6740A62427229C010048FEAC /* SwiftRecipeParser1.27.xcdatamodel */,
 				67E91DC126C4D342008EE000 /* SwiftRecipeParser1.26.xcdatamodel */,
 				67ABA5A52622D25E00553773 /* SwiftRecipeParser1.25.xcdatamodel */,
@@ -865,7 +867,7 @@
 				671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */,
 				679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */,
 			);
-			currentVersion = 6740A62427229C010048FEAC /* SwiftRecipeParser1.27.xcdatamodel */;
+			currentVersion = 6766F119278D7FBE004CAF4A /* SwiftRecipeParser1.28.xcdatamodel */;
 			path = SwiftRecipeParser.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

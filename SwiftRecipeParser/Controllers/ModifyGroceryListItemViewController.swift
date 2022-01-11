@@ -42,6 +42,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var quantityTextField: UITextField!
     @IBOutlet weak var unitOfMeasureTextField: UITextField!
     @IBOutlet weak var notesTextField: UITextField!
+    @IBOutlet weak var produceCodeTextField: UITextField!
     @IBOutlet weak var fsaSegmentedControl: UISegmentedControl!
     @IBOutlet weak var taxableSegmentedControl: UISegmentedControl!
     @IBOutlet weak var taxablePriceLabel: UILabel!
