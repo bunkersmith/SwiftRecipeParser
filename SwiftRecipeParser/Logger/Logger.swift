@@ -33,9 +33,16 @@ class Logger: NSObject, NSSecureCoding {
     func encode(with aCoder: NSCoder) {
         aCoder.encode(self.logMessages, forKey:"logMessages")
     }
-    
+
     func archiveData() {
-        NSKeyedArchiver.archiveRootObject(self, toFile:FileUtilities.loggerArchiveFilePath())
+        if #available(iOS 11.0, *) {
+            do {
+                let loggerData = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: true)
+                try loggerData.write(to: URL(fileURLWithPath: FileUtilities.loggerArchiveFilePath()))
+            } catch let error as NSError {
+                NSLog("Error archiving logger: \(error)")
+            }
+        }
     }
     
     class func loadInstance() -> Logger
