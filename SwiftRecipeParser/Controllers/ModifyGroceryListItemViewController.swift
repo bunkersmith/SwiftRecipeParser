@@ -85,6 +85,11 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         unitOfMeasureTextField.text = groceryListItem.unitOfMeasure
         notesTextField.text = groceryListItem.notes
         
+        let produceCode = groceryListItem.produceCode.int16Value
+        if produceCode != 0 {
+            produceCodeTextField.text = String(produceCode)
+        }
+        
         taxableSegmentedControl.selectedSegmentIndex = Int(groceryListItem.isTaxable.boolValue)
         configureTaxablePrice()
         
@@ -119,7 +124,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             crvQuantityTextField.alpha = 1.0
             crvFluidOuncesLabel.alpha = 1.0
             crvFluidOuncesTextField.alpha = 1.0
-            crvQuantityTextField.text = String(groceryListItem.crvQuantity.intValue)
+            crvQuantityTextField.text = String(groceryListItem.crvQuantity.int16Value)
             crvFluidOuncesTextField.text = String(format: "%.1f", groceryListItem.crvFluidOunces.floatValue)
         } else {
             crvQuantityLabel.alpha = 0.0
@@ -197,6 +202,19 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         
     }
 
+    func hasIntChanged(textField: UITextField, textFieldName: String, oldValue: Int16) -> Bool {
+        
+        let textFieldText = textField.text!
+        
+        if textFieldText.isEmpty {
+            return oldValue != 0
+        }
+
+        let textFieldValue = Int16(textFieldText)
+        
+        return textFieldValue != oldValue
+    }
+
     func hasFloatChanged(textField: UITextField, textFieldName: String, oldValue: Float) -> Bool {
         
         let textFieldText = textField.text!
@@ -251,7 +269,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             return true
         }
 
-        if hasFloatChanged(textField: crvQuantityTextField, textFieldName: "CRV Quantity", oldValue: groceryListItem.crvQuantity.floatValue) {
+        if hasIntChanged(textField: crvQuantityTextField, textFieldName: "CRV Quantity", oldValue: groceryListItem.crvQuantity.int16Value) {
             return true
         }
 
@@ -263,9 +281,21 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             return true
         }
 
+        if hasIntChanged(textField: produceCodeTextField, textFieldName: "Produce Code", oldValue: groceryListItem.produceCode.int16Value) {
+            return true
+        }
+        
         return false
     }
     
+
+    func updateIntValue(textField: UITextField) -> NSNumber {
+        if textField.text!.isEmpty {
+            return NSNumber(value: Int16(0))
+        } else {
+            return NSNumber(value: Int16(textField.text!)!)
+        }
+    }
 
     func updateFloatValue(textField: UITextField) -> NSNumber {
         if textField.text!.isEmpty {
@@ -294,11 +324,13 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             groceryListItem.taxablePrice = updateFloatValue(textField: taxablePriceTextField)
 
             groceryListItem.isCrv = updateBoolValue(segmentedControl: crvSegmentedControl)
-            groceryListItem.crvQuantity = updateFloatValue(textField: crvQuantityTextField)
+            groceryListItem.crvQuantity = updateIntValue(textField: crvQuantityTextField)
             groceryListItem.crvFluidOunces = updateFloatValue(textField: crvFluidOuncesTextField)
 
             groceryListItem.notes = notesTextField.text!
          
+            groceryListItem.produceCode = updateIntValue(textField: produceCodeTextField)
+            
             groceryListItem.calculateTotalCost()
             
             let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
