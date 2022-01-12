@@ -8,7 +8,9 @@
 
 import UIKit
 
-class Logger: NSObject, NSCoding {
+class Logger: NSObject, NSSecureCoding {
+    
+    static var supportsSecureCoding: Bool = true
 
     static let maxLogMessageCount = 10000
     
@@ -23,7 +25,9 @@ class Logger: NSObject, NSCoding {
     
     required init?(coder aDecoder: NSCoder) {
         super.init()
-        self.logMessages = aDecoder.decodeObject(forKey: "logMessages") as! [String]
+        if let logMessages = aDecoder.decodeObject(of: NSArray.self, forKey: "logMessages") as? [String] {
+            self.logMessages = logMessages
+        }
     }
  
     func encode(with aCoder: NSCoder) {
@@ -36,13 +40,6 @@ class Logger: NSObject, NSCoding {
     
     class func loadInstance() -> Logger
     {
-        /*
-        if let loggerData:Logger = NSKeyedUnarchiver.unarchiveObject(withFile: FileUtilities.loggerArchiveFilePath()) as? Logger {
-            return loggerData
-        }
-        return Logger()
-        */
-        
         let archiveFileUrl = URL(fileURLWithPath:FileUtilities.loggerArchiveFilePath())
         
         guard let dat = NSData(contentsOf: archiveFileUrl) else {

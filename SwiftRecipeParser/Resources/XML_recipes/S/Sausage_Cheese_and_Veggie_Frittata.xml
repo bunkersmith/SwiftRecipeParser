@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Sausage, Cheese and Veggie Frittata</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Preheat the oven to 375°F. Spray a 9 x 13 baking dish with oil. Place half of cheese into the baking dish.
+
+2. Spray a large nonstick skillet with cooking spray, cook the sausage over medium heat breaking up as it cooks until browned and cooked through. Set aside.
+
+3. Add the oil to the skillet with the shallots and mushrooms and saute until vegetables are tender, about 5 to 6 minutes. Add the roasted peppers, broccoli and return the sausage, cook 1 minute; mix well and remove from heat. Spread evenly over the cheese mixture. 
+4. In a large bowl combine the eggs, egg whites, milk, parmesan, salt and pepper and whisk well. Slowly pour over the vegetables in the baking dish and top with remaining cheese.
+
+5. Bake until a knife inserted near the center comes out clean, 32 to 35 minutes. Let stand 8 to 10 minutes before cutting into 8 pieces.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>7</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>sweet Italian chicken sausage</ingredientName>
+            <processingInstructions> removed from skin (2 links)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>olive oil spray</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-3/4</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>part skim mozzarella</ingredientName>
+            <processingInstructions> shredded</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/3</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>chopped shallots</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>sliced shiitake mushrooms</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>chopped roasted red bell peppers</ingredientName>
+            <processingInstructions> from a 12 oz jar</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>finely chopped broccoli florets</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large whole eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large egg whites</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>fat free milk</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>grated parmesan cheese</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>kosher salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
