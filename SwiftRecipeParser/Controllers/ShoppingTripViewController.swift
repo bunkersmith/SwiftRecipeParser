@@ -68,7 +68,7 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
             return 0
         }
         
-        Logger.logDetails(msg: "Returning \(sectionInfo[section].numberOfObjects) for section \(section)")
+//        Logger.logDetails(msg: "Returning \(sectionInfo[section].numberOfObjects) for section \(section)")
         return sectionInfo[section].numberOfObjects
     }
     
@@ -79,6 +79,15 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if let groceryList = self.fetchedResultsController.object(at: indexPath) as? GroceryList {
+                shoppingTrip.removeFromGroceryLists(groceryList)
+                tableView.reloadData()
+            }
+        }
+    }
+
 // MARK: - Table view delegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -87,15 +96,6 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
             performSegue(withIdentifier: "ShoppingTripGroceryListSegue", sender: self)
         }
         tableView.deselectRow(at: indexPath, animated: false)
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            if let groceryList = self.fetchedResultsController.object(at: indexPath) as? GroceryList {
-                shoppingTrip.removeFromGroceryLists(groceryList)
-                tableView.reloadData()
-            }
-        }
     }
     
 // MARK: - Fetched results controller
