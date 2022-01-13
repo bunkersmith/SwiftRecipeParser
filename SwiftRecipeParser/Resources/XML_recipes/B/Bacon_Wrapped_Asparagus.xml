@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Bacon Wrapped Asparagus</name>
+    <indexCharacter>B</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat the oven to 400 degrees.
+Prep the asparagus by washing them and clipping off the bottom of the stems.
+Begin to wrap one thick cut Bacon slice around each piece of asparagus. If the asparagus is small, you can wrap one piece of bacon between two of three pieces of asparagus. I prefer the larger pieces of asparagus because they cook evenly.
+Lay the completely wrapped pieces on a cookie sheet lined with tin foil. (you will thank me for this tip in the end when it comes time to clean up)
+In a saucepan, heat up the remaining ingredients: butter, light brown sugar, soy sauce, garlic, and pepper. Bring this to a boil. Continue stirring it so it does not burn. Allow it to boil for about one minute and then remove it from the heat. This will create a thick sauce you will coat the bacon wrapped asparagus with.
+Now baste the sauce over each bacon wrapped asparagus.
+By this time your oven will be preheated and you can cook it on 400 degrees for about 20 minutes or until the bacon is slightly crispy on the outside.
+TIP:  Be sure to layer the pan with aluminum foil or a handy silicone baking mat for easy cleanup.
+</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Bacon packages</ingredientName>
+            <processingInstructions> pick your favorite flavor</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>lbs</unitOfMeasure>
+            <ingredientName>Asparagus</ingredientName>
+            <processingInstructions> Tip: purchase the larger stems of asparagus</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>butter stick</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>light brown sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>garlic</ingredientName>
+            <processingInstructions> minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
