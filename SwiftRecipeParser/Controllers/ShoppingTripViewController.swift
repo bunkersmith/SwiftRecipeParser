@@ -89,6 +89,15 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
         tableView.deselectRow(at: indexPath, animated: false)
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if let groceryList = self.fetchedResultsController.object(at: indexPath) as? GroceryList {
+                shoppingTrip.removeFromGroceryLists(groceryList)
+                tableView.reloadData()
+            }
+        }
+    }
+    
 // MARK: - Fetched results controller
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
