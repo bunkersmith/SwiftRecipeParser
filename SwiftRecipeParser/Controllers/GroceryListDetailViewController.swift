@@ -368,12 +368,13 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
     func showSelectGroceryListViewController(groceryListItem: GroceryListItem?) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let myAlert = storyboard.instantiateViewController(withIdentifier: "SelectGroceryListViewController") as? SelectGroceryListViewController
-        myAlert!.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-        myAlert!.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        myAlert!.groceryListItem = groceryListItem
-        myAlert!.delegate = self
-        self.present(myAlert!, animated: true, completion: nil)
+        let selectGroceryListViewController = storyboard.instantiateViewController(withIdentifier: "SelectGroceryListViewController") as? SelectGroceryListViewController
+        selectGroceryListViewController!.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        selectGroceryListViewController!.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        selectGroceryListViewController!.groceryLists = GroceryList.returnAllButCurrent()
+        selectGroceryListViewController!.groceryListItem = groceryListItem
+        selectGroceryListViewController!.delegate = self
+        self.present(selectGroceryListViewController!, animated: true, completion: nil)
     }
     
     @IBAction func tableViewLongPress(sender: UILongPressGestureRecognizer) {

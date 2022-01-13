@@ -20,9 +20,8 @@ class SelectGroceryListViewController: UIViewController  {
     
     weak var delegate: GroceryListSelectionDelegate?
     
+    var groceryLists:Array<GroceryList>!
     var groceryListItem: GroceryListItem? = nil
-    
-    private var groceryLists:Array<GroceryList>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,13 +38,13 @@ class SelectGroceryListViewController: UIViewController  {
         } else {
             label.text = "Switch to grocery list:"
         }
-        populateGroceryLists()
+//        populateGroceryLists()
     }
 
-    func populateGroceryLists() {
-        groceryLists = GroceryList.returnAllButCurrent()
-        tableView.reloadData()
-    }
+//    func populateGroceryLists() {
+//        groceryLists = GroceryList.returnAllButCurrent()
+//        tableView.reloadData()
+//    }
 
     @objc func transparentViewTapped(sender: UITapGestureRecognizer) {
         dismiss(animated: true)
