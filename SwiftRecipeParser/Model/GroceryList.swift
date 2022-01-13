@@ -17,6 +17,8 @@ class GroceryList: NSManagedObject {
     @NSManaged var totalCost: NSNumber
     @NSManaged var projectedCost: NSNumber
     @NSManaged var hasItems: NSOrderedSet
+    @NSManaged var stopNumber: NSNumber
+    @NSManaged var inShoppingTrip: ShoppingTrip
     
     func addHasItemsObject(value:GroceryListItem)
     {

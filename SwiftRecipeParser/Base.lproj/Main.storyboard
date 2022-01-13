@@ -197,7 +197,7 @@
                             <constraint firstItem="qm9-Xf-Inx" firstAttribute="top" secondItem="2gJ-wR-Pzw" secondAttribute="top" id="e6d-sd-fdq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cjb-lt-ids">
+                    <navigationItem key="navigationItem" title="Grocery Lists" id="cjb-lt-ids">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="NAw-Zr-34O">
                             <connections>
                                 <action selector="addButtonPressed:" destination="Rka-G7-4aq" id="hZU-Kz-GQs"/>
@@ -212,7 +212,7 @@
             </objects>
             <point key="canvasLocation" x="1836.9230769230769" y="1196.4454976303316"/>
         </scene>
-        <!--Thanksgiving Recipes View Controller-->
+        <!--Thanksgiving Recipes-->
         <scene sceneID="kgT-wu-JoK">
             <objects>
                 <viewController id="wbq-BK-xsw" customClass="ThanksgivingRecipesViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
@@ -271,7 +271,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aA3-dj-Jdp">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aA3-dj-Jdp">
                                                     <rect key="frame" x="8" y="389" width="584" height="280"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -303,7 +303,7 @@
                             <constraint firstItem="Rnn-CQ-isz" firstAttribute="trailing" secondItem="9QD-xZ-1NG" secondAttribute="trailing" id="ymE-IF-ycS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="BYK-gx-Uu5"/>
+                    <navigationItem key="navigationItem" title="Thanksgiving Recipes" id="BYK-gx-Uu5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="In6-dw-2KZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -984,6 +984,7 @@
                             <constraint firstItem="l7X-Jp-sGR" firstAttribute="leading" secondItem="ctk-1b-l9b" secondAttribute="leading" id="vgA-cc-t6K"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="GsQ-t9-Qqv"/>
                     <connections>
                         <outlet property="imageView" destination="l7X-Jp-sGR" id="AZ9-jj-Md3"/>
                     </connections>
@@ -1446,6 +1447,7 @@
                         <segue destination="Emm-QH-Pnt" kind="relationship" relationship="viewControllers" id="xZz-WQ-kIH"/>
                         <segue destination="c3W-DV-0QD" kind="relationship" relationship="viewControllers" id="kec-OP-6ry"/>
                         <segue destination="2Yd-cw-DlE" kind="relationship" relationship="viewControllers" id="GDk-9A-Ib3"/>
+                        <segue destination="pn1-Lt-5o2" kind="relationship" relationship="viewControllers" id="mzF-Hs-9Mh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNk-pJ-fh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1471,11 +1473,83 @@
             </objects>
             <point key="canvasLocation" x="1080" y="1197"/>
         </scene>
+        <!--Shopping Trip-->
+        <scene sceneID="S3z-8Z-TjY">
+            <objects>
+                <navigationController id="pn1-Lt-5o2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shopping Trip" image="tab_icon_wheel" id="tZK-L1-gOh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yIn-cQ-OmJ">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LXt-EU-IDH" kind="relationship" relationship="rootViewController" id="quT-3x-hL5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOX-16-3s4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465" y="1922"/>
+        </scene>
+        <!--Shopping Trip-->
+        <scene sceneID="vSS-ia-Hec">
+            <objects>
+                <viewController restorationIdentifier="ShoppingTripViewController" storyboardIdentifier="ShoppingTripViewController" id="LXt-EU-IDH" customClass="ShoppingTripViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TJV-Bp-FBe"/>
+                        <viewControllerLayoutGuide type="bottom" id="gda-I1-B4P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Wm-qz-mwM">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M5t-aQ-dMp">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingTripCell" id="iv4-79-OMA">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iv4-79-OMA" id="kKV-fW-24Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="LXt-EU-IDH" id="bSV-NN-z4Z"/>
+                                    <outlet property="delegate" destination="LXt-EU-IDH" id="DXL-CV-aKi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="M5t-aQ-dMp" secondAttribute="trailing" id="1bZ-ru-3ul"/>
+                            <constraint firstItem="M5t-aQ-dMp" firstAttribute="top" secondItem="0Wm-qz-mwM" secondAttribute="top" id="lOe-Ji-3b8"/>
+                            <constraint firstAttribute="bottom" secondItem="M5t-aQ-dMp" secondAttribute="bottom" id="t6R-xA-MXX"/>
+                            <constraint firstItem="M5t-aQ-dMp" firstAttribute="leading" secondItem="0Wm-qz-mwM" secondAttribute="leading" id="tvd-zj-ZDU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shopping Trip" id="0cf-A6-PW5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bbn-2E-Qx4">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="LXt-EU-IDH" id="fvb-3W-MwT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="M5t-aQ-dMp" id="8OH-ra-4aK"/>
+                        <segue destination="Aem-yq-cyd" kind="show" identifier="ShoppingTripGroceryListSegue" id="WbI-iN-z1Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIV-Yu-mWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230.76923076923077" y="1921.5639810426539"/>
+        </scene>
         <!--Thanksgiving Recipes-->
         <scene sceneID="e8k-uE-b1H">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Yd-cw-DlE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Thanksgiving Recipes" id="rV6-VZ-njI"/>
+                    <tabBarItem key="tabBarItem" title="Thanksgiving Recipes" image="tab_icon_turkey" id="rV6-VZ-njI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ekH-eC-KfO">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -1490,10 +1564,33 @@
             </objects>
             <point key="canvasLocation" x="1080" y="1922"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="aC9-CQ-tVb">
+            <objects>
+                <viewController id="fiU-9o-E5W" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="28J-vJ-K1o"/>
+                        <viewControllerLayoutGuide type="bottom" id="blc-eD-5q4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92k-rQ-Xgm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="372-02-k3f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="1244"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WbI-iN-z1Q"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="tab_icon_grocery_list" width="17.333333969116211" height="10.666666984558105"/>
         <image name="tab_icon_recipe_list" width="30" height="23"/>
+        <image name="tab_icon_turkey" width="32" height="32"/>
+        <image name="tab_icon_wheel" width="32" height="32"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

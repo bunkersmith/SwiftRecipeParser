@@ -98,7 +98,6 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func caculateSelectedGroceryListCosts() {
-        navigationItem.title = ""
         
         var grandTotalCost:Float = 0
         
@@ -118,6 +117,8 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         
         if grandTotalCost > 0 {
             navigationItem.title = String(format: "Grand Total: $%.2f", grandTotalCost)
+        } else {
+            navigationItem.title = "Grocery Lists"
         }
     }
     
