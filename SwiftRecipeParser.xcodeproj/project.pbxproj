@@ -65,6 +65,7 @@
 		679ED45119839E8B00E22DDB /* DatabaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ED44F19839E8B00E22DDB /* DatabaseInterface.swift */; };
 		679ED45219839E8B00E22DDB /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ED45019839E8B00E22DDB /* DatabaseManager.swift */; };
 		679ED45519839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */; };
+		67A39455278FB6C7000D759F /* SelectGroceryListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A39454278FB6C7000D759F /* SelectGroceryListItemViewController.swift */; };
 		67A8B3601FC124E8009E44EF /* GroceryItemPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */; };
 		67B2DD5A26184BF100B8C0E8 /* SelectGroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */; };
 		67B5AACA27200D7600505DB3 /* CKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5AAC927200D7500505DB3 /* CKModel.swift */; };
@@ -126,6 +127,7 @@
 		673302701C077B650074DD8F /* ThanksgivingRecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ThanksgivingRecipesViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		673302721C077D830074DD8F /* ThanksgivingRecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanksgivingRecipeCell.swift; sourceTree = "<group>"; };
 		673302741C07AD6C0074DD8F /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
+		67345100278FC124009B3F49 /* SwiftRecipeParser1.29.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.29.xcdatamodel; sourceTree = "<group>"; };
 		673A050B26A41B7A00C71F21 /* AlertDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlertDialog.storyboard; sourceTree = "<group>"; };
 		673A050D26A41D1400C71F21 /* AlertDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialogViewController.swift; sourceTree = "<group>"; };
 		673A6001199EE38F0087B4A1 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RecipeDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -175,6 +177,7 @@
 		679ED45019839E8B00E22DDB /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser.xcdatamodel; sourceTree = "<group>"; };
 		67A1A6A91F661C85005C81A3 /* SwiftRecipeParser1.13.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.13.xcdatamodel; sourceTree = "<group>"; };
+		67A39454278FB6C7000D759F /* SelectGroceryListItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroceryListItemViewController.swift; sourceTree = "<group>"; };
 		67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemPhotoViewController.swift; sourceTree = "<group>"; };
 		67ABA5A52622D25E00553773 /* SwiftRecipeParser1.25.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.25.xcdatamodel; sourceTree = "<group>"; };
 		67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroceryListViewController.swift; sourceTree = "<group>"; };
@@ -344,6 +347,7 @@
 				673BD0091983B24400D8D2AC /* RecipeMasterTableViewController.swift */,
 				672705AC1F47DEB500A5ECDE /* RecipeMasterTableViewController+CameraAuth.swift */,
 				67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */,
+				67A39454278FB6C7000D759F /* SelectGroceryListItemViewController.swift */,
 				675094C826E602950013FC2D /* TextGroceryListViewController.swift */,
 				67E8FADE245E78F000F67305 /* TextIngredientsViewController.swift */,
 				679E9D58262981E000BE5C40 /* TextMessageViewController.swift */,
@@ -596,6 +600,7 @@
 				67C004902651F9D500D7E4CC /* UITableView+Helpers.swift in Sources */,
 				6743DAC31E20DA1900FF76C8 /* ProcessTextFile.swift in Sources */,
 				673A6002199EE38F0087B4A1 /* RecipeDetailViewController.swift in Sources */,
+				67A39455278FB6C7000D759F /* SelectGroceryListItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,6 +847,7 @@
 		679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				67345100278FC124009B3F49 /* SwiftRecipeParser1.29.xcdatamodel */,
 				6766F119278D7FBE004CAF4A /* SwiftRecipeParser1.28.xcdatamodel */,
 				6740A62427229C010048FEAC /* SwiftRecipeParser1.27.xcdatamodel */,
 				67E91DC126C4D342008EE000 /* SwiftRecipeParser1.26.xcdatamodel */,
@@ -867,7 +873,7 @@
 				671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */,
 				679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */,
 			);
-			currentVersion = 6766F119278D7FBE004CAF4A /* SwiftRecipeParser1.28.xcdatamodel */;
+			currentVersion = 67345100278FC124009B3F49 /* SwiftRecipeParser1.29.xcdatamodel */;
 			path = SwiftRecipeParser.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

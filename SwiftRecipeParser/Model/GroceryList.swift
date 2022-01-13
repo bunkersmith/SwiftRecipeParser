@@ -13,6 +13,7 @@ class GroceryList: NSManagedObject {
 
     @NSManaged var name: String
     @NSManaged var isCurrent: NSNumber
+    @NSManaged var isSelected: NSNumber
     @NSManaged var totalCost: NSNumber
     @NSManaged var projectedCost: NSNumber
     @NSManaged var hasItems: NSOrderedSet

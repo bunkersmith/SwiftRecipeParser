@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G224" minimumToolsVersion="Xcode 4.3" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1.29">
+    <entity name="GroceryList" representedClassName="SwiftRecipeParser.GroceryList" syncable="YES">
+        <attribute name="isCurrent" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isSelected" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectedCost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalCost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="hasItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="GroceryListItem" inverseName="inGroceryList" inverseEntity="GroceryListItem" syncable="YES"/>
+    </entity>
+    <entity name="GroceryListItem" representedClassName="SwiftRecipeParser.GroceryListItem" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="crvFluidOunces" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="crvQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBought" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCrv" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFsa" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isTaxable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="listPosition" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="produceCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="taxablePrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalCost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unitOfMeasure" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inGroceryList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroceryList" inverseName="hasItems" inverseEntity="GroceryList" syncable="YES"/>
+    </entity>
+    <entity name="Ingredient" representedClassName="SwiftRecipeParser.Ingredient" syncable="YES">
+        <attribute name="processingInstructions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unitOfMeasure" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="containedInRecipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="containsIngredients" inverseEntity="Recipe" syncable="YES"/>
+        <relationship name="ingredientItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeItem" inverseName="containedInIngredients" inverseEntity="RecipeItem" syncable="YES"/>
+    </entity>
+    <entity name="Recipe" representedClassName="SwiftRecipeParser.Recipe" syncable="YES">
+        <attribute name="instructions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="servings" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="containsIngredients" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Ingredient" inverseName="containedInRecipes" inverseEntity="Ingredient" syncable="YES"/>
+        <relationship name="title" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeTitle" inverseName="forRecipe" inverseEntity="RecipeTitle" syncable="YES"/>
+    </entity>
+    <entity name="RecipeItem" representedClassName=".RecipeItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="containedInIngredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="ingredientItem" inverseEntity="Ingredient" syncable="YES"/>
+    </entity>
+    <entity name="RecipeTitle" representedClassName="SwiftRecipeParser.RecipeTitle" syncable="YES">
+        <attribute name="indexCharacter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="forRecipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="title" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GroceryList" positionX="-54" positionY="0" width="128" height="119"/>
+        <element name="GroceryListItem" positionX="-36" positionY="63" width="128" height="284"/>
+        <element name="Ingredient" positionX="-27" positionY="18" width="128" height="104"/>
+        <element name="Recipe" positionX="-9" positionY="36" width="128" height="120"/>
+        <element name="RecipeItem" positionX="-9" positionY="108" width="128" height="59"/>
+        <element name="RecipeTitle" positionX="-9" positionY="99" width="128" height="90"/>
+    </elements>
+</model>

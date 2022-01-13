@@ -17,14 +17,20 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        populateGroceryLists()
 
+        clearSelectedGroceryLists()
+
+        populateGroceryLists()
+        
         tableView.tableFooterView = UIView(frame: .zero)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        populateGroceryLists()
+
+        initCheckBoxes()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -35,8 +41,6 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         GroceryListItem.calculateAllTotalCosts()
         
         caculateSelectedGroceryListCosts()
-        
-        populateGroceryLists()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -50,6 +54,24 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         // Dispose of any resources that can be recreated.
     }
 
+    func clearSelectedGroceryLists() {
+        let groceryLists = GroceryList.returnAll()
+        for groceryList in groceryLists {
+            groceryList.isSelected = false
+        }
+        
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        databaseInterface.saveContext()
+    }
+
+    func initCheckBoxes() {
+        for indexPath in tableView.getAllIndexes() {
+            if let cell = tableView.cellForRow(at: indexPath) as? GroceryListTableViewCell {
+                cell.isSelectedCheckBox.isChecked = groceryLists[indexPath.row].isSelected.boolValue
+            }
+        }
+    }
+    
     func populateGroceryLists() {
         groceryLists = GroceryList.returnAll()
         self.tableView.reloadData()
@@ -84,9 +106,15 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
             if let cell = tableView.cellForRow(at: indexPath) as? GroceryListTableViewCell {
                 if cell.isSelectedCheckBox.isChecked {
                     grandTotalCost += groceryLists[indexPath.row].projectedCost.floatValue
+                    groceryLists[indexPath.row].isSelected = NSNumber(booleanLiteral: true)
+                } else {
+                    groceryLists[indexPath.row].isSelected = NSNumber(booleanLiteral: false)
                 }
             }
         }
+        
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        databaseInterface.saveContext()
         
         if grandTotalCost > 0 {
             navigationItem.title = String(format: "Grand Total: $%.2f", grandTotalCost)
