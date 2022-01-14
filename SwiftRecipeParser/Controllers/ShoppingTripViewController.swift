@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
+class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, GroceryListSelectionDelegate {
 
     lazy private var databaseInterface:DatabaseInterface = {
         return DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
@@ -52,24 +52,55 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     @IBAction func addButtonPressed(_ sender: Any) {
-        let groceryList = GroceryList.returnGroceryListWithName(name: "Vons")
-        shoppingTrip.addToGroceryLists(groceryList!)
+        showSelectGroceryListViewController()
+    }
+    
+    func showSelectGroceryListViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let selectGroceryListViewController = storyboard.instantiateViewController(withIdentifier: "SelectGroceryListViewController") as? SelectGroceryListViewController
+        selectGroceryListViewController!.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        selectGroceryListViewController!.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        selectGroceryListViewController!.groceryLists = GroceryList.returnAllButCurrent()
+        selectGroceryListViewController!.delegate = self
+        self.present(selectGroceryListViewController!, animated: true, completion: nil)
+    }
+    
+    func groceryListSelected(groceryList: GroceryList, groceryListItem: GroceryListItem?) {
+        groceryList.stopNumber = NSNumber(integerLiteral: listSize() + 1)
+        shoppingTrip.addToGroceryLists(groceryList)
         databaseInterface.saveContext()
         tableView.reloadData()
     }
-    
-// MARK: - Table view data source
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    func listSize() -> Int {
         guard let fetchedResultsController = fetchedResultsController else {
             return 0
         }
         guard let sectionInfo = fetchedResultsController.sections else {
             return 0
         }
+        guard fetchedResultsController.sections?.count == 1 else {
+            return 0
+        }
         
 //        Logger.logDetails(msg: "Returning \(sectionInfo[section].numberOfObjects) for section \(section)")
-        return sectionInfo[section].numberOfObjects
+        return sectionInfo[0].numberOfObjects
+    }
+    
+    func compressList(startingPosition: Int) {
+        let listSize = listSize()
+        for i in startingPosition..<listSize {
+            let indexPath = IndexPath(row: i, section: 0)
+            if let groceryList = self.fetchedResultsController.object(at: indexPath) as? GroceryList {
+                groceryList.stopNumber = NSNumber(integerLiteral: groceryList.stopNumber.intValue - 1)
+            }
+        }
+    }
+    
+// MARK: - Table view data source
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listSize()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,7 +113,9 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let groceryList = self.fetchedResultsController.object(at: indexPath) as? GroceryList {
+                groceryList.stopNumber = 0
                 shoppingTrip.removeFromGroceryLists(groceryList)
+                compressList(startingPosition: indexPath.row)
                 tableView.reloadData()
             }
         }
