@@ -18,6 +18,7 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
     var shoppingTrip: ShoppingTrip!
     var fetchedResultsController:NSFetchedResultsController<NSFetchRequestResult>!
     var selectedGroceryList: GroceryList!
+    var deletePending = false
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -87,14 +88,15 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
         return sectionInfo[0].numberOfObjects
     }
     
-    func compressList(startingPosition: Int) {
+    func compressList() {
         let listSize = listSize()
-        for i in startingPosition..<listSize {
+        for i in 0..<listSize {
             let indexPath = IndexPath(row: i, section: 0)
             if let groceryList = self.fetchedResultsController.object(at: indexPath) as? GroceryList {
-                groceryList.stopNumber = NSNumber(integerLiteral: groceryList.stopNumber.intValue - 1)
+                groceryList.stopNumber = NSNumber(integerLiteral: i)
             }
         }
+        databaseInterface.saveContext()
     }
     
 // MARK: - Table view data source
@@ -109,13 +111,13 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
         
         return cell
     }
-    
+     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let groceryList = self.fetchedResultsController.object(at: indexPath) as? GroceryList {
                 groceryList.stopNumber = 0
                 shoppingTrip.removeFromGroceryLists(groceryList)
-                compressList(startingPosition: indexPath.row)
+                deletePending = true
                 tableView.reloadData()
             }
         }
@@ -172,6 +174,10 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         self.tableView.endUpdates()
+        if (deletePending) {
+            deletePending = false
+            compressList()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
