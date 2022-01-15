@@ -61,7 +61,7 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
         let selectGroceryListViewController = storyboard.instantiateViewController(withIdentifier: "SelectGroceryListViewController") as? SelectGroceryListViewController
         selectGroceryListViewController!.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         selectGroceryListViewController!.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        selectGroceryListViewController!.groceryLists = GroceryList.returnAllButCurrent()
+        selectGroceryListViewController!.groceryLists = GroceryList.returnAllNotInShoppingTrip()
         selectGroceryListViewController!.delegate = self
         self.present(selectGroceryListViewController!, animated: true, completion: nil)
     }

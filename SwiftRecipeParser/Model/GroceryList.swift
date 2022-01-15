@@ -151,6 +151,22 @@ class GroceryList: NSManagedObject {
         return returnValue
     }
     
+    class func returnAllNotInShoppingTrip() -> Array<GroceryList> {
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+            
+        guard let returnValue = databaseInterface.entitiesOfType(entityTypeName: "GroceryList",
+                                                                 fetchRequestChangeBlock: { inputFetchRequest in
+            let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+            inputFetchRequest.sortDescriptors = [sortDescriptor]
+            inputFetchRequest.predicate = NSPredicate(format: "inShoppingTrip == nil")
+
+            return inputFetchRequest
+        }) as? Array<GroceryList> else {
+            return []
+        }
+        return returnValue
+    }
+    
     class func returnCurrentGroceryList() -> GroceryList?
     {
         var returnValue:GroceryList? = nil
