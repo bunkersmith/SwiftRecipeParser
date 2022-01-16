@@ -22,7 +22,8 @@ class SelectGroceryListViewController: UIViewController  {
     
     var groceryLists:Array<GroceryList>!
     var groceryListItem: GroceryListItem? = nil
-
+    var listTitle = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,11 +34,7 @@ class SelectGroceryListViewController: UIViewController  {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if groceryListItem != nil {
-            label.text = "Move \(groceryListItem!.name) to list:"
-        } else {
-            label.text = "Switch to grocery list:"
-        }
+        label.text = listTitle
 //        populateGroceryLists()
     }
 

@@ -33,6 +33,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
     var titleViewButton:UIButton!
     
+    var itemToDelete: GroceryListItem? = nil
+    
     override func encodeRestorableState(with aCoder: NSCoder) {
         super.encodeRestorableState(with: aCoder)
         aCoder.encode(groceryList.name, forKey: "groceryListName")
@@ -352,6 +354,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let itemToDelete = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+                self.itemToDelete = itemToDelete
                 removeGroceryListItem(groceryList: groceryList, groceryListItem: itemToDelete)
                 tableView.reloadData()
             }
@@ -372,6 +375,11 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         selectGroceryListViewController!.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         selectGroceryListViewController!.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         selectGroceryListViewController!.groceryLists = GroceryList.returnAllButCurrent()
+        if groceryListItem != nil {
+            selectGroceryListViewController!.listTitle = "Move \(groceryListItem!.name) to list:"
+        } else {
+            selectGroceryListViewController!.listTitle = "Switch to grocery list:"
+        }
         selectGroceryListViewController!.groceryListItem = groceryListItem
         selectGroceryListViewController!.delegate = self
         self.present(selectGroceryListViewController!, animated: true, completion: nil)
@@ -462,6 +470,11 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
+        
+        if itemToDelete != nil {
+            itemToDelete?.isBought = NSNumber(booleanLiteral: false)
+            itemToDelete = nil
+        }
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) {

@@ -62,6 +62,7 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
         selectGroceryListViewController!.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         selectGroceryListViewController!.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         selectGroceryListViewController!.groceryLists = GroceryList.returnAllNotInShoppingTrip()
+        selectGroceryListViewController!.listTitle = "Select grocery list to add to shopping trip:"
         selectGroceryListViewController!.delegate = self
         self.present(selectGroceryListViewController!, animated: true, completion: nil)
     }
