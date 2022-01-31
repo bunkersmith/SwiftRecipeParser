@@ -105,21 +105,6 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         
         hideSearchBar(searchHeaderViewController?.searchBar)
 
-        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
-        
-        let items = GroceryListItem.fetchAll()
-        for item in items! {
-            if item.name == "\"Eggs, 18 Count\"" {
-                print("Found it")
-                databaseInterface.deleteObject(coreDataObject: item)
-                databaseInterface.saveContext()
-            }
-//            if item.name.count == 0 {
-//                print("Item with no name")
-//                databaseInterface.deleteObject(coreDataObject: item)
-//                databaseInterface.saveContext()
-//            }
-        }
         
         if !initializationCompleted {
             let recipeFiles = RecipeFiles()
@@ -146,6 +131,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                 
         checkCameraAndLibrary()
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -270,7 +256,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     func createFetchedResultsController(searchString:String?) {
         let databaseInterface:DatabaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
-        if searchString != nil {
+        if searchString != nil && !searchString!.isEmpty {
             if searchHeaderViewController != nil, searchHeaderViewController?.searchType == .Ingredient {
                 fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "Recipe", sortKey: "title.indexCharacter", secondarySortKey: "title.name", sectionNameKeyPath:"title.indexCharacter", predicate:NSPredicate(format: "ANY containsIngredients.ingredientItem.name  contains[cd] %@", searchString!))
             } else {
@@ -600,13 +586,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         updateTableWithSearchString(searchString: searchText)
     }
 
-    func updateTableWithSearchString(searchString: String) {
-        if searchString == "" {
-            createFetchedResultsController(searchString: nil)
-        }
-        else {
-            createFetchedResultsController(searchString: searchString)
-        }
+    func updateTableWithSearchString(searchString: String?) {
+        createFetchedResultsController(searchString: searchString)
         
         resultTableViewController.tableView.reloadData()
     }
@@ -614,7 +595,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     // MARK: - Scroll View Delegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if tableView.contentOffset.y <= 0 && searchTextField != nil {
-            searchTextField!.becomeFirstResponder()
+            searchTextField?.becomeFirstResponder()
+            searchString = searchTextField?.text
+            updateTableWithSearchString(searchString: searchString)
         }
     }
 }
