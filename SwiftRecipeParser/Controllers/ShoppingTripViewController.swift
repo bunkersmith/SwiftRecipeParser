@@ -204,103 +204,125 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
     @IBAction func longPressGestureRecognized(_ sender: UILongPressGestureRecognizer) {
 
         let touchPoint = sender.location(in: tableView)
-        if let indexPath = tableView.indexPathForRow(at: touchPoint) {
-            let location = sender.location(in: tableView)
+        guard let indexPath = tableView.indexPathForRow(at: touchPoint) else {
+            sourceIndexPath = nil
+            snapshot?.removeFromSuperview()
+            snapshot = nil
+            return
+        }
+        
+        let location = sender.location(in: tableView)
 
-            switch sender.state {
-                case .began:
-                    sourceIndexPath = indexPath
-                    let cell = tableView(tableView, cellForRowAt: indexPath)
-                    snapshot = customSnapshotFromView(inputView: cell)
-                
-                    if snapshot != nil {
-                        var center = cell.center
-                        snapshot?.center = center
-                        snapshot?.alpha = 0
-                        tableView.addSubview(snapshot!)
-                        UIView.animate(withDuration: 0.25) {
-                            center.y = location.y
-                            self.snapshot?.center = center
-                            self.snapshot?.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
-                            self.snapshot?.alpha = 0.98
-                            cell.alpha = 0
-                        } completion: { finished in
-                            cell.isHidden = true
-                        }
+        switch sender.state {
+            case .began:
+                sourceIndexPath = indexPath
+                let cell = tableView(tableView, cellForRowAt: indexPath)
+                snapshot = customSnapshotFromView(inputView: cell)
+            
+                guard let snapshot = snapshot else {
+                    return
                 }
-                break
-                case .changed:
-                    var center = snapshot?.center
-                    if snapshot != nil {
-                        center?.y = location.y
-                        snapshot?.center = center!
-                        if (sourceIndexPath != nil) {
-                            if indexPath.compare(sourceIndexPath!) != .orderedSame {
-                                let sourceGroceryList = shoppingTrip.groceryLists[sourceIndexPath!.row] as! GroceryList
-                                sourceGroceryList.stopNumber = NSNumber(integerLiteral: indexPath.row)
-                                
-                                let groceryList = shoppingTrip.groceryLists[indexPath.row] as! GroceryList
-                                groceryList.stopNumber = NSNumber(integerLiteral: sourceIndexPath!.row)
-                                
-                                
-                                var groceryListsAsArray = shoppingTrip.groceryLists.array
-                                
-                                groceryListsAsArray[indexPath.row] = sourceGroceryList
-                                groceryListsAsArray[sourceIndexPath!.row] = groceryList
-                                
-                                let groceryListsAsOrderedSet = NSOrderedSet(array: groceryListsAsArray)
-                                shoppingTrip.groceryLists = groceryListsAsOrderedSet
-                                
-                                databaseInterface.saveContext()
-                                tableView.reloadData()
-                                
-//                                tableView.moveRow(at: sourceIndexPath!, to: indexPath)
-                                sourceIndexPath = indexPath
-                            }
-                        }
-                    }
-                break
-                default:
-                    if (sourceIndexPath != nil) {
-                        let cell = tableView.cellForRow(at: sourceIndexPath!)
-                        cell?.isHidden = false
-                        cell?.alpha = 0
-                        UIView.animate(withDuration: 0.25) {
-                            self.snapshot?.center = cell!.center
-                            self.snapshot?.transform = CGAffineTransform(scaleX: 1, y: 1)
-                            self.snapshot?.alpha = 0
-                            cell?.alpha = 1
-                        } completion: { finished in
-                            self.sourceIndexPath = nil
-                            self.snapshot?.removeFromSuperview()
-                            self.snapshot = nil
-                        }
-                    }
-                break
-            }
+
+                var center = cell.center
+                snapshot.center = center
+                snapshot.alpha = 0
+                tableView.addSubview(snapshot)
+                UIView.animate(withDuration: 0.25) {
+                    center.y = location.y
+                    snapshot.center = center
+                    snapshot.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+                    snapshot.alpha = 0.98
+                    self.snapshot = snapshot
+                    cell.alpha = 0
+                } completion: { finished in
+                    cell.isHidden = true
+                }
+            break
+            case .changed:
+                guard let snapshot = snapshot else {
+                    return
+                }
+            
+                var center = snapshot.center
+                center.y = location.y
+                snapshot.center = center
+                self.snapshot = snapshot
+
+                guard let sourceIndexPath = sourceIndexPath else {
+                    return
+                }
+
+                if indexPath.compare(sourceIndexPath) != .orderedSame {
+                    let sourceGroceryList = shoppingTrip.groceryLists[sourceIndexPath.row] as! GroceryList
+                    sourceGroceryList.stopNumber = NSNumber(integerLiteral: indexPath.row)
+                    
+                    let groceryList = shoppingTrip.groceryLists[indexPath.row] as! GroceryList
+                    groceryList.stopNumber = NSNumber(integerLiteral: sourceIndexPath.row)
+                    
+                    
+                    var groceryListsAsArray = shoppingTrip.groceryLists.array
+                    
+                    groceryListsAsArray[indexPath.row] = sourceGroceryList
+                    groceryListsAsArray[sourceIndexPath.row] = groceryList
+                    
+                    let groceryListsAsOrderedSet = NSOrderedSet(array: groceryListsAsArray)
+                    shoppingTrip.groceryLists = groceryListsAsOrderedSet
+                    
+                    databaseInterface.saveContext()
+                    tableView.reloadData()
+                    
+                    self.sourceIndexPath = indexPath
+                }
+            break
+            default:
+                guard let cell = tableView.cellForRow(at: sourceIndexPath!) else {
+                    return
+                }
+                guard sourceIndexPath != nil else {
+                    return
+                }
+                guard let snapshot = snapshot else {
+                    return
+                }
+                cell.isHidden = false
+                cell.alpha = 0
+                UIView.animate(withDuration: 0.25) {
+                    snapshot.center = cell.center
+                    snapshot.transform = CGAffineTransform(scaleX: 1, y: 1)
+                    snapshot.alpha = 0
+                    self.snapshot = snapshot
+                    cell.alpha = 1
+                } completion: { finished in
+                    self.sourceIndexPath = nil
+                    snapshot.removeFromSuperview()
+                    self.snapshot = nil
+                }
+            break
         }
     }
     
     func customSnapshotFromView(inputView: UIView) -> UIView {
-        UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0)
+        return inputView.resizableSnapshotView(from: inputView.bounds, afterScreenUpdates: true, withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))!
         
-        guard let currentContext = UIGraphicsGetCurrentContext() else {
-            UIGraphicsEndImageContext()
-            return inputView
-        }
-        
-        inputView.layer.render(in: currentContext)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-
-        let snapshot = UIImageView(image: image)
-        
-        snapshot.layer.masksToBounds = false
-        snapshot.layer.cornerRadius = 0
-        snapshot.layer.shadowOffset = CGSize(width: -5, height: 0)
-        snapshot.layer.shadowRadius = 5
-        snapshot.layer.shadowOpacity = 0.4
-        
-        return snapshot
+//        UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, true, 0)
+//
+//        guard let currentContext = UIGraphicsGetCurrentContext() else {
+//            UIGraphicsEndImageContext()
+//            return inputView
+//        }
+//
+//        inputView.layer.render(in: currentContext)
+//        let image = UIGraphicsGetImageFromCurrentImageContext()
+//        UIGraphicsEndImageContext()
+//
+//        let snapshot = UIImageView(image: image)
+//
+//        snapshot.layer.masksToBounds = false
+//        snapshot.layer.cornerRadius = 0
+//        snapshot.layer.shadowOffset = CGSize(width: -5, height: 0)
+//        snapshot.layer.shadowRadius = 5
+//        snapshot.layer.shadowOpacity = 0.4
+//
+//        return snapshot
     }
 }
