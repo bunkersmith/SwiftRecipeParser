@@ -1522,12 +1522,16 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="M5t-aQ-dMp" secondAttribute="trailing" id="1bZ-ru-3ul"/>
                             <constraint firstItem="M5t-aQ-dMp" firstAttribute="top" secondItem="0Wm-qz-mwM" secondAttribute="top" id="lOe-Ji-3b8"/>
                             <constraint firstAttribute="bottom" secondItem="M5t-aQ-dMp" secondAttribute="bottom" id="t6R-xA-MXX"/>
                             <constraint firstItem="M5t-aQ-dMp" firstAttribute="leading" secondItem="0Wm-qz-mwM" secondAttribute="leading" id="tvd-zj-ZDU"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="w4W-DC-JUC" appends="YES" id="yxY-B5-V7D"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping Trip" id="0cf-A6-PW5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bbn-2E-Qx4">
@@ -1542,6 +1546,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIV-Yu-mWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="w4W-DC-JUC">
+                    <connections>
+                        <action selector="longPressGestureRecognized:" destination="LXt-EU-IDH" id="zaX-wY-7yJ"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="230.76923076923077" y="1921.5639810426539"/>
         </scene>

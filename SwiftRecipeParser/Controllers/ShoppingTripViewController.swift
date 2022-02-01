@@ -20,6 +20,9 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
     var selectedGroceryList: GroceryList!
     var deletePending = false
     
+    var snapshot: UIView? = nil
+    var sourceIndexPath: IndexPath? = nil
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -123,6 +126,10 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
             }
         }
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
 
 // MARK: - Table view delegate
     
@@ -134,6 +141,10 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
         tableView.deselectRow(at: indexPath, animated: false)
     }
     
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+
 // MARK: - Fetched results controller
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
@@ -190,4 +201,106 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
 
     }
 
+    @IBAction func longPressGestureRecognized(_ sender: UILongPressGestureRecognizer) {
+
+        let touchPoint = sender.location(in: tableView)
+        if let indexPath = tableView.indexPathForRow(at: touchPoint) {
+            let location = sender.location(in: tableView)
+
+            switch sender.state {
+                case .began:
+                    sourceIndexPath = indexPath
+                    let cell = tableView(tableView, cellForRowAt: indexPath)
+                    snapshot = customSnapshotFromView(inputView: cell)
+                
+                    if snapshot != nil {
+                        var center = cell.center
+                        snapshot?.center = center
+                        snapshot?.alpha = 0
+                        tableView.addSubview(snapshot!)
+                        UIView.animate(withDuration: 0.25) {
+                            center.y = location.y
+                            self.snapshot?.center = center
+                            self.snapshot?.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+                            self.snapshot?.alpha = 0.98
+                            cell.alpha = 0
+                        } completion: { finished in
+                            cell.isHidden = true
+                        }
+                }
+                break
+                case .changed:
+                    var center = snapshot?.center
+                    if snapshot != nil {
+                        center?.y = location.y
+                        snapshot?.center = center!
+                        if (sourceIndexPath != nil) {
+                            if indexPath.compare(sourceIndexPath!) != .orderedSame {
+                                let sourceGroceryList = shoppingTrip.groceryLists[sourceIndexPath!.row] as! GroceryList
+                                sourceGroceryList.stopNumber = NSNumber(integerLiteral: indexPath.row)
+                                
+                                let groceryList = shoppingTrip.groceryLists[indexPath.row] as! GroceryList
+                                groceryList.stopNumber = NSNumber(integerLiteral: sourceIndexPath!.row)
+                                
+                                
+                                var groceryListsAsArray = shoppingTrip.groceryLists.array
+                                
+                                groceryListsAsArray[indexPath.row] = sourceGroceryList
+                                groceryListsAsArray[sourceIndexPath!.row] = groceryList
+                                
+                                let groceryListsAsOrderedSet = NSOrderedSet(array: groceryListsAsArray)
+                                shoppingTrip.groceryLists = groceryListsAsOrderedSet
+                                
+                                databaseInterface.saveContext()
+                                tableView.reloadData()
+                                
+//                                tableView.moveRow(at: sourceIndexPath!, to: indexPath)
+                                sourceIndexPath = indexPath
+                            }
+                        }
+                    }
+                break
+                default:
+                    if (sourceIndexPath != nil) {
+                        let cell = tableView.cellForRow(at: sourceIndexPath!)
+                        cell?.isHidden = false
+                        cell?.alpha = 0
+                        UIView.animate(withDuration: 0.25) {
+                            self.snapshot?.center = cell!.center
+                            self.snapshot?.transform = CGAffineTransform(scaleX: 1, y: 1)
+                            self.snapshot?.alpha = 0
+                            cell?.alpha = 1
+                        } completion: { finished in
+                            self.sourceIndexPath = nil
+                            self.snapshot?.removeFromSuperview()
+                            self.snapshot = nil
+                        }
+                    }
+                break
+            }
+        }
+    }
+    
+    func customSnapshotFromView(inputView: UIView) -> UIView {
+        UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0)
+        
+        guard let currentContext = UIGraphicsGetCurrentContext() else {
+            UIGraphicsEndImageContext()
+            return inputView
+        }
+        
+        inputView.layer.render(in: currentContext)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        let snapshot = UIImageView(image: image)
+        
+        snapshot.layer.masksToBounds = false
+        snapshot.layer.cornerRadius = 0
+        snapshot.layer.shadowOffset = CGSize(width: -5, height: 0)
+        snapshot.layer.shadowRadius = 5
+        snapshot.layer.shadowOpacity = 0.4
+        
+        return snapshot
+    }
 }
