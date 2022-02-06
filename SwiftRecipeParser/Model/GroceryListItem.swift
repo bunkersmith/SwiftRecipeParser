@@ -368,16 +368,20 @@ class GroceryListItem: NSManagedObject {
                 returnValue += String(format: "\ttaxablePrice:\t%.2f", taxablePrice)
             }
         }
-        if (isCrv.boolValue) {
+        if isCrv.boolValue {
             returnValue += "\tisCRV:\t\(isCrv.boolValue)"
             returnValue += "\tcrvQuantity:\t\(crvQuantity.intValue)"
             returnValue += "\tcrvFluidOunces:\t\(crvFluidOunces.floatValue)"
         }
-        if (isFsa.boolValue) {
+        if isFsa.boolValue {
             returnValue += "\tisFSA:\t\(isFsa.boolValue)"
         }
-        if (!notes.isEmpty) {
+        if !notes.isEmpty {
             returnValue += "\tnotes:\t" + notes
+        }
+        let produceCode = produceCode.int32Value
+        if produceCode != 0 {
+            returnValue += "\tproduceCode:\t" + String(produceCode)
         }
         returnValue += "\n"
         return returnValue
@@ -451,6 +455,9 @@ class GroceryListItem: NSManagedObject {
                     if i + 1 < tokens.count {
                         groceryListItemStruct.imagePath = tokens[i+1]
                     }
+                break
+                case "produceCode:":
+                    groceryListItemStruct.produceCode = Int32(tokens[i+1])!
                 break
                 default:
                 break
