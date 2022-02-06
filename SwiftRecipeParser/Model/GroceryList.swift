@@ -319,16 +319,17 @@ class GroceryList: NSManagedObject {
         }
     }
     
-    func  addItem(item: GroceryListItem,
-                  itemQuantity: Float,
-                  itemUnits: String,
-                  itemPrice: Float,
-                  itemNotes: String) {
+    func addItem(item: GroceryListItem,
+                 itemQuantity: Float,
+                 itemUnits: String,
+                 itemPrice: Float,
+                 itemNotes: String) {
         item.quantity = NSNumber(value: itemQuantity)
         item.unitOfMeasure = itemUnits
         item.cost = NSNumber(value: itemPrice)
         item.notes = itemNotes
         item.calculateTotalCost()
+        item.isBought = NSNumber(value: false)
         addHasItemsObject(value: item)
         
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
@@ -341,6 +342,10 @@ class GroceryList: NSManagedObject {
         
         guard let groceryList = returnCurrentGroceryList() else {
             return
+        }
+        
+        for item in items {
+            item.isBought = NSNumber(value: false)
         }
         
         groceryList.addHasItemsObjects(values: items)
@@ -359,6 +364,8 @@ class GroceryList: NSManagedObject {
             return
         }
         
+        groceryListItem	.isBought = NSNumber(value: false)
+
         groceryList.addHasItemsObject(value: groceryListItem)
         
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)

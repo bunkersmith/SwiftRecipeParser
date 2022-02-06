@@ -851,9 +851,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEw-Y2-E3X">
-                                <rect key="frame" x="138" y="294.66666666666669" width="55" height="34"/>
+                                <rect key="frame" x="138" y="294.66666666666669" width="60" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="x6Y-La-pPA"/>
+                                    <constraint firstAttribute="width" constant="60" id="x6Y-La-pPA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>

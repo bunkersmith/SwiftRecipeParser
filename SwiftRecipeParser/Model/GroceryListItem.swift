@@ -24,7 +24,7 @@ struct GroceryListItemStruct: CustomStringConvertible {
     var isFSA: Bool
     var notes: String
     var imagePath: String
-    var produceCode: Int
+    var produceCode: Int32
     
     public init(name: String,
                 quantity: Float,
@@ -38,7 +38,7 @@ struct GroceryListItemStruct: CustomStringConvertible {
                 isFSA: Bool,
                 notes: String,
                 imagePath: String,
-                produceCode: Int) {
+                produceCode: Int32) {
         self.name = name
         self.quantity = quantity
         self.cost = cost
@@ -168,7 +168,7 @@ class GroceryListItem: NSManagedObject {
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
         if let groceryListItem:GroceryListItem = databaseInterface.newManagedObjectOfType(managedObjectClassName: "GroceryListItem") as? GroceryListItem {
-            groceryListItem.name = name.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            groceryListItem.name = name.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).capitalized
             groceryListItem.isBought = NSNumber(value: false)
             groceryListItem.cost = NSNumber(value: cost)
             groceryListItem.quantity = NSNumber(value: quantity)

@@ -122,6 +122,7 @@
 		671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.1.xcdatamodel; sourceTree = "<group>"; };
 		67207C881F579BFD00AEFB83 /* SRPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRPError.swift; sourceTree = "<group>"; };
 		6721870F1995B8850051BA99 /* FractionMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FractionMath.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6723337A27AF6A7D00390CF2 /* SwiftRecipeParser1.31.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.31.xcdatamodel; sourceTree = "<group>"; };
 		672705AC1F47DEB500A5ECDE /* RecipeMasterTableViewController+CameraAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecipeMasterTableViewController+CameraAuth.swift"; sourceTree = "<group>"; };
 		672BF40A1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModifyGroceryListItemViewController+PhotoActions.swift"; sourceTree = "<group>"; };
 		672D5638278FF2F200F6EA05 /* SwiftRecipeParser1.30.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.30.xcdatamodel; sourceTree = "<group>"; };
@@ -860,6 +861,7 @@
 		679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6723337A27AF6A7D00390CF2 /* SwiftRecipeParser1.31.xcdatamodel */,
 				672D5638278FF2F200F6EA05 /* SwiftRecipeParser1.30.xcdatamodel */,
 				67345100278FC124009B3F49 /* SwiftRecipeParser1.29.xcdatamodel */,
 				6766F119278D7FBE004CAF4A /* SwiftRecipeParser1.28.xcdatamodel */,
@@ -887,7 +889,7 @@
 				671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */,
 				679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */,
 			);
-			currentVersion = 672D5638278FF2F200F6EA05 /* SwiftRecipeParser1.30.xcdatamodel */;
+			currentVersion = 6723337A27AF6A7D00390CF2 /* SwiftRecipeParser1.31.xcdatamodel */;
 			path = SwiftRecipeParser.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

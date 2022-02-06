@@ -85,7 +85,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         unitOfMeasureTextField.text = groceryListItem.unitOfMeasure
         notesTextField.text = groceryListItem.notes
         
-        let produceCode = groceryListItem.produceCode.int16Value
+        let produceCode = groceryListItem.produceCode.int32Value
         if produceCode != 0 {
             produceCodeTextField.text = String(produceCode)
         }
@@ -215,6 +215,19 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         return textFieldValue != oldValue
     }
 
+    func hasInt32Changed(textField: UITextField, textFieldName: String, oldValue: Int32) -> Bool {
+        
+        let textFieldText = textField.text!
+        
+        if textFieldText.isEmpty {
+            return oldValue != 0
+        }
+
+        let textFieldValue = Int32(textFieldText)
+        
+        return textFieldValue != oldValue
+    }
+
     func hasFloatChanged(textField: UITextField, textFieldName: String, oldValue: Float) -> Bool {
         
         let textFieldText = textField.text!
@@ -281,19 +294,26 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             return true
         }
 
-        if hasIntChanged(textField: produceCodeTextField, textFieldName: "Produce Code", oldValue: groceryListItem.produceCode.int16Value) {
+        if hasInt32Changed(textField: produceCodeTextField, textFieldName: "Produce Code", oldValue: groceryListItem.produceCode.int32Value) {
             return true
         }
         
         return false
     }
-    
 
     func updateIntValue(textField: UITextField) -> NSNumber {
         if textField.text!.isEmpty {
             return NSNumber(value: Int16(0))
         } else {
             return NSNumber(value: Int16(textField.text!)!)
+        }
+    }
+
+    func updateInt32Value(textField: UITextField) -> NSNumber {
+        if textField.text!.isEmpty {
+            return NSNumber(value: Int32(0))
+        } else {
+            return NSNumber(value: Int32(textField.text!)!)
         }
     }
 
@@ -329,7 +349,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
 
             groceryListItem.notes = notesTextField.text!
          
-            groceryListItem.produceCode = updateIntValue(textField: produceCodeTextField)
+            groceryListItem.produceCode = updateInt32Value(textField: produceCodeTextField)
             
             groceryListItem.calculateTotalCost()
             
