@@ -42,6 +42,8 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var quantityTextField: UITextField!
     @IBOutlet weak var unitOfMeasureTextField: UITextField!
     @IBOutlet weak var notesTextField: UITextField!
+    @IBOutlet weak var webLinkButton: UIButton!
+    @IBOutlet weak var webLinkTextField: UITextField!
     @IBOutlet weak var produceCodeTextField: UITextField!
     @IBOutlet weak var fsaSegmentedControl: UISegmentedControl!
     @IBOutlet weak var taxableSegmentedControl: UISegmentedControl!
@@ -77,6 +79,24 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         configureUI()
     }
     
+    @IBAction func webLinkButtonPressed(_ sender: Any) {
+        if let url = URL(string: notesTextField.text!) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:])
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+    }
+    
+    func makeHyperlink(for path: String, in string: String, as substring: String) -> NSAttributedString {
+        let nsString = NSString(string: string)
+        let substringRange = nsString.range(of: substring)
+        let attributedString = NSMutableAttributedString(string: string)
+        attributedString.addAttribute(.link, value: path, range: substringRange)
+        return attributedString
+    }
+
     func configureUI() {
         titleViewLabel.text = groceryListItem.name
         
@@ -84,6 +104,14 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         quantityTextField.text = String(format: "%.2f", groceryListItem.quantity.floatValue)
         unitOfMeasureTextField.text = groceryListItem.unitOfMeasure
         notesTextField.text = groceryListItem.notes
+        
+//        let stringRange = NSMakeRange(0, notesTextField.text!.count)
+//        notesTextField.attributedText = makeHyperlink(for: notesTextField.text!, in: notesTextField.text!, as: notesTextField.text!)
+        
+//        let attributedString = NSMutableAttributedString(string:notesTextField.text!)
+//        attributedString.addAttribute(.link, value: notesTextField.text!, range: stringRange)
+//
+//        notesTextField.attributedText = attributedString
         
         let produceCode = groceryListItem.produceCode.int32Value
         if produceCode != 0 {
