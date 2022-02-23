@@ -25,6 +25,7 @@ struct GroceryListItemStruct: CustomStringConvertible {
     var notes: String
     var imagePath: String
     var produceCode: Int32
+    var webLink: String
     
     public init(name: String,
                 quantity: Float,
@@ -38,7 +39,8 @@ struct GroceryListItemStruct: CustomStringConvertible {
                 isFSA: Bool,
                 notes: String,
                 imagePath: String,
-                produceCode: Int32) {
+                produceCode: Int32,
+                webLink: String) {
         self.name = name
         self.quantity = quantity
         self.cost = cost
@@ -52,6 +54,7 @@ struct GroceryListItemStruct: CustomStringConvertible {
         self.notes = notes
         self.imagePath = imagePath
         self.produceCode = produceCode
+        self.webLink = webLink
     }
     
     var description: String {
@@ -82,7 +85,10 @@ struct GroceryListItemStruct: CustomStringConvertible {
         if !imagePath.isEmpty {
             returnValue += "\nimagePath = \(imagePath)"
         }
-        
+        if !webLink.isEmpty {
+            returnValue += "\nwebLink = \(webLink)"
+        }
+
         return returnValue
     }
 }
@@ -106,6 +112,7 @@ class GroceryListItem: NSManagedObject {
     @NSManaged var notes: String
     @NSManaged var listPosition: NSNumber
     @NSManaged var produceCode: NSNumber
+    @NSManaged var webLink: String
     
     override var description: String {
         var returnValue:String
@@ -138,7 +145,10 @@ class GroceryListItem: NSManagedObject {
         if !notes.isEmpty {
             returnValue += "\nnotes = \(notes)"
         }
-        
+        if !webLink.isEmpty {
+            returnValue += "\nwebLink = \(webLink)"
+        }
+
         returnValue += "\nlistPosition = \(listPosition)"
         
         return returnValue
@@ -383,6 +393,9 @@ class GroceryListItem: NSManagedObject {
         if produceCode != 0 {
             returnValue += "\tproduceCode:\t" + String(produceCode)
         }
+        if !webLink.isEmpty {
+            returnValue += "\twebLink:\t" + webLink
+        }
         returnValue += "\n"
         return returnValue
     }
@@ -413,7 +426,8 @@ class GroceryListItem: NSManagedObject {
                                                           isFSA: false,
                                                           notes: "",
                                                           imagePath: "",
-                                                          produceCode: 0)
+                                                          produceCode: 0,
+                                                          webLink: "")
         
         while i < tokens.count {
             
@@ -458,6 +472,9 @@ class GroceryListItem: NSManagedObject {
                 break
                 case "produceCode:":
                     groceryListItemStruct.produceCode = Int32(tokens[i+1])!
+                break
+                case "webLink:":
+                    groceryListItemStruct.webLink = tokens[i+1]
                 break
                 default:
                 break
@@ -506,6 +523,10 @@ class GroceryListItem: NSManagedObject {
             groceryListItem.update(imagePath: groceryListItemStruct.imagePath)
         }
 
+        if !groceryListItem.webLink.isEmpty {
+            groceryListItem.update(webLink: groceryListItemStruct.webLink)
+        }
+        
         groceryListItem.calculateTotalCost()
         
         DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
@@ -671,6 +692,10 @@ class GroceryListItem: NSManagedObject {
         self.notes = notes
     }
 
+    fileprivate func update(webLink: String) {
+        self.webLink = webLink
+    }
+    
     fileprivate func update(imagePath: String) {
         self.imagePath = imagePath
     }

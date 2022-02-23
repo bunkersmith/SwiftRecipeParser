@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     var isNumber: Bool {
@@ -17,5 +18,12 @@ extension String {
     var isDecimal: Bool {
         let characters = CharacterSet.decimalDigits.union(CharacterSet (charactersIn: ".")).inverted
         return !self.isEmpty && rangeOfCharacter(from: characters) == nil
+    }
+
+    func isValidUrl () -> Bool {
+        if let url = URL(string: self) {
+            return UIApplication.shared.canOpenURL(url)
+        }
+        return false
     }
 }

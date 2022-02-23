@@ -304,6 +304,7 @@ public class CKModel {
         record.setValue(groceryListItem.quantity, forKey: "quantity")
         record.setValue(groceryListItem.taxablePrice, forKey: "taxablePrice")
         record.setValue(groceryListItem.unitOfMeasure, forKey: "unitOfMeasure")
+        record.setValue(groceryListItem.webLink, forKey: "webLink")
     }
     
     func writeGroceryListItem(groceryListItem: GroceryListItem,

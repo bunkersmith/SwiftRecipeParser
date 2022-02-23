@@ -105,13 +105,8 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         unitOfMeasureTextField.text = groceryListItem.unitOfMeasure
         notesTextField.text = groceryListItem.notes
         
-//        let stringRange = NSMakeRange(0, notesTextField.text!.count)
-//        notesTextField.attributedText = makeHyperlink(for: notesTextField.text!, in: notesTextField.text!, as: notesTextField.text!)
-        
-//        let attributedString = NSMutableAttributedString(string:notesTextField.text!)
-//        attributedString.addAttribute(.link, value: notesTextField.text!, range: stringRange)
-//
-//        notesTextField.attributedText = attributedString
+        webLinkTextField.text = groceryListItem.webLink
+        webLinkButton.isEnabled = groceryListItem.webLink.isValidUrl()
         
         let produceCode = groceryListItem.produceCode.int32Value
         if produceCode != 0 {
