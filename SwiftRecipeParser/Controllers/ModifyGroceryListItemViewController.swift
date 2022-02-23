@@ -80,7 +80,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     }
     
     @IBAction func webLinkButtonPressed(_ sender: Any) {
-        if let url = URL(string: notesTextField.text!) {
+        if let url = URL(string: webLinkTextField.text!) {
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:])
             } else {
@@ -89,14 +89,6 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         }
     }
     
-    func makeHyperlink(for path: String, in string: String, as substring: String) -> NSAttributedString {
-        let nsString = NSString(string: string)
-        let substringRange = nsString.range(of: substring)
-        let attributedString = NSMutableAttributedString(string: string)
-        attributedString.addAttribute(.link, value: path, range: substringRange)
-        return attributedString
-    }
-
     func configureUI() {
         titleViewLabel.text = groceryListItem.name
         
@@ -317,6 +309,10 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             return true
         }
 
+        if webLinkTextField.text != groceryListItem.webLink {
+            return true
+        }
+        
         if hasInt32Changed(textField: produceCodeTextField, textFieldName: "Produce Code", oldValue: groceryListItem.produceCode.int32Value) {
             return true
         }
@@ -371,7 +367,8 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             groceryListItem.crvFluidOunces = updateFloatValue(textField: crvFluidOuncesTextField)
 
             groceryListItem.notes = notesTextField.text!
-         
+            groceryListItem.webLink = webLinkTextField.text!
+            
             groceryListItem.produceCode = updateInt32Value(textField: produceCodeTextField)
             
             groceryListItem.calculateTotalCost()
@@ -473,5 +470,25 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             textFieldText = ""
         }
 */
+    }
+
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        
+        if textField == webLinkTextField {
+            // get the current text, or use an empty string if that failed
+            let currentText = textField.text ?? ""
+
+            // attempt to read the range they are trying to change, or exit if we can't
+            guard let stringRange = Range(range, in: currentText) else { return false }
+
+            // add their new text to the existing text
+            let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+            
+            webLinkButton.isEnabled = updatedText.isValidUrl()
+        }
+        
+        return true
     }
 }
