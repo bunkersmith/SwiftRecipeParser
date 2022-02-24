@@ -99,6 +99,8 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         
         webLinkTextField.text = groceryListItem.webLink
         webLinkButton.isEnabled = groceryListItem.webLink.isValidUrl()
+
+        webLinkTextField.addTarget(self, action: #selector(textFieldChanged(sender:)), for: UIControl.Event.editingChanged)
         
         let produceCode = groceryListItem.produceCode.int32Value
         if produceCode != 0 {
@@ -117,7 +119,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         
         configureThumbnail()
     }
-
+    
     func updateTotalCostLabel() {
         totalCostLabel.text = groceryListItem.totalCostString()
     }
@@ -429,66 +431,11 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         
     }
 
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        textFieldText = textField.text!
-        Logger.logDetails(msg: "\(textFieldText)")
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-/*
-//        Logger.logDetails(msg: "\(textFieldText)")
-        
-        if textField.text! != textFieldText {
-            switch textField {
-                case costTextField:
-                    groceryListItem.update(cost: Float(textField.text!)!, saveContext: true)
-                break
-                case quantityTextField:
-                    groceryListItem.update(quantity: Float(textField.text!)!, saveContext: true)
-                break
-                case unitOfMeasureTextField:
-                    groceryListItem.update(unitOfMeasure: textField.text!, saveContext: true)
-                break
-                case taxablePriceTextField:
-                    groceryListItem.update(taxablePrice: Float(textField.text!)!, saveContext: true)
-                break
-                case crvQuantityTextField:
-                    groceryListItem.update(crvQuantity: Int(textField.text!)!, saveContext: true)
-                break
-                case crvFluidOuncesTextField:
-                    groceryListItem.update(crvFluidOunces: Float(textField.text!)!, saveContext: true)
-                break
-                case notesTextField:
-                    groceryListItem.update(notes: notesTextField.text!, saveContext: true)
-                break
-                default:
-                break
+    @objc func textFieldChanged(sender: UITextField) {
+        if (sender == webLinkTextField) {
+            if let textFieldText = sender.text {
+                webLinkButton.isEnabled = textFieldText.isValidUrl()
             }
-            updateTotalCostLabel()
-            delegate?.groceryListItemModified(groceryListItem: groceryListItem, indexPath: indexPath)
-        } else {
-            textFieldText = ""
         }
-*/
-    }
-
-    func textField(_ textField: UITextField,
-                   shouldChangeCharactersIn range: NSRange,
-                   replacementString string: String) -> Bool {
-        
-        if textField == webLinkTextField {
-            // get the current text, or use an empty string if that failed
-            let currentText = textField.text ?? ""
-
-            // attempt to read the range they are trying to change, or exit if we can't
-            guard let stringRange = Range(range, in: currentText) else { return false }
-
-            // add their new text to the existing text
-            let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
-            
-            webLinkButton.isEnabled = updatedText.isValidUrl()
-        }
-        
-        return true
     }
 }
