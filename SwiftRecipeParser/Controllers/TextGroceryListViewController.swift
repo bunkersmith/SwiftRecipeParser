@@ -23,7 +23,7 @@ class TextGroceryListViewController: TextMessageViewController, TextMessageViewC
     }
 
     func returnMessageBody() -> String {
-        return GroceryList.groceryListNameToTextString(groceryListName: textGroceryListName)
+        return textGroceryListName + "\n" + GroceryList.groceryListNameToTextString(groceryListName: textGroceryListName)
     }
     
 }

@@ -190,30 +190,6 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         updateCostLabels()
     }
     
-    @IBAction func importButtonPressed(_ sender: Any) {
-        let pasteboard = UIPasteboard.general
-        if #available(iOS 10.0, *) {
-            if pasteboard.hasStrings {
-                guard let pasteboardString = pasteboard.string else {
-                    return
-                }
-                let lines = pasteboardString.components(separatedBy: CharacterSet.newlines)
-                for line in lines {
-                    if let groceryListItem = GroceryListItem.parseGroceryListItemString(string: line, databaseInterface: nil) {
-                        groceryList.addItem(item: groceryListItem,
-                                            itemQuantity: groceryListItem.quantity.floatValue,
-                                            itemUnits: groceryListItem.unitOfMeasure,
-                                            itemPrice: groceryListItem.cost.floatValue,
-                                            itemNotes: groceryListItem.notes)
-                        print("\(String(describing: groceryListItem))")
-                    }
-                }
-                updateCostLabels()
-                tableView.reloadData()
-            }
-        }
-    }
-    
     @IBAction func textButtonPressed(_ sender: Any) {
         if groceryList.unboughtItems(databaseInterface: databaseInterface).count > 0 {
             performSegue(withIdentifier: "textGroceryListSegue", sender: self)

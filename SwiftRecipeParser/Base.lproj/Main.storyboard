@@ -198,11 +198,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Grocery Lists" id="cjb-lt-ids">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NAw-Zr-34O">
-                            <connections>
-                                <action selector="addButtonPressed:" destination="Rka-G7-4aq" id="hZU-Kz-GQs"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="NAw-Zr-34O">
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="Rka-G7-4aq" id="hZU-Kz-GQs"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Import" id="vjK-r1-8ta">
+                                <connections>
+                                    <action selector="importButtonPressed:" destination="Rka-G7-4aq" id="C2N-aY-h4X"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="qm9-Xf-Inx" id="vOC-O4-bdd"/>
@@ -492,11 +499,6 @@
                             <barButtonItem title="Text" id="aBX-IR-NDT">
                                 <connections>
                                     <action selector="textButtonPressed:" destination="Aem-yq-cyd" id="pk2-5g-EbA"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Import" id="fEa-Ab-gwO">
-                                <connections>
-                                    <action selector="importButtonPressed:" destination="Aem-yq-cyd" id="GRe-8g-ACB"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Print" id="2Nr-92-XjM">
@@ -1616,7 +1618,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WbI-iN-z1Q"/>
+        <segue reference="DfH-Hy-TeW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="tab_icon_grocery_list" width="17.333333969116211" height="10.666666984558105"/>

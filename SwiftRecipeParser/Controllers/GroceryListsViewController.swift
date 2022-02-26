@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class GroceryListsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
+class GroceryListsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,8 +29,8 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         super.viewWillAppear(animated)
         
         populateGroceryLists()
-
-        initCheckBoxes()
+        
+        caculateCoreDataSelectedGroceryListCosts()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -39,8 +39,6 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         NotificationCenter.default.addObserver(self, selector:  #selector(handleGroceryListCheckBoxNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
         
         GroceryListItem.calculateAllTotalCosts()
-        
-        caculateSelectedGroceryListCosts()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -54,6 +52,23 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         // Dispose of any resources that can be recreated.
     }
 
+    func caculateCoreDataSelectedGroceryListCosts() {
+        let groceryLists = GroceryList.returnAll()
+        var grandTotalCost:Float = 0
+
+        for groceryList in groceryLists {
+            if groceryList.isSelected.boolValue {
+                grandTotalCost += groceryList.projectedCost.floatValue
+            }
+        }
+        
+        if grandTotalCost > 0 {
+            navigationItem.title = String(format: "Grand Total: $%.2f", grandTotalCost)
+        } else {
+            navigationItem.title = "Grocery Lists"
+        }
+    }
+    
     func clearSelectedGroceryLists() {
         let groceryLists = GroceryList.returnAll()
         for groceryList in groceryLists {
@@ -75,6 +90,8 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     func populateGroceryLists() {
         groceryLists = GroceryList.returnAll()
         self.tableView.reloadData()
+
+        initCheckBoxes()
     }
     
     @IBAction func addButtonPressed(_ sender: Any) {
@@ -91,6 +108,48 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         }, textFieldHandler: { (txtField) in
             inputTextField = txtField
         })
+    }
+    
+    @IBAction func importButtonPressed(_ sender: Any) {
+        let pasteboard = UIPasteboard.general
+        if #available(iOS 10.0, *) {
+            if pasteboard.hasStrings {
+                if let pasteboardString = pasteboard.string {
+                    let lines = pasteboardString.components(separatedBy: CharacterSet.newlines)
+                    var groceryListName = ""
+                    var groceryList: GroceryList? = nil
+                    for line in lines {
+                        if let groceryListItem = GroceryListItem.parseGroceryListItemString(string: line, databaseInterface: nil) {
+                            if groceryListName.isEmpty {
+                                groceryListName = line
+                                groceryList = GroceryList.findGroceryListWithName(name: groceryListName)
+                                if groceryList == nil {
+                                    AlertUtilities.showOkButtonAlert(self,
+                                                                     title: "Error Alert",
+                                                                     message: "You have no grocery list named \(groceryListName)",
+                                                                     buttonHandler: nil)
+                                    break
+                                }
+                            } else {
+                                groceryList?.addItem(item: groceryListItem,
+                                                     itemQuantity: groceryListItem.quantity.floatValue,
+                                                     itemUnits: groceryListItem.unitOfMeasure,
+                                                     itemPrice: groceryListItem.cost.floatValue,
+                                                     itemNotes: groceryListItem.notes)
+                                print("\(String(describing: groceryListItem))")
+                            }
+                        }
+                    }
+                    if groceryList != nil {
+                        groceryList?.updateProjectedCost()
+                        populateGroceryLists()
+                        caculateSelectedGroceryListCosts()
+                    }
+                    return
+                }
+            }
+            AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "There is nothing in the clipboard.", buttonHandler: nil)
+        }
     }
     
     @objc func handleGroceryListCheckBoxNotification(notification:NSNotification) {
