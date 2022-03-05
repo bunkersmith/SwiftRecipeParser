@@ -122,9 +122,7 @@ class AlertUtilities {
                                                     itemNotes: "")
                     }
                 }
-                
-                GroceryList.addItemToCurrent(itemName: selectedIngredient.ingredientItem.name, quantity: selectedIngredient.quantity.floatValue, unitOfMeasure: selectedIngredient.unitOfMeasure)
-                
+
             }, noButtonHandler: nil)
         }
     }

@@ -588,7 +588,7 @@ class GroceryListItem: NSManagedObject {
                 }
             }
             
-            if ((unitOfMeasure == "ea") || (unitOfMeasure == "lb")) && quantity.doubleValue != 1 {
+            if ((unitOfMeasure == "ea") || (unitOfMeasure == "lb") || (unitOfMeasure == "lbs")) && quantity.doubleValue != 1 {
                 localTotalCost *= Float(quantity.doubleValue)
             }
         }

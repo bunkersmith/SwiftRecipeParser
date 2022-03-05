@@ -335,6 +335,8 @@ class GroceryList: NSManagedObject {
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         databaseInterface.saveContext()
         
+        updateProjectedCost()
+
         item.writeToIcloud()
     }
     
