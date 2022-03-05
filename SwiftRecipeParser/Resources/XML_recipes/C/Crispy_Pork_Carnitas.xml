@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Crispy Pork Carnitas</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Rinse pork and pat dry with a paper towel.
+
+2. In the bowl of a 6-quart slow cooker, add pork, salt, pepper, oregano, cumin, onion, garlic, lime juice, orange juice, coke, and bay leaves.
+
+3. Cover and cook on low heat setting for 8-10 hours, or high heat for 5-6 hours (until the meat falls apart).
+
+4. Remove pork and shred with two forks (DO NOT DISCARD THE LIQUID!)
+
+TO CRISP IN THE OVEN:
+
+1. Transfer the pork to a baking sheet lightly sprayed with cooking oil spray (or lined with aluminium foil or parchment paper).
+
+2. Pour 1 ladle full (about 1 cup) of the liquid from the slow cooker over the pork to season. Broil for 5-10 minutes on high heat until the meat becomes golden browned and crispy on the edges.
+
+TO CRISP ON STOVE:
+
+1. Heat about 1 tablespoon of oil in a non stick pan or cast iron skillet over high heat. When pan is hot, add pork in batches of two or three, and sear until just beginning to crisp. Ladle over about 1/2 cup of left over liquid, and continue cooking until the juices begin to reduce down and the meat is nice and crispy!</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>lbs</unitOfMeasure>
+            <ingredientName>skinless boneless pork butt (or shoulder)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions> or less if desired</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>dried oregano (or Mexican oregano)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large brown or white onion </ingredientName>
+            <processingInstructions> cut into wedges</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic</ingredientName>
+            <processingInstructions> smashed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>limes</ingredientName>
+            <processingInstructions> juiced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large oranges </ingredientName>
+            <processingInstructions> juiced (or 3/4 cup natural orange juice)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>coke (Original or Mexican coke is ideal)</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bay leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
