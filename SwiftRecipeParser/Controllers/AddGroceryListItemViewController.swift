@@ -113,11 +113,11 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     // MARK: - Table View
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return self.fetchedResultsController.sections?.count ?? 0
+        return fetchedResultsController.sections?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let fetchedResultsController = fetchedResultsController else {
+        guard fetchedResultsController != nil else {
             return 0
         }
         guard let sectionInfo = fetchedResultsController.sections else {
@@ -140,7 +140,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+            if let groceryListItem = fetchedResultsController.object(at: indexPath) as? GroceryListItem {
                 databaseInterface.deleteObject(coreDataObject: groceryListItem)
                 tableView.reloadData()
             }
@@ -149,19 +149,16 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath:
         IndexPath) {
-        if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+        if let groceryListItem = fetchedResultsController.object(at: indexPath) as? GroceryListItem {
             if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
                 groceryListItemCell.nameLabel.text = groceryListItem.name
-//                if groceryListItem.cost.floatValue > 0.0 {
-//                    groceryListItemCell.costLabel.text = String(format: "%.2f", groceryListItem.cost.floatValue)
-//                }
             }
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if let groceryListItem = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+        if let groceryListItem = fetchedResultsController.object(at: indexPath) as? GroceryListItem {
             nameTextField.text = groceryListItem.name
         }
     }
