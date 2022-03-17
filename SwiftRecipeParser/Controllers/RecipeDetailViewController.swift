@@ -205,6 +205,9 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
                 }
                 else {
                     returnValue = ingredient.ingredientItem.name
+                    if returnValue.compare("Buy Ingredients The Day Before!") == .orderedSame {
+                        returnValue = "BUY INGREDIENTS THE DAY BEFORE!"
+                    }
                 }
             }
             else {
