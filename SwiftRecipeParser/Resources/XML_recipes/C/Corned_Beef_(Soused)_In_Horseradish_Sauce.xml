@@ -17,19 +17,25 @@
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>CORNED BEEF</ingredientName>
+            <ingredientName>Purchase ingredients the day before!</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Corned Beef Ingredients:</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>tb</unitOfMeasure>
-            <ingredientName>Vegetable oil</ingredientName>
+            <ingredientName>Vegetable Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4-1/2</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>Corned beef brisket</ingredientName>
+            <ingredientName>Corned Beef Brisket</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -41,13 +47,13 @@
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Bay leaf</ingredientName>
+            <ingredientName>Bay Leaf</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
             <unitOfMeasure>ts</unitOfMeasure>
-            <ingredientName>Ground cloves</ingredientName>
+            <ingredientName>Ground Cloves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -59,50 +65,50 @@
         <ingredient>
             <quantity>8</quantity>
             <unitOfMeasure>turns</unitOfMeasure>
-            <ingredientName>freshly ground black pepper</ingredientName>
+            <ingredientName>Freshly Ground Black Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>batch</unitOfMeasure>
-            <ingredientName>Cabbage Bread Pudding (see separate recipe)</ingredientName>
+            <ingredientName>Cabbage Bread Pudding (See Separate Recipe)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>-</ingredientName>
+            <ingredientName></ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>HORSERADISH SAUCE</ingredientName>
+            <ingredientName>Horseradish Sauce Ingredients:</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
             <unitOfMeasure>tb</unitOfMeasure>
-            <ingredientName>unsalted butter</ingredientName>
+            <ingredientName>Unsalted Butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
             <unitOfMeasure>tb</unitOfMeasure>
-            <ingredientName>All-purpose flour</ingredientName>
+            <ingredientName>All-Purpose Flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>8</quantity>
             <unitOfMeasure>turns</unitOfMeasure>
-            <ingredientName>freshly ground black pepper</ingredientName>
+            <ingredientName>Freshly Ground Black Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>Drippings from corned beef, strained and defatted</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Drippings From Corned Beef</ingredientName>
+            <processingInstructions> Strained And Defatted</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
@@ -113,14 +119,14 @@
         <ingredient>
             <quantity>1/4</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>Prepared white horseradish</ingredientName>
+            <ingredientName>Prepared White Horseradish</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>Fresh parsley, chopped</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Fresh Parsley</ingredientName>
+            <processingInstructions> Chopped</processingInstructions>
         </ingredient>
     </ingredients>
 </recipe>

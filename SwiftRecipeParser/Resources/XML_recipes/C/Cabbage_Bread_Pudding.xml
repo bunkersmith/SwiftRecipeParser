@@ -17,63 +17,69 @@
 6. Melt the butter in two 8" baking pans, coating the bottom and sides of the pans. Turn the bread mixture into the pans and spread it evenly. Bake until the pudding tests done with a toothpick, about 30 minutes. Remove from the oven and cut the bread pudding into wedges.</instructions>
     <ingredients>
         <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Purchase ingredients the day before!</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
             <quantity>1/2</quantity>
             <unitOfMeasure>baguette</unitOfMeasure>
-            <ingredientName>French bread (unsliced), torn into chunks</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>French Bread (Unsliced)</ingredientName>
+            <processingInstructions> Torn Into Chunks</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
             <unitOfMeasure>loaf</unitOfMeasure>
-            <ingredientName>dark pumpernickel bread (unsliced), torn into chunks</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Dark Pumpernickel Bread (Unsliced)</ingredientName>
+            <processingInstructions> Torn Into Chunks</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>milk</ingredientName>
+            <ingredientName>Milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
             <unitOfMeasure>sl</unitOfMeasure>
-            <ingredientName>bacon, quartered</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Bacon</ingredientName>
+            <processingInstructions> Quartered</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>onion, chopped (about 1 medium-large onion)</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Onion</ingredientName>
+            <processingInstructions> Chopped (About 1 Medium-Large Onion)</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>ts</unitOfMeasure>
-            <ingredientName>garlic, minced</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Garlic</ingredientName>
+            <processingInstructions> Minced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>green cabbage, cut into chunks and leaves pulled apart</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Green Cabbage</ingredientName>
+            <processingInstructions> Cut Into Chunks And Leaves Pulled Apart</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
             <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>eggs</ingredientName>
+            <ingredientName>Eggs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>tb</unitOfMeasure>
-            <ingredientName>caraway seeds</ingredientName>
+            <ingredientName>Caraway Seeds</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>tb</unitOfMeasure>
-            <ingredientName>unsalted butter</ingredientName>
+            <ingredientName>Unsalted Butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

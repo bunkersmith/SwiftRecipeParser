@@ -126,29 +126,28 @@ class DatabaseInterface: NSObject {
     }
 
     func createFetchedResultsController(entityName:String, sortKey:String?, secondarySortKey:String?, sectionNameKeyPath:String?, predicate:NSPredicate?) -> NSFetchedResultsController<NSFetchRequestResult> {
-        var fetchedResultsController:NSFetchedResultsController<NSFetchRequestResult>
         let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entityName)
         
         if predicate != nil {
             fetchRequest.predicate = predicate
         }
         
-        if sortKey == nil {
-            fetchRequest.sortDescriptors = []
-        } else {
+        var sortDescriptors = [NSSortDescriptor]()
+        
+        if sortKey != nil {
             let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: sortKey, ascending: true)
-            var sortDescriptors = [sortDescriptor]
+            sortDescriptors = [sortDescriptor]
             if let localSecondarySortKey = secondarySortKey {
                 let secondarySortDescriptor:NSSortDescriptor = NSSortDescriptor(key: localSecondarySortKey, ascending: true)
                 sortDescriptors = [sortDescriptor, secondarySortDescriptor]
             }
-            fetchRequest.sortDescriptors = sortDescriptors
         }
         
+        fetchRequest.sortDescriptors = sortDescriptors
         fetchRequest.fetchBatchSize = 30
         fetchRequest.returnsObjectsAsFaults = false
         
-        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: sectionNameKeyPath, cacheName: nil)
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: sectionNameKeyPath, cacheName: nil)
         
         do {
             try fetchedResultsController.performFetch()

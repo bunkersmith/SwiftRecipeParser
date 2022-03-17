@@ -113,6 +113,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     // MARK: - Table View
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        Logger.logDetails(msg: "Table has \(fetchedResultsController.sections?.count ?? 0) section(s)")
         return fetchedResultsController.sections?.count ?? 0
     }
     
@@ -123,13 +124,14 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         guard let sectionInfo = fetchedResultsController.sections else {
             return 0
         }
-//              Logger.logDetails(msg: "Returning \(sectionInfo.numberOfObjects) for section \(section)")
+        Logger.logDetails(msg: "Returning \(sectionInfo[section].numberOfObjects) for section \(section)")
         return sectionInfo[section].numberOfObjects
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        Logger.logDetails(msg: "Called for indexPath = \(indexPath)")
         let cell = tableView.dequeueReusableCell(withIdentifier: "AddGroceryListItemCell", for: indexPath)
-        self.configureCell(cell: cell, atIndexPath: indexPath)
+        configureCell(cell: cell, atIndexPath: indexPath)
 /*
         if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
             print("Name is '\(groceryListItemCell.nameLabel.text ?? "none")' for row at indexPath \(indexPath)")
@@ -147,9 +149,10 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         }
     }
     
-    func configureCell(cell: UITableViewCell, atIndexPath indexPath:
-        IndexPath) {
-        if let groceryListItem = fetchedResultsController.object(at: indexPath) as? GroceryListItem {
+    func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) {
+        let object = fetchedResultsController.object(at: indexPath)
+        Logger.logDetails(msg: "object at indexPath \(indexPath): \(object)")
+        if let groceryListItem = object as? GroceryListItem {
             if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
                 groceryListItemCell.nameLabel.text = groceryListItem.name
             }
@@ -166,15 +169,15 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     // MARK: - Fetched results controller
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        self.tableView.beginUpdates()
+        tableView.beginUpdates()
     }
     
     func controller(controller: NSFetchedResultsController<NSFetchRequestResult>, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
         switch type {
         case .insert:
-            self.tableView.insertSections(NSIndexSet(index: sectionIndex) as IndexSet, with: .fade)
+            tableView.insertSections(NSIndexSet(index: sectionIndex) as IndexSet, with: .fade)
         case .delete:
-            self.tableView.deleteSections(NSIndexSet(index: sectionIndex) as IndexSet, with: .fade)
+            tableView.deleteSections(NSIndexSet(index: sectionIndex) as IndexSet, with: .fade)
         default:
             return
         }
@@ -195,7 +198,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
                 return
             }
             
-            self.configureCell(cell: cell, atIndexPath: indexPath)
+            configureCell(cell: cell, atIndexPath: indexPath)
         case .move:
             tableView.deleteRows(at: [indexPath!], with: .fade)
             tableView.insertRows(at: [newIndexPath!], with: .fade)
@@ -203,7 +206,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        self.tableView.endUpdates()
+        tableView.endUpdates()
     }
     
     @objc func textFieldChanged(textField: UITextField) {

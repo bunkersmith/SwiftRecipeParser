@@ -89,7 +89,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             }
         }
 
-        tableView.tableHeaderView = UIView(frame: searchHeaderViewController!.view.frame /*CGRectMake(0.0, 0.0, 600.0, 108.0)*/)
+        tableView.tableHeaderView = UIView(frame: searchHeaderViewController!.view.frame)
         tableView.tableHeaderView?.addSubview(searchHeaderViewController!.view)
         
         resultTableViewController.tableView.delegate = self
