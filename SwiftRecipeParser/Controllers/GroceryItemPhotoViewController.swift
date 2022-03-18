@@ -11,13 +11,14 @@ import UIKit
 class GroceryItemPhotoViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageScrollView: ImageScrollView!
     
     var groceryListItem: GroceryListItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageScrollView.setup()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -27,7 +28,8 @@ class GroceryItemPhotoViewController: UIViewController {
             return
         }
 
-        imageView.image = fullResImage
+        imageScrollView.display(image: fullResImage           )
+//        imageView.image = fullResImage
     }
     
     override func didReceiveMemoryWarning() {
