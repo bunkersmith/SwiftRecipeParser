@@ -322,27 +322,39 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         return false
     }
 
-    func updateIntValue(textField: UITextField) -> NSNumber {
+    func updateIntValue(textField: UITextField) -> NSNumber? {
         if textField.text!.isEmpty {
             return NSNumber(value: Int16(0))
         } else {
-            return NSNumber(value: Int16(textField.text!)!)
+            if let intValue = Int16(textField.text!) {
+                return NSNumber(value: intValue)
+            } else {
+                return nil
+            }
         }
     }
 
-    func updateInt32Value(textField: UITextField) -> NSNumber {
+    func updateInt32Value(textField: UITextField) -> NSNumber? {
         if textField.text!.isEmpty {
             return NSNumber(value: Int32(0))
         } else {
-            return NSNumber(value: Int32(textField.text!)!)
+            if let int32Value = Int32(textField.text!) {
+                return NSNumber(value: int32Value)
+            } else {
+                return nil
+            }
         }
     }
 
-    func updateFloatValue(textField: UITextField) -> NSNumber {
+    func updateFloatValue(textField: UITextField) -> NSNumber? {
         if textField.text!.isEmpty {
             return NSNumber(value: Float(0))
         } else {
-            return NSNumber(value: Float(textField.text!)!)
+            if let floatValue = Float(textField.text!) {
+                return NSNumber(value: floatValue)
+            } else {
+                return nil
+            }
         }
     }
     
@@ -355,23 +367,52 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     func saveData() {
         if hasDataChanged() {
 
-            groceryListItem.cost = updateFloatValue(textField: costTextField)
-            groceryListItem.quantity = updateFloatValue(textField: quantityTextField)
+            if let groceryListItemCost = updateFloatValue(textField: costTextField) {
+                groceryListItem.cost = groceryListItemCost
+            } else {
+                AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item cost", buttonHandler: nil)
+            }
+            
+            if let groceryListItemQuantity = updateFloatValue(textField: quantityTextField) {
+                groceryListItem.quantity = groceryListItemQuantity
+            } else {
+                AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item quantity", buttonHandler: nil)
+            }
+            
             groceryListItem.unitOfMeasure = unitOfMeasureTextField.text!
 
             groceryListItem.isFsa = updateBoolValue(segmentedControl: fsaSegmentedControl)
             
             groceryListItem.isTaxable = updateBoolValue(segmentedControl: taxableSegmentedControl)
-            groceryListItem.taxablePrice = updateFloatValue(textField: taxablePriceTextField)
+            
+            if let groceryListItemTaxablePrice = updateFloatValue(textField: taxablePriceTextField) {
+                groceryListItem.taxablePrice = groceryListItemTaxablePrice
+            } else {
+                AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item taxable price", buttonHandler: nil)
+            }
 
             groceryListItem.isCrv = updateBoolValue(segmentedControl: crvSegmentedControl)
-            groceryListItem.crvQuantity = updateIntValue(textField: crvQuantityTextField)
-            groceryListItem.crvFluidOunces = updateFloatValue(textField: crvFluidOuncesTextField)
+            
+            if let groceryListItemCrvQuantity = updateIntValue(textField: crvQuantityTextField) {
+                groceryListItem.crvQuantity = groceryListItemCrvQuantity
+            } else {
+                AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item CRV quantity", buttonHandler: nil)
+            }
+            
+            if let groceryListItemCrvFluidOunces = updateFloatValue(textField: crvFluidOuncesTextField) {
+                groceryListItem.crvFluidOunces = groceryListItemCrvFluidOunces
+            } else {
+                AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item CRV fluid ounces", buttonHandler: nil)
+            }
 
             groceryListItem.notes = notesTextField.text!
             groceryListItem.webLink = webLinkTextField.text!
             
-            groceryListItem.produceCode = updateInt32Value(textField: produceCodeTextField)
+            if let groceryListItemProduceCode = updateInt32Value(textField: produceCodeTextField) {
+                groceryListItem.produceCode = groceryListItemProduceCode
+            } else {
+                AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item CRV quantity", buttonHandler: nil)
+            }
             
             groceryListItem.calculateTotalCost()
             

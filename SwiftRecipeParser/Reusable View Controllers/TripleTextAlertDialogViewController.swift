@@ -57,9 +57,14 @@ class TripleTextAlertDialogViewController: UIViewController {
             return
         }
         
-        completion(Float(quantityTextField.text!)!,
+        guard let quantity = Float(quantityTextField.text!), let price = Float(priceTextField.text!) else {
+            AlertUtilities.showOkButtonAlert(self, title: "Please enter valid quantity and price values", message: "", buttonHandler: nil)
+            return
+        }
+        
+        completion(quantity,
                    unitsTextField.text!,
-                   Float(priceTextField.text!)!)
+                   price)
         dismiss(animated: true, completion: nil)
     }
 
