@@ -48,6 +48,22 @@ class AlertUtilities {
         //return yesNoButtonAlert
     }
 
+    class func showThreeButtonAlert(_ viewController:UIViewController,
+                                    title: String,
+                                  message:String,
+                             buttonTitle1: String,
+                           buttonHandler1:((UIAlertAction) -> Void)?,
+                             buttonTitle2: String,
+                           buttonHandler2:((UIAlertAction) -> Void)?,
+                             buttonTitle3: String,
+                           buttonHandler3:((UIAlertAction) -> Void)?) {
+        let threeButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.alert)
+        threeButtonAlert.addAction(UIAlertAction(title: buttonTitle1, style: UIAlertActionStyle.default, handler: buttonHandler1))
+        threeButtonAlert.addAction(UIAlertAction(title: buttonTitle2, style: UIAlertActionStyle.default, handler: buttonHandler2))
+        threeButtonAlert.addAction(UIAlertAction(title: buttonTitle3, style: UIAlertActionStyle.cancel, handler: buttonHandler3))
+        viewController.present(threeButtonAlert, animated:true, completion: nil)
+    }
+    
     @available(iOS 8.0, *)
     class func showTextFieldAlert(viewController:UIViewController,
                                            title: String,

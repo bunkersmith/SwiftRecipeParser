@@ -33,7 +33,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
     var titleViewButton:UIButton!
     
-    var itemToDelete: GroceryListItem? = nil
+//    var itemToDelete: GroceryListItem? = nil
     
     override func encodeRestorableState(with aCoder: NSCoder) {
         super.encodeRestorableState(with: aCoder)
@@ -213,14 +213,26 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     @IBAction func clearAllItemsButtonPressed(_ sender: Any) {
-        AlertUtilities.showYesNoAlert(viewController: self, title: "Do you want to clear all the items in this grocery list?", message: "", yesButtonHandler: { action in
-            
-            self.groceryList.clearAllItems()
-            self.updateCostLabels()
-            self.totalCostLabel.text = "Total Cost: $0.00"
-            self.projectedCostLabel.text = "Projected Cost: $0.00"
-            self.createFetchedResultsController(onlyUnbought: false)
-        }, noButtonHandler: nil)
+        AlertUtilities.showThreeButtonAlert(self,
+                                            title: "Which items do you want to clear?",
+                                            message: "",
+                                            buttonTitle1: "All",
+                                            buttonHandler1: { action in
+                                                self.groceryList.clearAllItems()
+                                                self.updateCostLabels()
+                                                self.totalCostLabel.text = "Total Cost: $0.00"
+                                                self.projectedCostLabel.text = "Projected Cost: $0.00"
+                                                self.createFetchedResultsController(onlyUnbought: false)
+                                            },
+                                            buttonTitle2: "Bought",
+                                            buttonHandler2: { action in
+                                                self.fetchedResultsController = nil
+                                                self.groceryList.clearBoughtItems()
+                                                self.updateCostLabels()
+                                                self.createFetchedResultsController(onlyUnbought: false)
+                                            },
+                                            buttonTitle3: "Cancel",
+                                            buttonHandler3: nil)
     }
     
     @IBAction func buyItemButtonPressed(_ sender: UIButton!) {
@@ -235,9 +247,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         
         if itemToBuy.isBought.boolValue {
             AlertUtilities.showYesNoAlert(viewController: self, title: "Do you want to return \(itemToBuy.name)?", message: "", yesButtonHandler: { action in
-                
-//                (self.groceryList.hasItems[indexPath.row] as! GroceryListItem).isBought = NSNumber(value: false)
                 itemToBuy.isBought = NSNumber(value: false)
+                self.databaseInterface.saveContext()
                 self.totalCostLabel.text = String(format:"Total Cost: $%.2f", self.groceryList.updateAndReturnTotalCost())
                 
                 self.tableView.reloadData()
@@ -253,7 +264,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                                          writeToIcloudNeeded: true)
                 
                 self.updateCostLabels()
-                
+
                 self.tableView.reloadData()
             }
         }
@@ -330,7 +341,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let itemToDelete = self.fetchedResultsController.object(at: indexPath) as? GroceryListItem {
-                self.itemToDelete = itemToDelete
+//                self.itemToDelete = itemToDelete
                 removeGroceryListItem(groceryList: groceryList, groceryListItem: itemToDelete)
                 tableView.reloadData()
             }
@@ -447,10 +458,10 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
         
-        if itemToDelete != nil {
-            itemToDelete?.isBought = NSNumber(booleanLiteral: false)
-            itemToDelete = nil
-        }
+//        if itemToDelete != nil {
+//            itemToDelete?.isBought = NSNumber(booleanLiteral: false)
+//            itemToDelete = nil
+//        }
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) {

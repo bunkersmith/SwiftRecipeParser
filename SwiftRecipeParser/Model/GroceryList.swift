@@ -78,16 +78,26 @@ class GroceryList: NSManagedObject {
     }
     
     func clearAllItems() {
-        
-        hasItems.enumerateObjects({ (groceryListObject, idx, stop) -> Void in
+        clearBoughtFlags(withDelete: false)
+        removeAllHasItemsObjects()
+        DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
+    }
+    
+    func clearBoughtItems() {
+        clearBoughtFlags(withDelete: true)
+        DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
+    }
+
+    func clearBoughtFlags(withDelete: Bool) {
+        hasItems.enumerateObjects ({ (groceryListObject, idx, stop) -> Void in
             let groceryListItem = groceryListObject as! GroceryListItem
             if groceryListItem.isBought.boolValue {
                 groceryListItem.isBought = NSNumber(value: false)
+                if withDelete {
+                    removeHasItemsObject(value: groceryListItem)
+                }
             }
         })
-        
-        removeAllHasItemsObjects()
-        DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
     }
     
     class func create(name: String) {
