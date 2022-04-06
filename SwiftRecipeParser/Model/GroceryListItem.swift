@@ -394,7 +394,7 @@ class GroceryListItem: NSManagedObject {
             returnValue += "\tproduceCode:\t" + String(produceCode)
         }
         if !webLink.isEmpty {
-            returnValue += "\twebLink:\t" + webLink
+            returnValue += "\twebLink:\t" + webLink.replacingOccurrences(of: ":", with: "%3A")
         }
         returnValue += "\n"
         return returnValue
@@ -474,7 +474,7 @@ class GroceryListItem: NSManagedObject {
                     groceryListItemStruct.produceCode = Int32(tokens[i+1])!
                 break
                 case "webLink:":
-                    groceryListItemStruct.webLink = tokens[i+1]
+                groceryListItemStruct.webLink = tokens[i+1].replacingOccurrences(of: "%3A", with: ":")
                 break
                 default:
                 break
