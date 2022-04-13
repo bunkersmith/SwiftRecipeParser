@@ -27,6 +27,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     var groceryListItem: GroceryListItem!
     var indexPath: IndexPath!
     var imagePicker: UIImagePickerController!
+    var currentTextField: UITextField!
     
     let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
 
@@ -93,11 +94,24 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         titleViewLabel.text = groceryListItem.name
         
         costTextField.text = String(format: "%.2f", groceryListItem.cost.floatValue)
+        costTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        costTextField.delegate = self
+        
         quantityTextField.text = String(format: "%.2f", groceryListItem.quantity.floatValue)
+        quantityTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        quantityTextField.delegate = self
+        
         unitOfMeasureTextField.text = groceryListItem.unitOfMeasure
+        unitOfMeasureTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        unitOfMeasureTextField.delegate = self
+        
         notesTextField.text = groceryListItem.notes
+        notesTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        notesTextField.delegate = self
         
         webLinkTextField.text = groceryListItem.webLink
+        webLinkTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        webLinkTextField.delegate = self
         webLinkButton.isEnabled = groceryListItem.webLink.isValidUrl()
 
         webLinkTextField.addTarget(self, action: #selector(textFieldChanged(sender:)), for: UIControl.Event.editingChanged)
@@ -106,7 +120,9 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         if produceCode != 0 {
             produceCodeTextField.text = String(produceCode)
         }
-        
+        produceCodeTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        produceCodeTextField.delegate = self
+
         taxableSegmentedControl.selectedSegmentIndex = Int(groceryListItem.isTaxable.boolValue)
         configureTaxablePrice()
         
@@ -120,11 +136,17 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         configureThumbnail()
     }
     
+    @objc func doneWithKeypad() {
+        currentTextField.resignFirstResponder()
+    }
+    
     func updateTotalCostLabel() {
         totalCostLabel.text = groceryListItem.totalCostString()
     }
     
     func configureTaxablePrice() {
+        taxablePriceTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        taxablePriceTextField.delegate = self
         if taxableSegmentedControl.selectedSegmentIndex == yesSegment {
             taxablePriceLabel.alpha = 1.0
             taxablePriceTextField.alpha = 1.0
@@ -136,6 +158,11 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     }
     
     func configureCrvUI() {
+        crvQuantityTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        crvQuantityTextField.delegate = self
+        crvFluidOuncesTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
+        crvFluidOuncesTextField.delegate = self
+
         if crvSegmentedControl.selectedSegmentIndex == yesSegment {
             crvQuantityLabel.alpha = 1.0
             crvQuantityTextField.alpha = 1.0
@@ -478,5 +505,9 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
                 webLinkButton.isEnabled = textFieldText.isValidUrl()
             }
         }
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        currentTextField = textField
     }
 }
