@@ -47,6 +47,8 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
+        groceryLists = nil
+        
         NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
     }
     
@@ -215,6 +217,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false                                )
         if (groceryLists != nil) {
             GroceryList.setCurrentGroceryList(groceryListName: groceryLists![indexPath.row].name)
             populateGroceryLists()
