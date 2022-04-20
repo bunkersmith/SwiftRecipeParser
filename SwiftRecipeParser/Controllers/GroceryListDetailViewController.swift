@@ -91,6 +91,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         createFetchedResultsController(onlyUnbought: !boughtSwitch.isOn)
 
         titleViewButton.setTitle(groceryList.name, for: .normal)
+        
+        // THIS IS WHERE THE GROCERY LIST COST IS UPDATED AFTER AN ITEM IS MODIFIED
         updateCostLabels()
         
         if addedGroceryListItem != nil {

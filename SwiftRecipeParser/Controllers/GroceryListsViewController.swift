@@ -1,6 +1,6 @@
 //
 //  GroceryListsViewController.swift
-//  SwiftRecipeParser
+//  SwiftR                                                                                                                                 ecipeParser
 //
 //  Created by CarlSmith on 6/1/15.
 //  Copyright (c) 2015 CarlSmith. All rights reserved.
@@ -13,14 +13,15 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var groceryLists:Array<GroceryList>!
+    private var groceryLists:Array<GroceryList>? = nil
     
+// CHANGES WERE MADE ON 2022/04/19 TO ELIMINATE A WARNING FOR A TABLE VIEW BEING LAID OUT WHEN IT WAS OUTSIDE THE VIEW HIERARCHY.
+// IF STRANGE THINGS START TO HAPPEN WITH THE GroceryLists SCREEN, BACK OUT THE CHANGES MADE ON THAT DATE.
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         clearSelectedGroceryLists()
-
-        populateGroceryLists()
         
         tableView.tableFooterView = UIView(frame: .zero)
     }
@@ -36,7 +37,9 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        NotificationCenter.default.addObserver(self, selector:  #selector(handleGroceryListCheckBoxNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
+        self.tableView.reloadData()
+
+         NotificationCenter.default.addObserver(self, selector:  #selector(handleGroceryListCheckBoxNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
         
         GroceryListItem.calculateAllTotalCosts()
     }
@@ -80,16 +83,17 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func initCheckBoxes() {
-        for indexPath in tableView.getAllIndexes() {
-            if let cell = tableView.cellForRow(at: indexPath) as? GroceryListTableViewCell {
-                cell.isSelectedCheckBox.isChecked = groceryLists[indexPath.row].isSelected.boolValue
+        if (groceryLists != nil) {
+            for indexPath in tableView.getAllIndexes() {
+                if let cell = tableView.cellForRow(at: indexPath) as? GroceryListTableViewCell {
+                    cell.isSelectedCheckBox.isChecked = groceryLists![indexPath.row].isSelected.boolValue
+                }
             }
         }
     }
     
     func populateGroceryLists() {
         groceryLists = GroceryList.returnAll()
-        self.tableView.reloadData()
 
         initCheckBoxes()
     }
@@ -163,10 +167,14 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         for indexPath in tableView.getAllIndexes() {
             if let cell = tableView.cellForRow(at: indexPath) as? GroceryListTableViewCell {
                 if cell.isSelectedCheckBox.isChecked {
-                    grandTotalCost += groceryLists[indexPath.row].projectedCost.floatValue
-                    groceryLists[indexPath.row].isSelected = NSNumber(booleanLiteral: true)
+                    if (groceryLists != nil) {
+                        grandTotalCost += groceryLists![indexPath.row].projectedCost.floatValue
+                        groceryLists![indexPath.row].isSelected = NSNumber(booleanLiteral: true)
+                    }
                 } else {
-                    groceryLists[indexPath.row].isSelected = NSNumber(booleanLiteral: false)
+                    if (groceryLists != nil) {
+                        groceryLists![indexPath.row].isSelected = NSNumber(booleanLiteral: false)
+                    }
                 }
             }
         }
@@ -185,7 +193,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return groceryLists.count
+        return groceryLists != nil ? groceryLists!.count : 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -207,19 +215,23 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        GroceryList.setCurrentGroceryList(groceryListName: groceryLists[indexPath.row].name)
-        populateGroceryLists()
+        if (groceryLists != nil) {
+            GroceryList.setCurrentGroceryList(groceryListName: groceryLists![indexPath.row].name)
+            populateGroceryLists()
+        }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            if (groceryLists != nil) {
             // Delete the row from the model and data source
-            let groceryList:GroceryList = groceryLists[indexPath.row]
-            GroceryList.delete(groceryList:groceryList)
-            groceryLists.remove(at: indexPath.row)
-            
-            // Delete the row from the table view
-            tableView.deleteRows(at: [indexPath], with: .fade)
+                let groceryList:GroceryList = groceryLists![indexPath.row]
+                GroceryList.delete(groceryList:groceryList)
+                groceryLists!.remove(at: indexPath.row)
+                
+                // Delete the row from the table view
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
         }
     }
 
@@ -227,9 +239,11 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "selectGroceryListSegue" {
-            let detailViewController:GroceryListDetailViewController = segue.destination as! GroceryListDetailViewController
-            let indexPath:NSIndexPath = tableView.indexPathForSelectedRow! as NSIndexPath
-            detailViewController.groceryList = groceryLists[indexPath.row]
+            if (groceryLists != nil) {
+                let detailViewController:GroceryListDetailViewController = segue.destination as! GroceryListDetailViewController
+                let indexPath:NSIndexPath = tableView.indexPathForSelectedRow! as NSIndexPath
+                detailViewController.groceryList = groceryLists![indexPath.row]
+            }
             return
         }
     }

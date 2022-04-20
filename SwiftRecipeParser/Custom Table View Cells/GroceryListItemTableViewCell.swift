@@ -40,15 +40,16 @@ class GroceryListItemTableViewCell: UITableViewCell {
         if item.quantity == 1.0 {
             groceryListItemQuantityLabel.text = ""
         } else {
-            configureForQuantity(quantity: item.quantity.floatValue)
+            configureForQuantity(quantity: item.quantity.floatValue, unitOfMeasure: item.unitOfMeasure)
         }
     }
 
-    func configureForQuantity(quantity: Float) {
+    func configureForQuantity(quantity: Float, unitOfMeasure: String) {
         if quantity.remainder(dividingBy: 1.0) == 0.0 {
             groceryListItemQuantityLabel.text = "(\(Int(quantity))) "
         } else {
-            groceryListItemQuantityLabel.text = "(\(String(format:"%.1f", quantity))) "
+            let poundsString = unitOfMeasure == "lb" ? "#" : ""
+            groceryListItemQuantityLabel.text = "(\(String(format:"%.1f", quantity))" + poundsString +    ") "
         }
     }
 }
