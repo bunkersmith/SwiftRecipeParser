@@ -60,4 +60,19 @@ extension UITextField {
         text = newText
     }
     
+    func priceTextField(_ textField: UITextField,
+                        shouldChangeCharactersIn range: NSRange,
+                        replacementString string: String) -> Bool {
+        
+        if let updatedString = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) {
+            if let periodPosition = updatedString.firstIndex(of: ".") {
+                let periodString = updatedString[periodPosition...]
+                // THE STRING CAN HAVE UP TO THREE CHARACTERS, BECAUSE IT INCLUDES THE PERIOD
+                if periodString.lengthOfBytes(using: .utf8) > 3 {
+                    return false
+                }
+            }
+        }
+        return true
+    }
 }

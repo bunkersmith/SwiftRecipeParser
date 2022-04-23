@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TripleTextAlertDialogViewController: UIViewController {
+class TripleTextAlertDialogViewController: UIViewController, UITextFieldDelegate {
 
     typealias TripleTextAlertDialogCompletion = ((Float,String,Float) -> Void)
 
@@ -98,6 +98,18 @@ class TripleTextAlertDialogViewController: UIViewController {
             
             //presenting the pop up viewController from the parent viewController
             parentVC.present(popupViewController, animated: true)
+        }
+    }
+
+    // MARK: - UITextFieldDelegate
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        if textField == priceTextField {
+            return textField.priceTextField(textField, shouldChangeCharactersIn: range, replacementString: string)
+        } else {
+            return true
         }
     }
 }

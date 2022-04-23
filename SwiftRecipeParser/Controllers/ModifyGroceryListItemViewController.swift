@@ -507,7 +507,19 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         }
     }
     
+    // MARK: - UITextFieldDelegate
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         currentTextField = textField
+    }
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        if textField == costTextField {
+            return textField.priceTextField(textField, shouldChangeCharactersIn: range, replacementString: string)
+        } else {
+            return true
+        }
     }
 }
