@@ -285,6 +285,9 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         return textFieldValue != oldValue
     }
 
+// WHEN THIS FUNCTION IS CALLED WITH INVALID FRACTION SYNTAX IN THE textField,
+// THERE NEEDS TO BE A WAY TO STOP THE SAVE PROCESS AND SHOW AN ERROR ALERT TO THE USER
+
     func hasQuantityChanged(textField: UITextField, textFieldName: String, oldValue: Float) -> Bool {
         
         let textFieldText = textField.text!
@@ -293,14 +296,18 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             return oldValue != 0.0
         }
 
-        var textFieldValue = Float(0)
+        var textFieldFloatValue = Float(0)
         
         if textFieldText.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
-            
+            if FractionMath.validateFractionString(fractionString: textFieldText) {
+                textFieldFloatValue = Float(FractionMath.stringToDouble(inputString: textFieldText))
+            } else {
+                return false
+            }
         } else {
-            textFieldValue = Float(textFieldText)!
+            textFieldFloatValue = Float(textFieldText)!
         }
-        return textFieldValue != oldValue
+        return textFieldFloatValue != oldValue
     }
     
     func hasBoolChanged(segmentedControl: UISegmentedControl, oldValue: Bool) -> Bool {
@@ -404,20 +411,23 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     }
 
     func updateQuantityValue(textField: UITextField) -> NSNumber? {
-        if textField.text!.isEmpty {
+        let textFieldText = textField.text!
+        
+        if textFieldText.isEmpty {
             return NSNumber(value: Float(0))
         } else {
-            if textField.text!.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
+            if textFieldText.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
                 // CONVERT THE FRACTION VALUE TO A FLOATING POINT NUMBER OR RETURN NIL IF THE FRACTION SYNTAX IS INVALID
-                return NSNumber(value: Float(0))
+                if FractionMath.validateFractionString(fractionString: textFieldText) {
+                    return NSNumber(value: Float(FractionMath.stringToDouble(inputString: textFieldText)))
+                }
             } else {
                 if let floatValue = Float(textField.text!) {
                     return NSNumber(value: floatValue)
-                } else {
-                    return nil
                 }
             }
         }
+        return nil
     }
     
     func updateBoolValue(segmentedControl: UISegmentedControl) -> NSNumber {

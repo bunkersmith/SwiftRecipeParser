@@ -10,6 +10,16 @@ import Foundation
 
 class FractionMath {
     
+    class func validateFractionString(fractionString: String) -> Bool {
+        let regex = try! NSRegularExpression(pattern: "(([1-9]\\d*)|([1-9]\\d*\\/[1-9]\\d*)|([1-9]\\d*\\-[1-9]\\d*\\/[1-9]\\d*))")
+        let stringRange = NSRangeFromString(fractionString)
+        let matches = regex.matches(in: fractionString, range: stringRange)
+        return matches.count > 0
+        
+//        let regex = Regex("(([1-9]\\d*)|([1-9]\\d*\\/[1-9]\\d*)|([1-9]\\d*\\-[1-9]\\d*\\/[1-9]\\d*))")
+//        return regex.matches(fractionString)
+    }
+    
 //
 // Taken from an answer by JPS on Sep 18 '08 at 21:46, and edited Apr 30 '12 at 16:52 by Jon
 // on this Stack Overflow thread:
