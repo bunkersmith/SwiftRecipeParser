@@ -145,6 +145,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 //    }
     
     @IBAction func addButtonPressed(_ sender: Any) {
+        // Look to the bottom of the function to see where inputTextField is assigned
         var inputTextField = UITextField()
 
         AlertUtilities.showTextFieldAlert(viewController: self,
@@ -153,16 +154,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                                           startingText: "",
                                           keyboardType: .default,
                                           capitalizationType: .words) { alertAction in
-                var xmlFilename = inputTextField.text!.trimmingCharacters(in: .whitespaces)
-                print("User entered: \(xmlFilename)")
-                
-                xmlFilename = xmlFilename.replacingOccurrences(of: " ", with: "_")
-                print("xmlFilename: \(xmlFilename)")
             
-                let recipeResourcesDirectory = RecipeFiles().returnRecipeResourcesURL()
-                let specificRecipeDirectory = recipeResourcesDirectory.appendingPathComponent(String(xmlFilename.first!), isDirectory: true)
-            
-                let pathname = specificRecipeDirectory.appendingPathComponent(xmlFilename).appendingPathExtension("xml")
+                let pathname = RecipeFiles().recipePathnameFromTitle(userInput: inputTextField.text!)
                 print("\(pathname)")
                 
                 if Utilities.fileExistsAtAbsolutePath(pathname: pathname.path) {
@@ -170,7 +163,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                     print("Recipe name: \(recipeName)")
                     
                     if Recipe.findRecipeByName(recipeName) != nil {
-                        // If the recipe is already in the database, ask if the user wants to update it
+                        AlertUtilities.showOkButtonAlert(self, title: "That recipe is already in the database", message: "", buttonHandler: nil)
                     } else {
                         // If not, parse and add it
                         let recipeFiles:RecipeFiles = RecipeFiles()
@@ -189,9 +182,34 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                 }
             
             } textFieldHandler: { textField in
-            inputTextField = textField
-        }
+                inputTextField = textField
+            }
 
+    }
+    
+    @IBAction func modifyButtonPressed(_ sender: Any) {
+        // Look to the bottom of the function to see where inputTextField is assigned
+        var inputTextField = UITextField()
+
+        AlertUtilities.showTextFieldAlert(viewController: self,
+                                          title: "Enter recipe name\n(case-sensitive):",
+                                          message: "",
+                                          startingText: "",
+                                          keyboardType: .default,
+                                          capitalizationType: .words) { alertAction in
+            
+                let pathname = RecipeFiles().recipePathnameFromTitle(userInput: inputTextField.text!)
+                print("\(pathname)")
+                
+                if Utilities.fileExistsAtAbsolutePath(pathname: pathname.path) {
+                    // ADD CODE HERE TO DELETE THE RECIPE FROM THE DATABASE AND RE-ADD IT USING THE CONTENTS OF THE FILE
+                } else {
+                    AlertUtilities.showOkButtonAlert(self, title: "Recipe file not found", message: "", buttonHandler: nil)
+                }
+            
+            } textFieldHandler: { textField in
+                inputTextField = textField
+            }
     }
     
     @IBAction func buildButtonPressed(_ sender: Any) {

@@ -92,11 +92,18 @@
                                 <action selector="buildButtonPressed:" destination="BYZ-38-t0r" id="teb-Xy-Ibi"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="M1B-l5-yKA">
-                            <connections>
-                                <action selector="addButtonPressed:" destination="BYZ-38-t0r" id="WgI-ed-ixr"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Modify" id="b9z-5e-NW2">
+                                <connections>
+                                    <action selector="modifyButtonPressed:" destination="BYZ-38-t0r" id="2WK-TS-JTG"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Add" id="M1B-l5-yKA">
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="BYZ-38-t0r" id="WgI-ed-ixr"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="progressLabel" destination="4uE-Fz-gRV" id="Rn8-Gc-O1P"/>

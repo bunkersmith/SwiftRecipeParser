@@ -111,6 +111,22 @@ class RecipeFiles {
         return returnValue
     }
 
+    func recipePathnameFromTitle(userInput: String) -> URL {
+        var xmlFilename = userInput.trimmingCharacters(in: .whitespaces)
+        print("User entered: \(xmlFilename)")
+        
+        xmlFilename = xmlFilename.replacingOccurrences(of: " ", with: "_")
+        print("xmlFilename: \(xmlFilename)")
+    
+        let recipeResourcesDirectory = RecipeFiles().returnRecipeResourcesURL()
+        let specificRecipeDirectory = recipeResourcesDirectory.appendingPathComponent(String(xmlFilename.first!), isDirectory: true)
+    
+        let pathname = specificRecipeDirectory.appendingPathComponent(xmlFilename).appendingPathExtension("xml")
+        print("\(pathname)")
+        
+        return pathname
+    }
+    
     func countOfRecipeResourceFiles() -> Int {
         var recipeFileCount = 0
         let recipesResourcesDirectory:URL = returnRecipeResourcesURL()
