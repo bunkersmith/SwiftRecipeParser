@@ -518,8 +518,10 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
                    replacementString string: String) -> Bool {
         if textField == costTextField {
             return textField.priceTextField(textField, shouldChangeCharactersIn: range, replacementString: string)
-        } else {
-            return true
         }
+        if textField == quantityTextField {
+            return textField.quantityTextField(textField, shouldChangeCharactersIn: range, replacementString: string)
+        }
+        return true
     }
 }

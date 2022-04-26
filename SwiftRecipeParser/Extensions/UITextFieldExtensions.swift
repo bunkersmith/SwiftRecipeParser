@@ -75,4 +75,22 @@ extension UITextField {
         }
         return true
     }
+    
+    func quantityTextField(_ textField: UITextField,
+                           shouldChangeCharactersIn range: NSRange,
+                           replacementString string: String) -> Bool {
+
+        if let updatedString = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) {
+            if string.rangeOfCharacter(from: CharacterSet(charactersIn: "1234567890.-/")) != nil || string == "" || updatedString == "" {
+                let periodPosition = updatedString.firstIndex(of: ".")
+                let slashPosition =  updatedString.firstIndex(of: "/")
+                let dashPosition =  updatedString.firstIndex(of: "-")
+                if periodPosition != nil && (slashPosition != nil || dashPosition != nil) {
+                    return false
+                }
+                return true
+            }
+        }
+        return false
+    }
 }

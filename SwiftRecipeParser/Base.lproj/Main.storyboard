@@ -699,7 +699,7 @@
                                     <constraint firstAttribute="width" constant="55" id="LTw-sb-Onh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="lds-ae-OzP" id="cH6-GX-Yjr"/>
                                 </connections>
