@@ -107,19 +107,21 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 
         
         if !initializationCompleted {
-            let recipeFiles = RecipeFiles()
-            let resourceRecipeCount = recipeFiles.countOfRecipeResourceFiles()
+//            let recipeFiles = RecipeFiles()
+//            let resourceRecipeCount = recipeFiles.countOfRecipeResourceFiles()
             
-            let databaseRecipeCount:Int = Recipe.countOfDatabaseRecipes()
+//            let databaseRecipeCount:Int = Recipe.countOfDatabaseRecipes()
             
-            if resourceRecipeCount != databaseRecipeCount || Utilities.forceLoadDatabase() {
+            if Utilities.forceLoadDatabase() {
                 buildRecipeDatabase()
             }
+/*
             else {
                 Logger.logDetails(msg: "Database contains \(databaseRecipeCount) recipes - no updates will be made from recipe resource files");
                 loadRecipeTable()
             }
-
+*/
+            
 /*
             if Utilities.updateGroceryListItems() {
                 updateGroceryListItems()
@@ -146,19 +148,21 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         var inputTextField = UITextField()
 
         AlertUtilities.showTextFieldAlert(viewController: self,
-                                          title: "Enter recipe name:",
+                                          title: "Enter recipe name\n(case-sensitive):",
                                           message: "",
                                           startingText: "",
                                           keyboardType: .default,
                                           capitalizationType: .words) { alertAction in
-                var xmlFilename = inputTextField.text!
+                var xmlFilename = inputTextField.text!.trimmingCharacters(in: .whitespaces)
                 print("User entered: \(xmlFilename)")
                 
                 xmlFilename = xmlFilename.replacingOccurrences(of: " ", with: "_")
+                print("xmlFilename: \(xmlFilename)")
             
-                let documentsDirectory = FileUtilities.applicationDocumentsDirectory()
-                let pathname = documentsDirectory.appendingPathComponent(xmlFilename).appendingPathExtension("xml")
-                
+                let recipeResourcesDirectory = RecipeFiles().returnRecipeResourcesURL()
+                let specificRecipeDirectory = recipeResourcesDirectory.appendingPathComponent(String(xmlFilename.first!), isDirectory: true)
+            
+                let pathname = specificRecipeDirectory.appendingPathComponent(xmlFilename).appendingPathExtension("xml")
                 print("\(pathname)")
                 
                 if Utilities.fileExistsAtAbsolutePath(pathname: pathname.path) {
@@ -174,7 +178,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                         let recipeAddResult = recipeFiles.returnRecipeFromXML(recipePath: pathname.path, databaseInterface: databaseInterface)
                         
                         if recipeAddResult {
-                            AlertUtilities.showOkButtonAlert(self, title: "Recipe added", message: "", buttonHandler: nil)
+                            AlertUtilities.showOkButtonAlert(self, title: "Recipe added", message: "May need to restart app to see it`", buttonHandler: nil)
                             self.tableView.reloadData()
                         } else {
                             AlertUtilities.showOkButtonAlert(self, title: "Error adding recipe", message: "", buttonHandler: nil)
