@@ -285,6 +285,24 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         return textFieldValue != oldValue
     }
 
+    func hasQuantityChanged(textField: UITextField, textFieldName: String, oldValue: Float) -> Bool {
+        
+        let textFieldText = textField.text!
+        
+        if textFieldText.isEmpty {
+            return oldValue != 0.0
+        }
+
+        var textFieldValue = Float(0)
+        
+        if textFieldText.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
+            
+        } else {
+            textFieldValue = Float(textFieldText)!
+        }
+        return textFieldValue != oldValue
+    }
+    
     func hasBoolChanged(segmentedControl: UISegmentedControl, oldValue: Bool) -> Bool {
 
         let segmentedControlValue = segmentedControl.selectedSegmentIndex == 1
@@ -298,7 +316,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     
     func hasDataChanged() -> Bool {
         
-        if hasFloatChanged(textField: quantityTextField, textFieldName: "Quantity", oldValue: groceryListItem.quantity.floatValue) {
+        if hasQuantityChanged(textField: quantityTextField, textFieldName: "Quantity", oldValue: groceryListItem.quantity.floatValue) {
             return true
         }
         
@@ -384,6 +402,23 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             }
         }
     }
+
+    func updateQuantityValue(textField: UITextField) -> NSNumber? {
+        if textField.text!.isEmpty {
+            return NSNumber(value: Float(0))
+        } else {
+            if textField.text!.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
+                // CONVERT THE FRACTION VALUE TO A FLOATING POINT NUMBER OR RETURN NIL IF THE FRACTION SYNTAX IS INVALID
+                return NSNumber(value: Float(0))
+            } else {
+                if let floatValue = Float(textField.text!) {
+                    return NSNumber(value: floatValue)
+                } else {
+                    return nil
+                }
+            }
+        }
+    }
     
     func updateBoolValue(segmentedControl: UISegmentedControl) -> NSNumber {
         let controlValue = segmentedControl.selectedSegmentIndex == 1
@@ -400,7 +435,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
                 AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item cost", buttonHandler: nil)
             }
             
-            if let groceryListItemQuantity = updateFloatValue(textField: quantityTextField) {
+            if let groceryListItemQuantity = updateQuantityValue(textField: quantityTextField) {
                 groceryListItem.quantity = groceryListItemQuantity
             } else {
                 AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item quantity", buttonHandler: nil)
