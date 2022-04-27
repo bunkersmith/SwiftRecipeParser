@@ -293,17 +293,14 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             return oldValue != 0.0
         }
 
-        var textFieldDoubleValue = Double(0)
+        var textFieldDoubleValue: Double? = nil
         
         if textFieldText.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
             if FractionMath.validateFractionString(fractionString: textFieldText) {
                 textFieldDoubleValue = FractionMath.stringToDouble(inputString: textFieldText)
-            } else {
-                // THIS WILL CAUSE saveData TO BE CALLED, WHICH WILL REPORT AN ERROR
-                return true
             }
         } else {
-            textFieldDoubleValue = Double(textFieldText)!
+            textFieldDoubleValue = Double(textFieldText)
         }
         return textFieldDoubleValue != oldValue
     }

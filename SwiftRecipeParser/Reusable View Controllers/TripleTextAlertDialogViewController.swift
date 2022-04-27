@@ -14,7 +14,8 @@ class TripleTextAlertDialogViewController: UIViewController, UITextFieldDelegate
     @IBOutlet private weak var dialogBoxView: UIView!
     @IBOutlet private weak var okayButton: UIButton!
     @IBOutlet private weak var prompt: UILabel!
-
+    @IBOutlet weak var errorLabel: UILabel!
+    
     @IBOutlet private weak var quantityTextField: UITextField!
     @IBOutlet private weak var unitsTextField: UITextField!
     @IBOutlet private weak var priceTextField: UITextField!
@@ -40,7 +41,8 @@ class TripleTextAlertDialogViewController: UIViewController, UITextFieldDelegate
         super.viewWillAppear(animated)
         
         prompt.text = promptText
-
+        errorLabel.isHidden = true
+        
         quantityTextField.addLeadingButton(title: nil, image: UIImage(named: "ic_mic"), target: self, selector: #selector(startTextRecognition))
         priceTextField.becomeFirstResponder()
         
@@ -53,16 +55,37 @@ class TripleTextAlertDialogViewController: UIViewController, UITextFieldDelegate
         guard quantityTextField.text != nil, quantityTextField.text != "",
               unitsTextField.text != nil, unitsTextField.text != "",
               priceTextField.text != nil, priceTextField.text != "" else {
-                AlertUtilities.showOkButtonAlert(self, title: "Please enter quantity, units and price values", message: "", buttonHandler: nil)
+            errorLabel.text = "Enter all values"
+            errorLabel.isHidden = false
             return
         }
         
-        guard let quantity = Float(quantityTextField.text!), let price = Float(priceTextField.text!) else {
-            AlertUtilities.showOkButtonAlert(self, title: "Please enter valid quantity and price values", message: "", buttonHandler: nil)
+        let textFieldText = quantityTextField.text!
+        var quantity: Float? = nil
+        
+        if textFieldText.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
+            if FractionMath.validateFractionString(fractionString: textFieldText) {
+                quantity = Float(FractionMath.stringToDouble(inputString: textFieldText))
+            }
+        } else {
+            quantity = Float(textFieldText)
+        }
+
+        guard quantity != nil else {
+            errorLabel.text = "Enter a valid quantity"
+            errorLabel.isHidden = false
+            return
+        }
+
+        guard let price = Float(priceTextField.text!) else {
+            errorLabel.text = "Enter a valid price"
+            errorLabel.isHidden = false
             return
         }
         
-        completion(quantity,
+        errorLabel.isHidden = true
+        
+        completion(quantity!,
                    unitsTextField.text!,
                    price)
         dismiss(animated: true, completion: nil)
