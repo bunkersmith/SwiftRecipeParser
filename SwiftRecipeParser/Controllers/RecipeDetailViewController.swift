@@ -41,7 +41,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
             return
         }
         
-        recipe = Recipe.fetchRecipeWithName(recipeName: recipeName)
+        recipe = Recipe.findRecipeByName(recipeName)
     }
     
     override func viewDidLoad() {

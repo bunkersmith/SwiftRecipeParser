@@ -143,6 +143,14 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 //    {
 //        performSegue(withIdentifier: "EmailLogSegue", sender: self)
 //    }
+
+    func addRecipeWithPathname(pathname: URL) -> Bool {
+        let recipeFiles:RecipeFiles = RecipeFiles()
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        let recipeAddResult = recipeFiles.returnRecipeFromXML(recipePath: pathname.path, databaseInterface: databaseInterface)
+        
+        return recipeAddResult
+    }
     
     @IBAction func addButtonPressed(_ sender: Any) {
         // Look to the bottom of the function to see where inputTextField is assigned
@@ -166,16 +174,12 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                         AlertUtilities.showOkButtonAlert(self, title: "That recipe is already in the database", message: "", buttonHandler: nil)
                     } else {
                         // If not, parse and add it
-                        let recipeFiles:RecipeFiles = RecipeFiles()
-                        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
-                        let recipeAddResult = recipeFiles.returnRecipeFromXML(recipePath: pathname.path, databaseInterface: databaseInterface)
-                        
-                        if recipeAddResult {
-                            AlertUtilities.showOkButtonAlert(self, title: "Recipe added", message: "May need to restart app to see it`", buttonHandler: nil)
-                            self.tableView.reloadData()
-                        } else {
-                            AlertUtilities.showOkButtonAlert(self, title: "Error adding recipe", message: "", buttonHandler: nil)
-                        }
+                       if self.addRecipeWithPathname(pathname: pathname) {
+                           AlertUtilities.showOkButtonAlert(self, title: "Recipe added", message: "May need to restart app to see it", buttonHandler: nil)
+                           self.tableView.reloadData()
+                       } else {
+                           AlertUtilities.showOkButtonAlert(self, title: "Error adding recipe", message: "", buttonHandler: nil)
+                       }
                     }
                 } else {
                     AlertUtilities.showOkButtonAlert(self, title: "Recipe file not found", message: "", buttonHandler: nil)
@@ -198,18 +202,32 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                                           keyboardType: .default,
                                           capitalizationType: .words) { alertAction in
             
-                let pathname = RecipeFiles().recipePathnameFromTitle(userInput: inputTextField.text!)
-                print("\(pathname)")
-                
-                if Utilities.fileExistsAtAbsolutePath(pathname: pathname.path) {
-                    // ADD CODE HERE TO DELETE THE RECIPE FROM THE DATABASE AND RE-ADD IT USING THE CONTENTS OF THE FILE
-                } else {
-                    AlertUtilities.showOkButtonAlert(self, title: "Recipe file not found", message: "", buttonHandler: nil)
-                }
+            let textFieldText = inputTextField.text!
             
-            } textFieldHandler: { textField in
-                inputTextField = textField
+            let pathname = RecipeFiles().recipePathnameFromTitle(userInput: textFieldText)
+            print("\(pathname)")
+            
+            if Utilities.fileExistsAtAbsolutePath(pathname: pathname.path) {
+                // ADD CODE HERE TO DELETE THE RECIPE FROM THE DATABASE AND RE-ADD IT USING THE CONTENTS OF THE FILE
+                if let recipe = Recipe.findRecipeByName(textFieldText.trimmingCharacters(in: .whitespaces)) {
+                    let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+                    databaseInterface.deleteObject(coreDataObject: recipe)
+                    if self.addRecipeWithPathname(pathname: pathname) {
+                        AlertUtilities.showOkButtonAlert(self, title: "Recipe modified", message: "May need to restart app to see changes", buttonHandler: nil)
+                        self.tableView.reloadData()
+                    } else {
+                        AlertUtilities.showOkButtonAlert(self, title: "Error re-adding recipe", message: "", buttonHandler: nil)
+                    }
+                } else {
+                    AlertUtilities.showOkButtonAlert(self, title: "Recipe not found in database", message: "", buttonHandler: nil)
+                }
+            } else {
+                AlertUtilities.showOkButtonAlert(self, title: "Recipe file not found", message: "", buttonHandler: nil)
             }
+        
+        } textFieldHandler: { textField in
+            inputTextField = textField
+        }
     }
     
     @IBAction func buildButtonPressed(_ sender: Any) {
@@ -567,7 +585,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             if selectedIndexPath != nil {
                 if let cell = resultTableViewController.tableView.cellForRow(at: selectedIndexPath!) {
                     if cell.textLabel != nil && cell.textLabel!.text != nil {
-                        if let recipe = Recipe.fetchRecipeWithName(recipeName: cell.textLabel!.text!) {
+                        if let recipe = Recipe.findRecipeByName(cell.textLabel!.text!) {
                             detailViewController.recipe = recipe
                         }
                     }

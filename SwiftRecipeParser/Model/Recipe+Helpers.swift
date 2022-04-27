@@ -11,7 +11,7 @@ import CoreData
 
 extension Recipe {
     
-    class func fetchRecipeWithName(recipeName: String) -> Recipe? {
+    class func findRecipeByName(_ recipeName: String) -> Recipe? {
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
         let recipeObjects = databaseInterface.entitiesOfType(entityTypeName: "Recipe", predicate: NSPredicate(format: "title.name == %@", recipeName)) as! [Recipe]
@@ -206,32 +206,6 @@ extension Recipe {
         returnValue = returnValue.appending("Instructions:\n%\(recipe!.instructions)\n\n")
         
         return returnValue
-    }
-    
-    class func findRecipeByName(_ recipeName:String) -> Recipe?
-    {
-        var recipe:Recipe? = nil
-        
-        let databaseManager:DatabaseManager = DatabaseManager.instance
-        
-        let context:NSManagedObjectContext = databaseManager.returnMainManagedObjectContext()
-        
-        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Recipe")
-        
-        request.predicate = NSPredicate(format: "title.name == %@", recipeName)
-        
-        var recipeObjects:[Any]
-        do {
-            recipeObjects = try context.fetch(request)
-            
-            if recipeObjects.count == 1 {
-                recipe = recipeObjects[0] as? Recipe
-            }
-        } catch let error as NSError {
-            Logger.logDetails(msg: "Error retrieving recipe named \(recipeName): \(error)")
-        }
-        
-        return recipe
     }
     
     class func outputAllRecipesToFiles(inXMLFormat:Bool)
