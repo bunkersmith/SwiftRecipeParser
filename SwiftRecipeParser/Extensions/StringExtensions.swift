@@ -26,4 +26,14 @@ extension String {
         }
         return false
     }
+    
+    func matchesRegex(regexPattern: String) -> Bool {
+
+        let regex = try! NSRegularExpression(pattern: regexPattern,
+                                             options: [])
+
+        let matches = regex.matches(in: self, range: NSRange(location: 0 , length: self.count))
+        
+        return matches.count > 0
+    }
 }

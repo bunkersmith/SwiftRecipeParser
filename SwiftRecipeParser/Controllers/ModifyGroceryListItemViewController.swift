@@ -285,10 +285,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         return textFieldValue != oldValue
     }
 
-// WHEN THIS FUNCTION IS CALLED WITH INVALID FRACTION SYNTAX IN THE textField,
-// THERE NEEDS TO BE A WAY TO STOP THE SAVE PROCESS AND SHOW AN ERROR ALERT TO THE USER
-
-    func hasQuantityChanged(textField: UITextField, textFieldName: String, oldValue: Float) -> Bool {
+    func hasQuantityChanged(textField: UITextField, textFieldName: String, oldValue: Double) -> Bool {
         
         let textFieldText = textField.text!
         
@@ -296,18 +293,19 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             return oldValue != 0.0
         }
 
-        var textFieldFloatValue = Float(0)
+        var textFieldDoubleValue = Double(0)
         
         if textFieldText.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
             if FractionMath.validateFractionString(fractionString: textFieldText) {
-                textFieldFloatValue = Float(FractionMath.stringToDouble(inputString: textFieldText))
+                textFieldDoubleValue = FractionMath.stringToDouble(inputString: textFieldText)
             } else {
-                return false
+                // THIS WILL CAUSE saveData TO BE CALLED, WHICH WILL REPORT AN ERROR
+                return true
             }
         } else {
-            textFieldFloatValue = Float(textFieldText)!
+            textFieldDoubleValue = Double(textFieldText)!
         }
-        return textFieldFloatValue != oldValue
+        return textFieldDoubleValue != oldValue
     }
     
     func hasBoolChanged(segmentedControl: UISegmentedControl, oldValue: Bool) -> Bool {
@@ -323,7 +321,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     
     func hasDataChanged() -> Bool {
         
-        if hasQuantityChanged(textField: quantityTextField, textFieldName: "Quantity", oldValue: groceryListItem.quantity.floatValue) {
+        if hasQuantityChanged(textField: quantityTextField, textFieldName: "Quantity", oldValue: groceryListItem.quantity.doubleValue) {
             return true
         }
         
@@ -414,16 +412,16 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         let textFieldText = textField.text!
         
         if textFieldText.isEmpty {
-            return NSNumber(value: Float(0))
+            return NSNumber(value: Double(0))
         } else {
             if textFieldText.rangeOfCharacter(from: CharacterSet(charactersIn: "-/")) != nil {
-                // CONVERT THE FRACTION VALUE TO A FLOATING POINT NUMBER OR RETURN NIL IF THE FRACTION SYNTAX IS INVALID
+                // CONVERT THE FRACTION VALUE TO A NSNumber DOUBLE OR RETURN NIL IF THE FRACTION SYNTAX IS INVALID
                 if FractionMath.validateFractionString(fractionString: textFieldText) {
-                    return NSNumber(value: Float(FractionMath.stringToDouble(inputString: textFieldText)))
+                    return NSNumber(value: FractionMath.stringToDouble(inputString: textFieldText))
                 }
             } else {
-                if let floatValue = Float(textField.text!) {
-                    return NSNumber(value: floatValue)
+                if let doubleValue = Double(textField.text!) {
+                    return NSNumber(value: doubleValue)
                 }
             }
         }
@@ -436,18 +434,22 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         return NSNumber(value: controlValue)
     }
     
-    func saveData() {
+    func saveData() -> Bool {
+        var errorFound = false
+        
         if hasDataChanged() {
 
             if let groceryListItemCost = updateFloatValue(textField: costTextField) {
                 groceryListItem.cost = groceryListItemCost
             } else {
+                errorFound = true
                 AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item cost", buttonHandler: nil)
             }
             
             if let groceryListItemQuantity = updateQuantityValue(textField: quantityTextField) {
                 groceryListItem.quantity = groceryListItemQuantity
             } else {
+                errorFound = true
                 AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item quantity", buttonHandler: nil)
             }
             
@@ -460,6 +462,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             if let groceryListItemTaxablePrice = updateFloatValue(textField: taxablePriceTextField) {
                 groceryListItem.taxablePrice = groceryListItemTaxablePrice
             } else {
+                errorFound = true
                 AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item taxable price", buttonHandler: nil)
             }
 
@@ -468,12 +471,14 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             if let groceryListItemCrvQuantity = updateIntValue(textField: crvQuantityTextField) {
                 groceryListItem.crvQuantity = groceryListItemCrvQuantity
             } else {
+                errorFound = true
                 AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item CRV quantity", buttonHandler: nil)
             }
             
             if let groceryListItemCrvFluidOunces = updateFloatValue(textField: crvFluidOuncesTextField) {
                 groceryListItem.crvFluidOunces = groceryListItemCrvFluidOunces
             } else {
+                errorFound = true
                 AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item CRV fluid ounces", buttonHandler: nil)
             }
 
@@ -483,18 +488,23 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             if let groceryListItemProduceCode = updateInt32Value(textField: produceCodeTextField) {
                 groceryListItem.produceCode = groceryListItemProduceCode
             } else {
+                errorFound = true
                 AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "Invalid number entered for item CRV quantity", buttonHandler: nil)
             }
-            
-            groceryListItem.calculateTotalCost()
-            
-            let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
-            databaseInterface.saveContext()
-            
-            groceryListItem.writeToIcloud()
-            
-            delegate?.groceryListItemModified(groceryListItem: groceryListItem, indexPath: indexPath)
+
+            if !errorFound {
+                groceryListItem.calculateTotalCost()
+                
+                let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+                databaseInterface.saveContext()
+                
+                groceryListItem.writeToIcloud()
+                
+                delegate?.groceryListItemModified(groceryListItem: groceryListItem, indexPath: indexPath)
+            }
         }
+        
+        return !errorFound
     }
     
     func showTextFieldAlert(_ textFieldName: String) {
@@ -508,8 +518,9 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
                     Logger.logDetails(msg: "self error")
                     return
                 }
-                strongSelf.saveData()
-                strongSelf.navigationController?.popViewController(animated: true)
+                if strongSelf.saveData() {
+                    strongSelf.navigationController?.popViewController(animated: true)
+                }
                 return
             }, noButtonHandler: { [weak self] alertAction in
                 guard let strongSelf = self else {
@@ -525,8 +536,9 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
-        saveData()
-        navigationController?.popViewController(animated: true)
+        if saveData() {
+            navigationController?.popViewController(animated: true)
+        }
     }
 
     @IBAction func addPhotoButtonPressed(_ sender: Any) {

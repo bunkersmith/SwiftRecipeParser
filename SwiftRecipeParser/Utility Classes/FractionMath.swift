@@ -11,13 +11,11 @@ import Foundation
 class FractionMath {
     
     class func validateFractionString(fractionString: String) -> Bool {
-        let regex = try! NSRegularExpression(pattern: "(([1-9]\\d*)|([1-9]\\d*\\/[1-9]\\d*)|([1-9]\\d*\\-[1-9]\\d*\\/[1-9]\\d*))")
-        let stringRange = NSRangeFromString(fractionString)
-        let matches = regex.matches(in: fractionString, range: stringRange)
-        return matches.count > 0
+        // THE FIRST GROUP IS DESIGNED TO CATCH A NUMBER WITH NO - OR /
+        // THE SECOND GROUP IS DESIGNED TO CATCH A FRACTION WITH NO WHOLE NUMBER, i.e. 3/4
+        // THE THIRD GROUP IS DESIGNED TO CATCH A NUMBER WITH A WHOLE NUMBER AND A FRACTION, i.e. 1-3/4
         
-//        let regex = Regex("(([1-9]\\d*)|([1-9]\\d*\\/[1-9]\\d*)|([1-9]\\d*\\-[1-9]\\d*\\/[1-9]\\d*))")
-//        return regex.matches(fractionString)
+        return fractionString.matchesRegex(regexPattern: "(^([1-9]\\d*$)|(^[1-9]\\d*\\/[1-9]\\d*$)|(^[1-9]\\d*\\-[1-9]\\d*\\/[1-9]\\d*$))")
     }
     
 //
