@@ -139,14 +139,17 @@ class GroceryListItem: NSManagedObject {
         if isFsa.boolValue {
             returnValue += "\nisFsa = \(isFsa)"
         }
-        if imagePath != nil {
-            returnValue += "\nimagePath = \(imagePath!)"
+        if let imagePath = imagePath {
+            returnValue += "\nimagePath = \(imagePath)"
         }
         if !notes.isEmpty {
             returnValue += "\nnotes = \(notes)"
         }
         if !webLink.isEmpty {
             returnValue += "\nwebLink = \(webLink)"
+        }
+        if produceCode.int32Value > 0 {
+            returnValue += "\nproduceCode = \(produceCode.int32Value)"
         }
 
         returnValue += "\nlistPosition = \(listPosition)"

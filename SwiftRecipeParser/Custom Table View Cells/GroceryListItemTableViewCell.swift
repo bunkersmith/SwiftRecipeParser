@@ -37,19 +37,25 @@ class GroceryListItemTableViewCell: UITableViewCell {
             groceryListItemName.text = "*" + groceryListItemName.text!
         }
         
-        if item.quantity == 1.0 {
-            groceryListItemQuantityLabel.text = ""
-        } else {
-            configureForQuantity(quantity: item.quantity.floatValue, unitOfMeasure: item.unitOfMeasure)
-        }
+        configureForQuantity(quantity: item.quantity.floatValue, unitOfMeasure: item.unitOfMeasure)
     }
 
     func configureForQuantity(quantity: Float, unitOfMeasure: String) {
+        if unitOfMeasure == "lb" {
+            let  itemQuantityString = quantity.remainder(dividingBy: 1.0) == 0.0 ? "\(Int(quantity))" : "\(String(format:"%.1f", quantity))"
+            groceryListItemQuantityLabel.text = "(" + itemQuantityString + "#)"
+            return
+        }
+        if quantity == 1.0 {
+            groceryListItemQuantityLabel.text = ""
+            return
+        }
+        
         if quantity.remainder(dividingBy: 1.0) == 0.0 {
             groceryListItemQuantityLabel.text = "(\(Int(quantity))) "
         } else {
-            let poundsString = unitOfMeasure == "lb" ? "#" : ""
-            groceryListItemQuantityLabel.text = "(\(String(format:"%.1f", quantity))" + poundsString +    ") "
+            let itemQuantityString = "\(String(format:"%.1f", quantity))"
+            groceryListItemQuantityLabel.text = "(" + itemQuantityString + ")"
         }
     }
 }
