@@ -100,6 +100,10 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         initCheckBoxes()
     }
     
+    @IBAction func emailLogButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "EmailLogSegue", sender: self)
+    }
+    
     @IBAction func addButtonPressed(_ sender: Any) {
         var inputTextField = UITextField()
 
@@ -247,6 +251,14 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
                 let indexPath:NSIndexPath = tableView.indexPathForSelectedRow! as NSIndexPath
                 detailViewController.groceryList = groceryLists![indexPath.row]
             }
+            return
+        }
+
+        if segue.identifier == "EmailLogSegue" {
+            if let emailLogViewController = segue.destination as? EmailLogViewController {
+                emailLogViewController.requestMailComposeViewController()
+            }
+
             return
         }
     }

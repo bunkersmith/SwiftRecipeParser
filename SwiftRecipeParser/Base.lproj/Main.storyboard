@@ -109,7 +109,6 @@
                         <outlet property="progressLabel" destination="4uE-Fz-gRV" id="Rn8-Gc-O1P"/>
                         <outlet property="tableView" destination="iAC-ww-fRc" id="Am6-9u-fBK"/>
                         <segue destination="xst-t7-a6v" kind="show" identifier="RecipeDetailSegue" id="ihl-gN-Xdm"/>
-                        <segue destination="OGM-Mg-1eS" kind="show" identifier="EmailLogSegue" id="fi7-2q-gyt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -205,6 +204,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Grocery Lists" id="cjb-lt-ids">
+                        <barButtonItem key="leftBarButtonItem" title="Email Log" id="5UK-0s-PiX">
+                            <connections>
+                                <action selector="emailLogButtonPressed:" destination="Rka-G7-4aq" id="aea-7W-fW6"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="NAw-Zr-34O">
                                 <connections>
@@ -220,6 +224,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="qm9-Xf-Inx" id="vOC-O4-bdd"/>
+                        <segue destination="OGM-Mg-1eS" kind="show" identifier="EmailLogSegue" id="msk-iw-yJQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elJ-mo-vvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1158,6 +1163,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kEO-xF-7Qb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQa-8N-nkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

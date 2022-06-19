@@ -600,14 +600,6 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             
             return
         }
-
-//        if segue.identifier == "EmailLogSegue" {
-//            if let emailLogViewController = segue.destination as? EmailLogViewController {
-//                emailLogViewController.requestMailComposeViewController()
-//            }
-//
-//            return
-//        }
     }
 
     // MARK: - Search Bar Delegate
