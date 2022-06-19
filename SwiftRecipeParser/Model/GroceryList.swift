@@ -333,11 +333,13 @@ class GroceryList: NSManagedObject {
                  itemQuantity: Float,
                  itemUnits: String,
                  itemPrice: Float,
-                 itemNotes: String) {
+                 itemNotes: String?) {
         item.quantity = NSNumber(value: itemQuantity)
         item.unitOfMeasure = itemUnits
         item.cost = NSNumber(value: itemPrice)
-        item.notes = itemNotes
+        if itemNotes != nil {
+            item.notes = itemNotes!
+        }
         item.calculateTotalCost()
         item.isBought = NSNumber(value: false)
         addHasItemsObject(value: item)

@@ -153,7 +153,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                                          itemQuantity: itemQuantity,
                                          itemUnits: itemUnits,
                                          itemPrice: itemPrice,
-                                         itemNotes: "")
+                                         itemNotes: nil)
                 
                 self.updateCostLabels()
                 self.tableView.reloadData()
