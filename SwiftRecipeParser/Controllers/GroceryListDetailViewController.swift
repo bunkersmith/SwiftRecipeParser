@@ -171,7 +171,7 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                                          itemQuantity: itemQuantity,
                                          itemUnits: itemUnits,
                                          itemPrice: itemPrice,
-                                         itemNotes: "")
+                                         itemNotes: nil)
                 self.groceryList.buyItem(item: groceryListItem,
                                          quantity: itemQuantity,
                                          units: itemUnits,

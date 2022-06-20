@@ -135,7 +135,7 @@ class AlertUtilities {
                                                     itemQuantity: itemQuantity,
                                                     itemUnits: itemUnits,
                                                     itemPrice: itemPrice,
-                                                    itemNotes: "")
+                                                    itemNotes: nil)
                     }
                 }
 
