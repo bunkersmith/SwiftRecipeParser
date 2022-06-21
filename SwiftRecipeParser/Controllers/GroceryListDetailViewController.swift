@@ -215,26 +215,41 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     @IBAction func clearAllItemsButtonPressed(_ sender: Any) {
-        AlertUtilities.showThreeButtonAlert(self,
-                                            title: "Which items do you want to clear?",
-                                            message: "",
-                                            buttonTitle1: "All",
-                                            buttonHandler1: { action in
-                                                self.groceryList.clearAllItems()
-                                                self.updateCostLabels()
-                                                self.totalCostLabel.text = "Total Cost: $0.00"
-                                                self.projectedCostLabel.text = "Projected Cost: $0.00"
-                                                self.createFetchedResultsController(onlyUnbought: false)
-                                            },
-                                            buttonTitle2: "Bought",
-                                            buttonHandler2: { action in
-                                                self.fetchedResultsController = nil
-                                                self.groceryList.clearBoughtItems()
-                                                self.updateCostLabels()
-                                                self.createFetchedResultsController(onlyUnbought: false)
-                                            },
-                                            buttonTitle3: "Cancel",
-                                            buttonHandler3: nil)
+        let boughtItemCount = databaseInterface.countOfEntitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "inGroceryList.name MATCHES %@ AND isBought == YES", groceryList.name)) // All the bought items
+        let unboughtItemCount = databaseInterface.countOfEntitiesOfType(entityTypeName: "GroceryListItem", predicate: NSPredicate(format: "inGroceryList.name MATCHES %@ AND isBought == NO", groceryList.name)) // All the bought items
+        
+        Logger.logDetails(msg: "All items count = \(groceryList.hasItems.count)")
+        Logger.logDetails(msg: "Bought item count = \(boughtItemCount)")
+        Logger.logDetails(msg: "Unbought item count = \(unboughtItemCount)")
+
+        if (groceryList.hasItems.count != boughtItemCount) && (groceryList.hasItems.count != unboughtItemCount) {
+            AlertUtilities.showThreeButtonAlert(self,
+                                                title: "Which items do you want to clear?",
+                                                message: "",
+                                                buttonTitle1: "All",
+                                                buttonHandler1: { action in
+                                                    self.clearAllItems()
+                                                },
+                                                buttonTitle2: "Bought",
+                                                buttonHandler2: { action in
+                                                    self.fetchedResultsController = nil
+                                                    self.groceryList.clearBoughtItems()
+                                                    self.updateCostLabels()
+                                                    self.createFetchedResultsController(onlyUnbought: false)
+                                                },
+                                                buttonTitle3: "Cancel",
+                                                buttonHandler3: nil)
+        } else {
+            clearAllItems()
+        }
+    }
+
+    func clearAllItems() {
+        self.groceryList.clearAllItems()
+        self.updateCostLabels()
+        self.totalCostLabel.text = "Total Cost: $0.00"
+        self.projectedCostLabel.text = "Projected Cost: $0.00"
+        self.createFetchedResultsController(onlyUnbought: false)
     }
     
     @IBAction func buyItemButtonPressed(_ sender: UIButton!) {
