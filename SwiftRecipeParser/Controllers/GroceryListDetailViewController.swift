@@ -240,7 +240,13 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
                                                 buttonTitle3: "Cancel",
                                                 buttonHandler3: nil)
         } else {
-            clearAllItems()
+            AlertUtilities.showYesNoAlert(viewController: self,
+                                          title: "Confirmation Alert",
+                                          message: "Are you sure you want to delete all the items in your grocery list",
+                                          yesButtonHandler: { action in
+                                                                self.clearAllItems()
+                                                            },
+                                          noButtonHandler: nil)
         }
     }
 
