@@ -33,6 +33,12 @@
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>English Cucumber</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
             <ingredientName>Feta Cheese</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
