@@ -85,8 +85,25 @@ extension UITextField {
                 let periodPosition = updatedString.firstIndex(of: ".")
                 let slashPosition =  updatedString.firstIndex(of: "/")
                 let dashPosition =  updatedString.firstIndex(of: "-")
-                if periodPosition != nil && (slashPosition != nil || dashPosition != nil) {
-                    return false
+                if slashPosition != nil || dashPosition != nil {
+                    if periodPosition != nil {
+                        return false
+                    } else {
+                        let firstChar = updatedString.first
+                        if firstChar == "/" || firstChar == "-" {
+                            return false
+                        }
+                        if updatedString.filter({ char in
+                            return char == "/"
+                        }).count > 1 {
+                            return false
+                        }
+                        if updatedString.filter({ char in
+                            return char == "-"
+                        }).count > 1 {
+                            return false
+                        }
+                    }
                 }
                 return true
             }
