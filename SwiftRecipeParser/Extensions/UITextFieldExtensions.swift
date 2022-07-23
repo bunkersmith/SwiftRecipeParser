@@ -103,6 +103,16 @@ extension UITextField {
                         }).count > 1 {
                             return false
                         }
+                        if dashPosition != nil && updatedString.last != "-" {
+                            if updatedString[updatedString.index(after: dashPosition!)] == "/" {
+                                return false
+                            }
+                        }
+                        if slashPosition != nil && updatedString.last != "/" {
+                            if updatedString[updatedString.index(after: slashPosition!)] == "-" {
+                                return false
+                            }
+                        }
                     }
                 }
                 return true
