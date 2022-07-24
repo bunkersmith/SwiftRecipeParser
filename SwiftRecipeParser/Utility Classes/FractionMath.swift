@@ -17,6 +17,36 @@ class FractionMath {
         
         return fractionString.matchesRegex(regexPattern: "(^([1-9]\\d*$)|(^[1-9]\\d*\\/[1-9]\\d*$)|(^[1-9]\\d*\\-[1-9]\\d*\\/[1-9]\\d*$))")
     }
+  
+    class func validatePartialFractionString(fractionString: String,
+                                             slashPosition: String.Index?,
+                                             dashPosition: String.Index?) -> Bool {
+        let firstChar = fractionString.first
+        if firstChar == "/" || firstChar == "-" {
+            return false
+        }
+        if fractionString.filter({ char in
+            return char == "/"
+        }).count > 1 {
+            return false
+        }
+        if fractionString.filter({ char in
+            return char == "-"
+        }).count > 1 {
+            return false
+        }
+        if dashPosition != nil && fractionString.last != "-" {
+            if fractionString[fractionString.index(after: dashPosition!)] == "/" {
+                return false
+            }
+        }
+        if slashPosition != nil && fractionString.last != "/" {
+            if fractionString[fractionString.index(after: slashPosition!)] == "-" {
+                return false
+            }
+        }
+        return true
+    }
     
 //
 // Taken from an answer by JPS on Sep 18 '08 at 21:46, and edited Apr 30 '12 at 16:52 by Jon

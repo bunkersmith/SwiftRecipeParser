@@ -89,30 +89,9 @@ extension UITextField {
                     if periodPosition != nil {
                         return false
                     } else {
-                        let firstChar = updatedString.first
-                        if firstChar == "/" || firstChar == "-" {
-                            return false
-                        }
-                        if updatedString.filter({ char in
-                            return char == "/"
-                        }).count > 1 {
-                            return false
-                        }
-                        if updatedString.filter({ char in
-                            return char == "-"
-                        }).count > 1 {
-                            return false
-                        }
-                        if dashPosition != nil && updatedString.last != "-" {
-                            if updatedString[updatedString.index(after: dashPosition!)] == "/" {
-                                return false
-                            }
-                        }
-                        if slashPosition != nil && updatedString.last != "/" {
-                            if updatedString[updatedString.index(after: slashPosition!)] == "-" {
-                                return false
-                            }
-                        }
+                        return FractionMath.validatePartialFractionString(fractionString: updatedString,
+                                                                          slashPosition: slashPosition,
+                                                                          dashPosition: dashPosition)
                     }
                 }
                 return true
