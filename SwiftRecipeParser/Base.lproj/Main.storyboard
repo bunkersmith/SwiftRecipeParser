@@ -142,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-Xf-Inx">
-                                <rect key="frame" x="0.0" y="125" width="390" height="719"/>
+                                <rect key="frame" x="0.0" y="125" width="390" height="639"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroceryListTableCell" id="fZv-nw-za3" customClass="GroceryListTableViewCell" customModule="SwiftRecipeParser" customModuleProvider="target">
@@ -206,7 +206,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qm9-Xf-Inx" secondAttribute="bottom" id="FKs-wu-iLU"/>
+                            <constraint firstAttribute="bottom" secondItem="qm9-Xf-Inx" secondAttribute="bottom" constant="80" id="FKs-wu-iLU"/>
                             <constraint firstItem="qm9-Xf-Inx" firstAttribute="leading" secondItem="2gJ-wR-Pzw" secondAttribute="leading" id="HDs-7H-fAd"/>
                             <constraint firstItem="cW4-gl-bEb" firstAttribute="top" secondItem="2gJ-wR-Pzw" secondAttribute="top" constant="96" id="JZo-v3-xHB"/>
                             <constraint firstItem="qm9-Xf-Inx" firstAttribute="top" secondItem="cW4-gl-bEb" secondAttribute="bottom" constant="8" id="MB3-V9-gjN"/>
@@ -339,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="In6-dw-2KZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1837.5999999999999" y="1921.8890554722641"/>
+            <point key="canvasLocation" x="1836.9230769230769" y="1921.5639810426539"/>
         </scene>
         <!--Grocery List Detail View Controller-->
         <scene sceneID="bRW-rc-fV8">
@@ -1645,7 +1645,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DfH-Hy-TeW"/>
+        <segue reference="WbI-iN-z1Q"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="tab_icon_grocery_list" width="17.333333969116211" height="10.666666984558105"/>
