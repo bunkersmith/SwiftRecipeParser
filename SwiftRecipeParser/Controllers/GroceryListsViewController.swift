@@ -12,6 +12,7 @@ import CoreData
 class GroceryListsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var selectedListsTotalLabel: UILabel!
     
     private var groceryLists:Array<GroceryList>? = nil
     
@@ -20,9 +21,10 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
 
         clearSelectedGroceryLists()
 
-        populateGroceryLists()
+// THIS LINE MAKES THE UITabBar AT THE BOTTOM OF THE SCREEN INVISIBLE.
+// I'M GOING TO SEE IF I LIKE THE LOOK OF THIS ViewController BETTER WITH IT VISIBLE.
         
-        tableView.tableFooterView = UIView(frame: .zero)
+//        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -65,9 +67,11 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         if grandTotalCost > 0 {
-            navigationItem.title = String(format: "Grand Total: $%.2f", grandTotalCost)
+            selectedListsTotalLabel.alpha = 1.0
+            selectedListsTotalLabel.text = String(format: "Grand Total: $%.2f", grandTotalCost)
         } else {
-            navigationItem.title = "Grocery Lists"
+            selectedListsTotalLabel.alpha = 0.0
+            selectedListsTotalLabel.text = ""
         }
     }
     
@@ -93,7 +97,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     
     func populateGroceryLists() {
         groceryLists = GroceryList.returnAll()
-        self.tableView.reloadData()
+        tableView.reloadData()
 
         initCheckBoxes()
     }
@@ -187,9 +191,11 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         databaseInterface.saveContext()
         
         if grandTotalCost > 0 {
-            navigationItem.title = String(format: "Grand Total: $%.2f", grandTotalCost)
+            selectedListsTotalLabel.alpha = 1.0
+            selectedListsTotalLabel.text = String(format: "Grand Total: $%.2f", grandTotalCost)
         } else {
-            navigationItem.title = "Grocery Lists"
+            selectedListsTotalLabel.alpha = 0.0
+            selectedListsTotalLabel.text = ""
         }
     }
     

@@ -132,9 +132,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW4-gl-bEb">
-                                <rect key="frame" x="8" y="96" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW4-gl-bEb">
+                                <rect key="frame" x="8" y="96" width="366" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="i6o-5n-GA7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -209,6 +212,7 @@
                             <constraint firstItem="qm9-Xf-Inx" firstAttribute="top" secondItem="cW4-gl-bEb" secondAttribute="bottom" constant="8" id="MB3-V9-gjN"/>
                             <constraint firstAttribute="trailing" secondItem="qm9-Xf-Inx" secondAttribute="trailing" id="NdD-ej-0Un"/>
                             <constraint firstItem="cW4-gl-bEb" firstAttribute="leading" secondItem="2gJ-wR-Pzw" secondAttribute="leading" constant="8" id="hyG-hI-03w"/>
+                            <constraint firstAttribute="trailing" secondItem="cW4-gl-bEb" secondAttribute="trailing" constant="16" id="sg6-ah-vaL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Grocery Lists" id="cjb-lt-ids">
@@ -231,13 +235,14 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="selectedListsTotalLabel" destination="cW4-gl-bEb" id="D8y-YB-mro"/>
                         <outlet property="tableView" destination="qm9-Xf-Inx" id="vOC-O4-bdd"/>
                         <segue destination="OGM-Mg-1eS" kind="show" identifier="EmailLogSegue" id="msk-iw-yJQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elJ-mo-vvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836.9230769230769" y="1196.4454976303316"/>
+            <point key="canvasLocation" x="1836.9230769230769" y="1195.734597156398"/>
         </scene>
         <!--Thanksgiving Recipes-->
         <scene sceneID="kgT-wu-JoK">
