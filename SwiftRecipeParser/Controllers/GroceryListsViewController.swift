@@ -15,13 +15,12 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     
     private var groceryLists:Array<GroceryList>? = nil
     
-// CHANGES WERE MADE ON 2022/04/19 TO ELIMINATE A WARNING FOR A TABLE VIEW BEING LAID OUT WHEN IT WAS OUTSIDE THE VIEW HIERARCHY.
-// IF STRANGE THINGS START TO HAPPEN WITH THE GroceryLists SCREEN, BACK OUT THE CHANGES MADE ON THAT DATE.
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         clearSelectedGroceryLists()
+
+        populateGroceryLists()
         
         tableView.tableFooterView = UIView(frame: .zero)
     }
@@ -37,9 +36,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.tableView.reloadData()
-
-         NotificationCenter.default.addObserver(self, selector:  #selector(handleGroceryListCheckBoxNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector:  #selector(handleGroceryListCheckBoxNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
         
         GroceryListItem.calculateAllTotalCosts()
     }
@@ -96,6 +93,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     
     func populateGroceryLists() {
         groceryLists = GroceryList.returnAll()
+        self.tableView.reloadData()
 
         initCheckBoxes()
     }

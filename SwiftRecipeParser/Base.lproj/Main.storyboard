@@ -132,8 +132,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW4-gl-bEb">
+                                <rect key="frame" x="8" y="96" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-Xf-Inx">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="125" width="390" height="719"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroceryListTableCell" id="fZv-nw-za3" customClass="GroceryListTableViewCell" customModule="SwiftRecipeParser" customModuleProvider="target">
@@ -199,8 +205,10 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="qm9-Xf-Inx" secondAttribute="bottom" id="FKs-wu-iLU"/>
                             <constraint firstItem="qm9-Xf-Inx" firstAttribute="leading" secondItem="2gJ-wR-Pzw" secondAttribute="leading" id="HDs-7H-fAd"/>
+                            <constraint firstItem="cW4-gl-bEb" firstAttribute="top" secondItem="2gJ-wR-Pzw" secondAttribute="top" constant="96" id="JZo-v3-xHB"/>
+                            <constraint firstItem="qm9-Xf-Inx" firstAttribute="top" secondItem="cW4-gl-bEb" secondAttribute="bottom" constant="8" id="MB3-V9-gjN"/>
                             <constraint firstAttribute="trailing" secondItem="qm9-Xf-Inx" secondAttribute="trailing" id="NdD-ej-0Un"/>
-                            <constraint firstItem="qm9-Xf-Inx" firstAttribute="top" secondItem="2gJ-wR-Pzw" secondAttribute="top" id="e6d-sd-fdq"/>
+                            <constraint firstItem="cW4-gl-bEb" firstAttribute="leading" secondItem="2gJ-wR-Pzw" secondAttribute="leading" constant="8" id="hyG-hI-03w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Grocery Lists" id="cjb-lt-ids">
