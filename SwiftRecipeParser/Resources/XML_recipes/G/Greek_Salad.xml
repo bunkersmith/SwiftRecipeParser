@@ -7,52 +7,52 @@
     <instructions>Combine all ingredients. Toss with dressing.</instructions>
     <ingredients>
         <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Spring Mix</ingredientName>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Spring Mix Container</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Greek Olives</ingredientName>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Greek Olive Jar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Pepperoncinis</ingredientName>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Pepperoncini Jar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Grape Tomatoes</ingredientName>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Grape Tomato Container</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>English Cucumber</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Feta Cheese</ingredientName>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Feta Cheese Container</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Kebab Meat</ingredientName>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Kebab Meat Tub</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Greek Dressing</ingredientName>
-            <processingInstructions></processingInstructions>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Greek Dressing Bottle</ingredientName>
+            <processingInstructions> or try Tzatziki</processingInstructions>
         </ingredient>
     </ingredients>
 </recipe>

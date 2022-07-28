@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Stir-Fried Chicken with Cashews And Vegetables</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Chop all veggies before starting!
+
+1. In a small bowl, whisk together the stock, soy sauce, cornstarch, sesame oil, and salt; set aside.
+
+2. Heat 1-1/2 tsp canola oil in a wok or large nonstick skillet over medium-high heat. Add the chicken; stir-fry until lightly browned and just done, 4 to 5 minutes. Remove the chicken from the pan.
+
+3. Heat the remaining 1 tbsp oil in the wok over medium-high heat. Add the scallions, snow peas, carrots, garlic, and bell peppers; stir-fry until crisp-tender, about 3 minutes. Return the chicken to the pan. Whisk the sauce and add to the chicken; cook until the sauce thickens, stirring often, about 2 minutes. Top with the nuts.
+</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>chicken stock</ingredientName>
+            <processingInstructions> no salt added</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>reduced-sodium soy sauce</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>cornstarch</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>toasted sesame oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>tsp</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>canola oil</ingredientName>
+            <processingInstructions> divided</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>skinless boneless chicken breasts</ingredientName>
+            <processingInstructions> cut into bite-size pieces</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2/3</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>scallions</ingredientName>
+            <processingInstructions> sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>snow peas</ingredientName>
+            <processingInstructions> halved on an angle</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>garlic cloves</ingredientName>
+            <processingInstructions> finely chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>red bell pepper</ingredientName>
+            <processingInstructions> thinly sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>med</unitOfMeasure>
+            <ingredientName>yellow bell pepper</ingredientName>
+            <processingInstructions> thinly sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>cup</unitOfMeasure>
+            <ingredientName>unsalted dry-roasted cashews</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>carrots</ingredientName>
+            <processingInstructions> sliced</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
