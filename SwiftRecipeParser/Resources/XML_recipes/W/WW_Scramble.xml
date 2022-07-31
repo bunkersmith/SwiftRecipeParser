@@ -8,7 +8,7 @@
 
 2. Add mushrooms, peppers, onions, peppers and greens
 
-3. Saute  until onions are translucent 
+3. Saute  until onions are translucent
 
 4. Beat and add eggs
 
@@ -23,15 +23,21 @@
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>8</quantity>
-            <unitOfMeasure>oz</unitOfMeasure>
-            <ingredientName>Onion</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
             <quantity>6</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Medium Garlic Cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>pkg</unitOfMeasure>
+            <ingredientName>Sliced Bell Peppers And Onions</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Cremini Mushrooms</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -50,18 +56,6 @@
             <quantity>6</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Eggs</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>7-3/4</quantity>
-            <unitOfMeasure>oz</unitOfMeasure>
-            <ingredientName>Multi-Colored Bell Peppers</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>4</quantity>
-            <unitOfMeasure>oz</unitOfMeasure>
-            <ingredientName>Cremini Mushrooms</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>
