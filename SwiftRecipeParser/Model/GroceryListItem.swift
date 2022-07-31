@@ -227,6 +227,7 @@ class GroceryListItem: NSManagedObject {
                 if cost != 0 {
                     groceryListItem.cost = NSNumber(value: cost)
                 }
+                groceryListItem.unitOfMeasure = unitOfMeasure
                 groceryListItem.quantity = NSNumber(value: quantity)
                 localDatabaseInterface.saveContext()
                 
