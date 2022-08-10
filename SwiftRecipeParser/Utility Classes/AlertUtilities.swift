@@ -11,14 +11,6 @@ import UIKit
 
 class AlertUtilities {
     
-    class func showNoButtonAlert(_ viewController:UIViewController, title: String, message:String) -> UIAlertController {
-        
-        let noButtonAlert = UIAlertController(title:title, message:message, preferredStyle:UIAlertControllerStyle.alert)
-        viewController.present(noButtonAlert, animated:true, completion: nil)
-        
-        return noButtonAlert
-    }
-    
     class func showTwoButtonAlert(_ viewController:UIViewController,
                                              title: String,
                                            message:String,
