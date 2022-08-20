@@ -1405,6 +1405,11 @@
                                     <action selector="addAllPressed:" destination="xst-t7-a6v" id="sbx-yN-aUZ"/>
                                 </connections>
                             </barButtonItem>
+                            <barButtonItem title="Grocery List" id="0XI-cp-zFP">
+                                <connections>
+                                    <action selector="showSelectGroceryListViewController" destination="xst-t7-a6v" id="MHS-L3-tU8"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>

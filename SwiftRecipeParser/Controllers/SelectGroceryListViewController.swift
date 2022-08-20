@@ -10,6 +10,7 @@ import UIKit
 
 protocol GroceryListSelectionDelegate: class {
     func groceryListSelected(groceryList: GroceryList, groceryListItem: GroceryListItem?)
+    func viewDidDisappearNotification()
 }
 
 class SelectGroceryListViewController: UIViewController  {
@@ -43,6 +44,11 @@ class SelectGroceryListViewController: UIViewController  {
 //        tableView.reloadData()
 //    }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        delegate?.viewDidDisappearNotification()
+        super.viewDidDisappear(animated)
+    }
+    
     @objc func transparentViewTapped(sender: UITapGestureRecognizer) {
         dismiss(animated: true)
     }

@@ -8,9 +8,10 @@
 
 import UIKit
 
-class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, GroceryListSelectionDelegate {
     
     var recipe:Recipe?
+    var selectedGroceryListName = ""
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var recipeTitle: UILabel!
@@ -92,6 +93,18 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         // Dispose of any resources that can be recreated.
     }
  
+    @IBAction func showSelectGroceryListViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let selectGroceryListViewController = storyboard.instantiateViewController(withIdentifier: "SelectGroceryListViewController") as? SelectGroceryListViewController
+        selectGroceryListViewController!.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        selectGroceryListViewController!.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        selectGroceryListViewController!.groceryLists = GroceryList.returnAllButCurrent()
+        selectGroceryListViewController!.listTitle = "Switch to grocery list:"
+        selectGroceryListViewController!.groceryListItem = nil
+        selectGroceryListViewController!.delegate = self
+        self.present(selectGroceryListViewController!, animated: true, completion: nil)
+    }
+    
     @IBAction func addAllPressed(_ sender: Any) {
         let currentGroceryList = GroceryList.returnCurrentGroceryList()
         
@@ -271,6 +284,17 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
+    // MARK: - GroceryListSelectionDelegate
+    
+    func groceryListSelected(groceryList: GroceryList, groceryListItem: GroceryListItem?) {
+        GroceryList.setCurrentGroceryList(groceryListName: groceryList.name)
+        selectedGroceryListName = groceryList.name
+    }
+    
+    func viewDidDisappearNotification() {
+        let toastString = "Current grocery list is now \(selectedGroceryListName)"
+        IToast().showToast(self, alertTitle: "SwiftRecipeParser Alert", alertMessage: toastString, duration: 2, completionHandler: nil)
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -70,13 +70,6 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
         self.present(selectGroceryListViewController!, animated: true, completion: nil)
     }
     
-    func groceryListSelected(groceryList: GroceryList, groceryListItem: GroceryListItem?) {
-        groceryList.stopNumber = NSNumber(integerLiteral: listSize() + 1)
-        shoppingTrip.addToGroceryLists(groceryList)
-        databaseInterface.saveContext()
-        tableView.reloadData()
-    }
-
     func listSize() -> Int {
         guard let fetchedResultsController = fetchedResultsController else {
             return 0
@@ -324,5 +317,16 @@ class ShoppingTripViewController: UIViewController, UITableViewDataSource, UITab
 //        snapshot.layer.shadowOpacity = 0.4
 //
 //        return snapshot
+    }
+
+// MARK: - GroceryListSelectionDelegate
+    func groceryListSelected(groceryList: GroceryList, groceryListItem: GroceryListItem?) {
+        groceryList.stopNumber = NSNumber(integerLiteral: listSize() + 1)
+        shoppingTrip.addToGroceryLists(groceryList)
+        databaseInterface.saveContext()
+        tableView.reloadData()
+    }
+
+    func viewDidDisappearNotification() {
     }
 }

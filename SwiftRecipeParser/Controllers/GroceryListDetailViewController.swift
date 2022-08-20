@@ -439,6 +439,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         }
     }
     
+    func viewDidDisappearNotification() {
+    }
     // MARK: - Fetched results controller
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
