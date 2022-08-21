@@ -295,6 +295,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
         let toastString = "Current grocery list is now \(selectedGroceryListName)"
         IToast().showToast(self, alertTitle: "SwiftRecipeParser Alert", alertMessage: toastString, duration: 2, completionHandler: nil)
     }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

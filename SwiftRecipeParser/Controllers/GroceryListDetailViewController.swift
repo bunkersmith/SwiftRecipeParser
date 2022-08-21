@@ -33,6 +33,9 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
 
     var titleViewButton:UIButton!
     
+    var movedGroceryListItemName = ""
+    var movedGroceryListName = ""
+
 //    var itemToDelete: GroceryListItem? = nil
     
     override func encodeRestorableState(with aCoder: NSCoder) {
@@ -432,6 +435,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
         if groceryListItem != nil {
             removeGroceryListItem(groceryList: self.groceryList, groceryListItem: groceryListItem!)
             groceryList.addHasItemsObject(value: groceryListItem!)
+            movedGroceryListName = groceryList.name
+            movedGroceryListItemName = groceryListItem!.name
         } else {
             self.groceryList = groceryList
             GroceryList.setCurrentGroceryList(groceryListName: groceryList.name)
@@ -440,7 +445,14 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     }
     
     func viewDidDisappearNotification() {
+        if !movedGroceryListItemName.isEmpty {
+            let toastString = " \(movedGroceryListItemName) moved to \(movedGroceryListName) list"
+            IToast().showToast(self, alertTitle: "SwiftRecipeParser Alert", alertMessage: toastString, duration: 2, completionHandler: nil)
+            movedGroceryListItemName = ""
+            movedGroceryListName = ""
+        }
     }
+    
     // MARK: - Fetched results controller
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
