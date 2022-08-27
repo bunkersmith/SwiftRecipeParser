@@ -574,6 +574,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKj-bD-qyA">
+                                <rect key="frame" x="289" y="99" width="77" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Rename"/>
+                                <connections>
+                                    <action selector="renameButtonPressed:" destination="sOC-LX-Geb" eventType="touchUpInside" id="2Ij-f6-MBp"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ATM-Vd-HXb">
                                 <rect key="frame" x="16" y="133" width="358" height="30"/>
                                 <constraints>
@@ -582,8 +590,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DHB-UC-Skc">
-                                <rect key="frame" x="35" y="155" width="358" height="606"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DHB-UC-Skc">
+                                <rect key="frame" x="16" y="181" width="358" height="606"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddGroceryListItemCell" id="JWp-Y0-1kZ" customClass="AddGroceryListItemTableViewCell" customModule="SwiftRecipeParser" customModuleProvider="target">
@@ -626,10 +634,12 @@
                             <constraint firstItem="DHB-UC-Skc" firstAttribute="leading" secondItem="ATM-Vd-HXb" secondAttribute="leading" id="639-4X-hIh"/>
                             <constraint firstItem="ATM-Vd-HXb" firstAttribute="top" secondItem="H4r-BR-LDE" secondAttribute="bottom" constant="8" symbolic="YES" id="HX9-oN-Wn9"/>
                             <constraint firstItem="H4r-BR-LDE" firstAttribute="leading" secondItem="ATM-Vd-HXb" secondAttribute="leading" id="IqS-b1-ui5"/>
+                            <constraint firstItem="bKj-bD-qyA" firstAttribute="centerY" secondItem="H4r-BR-LDE" secondAttribute="centerY" id="L4x-fd-vQC"/>
                             <constraint firstItem="DHB-UC-Skc" firstAttribute="trailing" secondItem="ATM-Vd-HXb" secondAttribute="trailing" id="RpQ-fM-K2d"/>
                             <constraint firstItem="DHB-UC-Skc" firstAttribute="top" secondItem="ATM-Vd-HXb" secondAttribute="bottom" constant="18" id="Uai-Hr-QVl"/>
                             <constraint firstItem="H4r-BR-LDE" firstAttribute="top" secondItem="bn8-io-z7H" secondAttribute="bottom" constant="16" id="dxT-xc-lN2"/>
                             <constraint firstItem="ATM-Vd-HXb" firstAttribute="trailing" secondItem="1ZM-0q-GhW" secondAttribute="trailingMargin" id="gAX-Qu-x3V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bKj-bD-qyA" secondAttribute="trailing" constant="8" id="gLR-XQ-XIT"/>
                             <constraint firstAttribute="bottom" secondItem="DHB-UC-Skc" secondAttribute="bottom" constant="57" id="gfU-ao-hvN"/>
                         </constraints>
                     </view>

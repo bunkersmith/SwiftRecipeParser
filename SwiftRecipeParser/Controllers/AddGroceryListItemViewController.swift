@@ -110,6 +110,10 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         }, noButtonHandler: nil)
     }
     
+    @IBAction func renameButtonPressed(_ sender: Any) {
+        Logger.logDetails(msg: "nameTextField.text: \"\(nameTextField.text!)\"")
+    }
+    
     // MARK: - Table View
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
