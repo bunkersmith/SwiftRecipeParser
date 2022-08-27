@@ -238,6 +238,16 @@ class GroceryListItem: NSManagedObject {
         return nil
     }
     
+    class func rename(oldName: String, newName: String, databaseInterface: DatabaseInterface) {
+        guard let oldItem = findGroceryListItemWithName(name: oldName) else {
+            Logger.logDetails(msg: "Could not find old grocery list item")
+            return
+        }
+
+        oldItem.name = newName
+        databaseInterface.saveContext()
+    }
+    
     class func writeAllToIcloud() {
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         

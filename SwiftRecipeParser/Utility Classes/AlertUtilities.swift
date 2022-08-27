@@ -61,8 +61,8 @@ class AlertUtilities {
                                            title: String,
                                          message:String?,
                                     startingText:String,
-                                    keyboardType:UIKeyboardType,
-                              capitalizationType:UITextAutocapitalizationType,
+                                    keyboardType:UIKeyboardType?,
+                              capitalizationType:UITextAutocapitalizationType?,
                                  okButtonHandler:((UIAlertAction?) -> Void)? /*-> UIAlertController*/,
                                 textFieldHandler:@escaping ((UITextField) -> Void)) {
         
@@ -72,8 +72,12 @@ class AlertUtilities {
     
         textFieldAlert.addTextField { (textField: UITextField!) -> Void in
             let textField = textField
-            textField!.keyboardType = keyboardType
-            textField!.autocapitalizationType = capitalizationType
+            if keyboardType != nil {
+                textField!.keyboardType = keyboardType!
+            }
+            if capitalizationType != nil {
+                textField!.autocapitalizationType = capitalizationType!
+            }
             textField!.text = startingText
             textFieldHandler(textField!)
         }

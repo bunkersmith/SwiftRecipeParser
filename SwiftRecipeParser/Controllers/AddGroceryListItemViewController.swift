@@ -21,6 +21,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var renameButton: UIButton!
     
     lazy private var databaseInterface:DatabaseInterface = {
         return DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
@@ -111,7 +112,29 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     @IBAction func renameButtonPressed(_ sender: Any) {
-        Logger.logDetails(msg: "nameTextField.text: \"\(nameTextField.text!)\"")
+        var inputTextField = UITextField()
+
+        AlertUtilities.showTextFieldAlert(viewController: self,
+                                          title: "Rename Grocery List Item",
+                                          message: "Enter the new name for your grocery list item",
+                                          startingText: nameTextField.text!,
+                                          keyboardType: nil,
+                                          capitalizationType: .words) { alertAction in
+            guard GroceryListItem.findGroceryListItemWithName(name: inputTextField.text!) == nil else {
+                AlertUtilities.showOkButtonAlert(self,
+                                                 title: "Error Alert",
+                                                 message: "Sorry, you already have a grocery list item with that name.",
+                                                 buttonHandler: nil)
+                return
+            }
+            
+            GroceryListItem.rename(oldName: self.nameTextField.text!,
+                                   newName: inputTextField.text!,
+                                   databaseInterface: self.databaseInterface)
+        } textFieldHandler: { textField in
+            inputTextField = textField
+        }
+
     }
     
     // MARK: - Table View
@@ -216,8 +239,10 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     @objc func textFieldChanged(textField: UITextField) {
         if let textFieldText = textField.text {
             if textFieldText.count == 0 {
+                renameButton.isHidden = true
                 createFetchedResultsController(predicate: nil)
             } else {
+                renameButton.isHidden = false
                 createFetchedResultsController(predicate: NSPredicate(format: "name contains[cd] %@", textFieldText))
             }
         }

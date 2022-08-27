@@ -574,7 +574,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKj-bD-qyA">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKj-bD-qyA">
                                 <rect key="frame" x="289" y="99" width="77" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Rename"/>
@@ -673,6 +673,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nameTextField" destination="ATM-Vd-HXb" id="GMx-gO-ccX"/>
+                        <outlet property="renameButton" destination="bKj-bD-qyA" id="gBs-m0-VhF"/>
                         <outlet property="tableView" destination="DHB-UC-Skc" id="pf5-lk-qix"/>
                     </connections>
                 </viewController>

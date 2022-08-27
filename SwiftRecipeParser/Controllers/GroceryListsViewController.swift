@@ -109,7 +109,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     @IBAction func addButtonPressed(_ sender: Any) {
         var inputTextField = UITextField()
 
-        let _ = AlertUtilities.showTextFieldAlert(viewController: self, title: "Enter grocery list name", message: "", startingText: "", keyboardType: .default, capitalizationType: .words, okButtonHandler: { action in
+        let _ = AlertUtilities.showTextFieldAlert(viewController: self, title: "Enter grocery list name", message: "", startingText: "", keyboardType: nil, capitalizationType: .words, okButtonHandler: { action in
             let groceryListName:String = inputTextField.text!
             
             GroceryList.create(name: groceryListName)

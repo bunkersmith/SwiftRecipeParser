@@ -160,7 +160,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                                           title: "Enter recipe name\n(case-sensitive):",
                                           message: "",
                                           startingText: "",
-                                          keyboardType: .default,
+                                          keyboardType: nil,
                                           capitalizationType: .words) { alertAction in
             
                 let pathname = RecipeFiles().recipePathnameFromTitle(userInput: inputTextField.text!)
@@ -199,7 +199,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                                           title: "Enter recipe name\n(case-sensitive):",
                                           message: "",
                                           startingText: "",
-                                          keyboardType: .default,
+                                          keyboardType: nil,
                                           capitalizationType: .words) { alertAction in
             
             let textFieldText = inputTextField.text!
