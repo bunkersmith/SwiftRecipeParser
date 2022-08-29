@@ -21,6 +21,8 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addButton: UIBarButtonItem!
+    @IBOutlet weak var addAndBuyButton: UIBarButtonItem!
     @IBOutlet weak var renameButton: UIButton!
     
     lazy private var databaseInterface:DatabaseInterface = {
@@ -31,6 +33,8 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         super.viewDidLoad()
         
         tableView.tableFooterView = UIView(frame: .zero)
+        addButton.show(false)
+        addAndBuyButton.show(false)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -120,6 +124,14 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
                                           startingText: nameTextField.text!,
                                           keyboardType: nil,
                                           capitalizationType: .words) { alertAction in
+            guard !inputTextField.text!.isEmpty else {
+                AlertUtilities.showOkButtonAlert(self,
+                                                 title: "Error Alert",
+                                                 message: "Please enter a name for your grocery list item.",
+                                                 buttonHandler: nil)
+                return
+            }
+            
             guard GroceryListItem.findGroceryListItemWithName(name: inputTextField.text!) == nil else {
                 AlertUtilities.showOkButtonAlert(self,
                                                  title: "Error Alert",
@@ -239,9 +251,13 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     @objc func textFieldChanged(textField: UITextField) {
         if let textFieldText = textField.text {
             if textFieldText.count == 0 {
+                addButton.show(false)
+                addAndBuyButton.show(false)
                 renameButton.isHidden = true
                 createFetchedResultsController(predicate: nil)
             } else {
+                addButton.show(true)
+                addAndBuyButton.show(true)
                 renameButton.isHidden = false
                 createFetchedResultsController(predicate: NSPredicate(format: "name contains[cd] %@", textFieldText))
             }

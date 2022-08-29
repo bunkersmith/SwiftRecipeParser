@@ -672,6 +672,8 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="addAndBuyButton" destination="kYM-So-zIO" id="XV6-pp-EV0"/>
+                        <outlet property="addButton" destination="euX-ZV-ddF" id="Dd0-6u-vk4"/>
                         <outlet property="nameTextField" destination="ATM-Vd-HXb" id="GMx-gO-ccX"/>
                         <outlet property="renameButton" destination="bKj-bD-qyA" id="gBs-m0-VhF"/>
                         <outlet property="tableView" destination="DHB-UC-Skc" id="pf5-lk-qix"/>

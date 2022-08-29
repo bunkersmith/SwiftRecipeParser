@@ -52,6 +52,7 @@
 		675A2A071B1FBB4C00C6A652 /* GroceryListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A2A061B1FBB4C00C6A652 /* GroceryListDetailViewController.swift */; };
 		675A2A3E1B1FD34800C6A652 /* AddGroceryListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A2A3D1B1FD34800C6A652 /* AddGroceryListItemViewController.swift */; };
 		675A2A531B22569100C6A652 /* GroceryListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A2A521B22569100C6A652 /* GroceryListItemTableViewCell.swift */; };
+		675BCA1D28BC7E2E00752588 /* UIBarButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675BCA1C28BC7E2E00752588 /* UIBarButtonExtensions.swift */; };
 		675DCE3426A64B73000F5F99 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675DCE3326A64B73000F5F99 /* StringExtensions.swift */; };
 		675DCE3726A69CFD000F5F99 /* TripleTextAlertDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675DCE3526A69CFD000F5F99 /* TripleTextAlertDialog.storyboard */; };
 		6766910F261A844900605201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6766910E261A844900605201 /* LaunchScreen.storyboard */; };
@@ -161,6 +162,7 @@
 		675A2A441B1FDFB100C6A652 /* SwiftRecipeParser1.5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.5.xcdatamodel; sourceTree = "<group>"; };
 		675A2A4C1B21447C00C6A652 /* SwiftRecipeParser1.6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.6.xcdatamodel; sourceTree = "<group>"; };
 		675A2A521B22569100C6A652 /* GroceryListItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListItemTableViewCell.swift; sourceTree = "<group>"; };
+		675BCA1C28BC7E2E00752588 /* UIBarButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonExtensions.swift; sourceTree = "<group>"; };
 		675DCE3326A64B73000F5F99 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		675DCE3526A69CFD000F5F99 /* TripleTextAlertDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripleTextAlertDialog.storyboard; sourceTree = "<group>"; };
 		6766910E261A844900605201 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 				67917D7327E486D600EFC122 /* UIImageExtensions.swift */,
 				67005B3B26A54C690080BC8C /* UITextFieldExtensions.swift */,
 				67917D7527E486E300EFC122 /* UITableViewExtensions.swift */,
+				675BCA1C28BC7E2E00752588 /* UIBarButtonExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				67B2DD5A26184BF100B8C0E8 /* SelectGroceryListViewController.swift in Sources */,
 				671045231EFCFAFD0013EF27 /* AlertUtilities.swift in Sources */,
 				671953561B4B6558000A9863 /* Ingredient.swift in Sources */,
+				675BCA1D28BC7E2E00752588 /* UIBarButtonExtensions.swift in Sources */,
 				6709380519859BAC004AC92D /* Utilities.swift in Sources */,
 				67B82ACE198628E100344AE3 /* ParseRecipe.swift in Sources */,
 				67917D7427E486D600EFC122 /* UIImageExtensions.swift in Sources */,
