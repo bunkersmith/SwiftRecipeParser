@@ -87,6 +87,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                     searchTextField = searchField
                 }
             }
+            searchTextField?.addLeadingButton(title: "Dismiss", image: nil, target: self, selector: #selector(dismissKeyboard))
         }
 
         tableView.tableHeaderView = UIView(frame: searchHeaderViewController!.view.frame)
@@ -144,6 +145,10 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 //        performSegue(withIdentifier: "EmailLogSegue", sender: self)
 //    }
 
+    @objc func dismissKeyboard() {
+        searchTextField?.resignFirstResponder()
+    }
+    
     func addRecipeWithPathname(pathname: URL) -> Bool {
         let recipeFiles:RecipeFiles = RecipeFiles()
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
