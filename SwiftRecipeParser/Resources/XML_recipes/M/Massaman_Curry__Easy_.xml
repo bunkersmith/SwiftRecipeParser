@@ -36,7 +36,7 @@ Remove from the heat, serve over freshly cooked white or brown rice. Garnish wit
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>cauliflower</ingredientName>
-            <processingInstructions> pureed in coconut milk</processingInstructions>
+            <processingInstructions>pureed in coconut milk</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>27</quantity>
@@ -82,8 +82,8 @@ Remove from the heat, serve over freshly cooked white or brown rice. Garnish wit
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>can</unitOfMeasure>
-            <ingredientName>massaman curry</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>massaman curry paste cans</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

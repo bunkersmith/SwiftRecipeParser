@@ -110,7 +110,7 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         var inputTextField = UITextField()
 
         let _ = AlertUtilities.showTextFieldAlert(viewController: self, title: "Enter grocery list name", message: "", startingText: "", keyboardType: nil, capitalizationType: .words, okButtonHandler: { action in
-            let groceryListName:String = inputTextField.text!
+            let groceryListName:String = inputTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             GroceryList.create(name: groceryListName)
             GroceryList.setCurrentGroceryList(groceryListName: groceryListName)

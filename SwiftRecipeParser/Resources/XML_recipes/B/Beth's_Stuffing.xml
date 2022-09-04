@@ -27,8 +27,8 @@
         <ingredient>
             <quantity>1-1/2</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>Celery (stalks and Leaves)</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Celery</ingredientName>
+            <processingInstructions>stalks and leaves</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
