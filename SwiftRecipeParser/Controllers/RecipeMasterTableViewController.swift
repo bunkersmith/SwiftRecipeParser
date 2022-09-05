@@ -80,12 +80,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             searchHeaderViewController!.searchBar.delegate = self
             searchHeaderViewController!.delegate = self
 
-            if #available(iOS 13.0, *) {
-                searchTextField = searchHeaderViewController!.searchBar.searchTextField
-            } else {
-                if let searchField = searchHeaderViewController!.searchBar.value(forKey: "searchField") as? UITextField {
-                    searchTextField = searchField
-                }
+            if let searchField = searchHeaderViewController!.searchBar.value(forKey: "searchField") as? UITextField {
+                searchTextField = searchField
             }
             searchTextField?.addLeadingButton(title: "Dismiss", image: nil, target: self, selector: #selector(dismissKeyboard))
         }
