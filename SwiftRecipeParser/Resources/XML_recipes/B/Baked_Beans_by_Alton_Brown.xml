@@ -4,78 +4,80 @@
     <indexCharacter>B</indexCharacter>
     <notes></notes>
     <servings>0</servings>
-    <instructions>Heat oven to 250 degrees F.
+    <instructions>Freeze the bacon beforehand, if time allows.
 
-Soak beans in a plastic container overnight in just enough cold water to submerge them completely.
+Heat oven to 250 degrees F.
 
-Place a cast iron Dutch oven over medium heat and stir in the bacon, onion, and jalapenos until enough fat has rendered from the bacon to soften the onions, about 5 minutes. Stir in the tomato paste, dark brown sugar, and molasses.
+Soak beans in a crockpot overnight in just enough cold water to submerge them completely.
 
-Drain the beans and reserve the soaking liquid. Add the drained beans to the Dutch oven. Place the soaking liquid in a measuring cup and add enough vegetable broth to equal 4 cups of liquid. Add the liquid to the Dutch oven and bring to a boil over high heat. Add in cayenne, black pepper and salt. Give them a stir and cover with the lid. Place the Dutch oven in the oven for 6 to 8 hours, or until the beans are tender.</instructions>
+Place a large skillet over medium heat and stir in the bacon, onion, and garlic until enough fat has rendered from the bacon to soften the onions, about 5 minutes. Stir in the tomato paste, dark brown sugar, molasses and ground mustard.
+
+Drain the beans and reserve the soaking liquid. Return the drained beans to the crockpot. Place the soaking liquid in a measuring cup and add enough vegetable broth to equal 4 cups of liquid. Add the liquid to the crockpot and turn to high. Add in black pepper and salt. Give them a stir and cover with the lid. After an hour, turn crockpot to low. Cook for 6 to 8 hours, or until the beans are tender.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>Great Northern beans, dried</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Great Northern Beans</ingredientName>
+            <processingInstructions> Dried</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>bacon, chopped</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Bacon</ingredientName>
+            <processingInstructions> Chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>onion, chopped</ingredientName>
+            <ingredientName>Onion</ingredientName>
+            <processingInstructions> Chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>5</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Tomato Paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Dark Brown Sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Molasses</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>jalapenos, chopped</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>1/4</quantity>
-            <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>tomato paste</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>1/4</quantity>
-            <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>dark brown sugar</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>1/4</quantity>
-            <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>molasses</ingredientName>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Ground Mustard</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>vegetable broth</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>cayenne pepper</ingredientName>
+            <ingredientName>Vegetable Broth</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>black pepper</ingredientName>
+            <ingredientName>Black Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>kosher salt</ingredientName>
+            <ingredientName>Kosher Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>
