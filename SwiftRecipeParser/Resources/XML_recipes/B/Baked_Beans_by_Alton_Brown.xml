@@ -12,25 +12,25 @@ Soak beans in a crockpot overnight in just enough cold water to submerge them co
 
 Place a large skillet over medium heat and stir in the bacon, onion, and garlic until enough fat has rendered from the bacon to soften the onions, about 5 minutes. Stir in the tomato paste, dark brown sugar, molasses and ground mustard.
 
-Drain the beans and reserve the soaking liquid. Return the drained beans to the crockpot. Place the soaking liquid in a measuring cup and add enough vegetable broth to equal 4 cups of liquid. Add the liquid to the crockpot and turn to high. Add in black pepper and salt. Give them a stir and cover with the lid. After an hour, turn crockpot to low. Cook for 6 to 8 hours, or until the beans are tender.</instructions>
+Drain the beans and reserve the soaking liquid. Return the drained beans to the crockpot. Place the soaking liquid in a measuring cup and add enough vegetable broth to equal 4 cups of liquid. Add 2 cups of the liquid to the crockpot and turn to high. Add more, if necessary, during cooking. Add in black pepper and salt. Give them a stir and cover with the lid. After an hour, turn crockpot to low. Cook for 6 to 8 hours, or until the beans are tender.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>Great Northern Beans</ingredientName>
-            <processingInstructions> Dried</processingInstructions>
+            <processingInstructions> dried</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>Bacon</ingredientName>
-            <processingInstructions> Chopped</processingInstructions>
+            <processingInstructions> chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Onion</ingredientName>
-            <processingInstructions> Chopped</processingInstructions>
+            <processingInstructions> chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>5</quantity>
@@ -57,7 +57,7 @@ Drain the beans and reserve the soaking liquid. Return the drained beans to the 
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>2</quantity>
+            <quantity>4</quantity>
             <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Ground Mustard</ingredientName>
             <processingInstructions></processingInstructions>
