@@ -16,7 +16,7 @@ typealias PhotoLibraryAuthCompletion = (PHAuthorizationStatus) -> Void
 class AuthUtilities: UIViewController {
     
     class func cameraAuthStatus() -> AVAuthorizationStatus {
-        guard AVCaptureDevice.devices(for: AVMediaType.video).count > 0 else {
+        guard AVCaptureDevice.default(for: .video) != nil else {
             return .denied
         }
         
@@ -24,7 +24,7 @@ class AuthUtilities: UIViewController {
     }
     
     class func requestCameraAuth(completion: @escaping CameraAuthCompletion) {
-        guard AVCaptureDevice.devices(for: AVMediaType.video).count > 0 else {
+        guard AVCaptureDevice.default(for: .video) != nil else {
             completion(.denied)
             return
         }
