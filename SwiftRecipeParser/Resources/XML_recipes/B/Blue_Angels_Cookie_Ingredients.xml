@@ -4,7 +4,7 @@
     <indexCharacter>B</indexCharacter>
     <notes></notes>
     <servings>0</servings>
-    <instructions>Shop for ingredients from Smart and Final first.</instructions>
+    <instructions>Shop for ingredients from Smart And Final first.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
@@ -13,9 +13,21 @@
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Salted Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
             <quantity>16</quantity>
             <unitOfMeasure>oz</unitOfMeasure>
             <ingredientName>Unsalted Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4-3/8</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>White Sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -28,6 +40,18 @@
             <quantity>18</quantity>
             <unitOfMeasure>ct</unitOfMeasure>
             <ingredientName>Eggs</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>13-1/2</quantity>
+            <unitOfMeasure>cups</unitOfMeasure>
+            <ingredientName>Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Gluten-Free Flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -44,9 +68,15 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Macadamia Nuts</ingredientName>
             <processingInstructions> from bulk section</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>9-1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Vanilla</ingredientName>
+            <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>16</quantity>
@@ -58,6 +88,36 @@
             <quantity>18</quantity>
             <unitOfMeasure>oz</unitOfMeasure>
             <ingredientName>Creamy Peanut Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3-1/4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>6</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Baking Soda</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Baking Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Cream of Tartar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4-1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Cinnamon</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -73,15 +133,21 @@
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>12” Silver Serving Tray and Plastic Lid</ingredientName>
+            <ingredientName>12” Silver Serving Tray And Plastic Lid</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>16” Silver Serving Tray and Plastic Lid</ingredientName>
+            <ingredientName>16” Silver Serving Tray And Plastic Lid</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>
