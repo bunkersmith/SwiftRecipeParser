@@ -42,6 +42,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         
         nameTextField.becomeFirstResponder()
         nameTextField.addTarget(self, action: #selector(AddGroceryListItemViewController.textFieldChanged(textField:)), for: .editingChanged)
+        nameTextField.addLeadingButton(title: "Dismiss", image: nil, target: self, selector: #selector(dismissKeyboard))
         
         createFetchedResultsController(predicate: nil)
     }
@@ -74,6 +75,10 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         return nameTextFieldText
     }
     
+    @objc func dismissKeyboard() {
+        nameTextField.resignFirstResponder()
+    }
+
     @IBAction func addItemButtonPressed(_ sender: Any) {
         if let nameTextFieldText = returnNameTextFieldText() {
             fetchedResultsController = nil
