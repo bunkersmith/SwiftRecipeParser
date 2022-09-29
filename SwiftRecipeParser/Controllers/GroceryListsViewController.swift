@@ -219,7 +219,13 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         else {
             groceryListTableViewCell!.nameLabel?.text = groceryList.name
         }
+        
         groceryListTableViewCell!.projectedCostLabel?.text = groceryList.projectedCostString()
+        if groceryList.projectedCost.floatValue > 0 {
+            groceryListTableViewCell!.projectedCostLabel?.textColor = .red
+        } else {
+            groceryListTableViewCell!.projectedCostLabel?.textColor = .black
+        }
 
         return cell
     }

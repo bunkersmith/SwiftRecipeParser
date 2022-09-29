@@ -31,7 +31,7 @@ extension ModifyGroceryListItemViewController: UINavigationControllerDelegate, U
                                                       buttonHandler1: nil,
                                                       buttonTitle2: "Allow Camera",
                                                       buttonHandler2: { (action) in
-                                                        UIApplication.shared.openURL(URL(string: UIApplicationOpenSettingsURLString)!)
+                                                        UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!)
                                                       })
                 }
             })
@@ -54,7 +54,7 @@ extension ModifyGroceryListItemViewController: UINavigationControllerDelegate, U
                                                       buttonHandler1: nil,
                                                       buttonTitle2: "Allow Photo Library",
                                                       buttonHandler2: { (action) in
-                                                        UIApplication.shared.openURL(URL(string: UIApplicationOpenSettingsURLString)!)
+                                                        UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!)
                     })
                 }
             })
