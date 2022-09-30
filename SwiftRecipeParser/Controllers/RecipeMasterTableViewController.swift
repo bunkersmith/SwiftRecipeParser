@@ -9,7 +9,6 @@
 import UIKit
 import CoreData
 
-@available(iOS 8.0, *)
 class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, RecipeSearchTypeDelegate, UIGestureRecognizerDelegate, NSFetchedResultsControllerDelegate {
 
     @IBOutlet var tableView: UITableView!
@@ -30,7 +29,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     private var searchTextField:UITextField?
 
     private var searchHeaderViewController: RecipeTableSearchHeaderViewController?
-
+    
+    private var firstTime = true
+    
 // If you see a "UITableViewAlertForLayoutOutsideViewHierarchy error: Warning once only" message, before going crazy and trying to debug it...
 //
 // CLEAN THE PROJECT AND RESTART XCODE!!!
@@ -68,6 +69,14 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         super.viewWillAppear(animated)
          
         addScrollAreaView()
+
+        createFetchedResultsController(searchString: nil)
+
+        setupSearchHeaderViewController()
+
+        hideSearchBar(searchHeaderViewController?.searchBar)
+                
+        checkCameraAndLibrary()
     }
     
     func setupSearchHeaderViewController() {
@@ -95,40 +104,13 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        createFetchedResultsController(searchString: nil)
-
-        setupSearchHeaderViewController()
         
-        hideSearchBar(searchHeaderViewController?.searchBar)
-
-        
-        if !initializationCompleted {
-//            let recipeFiles = RecipeFiles()
-//            let resourceRecipeCount = recipeFiles.countOfRecipeResourceFiles()
+        if firstTime {
+            firstTime = false
             
-//            let databaseRecipeCount:Int = Recipe.countOfDatabaseRecipes()
-            
-            if Utilities.forceLoadDatabase() {
-                buildRecipeDatabase()
-            }
-/*
-            else {
-                Logger.logDetails(msg: "Database contains \(databaseRecipeCount) recipes - no updates will be made from recipe resource files");
-                loadRecipeTable()
-            }
-*/
-            
-/*
-            if Utilities.updateGroceryListItems() {
-                updateGroceryListItems()
-            }
-*/
-            
-            initializationCompleted = true
+            // INDEX 1 IS THE GroceryListsViewController
+            tabBarController?.selectedIndex = 1
         }
-                
-        checkCameraAndLibrary()
     }
     
     override func didReceiveMemoryWarning() {
