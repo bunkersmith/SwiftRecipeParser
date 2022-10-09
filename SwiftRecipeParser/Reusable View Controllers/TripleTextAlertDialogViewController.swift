@@ -44,6 +44,7 @@ class TripleTextAlertDialogViewController: UIViewController, UITextFieldDelegate
         errorLabel.isHidden = true
         
         quantityTextField.addLeadingButton(title: nil, image: UIImage(named: "ic_mic"), target: self, selector: #selector(startTextRecognition))
+        priceTextField.addLeadingButton(title: ".99", image: nil, target: self, selector: #selector(ninetyNineCents))
         priceTextField.becomeFirstResponder()
         
         quantityTextField.safeFill(newText: initialQuantityText)
@@ -97,6 +98,18 @@ class TripleTextAlertDialogViewController: UIViewController, UITextFieldDelegate
     
     @objc func startTextRecognition() {
         Logger.logDetails(msg: "Entered")
+    }
+
+    @objc func ninetyNineCents() {
+        guard priceTextField.text != nil else {
+            return
+        }
+//        Logger.logDetails(msg: "Price: \(priceTextField.text!)")
+        if let periodIndex = priceTextField.text!.index(of: ".") {
+//            Logger.logDetails(msg: "Index of .: \(periodIndex)")
+            priceTextField.text!.replaceSubrange(periodIndex..., with: "")
+        }
+        priceTextField.text!.append(".99")
     }
 
     static func showPopup(parentVC: UIViewController,
