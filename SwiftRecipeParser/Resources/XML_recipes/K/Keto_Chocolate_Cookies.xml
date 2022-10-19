@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Keto Chocolate Cookies</name>
+    <indexCharacter>K</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>Preheat oven to 325 F. Stir dry ingredients very well. Add wet ingredients to form a dough. If too wet, refrigerate until firm enough to roll into balls with your hands or a cookie scoop. Press down with a fork or spoon, since they don’t flatten on their own. Bake on a greased or parchment-lined tray for 11 minutes. Let cool before handling.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Finely Ground Almond Flour</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Cocoa Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/8</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Baking Soda</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Lily's Peppermint Baking Chips</ingredientName>
+            <processingInstructions> heaping?</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/8</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Chocolate Chips</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Powdered Monk Fruit</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Cream</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

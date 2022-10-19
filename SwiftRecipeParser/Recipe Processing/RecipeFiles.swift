@@ -10,7 +10,8 @@ import Foundation
 
 class RecipeFiles {
     
-    private var totalRecipes:Int = 0;
+    private var totalRecipes:Int = 0
+//    private var sortedFiles:Array<String> = Array()
     
     func initializeRecipeDatabaseFromResourceFiles() {
         let databaseInterface = DatabaseInterface(concurrencyType: .privateQueueConcurrencyType)
@@ -24,7 +25,7 @@ class RecipeFiles {
         var directoryContent:Array<AnyObject>
         var usableFiles:Array<String> = Array()
         var usableFileCount:Int = 0
-        
+
         do {
             directoryContent = try FileManager.default.contentsOfDirectory(atPath: directoryName) as Array<AnyObject>
             
@@ -35,6 +36,7 @@ class RecipeFiles {
             
             for i in 0 ..< directoryContent.count {
                 fullRecipePathname = directoryName + "/" + (directoryContent[i] as! String)
+//                sortedFiles.append(directoryContent[i] as! String)
                 //Utilities.writelnToStandardOut(fullRecipePathname)
                 
                 if Utilities.fileExistsAtAbsolutePath(pathname: fullRecipePathname) {
@@ -181,6 +183,11 @@ class RecipeFiles {
                 Logger.logDetails(msg: "Error retrieving contents of directory at path \(recipesResourcesDirectory.path): \(error)")
             }
         }
+        
+//        sortedFiles = sortedFiles.sorted(by: <)
+//        for sortedFile in sortedFiles {
+//            print("    - assets/xml/\(sortedFile.first!)/\(sortedFile)")
+//        }
         
         return recipePathnames
     }
