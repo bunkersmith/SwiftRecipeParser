@@ -199,7 +199,8 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
             
             case currentElementState.unitOfMeasureState:
                 if currentIngredient != nil {
-                    currentIngredient!.unitOfMeasure = (elementValue as String).lowercased()
+// CANNOT CONVERT unitOfMeasure TO LOWERCASE, BECAUSE MANY RECIPIES RELY ON T FOR TABLESPOON AND t FOR TEASPOON
+                    currentIngredient!.unitOfMeasure = (elementValue as String)//.lowercased()
                 }
             break
             
