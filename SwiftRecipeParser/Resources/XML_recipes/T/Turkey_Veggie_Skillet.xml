@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
-    <name>Turkey Veggie Casserole</name>
+    <name>Turkey Veggie Skillet</name>
     <indexCharacter>T</indexCharacter>
     <notes></notes>
     <servings>0</servings>
@@ -8,7 +8,7 @@
 
 2. Cook the al pasta until al dente according to the package directions. Drain and set aside.
 
-3. Meanwhile, in a medium skillet, heat the oil over medium heat. Add the onions and cook, stirring often, until translucent, about 5 minutes.
+3. Meanwhile, in a medium skillet, heat the oil over medium heat. Add the garlic and onions and cook, stirring often, until translucent, about 5 minutes.
 
 4. Add the turkey, salt, and pepper and cook, breaking up the meat with a wooden spoon as it cooks, for 5 minutes.
 
@@ -23,68 +23,74 @@
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>16-ounce package lentil pasta</ingredientName>
+            <ingredientName>16-Ounce Package Lentil Pasta</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>tb</unitOfMeasure>
-            <ingredientName>avocado oil or tea seed oil</ingredientName>
+            <ingredientName>Avocado Oil Or Tea Seed Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>onions</ingredientName>
+            <ingredientName>Onions</ingredientName>
             <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves</ingredientName>
+            <processingInstructions> minced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>ground turkey</ingredientName>
+            <ingredientName>Ground Turkey</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
             <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>sea salt</ingredientName>
+            <ingredientName>Sea Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
             <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>freshly ground black pepper</ingredientName>
+            <ingredientName>Freshly Ground Black Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>tb</unitOfMeasure>
-            <ingredientName>chopped fresh basil</ingredientName>
+            <ingredientName>Chopped Fresh Basil</ingredientName>
             <processingInstructions> or 1/2 teaspoon dried</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>zucchini</ingredientName>
+            <ingredientName>Zucchini</ingredientName>
             <processingInstructions> cut into matchsticks</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>mushrooms</ingredientName>
+            <ingredientName>Mushrooms</ingredientName>
             <processingInstructions> chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>fresh spinach</ingredientName>
+            <ingredientName>Fresh Spinach</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>cup</unitOfMeasure>
-            <ingredientName>shredded whole-milk mozzarella cheese (use parmesan if doing skillet)</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Parmesan Cheese</ingredientName>
+            <processingInstructions> use shredded whole-milk mozzarella if doing skillet</processingInstructions>
         </ingredient>
     </ingredients>
 </recipe>
