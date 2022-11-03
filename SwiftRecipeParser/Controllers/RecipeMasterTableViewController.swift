@@ -70,9 +70,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
          
         addScrollAreaView()
 
-        createFetchedResultsController(searchString: nil)
-
         setupSearchHeaderViewController()
+
+        createFetchedResultsController(searchString: nil)
 
         hideSearchBar(searchHeaderViewController?.searchBar)
                 
@@ -256,6 +256,15 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         tableView.addSubview(whiteView)
     }
     
+    func showSearchBar() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10)) {
+            self.tableView.contentOffset = CGPoint(x: 0.0, y: 0.0)
+            if self.searchTextField != nil {
+                self.searchTextField!.becomeFirstResponder()
+            }
+        }
+    }
+    
     func hideSearchBar(_ searchBar: UISearchBar?) {
         
 // IF THE SEARCH BAR REFUSES TO HIDE, TRY RUNNING THE APP FROM THE PHONE (NOT Xcode)
@@ -265,8 +274,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         
         Logger.logDetails(msg: "searchBar == nil: \(searchBar == nil), self.tableView.contentOffset: \(self.tableView.contentOffset)")
         
-        if self.tableView.contentOffset == CGPoint(x: 0.0, y: 0.0) {
+        if self.tableView.contentOffset.y >= 0.0 {
             DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10)) {
+                Logger.logDetails(msg: "self.searchHeaderViewController is not nil")
                 if self.searchHeaderViewController != nil {
                     self.searchHeaderViewController?.searchType = .RecipeTitle
                     self.searchHeaderViewController?.segmentedControl.selectedSegmentIndex = 0
@@ -481,6 +491,10 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        if index == 0 {
+            showSearchBar()
+        }
+        
         return index
     }
     
