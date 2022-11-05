@@ -194,8 +194,11 @@ class RecipeFiles {
     
     func deleteExistingRecipes(databaseInterface:DatabaseInterface) {
         if Recipe.countOfDatabaseRecipes() > 0 {
-            databaseInterface.deleteAllObjectsWithEntityName(entityName: "Ingredient")
-            databaseInterface.deleteAllObjectsWithEntityName(entityName: "RecipeTitle")
+// ONLY Recipe ENTITIES NEED TO BE DELETED NOW, BECAUSE THE CASCADE RULE CAUSES THE OTHER ENTITIES TO BE DELETED
+            
+//            databaseInterface.deleteAllObjectsWithEntityName(entityName: "Ingredient")
+//            databaseInterface.deleteAllObjectsWithEntityName(entityName: "RecipeTitle")
+//            databaseInterface.deleteAllObjectsWithEntityName(entityName: "RecipeItem")
             databaseInterface.deleteAllObjectsWithEntityName(entityName: "Recipe")
         }
     }
@@ -207,7 +210,7 @@ class RecipeFiles {
         
         let asyncDeleteStopTime = MillisecondTimer.currentTickCount();
         
-        var logString = String(format: "asyncRecipeDatabase Delete Elapsed Time = %.3f", Float(asyncDeleteStopTime - asyncInitStartTime) / 1000.0 )
+        var logString = String(format: "Recipe Database Deletion Time = %.3f", Float(asyncDeleteStopTime - asyncInitStartTime) / 1000.0 )
         
         Logger.logDetails(msg: logString)
         
@@ -249,7 +252,7 @@ class RecipeFiles {
         
         let asyncInitStopTime = MillisecondTimer.currentTickCount();
         
-        logString = String(format: "asyncRecipeDatabaseInit Elapsed Time = %.3f", Float(asyncInitStopTime - asyncInitStartTime) / 1000.0 )
+        logString = String(format: "Recipe Database Init Time (Includes Delete Time) = %.3f", Float(asyncInitStopTime - asyncInitStartTime) / 1000.0 )
         
         Logger.logDetails(msg: logString)
     }

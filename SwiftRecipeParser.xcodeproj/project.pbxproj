@@ -100,6 +100,7 @@
 
 /* Begin PBXFileReference section */
 		67005B3B26A54C690080BC8C /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
+		6701C389291632A8007A6C1B /* SwiftRecipeParser1.33.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.33.xcdatamodel; sourceTree = "<group>"; };
 		670862C51E2DBE6100D21AFE /* TextDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDoc.swift; sourceTree = "<group>"; };
 		670862CB1E2DBE9200D21AFE /* SwiftRecipeParser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftRecipeParser.entitlements; sourceTree = "<group>"; };
 		6709380419859BAC004AC92D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -870,6 +871,7 @@
 		679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6701C389291632A8007A6C1B /* SwiftRecipeParser1.33.xcdatamodel */,
 				67A4527527C6306E00301538 /* SwiftRecipeParser1.32.xcdatamodel */,
 				6723337A27AF6A7D00390CF2 /* SwiftRecipeParser1.31.xcdatamodel */,
 				672D5638278FF2F200F6EA05 /* SwiftRecipeParser1.30.xcdatamodel */,
@@ -899,7 +901,7 @@
 				671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */,
 				679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */,
 			);
-			currentVersion = 67A4527527C6306E00301538 /* SwiftRecipeParser1.32.xcdatamodel */;
+			currentVersion = 6701C389291632A8007A6C1B /* SwiftRecipeParser1.33.xcdatamodel */;
 			path = SwiftRecipeParser.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

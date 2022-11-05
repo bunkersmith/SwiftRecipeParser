@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pork Roast With Root Vegetables</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Preheat the oven to 400 degrees F. Meat should be tied with string in order to keep its shape during cooking and to be roasted evenly.
+
+2. Mix the chopped rosemary, sage, minced garlic, salt and pepper. Rub the meat all over with spice mixture. 
+
+3. Heat half the oil over medium heat in a pan (cast iron is preferable) and add the meat.
+
+4. Sear it on all sides, 8 to 10 minutes, then place it into the oven (if you do not have a pan suitable for both stovetop and oven, use large frying pan and later transfer the meat into a baking tray).
+
+5. Mix the rest of the oil, Dijon mustard, thyme and garlic powder in a small bowl. 
+
+6. Put the vegetables in a large bowl, pour the mustard mixture over and season generously with salt and pepper. Toss well to coat all the vegetables. 
+
+7. After 15 minutes add the vegetables into a baking pan and place them in the oven.
+
+8. Pork should be roasted until the thermometer inserted in the center of meat registers 140 degrees F (about 1 hour). 
+
+9. Transfer pork to a cutting board, cover with aluminum foil and let it rest for 15 minutes before slicing. 
+
+10. Serve warm with roasted vegetables, a side salad and sauerkraut.
+
+* Make enough pork roast to have for tomorrow's lunch.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>pork loin</ingredientName>
+            <processingInstructions> tied with string</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>fresh rosemary</ingredientName>
+            <processingInstructions> finely chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>fresh sage</ingredientName>
+            <processingInstructions> finely chopped (or 1/2 tsp dried)</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves</ingredientName>
+            <processingInstructions> minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3/4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>crushed black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure></unitOfMeasure>
+            <ingredientName>T avocado oil or tea seed oil</ingredientName>
+            <processingInstructions> divided</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Dijon mustard</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>fresh thyme leaves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>garlic powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>cauliflower florets</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large carrots</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large onion</ingredientName>
+            <processingInstructions> sliced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Salt and pepper to taste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

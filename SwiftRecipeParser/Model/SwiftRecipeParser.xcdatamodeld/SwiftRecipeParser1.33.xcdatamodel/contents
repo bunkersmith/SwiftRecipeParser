@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Xcode 4.3" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1.33">
+    <entity name="GroceryList" representedClassName="SwiftRecipeParser.GroceryList" syncable="YES">
+        <attribute name="isCurrent" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isSelected" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectedCost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="stopNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalCost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="hasItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="GroceryListItem" inverseName="inGroceryList" inverseEntity="GroceryListItem" syncable="YES"/>
+        <relationship name="inShoppingTrip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ShoppingTrip" inverseName="groceryLists" inverseEntity="ShoppingTrip" syncable="YES"/>
+    </entity>
+    <entity name="GroceryListItem" representedClassName="SwiftRecipeParser.GroceryListItem" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="crvFluidOunces" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="crvQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBought" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCrv" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFsa" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isTaxable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="listPosition" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="produceCode" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="taxablePrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalCost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unitOfMeasure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="webLink" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inGroceryList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroceryList" inverseName="hasItems" inverseEntity="GroceryList" syncable="YES"/>
+    </entity>
+    <entity name="Ingredient" representedClassName="SwiftRecipeParser.Ingredient" syncable="YES">
+        <attribute name="processingInstructions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unitOfMeasure" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="containedInRecipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="containsIngredients" inverseEntity="Recipe" syncable="YES"/>
+        <relationship name="ingredientItem" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RecipeItem" inverseName="containedInIngredients" inverseEntity="RecipeItem" syncable="YES"/>
+    </entity>
+    <entity name="Recipe" representedClassName="SwiftRecipeParser.Recipe" syncable="YES">
+        <attribute name="instructions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="servings" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="containsIngredients" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Ingredient" inverseName="containedInRecipes" inverseEntity="Ingredient" syncable="YES"/>
+        <relationship name="title" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RecipeTitle" inverseName="forRecipe" inverseEntity="RecipeTitle" syncable="YES"/>
+    </entity>
+    <entity name="RecipeItem" representedClassName=".RecipeItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="containedInIngredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="ingredientItem" inverseEntity="Ingredient" syncable="YES"/>
+    </entity>
+    <entity name="RecipeTitle" representedClassName="SwiftRecipeParser.RecipeTitle" syncable="YES">
+        <attribute name="indexCharacter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="forRecipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="title" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="ShoppingTrip" representedClassName=".ShoppingTrip" syncable="YES">
+        <relationship name="groceryLists" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="GroceryList" inverseName="inShoppingTrip" inverseEntity="GroceryList" syncable="YES"/>
+    </entity>
+</model>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Coconut and Macadamia Nut Chicken</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Preheat oven to 375 degrees F. In a small bowl, mix the macadamia, coconut and cilantro. 
+2. Place chicken in a baking dish and sprinkle with salt and pepper. 
+3. Spread each chicken thigh with I teaspoon of mayonnaise.
+4. Spread macadamia coconut mixture on each chicken thigh, dividing evenly. 
+5. Bake chicken for 45 minutes on center rack, so as not to burn the macadamia nuts. 
+8. Serve with fresh lime zest and juice.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>raw macadamia nuts</ingredientName>
+            <processingInstructions> finely ground in a food processor</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>unsweetened shredded coconut</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large chicken thighs</ingredientName>
+            <processingInstructions> skin on, bone in</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>sea salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>ground black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Avocado Oil Mayo</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lime</ingredientName>
+            <processingInstructions> zest and juice</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>cilantro</ingredientName>
+            <processingInstructions> diced in a food processor</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
