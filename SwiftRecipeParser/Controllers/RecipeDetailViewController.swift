@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, GroceryListSelectionDelegate {
+class RecipeDetailViewController: TextMessageViewController, UITableViewDataSource, UITableViewDelegate, GroceryListSelectionDelegate {
     
     var recipe:Recipe?
     var selectedGroceryListName = ""
@@ -155,6 +155,16 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
                 expandOrContractCellLabel(indexPath: indexPath!)
             }
         }
+    }
+    
+    @IBAction func textIngredientsPressed(_ sender: Any) {
+        guard let recipeTitleText = recipeTitle.text else {
+            AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "No recipe title text", buttonHandler: nil)
+            return
+        }
+        
+        sendTextMessage(recipeTitleText + " Ingredients:\n" + Recipe.convertRecipeNameToFormattedIngredients(recipeTitleText))
+
     }
     
     func storeCellIsExpandedValueForIndexPath(indexPath: IndexPath, newValue: Bool)
@@ -308,13 +318,6 @@ class RecipeDetailViewController: UIViewController, UITableViewDataSource, UITab
             return
         }
 
-        if segue.identifier == "textRecipeSegue" {
-            let textRecipeViewController:TextIngredientsViewController = segue.destination as! TextIngredientsViewController
-            
-            textRecipeViewController.initRecipeTitle( recipeTitle: recipeTitle.text! )
-            textRecipeViewController.requestMessageComposeViewController()
-            return
-        }
     }
 
 }

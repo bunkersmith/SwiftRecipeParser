@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Marinated Herbed Pork Tenderloin</name>
+    <indexCharacter>M</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. In a glass bowl, add oil, thyme, rosemary, garlic, salt and pepper. Mix to combine.
+2. Add pork tenderloin to the bowl and massage the pork, coating it well, and refrigerate for at least an hour and up to 6 hours.
+3. Place the pork in a slow cooker with the bone broth and cook on low for 3 to 4 hours.
+4. Slice into 1-inch slices. Serve with Roasted Green Beans, side salad and optional ½ cup starchy carbohydrate.
+</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Avocado Oil Or Tea Seed Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Fresh Thyme</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Fresh Rosemary</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves</ingredientName>
+            <processingInstructions> minced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>20</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Pork Tenderloin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Bone Broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

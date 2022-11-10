@@ -46,7 +46,6 @@
 		6743DAC61E20E21800FF76C8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743DAC51E20E21800FF76C8 /* Logger.swift */; };
 		6743DAC81E20E27200FF76C8 /* FileUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743DAC71E20E27200FF76C8 /* FileUtilities.swift */; };
 		6743DACA1E20E2EA00FF76C8 /* DateTimeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743DAC91E20E2EA00FF76C8 /* DateTimeUtilities.swift */; };
-		675094C926E602950013FC2D /* TextGroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675094C826E602950013FC2D /* TextGroceryListViewController.swift */; };
 		6753214F19A6AC9000B3BE74 /* EmailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */; };
 		6753215119A6BCD600B3BE74 /* IToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6753215019A6BCD600B3BE74 /* IToast.swift */; };
 		675A2A071B1FBB4C00C6A652 /* GroceryListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A2A061B1FBB4C00C6A652 /* GroceryListDetailViewController.swift */; };
@@ -83,7 +82,6 @@
 		67B82ACE198628E100344AE3 /* ParseRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82ACD198628E100344AE3 /* ParseRecipe.swift */; };
 		67BE510E26A6B1E900BB262B /* TripleTextAlertDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE510D26A6B1E900BB262B /* TripleTextAlertDialogViewController.swift */; };
 		67C06A47262048BE00D0DDEA /* GroceryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C06A46262048BE00D0DDEA /* GroceryListTableViewCell.swift */; };
-		67E8FADF245E78F000F67305 /* TextIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8FADE245E78F000F67305 /* TextIngredientsViewController.swift */; };
 		67F1F0501F56351B00D4442F /* Recipe+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F1F04F1F56351B00D4442F /* Recipe+Helpers.swift */; };
 		67F2420A199356C500768DC3 /* ParseXMLRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F24209199356C500768DC3 /* ParseXMLRecipe.swift */; };
 /* End PBXBuildFile section */
@@ -154,7 +152,6 @@
 		6743DAC71E20E27200FF76C8 /* FileUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtilities.swift; sourceTree = "<group>"; };
 		6743DAC91E20E2EA00FF76C8 /* DateTimeUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeUtilities.swift; sourceTree = "<group>"; };
 		6749802825AAF4D80046E5C0 /* SwiftRecipeParser1.14.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.14.xcdatamodel; sourceTree = "<group>"; };
-		675094C826E602950013FC2D /* TextGroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGroceryListViewController.swift; sourceTree = "<group>"; };
 		6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = EmailRecipeViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6753215019A6BCD600B3BE74 /* IToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IToast.swift; sourceTree = "<group>"; };
 		675A2A061B1FBB4C00C6A652 /* GroceryListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListDetailViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +205,6 @@
 		67BE510D26A6B1E900BB262B /* TripleTextAlertDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripleTextAlertDialogViewController.swift; sourceTree = "<group>"; };
 		67C06A46262048BE00D0DDEA /* GroceryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewCell.swift; sourceTree = "<group>"; };
 		67C5D900261B01E8009BB32B /* SwiftRecipeParser1.23.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.23.xcdatamodel; sourceTree = "<group>"; };
-		67E8FADE245E78F000F67305 /* TextIngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextIngredientsViewController.swift; sourceTree = "<group>"; };
 		67E91DC126C4D342008EE000 /* SwiftRecipeParser1.26.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.26.xcdatamodel; sourceTree = "<group>"; };
 		67F1F04F1F56351B00D4442F /* Recipe+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+Helpers.swift"; sourceTree = "<group>"; };
 		67F24209199356C500768DC3 /* ParseXMLRecipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ParseXMLRecipe.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -354,9 +350,9 @@
 				6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */,
 				671045201EFCF7810013EF27 /* EmailViewController.swift */,
 				67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */,
-				675A2A061B1FBB4C00C6A652 /* GroceryListDetailViewController.swift */,
 				673E65481B1D4016009B8DC5 /* GroceryListsViewController.swift */,
 				673302741C07AD6C0074DD8F /* IngredientsTableViewController.swift */,
+				675A2A061B1FBB4C00C6A652 /* GroceryListDetailViewController.swift */,
 				67810B931EEC9CF300E9FB95 /* ModifyGroceryListItemViewController.swift */,
 				672BF40A1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift */,
 				673A6001199EE38F0087B4A1 /* RecipeDetailViewController.swift */,
@@ -365,8 +361,6 @@
 				67B2DD5926184BF100B8C0E8 /* SelectGroceryListViewController.swift */,
 				67A39454278FB6C7000D759F /* SelectGroceryListItemViewController.swift */,
 				672D5641279004B100F6EA05 /* ShoppingTripViewController.swift */,
-				675094C826E602950013FC2D /* TextGroceryListViewController.swift */,
-				67E8FADE245E78F000F67305 /* TextIngredientsViewController.swift */,
 				679E9D58262981E000BE5C40 /* TextMessageViewController.swift */,
 				673302701C077B650074DD8F /* ThanksgivingRecipesViewController.swift */,
 			);
@@ -555,9 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67005B3C26A54C690080BC8C /* UITextFieldExtensions.swift in Sources */,
-				675094C926E602950013FC2D /* TextGroceryListViewController.swift in Sources */,
 				67B630BE25B03C9200CDD4B2 /* RecipeItem+CoreDataProperties.swift in Sources */,
-				67E8FADF245E78F000F67305 /* TextIngredientsViewController.swift in Sources */,
 				679ED45519839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld in Sources */,
 				679ED45219839E8B00E22DDB /* DatabaseManager.swift in Sources */,
 				679101DA1F46611F00A6D842 /* AuthUtilities.swift in Sources */,

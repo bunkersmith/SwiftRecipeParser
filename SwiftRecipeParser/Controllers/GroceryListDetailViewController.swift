@@ -9,8 +9,8 @@
 import UIKit
 import CoreData
 
-class GroceryListDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate,
-                                       AddGroceryListItemDelegate, ModifyGroceryListItemDelegate, GroceryListSelectionDelegate {
+class GroceryListDetailViewController: TextMessageViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, AddGroceryListItemDelegate, ModifyGroceryListItemDelegate,
+    GroceryListSelectionDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var totalCostLabel: UILabel!
@@ -197,7 +197,8 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
     
     @IBAction func textButtonPressed(_ sender: Any) {
         if groceryList.unboughtItems(databaseInterface: databaseInterface).count > 0 {
-            performSegue(withIdentifier: "textGroceryListSegue", sender: self)
+            let textGroceryListName = groceryList.name
+            sendTextMessage(textGroceryListName + "\n" + GroceryList.groceryListNameToTextString(groceryListName: textGroceryListName))
         } else {
             AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message: "No unbought items to text.", buttonHandler: nil)
         }
@@ -329,11 +330,6 @@ class GroceryListDetailViewController: UIViewController, UITableViewDataSource, 
             return
         }
         
-        if segue.identifier == "textGroceryListSegue" {
-            let textViewController:TextGroceryListViewController = segue.destination as! TextGroceryListViewController
-            textViewController.initGroceryListName(groceryListName: groceryList.name)
-            textViewController.requestMessageComposeViewController()
-        }
     }
     
     // MARK: - Table View

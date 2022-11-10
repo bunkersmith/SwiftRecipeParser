@@ -540,7 +540,6 @@
                         <outlet property="projectedCostLabel" destination="pP7-dW-zbZ" id="5RM-Zt-m7E"/>
                         <outlet property="tableView" destination="G3t-Wr-TnD" id="Xiy-Qs-1vY"/>
                         <outlet property="totalCostLabel" destination="6me-gb-KOJ" id="LvM-JV-hVy"/>
-                        <segue destination="vHy-7l-rPw" kind="show" identifier="textGroceryListSegue" id="Qzn-hR-vC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGP-v5-xxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1195,25 +1194,6 @@
             </objects>
             <point key="canvasLocation" x="2511" y="-205"/>
         </scene>
-        <!--Text Ingredients View Controller-->
-        <scene sceneID="DkI-4D-xhl">
-            <objects>
-                <viewController id="dMm-HD-nma" customClass="TextIngredientsViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ixz-Ng-vip"/>
-                        <viewControllerLayoutGuide type="bottom" id="zMQ-iT-YEG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wc3-DL-PDM">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bGH-96-Ysm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9cf-a5-af4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3184.8000000000002" y="-206.44677661169416"/>
-        </scene>
         <!--Recipe Detail View Controller-->
         <scene sceneID="2pp-Hw-nkJ">
             <objects>
@@ -1410,7 +1390,7 @@
                             </barButtonItem>
                             <barButtonItem title="Text" id="xcC-jw-Gu1">
                                 <connections>
-                                    <segue destination="dMm-HD-nma" kind="presentation" identifier="textRecipeSegue" modalPresentationStyle="overCurrentContext" id="Lgz-cn-WsB"/>
+                                    <action selector="textIngredientsPressed:" destination="xst-t7-a6v" id="7Ch-6p-hF7"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Add All" id="0eu-3x-vhy">
@@ -1462,25 +1442,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFJ-RB-mt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3186" y="441"/>
-        </scene>
-        <!--Text Grocery List View Controller-->
-        <scene sceneID="OYm-io-CER">
-            <objects>
-                <viewController storyboardIdentifier="TextGroceryListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vHy-7l-rPw" customClass="TextGroceryListViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XhW-TI-deM"/>
-                        <viewControllerLayoutGuide type="bottom" id="aXp-E9-bVK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="l1p-8z-Eow">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="yfX-K9-gut"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3cm-O0-cGz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3854" y="440"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="Gf7-c1-psd">
