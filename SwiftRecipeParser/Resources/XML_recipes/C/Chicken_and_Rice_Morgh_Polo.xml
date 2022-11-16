@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chicken and Rice (Morgh Polo)</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>For the Rice:
+1. Boil water in a large pot and add plenty of salt (just as you would if you were cooking pasta) and 4 cups rinsed rice. Put stove on med-high heat. Don’t let it over-boil. When the rice is just hard in the middle and soft on the outside (al dente rice!), turn off the burner and drain the rice into a colander.
+
+2. Add ghee to the large pot to cover the bottom of it and put on medium heat. Add the rice to the pot, poke some holes with the back of a spatula almost to the bottom of the pot to release steam, and cover. 
+3. When steam rises to the lid of the pot (this is easy to tell with a clear lid, otherwise wait about 5 minutes) remove the lid and add small dollops (about 2 tablespoons or so) of ghee along with most of the saffron-water mixture to the top (the small remainder will be added to the chicken). Replace the lid with a large folded napkin or kitchen towel placed directly and tightly underneath it to catch the steam. 
+4. After about 5 min, put on med-low heat for ~30 min or until the pot sizzles when you splash a couple drops of water on side of it—whichever happens last. You can either carefully flip the rice over onto a serving platter so that you can see the beautifully crisp tahdig (crispy rice at the bottom of the pot) or just serve yourself directly out of the pot, but make sure to dig for some tahdig at the bottom! It’s a treat!
+
+For the Chicken:
+1. In a large pot on med-high heat, add 1 tbsp of ghee. After ghee is hot, swirl it around the pot and add in chicken thighs, skin down. Let them cook for a few minutes and then they should be easy to lift up when they’re ready to flip. Cook for a few more minutes on other side and remove them from the pot and onto a plate. 
+2. Cook the chicken tenders the same way and then add back in the chicken thighs and add the onion. Place on medium heat and add turmeric powder, salt, and pepper and move everything in the pot around to coat.
+
+3. Add about 3 cups of water to the pot to keep it from burning, mix ingredients around, and place lid on top.
+
+4. After 20 min, place on med-low and cook for about another 20 minutes or until chicken is tender.
+
+5. Add a bit of the saffron-water mixture on top of the chicken while it’s simmering.
+
+6. If the liquid in the pot starts to evaporate, don’t let it dry out. Add more water to replace liquid loss.
+
+7. When plating, add this liquid/broth to your chicken and your rice for added flavor.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lbs</unitOfMeasure>
+            <ingredientName>chicken tenders and thighs</ingredientName>
+            <processingInstructions> thighs have skin on</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>ghee</ingredientName>
+            <processingInstructions> for braising chicken and for rice</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>onion</ingredientName>
+            <processingInstructions> white or yellow, diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>turmeric</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>sea salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>basmati rice</ingredientName>
+            <processingInstructions> dried</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>ground saffron</ingredientName>
+            <processingInstructions> mixed into ¼ cup hot water</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
