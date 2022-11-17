@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Chelo Kabab (aka Kebab)</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Preheat oven to 375 degrees
+2. Mix ground beef, grated onion, sumac, turmeric, salt and pepper in a bowl
+3. Put 1 spoon (tablespoon?) of avocado oil in 9” x 13” pyrex dish
+4. Flatten meat, onion and spice mixture mixture evenly in the bottom of the pyrex dish
+5. Score the meat parallel to the 9 inch side, so that it looks like 1-inch wide kebabs
+6. Make indentations across the kebabs
+7. Bake in the 375 oven for 35 min
+8. Slice three large tomatoes
+9. Put 1 tsp of avocado oil in pan
+10. Fry tomatoes gently
+11. Once the tomatoes sizzle, sprinkle some sumac on them
+12. Flip the tomatoes after the first side is cooked
+13. Sprinkle more sumac on them
+14. Grind a small amount of saffron with a mortar and pestle
+15. Add 1/8 cup of (boiling) hot water and let it steep like tea
+16. Mix the saffron water with 2 tablespoons of butter
+17. Cook the basmati rice
+18. Plate the rice, the two kebabs and the tomatoes (in that order), leaving some rice exposed
+19. The kebabs and the tomatoes make a shape similar to a capital D
+20. Drizzle the saffron butter over the rice and kebabs</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>ground beef</ingredientName>
+            <processingInstructions> organic extra lean</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>red onion</ingredientName>
+            <processingInstructions> grated</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>sumac</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>turmeric </ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large tomato</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Saffron</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/8</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
