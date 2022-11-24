@@ -263,23 +263,25 @@ class GroceryListItem: NSManagedObject {
             databaseInterface.performInBackground {
                 
                 for cloudGroceryListItem in cloudGroceryListItems {
-                    var item = GroceryListItem.createOrReturn(name: cloudGroceryListItem.name,
-                                                   cost: Float(cloudGroceryListItem.cost),
-                                                   quantity: Float(cloudGroceryListItem.quantity),
-                                                   unitOfMeasure: cloudGroceryListItem.unitOfMeasure,
-                                                   databaseInterface: databaseInterface)
-                    if item != nil {
-                        item!.update(fsa: cloudGroceryListItem.isFsa != 0)
-                        item!.update(crv: cloudGroceryListItem.isCrv != 0)
-                        item!.update(crvFluidOunces: Float(cloudGroceryListItem.crvFluidOunces))
-                        item!.update(crvQuantity: Int(cloudGroceryListItem.crvQuantity))
-                        item!.update(taxable: cloudGroceryListItem.isTaxable != 0)
-                        item!.update(taxablePrice: Float(cloudGroceryListItem.taxablePrice))
-                        item!.update(notes: cloudGroceryListItem.notes)
-                        databaseInterface.saveContext()
-                    } else {
-                        completionHandler(false)
-                        return
+                    if !cloudGroceryListItem.name.isEmpty {
+                        var item = GroceryListItem.createOrReturn(name: cloudGroceryListItem.name,
+                                                                  cost: Float(cloudGroceryListItem.cost),
+                                                                  quantity: Float(cloudGroceryListItem.quantity),
+                                                                  unitOfMeasure: cloudGroceryListItem.unitOfMeasure,
+                                                                  databaseInterface: databaseInterface)
+                        if item != nil {
+                            item!.update(fsa: cloudGroceryListItem.isFsa != 0)
+                            item!.update(crv: cloudGroceryListItem.isCrv != 0)
+                            item!.update(crvFluidOunces: Float(cloudGroceryListItem.crvFluidOunces))
+                            item!.update(crvQuantity: Int(cloudGroceryListItem.crvQuantity))
+                            item!.update(taxable: cloudGroceryListItem.isTaxable != 0)
+                            item!.update(taxablePrice: Float(cloudGroceryListItem.taxablePrice))
+                            item!.update(notes: cloudGroceryListItem.notes)
+                            databaseInterface.saveContext()
+                        } else {
+                            completionHandler(false)
+                            return
+                        }
                     }
                 }
                     
