@@ -391,7 +391,7 @@ class GroceryListItem: NSManagedObject {
         }
     }
     
-    class func allItemsToString() -> String? {
+    class func allItemsToData() -> Data? {
         guard let allItems = fetchAll() else {
             Logger.logDetails(msg: "Error fetching all Grocery List Items")
             return nil
@@ -403,7 +403,7 @@ class GroceryListItem: NSManagedObject {
             fileString += item.convertToShortOneLineString()
         }
         
-        return fileString
+        return Data(fileString.utf8)
     }
     
     func writeImageDataToJpeg(imageData: Data) {

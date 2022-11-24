@@ -35,11 +35,8 @@ class EmailGroceryListItemsViewController: EmailViewController {
         returnValue.setSubject("SwiftRecipeParser Grocery List Items File")
         returnValue.setToRecipients(["carl@afterburnerimages.com"])
         
-// 1. START WITH GroceryListItem.fetchAll() AND BUILD A STRING FROM IT, ONE LINE FOR EACH ITEM, DONE!
-// 2. CONVERT THAT TEXT FILE TO Data SWIFT TYPE SO THAT IT CAN BE ADDED AS AN EMAIL ATTACHMENT
-        
-        if let foo = GroceryListItem.allItemsToString() {
-//            returnValue.addAttachmentData(loggerFileData as Data, mimeType: "text", fileName: FileUtilities.timeStampedGroceryListItemsFileName())
+        if let groceryItemsData = GroceryListItem.allItemsToData() {
+            returnValue.addAttachmentData(groceryItemsData, mimeType: "text", fileName: FileUtilities.timeStampedGroceryListItemsFileName())
         
             let currentTimeString:String = DateTimeUtilities.returnStringFromNSDate(Date())
             

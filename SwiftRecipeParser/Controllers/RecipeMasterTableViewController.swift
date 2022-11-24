@@ -47,6 +47,23 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         // Called before warning appears (first call)
         tableView.tableFooterView = UIView(frame: .zero)
         
+//        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+//        
+//        if let groceryListItems = GroceryListItem.fetchAll() {
+//            
+//            var emptyItemCount = 0
+//            
+//            for groceryListItem in groceryListItems {
+//                if groceryListItem.name.isEmpty {
+//                    emptyItemCount += 1
+//                    databaseInterface.deleteObject(coreDataObject: groceryListItem)
+//                }
+//                
+//            }
+//            
+//            Logger.logDetails(msg: "emptyItemCount = \(emptyItemCount)")
+//        }
+        
 //        let groceryLists = GroceryList.returnAll()
 //
 //        for groceryList in groceryLists {
