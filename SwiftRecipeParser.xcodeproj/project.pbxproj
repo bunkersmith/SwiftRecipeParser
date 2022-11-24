@@ -55,6 +55,7 @@
 		675DCE3426A64B73000F5F99 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675DCE3326A64B73000F5F99 /* StringExtensions.swift */; };
 		675DCE3726A69CFD000F5F99 /* TripleTextAlertDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675DCE3526A69CFD000F5F99 /* TripleTextAlertDialog.storyboard */; };
 		6766910F261A844900605201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6766910E261A844900605201 /* LaunchScreen.storyboard */; };
+		6772279A292F657500001B2C /* EmailGroceryListItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67722799292F657500001B2C /* EmailGroceryListItemsViewController.swift */; };
 		677A4CF61D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677A4CF51D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift */; };
 		677A4CF81D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677A4CF71D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib */; };
 		6780F8642650DFDB00CA950E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780F8632650DFDB00CA950E /* CheckBox.swift */; };
@@ -165,6 +166,7 @@
 		675DCE3526A69CFD000F5F99 /* TripleTextAlertDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripleTextAlertDialog.storyboard; sourceTree = "<group>"; };
 		6766910E261A844900605201 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6766F119278D7FBE004CAF4A /* SwiftRecipeParser1.28.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.28.xcdatamodel; sourceTree = "<group>"; };
+		67722799292F657500001B2C /* EmailGroceryListItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailGroceryListItemsViewController.swift; sourceTree = "<group>"; };
 		677A4CF51D0E694800B178A3 /* RecipeTableSearchHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableSearchHeaderViewController.swift; sourceTree = "<group>"; };
 		677A4CF71D0E69D400B178A3 /* RecipeTableSearchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeTableSearchHeaderView.xib; sourceTree = "<group>"; };
 		6780F8632650DFDB00CA950E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			children = (
 				675A2A3D1B1FD34800C6A652 /* AddGroceryListItemViewController.swift */,
 				6710451E1EFCF7230013EF27 /* EmailLogViewController.swift */,
+				67722799292F657500001B2C /* EmailGroceryListItemsViewController.swift */,
 				6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */,
 				671045201EFCF7810013EF27 /* EmailViewController.swift */,
 				67A8B35F1FC124E8009E44EF /* GroceryItemPhotoViewController.swift */,
@@ -374,10 +377,10 @@
 				671045221EFCFAFD0013EF27 /* AlertUtilities.swift */,
 				679101D91F46611F00A6D842 /* AuthUtilities.swift */,
 				6743DAC91E20E2EA00FF76C8 /* DateTimeUtilities.swift */,
-				6791A2081EEB8DFC007CAE2D /* Extensions.swift */,
 				6743DAC71E20E27200FF76C8 /* FileUtilities.swift */,
 				6721870F1995B8850051BA99 /* FractionMath.swift */,
 				6753215019A6BCD600B3BE74 /* IToast.swift */,
+				6791A2081EEB8DFC007CAE2D /* Extensions.swift */,
 				671953481B4B4198000A9863 /* MillisecondTimer.swift */,
 				671045241EFCFB130013EF27 /* ObjectToStringUtilities.swift */,
 				6743DAC21E20DA1900FF76C8 /* ProcessTextFile.swift */,
@@ -566,6 +569,7 @@
 				6730A4361CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift in Sources */,
 				671045251EFCFB130013EF27 /* ObjectToStringUtilities.swift in Sources */,
 				673E65491B1D4016009B8DC5 /* GroceryListsViewController.swift in Sources */,
+				6772279A292F657500001B2C /* EmailGroceryListItemsViewController.swift in Sources */,
 				679E9D59262981E000BE5C40 /* TextMessageViewController.swift in Sources */,
 				6719534E1B4B6558000A9863 /* RecipeTitle.swift in Sources */,
 				6782783A26A6B8C000999E3B /* FloatExtensions.swift in Sources */,

@@ -103,7 +103,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     
     @IBAction func importFileButtonPressed(_ sender: Any) {
         AlertUtilities.showYesNoAlert(viewController: self, title: "Import Alert", message: "ARE YOU SURE you want to import all the Grocery List Items from the iCloud file?", yesButtonHandler: { action in
-                GroceryListItem.importFromIcloudFile { (isSuccessful) in
+                GroceryListItem.readAllFromIcloud(viewController: self) { (isSuccessful) in
                     if !isSuccessful {
                         DispatchQueue.main.async {
                             AlertUtilities.showOkButtonAlert(self, title: "Error Alert", message:"File import failed", buttonHandler: nil)
@@ -116,7 +116,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     
     @IBAction func exportButtonPressed(_ sender: Any) {
         AlertUtilities.showYesNoAlert(viewController: self, title: "Export Alert", message: "Do you want to export all the Grocery List Items to the iCloud file?", yesButtonHandler: { action in
-            GroceryListItem.writeAllToIcloud()
+            GroceryListItem.writeAllToIcloud(viewController: self)
         }, noButtonHandler: nil)
     }
     
@@ -168,7 +168,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         guard let sectionInfo = fetchedResultsController.sections else {
             return 0
         }
-        Logger.logDetails(msg: "Returning \(sectionInfo[section].numberOfObjects) for section \(section)")
+//        Logger.logDetails(msg: "Returning \(sectionInfo[section].numberOfObjects) for section \(section)")
         return sectionInfo[section].numberOfObjects
     }
     
@@ -195,7 +195,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) {
         let object = fetchedResultsController.object(at: indexPath)
-        Logger.logDetails(msg: "object at indexPath \(indexPath): \(object)")
+//        Logger.logDetails(msg: "object at indexPath \(indexPath): \(object)")
         if let groceryListItem = object as? GroceryListItem {
             if let groceryListItemCell = cell as? AddGroceryListItemTableViewCell {
                 groceryListItemCell.nameLabel.text = groceryListItem.name
@@ -269,4 +269,13 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if segue.identifier == "emailItemsSegue" {
+            let emailGroceryListItemsViewController:EmailGroceryListItemsViewController = segue.destination as! EmailGroceryListItemsViewController
+            
+            emailGroceryListItemsViewController.requestMailComposeViewController()
+            return
+        }
+
+    }
 }

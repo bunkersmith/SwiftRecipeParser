@@ -30,6 +30,11 @@ class FileUtilities {
         return fileNameString
     }
     
+    class func timeStampedGroceryListItemsFileName() -> String {
+        let fileNameString = "SwiftRecipeParser-\(DateTimeUtilities.currentTimeToString())-GroceryListItems.txt"
+        return fileNameString
+    }
+    
     class func groceryListItemsFilePath() -> String {
         let documentsDirectory = FileUtilities.applicationDocumentsDirectory()
         return documentsDirectory.appendingPathComponent("SwiftRecipeParser-GroceryListItems.txt").path

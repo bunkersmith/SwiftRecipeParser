@@ -74,7 +74,7 @@ public class CKModel {
     }
   }
   
-  func populateCloudGroceryListItems(_ completion: @escaping ([CloudGroceryListItem], Error?) -> Void) {
+  func readAllIcloudGroceryListItems(_ completion: @escaping ([CloudGroceryListItem], Error?) -> Void) {
         let startTime = MillisecondTimer.currentTickCount()
         
         let predicate = NSPredicate(value: true)
@@ -92,7 +92,7 @@ public class CKModel {
     func populateCloudGroceryListItemsAsText(_ completion: @escaping (String?, Error?) -> Void) {
         let startTime = MillisecondTimer.currentTickCount()
         
-        CKModel.currentModel.populateCloudGroceryListItems { (lastCloudGroceryListItems, error) in
+        CKModel.currentModel.readAllIcloudGroceryListItems { (lastCloudGroceryListItems, error) in
             var returnString:String = ""
             
             if (error == nil && lastCloudGroceryListItems.count > 0) {

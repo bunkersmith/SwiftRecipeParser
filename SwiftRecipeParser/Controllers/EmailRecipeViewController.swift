@@ -94,27 +94,9 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     // MARK - MFMailComposeViewControllerDelegate
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        var resultString:String
-        let toastDuration:TimeInterval = 2.0
+        var resultString = ObjectToStringUtilities.mfMailComposeResultToString(result)
         
-        switch result {
-            case .cancelled:
-                resultString = "Result: Mail sending canceled"
-            break
-            
-            case .saved:
-                resultString = "Result: Mail saved"
-            break
-            
-            case .sent:
-                resultString = "Result: Mail sent"
-            break
-            
-            case .failed:
-                resultString = "Result: Mail sending failed"
-            break
-
-        }
+        let toastDuration:TimeInterval = 2.0
         
         dismiss(animated: false, completion: {})
         

@@ -248,43 +248,90 @@ class GroceryListItem: NSManagedObject {
         databaseInterface.saveContext()
     }
     
-    class func writeAllToIcloud() {
-        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+    class func readAllFromIcloud(viewController: UIViewController, completionHandler:@escaping ((Bool) -> Void)) {
         
+        let model = CKModel.currentModel
+
+        model.readAllIcloudGroceryListItems { cloudGroceryListItems, error in
+            if error != nil {
+                completionHandler(false)
+                return
+            }
+            
+            let databaseInterface = DatabaseInterface(concurrencyType: .privateQueueConcurrencyType)
+            
+            databaseInterface.performInBackground {
+                
+                for cloudGroceryListItem in cloudGroceryListItems {
+                    var item = GroceryListItem.createOrReturn(name: cloudGroceryListItem.name,
+                                                   cost: Float(cloudGroceryListItem.cost),
+                                                   quantity: Float(cloudGroceryListItem.quantity),
+                                                   unitOfMeasure: cloudGroceryListItem.unitOfMeasure,
+                                                   databaseInterface: databaseInterface)
+                    if item != nil {
+                        item!.update(fsa: cloudGroceryListItem.isFsa != 0)
+                        item!.update(crv: cloudGroceryListItem.isCrv != 0)
+                        item!.update(crvFluidOunces: Float(cloudGroceryListItem.crvFluidOunces))
+                        item!.update(crvQuantity: Int(cloudGroceryListItem.crvQuantity))
+                        item!.update(taxable: cloudGroceryListItem.isTaxable != 0)
+                        item!.update(taxablePrice: Float(cloudGroceryListItem.taxablePrice))
+                        item!.update(notes: cloudGroceryListItem.notes)
+                        databaseInterface.saveContext()
+                    } else {
+                        completionHandler(false)
+                        return
+                    }
+                }
+                    
+                completionHandler(true)
+            }
+        }
+    }
+
+    class func writeAllToIcloud(viewController: UIViewController) {
         var startTime = MillisecondTimer.currentTickCount()
         
-        guard let groceryListItems = databaseInterface.entitiesOfType(entityTypeName: "GroceryListItem", fetchRequestChangeBlock: { inputFetchRequest in
-            let sortDescriptor:NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
-            inputFetchRequest.sortDescriptors = [sortDescriptor]
-            
-            return inputFetchRequest
-        }) as? Array<GroceryListItem> else {
-            Logger.logDetails(msg: "groceryListItems = nil")
+        guard let groceryListItems = fetchAll() else {
+            Logger.logDetails(msg: "Error fetching Grocery List Items")
             return
         }
-
-        Logger.logDetails(msg: "Fetch request time: \(MillisecondTimer.secondsSince(startTime: startTime))")
+        
+        Logger.logDetails(msg: "Fetch request time: \(MillisecondTimer.secondsSince(startTime: startTime)) for \(groceryListItems.count) items")
         
         startTime = MillisecondTimer.currentTickCount()
         
         let model = CKModel.currentModel
         var records = [CKRecord]()
         
-        Logger.logDetails(msg: "Count of groceryListItems = \(groceryListItems.count)")
+//        Logger.logDetails(msg: "Count of groceryListItems = \(groceryListItems.count)")
         
         for groceryListItem in groceryListItems {
             let record = CKRecord(recordType: CloudGroceryListItem.recordType)
             model.updateCKRecordFromGroceryListItem(groceryListItem: groceryListItem, record: record)
             records.append(record)
         }
-            
+        
+        var totalRecordsWritten = 0
+        
+        IToast().showToast(viewController, alertTitle: "SwiftRecipeParser Alert", alertMessage: "iCloud write beginning", duration: 2, completionHandler: nil)
+        
         model.writeGroceryListItemRecords(groceryListItemRecords: records) { records, error in
             if error != nil {
                 Logger.logDetails(msg: "Error writing GroceryListItemRecords: \(error!)")
             } else {
                 let totalWriteTime = MillisecondTimer.secondsSince(startTime: startTime)
                 if records.count > 0 {
-                    Logger.logDetails(msg: String(format: "Wrote \(records.count) GroceryListItemRecords successfully in %.3f seconds (%.3f) per record", totalWriteTime, totalWriteTime/Double(records.count)))
+                    totalRecordsWritten += records.count
+                    if totalRecordsWritten == groceryListItems.count {
+                        Logger.logDetails(msg: String(format: "Wrote \(records.count) GroceryListItemRecords successfully in %.3f seconds (%.3f) per record", totalWriteTime, totalWriteTime/Double(records.count)))
+                        DispatchQueue.main.async {
+                            IToast().showToast(viewController, alertTitle: "SwiftRecipeParser Alert", alertMessage: "\(totalRecordsWritten) total records written", duration: 2, completionHandler: nil)
+                        }
+                    } else {
+                        DispatchQueue.main.async {
+                            IToast().showToast(viewController, alertTitle: "SwiftRecipeParser Alert", alertMessage: "\(totalRecordsWritten) of \(groceryListItems.count) records written", duration: 2, completionHandler: nil)
+                        }
+                    }
                 }
             }
         }
@@ -342,6 +389,21 @@ class GroceryListItem: NSManagedObject {
             groceryItem.calculateTotalCost()
             databaseInterface.saveContext()
         }
+    }
+    
+    class func allItemsToString() -> String? {
+        guard let allItems = fetchAll() else {
+            Logger.logDetails(msg: "Error fetching all Grocery List Items")
+            return nil
+        }
+        
+        var fileString = ""
+        
+        for item in allItems {
+            fileString += item.convertToShortOneLineString()
+        }
+        
+        return fileString
     }
     
     func writeImageDataToJpeg(imageData: Data) {
@@ -548,40 +610,6 @@ class GroceryListItem: NSManagedObject {
         print(groceryListItem)
         
         return groceryListItem
-    }
-    
-    class func importFromIcloudFile(completionHandler:@escaping ((Bool) -> Void)) {
-        
-        let textFile = ProcessTextFile(fileName: FileUtilities.groceryListItemsFilePath())
-        
-        guard textFile.open() else {
-            Logger.logDetails(msg: "File open failed!")
-            
-            completionHandler(false)
-            return
-        }
-        
-        let importFileLines = textFile.linesInFile()
-        
-        Logger.logDetails(msg: "Count of lines in file = \(importFileLines.count)")
-        
-        let databaseInterface = DatabaseInterface(concurrencyType: .privateQueueConcurrencyType)
-        
-        databaseInterface.performInBackground {
-            
-            for line in importFileLines {
-                
-                if GroceryListItem.parseGroceryListItemString(string: line, databaseInterface: databaseInterface) == nil {
-                    Logger.logDetails(msg: "Error creating GroceryListItem from line: " + "\n\(line)")
-                    completionHandler(false)
-                    return
-                }
-            }
-            
-            databaseInterface.saveContext()
-            
-            completionHandler(true)
-        }
     }
 
     func calculateTotalCost() {

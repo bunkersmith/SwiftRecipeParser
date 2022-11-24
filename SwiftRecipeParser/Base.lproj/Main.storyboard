@@ -645,17 +645,22 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="meX-2L-ykt">
                         <rightBarButtonItems>
-                            <barButtonItem title="Add Item" id="euX-ZV-ddF">
+                            <barButtonItem title="Add" id="euX-ZV-ddF">
                                 <connections>
                                     <action selector="addItemButtonPressed:" destination="sOC-LX-Geb" id="CrB-gX-4Vg"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Add &amp; Buy" id="kYM-So-zIO">
+                            <barButtonItem title="Add+Buy" id="kYM-So-zIO">
                                 <connections>
                                     <action selector="addAndBuyItemButtonPressed:" destination="sOC-LX-Geb" id="3QC-gF-teg"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title=" " id="j4d-PQ-BGU"/>
+                            <barButtonItem title="Email" id="vhy-Ys-Cn7">
+                                <connections>
+                                    <segue destination="DOc-xJ-jja" kind="show" identifier="emailItemsSegue" id="pmE-rO-lKT"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem id="j4d-PQ-BGU"/>
                             <barButtonItem title="Import" id="6J4-rG-zUz">
                                 <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-50" maxY="0.0"/>
                                 <connections>
@@ -1442,6 +1447,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFJ-RB-mt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3186" y="441"/>
+        </scene>
+        <!--Email Grocery List Items View Controller-->
+        <scene sceneID="RwI-3d-qLB">
+            <objects>
+                <viewController id="DOc-xJ-jja" customClass="EmailGroceryListItemsViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tj2-4U-hZ4"/>
+                        <viewControllerLayoutGuide type="bottom" id="qta-wB-qdd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5kY-mE-OHq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0fE-v9-ENq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COP-ES-QLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3852" y="441"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="Gf7-c1-psd">
