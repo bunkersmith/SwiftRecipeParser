@@ -264,7 +264,7 @@ class GroceryListItem: NSManagedObject {
                 
                 for cloudGroceryListItem in cloudGroceryListItems {
                     if !cloudGroceryListItem.name.isEmpty {
-                        var item = GroceryListItem.createOrReturn(name: cloudGroceryListItem.name,
+                        let item = GroceryListItem.createOrReturn(name: cloudGroceryListItem.name,
                                                                   cost: Float(cloudGroceryListItem.cost),
                                                                   quantity: Float(cloudGroceryListItem.quantity),
                                                                   unitOfMeasure: cloudGroceryListItem.unitOfMeasure,

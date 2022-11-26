@@ -94,7 +94,7 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     // MARK - MFMailComposeViewControllerDelegate
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        var resultString = ObjectToStringUtilities.mfMailComposeResultToString(result)
+        let resultString = ObjectToStringUtilities.mfMailComposeResultToString(result)
         
         let toastDuration:TimeInterval = 2.0
         
