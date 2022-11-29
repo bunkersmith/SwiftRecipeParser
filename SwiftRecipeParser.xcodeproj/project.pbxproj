@@ -411,8 +411,8 @@
 		67B82AC71985E37500344AE3 /* Recipe Processing */ = {
 			isa = PBXGroup;
 			children = (
-				67B82AC81985E3F000344AE3 /* RecipeFiles.swift */,
 				67B82ACD198628E100344AE3 /* ParseRecipe.swift */,
+				67B82AC81985E3F000344AE3 /* RecipeFiles.swift */,
 				67F24209199356C500768DC3 /* ParseXMLRecipe.swift */,
 			);
 			path = "Recipe Processing";

@@ -207,6 +207,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         tableView.deselectRow(at: indexPath, animated: true)
         if let groceryListItem = fetchedResultsController.object(at: indexPath) as? GroceryListItem {
             nameTextField.text = groceryListItem.name
+            adjustButtonsAndController(nameTextField)
         }
     }
     
@@ -253,7 +254,7 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
         tableView.endUpdates()
     }
     
-    @objc func textFieldChanged(textField: UITextField) {
+    func adjustButtonsAndController(_ textField: UITextField) {
         if let textFieldText = textField.text {
             if textFieldText.count == 0 {
                 addButton.show(false)
@@ -267,6 +268,10 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
                 createFetchedResultsController(predicate: NSPredicate(format: "name contains[cd] %@", textFieldText))
             }
         }
+    }
+    
+    @objc func textFieldChanged(textField: UITextField) {
+        adjustButtonsAndController(textField)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
