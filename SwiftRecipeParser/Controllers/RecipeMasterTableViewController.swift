@@ -15,7 +15,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     @IBOutlet var progressLabel: UILabel!
     
     var resultTableViewController: UITableViewController!
-    var searchString: String!
+    var searchString: String? = nil
 
     private var selectedRow:NSInteger = -1
     private var selectedSection:NSInteger = -1
@@ -89,7 +89,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 
         setupSearchHeaderViewController()
 
-        createFetchedResultsController(searchString: nil)
+        searchString = searchTextField?.text
+        
+        createFetchedResultsController(searchString: searchString)
 
         hideSearchBar(searchHeaderViewController?.searchBar)
                 
@@ -306,6 +308,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     func createFetchedResultsController(searchString:String?) {
         let databaseInterface:DatabaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
+        Logger.logDetails(msg: "searchString: \(searchString ?? "nil")")
+        
         if searchString != nil && !searchString!.isEmpty {
             if searchHeaderViewController != nil, searchHeaderViewController?.searchType == .Ingredient {
                 fetchedResultsController = databaseInterface.createFetchedResultsController(entityName: "Recipe", sortKey: "title.indexCharacter", secondarySortKey: "title.name", sectionNameKeyPath:"title.indexCharacter", predicate:NSPredicate(format: "ANY containsIngredients.ingredientItem.name  contains[cd] %@", searchString!))
@@ -481,7 +485,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     
     func handleRecipeTableNeedsReloadNotification(notification:NSNotification)
     {
-        tableView.reloadData();
+        tableView.reloadData()
     }
         
     func updateProgressLabel(percentage:Float)
@@ -548,7 +552,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             returnValue = fetchedResultsController.sections!.count + 1
         }
 
-        //NSLog("Number of sections in table view \(returnValue)")
+        Logger.logDetails(msg: "Number of sections in table view \(returnValue)")
         
         return returnValue
     }
@@ -620,6 +624,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         updateTableWithSearchString(searchString: "")
         
+        Logger.logDetails(msg: "searchString is now empty")
+        
         hideSearchBar(searchBar)
     }
     
@@ -633,6 +639,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     }
 
     func updateTableWithSearchString(searchString: String?) {
+        Logger.logDetails(msg: "Create FetchedResultsController with searchString: \(searchString ?? "nil")")
         createFetchedResultsController(searchString: searchString)
         
         resultTableViewController.tableView.reloadData()
@@ -643,6 +650,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         if tableView.contentOffset.y <= 0 && searchTextField != nil {
             searchTextField?.becomeFirstResponder()
             searchString = searchTextField?.text
+            Logger.logDetails(msg: "searchString valueis now \(searchString ?? "nil")")
             updateTableWithSearchString(searchString: searchString)
         }
     }

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Persian Eggplant (Naz Khatoon)</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Roast the eggplants in the oven, taking care not to over-roast them.
+2. Sauté the onions in the olive oil.
+3. After the eggplants cool, peel away the skin and chop them.
+4. Once the onions are a golden color, stir in the garlic.
+5. Stir the onions and garlic for 2 to 3 minutes.
+6. Add the eggplants to the onions and garlic.
+7.  Stir the mixture for another 2 to 3 minutes.
+8. Chop the cilantro.
+9. Add the tomatoes to the mixture and stir.
+10. Add the salt, pepper, dry mint and angelica.
+11. Stir the spices into the mixture thoroughly.
+12. Stir the chopped cilantro into the mixture.
+13. Stir in the sour grape juice and pomegranate molasses.
+14. Cover the pan and simmer for 30 minutes on medium low heat.
+15. Serve as a side dish with rice.
+
+24. Drizzle half the leftover saffron butter on the chicken pieces, then put the lid back on the pan
+25. Fish barberry fruit from the top of the water into a colander, checking carefully for thorns or small stones
+26. Wash the barberry in the colander, still checking for impurities 
+27. Put two tablespoons of sugar into a small pan
+28. Add some boiling water to dissolve the sugar 
+29. Swish the pan around to dissolve the sugar
+30. Add the barberry and let it simmer for a couple of minutes (uncovered)
+31. Add the rest of the saffron butter to the barberry, then stir to mix it in
+32. Plate rice (she spread across the whole plate)
+33. Plate barberry as a small stripe across the middle of the plate
+34. Plate pistachios on one side of the barberry and chicken on the other
+35. Spread some of the cooking juices from the chicken on top of the chicken</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Eggplants</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Onion</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>8</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Garlic Cloves</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Olive Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Roma Tomatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Angelica</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Dry Mint</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Cilantro Bunch</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Sour Grape Juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Pomegranate Molasses</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
