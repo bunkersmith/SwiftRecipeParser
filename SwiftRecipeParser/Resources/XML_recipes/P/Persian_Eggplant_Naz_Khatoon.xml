@@ -4,7 +4,7 @@
     <indexCharacter>P</indexCharacter>
     <notes></notes>
     <servings>0</servings>
-    <instructions>1. Roast the eggplants in the oven, taking care not to over-roast them.
+    <instructions>1. Roast the eggplants in the oven, taking care not to over-roast them (DO THIS EARLIER THE SAME DAY TO ALLOW THEM TO COOL. If they are refrigerated, their consistency will change.).
 2. Sauté the onions in the olive oil.
 3. After the eggplants cool, peel away the skin and chop them.
 4. Once the onions are a golden color, stir in the garlic.
@@ -13,7 +13,7 @@
 7.  Stir the mixture for another 2 to 3 minutes.
 8. Chop the cilantro.
 9. Add the tomatoes to the mixture and stir.
-10. Add the salt, pepper, dry mint and angelica.
+10. Add the salt, pepper, turmeric, dry mint and angelica.
 11. Stir the spices into the mixture thoroughly.
 12. Stir the chopped cilantro into the mixture.
 13. Stir in the sour grape juice and pomegranate molasses.
@@ -40,6 +40,12 @@
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Olive Oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Onion</ingredientName>
@@ -49,12 +55,6 @@
             <quantity>8</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Garlic Cloves</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>0</quantity>
-            <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Olive Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -73,6 +73,12 @@
             <quantity>1/2</quantity>
             <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Turmeric</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

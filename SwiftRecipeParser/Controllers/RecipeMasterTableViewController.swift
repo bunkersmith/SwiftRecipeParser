@@ -30,8 +30,6 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 
     private var searchHeaderViewController: RecipeTableSearchHeaderViewController?
     
-    private var firstTime = true
-    
 // If you see a "UITableViewAlertForLayoutOutsideViewHierarchy error: Warning once only" message, before going crazy and trying to debug it...
 //
 // CLEAN THE PROJECT AND RESTART XCODE!!!
@@ -47,22 +45,22 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         // Called before warning appears (first call)
         tableView.tableFooterView = UIView(frame: .zero)
         
-//        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
-//        
-//        if let groceryListItems = GroceryListItem.fetchAll() {
-//            
-//            var emptyItemCount = 0
-//            
-//            for groceryListItem in groceryListItems {
-//                if groceryListItem.name.isEmpty {
-//                    emptyItemCount += 1
-//                    databaseInterface.deleteObject(coreDataObject: groceryListItem)
-//                }
-//                
-//            }
-//            
-//            Logger.logDetails(msg: "emptyItemCount = \(emptyItemCount)")
-//        }
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
+        if let groceryListItems = GroceryListItem.fetchAll() {
+            
+            var emptyItemCount = 0
+            
+            for groceryListItem in groceryListItems {
+                if groceryListItem.name.isEmpty {
+                    emptyItemCount += 1
+                    databaseInterface.deleteObject(coreDataObject: groceryListItem)
+                }
+                
+            }
+            
+            Logger.logDetails(msg: "emptyItemCount = \(emptyItemCount)")
+        }
         
 //        let groceryLists = GroceryList.returnAll()
 //
@@ -120,18 +118,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         resultTableViewController.tableView.delegate = self
         resultTableViewController.tableView.dataSource = self
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
-        if firstTime {
-            firstTime = false
-            
-            // INDEX 1 IS THE GroceryListsViewController
-            tabBarController?.selectedIndex = 1
-        }
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

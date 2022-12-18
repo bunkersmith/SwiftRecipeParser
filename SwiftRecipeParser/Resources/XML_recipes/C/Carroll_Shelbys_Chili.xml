@@ -8,7 +8,7 @@
 2. Brown onion and beef
 3. Add tomato sauce, water, spice packet and salt
 4. Add beans
-5. Simmer for 15 minutes or more</instructions>
+5. Simmer for 15 minutes or more. Cook in crockpot if using stew beef.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
@@ -43,18 +43,18 @@
         <ingredient>
             <quantity>1-1/2</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>Beef</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Stew Beef</ingredientName>
+            <processingInstructions>or 2 lb Bratwurst</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>10</quantity>
             <unitOfMeasure>oz</unitOfMeasure>
             <ingredientName>Onion</ingredientName>
-            <processingInstructions>Chopped</processingInstructions>
+            <processingInstructions>chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <unitOfMeasure>tbsp</unitOfMeasure>
             <ingredientName>Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
