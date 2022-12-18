@@ -41,6 +41,10 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         NotificationCenter.default.addObserver(self, selector:  #selector(handleGroceryListCheckBoxNotification(notification:)), name: Notification.Name(rawValue:"SwiftRecipeParser.groceryListCheckBoxNotification"), object: nil)
         
         GroceryListItem.calculateAllTotalCosts()
+        
+        if UIDevice.current.model.starts(with: "iPad") {
+            tabBarController?.selectedIndex = 1
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
