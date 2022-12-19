@@ -203,7 +203,7 @@ extension Recipe {
             returnValue = returnValue.appending("\n")
         }
         
-        returnValue = returnValue.appending("Instructions:\n%\(recipe!.instructions)\n\n")
+        returnValue = returnValue.appending("Instructions:\n\(recipe!.instructions)\n\n")
         
         return returnValue
     }

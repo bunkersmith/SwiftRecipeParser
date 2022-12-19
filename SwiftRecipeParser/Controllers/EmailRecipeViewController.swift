@@ -82,7 +82,7 @@ class EmailRecipeViewController: UIViewController, MFMailComposeViewControllerDe
     func displayMailComposerSheet() {
         composeViewController.mailComposeDelegate = self
         
-        composeViewController.setSubject("SwiftRecipeParser \(emailRecipeTitle) Recipe")
+        composeViewController.setSubject("\(emailRecipeTitle) Recipe")
         
         // Fill out the email body text
         emailBody = Recipe.convertRecipeNameToFormattedText(emailRecipeTitle)

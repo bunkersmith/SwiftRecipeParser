@@ -13,116 +13,116 @@
         <ingredient>
             <quantity>3</quantity>
             <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>Poblano chilis, stemmed, seeded and chopped</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Poblano Chilis</ingredientName>
+            <processingInstructions> stemmed, seeded and chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>Jalapeno chilis, seeded and deveined, chopped</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Jalapeno Chilis</ingredientName>
+            <processingInstructions> seeded and deveined, chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Vidalia onions peeled and chopped</ingredientName>
+            <ingredientName>Vidalia Onions Peeled And Chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>ribs</unitOfMeasure>
-            <ingredientName>celery, trimmed and chopped</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Celery</ingredientName>
+            <processingInstructions> trimmed and chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>leek, white only, well rinsed and chopped</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Leek</ingredientName>
+            <processingInstructions> white only, well rinsed and chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
             <unitOfMeasure>cloves</unitOfMeasure>
-            <ingredientName>garlic, pressed</ingredientName>
+            <ingredientName>Garlic</ingredientName>
+            <processingInstructions> pressed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>tbsp</unitOfMeasure>
+            <ingredientName>Ground Cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>tbsp</unitOfMeasure>
-            <ingredientName>ground cumin</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Dried Oregano</ingredientName>
+            <processingInstructions> crumbled</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>tbsp</unitOfMeasure>
-            <ingredientName>dried oregano, crumbled</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
-            <ingredientName>dried basil, crumbled</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Dried Basil</ingredientName>
+            <processingInstructions> crumbled</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>fresh rosemary</ingredientName>
+            <ingredientName>Fresh Rosemary</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>tbsp</unitOfMeasure>
-            <ingredientName>extra virgin olive oil</ingredientName>
+            <ingredientName>Extra Virgin Olive Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Sea salt and freshly ground black pepper</ingredientName>
+            <ingredientName>Sea Salt And Freshly Ground Black Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>8</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>water or low-sodium chicken stock</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>2</quantity>
-            <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>15 oz cans navy beans, cannellini beans, other small white bean or combination, drained and rinsed</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>3</quantity>
-            <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>boneless, skinless chicken breasts (about 3 double breasts), cooked and cubed</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>2</quantity>
-            <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>fresh limes, juiced</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>2</quantity>
-            <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>fresh lemons, juiced</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>1/2</quantity>
-            <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>chopped fresh cilantro leaves</ingredientName>
+            <ingredientName>Water Or Low-Sodium Chicken Stock</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>green onions, trimmed and chopped for garnish</ingredientName>
+            <ingredientName>15 Oz Cans White Beans (Navy, Great Northern, Cannellini)</ingredientName>
+            <processingInstructions> drained and rinsed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Boneless skinless chicken breasts (about 3 double breasts)</ingredientName>
+            <processingInstructions>cooked and cubed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Fresh Limes</ingredientName>
+            <processingInstructions> juiced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Fresh Lemons</ingredientName>
+            <processingInstructions> juiced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Chopped Fresh Cilantro Leaves</ingredientName>
             <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Green Onions</ingredientName>
+            <processingInstructions> trimmed and chopped for garnish</processingInstructions>
         </ingredient>
     </ingredients>
 </recipe>
