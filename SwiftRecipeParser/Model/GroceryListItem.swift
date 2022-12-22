@@ -474,6 +474,19 @@ class GroceryListItem: NSManagedObject {
         if !webLink.isEmpty {
             returnValue += "\twebLink:\t" + webLink.replacingOccurrences(of: ":", with: "%3A")
         }
+        
+/*
+ 
+FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
+ 
+        returnValue += "\tlocStoreName:\tMurphy Canyon Vons"
+        returnValue += "\tlocAisle:\tCheese and Lunch Meat"
+        returnValue += "\tlocDetails:\tRight side near back"
+        returnValue += "\tlocMonth:\t11"
+        returnValue += "\tlocDay:\t11"
+        returnValue += "\tlocYear:\t2022"
+*/
+        
         returnValue += "\n"
         return returnValue
     }
