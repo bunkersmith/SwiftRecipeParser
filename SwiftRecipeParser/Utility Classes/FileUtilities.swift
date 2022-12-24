@@ -10,6 +10,25 @@ import UIKit
 
 class FileUtilities {
    
+    class func fileExists(_ pathComponent: String) -> Bool {
+        let url = applicationDocumentsDirectory()
+        let pathComponent = url.appendingPathComponent(pathComponent)
+        let filePath = pathComponent.path
+        let fileManager = FileManager.default
+        return fileManager.fileExists(atPath: filePath)
+    }
+    
+    class func createDirectory(_ folderName: String) {
+        let dataPath = applicationDocumentsDirectory().appendingPathComponent(folderName)
+        if !FileManager.default.fileExists(atPath: dataPath.path) {
+            do {
+                try FileManager.default.createDirectory(atPath: dataPath.path, withIntermediateDirectories: true, attributes: nil)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     class func applicationDocumentsDirectory() -> URL {
         // The directory the application uses to store various files.
         return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
