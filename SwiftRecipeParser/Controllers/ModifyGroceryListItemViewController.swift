@@ -43,8 +43,7 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var quantityTextField: UITextField!
     @IBOutlet weak var unitOfMeasureTextField: UITextField!
     @IBOutlet weak var notesTextField: UITextField!
-    @IBOutlet weak var webLinkButton: UIButton!
-    @IBOutlet weak var webLinkTextField: UITextField!
+    @IBOutlet weak var addLocationButton: UIButton!
     @IBOutlet weak var produceCodeTextField: UITextField!
     @IBOutlet weak var fsaSegmentedControl: UISegmentedControl!
     @IBOutlet weak var taxableSegmentedControl: UISegmentedControl!
@@ -80,14 +79,14 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         configureUI()
     }
     
-    @IBAction func webLinkButtonPressed(_ sender: Any) {
-        if let url = URL(string: webLinkTextField.text!) {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:])
-            } else {
-                // Fallback on earlier versions
-            }
-        }
+    @IBAction func addLocationButtonPressed(_ sender: Any) {
+        Location.createOrReturn(databaseInterface: databaseInterface,
+                                storeName: "Murphy Canyon Vons",
+                                aisle: "Paper",
+                                details: "Far back right corner",
+                                month: 12,
+                                day: 27,
+                                year: 2022)
     }
     
     func configureUI() {
@@ -109,12 +108,11 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         notesTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
         notesTextField.delegate = self
         
-        webLinkTextField.text = groceryListItem.webLink
-        webLinkTextField.addTrailingButton(title: "Done", image: nil, target: self, selector: #selector(doneWithKeypad))
-        webLinkTextField.delegate = self
-        webLinkButton.isEnabled = groceryListItem.webLink.isValidUrl()
-
-        webLinkTextField.addTarget(self, action: #selector(textFieldChanged(sender:)), for: UIControl.Event.editingChanged)
+        if groceryListItem.location != nil {
+            addLocationButton.setTitle("Edit Location", for: .normal)
+        } else {
+            addLocationButton.setTitle("Add Location", for: .normal)
+        }
         
         let produceCode = groceryListItem.produceCode.int32Value
         if produceCode != 0 {
@@ -358,10 +356,6 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             return true
         }
 
-        if webLinkTextField.text != groceryListItem.webLink {
-            return true
-        }
-        
         if hasInt32Changed(textField: produceCodeTextField, textFieldName: "Produce Code", oldValue: groceryListItem.produceCode.int32Value) {
             return true
         }
@@ -480,7 +474,6 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             }
 
             groceryListItem.notes = notesTextField.text!
-            groceryListItem.webLink = webLinkTextField.text!
             
             if let groceryListItemProduceCode = updateInt32Value(textField: produceCodeTextField) {
                 groceryListItem.produceCode = groceryListItemProduceCode
@@ -553,14 +546,6 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         
     }
 
-    @objc func textFieldChanged(sender: UITextField) {
-        if (sender == webLinkTextField) {
-            if let textFieldText = sender.text {
-                webLinkButton.isEnabled = textFieldText.isValidUrl()
-            }
-        }
-    }
-    
     // MARK: - UITextFieldDelegate
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

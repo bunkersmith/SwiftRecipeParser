@@ -767,23 +767,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbd-52-7VE">
-                                <rect key="frame" x="16" y="300" width="71" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Web Link"/>
-                                <connections>
-                                    <action selector="webLinkButtonPressed:" destination="lds-ae-OzP" eventType="touchUpInside" id="mGJ-aj-d7H"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pam-4n-rEy">
-                                <rect key="frame" x="95" y="299.66666666666669" width="279" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="279" id="P1E-YQ-Unf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Produce Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-Ud-Kj6">
                                 <rect key="frame" x="16" y="348" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -919,6 +902,14 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dj5-Ge-LTM">
                                 <rect key="frame" x="78.666666666666671" y="715" width="20" height="20"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgJ-m7-dGA">
+                                <rect key="frame" x="4" y="297.66666666666669" width="124" height="35.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Location"/>
+                                <connections>
+                                    <action selector="addLocationButtonPressed:" destination="lds-ae-OzP" eventType="touchUpInside" id="WGu-eE-hqm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -927,13 +918,14 @@
                             <constraint firstItem="vth-ie-rIT" firstAttribute="centerY" secondItem="2mN-BQ-0Ss" secondAttribute="centerY" id="4Gi-dv-3lC"/>
                             <constraint firstItem="j5F-H0-RQj" firstAttribute="trailing" secondItem="tdG-Mg-i4Q" secondAttribute="trailingMargin" id="62M-1w-rB8"/>
                             <constraint firstItem="cWI-qA-Iaf" firstAttribute="leading" secondItem="GFL-gG-AWV" secondAttribute="trailing" constant="8" id="6GM-S9-SmP"/>
+                            <constraint firstItem="VgJ-m7-dGA" firstAttribute="leading" secondItem="tdG-Mg-i4Q" secondAttribute="leading" constant="4" id="6J0-lh-dyH"/>
                             <constraint firstItem="QHj-jW-8a8" firstAttribute="centerY" secondItem="A2K-qV-tHO" secondAttribute="centerY" id="6jq-cj-fZH"/>
                             <constraint firstItem="jF0-ct-nHi" firstAttribute="leading" secondItem="Fmq-qc-cSQ" secondAttribute="leading" id="7hX-wa-HFZ"/>
                             <constraint firstItem="JfX-gp-ZNd" firstAttribute="leading" secondItem="tdG-Mg-i4Q" secondAttribute="leading" constant="16" id="7we-fS-YTv"/>
-                            <constraint firstItem="Zbd-52-7VE" firstAttribute="leading" secondItem="b7U-Nf-Jcu" secondAttribute="leading" id="8jb-vB-zWO"/>
                             <constraint firstItem="b7U-Nf-Jcu" firstAttribute="leading" secondItem="GFL-gG-AWV" secondAttribute="leading" id="9dr-Pv-u07"/>
                             <constraint firstItem="rE0-Ad-Tha" firstAttribute="centerY" secondItem="rO3-KG-lzr" secondAttribute="centerY" id="9up-Lc-oZi"/>
                             <constraint firstItem="cWI-qA-Iaf" firstAttribute="centerY" secondItem="GFL-gG-AWV" secondAttribute="centerY" id="BpQ-Xc-hto"/>
+                            <constraint firstItem="VgJ-m7-dGA" firstAttribute="top" secondItem="j5F-H0-RQj" secondAttribute="bottom" constant="8" id="DXG-C7-Hka"/>
                             <constraint firstItem="4i0-EG-tBb" firstAttribute="leading" secondItem="zcO-mn-ynl" secondAttribute="leading" id="EHU-6s-saT"/>
                             <constraint firstItem="zcO-mn-ynl" firstAttribute="top" secondItem="Xjz-CT-hNK" secondAttribute="bottom" constant="18" id="FW3-XA-dMM"/>
                             <constraint firstItem="7wL-yh-gqK" firstAttribute="centerY" secondItem="rE0-Ad-Tha" secondAttribute="centerY" id="FYZ-Ux-Ewe"/>
@@ -950,9 +942,7 @@
                             <constraint firstItem="aJp-5q-KdW" firstAttribute="centerY" secondItem="Fmq-qc-cSQ" secondAttribute="centerY" id="SYv-Kn-LMO"/>
                             <constraint firstItem="b7U-Nf-Jcu" firstAttribute="top" secondItem="GFL-gG-AWV" secondAttribute="bottom" constant="21" id="SwX-5Q-3VQ"/>
                             <constraint firstItem="vth-ie-rIT" firstAttribute="leading" secondItem="2mN-BQ-0Ss" secondAttribute="trailing" constant="8" id="V5Z-Pf-DMN"/>
-                            <constraint firstItem="Qgh-Ud-Kj6" firstAttribute="top" secondItem="Zbd-52-7VE" secondAttribute="bottom" constant="15" id="WP6-21-Cm7"/>
                             <constraint firstItem="A2K-qV-tHO" firstAttribute="top" secondItem="Fmq-qc-cSQ" secondAttribute="bottom" constant="19" id="XHy-mk-5YW"/>
-                            <constraint firstItem="Pam-4n-rEy" firstAttribute="centerY" secondItem="Zbd-52-7VE" secondAttribute="centerY" id="XPJ-cR-F92"/>
                             <constraint firstItem="3dS-dg-l8u" firstAttribute="leading" secondItem="tdG-Mg-i4Q" secondAttribute="leading" constant="16" id="YAI-un-BcO"/>
                             <constraint firstItem="GFL-gG-AWV" firstAttribute="leading" secondItem="JfX-gp-ZNd" secondAttribute="leading" id="ZW3-Ei-aoF"/>
                             <constraint firstItem="jzE-Eo-NYr" firstAttribute="centerY" secondItem="JfX-gp-ZNd" secondAttribute="centerY" id="ZhL-hZ-lLc"/>
@@ -960,18 +950,17 @@
                             <constraint firstItem="KEw-Y2-E3X" firstAttribute="leading" secondItem="Qgh-Ud-Kj6" secondAttribute="trailing" constant="8" id="aBW-7d-eoO"/>
                             <constraint firstItem="j5F-H0-RQj" firstAttribute="leading" secondItem="b7U-Nf-Jcu" secondAttribute="trailing" constant="8" symbolic="YES" id="amv-Yl-Vkb"/>
                             <constraint firstItem="Qgh-Ud-Kj6" firstAttribute="leading" secondItem="b7U-Nf-Jcu" secondAttribute="leading" id="csA-vo-PSl"/>
+                            <constraint firstItem="KEw-Y2-E3X" firstAttribute="top" secondItem="VgJ-m7-dGA" secondAttribute="bottom" constant="8.6699999999999999" id="cvq-qL-2fY"/>
                             <constraint firstItem="QHj-jW-8a8" firstAttribute="leading" secondItem="A2K-qV-tHO" secondAttribute="trailing" constant="8" id="cxk-eg-iwE"/>
                             <constraint firstItem="Fmq-qc-cSQ" firstAttribute="top" secondItem="4i0-EG-tBb" secondAttribute="bottom" constant="18" id="eBO-zb-5et"/>
                             <constraint firstItem="2mN-BQ-0Ss" firstAttribute="top" secondItem="3dS-dg-l8u" secondAttribute="bottom" constant="14" id="gfa-Ky-Etv"/>
                             <constraint firstItem="KEw-Y2-E3X" firstAttribute="centerY" secondItem="Qgh-Ud-Kj6" secondAttribute="centerY" id="irq-b1-0Rt"/>
-                            <constraint firstItem="Zbd-52-7VE" firstAttribute="top" secondItem="b7U-Nf-Jcu" secondAttribute="bottom" constant="17" id="iw2-Sc-181"/>
                             <constraint firstItem="7wL-yh-gqK" firstAttribute="leading" secondItem="rE0-Ad-Tha" secondAttribute="trailing" constant="8" symbolic="YES" id="kU6-d1-UFF"/>
                             <constraint firstItem="aJp-5q-KdW" firstAttribute="leading" secondItem="Fmq-qc-cSQ" secondAttribute="trailing" constant="8" symbolic="YES" id="lMV-9b-8QZ"/>
                             <constraint firstItem="Yu5-rh-P1K" firstAttribute="top" secondItem="jF0-ct-nHi" secondAttribute="bottom" constant="14" id="lWw-xa-JI0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3dS-dg-l8u" secondAttribute="trailing" constant="8" id="mEj-aK-Fep"/>
                             <constraint firstItem="dj5-Ge-LTM" firstAttribute="centerY" secondItem="Yu5-rh-P1K" secondAttribute="centerY" id="ngD-mb-iiX"/>
                             <constraint firstItem="rE0-Ad-Tha" firstAttribute="leading" secondItem="rO3-KG-lzr" secondAttribute="trailing" constant="16" id="qYJ-En-C0k"/>
-                            <constraint firstItem="Pam-4n-rEy" firstAttribute="leading" secondItem="Zbd-52-7VE" secondAttribute="trailing" constant="8" id="r3b-ca-CAz"/>
                             <constraint firstItem="zcO-mn-ynl" firstAttribute="leading" secondItem="GFL-gG-AWV" secondAttribute="leading" id="rxk-ku-T7K"/>
                             <constraint firstItem="rO3-KG-lzr" firstAttribute="centerY" secondItem="zcO-mn-ynl" secondAttribute="centerY" id="syv-4W-dvm"/>
                             <constraint firstItem="Lpy-T3-rtJ" firstAttribute="centerY" secondItem="Xjz-CT-hNK" secondAttribute="centerY" id="tZ7-DT-BgB"/>
@@ -996,6 +985,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="dj5-Ge-LTM" id="x73-Dq-bBa"/>
+                        <outlet property="addLocationButton" destination="VgJ-m7-dGA" id="12Q-jc-3Qq"/>
                         <outlet property="addPhotoButton" destination="jF0-ct-nHi" id="93P-P9-BQG"/>
                         <outlet property="costTextField" destination="vth-ie-rIT" id="eu4-oG-tJh"/>
                         <outlet property="crvFluidOuncesLabel" destination="A2K-qV-tHO" id="Gfb-DI-UmS"/>
@@ -1013,8 +1003,6 @@
                         <outlet property="taxableSegmentedControl" destination="rO3-KG-lzr" id="d4d-HO-3GK"/>
                         <outlet property="totalCostLabel" destination="3dS-dg-l8u" id="FA5-Tl-puZ"/>
                         <outlet property="unitOfMeasureTextField" destination="cWI-qA-Iaf" id="Q8X-3R-pZc"/>
-                        <outlet property="webLinkButton" destination="Zbd-52-7VE" id="jA9-WR-IV2"/>
-                        <outlet property="webLinkTextField" destination="Pam-4n-rEy" id="qo0-0e-9Bn"/>
                         <segue destination="P6A-1A-3nA" kind="show" identifier="fullResSegue" id="xdI-V1-QBg"/>
                     </connections>
                 </viewController>

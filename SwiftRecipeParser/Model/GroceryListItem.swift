@@ -25,8 +25,13 @@ struct GroceryListItemStruct: CustomStringConvertible {
     var notes: String
     var imagePath: String
     var produceCode: Int32
-    var webLink: String
-    
+    var locationStoreName: String
+    var locationAisle: String
+    var locationDetails: String
+    var locationMonth: Int
+    var locationDay: Int
+    var locationYear: Int
+
     public init(name: String,
                 quantity: Float,
                 cost: Float,
@@ -40,7 +45,12 @@ struct GroceryListItemStruct: CustomStringConvertible {
                 notes: String,
                 imagePath: String,
                 produceCode: Int32,
-                webLink: String) {
+                locationStoreName: String,
+                locationAisle: String,
+                locationDetails: String,
+                locationMonth: Int,
+                locationDay: Int,
+                locationYear: Int) {
         self.name = name
         self.quantity = quantity
         self.cost = cost
@@ -54,7 +64,12 @@ struct GroceryListItemStruct: CustomStringConvertible {
         self.notes = notes
         self.imagePath = imagePath
         self.produceCode = produceCode
-        self.webLink = webLink
+        self.locationStoreName = locationStoreName
+        self.locationAisle = locationAisle
+        self.locationDetails = locationDetails
+        self.locationMonth = locationMonth
+        self.locationDay = locationDay
+        self.locationYear = locationYear
     }
     
     var description: String {
@@ -85,8 +100,23 @@ struct GroceryListItemStruct: CustomStringConvertible {
         if !imagePath.isEmpty {
             returnValue += "\nimagePath = \(imagePath)"
         }
-        if !webLink.isEmpty {
-            returnValue += "\nwebLink = \(webLink)"
+        if !locationStoreName.isEmpty {
+            returnValue += "\nlocationStoreName = \(locationStoreName)"
+        }
+        if !locationAisle.isEmpty {
+            returnValue += "\nlocationAisle = \(locationAisle)"
+        }
+        if !locationDetails.isEmpty {
+            returnValue += "\nlocationDetails = \(locationDetails)"
+        }
+        if locationMonth != 0 {
+            returnValue += "\nlocationMonth = \(locationMonth)"
+        }
+        if locationDay != 0 {
+            returnValue += "\nlocationDay = \(locationDay)"
+        }
+        if locationYear != 0 {
+            returnValue += "\nlocationYear = \(locationYear)"
         }
 
         return returnValue
@@ -112,7 +142,7 @@ class GroceryListItem: NSManagedObject {
     @NSManaged var notes: String
     @NSManaged var listPosition: NSNumber
     @NSManaged var produceCode: NSNumber
-    @NSManaged var webLink: String
+    @NSManaged var location: Location?
     
     override var description: String {
         var returnValue:String
@@ -145,13 +175,30 @@ class GroceryListItem: NSManagedObject {
         if !notes.isEmpty {
             returnValue += "\nnotes = \(notes)"
         }
-        if !webLink.isEmpty {
-            returnValue += "\nwebLink = \(webLink)"
-        }
         if produceCode.int32Value > 0 {
             returnValue += "\nproduceCode = \(produceCode.int32Value)"
         }
-
+        if let descLocation = location {
+            if !descLocation.storeName!.isEmpty {
+                returnValue += "\nstoreName = \(descLocation.storeName ?? "None")"
+            }
+            if !descLocation.aisle!.isEmpty {
+                returnValue += "\naisle = \(descLocation.aisle ?? "None")"
+            }
+            if !descLocation.details!.isEmpty {
+                returnValue += "\ndetails = \(descLocation.details ?? "None")"
+            }
+            if descLocation.month != 0 {
+                returnValue += "\nmonth = \(descLocation.month ?? 0)"
+            }
+            if descLocation.day != 0 {
+                returnValue += "\nday = \(descLocation.day ?? 0)"
+            }
+            if descLocation.year != 0 {
+                returnValue += "\nyear = \(descLocation.year ?? 0)"
+            }
+        }
+        
         returnValue += "\nlistPosition = \(listPosition)"
         
         return returnValue
@@ -471,9 +518,6 @@ class GroceryListItem: NSManagedObject {
         if produceCode != 0 {
             returnValue += "\tproduceCode:\t" + String(produceCode)
         }
-        if !webLink.isEmpty {
-            returnValue += "\twebLink:\t" + webLink.replacingOccurrences(of: ":", with: "%3A")
-        }
         
 /*
  
@@ -518,7 +562,12 @@ FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
                                                           notes: "",
                                                           imagePath: "",
                                                           produceCode: 0,
-                                                          webLink: "")
+                                                          locationStoreName: "",
+                                                          locationAisle: "",
+                                                          locationDetails: "",
+                                                          locationMonth: -1,
+                                                          locationDay: 0,
+                                                          locationYear: 0)
         
         while i < tokens.count {
             
@@ -564,9 +613,30 @@ FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
                 case "produceCode:":
                     groceryListItemStruct.produceCode = Int32(tokens[i+1])!
                 break
-                case "webLink:":
-                groceryListItemStruct.webLink = tokens[i+1].replacingOccurrences(of: "%3A", with: ":")
+                case "locAisle:":
+                    Logger.logDetails(msg:"Location Aisle - " + tokens[i + 1])
+                    groceryListItemStruct.locationAisle = tokens[i+1]
                 break
+                case "locDetails:":
+                    Logger.logDetails(msg:"Location Details - " + tokens[i + 1])
+                    groceryListItemStruct.locationDetails = tokens[i+1]
+                break
+                case "locMonth:":
+// ANDROID MONTHS ARE 0..11, SO CONVERSION FROM iOS MONTHS MAY BE NECESSARY?
+                    Logger.logDetails(msg:"Location Month - " + tokens[i + 1])
+                    groceryListItemStruct.locationMonth = Int(tokens[i+1])! + 1
+                break
+                case "locDay:":
+                    Logger.logDetails(msg:"Location Day - " + tokens[i + 1])
+                    groceryListItemStruct.locationDay = Int(tokens[i+1])!
+                break
+                case "locYear:":
+                    Logger.logDetails(msg:"Location Year - " + tokens[i + 1])
+                    groceryListItemStruct.locationYear = Int(tokens[i+1])!
+                break
+//                case "webLink:":
+//                groceryListItemStruct.webLink = tokens[i+1].replacingOccurrences(of: "%3A", with: ":")
+//                break
                 default:
                 break
             }
@@ -614,10 +684,6 @@ FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
             groceryListItem.update(imagePath: groceryListItemStruct.imagePath)
         }
 
-        if !groceryListItem.webLink.isEmpty {
-            groceryListItem.update(webLink: groceryListItemStruct.webLink)
-        }
-        
         groceryListItem.calculateTotalCost()
         
         DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
@@ -625,6 +691,28 @@ FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
         print(groceryListItem)
         
         return groceryListItem
+    }
+
+    func groceryListLocationFromStruct(groceryListItem: GroceryListItem,
+                                       groceryListItemStruct: GroceryListItemStruct) {
+        if (!groceryListItemStruct.locationStoreName.isEmpty ||
+            !groceryListItemStruct.locationAisle.isEmpty ||
+            !groceryListItemStruct.locationDetails.isEmpty ||
+            groceryListItemStruct.locationMonth != -1 ||
+            groceryListItemStruct.locationDay != 0 ||
+            groceryListItemStruct.locationYear != 0 ) {
+            var locationMonth = groceryListItemStruct.locationMonth
+            if (locationMonth == -1) {
+                locationMonth = 0
+            }
+//            groceryListItem.setLocation(realm,
+//                                        groceryListItemStruct.locationStoreName,
+//                                        groceryListItemStruct.locationAisle,
+//                                        groceryListItemStruct.locationDetails,
+//                                        locationMonth,
+//                                        groceryListItemStruct.locationDay,
+//                                        groceryListItemStruct.locationYear)
+        }
     }
 
     func calculateTotalCost() {
@@ -749,10 +837,6 @@ FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
         self.notes = notes
     }
 
-    fileprivate func update(webLink: String) {
-        self.webLink = webLink
-    }
-    
     fileprivate func update(imagePath: String) {
         self.imagePath = imagePath
     }
