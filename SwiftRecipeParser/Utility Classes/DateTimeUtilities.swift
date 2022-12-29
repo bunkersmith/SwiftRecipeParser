@@ -56,4 +56,10 @@ class DateTimeUtilities {
         let nowDate = Date()
         return nowDate.timeIntervalSinceReferenceDate
     }
+    
+    class func dateToMonthDayYear(date: Date) -> DateComponents {
+        let calendar = Calendar.autoupdatingCurrent
+        
+        return calendar.dateComponents([.year,.month,.day], from: date)
+    }
 }

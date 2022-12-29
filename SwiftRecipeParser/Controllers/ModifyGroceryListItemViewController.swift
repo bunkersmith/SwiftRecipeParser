@@ -79,15 +79,15 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         configureUI()
     }
     
-    @IBAction func addLocationButtonPressed(_ sender: Any) {
-        Location.createOrReturn(databaseInterface: databaseInterface,
-                                storeName: "Murphy Canyon Vons",
-                                aisle: "Paper",
-                                details: "Far back right corner",
-                                month: 12,
-                                day: 27,
-                                year: 2022)
-    }
+//    @IBAction func addLocationButtonPressed(_ sender: Any) {
+//        Location.createOrReturn(databaseInterface: databaseInterface,
+//                                storeName: "Murphy Canyon Vons",
+//                                aisle: "Paper",
+//                                details: "Far back right corner",
+//                                month: 12,
+//                                day: 27,
+//                                year: 2022)
+//    }
     
     func configureUI() {
         titleViewLabel.text = groceryListItem.name
@@ -240,8 +240,19 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
             }
 
             groceryItemPhotoViewController.groceryListItem = groceryListItem
+            
+            return
         }
         
+        if segue.identifier == "addLocationSegue" {
+            guard let addLocationViewController = segue.destination as? AddLocationViewController else {
+                return
+            }
+
+            addLocationViewController.groceryListItem = groceryListItem
+            
+            return
+        }
     }
 
     func hasIntChanged(textField: UITextField, textFieldName: String, oldValue: Int16) -> Bool {
@@ -543,7 +554,6 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         if groceryListItem.imagePath != nil {
             performSegue(withIdentifier: "fullResSegue", sender: self)
         }
-        
     }
 
     // MARK: - UITextFieldDelegate

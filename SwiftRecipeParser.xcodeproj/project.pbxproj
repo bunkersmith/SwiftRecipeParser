@@ -30,6 +30,7 @@
 		672D563F278FF64D00F6EA05 /* ShoppingTrip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672D563D278FF64D00F6EA05 /* ShoppingTrip+CoreDataClass.swift */; };
 		672D5640278FF64D00F6EA05 /* ShoppingTrip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672D563E278FF64D00F6EA05 /* ShoppingTrip+CoreDataProperties.swift */; };
 		672D5642279004B100F6EA05 /* ShoppingTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672D5641279004B100F6EA05 /* ShoppingTripViewController.swift */; };
+		672FDE05295D6DA900B4D095 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672FDE04295D6DA900B4D095 /* AddLocationViewController.swift */; };
 		6730A4361CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730A4351CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift */; };
 		6730A4381CD2C969003D4861 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730A4371CD2C969003D4861 /* IngredientTableViewCell.swift */; };
 		673302711C077B650074DD8F /* ThanksgivingRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673302701C077B650074DD8F /* ThanksgivingRecipesViewController.swift */; };
@@ -133,6 +134,7 @@
 		672D563D278FF64D00F6EA05 /* ShoppingTrip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingTrip+CoreDataClass.swift"; sourceTree = "<group>"; };
 		672D563E278FF64D00F6EA05 /* ShoppingTrip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingTrip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		672D5641279004B100F6EA05 /* ShoppingTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTripViewController.swift; sourceTree = "<group>"; };
+		672FDE04295D6DA900B4D095 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		673033FC262196DC007C0FE6 /* SwiftRecipeParser1.24.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.24.xcdatamodel; sourceTree = "<group>"; };
 		6730A4351CD2C3D8003D4861 /* MasterRecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterRecipeTableViewCell.swift; sourceTree = "<group>"; };
 		6730A4371CD2C969003D4861 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		67917D7327E486D600EFC122 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		67917D7527E486E300EFC122 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		6791A2081EEB8DFC007CAE2D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6795699B295D604000E553CA /* SwiftRecipeParser1.35.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.35.xcdatamodel; sourceTree = "<group>"; };
 		679C147B1E4FD4FF0032ED11 /* SwiftRecipeParser1.10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.10.xcdatamodel; sourceTree = "<group>"; };
 		679C147C1E513CE40032ED11 /* SwiftRecipeParser1.11.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftRecipeParser1.11.xcdatamodel; sourceTree = "<group>"; };
 		679E9D58262981E000BE5C40 /* TextMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageViewController.swift; sourceTree = "<group>"; };
@@ -355,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				675A2A3D1B1FD34800C6A652 /* AddGroceryListItemViewController.swift */,
+				672FDE04295D6DA900B4D095 /* AddLocationViewController.swift */,
 				6710451E1EFCF7230013EF27 /* EmailLogViewController.swift */,
 				67722799292F657500001B2C /* EmailGroceryListItemsViewController.swift */,
 				6753214E19A6AC9000B3BE74 /* EmailRecipeViewController.swift */,
@@ -608,6 +612,7 @@
 				67B630BD25B03C9200CDD4B2 /* RecipeItem+CoreDataClass.swift in Sources */,
 				672BF40B1F49404F0005A0BB /* ModifyGroceryListItemViewController+PhotoActions.swift in Sources */,
 				6780F8642650DFDB00CA950E /* CheckBox.swift in Sources */,
+				672FDE05295D6DA900B4D095 /* AddLocationViewController.swift in Sources */,
 				67C06A47262048BE00D0DDEA /* GroceryListTableViewCell.swift in Sources */,
 				672D563F278FF64D00F6EA05 /* ShoppingTrip+CoreDataClass.swift in Sources */,
 				67B5AACA27200D7600505DB3 /* CKModel.swift in Sources */,
@@ -876,6 +881,7 @@
 		679ED45319839EDE00E22DDB /* SwiftRecipeParser.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6795699B295D604000E553CA /* SwiftRecipeParser1.35.xcdatamodel */,
 				67818A84295C0EFA0082318A /* SwiftRecipeParser1.34.xcdatamodel */,
 				6701C389291632A8007A6C1B /* SwiftRecipeParser1.33.xcdatamodel */,
 				67A4527527C6306E00301538 /* SwiftRecipeParser1.32.xcdatamodel */,
@@ -907,7 +913,7 @@
 				671FC6671984BC4400D95647 /* SwiftRecipeParser1.1.xcdatamodel */,
 				679ED45419839EDE00E22DDB /* SwiftRecipeParser.xcdatamodel */,
 			);
-			currentVersion = 67818A84295C0EFA0082318A /* SwiftRecipeParser1.34.xcdatamodel */;
+			currentVersion = 6795699B295D604000E553CA /* SwiftRecipeParser1.35.xcdatamodel */;
 			path = SwiftRecipeParser.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

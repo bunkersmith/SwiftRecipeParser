@@ -686,15 +686,22 @@ FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
 
         groceryListItem.calculateTotalCost()
         
-        DatabaseInterface(concurrencyType: .mainQueueConcurrencyType).saveContext()
+        let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
+        
+        groceryListLocationFromStruct(databaseInterface: databaseInterface,
+                                      groceryListItem: groceryListItem,
+                                      groceryListItemStruct: groceryListItemStruct)
+        
+        databaseInterface.saveContext()
         
         print(groceryListItem)
         
         return groceryListItem
     }
 
-    func groceryListLocationFromStruct(groceryListItem: GroceryListItem,
-                                       groceryListItemStruct: GroceryListItemStruct) {
+    class func groceryListLocationFromStruct(databaseInterface: DatabaseInterface,
+                                             groceryListItem: GroceryListItem,
+                                             groceryListItemStruct: GroceryListItemStruct) {
         if (!groceryListItemStruct.locationStoreName.isEmpty ||
             !groceryListItemStruct.locationAisle.isEmpty ||
             !groceryListItemStruct.locationDetails.isEmpty ||
@@ -703,16 +710,34 @@ FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
             groceryListItemStruct.locationYear != 0 ) {
             var locationMonth = groceryListItemStruct.locationMonth
             if (locationMonth == -1) {
-                locationMonth = 0
+                locationMonth = 1
             }
-//            groceryListItem.setLocation(realm,
-//                                        groceryListItemStruct.locationStoreName,
-//                                        groceryListItemStruct.locationAisle,
-//                                        groceryListItemStruct.locationDetails,
-//                                        locationMonth,
-//                                        groceryListItemStruct.locationDay,
-//                                        groceryListItemStruct.locationYear)
+            groceryListItem.setLocation(databaseInterface: databaseInterface,
+                                        storeName: groceryListItemStruct.locationStoreName,
+                                        aisle: groceryListItemStruct.locationAisle,
+                                        details: groceryListItemStruct.locationDetails,
+                                        month: locationMonth,
+                                        day: groceryListItemStruct.locationDay,
+                                        year: groceryListItemStruct.locationYear)
         }
+    }
+
+    func setLocation(databaseInterface: DatabaseInterface,
+                    storeName: String,
+                    aisle: String,
+                    details: String,
+                    month: Int,
+                    day: Int,
+                    year: Int) {
+        let location = Location.createOrReturn(databaseInterface: databaseInterface,
+                                               storeName: storeName,
+                                               aisle: aisle,
+                                               details: details,
+                                               month: month,
+                                               day: day,
+                                               year: year)
+        self.location = location
+        databaseInterface.saveContext()
     }
 
     func calculateTotalCost() {
