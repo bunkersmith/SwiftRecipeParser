@@ -1075,22 +1075,11 @@
                                     <action selector="datePickerValueChanged:" destination="TKS-2p-n6O" eventType="valueChanged" id="14t-N3-qIW"/>
                                 </connections>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VP-ED-18c">
-                                <rect key="frame" x="172.66666666666666" y="378" width="45" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="saveButtonPressed:" destination="TKS-2p-n6O" eventType="touchUpInside" id="GeA-o5-VzN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5VP-ED-18c" firstAttribute="top" secondItem="yqw-WK-SMM" secondAttribute="bottom" constant="74" id="1k1-L0-KbU"/>
                             <constraint firstItem="5mD-PG-oJ8" firstAttribute="leading" secondItem="jmo-Sd-bcp" secondAttribute="trailing" constant="8" symbolic="YES" id="3Wl-H5-Ag3"/>
                             <constraint firstItem="yqw-WK-SMM" firstAttribute="centerY" secondItem="cne-c7-i5p" secondAttribute="centerY" id="ACH-vY-xt2"/>
-                            <constraint firstItem="5VP-ED-18c" firstAttribute="centerX" secondItem="goD-gl-iKy" secondAttribute="centerX" id="IYO-V0-R3h"/>
                             <constraint firstItem="cne-c7-i5p" firstAttribute="top" secondItem="jmo-Sd-bcp" secondAttribute="bottom" constant="35" id="JQG-m8-cWh"/>
                             <constraint firstItem="3aL-QK-woF" firstAttribute="leading" secondItem="goD-gl-iKy" secondAttribute="leadingMargin" id="KY4-lu-GF2"/>
                             <constraint firstItem="3zY-Ja-05S" firstAttribute="top" secondItem="uPX-86-4VG" secondAttribute="bottom" constant="24" id="M7x-T2-hVp"/>
@@ -1115,6 +1104,11 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="U0m-79-Lcf">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="TKS-2p-n6O" id="K8e-qF-x3j"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="5A7-oE-zX3">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="TKS-2p-n6O" id="ILO-rc-CfH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
