@@ -611,6 +611,10 @@ class GroceryListItem: NSManagedObject {
                 case "produceCode:":
                     groceryListItemStruct.produceCode = Int32(tokens[i+1])!
                 break
+                case "locStoreName:":
+                    Logger.logDetails(msg:"Location Store Name - " + tokens[i + 1])
+                    groceryListItemStruct.locationStoreName = tokens[i+1]
+                break
                 case "locAisle:":
                     Logger.logDetails(msg:"Location Aisle - " + tokens[i + 1])
                     groceryListItemStruct.locationAisle = tokens[i+1]

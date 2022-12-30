@@ -20,6 +20,7 @@ class AddLocationViewController: UIViewController {
     var initialMonth = -1
     var initialDay = -1
     var initialYear = -1
+    var initialDate = Date(timeIntervalSince1970: 0)
     
     var titleViewLabel = UILabel()
     
@@ -61,6 +62,7 @@ class AddLocationViewController: UIViewController {
             datePicker.date = Calendar.current.date(from: DateComponents(year: location.year!.intValue,
                                                                          month: location.month!.intValue,
                                                                          day: location.day!.intValue))!
+            initialDate = datePicker.date
         }
 
         assignInitialValues()
@@ -115,8 +117,11 @@ class AddLocationViewController: UIViewController {
                     Logger.logDetails(msg: "self error")
                     return
                 }
-                strongSelf.saveData()
-                strongSelf.navigationController?.popViewController(animated: true)
+                if strongSelf.saveData() {
+                    strongSelf.navigationController?.popViewController(animated: true)
+                } else {
+                    strongSelf.showDateError()
+                }
                 return
             }, noButtonHandler: { [weak self] alertAction in
                 guard let strongSelf = self else {
@@ -131,13 +136,21 @@ class AddLocationViewController: UIViewController {
         }
     }
 
-    func saveData() {
-        let store = storeTextField.text!
-//        Logger.logDetails(msg: "Store: \(store)")
-        let aisle = aisleTextField.text!
-//        Logger.logDetails(msg: "Aisle: \(aisle)")
-        let details = detailsTextField.text!
-//        Logger.logDetails(msg: "Details: \(details)")
+    func showDateError() {
+        AlertUtilities.showOkButtonAlert(self, title: "Date Error", message: "Date cannot be earlier", buttonHandler: nil)
+    }
+    
+    func saveData() -> Bool {
+        if datePicker.date < initialDate {
+            return false
+        }
+        
+        let store = storeTextField.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+//        Logger.logDetails(msg: "Store: \"\(store)\"")
+        let aisle = aisleTextField.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+//        Logger.logDetails(msg: "Aisle: \"\(aisle)\"")
+        let details = detailsTextField.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+//        Logger.logDetails(msg: "Details: \"\(details)\"")
         let components = DateTimeUtilities.dateToMonthDayYear(date: datePicker.date)
         let year = components.year!
         let month = components.month!
@@ -150,11 +163,15 @@ class AddLocationViewController: UIViewController {
                                     month: month,
                                     day: day,
                                     year: year)
+        return true
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
         if hasDataChanged() {
-            saveData()
+            if !saveData() {
+                showDateError()
+                return
+            }
         }
         navigationController?.popViewController(animated: true)
     }
