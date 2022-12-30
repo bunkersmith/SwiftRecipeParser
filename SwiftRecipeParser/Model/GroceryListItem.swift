@@ -518,18 +518,16 @@ class GroceryListItem: NSManagedObject {
         if produceCode != 0 {
             returnValue += "\tproduceCode:\t" + String(produceCode)
         }
-        
-/*
- 
-FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
- 
-        returnValue += "\tlocStoreName:\tMurphy Canyon Vons"
-        returnValue += "\tlocAisle:\tCheese and Lunch Meat"
-        returnValue += "\tlocDetails:\tRight side near back"
-        returnValue += "\tlocMonth:\t11"
-        returnValue += "\tlocDay:\t11"
-        returnValue += "\tlocYear:\t2022"
-*/
+
+        if location != nil {
+            returnValue += "\tlocStoreName:\t\(location!.storeName!)"
+            returnValue += "\tlocAisle:\t\(location!.aisle!)"
+            returnValue += "\tlocDetails:\t\(location!.details!)"
+// ANDROID MONTHS ARE 0..11. THE ANDROID APP TAKES CARE OF CONVERTING THEM.
+            returnValue += "\tlocMonth:\t\(location!.month!)"
+            returnValue += "\tlocDay:\t\(location!.day!)"
+            returnValue += "\tlocYear:\t\(location!.year!)"
+        }
         
         returnValue += "\n"
         return returnValue
@@ -622,9 +620,9 @@ FOR DEBUGGING UNTIL TEXTING OF Location DATA IS IMPLEMENTED
                     groceryListItemStruct.locationDetails = tokens[i+1]
                 break
                 case "locMonth:":
-// ANDROID MONTHS ARE 0..11, SO CONVERSION FROM iOS MONTHS MAY BE NECESSARY?
+// ANDROID MONTHS ARE 0..11. THE ANDROID APP TAKES CARE OF CONVERTING THEM.
                     Logger.logDetails(msg:"Location Month - " + tokens[i + 1])
-                    groceryListItemStruct.locationMonth = Int(tokens[i+1])! + 1
+                    groceryListItemStruct.locationMonth = Int(tokens[i+1])!
                 break
                 case "locDay:":
                     Logger.logDetails(msg:"Location Day - " + tokens[i + 1])
