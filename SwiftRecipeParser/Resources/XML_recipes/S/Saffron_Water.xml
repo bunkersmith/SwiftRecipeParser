@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Saffron Water</name>
+    <indexCharacter>S</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Grind saffron threads using a mortar and pestle.
+
+NOTE: Never use saffron threads in a cooking recipe.  Add a small amount of salt if you have trouble grinding the saffron threads.
+
+2. Dissolve 1 t of ground saffron in 1\2 cup of hot water for at least 5 minutes before using.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>saffron threads</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>hot water	</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>salt or sugar</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

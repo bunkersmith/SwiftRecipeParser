@@ -4,41 +4,25 @@
     <indexCharacter>P</indexCharacter>
     <notes></notes>
     <servings>0</servings>
-    <instructions>1. Chop the onion
-2. Pour enough oil into a large, flat pan to sauté the onion pieces
-3. Remove the skin from the chicken pieces
-4. Wash the chicken pieces
-5. Place the chicken pieces on top of the onion pieces, bone sides down
-6. Cover the pan and cook for about five minutes
-7. Sprinkle a little salt on the chicken 
-8. Sprinkle the chicken liberally with turmeric, cinnamon and Persian spice mix
-9. Turn the chicken pieces over
-10. Sprinkle the salt and spices on the bottom of the chicken
-11. Put the lid on the pan and cook for 30 minutes
-12. Wash the rice three times to get rid of extra starch
-13. Add enough water to cover the rice and cook for 10 minutes
-14. Soak barberry fruit in water for 15 minutes
-15. Once the rice is cooked, drain it with a colander
-16. Put a small amount of saffron into a small mug
-17. Add approximately 1/2 cup of boiling water
-18. Add 2-3 tablespoons of butter to the hot water
-19. Shake the colander to get extra water out of the rice
-20. Pour rice back into its cooking vessel
-21. Pour the saffron butter over the rice, saving 1/3 of it for the chicken and the barberry
-22. Steam the rice for 15 minutes
-23. After 30 minutes, turn the chicken pieces over and cook for another 15 minutes
-24. Drizzle half the leftover saffron butter on the chicken pieces, then put the lid back on the pan
-25. Fish barberry fruit from the top of the water into a colander, checking carefully for thorns or small stones
-26. Wash the barberry in the colander, still checking for impurities 
-27. Put two tablespoons of sugar into a small pan
-28. Add some boiling water to dissolve the sugar 
-29. Swish the pan around to dissolve the sugar
-30. Add the barberry and let it simmer for a couple of minutes (uncovered)
-31. Add the rest of the saffron butter to the barberry, then stir to mix it in
-32. Plate rice (she spread across the whole plate)
-33. Plate barberry as a small stripe across the middle of the plate
-34. Plate pistachios on one side of the barberry and chicken on the other
-35. Spread some of the cooking juices from the chicken on top of the chicken</instructions>
+    <instructions>1. Start preparing Persian Rice first, because of soaking time required
+2. Chop the onion
+3. Pour enough oil into a large, flat pan to sauté the onion pieces
+4. Remove the skin from the chicken pieces
+5. Wash the chicken pieces
+6. Place the chicken pieces on top of the onion pieces, bone sides down
+7. Cover the pan and cook for about five minutes
+8. Sprinkle a little salt on the chicken 
+9. Sprinkle the chicken liberally with turmeric, cinnamon and Persian spice mix
+10. Turn the chicken pieces over
+11. Sprinkle the salt and spices on the bottom of the chicken
+12. Put the lid on the pan and cook for 30 minutes
+13. Begin preparing the candied barberries
+14. After 30 minutes, turn the chicken pieces over and cook for another 15 minutes
+15. Drizzle some butter on the chicken pieces, then put the lid back on the pan
+16. Plate rice (she spread across the whole plate)
+17. Plate candied barberries as a small stripe across the middle of the plate
+18. Plate pistachios on one side of the barberry and chicken on the other
+19. Spread some of the cooking juices from the chicken on top of the chicken</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
@@ -49,31 +33,31 @@
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>oil</ingredientName>
+            <ingredientName>Oil</ingredientName>
             <processingInstructions> for frying onion</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>whole chicken</ingredientName>
+            <ingredientName>Whole Chicken</ingredientName>
             <processingInstructions> in pieces</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>salt</ingredientName>
+            <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>turmeric</ingredientName>
+            <ingredientName>Turmeric</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>cinnamon</ingredientName>
+            <ingredientName>Cinnamon</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -83,40 +67,22 @@
             <processingInstructions> see below</processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>1-1/2</quantity>
-            <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>basmati rice</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>4</quantity>
-            <unitOfMeasure>oz</unitOfMeasure>
-            <ingredientName>Barberry fruit</ingredientName>
-            <processingInstructions> get at Persian market</processingInstructions>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Persian Rice</ingredientName>
+            <processingInstructions> see separate recipe</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>pistachios</ingredientName>
-            <processingInstructions> shelled, get at Persian market</processingInstructions>
+            <ingredientName>Candied Barberries</ingredientName>
+            <processingInstructions> see separate recipe</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>saffron</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>2-1/2</quantity>
-            <unitOfMeasure>T</unitOfMeasure>
-            <ingredientName>butter</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>2</quantity>
-            <unitOfMeasure>T</unitOfMeasure>
-            <ingredientName>sugar</ingredientName>
-            <processingInstructions> not exact</processingInstructions>
+            <ingredientName>Shelled Pistachios</ingredientName>
+            <processingInstructions> get at persian market</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Persian Eggplant With Tomatoes and Potatoes (Yateamche Bademjon)</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Peel and cut eggplants into approximately 1” cubes. Put into a large bowl with 1 T salt and water to cover for 15-20 minutes.
+
+2.  Peel and cut potatoes into approximately ½” cubes. Put into a large bowl with water to cover.
+
+3. Dice onion. and press garlic cloves.
+
+4. Add oil to large pan and heat to medium.  Add onions and sauté.
+
+5. While the onion sauté dice tomatoes.
+
+6. After the onions have sauteed for 2-3 minutes add the garlic.
+
+7. After another 2-3 minutes add the potatoes, turmeric and black pepper.  Sauté for another 3 minutes.
+
+8. Drain and rinse eggplant, and add to the pan along with the salt.
+
+9. Dice and de-seed ½ of the serrano pepper and add to the pan.  Then add the tomato paste.  After 1-2 minutes add the tomatoes.
+
+10. Cover and reduce temperature to simmer for 10-15 minutes. Check for moisture.  If needed add 1/4-1/2 cup of water.  Simmer for another 10-15 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>eggplant</ingredientName>
+            <processingInstructions> peeled and cubed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>potatoes</ingredientName>
+            <processingInstructions> peeled and cubed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large onion</ingredientName>
+            <processingInstructions> diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic cloves</ingredientName>
+            <processingInstructions> pressed</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>tomatoes</ingredientName>
+            <processingInstructions> diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>serrano chili</ingredientName>
+            <processingInstructions> seeded and diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>3</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>salt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>black pepper</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>turmeric</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>tomato paste</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>

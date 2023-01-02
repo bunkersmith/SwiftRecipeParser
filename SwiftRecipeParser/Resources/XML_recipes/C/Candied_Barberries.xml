@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Candied Barberries</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Soak the barberry fruit in water for 15 minutes
+2. Fish the barberry fruit from the top of the water into a colander, checking carefully for thorns or small stones
+3. Wash the barberry in the colander, still checking for impurities 
+4. Put two tablespoons of sugar into a small pan
+5. Add some boiling water to the pan
+6. Swish the water around in the pan to dissolve the sugar
+7. Add the barberry fruit to the pan and let it simmer for a couple of minutes (uncovered)
+8. Add some saffron butter to the pan, then stir to mix it in</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>oz</unitOfMeasure>
+            <ingredientName>Barberry Fruit</ingredientName>
+            <processingInstructions> get at persian market</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Sugar</ingredientName>
+            <processingInstructions> not exact</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Boiling Water</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>Saffron Butter</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
