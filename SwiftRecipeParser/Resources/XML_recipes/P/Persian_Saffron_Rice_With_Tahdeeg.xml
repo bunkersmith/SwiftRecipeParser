@@ -37,7 +37,7 @@
         <ingredient>
             <quantity>6</quantity>
             <unitOfMeasure>T</unitOfMeasure>
-            <ingredientName>butter (divided)</ingredientName>
+            <ingredientName>butter, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -49,7 +49,7 @@
         <ingredient>
             <quantity>1/2</quantity>
             <unitOfMeasure>c</unitOfMeasure>
-            <ingredientName>saffron water (see separate recipe)</ingredientName>
+            <ingredientName>saffron water, see separate recipe</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -61,7 +61,7 @@
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Candied Barberries</ingredientName>
+            <ingredientName>Candied Barberries, see separate recipe</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>
