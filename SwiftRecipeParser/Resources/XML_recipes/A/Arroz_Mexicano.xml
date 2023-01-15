@@ -4,56 +4,44 @@
     <indexCharacter>A</indexCharacter>
     <notes></notes>
     <servings>8</servings>
-    <instructions>	1.	Heat oil in a skillet or saute pan over medium-high heat. Add rice and cook, stirring occasionally for 3 or 4 minutes, until lightly golden brown. Reduce heat to medium and add the onion, potato, carrot, and garlic. Season with taco seasoning and 1/2 teaspoon salt. Cook and stir for about 2 minutes. Add the tomato sauce; cook and stir for a minute or two and then slowly stir in the chicken broth. 
-	2.	Return heat to medium-high and bring to a boil, then reduce heat to low, place a lid on the skillet and simmer for 25 minutes. Remove from heat and allow to sit for 5 minutes, covered. Remove cover, fluff with a fork, garnish with cilantro (optional) and serve. 
-https://www.fromvalerieskitchen.com/restaurant-style-mexican-rice/</instructions>
+    <instructions>1. Heat oil in a large pan over medium-high heat. Add rice and cook, stirring occasionally for 3 or 4 minutes, until lightly golden brown. Reduce heat to medium. Add the onion, potato, garlic and salt. Cook and stir for about 2 minutes. Add the Goya sofrita; cook and stir for a minute or two and then slowly stir in the chicken broth.
+
+2. Increase heat to medium-high and bring to a boil, then reduce heat to low, place a lid on the pan and simmer for 25 minutes. Remove from heat and allow to sit for 5 minutes, covered. Remove cover, fluff with a fork, garnish with cilantro (optional) and serve.</instructions>
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
             <unitOfMeasure>tb</unitOfMeasure>
-            <ingredientName>vegetable oil</ingredientName>
+            <ingredientName>Vegetable Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
             <unitOfMeasure>cups</unitOfMeasure>
-            <ingredientName>long grain white rice</ingredientName>
+            <ingredientName>Long Grain White Rice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
             <unitOfMeasure>cup</unitOfMeasure>
-            <ingredientName>diced onion</ingredientName>
+            <ingredientName>Diced Onion</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>diced carrot (approximately 1/2 cup)</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>1</quantity>
-            <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Yukon Gold potato diced (approximately 1 cup)</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Yukon Gold Potato</ingredientName>
+            <processingInstructions> Diced (Approximately 1 Cup)</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>minced garlic</ingredientName>
-            <processingInstructions></processingInstructions>
-        </ingredient>
-        <ingredient>
-            <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>Taco Seasoning Mix</ingredientName>
+            <ingredientName>Minced Garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
             <unitOfMeasure>tsp</unitOfMeasure>
-            <ingredientName>salt</ingredientName>
+            <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -65,14 +53,14 @@ https://www.fromvalerieskitchen.com/restaurant-style-mexican-rice/</instructions
         <ingredient>
             <quantity>3</quantity>
             <unitOfMeasure>cups</unitOfMeasure>
-            <ingredientName>low sodium chicken broth</ingredientName>
+            <ingredientName>Low Sodium Chicken Broth</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>-</quantity>
+            <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>cilantro for garnish optional</ingredientName>
-            <processingInstructions></processingInstructions>
+            <ingredientName>Cilantro For Garnish</ingredientName>
+            <processingInstructions> Optional</processingInstructions>
         </ingredient>
     </ingredients>
 </recipe>
