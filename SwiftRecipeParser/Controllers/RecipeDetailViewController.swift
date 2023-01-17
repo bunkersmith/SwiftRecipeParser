@@ -181,6 +181,10 @@ class RecipeDetailViewController: TextMessageViewController, UITableViewDataSour
         if #available(iOS 11.0, *) {
             vc.excludedActivityTypes?.append(UIActivity.ActivityType.markupAsPDF)
         }
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            vc.popoverPresentationController?.sourceView = instructionsTextView
+            vc.modalPresentationStyle = .pageSheet
+        }
         present(vc, animated: true)
     }
     
