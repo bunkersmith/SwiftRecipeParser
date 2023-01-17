@@ -208,6 +208,33 @@ extension Recipe {
         return returnValue
     }
     
+    func stringForPrinting() -> NSAttributedString {
+        let titleAttrs = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
+                          NSAttributedString.Key.foregroundColor: UIColor.black]
+        
+        let headerAttrs = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 13),
+                           NSAttributedString.Key.foregroundColor: UIColor.black]
+        
+        let textAttrs = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12),
+                         NSAttributedString.Key.foregroundColor: UIColor.black]
+        
+        let returnValue = NSMutableAttributedString(string: title.name + "\n", attributes: titleAttrs)
+        
+        returnValue.append(NSAttributedString(string: "\nIngredients:\n\n", attributes: headerAttrs))
+        
+        for ingredientAny in containsIngredients {
+            if let ingredient = ingredientAny as? Ingredient {
+                returnValue.append(NSAttributedString(string: ingredient.stringForPrinting(), attributes: textAttrs))
+            }
+        }
+        
+        returnValue.append(NSAttributedString(string: "\nInstructions:\n\n", attributes: headerAttrs))
+
+        returnValue.append(NSAttributedString(string: instructions, attributes: textAttrs))
+
+        return returnValue
+    }
+    
     class func outputAllRecipesToFiles(inXMLFormat:Bool)
     {
         let databaseInterface = DatabaseInterface(concurrencyType: .privateQueueConcurrencyType)

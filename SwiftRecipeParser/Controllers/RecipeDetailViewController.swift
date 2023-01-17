@@ -167,6 +167,23 @@ class RecipeDetailViewController: TextMessageViewController, UITableViewDataSour
 
     }
     
+    @IBAction func printRecipePressed(_ sender: Any) {
+
+        guard let recipe = recipe else {
+            Logger.logDetails(msg: "Recipe is nil")
+            return
+        }
+        
+        let print = UISimpleTextPrintFormatter(attributedText: recipe.stringForPrinting())
+
+        let vc = UIActivityViewController(activityItems: [print], applicationActivities: nil)
+        vc.excludedActivityTypes = [UIActivity.ActivityType.openInIBooks]
+        if #available(iOS 11.0, *) {
+            vc.excludedActivityTypes?.append(UIActivity.ActivityType.markupAsPDF)
+        }
+        present(vc, animated: true)
+    }
+    
     func storeCellIsExpandedValueForIndexPath(indexPath: IndexPath, newValue: Bool)
     {
         //NSLog(@"%s called for indexPath.section = %ld and indexPath.row = %ld", __PRETTY_FUNCTION__, (long)indexPath.section, (long)indexPath.row);

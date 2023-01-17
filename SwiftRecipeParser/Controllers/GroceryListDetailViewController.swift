@@ -211,9 +211,9 @@ class GroceryListDetailViewController: TextMessageViewController, UITableViewDat
         let print = UISimpleTextPrintFormatter(attributedText: str)
 
         let vc = UIActivityViewController(activityItems: [print], applicationActivities: nil)
-        vc.excludedActivityTypes = [.openInIBooks]
+        vc.excludedActivityTypes = [UIActivity.ActivityType.openInIBooks]
         if #available(iOS 11.0, *) {
-            vc.excludedActivityTypes?.append(.markupAsPDF)
+            vc.excludedActivityTypes?.append(UIActivity.ActivityType.markupAsPDF)
         }
         present(vc, animated: true)
     }

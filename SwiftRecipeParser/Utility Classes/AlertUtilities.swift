@@ -109,8 +109,8 @@ class AlertUtilities {
         }
         else {
             
-            let selectedIngredient:Ingredient = object as! Ingredient;
-            let quantityString:String = FractionMath.doubleToString(inputDouble: selectedIngredient.quantity.doubleValue);
+            let selectedIngredient:Ingredient = object as! Ingredient
+            let quantityString:String = FractionMath.doubleToString(inputDouble: selectedIngredient.quantity.doubleValue)
             let addString = "Add \(quantityString) \(selectedIngredient.unitOfMeasure) \(selectedIngredient.ingredientItem.name) to the \(currentGroceryList!.name) grocery list?"
             AlertUtilities.showYesNoAlert(viewController: viewController, title: "Add Item", message: addString, yesButtonHandler: { action in
                 

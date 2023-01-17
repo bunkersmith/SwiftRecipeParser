@@ -1370,33 +1370,17 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwl-pQ-4iV">
-                                        <rect key="frame" x="125" y="857" width="140" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="28X-Ph-fzN"/>
-                                            <constraint firstAttribute="height" constant="34" id="gQE-uc-qmX"/>
-                                        </constraints>
+                                        <rect key="frame" x="12" y="857" width="132" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Show Ingredients">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="28X-Ph-fzN"/>
-                                                <exclude reference="gQE-uc-qmX"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="28X-Ph-fzN"/>
-                                                <include reference="gQE-uc-qmX"/>
-                                            </mask>
-                                        </variation>
                                         <connections>
                                             <action selector="showIngredientsPressed:" destination="xst-t7-a6v" eventType="touchUpInside" id="gzJ-g6-EE2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8c-Hv-Z7A">
-                                        <rect key="frame" x="123" y="394" width="144" height="34"/>
+                                        <rect key="frame" x="12" y="394" width="144" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Show Instructions">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1417,12 +1401,29 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzw-z7-3Mk">
+                                        <rect key="frame" x="316" y="394" width="62" height="36"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Print">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="printRecipePressed:" destination="xst-t7-a6v" eventType="touchUpInside" id="sXm-NP-s5s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2q-g0-DrK">
+                                        <rect key="frame" x="318" y="857" width="60" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Print"/>
+                                        <connections>
+                                            <action selector="printRecipePressed:" destination="xst-t7-a6v" eventType="touchUpInside" id="ZsG-87-x61"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="q8c-Hv-Z7A" firstAttribute="top" secondItem="rya-oF-CJo" secondAttribute="bottom" constant="9" id="0Yh-ui-Qgk"/>
                                     <constraint firstItem="jQD-Z3-dbF" firstAttribute="leading" secondItem="CDr-gt-De4" secondAttribute="leading" constant="12" id="2A2-ty-2od"/>
                                     <constraint firstAttribute="trailing" secondItem="jQD-Z3-dbF" secondAttribute="trailing" constant="12" id="9V9-h5-rgD"/>
-                                    <constraint firstAttribute="centerX" secondItem="q8c-Hv-Z7A" secondAttribute="centerX" id="ABZ-mg-6zO"/>
                                     <constraint firstItem="Rwl-pQ-4iV" firstAttribute="top" secondItem="ScZ-Nx-nOX" secondAttribute="bottom" constant="2" id="CQ0-4i-a5f">
                                         <variation key="widthClass=compact" constant="2"/>
                                     </constraint>
@@ -1433,14 +1434,19 @@
                                         <variation key="widthClass=compact" constant="21"/>
                                     </constraint>
                                     <constraint firstAttribute="bottom" secondItem="ScZ-Nx-nOX" secondAttribute="bottom" constant="-290" id="K7z-nH-8lP"/>
+                                    <constraint firstItem="Rwl-pQ-4iV" firstAttribute="leading" secondItem="CDr-gt-De4" secondAttribute="leading" constant="12" id="MoE-hp-OIn"/>
+                                    <constraint firstItem="o2q-g0-DrK" firstAttribute="top" secondItem="ScZ-Nx-nOX" secondAttribute="bottom" constant="2" id="Nem-Rp-sFP"/>
                                     <constraint firstItem="ScZ-Nx-nOX" firstAttribute="leading" secondItem="CDr-gt-De4" secondAttribute="leading" constant="12" id="Ppw-Sj-4gh"/>
                                     <constraint firstItem="aov-hU-8xt" firstAttribute="top" secondItem="rya-oF-CJo" secondAttribute="bottom" constant="70" id="QD3-mr-q7t"/>
                                     <constraint firstAttribute="centerX" secondItem="aov-hU-8xt" secondAttribute="centerX" id="R78-jY-I6M"/>
                                     <constraint firstItem="jQD-Z3-dbF" firstAttribute="top" secondItem="CDr-gt-De4" secondAttribute="top" constant="20" id="RyV-Ea-Bs9"/>
+                                    <constraint firstAttribute="trailing" secondItem="o2q-g0-DrK" secondAttribute="trailing" constant="12" id="WbA-nO-yvE"/>
+                                    <constraint firstItem="q8c-Hv-Z7A" firstAttribute="leading" secondItem="CDr-gt-De4" secondAttribute="leading" constant="12" id="XbB-ZL-TC6"/>
                                     <constraint firstAttribute="centerX" secondItem="QKP-Za-KuD" secondAttribute="centerX" id="Xmz-a3-yac"/>
-                                    <constraint firstAttribute="centerX" secondItem="Rwl-pQ-4iV" secondAttribute="centerX" id="aXH-eJ-gft"/>
                                     <constraint firstItem="rya-oF-CJo" firstAttribute="top" secondItem="QKP-Za-KuD" secondAttribute="bottom" constant="9" id="cad-Wj-qJd"/>
+                                    <constraint firstItem="bzw-z7-3Mk" firstAttribute="top" secondItem="rya-oF-CJo" secondAttribute="bottom" constant="9" id="d8W-T3-Bxi"/>
                                     <constraint firstAttribute="trailing" secondItem="ScZ-Nx-nOX" secondAttribute="trailing" constant="12" id="fuB-xY-y0d"/>
+                                    <constraint firstAttribute="trailing" secondItem="bzw-z7-3Mk" secondAttribute="trailing" constant="12" id="g77-Hj-5kx"/>
                                     <constraint firstAttribute="trailing" secondItem="rya-oF-CJo" secondAttribute="trailing" constant="10" id="hcZ-PA-4pK">
                                         <variation key="widthClass=compact" constant="12"/>
                                     </constraint>
@@ -1454,9 +1460,7 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="0Yh-ui-Qgk"/>
-                                        <exclude reference="ABZ-mg-6zO"/>
                                         <exclude reference="CQ0-4i-a5f"/>
-                                        <exclude reference="aXH-eJ-gft"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -1466,9 +1470,7 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="0Yh-ui-Qgk"/>
-                                        <include reference="ABZ-mg-6zO"/>
                                         <include reference="CQ0-4i-a5f"/>
-                                        <include reference="aXH-eJ-gft"/>
                                     </mask>
                                 </variation>
                             </scrollView>
