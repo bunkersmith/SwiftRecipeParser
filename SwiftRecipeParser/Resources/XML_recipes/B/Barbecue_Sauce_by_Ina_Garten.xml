@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>onion</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large onion</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

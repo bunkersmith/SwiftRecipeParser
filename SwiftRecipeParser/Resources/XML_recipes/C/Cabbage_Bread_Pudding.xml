@@ -24,14 +24,14 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>baguette</unitOfMeasure>
-            <ingredientName>French Bread (Unsliced)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>French Bread Baguette, Unsliced</ingredientName>
             <processingInstructions> Torn Into Chunks</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>loaf</unitOfMeasure>
-            <ingredientName>Dark Pumpernickel Bread (Unsliced)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Loaf Dark Pumpernickel Bread, Unsliced</ingredientName>
             <processingInstructions> Torn Into Chunks</processingInstructions>
         </ingredient>
         <ingredient>
@@ -66,8 +66,8 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Eggs</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Eggs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

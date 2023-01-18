@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pkg</unitOfMeasure>
-            <ingredientName>Butter-Flavored Shortening Sticks</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Package Butter-Flavored Shortening Sticks</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>4-3/8</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>White Sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,7 +44,7 @@
         </ingredient>
         <ingredient>
             <quantity>13-1/2</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -122,13 +122,13 @@
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Raisins</ingredientName>
             <processingInstructions> from bulk section</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Canola Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

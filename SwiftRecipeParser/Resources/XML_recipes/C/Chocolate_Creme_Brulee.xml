@@ -44,8 +44,8 @@
         </ingredient>
         <ingredient>
             <quantity>11</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Egg Yolks</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Egg Yolks</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

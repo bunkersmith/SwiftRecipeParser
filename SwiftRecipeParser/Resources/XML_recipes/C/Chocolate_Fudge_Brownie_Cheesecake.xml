@@ -39,7 +39,7 @@
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -69,7 +69,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>heavy cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

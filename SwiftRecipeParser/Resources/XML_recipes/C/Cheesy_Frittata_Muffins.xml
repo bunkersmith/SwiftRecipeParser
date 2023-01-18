@@ -24,7 +24,7 @@ Each Serving Has:
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>Cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Half n’ Half</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -36,7 +36,7 @@ Each Serving Has:
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>Cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Cheddar Cheese</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

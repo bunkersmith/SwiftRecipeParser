@@ -70,8 +70,8 @@ While rice cooks, make the vegetables. Heat a deep nonstick skillet over medium-
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>onion, thinly sliced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium onion, thinly sliced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -82,8 +82,8 @@ While rice cooks, make the vegetables. Heat a deep nonstick skillet over medium-
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>eggplant, peeled and chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium eggplant, peeled and chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

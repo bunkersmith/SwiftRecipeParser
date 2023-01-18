@@ -24,14 +24,14 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>can</unitOfMeasure>
-            <ingredientName>Fire-Roasted Diced Tomatoes</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Can Fire-Roasted Diced Tomatoes</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

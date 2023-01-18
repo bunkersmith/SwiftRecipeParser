@@ -16,7 +16,7 @@ Bake, switching the positions of the cookies from top to bottom and back to fron
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>all-purpose flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -70,19 +70,19 @@ Bake, switching the positions of the cookies from top to bottom and back to fron
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>vegetable shortening, at room temperature</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>packed light brown sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2/3</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>unsulfured molasses</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

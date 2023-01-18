@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>8</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>garlic cloves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large garlic cloves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

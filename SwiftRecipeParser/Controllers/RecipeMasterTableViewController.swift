@@ -47,6 +47,8 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         
+//        var unitsOfMeasure = Array<String>()
+        
         if let groceryListItems = GroceryListItem.fetchAll() {
             
             var emptyItemCount = 0
@@ -56,10 +58,16 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                     emptyItemCount += 1
                     databaseInterface.deleteObject(coreDataObject: groceryListItem)
                 }
-                
+//                if !unitsOfMeasure.contains(groceryListItem.unitOfMeasure) {
+//                    unitsOfMeasure.append(groceryListItem.unitOfMeasure)
+//                }
             }
             
             Logger.logDetails(msg: "emptyItemCount = \(emptyItemCount)")
+            
+//            for measure in unitsOfMeasure {
+//                print(measure)
+//            }
         }
         
 //        let groceryLists = GroceryList.returnAll()
@@ -233,6 +241,9 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         recipeFiles.initializeRecipeDatabaseFromResourceFiles()
     }
 
+// THIS FUNCTION TAKES ALL THE Recipe FILES AND REMOVES ANY PARENTHESES FROM THE ingredientName LINES.
+// Android XML PARSING ERRORS OUT ON THOSE. THE "FIXED" FILES ARE WRITTEN TO THE Application Documents Directory.
+    
     @IBAction func fixPuttonPressed(_ sender: Any) {
         DispatchQueue.main.async {
             let documentsDir = FileUtilities.applicationDocumentsDirectory()

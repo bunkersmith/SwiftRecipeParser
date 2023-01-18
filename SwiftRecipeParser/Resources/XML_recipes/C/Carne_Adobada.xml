@@ -45,7 +45,7 @@ NOTE: If dried pasilla chiles aren’t available, increase the number of dried a
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -63,7 +63,7 @@ NOTE: If dried pasilla chiles aren’t available, increase the number of dried a
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>white vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

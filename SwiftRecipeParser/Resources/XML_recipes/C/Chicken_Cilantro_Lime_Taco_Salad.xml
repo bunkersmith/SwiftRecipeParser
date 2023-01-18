@@ -18,7 +18,7 @@
         </ingredient>
         <ingredient>
             <quantity>10</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>chopped romaine lettuce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -30,13 +30,13 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>black beans</ingredientName>
             <processingInstructions> cooked</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>charred corn (either frozen and defrosted or grilled on a grill)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -72,13 +72,13 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>fresh cilantro leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

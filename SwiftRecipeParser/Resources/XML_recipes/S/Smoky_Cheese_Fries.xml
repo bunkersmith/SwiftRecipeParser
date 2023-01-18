@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>package frozen waffle cut fries</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large package frozen waffle cut fries</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

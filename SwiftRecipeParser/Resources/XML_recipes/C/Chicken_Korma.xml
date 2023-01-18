@@ -101,7 +101,7 @@ How to make chicken korma
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>onions</ingredientName>
             <processingInstructions>sliced</processingInstructions>
         </ingredient>
@@ -167,7 +167,7 @@ How to make chicken korma
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>water for gravy</ingredientName>
             <processingInstructions>3/4 to 1-1/4 cup, as needed</processingInstructions>
         </ingredient>

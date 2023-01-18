@@ -16,13 +16,13 @@
     <ingredients>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Finely Crushed Gingersnaps (About 4-3/4 Oz)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/3</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Butter</ingredientName>
             <processingInstructions> Melted</processingInstructions>
         </ingredient>
@@ -40,7 +40,7 @@
         </ingredient>
         <ingredient>
             <quantity>1-1/3</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Granulated Sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -70,19 +70,19 @@
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/3</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Canned Pumpkin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Packed Brown Sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

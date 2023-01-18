@@ -44,7 +44,7 @@ cucumber relish.</instructions>
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>coconut milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

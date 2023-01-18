@@ -42,8 +42,8 @@ Cook murgh do pyaaza over moderate oven (350 degrees) for 10 minutes before serv
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>onions, chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large onions, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -144,8 +144,8 @@ Cook murgh do pyaaza over moderate oven (350 degrees) for 10 minutes before serv
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>onion, chopped and fried</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium onion, chopped and fried</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

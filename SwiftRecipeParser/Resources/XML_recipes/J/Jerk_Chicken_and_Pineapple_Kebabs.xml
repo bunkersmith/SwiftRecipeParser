@@ -32,13 +32,13 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>garlic, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Scotch bonnet chile, stemmed, seeded, and minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

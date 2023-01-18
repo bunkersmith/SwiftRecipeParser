@@ -52,8 +52,8 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Eggs, beaten</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Eggs, beaten</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

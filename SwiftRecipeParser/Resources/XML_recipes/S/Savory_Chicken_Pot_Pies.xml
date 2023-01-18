@@ -62,8 +62,8 @@ Makes 6 servings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Onion, peeled and quartered</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Onion, peeled and quartered</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -75,7 +75,7 @@ Makes 6 servings.</instructions>
         <ingredient>
             <quantity>3</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>Sprigs fresh parsley</ingredientName>
+            <ingredientName>Fresh parsley sprigs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -158,8 +158,8 @@ Makes 6 servings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Celery stalks, diagonal cut 1/4-inch long</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Celery stalks, diagonal cut 1/4-inch long</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -194,8 +194,8 @@ Makes 6 servings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Egg yolk, beaten with 1 tbsp water</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Egg yolk, beaten with 1 tbsp water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

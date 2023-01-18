@@ -26,8 +26,8 @@ To serve, arrange the chicken breasts on dinner plates and top with lots of sauc
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>onion, chopped, divided</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large onion, chopped, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -74,8 +74,8 @@ To serve, arrange the chicken breasts on dinner plates and top with lots of sauc
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>garlic cloves, chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large garlic cloves, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

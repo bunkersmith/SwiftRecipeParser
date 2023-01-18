@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Ripe Mango, Peeled And Seeded</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Ripe Mango, Peeled And Seeded</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Garlic, Minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

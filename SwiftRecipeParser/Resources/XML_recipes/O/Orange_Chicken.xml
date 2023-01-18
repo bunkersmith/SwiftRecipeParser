@@ -8,13 +8,13 @@
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Boneless Skinless Chicken Breasts, Cut Into Cubes</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Garlic, Minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

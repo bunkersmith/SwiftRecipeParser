@@ -68,8 +68,8 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Apples, Peeled And Grated (recommended: Golden Delicious)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Apples, Peeled And Grated (recommended: Golden Delicious)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

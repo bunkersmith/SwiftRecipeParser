@@ -8,13 +8,13 @@
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Haas avocados, halved, seeded and peeled</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>lime, juiced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,7 +44,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Roma tomatoes, seeded and diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -56,7 +56,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>garlic, minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

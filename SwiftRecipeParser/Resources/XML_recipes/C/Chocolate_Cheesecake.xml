@@ -84,14 +84,14 @@ To make the chocolate sauce: very gently melt the chopped chocolate, cream and s
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>eggs</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large eggs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>egg yolks</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large egg yolks</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

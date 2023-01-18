@@ -45,8 +45,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pkg</unitOfMeasure>
-            <ingredientName>fresh peppers and onions</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>package fresh peppers and onions</ingredientName>
             <processingInstructions>chopped in food processor</processingInstructions>
         </ingredient>
         <ingredient>

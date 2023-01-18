@@ -66,13 +66,13 @@ Put icing in pastry bag (if using) and pipe or spread decoratively onto cookies.
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>egg, lightly beaten</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large egg, lightly beaten</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3-3/4</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>all-purpose flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

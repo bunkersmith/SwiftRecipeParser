@@ -114,7 +114,7 @@ For the chiles rellenos:
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>shredded queso fresco or queso asadero cheese (about 8 ounces)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -132,7 +132,7 @@ For the chiles rellenos:
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>vegetable or canola oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

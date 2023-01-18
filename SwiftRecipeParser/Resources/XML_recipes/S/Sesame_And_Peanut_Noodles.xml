@@ -38,7 +38,7 @@ For the salad: Place the pasta in a large mixing bowl and add the cilantro and v
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>creamy peanut butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -104,7 +104,7 @@ For the salad: Place the pasta in a large mixing bowl and add the cilantro and v
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>fresh cilantro, loosely-packed and chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -122,7 +122,7 @@ For the salad: Place the pasta in a large mixing bowl and add the cilantro and v
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>skinless roasted peanuts, roughly chopped, for garnish</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

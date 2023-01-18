@@ -36,8 +36,8 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>serrano</unitOfMeasure>
-            <ingredientName>chilies or 1 jalapeño</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>serrano chilies, or 1 jalapeño</ingredientName>
             <processingInstructions> minced (remove seeds and ribs if you prefer less heat)</processingInstructions>
         </ingredient>
         <ingredient>
@@ -54,7 +54,7 @@
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>homemade or store-bought low-sodium chicken stock</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -66,14 +66,14 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>sprigs</unitOfMeasure>
-            <ingredientName>epazote (optional; see note above)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>epazote sprigs - optional; see note above</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>large-handful</unitOfMeasure>
-            <ingredientName>chopped fresh cilantro leaves and fine stems</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>chopped fresh cilantro leaves and fine stems, large-handful</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

@@ -26,8 +26,8 @@ Use chips to scoop mixture and eat.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>can</unitOfMeasure>
-            <ingredientName>Refried Beans, Vons with black beans</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Can Refried Beans, Vons with black beans</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -50,13 +50,13 @@ Use chips to scoop mixture and eat.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Guacamole</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Sour Cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -90,8 +90,8 @@ Cook's Note: If the sauce is not thick enough at the end of reducing, you may ad
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>onion, quartered</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium onion, quartered</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -102,8 +102,8 @@ Cook's Note: If the sauce is not thick enough at the end of reducing, you may ad
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>carrots, quartered</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium carrots, quartered</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -114,8 +114,8 @@ Cook's Note: If the sauce is not thick enough at the end of reducing, you may ad
         </ingredient>
         <ingredient>
             <quantity>8</quantity>
-            <unitOfMeasure>sprigs</unitOfMeasure>
-            <ingredientName>fresh thyme</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>fresh thyme sprigs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

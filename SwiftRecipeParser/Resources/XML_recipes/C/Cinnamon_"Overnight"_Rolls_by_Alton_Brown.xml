@@ -26,14 +26,14 @@ While the rolls are cooling slightly, make the icing by whisking the cream chees
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>egg yolks, room temperature</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large egg yolks, room temperature</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>whole egg, room temperature</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large whole egg, room temperature</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -62,8 +62,8 @@ While the rolls are cooling slightly, make the icing by whisking the cream chees
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pkg</unitOfMeasure>
-            <ingredientName>rapid-rise yeast, approximately 2-1/4 teaspoons</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>package rapid-rise yeast, approximately 2-1/4 teaspoons</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

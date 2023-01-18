@@ -24,8 +24,8 @@ Remove lid from soup and slide balls into soup. Bring back to a boil then stir i
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>yellow skinned onion, chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium yellow skinned onion, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -72,8 +72,8 @@ Remove lid from soup and slide balls into soup. Bring back to a boil then stir i
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>egg, beaten</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large egg, beaten</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

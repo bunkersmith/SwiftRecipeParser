@@ -36,8 +36,8 @@ To roast onions, wash a medium sized onion, butter the glazed plate, and bake at
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>Onion</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Medium Onion</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

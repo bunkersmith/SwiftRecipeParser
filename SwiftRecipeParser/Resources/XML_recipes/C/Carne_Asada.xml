@@ -8,7 +8,7 @@
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Fresh Limes</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

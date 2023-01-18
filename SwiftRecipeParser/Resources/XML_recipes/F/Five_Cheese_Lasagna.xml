@@ -86,8 +86,8 @@ Bake in the oven for 30 minutes, remove and let rest for 10 minutes before slici
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>eggs</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large eggs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

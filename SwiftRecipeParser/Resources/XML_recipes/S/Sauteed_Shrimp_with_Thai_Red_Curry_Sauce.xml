@@ -90,13 +90,13 @@ Season, to taste, with salt and sugar. Remove from heat and steep for 20 minutes
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>tomato concassee</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>unsweetened coconut milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -114,13 +114,13 @@ Season, to taste, with salt and sugar. Remove from heat and steep for 20 minutes
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Kaffir lime leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Thai basil leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

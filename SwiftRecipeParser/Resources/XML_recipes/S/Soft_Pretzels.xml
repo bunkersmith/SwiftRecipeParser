@@ -28,8 +28,8 @@ Place the pretzels into the boiling water, 1 by 1, for 30 seconds. Remove them f
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pkg</unitOfMeasure>
-            <ingredientName>active dry yeast</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>package active dry yeast</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -64,8 +64,8 @@ Place the pretzels into the boiling water, 1 by 1, for 30 seconds. Remove them f
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>egg yolk beaten with 1 tablespoon water</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large egg yolk beaten with 1 tablespoon water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

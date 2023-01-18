@@ -23,7 +23,7 @@ with coriander leaves.</instructions>
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>coconut milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

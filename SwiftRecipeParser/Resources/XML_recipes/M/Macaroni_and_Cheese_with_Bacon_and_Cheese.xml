@@ -34,13 +34,13 @@ To serve, scatter the bacon mixture over the mac and cheese. Use a big spoon to 
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
-            <ingredientName>sprigs thyme</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>thyme sprigs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>garlic, smashed and divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -82,8 +82,8 @@ To serve, scatter the bacon mixture over the mac and cheese. Use a big spoon to 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>onion, diced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large onion, diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

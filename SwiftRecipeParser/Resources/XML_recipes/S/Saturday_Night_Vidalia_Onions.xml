@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Vidalia onions</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Vidalia onions</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

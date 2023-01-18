@@ -22,8 +22,8 @@ Brown meat and drain off fat. Combine all ingredients. Bake in covered casserole
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>Onion, Minced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Medium Onion, Minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -64,8 +64,8 @@ Brown meat and drain off fat. Combine all ingredients. Bake in covered casserole
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>14-oz cans</unitOfMeasure>
-            <ingredientName>Baked Bean Cans, Drained</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>14-oz Baked Bean Cans, Drained</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

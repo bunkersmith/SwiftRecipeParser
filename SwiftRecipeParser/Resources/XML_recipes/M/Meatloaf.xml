@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Eggs, Beaten</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

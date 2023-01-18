@@ -88,7 +88,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Parmesan Cheese</ingredientName>
             <processingInstructions> use shredded whole-milk mozzarella if doing skillet</processingInstructions>
         </ingredient>

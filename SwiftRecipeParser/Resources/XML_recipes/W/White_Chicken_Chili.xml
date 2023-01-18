@@ -12,14 +12,14 @@
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>Poblano Chilis</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Medium Poblano Chilis</ingredientName>
             <processingInstructions> stemmed, seeded and chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>Jalapeno Chilis</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Medium Jalapeno Chilis</ingredientName>
             <processingInstructions> seeded and deveined, chopped</processingInstructions>
         </ingredient>
         <ingredient>
@@ -36,8 +36,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg</unitOfMeasure>
-            <ingredientName>Leek</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Leek</ingredientName>
             <processingInstructions> white only, well rinsed and chopped</processingInstructions>
         </ingredient>
         <ingredient>

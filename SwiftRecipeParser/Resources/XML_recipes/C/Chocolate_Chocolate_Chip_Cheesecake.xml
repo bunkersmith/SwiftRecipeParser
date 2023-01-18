@@ -69,19 +69,19 @@ Pro tips to make the perfect cheesecake:
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>coffee</ingredientName>
             <processingInstructions> hot</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>bittersweet chocolate</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-3/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>semisweet chocolate</ingredientName>
             <processingInstructions>divided</processingInstructions>
         </ingredient>
@@ -99,13 +99,13 @@ Pro tips to make the perfect cheesecake:
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>sugar (200g)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>sour cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -135,13 +135,13 @@ Pro tips to make the perfect cheesecake:
         </ingredient>
         <ingredient>
             <quantity>1/3</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>semisweet chocolate</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/3</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -153,13 +153,13 @@ Pro tips to make the perfect cheesecake:
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>heavy cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>powdered sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

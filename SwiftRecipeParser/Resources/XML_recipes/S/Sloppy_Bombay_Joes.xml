@@ -60,13 +60,13 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>can</unitOfMeasure>
-            <ingredientName>Tomato sauce (15-oz)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>15-oz Can Tomato sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -144,7 +144,7 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>half-and-half</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

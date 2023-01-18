@@ -24,7 +24,7 @@ COMBINE the hoisin sauce, remaining soy sauce and 1-1/2 tablespoons water in a s
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>light soy sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -108,7 +108,7 @@ COMBINE the hoisin sauce, remaining soy sauce and 1-1/2 tablespoons water in a s
         </ingredient>
         <ingredient>
             <quantity>1/3</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>hoisin sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

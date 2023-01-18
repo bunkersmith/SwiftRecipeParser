@@ -12,19 +12,19 @@ Cheeses used were also from Trader Joe’s - a New York X-tra sharp orange chedd
     <ingredients>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>cream cheese</ingredientName>
             <processingInstructions> room temperature</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>mayonnaise</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>sour cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -36,19 +36,19 @@ Cheeses used were also from Trader Joe’s - a New York X-tra sharp orange chedd
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>shredded sharp cheddar cheese</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>shredded Parmesan cheese</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>diced pimentos</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -16,7 +16,7 @@ or pot. Add chopped garlic. Measure all liquids, including reserved pea liquid, 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>garlic, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -47,7 +47,7 @@ or pot. Add chopped garlic. Measure all liquids, including reserved pea liquid, 
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>sprigs fresh thyme</ingredientName>
+            <ingredientName>fresh thyme sprigs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

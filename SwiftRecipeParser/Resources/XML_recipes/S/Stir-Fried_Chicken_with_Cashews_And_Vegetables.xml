@@ -57,7 +57,7 @@
         </ingredient>
         <ingredient>
             <quantity>2/3</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>scallions</ingredientName>
             <processingInstructions> sliced</processingInstructions>
         </ingredient>
@@ -69,25 +69,25 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>garlic cloves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium garlic cloves</ingredientName>
             <processingInstructions> finely chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>red bell pepper</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium red bell pepper</ingredientName>
             <processingInstructions> thinly sliced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>med</unitOfMeasure>
-            <ingredientName>yellow bell pepper</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium yellow bell pepper</ingredientName>
             <processingInstructions> thinly sliced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>unsalted dry-roasted cashews</ingredientName>
             <processingInstructions> chopped</processingInstructions>
         </ingredient>

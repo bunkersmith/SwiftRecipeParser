@@ -90,8 +90,8 @@ In a saute pan heat 1 tablespoon of butter and sweat the onion and celery. In an
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pkg</unitOfMeasure>
-            <ingredientName>puff pastry</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>package puff pastry</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

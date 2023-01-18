@@ -26,7 +26,7 @@ and chilli slices.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>coconut cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,7 +44,7 @@ and chilli slices.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1-3/4</quantity>
-            <unitOfMeasure>cups</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>coconut milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

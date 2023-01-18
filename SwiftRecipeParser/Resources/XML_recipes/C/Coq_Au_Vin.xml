@@ -32,7 +32,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>x</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Minced Garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
