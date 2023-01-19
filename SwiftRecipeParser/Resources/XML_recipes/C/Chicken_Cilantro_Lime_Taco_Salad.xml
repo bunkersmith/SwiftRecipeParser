@@ -12,8 +12,8 @@
     <ingredients>
         <ingredient>
             <quantity>0</quantity>
-            <unitOfMeasure>the</unitOfMeasure>
-            <ingredientName>Salad:</ingredientName>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For The Salad:</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -60,8 +60,14 @@
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
-            <unitOfMeasure>the</unitOfMeasure>
-            <ingredientName>Lime-Cilantro Salad Dressing:</ingredientName>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>-</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>0</quantity>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>For The Lime-Cilantro Salad Dressing:</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
