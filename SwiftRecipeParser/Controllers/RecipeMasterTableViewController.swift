@@ -150,6 +150,48 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
     }
     
     @IBAction func addButtonPressed(_ sender: Any) {
+//        DispatchQueue.main.async {
+//            var changedFiles = 0
+//            let documentsDir = FileUtilities.applicationDocumentsDirectory()
+//            let inputPathnames = RecipeFiles().initializeRecipePathnames()
+//            for inputPathnameFolder in inputPathnames {
+//                var firstPathname = true
+//                for inputPathname in inputPathnameFolder {
+//                    let inputPathComponents = inputPathname.split(separator: "/")
+//                    let outputFolder = String(inputPathComponents[inputPathComponents.count-2])
+//                    let outputFilename = String(inputPathComponents[inputPathComponents.count-1])
+//                    let outputFolderPathname = documentsDir.appendingPathComponent(outputFolder, isDirectory: true)
+//                    let fileString = try! String(contentsOfFile: inputPathname)
+//                    let fileLines = fileString.split(separator: "\n")
+//                    var outputFileString = ""
+//                    var fileModified = false
+//                    for fileLine in fileLines {
+//                        var finalLine = String(fileLine)
+//                        if fileLine.contains("<ingredientName>") && fileLine.contains("(") {
+//                            fileModified = true
+//                            finalLine = fileLine.replacingOccurrences(of: "(", with: "\\(")
+//                            finalLine = finalLine.replacingOccurrences(of: ")", with: "\\)")
+//                          print(finalLine)
+//                        }
+//                        outputFileString += finalLine + "\n"
+//                    }
+//                  print(outputFileString)
+//                    if fileModified {
+//                        changedFiles += 1
+//                        if firstPathname {
+//                            firstPathname = false
+//                            FileUtilities.createDirectory(outputFolder)
+//                          print(folderPathname)
+//                        }
+//                        let outputPathname = outputFolderPathname.appendingPathComponent(outputFilename, isDirectory: false)
+//                        print(outputFilename)
+//                        try! outputFileString.write(toFile: outputPathname.path, atomically: true, encoding: .utf8)
+//                    }
+//                }
+//            }
+//            print("Changed files: \(changedFiles)")
+//        }
+
         // Look to the bottom of the function to see where inputTextField is assigned
         var inputTextField = UITextField()
 
@@ -159,14 +201,14 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                                           startingText: "",
                                           keyboardType: nil,
                                           capitalizationType: .words) { alertAction in
-            
+
                 let pathname = RecipeFiles().recipePathnameFromTitle(userInput: inputTextField.text!)
                 print("\(pathname)")
-                
+
                 if Utilities.fileExistsAtAbsolutePath(pathname: pathname.path) {
                     let recipeName = RecipeFiles.returnRecipeTitleFromPath(recipeResourceFilePath: pathname.path)
                     print("Recipe name: \(recipeName)")
-                    
+
                     if Recipe.findRecipeByName(recipeName) != nil {
                         AlertUtilities.showOkButtonAlert(self, title: "That recipe is already in the database", message: "", buttonHandler: nil)
                     } else {
@@ -181,7 +223,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                 } else {
                     AlertUtilities.showOkButtonAlert(self, title: "Recipe file not found", message: "", buttonHandler: nil)
                 }
-            
+
             } textFieldHandler: { textField in
                 inputTextField = textField
             }
