@@ -26,13 +26,13 @@ Drain potatoes then return them to the hot pot to evaporate some of the water co
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vegetable oil, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -62,7 +62,7 @@ Drain potatoes then return them to the hot pot to evaporate some of the water co
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Worcestershire sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -80,7 +80,7 @@ Drain potatoes then return them to the hot pot to evaporate some of the water co
         </ingredient>
         <ingredient>
             <quantity>2-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fresh thyme leaves, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

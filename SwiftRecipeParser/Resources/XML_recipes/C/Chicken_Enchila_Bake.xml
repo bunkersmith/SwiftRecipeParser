@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Enchila Bake</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>1. Preheat oven to 375°F.
@@ -25,20 +25,20 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>shredded Monterey Jack cheese</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2/3</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>sour cream or crema</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>bunch</unitOfMeasure>
-            <ingredientName>sliced scallions</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bunch sliced scallions</ingredientName>
             <processingInstructions> divided</processingInstructions>
         </ingredient>
         <ingredient>

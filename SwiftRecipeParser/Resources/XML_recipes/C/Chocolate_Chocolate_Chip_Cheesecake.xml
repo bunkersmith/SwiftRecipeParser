@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chocolate Chocolate Chip Cheesecake - Amazing!</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>For the Crust:
@@ -57,7 +57,7 @@ Pro tips to make the perfect cheesecake:
         </ingredient>
         <ingredient>
             <quantity>5</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Unsalted butter</ingredientName>
             <processingInstructions> melted</processingInstructions>
         </ingredient>
@@ -111,7 +111,7 @@ Pro tips to make the perfect cheesecake:
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vanilla extract (15ml)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -123,7 +123,7 @@ Pro tips to make the perfect cheesecake:
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>All purpose flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -171,7 +171,7 @@ Pro tips to make the perfect cheesecake:
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cocoa powder plus more if needed</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken with Crispy Holy Basil Leaves</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>MIX the chicken, garlic, chillies, fish sauce and oyster sauce in a bowl. Cover with plastic wrap and marinate in the refrigerator for at least 30 minutes. 
@@ -32,13 +32,13 @@ ADD the stock and sugar to the wok, then the red bell pepper and onion, and stir
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>oyster sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,19 +50,19 @@ ADD the stock and sugar to the wok, then the red bell pepper and onion, and stir
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>handfuls</unitOfMeasure>
-            <ingredientName>holy basil leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>handfuls holy basil leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vegetable or chicken stock, or water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -74,8 +74,8 @@ ADD the stock and sugar to the wok, then the red bell pepper and onion, and stir
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>md</unitOfMeasure>
-            <ingredientName>onion, cut into thin wedges</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium onion, cut into thin wedges</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

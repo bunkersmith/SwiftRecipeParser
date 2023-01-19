@@ -48,14 +48,14 @@ Add the pasta to the meat sauce and cook, over low heat, for another 2 to 3 minu
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>whole</unitOfMeasure>
-            <ingredientName>cloves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>whole cloves </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>whole</unitOfMeasure>
-            <ingredientName>star anise pod</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>whole star anise pod</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -72,7 +72,7 @@ Add the pasta to the meat sauce and cook, over low heat, for another 2 to 3 minu
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>olive oil, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -120,7 +120,7 @@ Add the pasta to the meat sauce and cook, over low heat, for another 2 to 3 minu
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>dried oregano</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -138,19 +138,19 @@ Add the pasta to the meat sauce and cook, over low heat, for another 2 to 3 minu
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>tomato paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>ketchup</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sherry vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

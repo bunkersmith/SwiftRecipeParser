@@ -22,7 +22,7 @@ Stir in cooked elbow noodles and chicken mixture. Pour mac and cheese mixture in
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>extra-virgin olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -40,7 +40,7 @@ Stir in cooked elbow noodles and chicken mixture. Pour mac and cheese mixture in
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>jalapeno, with seeds and membrane removed, then finely chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -52,7 +52,7 @@ Stir in cooked elbow noodles and chicken mixture. Pour mac and cheese mixture in
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fresh cilantro leaves, finely chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -136,7 +136,7 @@ Stir in cooked elbow noodles and chicken mixture. Pour mac and cheese mixture in
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter, melted</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

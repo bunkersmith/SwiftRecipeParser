@@ -14,31 +14,31 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Peanut Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Soy Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Balsamic Vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Thinly Sliced Green Onion</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Brown Sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,26 +50,26 @@
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Ground Ginger</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Crushed Red Pepper Flakes</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Sesame Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>Salt</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Dash Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

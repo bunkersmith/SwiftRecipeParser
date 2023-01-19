@@ -74,13 +74,13 @@ Mushroom and Kampyo: Boil both in 2 cups stock (dashi or veggie), along with 1 t
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>soy sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

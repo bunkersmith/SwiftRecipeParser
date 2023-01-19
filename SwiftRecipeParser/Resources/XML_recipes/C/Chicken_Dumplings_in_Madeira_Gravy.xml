@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Dumplings in Madeira Gravy</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>1. Combine the milk with 3 tbsp. of the butter in a 2-qt. saucepan over medium-high heat. Bring to a boil, stirring once or twice. Add 1 cup of the flour and 1/4 tsp. of the salt all at once. Stir with a large wooden spoon until the mixture forms a ball of dough. Remove from the heat, turn into a large bowl, and let cool for a few minutes.
@@ -28,8 +28,8 @@
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>stick</unitOfMeasure>
-            <ingredientName>unsalted butter, (3/4 cup) room temperature, divided</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>stick unsalted butter, (3/4 cup) room temperature, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -40,7 +40,7 @@
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -64,20 +64,20 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>heavy cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground nutmeg</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>8</quantity>
-            <unitOfMeasure>turns</unitOfMeasure>
-            <ingredientName>freshly ground black pepper, divided</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>turns freshly ground black pepper, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

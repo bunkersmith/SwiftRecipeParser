@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>California Roll</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Squeeze the lemon juice over the avocado to prevent browning.
@@ -28,8 +28,8 @@ Cover a bamboo rolling mat with plastic wrap. Cut nori sheets in half crosswise.
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>batch</unitOfMeasure>
-            <ingredientName>sushi rice, recipe follows</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>batch sushi rice, recipe follows</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

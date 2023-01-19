@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Charred Pineapple-Habanero Hot Sauce</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Heat a grill to high or preheat the broiler. Place the whole pineapple (do not peel it) on the grill and grill until the entire surface is completely black and charred. Remove from grill and let cool slightly. Peel the pineapple, remove the core and coarsely chop the flesh.
@@ -16,7 +16,7 @@ Heat oil in a medium saucepan over medium-high heat; add the onion and cook unti
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>canola oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

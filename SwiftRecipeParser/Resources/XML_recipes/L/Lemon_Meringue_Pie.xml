@@ -44,7 +44,7 @@ Return egg mixture to saucepan, turn heat down to low and cook, stirring constan
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -56,19 +56,19 @@ Return egg mixture to saucepan, turn heat down to low and cook, stirring constan
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>lemon zest, finely grated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>9-inch</unitOfMeasure>
-            <ingredientName>pie shell, pre-baked</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>9-inch pie shell, pre-baked</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>recipe</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Meringue Topping (see separate recipe)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

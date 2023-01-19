@@ -38,14 +38,14 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>Dried Thyme, Crushed</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Dash Dried Thyme, Crushed</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>Dried Marjoram, Crushed</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Dash Dried Marjoram, Crushed</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

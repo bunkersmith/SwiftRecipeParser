@@ -22,7 +22,7 @@ ARRANGE the pork slices, tofu, mushrooms, noodles and carrot in separate piles o
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -106,8 +106,8 @@ ARRANGE the pork slices, tofu, mushrooms, noodles and carrot in separate piles o
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>bunch</unitOfMeasure>
-            <ingredientName>baby English spinach leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bunch baby English spinach leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

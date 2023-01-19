@@ -32,14 +32,14 @@
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>dashes</unitOfMeasure>
-            <ingredientName>Pepper</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Dashes Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

@@ -56,7 +56,7 @@ Chef's tip: You can serve with scraped fresh coconut.</instructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

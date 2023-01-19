@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cheesy Herbed Popovers</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>Preheat the oven to 400 degrees F. Brush 18 to 20 wells of 2 popover or muffin tins with some of the melted fat. Place tins in the oven to heat while you prepare the popover batter. Combine the eggs, flour, salt, thyme, rosemary, and pepper in a blender and blend until well combined. Using a spatula, scrape down the sides of the blender. While the blender is running, add the milk and cream in a slow stream until smooth and thoroughly combined. Remove tins from the oven and fill each prepared well halfway with some of the batter. Place a piece of the cheese in the center of each cup and pour the remaining batter over so that the cups are filled 2/3 of the way. Bake the popovers until puffed and golden, 20 to 25 minutes. Serve immediately.</instructions>
@@ -26,25 +26,25 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Fresh Thyme Leaves, Chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Fresh Rosemary Leaves, Chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Freshly Ground Black Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -56,7 +56,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Heavy Cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

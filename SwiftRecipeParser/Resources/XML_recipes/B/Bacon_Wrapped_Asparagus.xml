@@ -22,7 +22,7 @@ TIP:  Be sure to layer the pan with aluminum foil or a handy silicone baking ma
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>lbs</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>Asparagus</ingredientName>
             <processingInstructions> Tip: purchase the larger stems of asparagus</processingInstructions>
         </ingredient>
@@ -40,7 +40,7 @@ TIP:  Be sure to layer the pan with aluminum foil or a handy silicone baking ma
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>soy sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -14,19 +14,19 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Soy Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Sesame Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Rice Wine Or Sherry</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,13 +38,13 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Peanut Or Corn Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -56,19 +56,19 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Minced Garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Ginger, Grated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Szechwan Pepper, Toasted And Crushed</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -86,25 +86,25 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Soy Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Rice Wine Or Sherry</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Chinese Black Or Balsamic Vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -116,7 +116,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Cornstarch, Dissolved In 2 Tablespoons Water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

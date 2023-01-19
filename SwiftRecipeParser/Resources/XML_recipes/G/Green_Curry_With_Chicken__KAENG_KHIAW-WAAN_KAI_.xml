@@ -32,7 +32,7 @@ and chilli slices.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>green curry paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,7 +50,7 @@ and chilli slices.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2-1/2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -74,8 +74,8 @@ and chilli slices.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>handful</unitOfMeasure>
-            <ingredientName>Thai sweet basil leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>handful Thai sweet basil leaves</ingredientName>
             <processingInstructions> for garnish</processingInstructions>
         </ingredient>
         <ingredient>

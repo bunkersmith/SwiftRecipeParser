@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chili Relleno Casserole</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Lightly grease 9x13-inch glass baking dish. 
@@ -28,26 +28,26 @@ Preheat oven to 350°F. Bake until casserole is slightly puffed in center and go
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>All Purpose Flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>cans</unitOfMeasure>
-            <ingredientName>Whole Green Chilies (7-ounces each), or 10 Charred Fresh Poblano* Chilies (see separate recipe for charring instructions)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Cans Whole Green Chilies (7-ounces each), or 10 Charred Fresh Poblano* Chilies (see separate recipe for charring instructions)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

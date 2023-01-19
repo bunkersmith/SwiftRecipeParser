@@ -39,13 +39,13 @@ Serve with 1 slice of compound butter on each fish roll.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>chopped fresh dill</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>chopped fresh parsley</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

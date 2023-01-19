@@ -34,7 +34,7 @@ Cook onion until slightly translucent, then add broccoli. Cook broccoli until it
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Dried basil leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -58,8 +58,8 @@ Cook onion until slightly translucent, then add broccoli. Cook broccoli until it
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pk</unitOfMeasure>
-            <ingredientName>Fettucine noodles (12 ounces), cooked and drained</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Pack Fettucine noodles (12 ounces), cooked and drained</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

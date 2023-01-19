@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chiles Rellenos - Mexican Tomato Sauce</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>6</servings>
     <instructions>In a blender, combine all the ingredients and puree until smooth. Transfer the tomato puree to a medium saucepan and bring to a boil. Lower the heat and simmer until slightly thick, about 10 minutes. Yield: about 3 cups</instructions>
@@ -14,8 +14,8 @@
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>md</unitOfMeasure>
-            <ingredientName>yellow onion</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium yellow onion</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -38,13 +38,13 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cinnamon, preferably Mexican</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

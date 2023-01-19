@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Creamy Dijon-Dill Potato Salad</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>I guess I'm sticking to the classic salads for my BBQ, and there's nothing more classic BBQ than a good home-style potato salad. Mine is rich in flavor, but still light and fresh, thanks in large part to the dill and lemon juice. The vibrant green dill also does wonders for the look of the salad. There's nothing worse than mushy, mealy potatoes, so make sure to start your spuds off in cold water and to cook them whole.
@@ -28,8 +28,8 @@ When they're cool, cut the potatoes into 1-inch pieces, add them to the bowl as 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>stalks</unitOfMeasure>
-            <ingredientName>celery</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>stalks celery</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -52,7 +52,7 @@ When they're cool, cut the potatoes into 1-inch pieces, add them to the bowl as 
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -64,7 +64,7 @@ When they're cool, cut the potatoes into 1-inch pieces, add them to the bowl as 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Dijon mustard, grainy or regular</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -24,25 +24,25 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp.</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vegetable oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced ginger</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cloves</unitOfMeasure>
-            <ingredientName>garlic, minced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>serrano chile, seeded and finely minced (save the other half for the turkey)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -84,19 +84,19 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vegetable oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Shelled pistachios, small handful, about 1/4 cup</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Raisins, small handful, about 1/4 cup</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -108,19 +108,19 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>large</unitOfMeasure>
-            <ingredientName>white onion, finely diced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large white onion, finely diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>Each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>red bell pepper, seeds and membrane removed, finely diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>serrano chile, seeds intact (don't chop it up unless you like things spicy!)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -132,7 +132,7 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pound</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>ground turkey</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -150,13 +150,13 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Small handful chopped fresh cilantro (soft stems included)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>hamburger buns</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

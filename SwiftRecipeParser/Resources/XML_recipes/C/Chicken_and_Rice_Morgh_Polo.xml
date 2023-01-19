@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken and Rice (Morgh Polo)</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>For the Rice:
@@ -27,7 +27,7 @@ For the Chicken:
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>lbs</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>chicken tenders and thighs</ingredientName>
             <processingInstructions> thighs have skin on</processingInstructions>
         </ingredient>

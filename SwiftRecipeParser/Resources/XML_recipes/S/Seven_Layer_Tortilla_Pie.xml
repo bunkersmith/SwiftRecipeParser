@@ -20,13 +20,13 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cloves</unitOfMeasure>
-            <ingredientName>Garlic, Minced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Cloves Garlic, Minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Fresh Cilantro, Chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

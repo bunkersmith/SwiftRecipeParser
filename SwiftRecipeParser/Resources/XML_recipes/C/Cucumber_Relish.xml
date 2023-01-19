@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cucumber Relish</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>1. Peel the cucumber, removing the skin in lengthwise strips; leave a little skin between each strip. Cut the cucumber in half lengthwise, remove the seeds with a spoon or melon bailer, and cut the cucumber flesh into 1/2-inch dice. 
@@ -16,7 +16,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sugar, or more to taste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -28,19 +28,19 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>coarse salt, or more to taste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>distilled white vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -52,13 +52,13 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fresh cilantro, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>finely chopped dry-roasted peanuts (optional)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

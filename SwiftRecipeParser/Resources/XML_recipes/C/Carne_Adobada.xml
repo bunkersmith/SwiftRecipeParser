@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Carne Adobada</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>1. In a medium saucepan, bring the dried chiles and water to a boil
@@ -69,7 +69,7 @@ NOTE: If dried pasilla chiles aren’t available, increase the number of dried a
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>coarse salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -99,13 +99,13 @@ NOTE: If dried pasilla chiles aren’t available, increase the number of dried a
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>pounds</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>pork shoulder roast</ingredientName>
             <processingInstructions> finely chopped</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vegetable oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

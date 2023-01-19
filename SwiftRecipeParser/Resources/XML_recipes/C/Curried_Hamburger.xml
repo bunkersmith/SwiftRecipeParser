@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Curried Hamburger</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>8</servings>
     <instructions>Brown onion in olive oil.
@@ -40,7 +40,7 @@ Brown meat and drain off fat. Combine all ingredients. Bake in covered casserole
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Dry Mustard</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -52,7 +52,7 @@ Brown meat and drain off fat. Combine all ingredients. Bake in covered casserole
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Curry Powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

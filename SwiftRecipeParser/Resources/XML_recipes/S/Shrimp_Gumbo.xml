@@ -56,7 +56,7 @@ Once the roux is done, carefully remove it from the oven and set over medium-hig
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -68,7 +68,7 @@ Once the roux is done, carefully remove it from the oven and set over medium-hig
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -104,7 +104,7 @@ Once the roux is done, carefully remove it from the oven and set over medium-hig
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>file powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

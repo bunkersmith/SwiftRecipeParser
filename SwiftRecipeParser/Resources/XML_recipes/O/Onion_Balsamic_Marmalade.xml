@@ -14,7 +14,7 @@ Makes 1 cup of marmalade</instructions>
     <ingredients>
         <ingredient>
             <quantity>5-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>unsalted butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -26,7 +26,7 @@ Makes 1 cup of marmalade</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

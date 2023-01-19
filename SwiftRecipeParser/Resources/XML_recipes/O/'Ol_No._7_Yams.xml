@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>nutmeg, freshly grated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

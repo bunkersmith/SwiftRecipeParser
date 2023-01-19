@@ -10,7 +10,7 @@
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Vegetable Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

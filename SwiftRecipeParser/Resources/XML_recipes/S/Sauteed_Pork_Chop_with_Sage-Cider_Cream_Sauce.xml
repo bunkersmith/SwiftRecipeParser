@@ -14,7 +14,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Extra-virgin Olive Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,13 +44,13 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Finely Chopped Fresh Sage</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Finely Chopped Fresh Parsley</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

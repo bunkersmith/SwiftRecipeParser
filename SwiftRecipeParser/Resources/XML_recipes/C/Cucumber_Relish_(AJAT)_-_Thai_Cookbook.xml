@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cucumber Relish (AJAT) - Thai Cookbook</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>2</servings>
     <instructions>MAKES 3/4 CUP PUT the vinegar and sugar in a small saucepan with ½ cup of water. Bring to a boil, then reduce the heat and simmer for 5 minutes. 
@@ -10,7 +10,7 @@ ALLOW to cool before stirring in the chilli, fish sauce, peanuts and cucumber.</
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Rice vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -28,7 +28,7 @@ ALLOW to cool before stirring in the chilli, fish sauce, peanuts and cucumber.</
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

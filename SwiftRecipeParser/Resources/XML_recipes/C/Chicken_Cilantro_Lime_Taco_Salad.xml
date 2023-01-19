@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Cilantro Lime Taco Salad</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>1. To make the salad, divide the chopped romaine among two large salad bowls. Add half each of the shredded chicken, black beans, corn, bell pepper, and avocado to each bowl. Top each with crushed tortilla chips.
@@ -72,7 +72,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>Tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>freshly squeezed lime juice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

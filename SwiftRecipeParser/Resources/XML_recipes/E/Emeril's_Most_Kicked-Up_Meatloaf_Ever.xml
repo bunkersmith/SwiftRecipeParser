@@ -16,7 +16,7 @@ Slice and serve along with the Macaroni with 4 Cheeses.</instructions>
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -28,8 +28,8 @@ Slice and serve along with the Macaroni with 4 Cheeses.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>rib</unitOfMeasure>
-            <ingredientName>celery, finely chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>rib celery, finely chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -40,19 +40,19 @@ Slice and serve along with the Macaroni with 4 Cheeses.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>garlic, minced, plus 1 teaspoon</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>thyme leaves, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>rosemary, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -70,7 +70,7 @@ Slice and serve along with the Macaroni with 4 Cheeses.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Dijon mustard</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -82,7 +82,7 @@ Slice and serve along with the Macaroni with 4 Cheeses.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Worcestershire sauce, plus 1 teaspoon</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -118,25 +118,25 @@ Slice and serve along with the Macaroni with 4 Cheeses.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>plus 1/4 teaspoon freshly ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>sl</unitOfMeasure>
-            <ingredientName>bacon, cut in half</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>slice bacon, cut in half</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>white or red wine vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

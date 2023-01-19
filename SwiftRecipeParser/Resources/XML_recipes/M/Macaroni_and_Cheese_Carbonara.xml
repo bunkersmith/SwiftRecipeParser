@@ -14,7 +14,7 @@ Place the cooked macaroni in a large bowl, add the cheese sauce, reserved pancet
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -32,7 +32,7 @@ Place the cooked macaroni in a large bowl, add the cheese sauce, reserved pancet
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>all-purpose flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

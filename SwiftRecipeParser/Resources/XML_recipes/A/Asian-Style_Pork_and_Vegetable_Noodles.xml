@@ -8,13 +8,13 @@
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Sweet-hot Mustard</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Tamari Soy Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Toasted Sesame Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,13 +38,13 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Vegetable Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2-1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Crushed Red Pepper Flakes</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -98,7 +98,7 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Toasted Sesame Seeds</ingredientName>
             <processingInstructions>For Garnish</processingInstructions>
         </ingredient>

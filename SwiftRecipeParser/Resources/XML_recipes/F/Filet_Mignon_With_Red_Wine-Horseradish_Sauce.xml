@@ -8,7 +8,7 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Crushed Black Peppercorns</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,7 +44,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Prepared White Horseradish</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

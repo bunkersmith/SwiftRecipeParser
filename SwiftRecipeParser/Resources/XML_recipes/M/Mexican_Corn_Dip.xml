@@ -32,7 +32,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

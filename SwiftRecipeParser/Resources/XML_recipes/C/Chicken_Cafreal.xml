@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Cafreal</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>1. Wash, remove skin, trim and cut the chicken into eight medium sized pieces. Make deep incisions on the chicken using a sharp knife.
@@ -34,7 +34,7 @@ Chef's tip: If you like you can add a little fresh coriander to the paste. I kno
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>oil, plus extra for deep frying</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -58,7 +58,7 @@ Chef's tip: If you like you can add a little fresh coriander to the paste. I kno
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>coriander seeds</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

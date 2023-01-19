@@ -10,7 +10,7 @@ While rice cooks, make the vegetables. Heat a deep nonstick skillet over medium-
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>extra-virgin olive oil, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -64,7 +64,7 @@ While rice cooks, make the vegetables. Heat a deep nonstick skillet over medium-
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -112,7 +112,7 @@ While rice cooks, make the vegetables. Heat a deep nonstick skillet over medium-
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>mild or hot curry paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

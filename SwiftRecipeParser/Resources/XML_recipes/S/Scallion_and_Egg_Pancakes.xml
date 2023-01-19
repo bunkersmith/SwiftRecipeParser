@@ -10,13 +10,13 @@ Heat a large nonstick skillet over high heat with 1 tablespoon oil. When the oil
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>honey</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>white wine or cider vinegar, eyeball it</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -40,7 +40,7 @@ Heat a large nonstick skillet over high heat with 1 tablespoon oil. When the oil
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>light oil, plus some to drizzle</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

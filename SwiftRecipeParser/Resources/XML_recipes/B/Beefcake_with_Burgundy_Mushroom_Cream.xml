@@ -28,7 +28,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Vegetable oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -58,38 +58,38 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Ketchup</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Worcestershire sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Fresh Parsley, Chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Fresh Thyme, Chopped (or 1/2 tsp dried)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>Salt</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Dash Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>turns</unitOfMeasure>
-            <ingredientName>Black pepper, freshly ground</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Turns Black pepper, freshly ground</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -106,7 +106,7 @@
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Unsalted butter, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -118,7 +118,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Fresh Garlic, minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -142,20 +142,20 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Paprika</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>8</quantity>
-            <unitOfMeasure>turns</unitOfMeasure>
-            <ingredientName>Black pepper, freshly ground</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Turns Black pepper, freshly ground</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -166,7 +166,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Fresh Parsley, minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

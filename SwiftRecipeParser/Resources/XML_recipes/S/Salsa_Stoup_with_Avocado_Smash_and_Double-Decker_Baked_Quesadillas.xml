@@ -31,7 +31,7 @@ Chop and seed the plum tomato and fold into avocado mixture.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>extra-virgin olive oil, 2 turns of pan, plus some for brushing tortillas</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -55,8 +55,8 @@ Chop and seed the plum tomato and fold into avocado mixture.</instructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>ribs</unitOfMeasure>
-            <ingredientName>celery, chopped with greens</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>ribs celery, chopped with greens</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -91,7 +91,7 @@ Chop and seed the plum tomato and fold into avocado mixture.</instructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>chopped cilantro or flat-leaf parsley</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -157,7 +157,7 @@ Chop and seed the plum tomato and fold into avocado mixture.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cilantro leaves, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

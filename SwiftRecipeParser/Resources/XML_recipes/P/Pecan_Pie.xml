@@ -14,7 +14,7 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>melted butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>light brown sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,13 +44,13 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>light corn syrup</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/3</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>pecan halves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

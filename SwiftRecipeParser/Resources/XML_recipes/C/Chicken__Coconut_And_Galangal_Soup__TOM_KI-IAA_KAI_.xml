@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken, Coconut And Galangal Soup (TOM KI-IAA KAI)</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes>THIS IS ONE OF THE CLASSIC SOUPS OF THAILAND. THE THAI NAME MEANS ‘BOILED GALANGAL CHICKEN’. ALTHOUGH USUALLY MADE WITH CHICKEN, YOU CAN MAKE THIS RECIPE USING PRAWNS, FISH OR VEGETABLES. DON’T WORRY WHEN THE COCONUT MILK SPLITS — IT IS SUPPOSED TO.</notes>
     <servings>4</servings>
     <instructions>PUT the coconut milk, lemon grass, galangal and
@@ -29,13 +29,13 @@ with coriander leaves.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>lemon</unitOfMeasure>
-            <ingredientName>grass stalks</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lemon grass stalks</ingredientName>
             <processingInstructions> white part only, each cut into a tassel or bruised</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>inch</unitOfMeasure>
+            <unitOfMeasure>in</unitOfMeasure>
             <ingredientName>piece of galangal</ingredientName>
             <processingInstructions> cut into several pieces</processingInstructions>
         </ingredient>
@@ -53,7 +53,7 @@ with coriander leaves.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -77,20 +77,20 @@ with coriander leaves.</instructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>lime juice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>kaffir</unitOfMeasure>
-            <ingredientName>lime leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>kaffir lime leaves</ingredientName>
             <processingInstructions> torn in half</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>bird's</unitOfMeasure>
-            <ingredientName>eye chillies</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bird's eye chillies</ingredientName>
             <processingInstructions> stems removed, bruised</processingInstructions>
         </ingredient>
         <ingredient>

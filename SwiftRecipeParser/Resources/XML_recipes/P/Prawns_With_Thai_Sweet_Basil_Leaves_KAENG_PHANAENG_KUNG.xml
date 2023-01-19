@@ -18,13 +18,13 @@ ADD the coconut milk, fish sauce and palm sugar and cook for a few seconds. Add 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vegetable oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>dry curry paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -36,25 +36,25 @@ ADD the coconut milk, fish sauce and palm sugar and cook for a few seconds. Add 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>palm sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>handful</unitOfMeasure>
-            <ingredientName>Thai sweet basil leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>handful Thai sweet basil leaves</ingredientName>
             <processingInstructions> for garnish</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>long red chilli</ingredientName>
             <processingInstructions> seeded and finely sliced, for garnish</processingInstructions>
         </ingredient>

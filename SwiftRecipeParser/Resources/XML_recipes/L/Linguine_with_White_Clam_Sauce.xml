@@ -8,13 +8,13 @@
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>extra-virgin olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>red pepper flakes</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -26,13 +26,13 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tin flat</unitOfMeasure>
-            <ingredientName>anchovy fillets (6 or 7 fillets), drained</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>tin flat anchovy fillets (6 or 7 fillets), drained</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fresh thyme leaves (4 or 5 sprigs, or 1-1/2 teaspoons dried), stripped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,8 +50,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>15-oz can</unitOfMeasure>
-            <ingredientName>fancy whole baby clams</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>15-oz can fancy whole baby clams</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -68,7 +68,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>chopped parsley leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

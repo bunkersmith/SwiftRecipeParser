@@ -8,7 +8,7 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Minced Garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,19 +38,19 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>White Vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>5</quantity>
-            <unitOfMeasure>Dashes</unitOfMeasure>
-            <ingredientName>Tabasco Sauce Or Other Hot Red Pepper Sauce (can use up to 10 dashes)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Dashes Tabasco Sauce Or Other Hot Red Pepper Sauce (can use up to 10 dashes)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Roughly Chopped Cilantro</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

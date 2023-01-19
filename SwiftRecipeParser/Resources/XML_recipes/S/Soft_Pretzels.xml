@@ -16,7 +16,7 @@ Place the pretzels into the boiling water, 1 by 1, for 30 seconds. Remove them f
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

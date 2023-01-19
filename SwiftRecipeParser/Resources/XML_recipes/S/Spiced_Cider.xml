@@ -14,7 +14,7 @@
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Ginger, Ground</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Cloves, Ground</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,8 +50,8 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ga</unitOfMeasure>
-            <ingredientName>Apple Cider</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Gallon Apple Cider</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

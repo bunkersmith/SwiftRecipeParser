@@ -40,13 +40,13 @@ Add to the hot tomato sauce, cover with a tin foil tent so that the foil is not 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fresh parsley, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fresh oregano, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -64,8 +64,8 @@ Add to the hot tomato sauce, cover with a tin foil tent so that the foil is not 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>clove</unitOfMeasure>
-            <ingredientName>garlic</ingredientName>
+            <unitOfMeasure>ea </unitOfMeasure>
+            <ingredientName>garlic clove</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

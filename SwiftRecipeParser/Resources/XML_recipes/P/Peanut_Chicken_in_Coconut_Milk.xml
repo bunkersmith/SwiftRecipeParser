@@ -8,20 +8,20 @@
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>peanut oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>ginger, peeled and grated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>clove</unitOfMeasure>
-            <ingredientName>garlic, finely chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic clove, finely chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>smooth peanut butter, preferably unsweetened</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

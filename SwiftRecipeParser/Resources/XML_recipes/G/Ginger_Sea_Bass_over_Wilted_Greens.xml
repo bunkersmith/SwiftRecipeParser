@@ -14,19 +14,19 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>5-oz</unitOfMeasure>
-            <ingredientName>sea bass fillets</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>5-oz sea bass fillets</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>fresh ginger, peeled and minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>minced garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,13 +38,13 @@
         </ingredient>
         <ingredient>
             <quantity>2-2/3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>soy sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>sesame oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -56,7 +56,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fresh basil leaves, thinly sliced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

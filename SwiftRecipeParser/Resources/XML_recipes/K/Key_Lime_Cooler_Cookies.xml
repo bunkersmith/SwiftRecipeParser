@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Key Lime Peel, Grated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,7 +44,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Baking powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

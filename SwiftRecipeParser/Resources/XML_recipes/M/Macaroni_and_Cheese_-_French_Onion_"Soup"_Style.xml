@@ -48,13 +48,13 @@ Bake until top is golden brown and cheese is bubbly, about 35 to 40 minutes. Rem
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>all-purpose flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -96,13 +96,13 @@ Bake until top is golden brown and cheese is bubbly, about 35 to 40 minutes. Rem
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter, plus 1 tablespoon (or nonstick spray)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>extra-virgin olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -120,7 +120,7 @@ Bake until top is golden brown and cheese is bubbly, about 35 to 40 minutes. Rem
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>honey</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -52,7 +52,7 @@ Remove from the oven and serve hot or at room temperature.</instructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>unsalted butter, (cold) cut into pieces</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -82,7 +82,7 @@ Remove from the oven and serve hot or at room temperature.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>unsalted butter, melted</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

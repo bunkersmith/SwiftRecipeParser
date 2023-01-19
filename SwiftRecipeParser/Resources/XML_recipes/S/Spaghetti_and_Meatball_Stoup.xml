@@ -12,7 +12,7 @@ Remove lid from soup and slide balls into soup. Bring back to a boil then stir i
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>extra-virgin olive oil, 2 turns of the pan</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -78,7 +78,7 @@ Remove lid from soup and slide balls into soup. Bring back to a boil then stir i
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>chopped parsley leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

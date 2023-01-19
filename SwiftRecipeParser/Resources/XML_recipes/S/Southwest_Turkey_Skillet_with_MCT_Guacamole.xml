@@ -17,7 +17,7 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>avocado oil</ingredientName>
             <processingInstructions>or tea seed oil</processingInstructions>
         </ingredient>

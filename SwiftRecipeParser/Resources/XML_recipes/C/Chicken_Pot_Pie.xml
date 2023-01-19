@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Pot Pie</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Filling:
@@ -48,8 +48,8 @@ Sift together flour, salt, and baking powder. Cut in shortening with blender unt
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>package</unitOfMeasure>
-            <ingredientName>frozen green peas, 10 oz or one 8-oz can, drained</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>packagefrozen green peas, 10 oz or one 8-oz can, drained</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

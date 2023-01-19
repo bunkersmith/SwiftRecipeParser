@@ -31,7 +31,7 @@ leaves and cook for another 5 minutes.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>yellow curry paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -43,7 +43,7 @@ leaves and cook for another 5 minutes.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>palm sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

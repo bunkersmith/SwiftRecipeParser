@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Creamy Garlic Mashed Potatoes</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>Peel and dice potatoes, making sure all are relatively the same size. Place in a large saucepan and cover with water. Bring to a boil over medium-high heat and then reduce heat to maintain a rolling boil. Cook until potatoes fall apart when poked with a fork. Heat the half-and-half and the garlic in a medium saucepan over medium heat until simmering. Remove from heat and set aside. Remove the potatoes from the heat and drain off the water. Mash and add the garlic-cream mixture, salt, and Parmesan; stir to combine. Let stand for 5 minutes so that mixture thickens and then serve.</instructions>
@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Kosher Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

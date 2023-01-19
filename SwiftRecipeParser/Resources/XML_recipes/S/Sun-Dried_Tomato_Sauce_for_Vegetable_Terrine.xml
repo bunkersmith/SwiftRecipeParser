@@ -14,7 +14,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>balsamic vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -26,20 +26,20 @@
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>crushed red pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>ground black pepper</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dash ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

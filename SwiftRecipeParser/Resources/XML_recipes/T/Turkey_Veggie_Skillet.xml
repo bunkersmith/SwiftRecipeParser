@@ -28,7 +28,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Avocado Oil Or Tea Seed Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -64,7 +64,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Chopped Fresh Basil</ingredientName>
             <processingInstructions> or 1/2 teaspoon dried</processingInstructions>
         </ingredient>

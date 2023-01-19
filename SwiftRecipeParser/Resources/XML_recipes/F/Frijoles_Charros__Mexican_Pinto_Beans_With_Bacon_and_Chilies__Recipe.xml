@@ -12,7 +12,7 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pound</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>dried pinto beans</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -24,14 +24,14 @@
         </ingredient>
         <ingredient>
             <quantity>12</quantity>
-            <unitOfMeasure>ounces</unitOfMeasure>
+            <unitOfMeasure>oz</unitOfMeasure>
             <ingredientName>diced bacon (see note above)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>medium</unitOfMeasure>
-            <ingredientName>white or yellow onion</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium white or yellow onion</ingredientName>
             <processingInstructions> diced</processingInstructions>
         </ingredient>
         <ingredient>
@@ -42,14 +42,14 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>medium</unitOfMeasure>
-            <ingredientName>cloves garlic</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium cloves garlic</ingredientName>
             <processingInstructions> minced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cans</unitOfMeasure>
-            <ingredientName>(14-ounce ) diced fire-roasted tomatoes (see note above)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>14-ounce cans diced fire-roasted tomatoes (see note above)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

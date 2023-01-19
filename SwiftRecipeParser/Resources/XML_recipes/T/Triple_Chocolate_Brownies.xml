@@ -18,8 +18,8 @@ To serve, cut into squares while still warm and pile up on a large plate, sprink
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>sticks</unitOfMeasure>
-            <ingredientName>plus 2 tablespoons unsalted butter</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>sticks, plus 2 tablespoons unsalted butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -42,7 +42,7 @@ To serve, cut into squares while still warm and pile up on a large plate, sprink
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>pure vanilla extract</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

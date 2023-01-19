@@ -80,13 +80,13 @@ Dredge the roll in egg wash, allow excess to drain off, and submerge the roll in
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>apple cider vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -110,8 +110,8 @@ Dredge the roll in egg wash, allow excess to drain off, and submerge the roll in
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>bag</unitOfMeasure>
-            <ingredientName>pre-shredded coleslaw mix</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bag pre-shredded coleslaw mix</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -146,7 +146,7 @@ Dredge the roll in egg wash, allow excess to drain off, and submerge the roll in
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

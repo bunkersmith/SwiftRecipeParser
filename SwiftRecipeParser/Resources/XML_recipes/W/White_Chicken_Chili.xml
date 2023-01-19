@@ -30,8 +30,8 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ribs</unitOfMeasure>
-            <ingredientName>Celery</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Ribs Celery</ingredientName>
             <processingInstructions> trimmed and chopped</processingInstructions>
         </ingredient>
         <ingredient>
@@ -42,25 +42,25 @@
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>cloves</unitOfMeasure>
-            <ingredientName>Garlic</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Cloves Garlic</ingredientName>
             <processingInstructions> pressed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Ground Cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Dried Oregano</ingredientName>
             <processingInstructions> crumbled</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Dried Basil</ingredientName>
             <processingInstructions> crumbled</processingInstructions>
         </ingredient>
@@ -72,7 +72,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Extra Virgin Olive Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

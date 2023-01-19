@@ -22,13 +22,13 @@ translucent. Add garlic and continue to saute for 2 minutes. Add turkey, lightly
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced jalapeno</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -58,7 +58,7 @@ translucent. Add garlic and continue to saute for 2 minutes. Add turkey, lightly
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>chopped cilantro leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -94,7 +94,7 @@ translucent. Add garlic and continue to saute for 2 minutes. Add turkey, lightly
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

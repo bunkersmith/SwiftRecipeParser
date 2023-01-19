@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chiles Rellenos</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>To prepare the chiles: Position a rack on the upper most shelf of the broiler element and preheat. Put the chiles on a foil-lined broiler pan and broil, turning occasionally with tongs, until the skin is charred, about 10 minutes.
@@ -36,26 +36,26 @@ Sprinkle with salt, to taste. Gently pull out and discard the skewers. Heat the 
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>baking powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>fine salt, plus more for sprinkling</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>bottle</unitOfMeasure>
-            <ingredientName>lager-style beer, 12 ounces</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bottle lager-style beer, 12 ounces</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

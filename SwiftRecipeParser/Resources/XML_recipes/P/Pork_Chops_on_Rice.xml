@@ -32,8 +32,8 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cans</unitOfMeasure>
-            <ingredientName>(4-oz.) sliced mushrooms, drained</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>4-oz cans sliced mushrooms, drained</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -68,8 +68,8 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cans</unitOfMeasure>
-            <ingredientName>(10.5-oz.) beef consume</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>10.5-oz cans beef consume</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

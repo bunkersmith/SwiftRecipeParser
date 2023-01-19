@@ -32,7 +32,7 @@ Place the pie on a sheet pan to catch any juices that boil over. Bake in the cen
         </ingredient>
         <ingredient>
             <quantity>4-1/2</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>all-purpose flour</ingredientName>
             <processingInstructions>sifted</processingInstructions>
         </ingredient>
@@ -56,7 +56,7 @@ Place the pie on a sheet pan to catch any juices that boil over. Bake in the cen
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>ice water</ingredientName>
             <processingInstructions>strain out the ice just before using</processingInstructions>
         </ingredient>
@@ -98,7 +98,7 @@ Place the pie on a sheet pan to catch any juices that boil over. Bake in the cen
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cornstarch</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -122,19 +122,19 @@ Place the pie on a sheet pan to catch any juices that boil over. Bake in the cen
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>unsalted butter</ingredientName>
             <processingInstructions>cold, cut into pieces</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>heavy cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

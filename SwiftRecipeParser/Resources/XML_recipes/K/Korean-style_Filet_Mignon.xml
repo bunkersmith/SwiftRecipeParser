@@ -26,13 +26,13 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Sriracha (hot) sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>dark sesame oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,8 +44,8 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>5-oz</unitOfMeasure>
-            <ingredientName>filet mignon steaks</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>5-oz filet mignon steaks</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -56,7 +56,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>extra-virgin olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

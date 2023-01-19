@@ -10,8 +10,8 @@ Just before you're ready to serve the salad, fold the avocados into the salad. C
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pt</unitOfMeasure>
-            <ingredientName>grape tomatoes, halved</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>pint grape tomatoes, halved</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -22,8 +22,8 @@ Just before you're ready to serve the salad, fold the avocados into the salad. C
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>15-oz</unitOfMeasure>
-            <ingredientName>can black beans, rinsed and drained</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>15-oz can black beans, rinsed and drained</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -34,7 +34,7 @@ Just before you're ready to serve the salad, fold the avocados into the salad. C
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>jalapeno peppers, seeded and minced(2 peppers)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

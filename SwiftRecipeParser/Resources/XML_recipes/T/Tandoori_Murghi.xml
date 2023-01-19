@@ -22,7 +22,7 @@ Garnish it with lemon wedges and onion rings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Lemon Juice (Nimbu Ka Raas)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -46,13 +46,13 @@ Garnish it with lemon wedges and onion rings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Natural Yogurt (Dahi)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -88,7 +88,7 @@ Garnish it with lemon wedges and onion rings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>melted clarified butter (Ghee)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

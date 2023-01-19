@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chocolate Fudge Brownie Cheesecake</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>10</servings>
     <instructions>http://bzfd.it/2jHsfpS
@@ -27,13 +27,13 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>box</unitOfMeasure>
-            <ingredientName>brownie mix</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>box brownie mix</ingredientName>
             <processingInstructions> prepared according to package instructions</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>24</quantity>
-            <unitOfMeasure>ounces</unitOfMeasure>
+            <unitOfMeasure>oz</unitOfMeasure>
             <ingredientName>cream cheese</ingredientName>
             <processingInstructions> softened</processingInstructions>
         </ingredient>
@@ -45,13 +45,13 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>eggs,</unitOfMeasure>
-            <ingredientName>beaten</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>eggs, beaten</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>vanilla extract</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -63,7 +63,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pound</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>semi-sweet chocolate chips</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

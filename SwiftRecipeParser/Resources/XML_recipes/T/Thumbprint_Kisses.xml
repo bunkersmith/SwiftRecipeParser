@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Vanilla Extract</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,7 +50,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Light Cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

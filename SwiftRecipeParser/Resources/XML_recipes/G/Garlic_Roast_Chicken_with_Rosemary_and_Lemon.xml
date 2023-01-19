@@ -20,13 +20,13 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Fresh Rosemary, Leaves Stripped From Stems</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Extra-virgin Olive Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Grill Seasoning Blend (recommended: Montreal Seasoning)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

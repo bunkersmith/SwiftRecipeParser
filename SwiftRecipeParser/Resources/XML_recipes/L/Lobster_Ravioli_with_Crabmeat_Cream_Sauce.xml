@@ -34,7 +34,7 @@ Add all the ingredients into a large mixing bowl until all ingredients are blend
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Shallots, Chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -64,7 +64,7 @@ Add all the ingredients into a large mixing bowl until all ingredients are blend
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Chives, Chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -94,7 +94,7 @@ Add all the ingredients into a large mixing bowl until all ingredients are blend
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Chopped Shallots</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

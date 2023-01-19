@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cabbage Bread Pudding</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>8</servings>
     <instructions>1. Preheat the oven to 350 degrees.
@@ -42,8 +42,8 @@
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>sl</unitOfMeasure>
-            <ingredientName>Bacon</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Slice Bacon</ingredientName>
             <processingInstructions> Quartered</processingInstructions>
         </ingredient>
         <ingredient>
@@ -54,7 +54,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Garlic</ingredientName>
             <processingInstructions> Minced</processingInstructions>
         </ingredient>
@@ -72,13 +72,13 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Caraway Seeds</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Unsalted Butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

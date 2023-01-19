@@ -34,7 +34,7 @@ Gently place the wontons in the oil, 7 to 8 at a time. Fry until golden, approxi
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>orange liqueur</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -64,8 +64,8 @@ Gently place the wontons in the oil, 7 to 8 at a time. Fry until golden, approxi
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>gal</unitOfMeasure>
-            <ingredientName>vegetable or peanut oil, for frying</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>gallon vegetable or peanut oil, for frying</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

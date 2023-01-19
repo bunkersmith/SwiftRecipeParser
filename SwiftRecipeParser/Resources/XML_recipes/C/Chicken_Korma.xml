@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Korma</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Marination for chicken korma recipe
@@ -47,13 +47,13 @@ How to make chicken korma
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsps</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>yogurt</ingredientName>
             <processingInstructions> plain</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>ginger garlic paste</ingredientName>
             <processingInstructions> ground or crushed in equal quantities</processingInstructions>
         </ingredient>
@@ -89,7 +89,7 @@ How to make chicken korma
         </ingredient>
         <ingredient>
             <quantity>1-3/4</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>oil or ghee</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -119,7 +119,7 @@ How to make chicken korma
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tbsps</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>yogurt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -149,7 +149,7 @@ How to make chicken korma
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>inch</unitOfMeasure>
+            <unitOfMeasure>in</unitOfMeasure>
             <ingredientName>cinnamon piece</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -197,7 +197,7 @@ How to make chicken korma
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsps</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>coriander leaves or cilantro</ingredientName>
             <processingInstructions>chopped</processingInstructions>
         </ingredient>

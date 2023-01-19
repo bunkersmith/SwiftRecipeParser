@@ -18,8 +18,8 @@ Turn off the heat. Add the yogurt and stir to combine. Taste for seasoning, and 
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>large</unitOfMeasure>
-            <ingredientName>eggplants</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large eggplants</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -30,14 +30,14 @@ Turn off the heat. Add the yogurt and stir to combine. Taste for seasoning, and 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>medium</unitOfMeasure>
-            <ingredientName>white onion, finely diced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium white onion, finely diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>cloves</unitOfMeasure>
-            <ingredientName>garlic, minced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

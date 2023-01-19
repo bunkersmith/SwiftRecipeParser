@@ -56,7 +56,7 @@ Spread the mayonnaise on the bread and drizzle with hot sauce. Arrange the meat 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>brown sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -74,7 +74,7 @@ Spread the mayonnaise on the bread and drizzle with hot sauce. Arrange the meat 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -92,7 +92,7 @@ Spread the mayonnaise on the bread and drizzle with hot sauce. Arrange the meat 
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Sriracha hot sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -104,14 +104,14 @@ Spread the mayonnaise on the bread and drizzle with hot sauce. Arrange the meat 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced fresh mint leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>bunch</unitOfMeasure>
-            <ingredientName>fresh cilantro leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bunch fresh cilantro leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

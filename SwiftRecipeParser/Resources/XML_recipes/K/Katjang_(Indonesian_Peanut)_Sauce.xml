@@ -18,7 +18,7 @@ Remove Lemongrass before serving.</instructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Peanutbutter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -54,13 +54,13 @@ Remove Lemongrass before serving.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Lemon juice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>peanut oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

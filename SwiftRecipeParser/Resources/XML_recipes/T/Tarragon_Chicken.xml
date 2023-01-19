@@ -20,8 +20,8 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>cloves</unitOfMeasure>
-            <ingredientName>garlic, peeled and thinly sliced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, peeled and thinly sliced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>chopped fresh tarragon (or 2 tsp dried)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,13 +50,13 @@
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

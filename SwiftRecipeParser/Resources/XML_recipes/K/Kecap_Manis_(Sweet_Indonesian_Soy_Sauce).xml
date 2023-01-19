@@ -16,7 +16,7 @@ Makes about 10 tablespoons. Stores indefinitely in the refrigerator.</instructio
     <ingredients>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>palm sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -28,20 +28,20 @@ Makes about 10 tablespoons. Stores indefinitely in the refrigerator.</instructio
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>lemon grass, sliced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>clove</unitOfMeasure>
-            <ingredientName>garlic, minced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>garlic clove, minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

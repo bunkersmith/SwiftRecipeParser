@@ -26,13 +26,13 @@ cucumber relish.</instructions>
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vegetable oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>dry curry paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -62,19 +62,19 @@ cucumber relish.</instructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>tamarind puree</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>kaffir lime leaves</ingredientName>
             <processingInstructions> finely sliced, for garnish</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>each</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>long red chilli</ingredientName>
             <processingInstructions> seeded and finely sliced, for garnish</processingInstructions>
         </ingredient>

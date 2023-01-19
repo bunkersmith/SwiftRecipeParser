@@ -26,7 +26,7 @@ Place each ball of dough on a floured piece of parchment and roll out to a 1/8-i
         </ingredient>
         <ingredient>
             <quantity>20-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,13 +44,13 @@ Place each ball of dough on a floured piece of parchment and roll out to a 1/8-i
         </ingredient>
         <ingredient>
             <quantity>20-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>apple juice concentrate</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cold water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>large</unitOfMeasure>
-            <ingredientName>cucumber, peeled and seeded</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large cucumber, peeled and seeded</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>rice wine vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

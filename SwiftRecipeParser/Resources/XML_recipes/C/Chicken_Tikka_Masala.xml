@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Tikka Masala</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>8</servings>
     <instructions>For the marinade:
@@ -34,7 +34,7 @@ Add cream and stir through. Garnish with minced fresh cilantro if you like, and 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>grated fresh ginger</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -70,13 +70,13 @@ Add cream and stir through. Garnish with minced fresh cilantro if you like, and 
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -106,13 +106,13 @@ Add cream and stir through. Garnish with minced fresh cilantro if you like, and 
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>paprika</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>garam masala</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -124,7 +124,7 @@ Add cream and stir through. Garnish with minced fresh cilantro if you like, and 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -136,7 +136,7 @@ Add cream and stir through. Garnish with minced fresh cilantro if you like, and 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>dried fenugreek leaves, optional</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cheesecake</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>Heat oven to 350 degrees. Mix crumbs and 2 T sugar, then stir in butter thoroughly. Press into bottom and sides of pie plate. Bake 10 minutes. Remove from oven and cool. Reduce oven temp to 300 degrees. Beat cream cheese and sugar in large mixing bowl, then add vanilla. Beat eggs in one at a time. Pour over cracker crust and bake for 1 hour, or until center is firm and top is slightly browned. Chill for 3 hours. Can also substitute chocolate cookie crumbs for graham cracker crumbs and add chocolate chips to the filling.</instructions>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Vanilla Extract</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

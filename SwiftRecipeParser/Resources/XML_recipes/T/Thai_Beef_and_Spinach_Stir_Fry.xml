@@ -18,7 +18,7 @@ Serve with coconut rice.</instructions>
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>peanut oil, divided</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -30,13 +30,13 @@ Serve with coconut rice.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>cloves</unitOfMeasure>
-            <ingredientName>garlic, finely sliced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, finely sliced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>ginger, finely diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -48,7 +48,7 @@ Serve with coconut rice.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1-3/4</quantity>
-            <unitOfMeasure>lbs</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>lean beef strips</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -60,7 +60,7 @@ Serve with coconut rice.</instructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>mint leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -72,7 +72,7 @@ Serve with coconut rice.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>lime juice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -84,7 +84,7 @@ Serve with coconut rice.</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sweet Thai chili sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

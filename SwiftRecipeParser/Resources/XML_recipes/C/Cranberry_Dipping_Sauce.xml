@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cranberry Dipping Sauce</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Combine all ingredients in a non-reactive saucepan, (stainless steel) and bring to a boil. Reduce heat and simmer, stirring occasionally, for 30 to 45 minutes or until liquid is reduced by half. 
@@ -28,13 +28,13 @@ Carefully puree with an immersion blender or blender until smooth. Check for sea
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>maple syrup</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>light brown sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

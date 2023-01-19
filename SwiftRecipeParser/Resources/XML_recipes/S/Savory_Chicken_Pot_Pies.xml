@@ -80,7 +80,7 @@ Makes 6 servings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -152,8 +152,8 @@ Makes 6 servings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>pk</unitOfMeasure>
-            <ingredientName>Frozen pearl onions (1/2 Lb)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Package frozen pearl onions (1/2 Lb)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -176,19 +176,19 @@ Makes 6 servings.</instructions>
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Poultry seasoning</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

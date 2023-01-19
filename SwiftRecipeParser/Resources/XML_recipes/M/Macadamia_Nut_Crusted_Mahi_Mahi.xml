@@ -24,7 +24,7 @@ Remove from the oven and allow to stand 10 minutes before serving.</instructions
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>all-purpose flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -42,8 +42,8 @@ Remove from the oven and allow to stand 10 minutes before serving.</instructions
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>7-oz</unitOfMeasure>
-            <ingredientName>mahi mahi fillets</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>7-oz mahi mahi fillets</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -54,7 +54,7 @@ Remove from the oven and allow to stand 10 minutes before serving.</instructions
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>coconut milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

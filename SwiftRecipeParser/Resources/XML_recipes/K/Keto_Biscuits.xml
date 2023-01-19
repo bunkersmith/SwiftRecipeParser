@@ -16,13 +16,13 @@ Use a cookie scoop to place the biscuits on a parchment paper lined baking sheet
     <ingredients>
         <ingredient>
             <quantity>18</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Almond Flour</ingredientName>
             <processingInstructions> chilled</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Salted Butter</ingredientName>
             <processingInstructions> cold</processingInstructions>
         </ingredient>

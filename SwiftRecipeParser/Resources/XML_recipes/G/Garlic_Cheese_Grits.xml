@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>garlic salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

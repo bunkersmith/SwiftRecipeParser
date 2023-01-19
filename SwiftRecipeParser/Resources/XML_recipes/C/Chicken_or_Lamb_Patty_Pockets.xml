@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken or Lamb Patty Pockets</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Place the herbs in a food processor and pulse grind them into a fine chop. In a bowl combine the herbs, yogurt, cumin and grill seasoning. Add the meat and mix to combine. Form into 4 large, very thin patties. Wash up and preheat a large nonstick skillet with a couple tablespoons extra-virgin olive oil over medium-high heat. Cook patties 3 to 4 minutes on each side. Heat a small second skillet over high heat and blister the pitas on each side. Cut tops off the bread and fill pita pockets with patties, lettuce and chutney.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>handful</unitOfMeasure>
-            <ingredientName>cilantro leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>handful cilantro leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>handful</unitOfMeasure>
-            <ingredientName>mint leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>handful mint leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>handful</unitOfMeasure>
-            <ingredientName>basil leaves</ingredientName>
+            <unitOfMeasure>ea </unitOfMeasure>
+            <ingredientName>handful basil leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -32,7 +32,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cumin, a palm full</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,7 +50,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>extra-virgin olive oil, 2 turns of the pan</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

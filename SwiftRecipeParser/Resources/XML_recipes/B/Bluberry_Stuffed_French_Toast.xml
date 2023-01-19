@@ -16,14 +16,14 @@ To make the sauce: Cook the water, corn starch, sugar, and 1 cup blueberries unt
         </ingredient>
         <ingredient>
             <quantity>12</quantity>
-            <unitOfMeasure>sl</unitOfMeasure>
-            <ingredientName>Thick Bread (Texas Toast)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Slices Thick Bread (Texas Toast)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>8-oz pkgs</unitOfMeasure>
-            <ingredientName>Cream Cheese</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>8-oz Pkgs Cream Cheese</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -76,7 +76,7 @@ To make the sauce: Cook the water, corn starch, sugar, and 1 cup blueberries unt
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Cornstarch</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -88,7 +88,7 @@ To make the sauce: Cook the water, corn starch, sugar, and 1 cup blueberries unt
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

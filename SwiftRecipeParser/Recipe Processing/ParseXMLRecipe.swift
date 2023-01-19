@@ -41,7 +41,9 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
         super.init()
     }
     
-    func parseRecipeFromXMLData(recipeFileData:NSData,  databaseInterface:DatabaseInterface) -> Bool {
+    var unitsOfMeasure = Array<String>()
+    
+    func parseRecipeFromXMLData(recipeFileData:NSData,  databaseInterface:DatabaseInterface) -> Array<String> {
         let xmlparser:XMLParser = XMLParser(data: recipeFileData as Data)
         
         localDatabaseInterface = databaseInterface
@@ -54,7 +56,9 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
             Logger.logDetails(msg: "Error Error Error!!!")
         }
         
-        return success
+        unitsOfMeasure.insert(currentRecipeTitle!.name, at: 0)
+
+        return unitsOfMeasure
     }
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
@@ -201,6 +205,9 @@ class ParseXMLRecipe : NSObject, XMLParserDelegate {
                 if currentIngredient != nil {
 // CANNOT CONVERT unitOfMeasure TO LOWERCASE, BECAUSE MANY RECIPIES RELY ON T FOR TABLESPOON AND t FOR TEASPOON
                     currentIngredient!.unitOfMeasure = (elementValue as String)//.lowercased()
+                    if unitsOfMeasure.firstIndex(of: elementValue as String) == nil {
+                        unitsOfMeasure.append(elementValue as String)
+                    }
                 }
             break
             

@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ga</unitOfMeasure>
-            <ingredientName>Water</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Gallon Water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -62,25 +62,25 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>stick</unitOfMeasure>
-            <ingredientName>Butter, Room Temperature</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Stick Butter, Room Temperature</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Garlic, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Fresh Rosemary Leaves, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Fresh Sage Leaves, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cuban Black Bean Soup</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>Mix onions, garlic, jalapeno pepper, cumin, oregano, thyme and pepper in a 4-1/2 qt or larger slow cooker. Top with ham hocks and beans; add broth. Cover and cook on low for 7 to 9 hours until meat on ham hocks is tender. Lift out ham hocks. When cool enough to handle, remove and discard skin and fat. Remove meat from bones, chop coarsely and return to soup. Stir in lemon juice.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>Onion, choped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Garlic, minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -26,25 +26,25 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Ground cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Dried oregano</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Dried thyme</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -56,8 +56,8 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>15-oz</unitOfMeasure>
-            <ingredientName>Cans black beans, rinsed</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>15-oz Cans black beans, rinsed</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -68,7 +68,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Fresh lemon juice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

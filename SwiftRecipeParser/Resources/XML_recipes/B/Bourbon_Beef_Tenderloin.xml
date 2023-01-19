@@ -26,8 +26,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>bn</unitOfMeasure>
-            <ingredientName>cilantro, leaves chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bunch cilantro, leaves chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Worcestershire sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -56,7 +56,7 @@
         </ingredient>
         <ingredient>
             <quantity>5</quantity>
-            <unitOfMeasure>pound</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>beef tenderloin, silver connective tissue removed</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

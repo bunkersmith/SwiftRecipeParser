@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Enchilada Casserole II</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes>Preheat oven to 350 degrees</notes>
     <servings>12</servings>
     <instructions>Preheat oven to 300 degrees F.
@@ -38,7 +38,7 @@ Bake in the oven for 20 to 30 minutes, or until golden and bubbly. Let stand abo
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Onion, Diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -14,14 +14,14 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pk</unitOfMeasure>
-            <ingredientName>Dry Zesty Italian Dressing</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Packet Dry Zesty Italian Dressing</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pk</unitOfMeasure>
-            <ingredientName>Dry Au Jus Mix</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Packet Dry Au Jus Mix</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -38,8 +38,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pk</unitOfMeasure>
-            <ingredientName>Hoagie Buns (french, Italian Or Sour Dough Bread)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Pack Hoagie Buns (french, Italian Or Sour Dough Bread)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Crispy Pork Carnitas</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>1. Rinse pork and pat dry with a paper towel.
@@ -24,7 +24,7 @@ TO CRISP ON STOVE:
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>lbs</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>skinless boneless pork butt (or shoulder)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -48,7 +48,7 @@ TO CRISP ON STOVE:
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>ground cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

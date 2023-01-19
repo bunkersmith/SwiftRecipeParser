@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chewy Chocolate Chip Cookies by Alton Brown</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Heat oven to 375 degrees F.
@@ -14,8 +14,8 @@ Chill the dough, then scoop onto parchment-lined baking sheets, 6 cookies per sh
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>sticks</unitOfMeasure>
-            <ingredientName>unsalted butter</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>sticks unsalted butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -62,7 +62,7 @@ Chill the dough, then scoop onto parchment-lined baking sheets, 6 cookies per sh
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

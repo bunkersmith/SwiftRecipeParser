@@ -29,7 +29,7 @@ Each serving has:
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>lbs</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>Ground Beef</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -47,19 +47,19 @@ Each serving has:
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Soy Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Five Spice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -101,7 +101,7 @@ Each serving has:
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>Tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Reduced Sugar Ketchup</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

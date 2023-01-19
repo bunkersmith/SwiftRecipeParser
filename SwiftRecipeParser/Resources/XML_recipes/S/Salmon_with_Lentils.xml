@@ -56,7 +56,7 @@ For the salmon, heat a dry oven-proof saute pan over high heat for 4 minutes. Me
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced fresh garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -80,13 +80,13 @@ For the salmon, heat a dry oven-proof saute pan over high heat for 4 minutes. Me
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>tomato paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>good red wine vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

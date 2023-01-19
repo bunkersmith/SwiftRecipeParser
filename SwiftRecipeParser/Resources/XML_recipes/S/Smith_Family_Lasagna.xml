@@ -33,7 +33,7 @@ Note: Baking instructions may not be exactly correct
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Olive Oil </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -57,7 +57,7 @@ Note: Baking instructions may not be exactly correct
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Italian Seasoning</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

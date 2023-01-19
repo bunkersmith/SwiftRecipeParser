@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Lemon Juice (1 Wedge Will Do)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Ground Nutmeg, Or Equivalent Of Freshly Grated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

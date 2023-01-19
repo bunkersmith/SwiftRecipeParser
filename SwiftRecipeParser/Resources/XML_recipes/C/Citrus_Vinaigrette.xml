@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Citrus Vinaigrette</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Combine all ingredients in a blender and blend for 1 minute.</instructions>
@@ -44,8 +44,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp (heaping)</unitOfMeasure>
-            <ingredientName>honey</ingredientName>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>honey, heaping</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

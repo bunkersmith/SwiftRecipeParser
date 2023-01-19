@@ -44,13 +44,13 @@ We serve our ribs without sauce. If you like sauce cooked on, brush ribs with sa
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>garlic powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -80,14 +80,14 @@ We serve our ribs without sauce. If you like sauce cooked on, brush ribs with sa
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>Worcestershire sauce</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Dash Worcestershire sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>hot red pepper sauce</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dash hot red pepper sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -98,8 +98,8 @@ We serve our ribs without sauce. If you like sauce cooked on, brush ribs with sa
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>Salt</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Dash Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

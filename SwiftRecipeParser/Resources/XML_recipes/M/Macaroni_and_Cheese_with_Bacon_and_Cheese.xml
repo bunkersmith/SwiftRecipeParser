@@ -46,13 +46,13 @@ To serve, scatter the bacon mixture over the mac and cheese. Use a big spoon to 
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>unsalted butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>all-purpose flour</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -70,14 +70,14 @@ To serve, scatter the bacon mixture over the mac and cheese. Use a big spoon to 
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>flat-leaf parsley, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>sl</unitOfMeasure>
-            <ingredientName>bacon, cut crosswise into thin strips</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>slices bacon, cut crosswise into thin strips</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -94,8 +94,8 @@ To serve, scatter the bacon mixture over the mac and cheese. Use a big spoon to 
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>bunch</unitOfMeasure>
-            <ingredientName>fresh thyme (leaves only)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>bunch fresh thyme (leaves only)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

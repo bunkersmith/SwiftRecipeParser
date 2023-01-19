@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Curry</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>Boil chickens until tender, cool, bone and chunk the meat. Save 1 cup of the broth created by boiling the chickens. Melt butter in a large saucepan, add celery onions and apples in turn and saute until all are tender. Mix in mushroom soup, sour cream and chicken chunks. Add curry powder to taste and simmer until the mixture is heated and the curry flavor permeates the mixture. Serve over rice.</instructions>
@@ -14,7 +14,7 @@
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Smart Balance Spread</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

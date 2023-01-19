@@ -28,7 +28,7 @@ Once chilled, combine the sour cream and powdered sugar and spread over the top 
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter, melted</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -46,8 +46,8 @@ Once chilled, combine the sour cream and powdered sugar and spread over the top 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>whole</unitOfMeasure>
-            <ingredientName>eggs</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>whole eggs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -58,13 +58,13 @@ Once chilled, combine the sour cream and powdered sugar and spread over the top 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>powdered sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>lime zest</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

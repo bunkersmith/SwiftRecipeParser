@@ -8,13 +8,13 @@
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>sl</unitOfMeasure>
-            <ingredientName>Rye Bread</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Slices Rye Bread</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Prepared Mustard</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,19 +38,19 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>5</quantity>
-            <unitOfMeasure>sl</unitOfMeasure>
-            <ingredientName>Provelone Cheese, Halved Diagonally</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Slices Provelone Cheese, Halved Diagonally</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Dill Pickle Relish</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -34,14 +34,14 @@ To make the sauce: Drain off any oil left in the skillet; add garlic and chives 
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Fresh Horseradish, Finely Grated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>6-oz</unitOfMeasure>
-            <ingredientName>Skinless, Boneless Salmon Trout Fillets</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>6-Oz Skinless, Boneless Salmon Trout Fillets</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -58,13 +58,13 @@ To make the sauce: Drain off any oil left in the skillet; add garlic and chives 
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Vegetable Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Unsalted Butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -82,13 +82,13 @@ To make the sauce: Drain off any oil left in the skillet; add garlic and chives 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Chives, Chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -106,25 +106,25 @@ To make the sauce: Drain off any oil left in the skillet; add garlic and chives 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Whole-grain Mustard</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Flat-leaf Parsley, Minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Kosher Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Fresh Thyme, Minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

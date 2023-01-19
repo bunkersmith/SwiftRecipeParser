@@ -30,7 +30,7 @@ Cook the sate's on the barbecue or under the grill for 5 -10 min. until done and
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Kecap Manis (See Recipe Below)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -60,7 +60,7 @@ Cook the sate's on the barbecue or under the grill for 5 -10 min. until done and
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>water</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

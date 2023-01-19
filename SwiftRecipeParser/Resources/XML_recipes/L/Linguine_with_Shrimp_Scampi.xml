@@ -18,7 +18,7 @@ When the pasta is done, drain the cooked linguine and then put it back in the po
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>kosher salt plus 1-1/2 teaspoons</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -30,19 +30,19 @@ When the pasta is done, drain the cooked linguine and then put it back in the po
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>unsalted butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>good olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced garlic (4 cloves)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

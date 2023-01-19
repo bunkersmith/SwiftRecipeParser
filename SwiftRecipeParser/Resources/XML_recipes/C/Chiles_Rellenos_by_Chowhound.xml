@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chiles Rellenos by Chowhound</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>Game plan: Separate the eggs while they’re still cold, which will make them easier to handle; then let them come to room temperature. And make sure there are no traces of yolk in the whites, or the whites will not whip properly.
@@ -60,26 +60,26 @@ For the chiles rellenos:
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pound</unitOfMeasure>
+            <unitOfMeasure>lb</unitOfMeasure>
             <ingredientName>Roma tomatoes</ingredientName>
             <processingInstructions> cored and halved</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>medium</unitOfMeasure>
-            <ingredientName>white onion</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium white onion</ingredientName>
             <processingInstructions> cut into 1/2-inch slices</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>medium</unitOfMeasure>
-            <ingredientName>garlic cloves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium garlic cloves</ingredientName>
             <processingInstructions> peeled and smashed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>medium</unitOfMeasure>
-            <ingredientName>serrano chile</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium serrano chile</ingredientName>
             <processingInstructions> stemmed</processingInstructions>
         </ingredient>
         <ingredient>
@@ -102,14 +102,14 @@ For the chiles rellenos:
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>medium</unitOfMeasure>
-            <ingredientName>poblano/pasilla chiles (about 1 pound)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>medium poblano/pasilla chiles (about 1 pound)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>0</quantity>
-            <unitOfMeasure>ground</unitOfMeasure>
-            <ingredientName>black pepper</ingredientName>
+            <unitOfMeasure>-</unitOfMeasure>
+            <ingredientName>ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -120,8 +120,8 @@ For the chiles rellenos:
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>large</unitOfMeasure>
-            <ingredientName>eggs</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large eggs</ingredientName>
             <processingInstructions> separated and at room temperature (see “Game plan” note above)</processingInstructions>
         </ingredient>
         <ingredient>

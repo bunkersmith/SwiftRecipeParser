@@ -14,31 +14,31 @@ STIR in the coconut milk and the pineapple. Simmer for 6 to 8 minutes to soften 
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>coconut cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>red curry paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>palm sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>coconut milk</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -62,13 +62,13 @@ STIR in the coconut milk and the pineapple. Simmer for 6 to 8 minutes to soften 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>tamarind puree</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>C</unitOfMeasure>
+            <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Thai sweet basil leaves, plus some for garnish</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

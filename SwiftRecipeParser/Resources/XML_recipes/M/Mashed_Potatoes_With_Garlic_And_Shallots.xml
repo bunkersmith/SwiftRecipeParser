@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Olive Oil (preferably Extra-virgin)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -32,7 +32,7 @@
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Unsalted Butter, Softened</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -12,13 +12,13 @@ Season, to taste, with salt and sugar. Remove from heat and steep for 20 minutes
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cooking oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -42,25 +42,25 @@ Season, to taste, with salt and sugar. Remove from heat and steep for 20 minutes
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>peanut oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>inch</unitOfMeasure>
+            <unitOfMeasure>in</unitOfMeasure>
             <ingredientName>ginger</ingredientName>
             <processingInstructions> skin on, sliced and smashed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>large</unitOfMeasure>
-            <ingredientName>lemon grass</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>large stalk lemon grass</ingredientName>
             <processingInstructions> white part only, about 4-inch piece, smashed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>inch</unitOfMeasure>
+            <unitOfMeasure>in</unitOfMeasure>
             <ingredientName>galangal</ingredientName>
             <processingInstructions> peeled and chopped</processingInstructions>
         </ingredient>
@@ -72,7 +72,7 @@ Season, to taste, with salt and sugar. Remove from heat and steep for 20 minutes
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>cumin powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -84,7 +84,7 @@ Season, to taste, with salt and sugar. Remove from heat and steep for 20 minutes
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>teaspoons</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>red Thai curry paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -102,13 +102,13 @@ Season, to taste, with salt and sugar. Remove from heat and steep for 20 minutes
         </ingredient>
         <ingredient>
             <quantity>2-1/2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>lime juice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2-1/2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>handful</unitOfMeasure>
-            <ingredientName>Fresh parsley</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Handful Fresh parsley</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Dry White Wine</ingredientName>
             <processingInstructions>Such As Pinot Grigio</processingInstructions>
         </ingredient>
@@ -92,7 +92,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Unsalted Butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

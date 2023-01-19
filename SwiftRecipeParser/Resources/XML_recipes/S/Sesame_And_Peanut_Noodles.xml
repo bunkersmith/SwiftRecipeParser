@@ -14,13 +14,13 @@ For the salad: Place the pasta in a large mixing bowl and add the cilantro and v
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sesame seeds</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>12</quantity>
-            <unitOfMeasure>ounces</unitOfMeasure>
+            <unitOfMeasure>oz</unitOfMeasure>
             <ingredientName>rice noodles</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,13 +44,13 @@ For the salad: Place the pasta in a large mixing bowl and add the cilantro and v
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>soy sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoons</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>rice vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

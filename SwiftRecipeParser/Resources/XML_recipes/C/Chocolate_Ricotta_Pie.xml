@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chocolate Ricotta Pie</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>For the crust:
@@ -42,7 +42,7 @@ The tart can be wrapped in plastic and refrigerated for up to 3 days. Return the
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cornmeal</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -60,8 +60,8 @@ The tart can be wrapped in plastic and refrigerated for up to 3 days. Return the
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>stick</unitOfMeasure>
-            <ingredientName>unsalted butter, melted and cooled slightly</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>stick unsalted butter, melted and cooled slightly</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

@@ -32,13 +32,13 @@ ADD the beef to the pan and stir for 5 minutes. Add the coconut milk, stock, pot
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>vegetable oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>massaman curry paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -68,19 +68,19 @@ ADD the beef to the pan and stir for 5 minutes. Add the coconut milk, stock, pot
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>inch</unitOfMeasure>
+            <unitOfMeasure>in</unitOfMeasure>
             <ingredientName>ginger, shredded</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>palm sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -92,7 +92,7 @@ ADD the beef to the pan and stir for 5 minutes. Add the coconut milk, stock, pot
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>tamarind paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

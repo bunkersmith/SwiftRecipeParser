@@ -20,13 +20,13 @@ Preheat oven to 450 degrees F. Divide the dough in half and stretch out 2 (14-in
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -68,14 +68,14 @@ Preheat oven to 450 degrees F. Divide the dough in half and stretch out 2 (14-in
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>olive oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>cloves</unitOfMeasure>
-            <ingredientName>garlic, chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>cloves garlic, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -86,7 +86,7 @@ Preheat oven to 450 degrees F. Divide the dough in half and stretch out 2 (14-in
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fresh parsley leaves, chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -127,9 +127,9 @@ Preheat oven to 450 degrees F. Divide the dough in half and stretch out 2 (14-in
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
-            <quantity>6</quantity>
-            <unitOfMeasure>oz container</unitOfMeasure>
-            <ingredientName>non-fat plain yogurt</ingredientName>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>6-oz container non-fat plain yogurt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

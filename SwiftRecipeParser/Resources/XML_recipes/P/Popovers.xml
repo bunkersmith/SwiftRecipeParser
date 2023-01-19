@@ -8,7 +8,7 @@
     <ingredients>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Unsalted Butter, Melted, Plus Softened Butter For Greasing Pans</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Kosher Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

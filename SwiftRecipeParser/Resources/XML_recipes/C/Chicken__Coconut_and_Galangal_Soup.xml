@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken, Coconut and Galangal Soup</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>4</servings>
     <instructions>PUT the coconut milk, lemon grass, galangal and shallots in a saucepan or wok over a medium heat and bring to a boil.
@@ -26,7 +26,7 @@ Add the lime juice, kaffir lime leaves and chillies in the last few seconds, tak
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>inch</unitOfMeasure>
+            <unitOfMeasure>in</unitOfMeasure>
             <ingredientName>galangal, cut into several pieces</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -44,13 +44,13 @@ Add the lime juice, kaffir lime leaves and chillies in the last few seconds, tak
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>palm sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -68,7 +68,7 @@ Add the lime juice, kaffir lime leaves and chillies in the last few seconds, tak
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>lime juice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

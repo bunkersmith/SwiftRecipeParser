@@ -20,19 +20,19 @@ Preheat oven to 350 degrees F. Combine rice and water in a larger oven-safe pot.
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>curry powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>frozen chopped onions</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>crushed red pepper flakes</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -50,13 +50,13 @@ Preheat oven to 350 degrees F. Combine rice and water in a larger oven-safe pot.
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>soy sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Asian-style hot chili sauce (can be chili-garlic sauce)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -80,8 +80,8 @@ Preheat oven to 350 degrees F. Combine rice and water in a larger oven-safe pot.
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ds</unitOfMeasure>
-            <ingredientName>your favorite supermarket-style seasoning mix</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>dash your favorite supermarket-style seasoning mix</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

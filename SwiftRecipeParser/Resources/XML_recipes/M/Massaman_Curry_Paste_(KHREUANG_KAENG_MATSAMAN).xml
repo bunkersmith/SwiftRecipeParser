@@ -24,7 +24,7 @@ ALTERNATIVE: Use a food processor or blender to grind or blend all the ingredien
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>inch</unitOfMeasure>
+            <unitOfMeasure>in</unitOfMeasure>
             <ingredientName>galangal, finely chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -36,7 +36,7 @@ ALTERNATIVE: Use a food processor or blender to grind or blend all the ingredien
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>inch</unitOfMeasure>
+            <unitOfMeasure>in</unitOfMeasure>
             <ingredientName>cinnamon stick, crushed</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -48,7 +48,7 @@ ALTERNATIVE: Use a food processor or blender to grind or blend all the ingredien
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly grated nutmeg</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -72,7 +72,7 @@ ALTERNATIVE: Use a food processor or blender to grind or blend all the ingredien
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>shrimp paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

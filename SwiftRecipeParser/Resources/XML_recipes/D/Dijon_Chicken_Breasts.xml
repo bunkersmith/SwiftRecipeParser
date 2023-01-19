@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Dijon mustard</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -32,7 +32,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>dried thyme, crumbled</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Chicken Satay - "New"</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>3</servings>
     <instructions>In a bowl, combine all the marinade ingredients except the chicken. Slice the chicken into long, thin strips and pound it to flatten it. Add the chicken to marinade. Turn chicken to coat, cover and refrigerate at least one hour. Thread each chicken strip onto a skewer. Grill for 7 minutes or until done, turning once. Serve with Bangkok Padang peanut sauce.</instructions>
@@ -20,31 +20,31 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Fish Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Red Curry Paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Brown Sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tb</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Chopped Cilantro</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>ts</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Ground Turmeric</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -62,8 +62,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>bottle</unitOfMeasure>
-            <ingredientName>Bangkok Padang Peanut Sauce</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Bottle Bangkok Padang Peanut Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

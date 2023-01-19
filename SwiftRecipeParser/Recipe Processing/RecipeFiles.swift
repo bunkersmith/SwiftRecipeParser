@@ -204,6 +204,8 @@ class RecipeFiles {
     }
     
     func asyncInitializeRecipeDatabase(databaseInterface:DatabaseInterface) {
+        var unitsOfMeasure = Array<String>()
+        
         let asyncInitStartTime = MillisecondTimer.currentTickCount()
 
         deleteExistingRecipes(databaseInterface: databaseInterface)
@@ -232,7 +234,14 @@ class RecipeFiles {
             currentRecipeSection = recipePathnames[i]
             
             for j in 0 ..< currentRecipeSection.count {
-                let _ = returnRecipeFromXML(recipePath: currentRecipeSection[j], databaseInterface:databaseInterface)
+                let xmlUnitsOfMeasure = returnRecipeFromXML(recipePath: currentRecipeSection[j], databaseInterface:databaseInterface)
+                if xmlUnitsOfMeasure.count > 1 {
+                    for xmlUnitOfMeasure in xmlUnitsOfMeasure {
+                        if (unitsOfMeasure.firstIndex(of: xmlUnitOfMeasure) == nil) {
+                            unitsOfMeasure.append(xmlUnitOfMeasure)
+                        }
+                    }
+                }
                 recipesProcessed += 1
                 
                 let modValue = recipesProcessed % fivePercent
@@ -255,9 +264,13 @@ class RecipeFiles {
         logString = String(format: "Recipe Database Init Time (Includes Delete Time) = %.3f", Float(asyncInitStopTime - asyncInitStartTime) / 1000.0 )
         
         Logger.logDetails(msg: logString)
+
+        for unitOfMeasure in unitsOfMeasure {
+            print(unitOfMeasure)
+        }
     }
     
-    func returnRecipeFromXML(recipePath:String, databaseInterface:DatabaseInterface) -> Bool {
+    func returnRecipeFromXML(recipePath:String, databaseInterface:DatabaseInterface) -> Array<String> {
         let recipeFileData:NSData = FileManager.default.contents(atPath: recipePath)! as NSData
         
         let xmlRecipeParser:ParseXMLRecipe = ParseXMLRecipe()

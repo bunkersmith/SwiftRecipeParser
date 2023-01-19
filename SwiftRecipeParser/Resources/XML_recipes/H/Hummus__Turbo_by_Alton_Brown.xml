@@ -20,14 +20,14 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>sesame tahini</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>handful</unitOfMeasure>
-            <ingredientName>fresh parsley leaves</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>handful fresh parsley leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

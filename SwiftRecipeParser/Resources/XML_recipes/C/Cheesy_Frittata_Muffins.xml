@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cheesy Frittata Muffins</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>8</servings>
     <instructions>1. Preheat oven to 375 degrees
@@ -18,8 +18,8 @@ Each Serving Has:
     <ingredients>
         <ingredient>
             <quantity>8</quantity>
-            <unitOfMeasure>Large</unitOfMeasure>
-            <ingredientName>Eggs</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Large Eggs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -30,7 +30,7 @@ Each Serving Has:
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>Oz.</unitOfMeasure>
+            <unitOfMeasure>oz</unitOfMeasure>
             <ingredientName>Bacon</ingredientName>
             <processingInstructions>precooked and chopped</processingInstructions>
         </ingredient>
@@ -42,25 +42,25 @@ Each Serving Has:
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>Tbsp.</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp.</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Dried Parsley</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp.</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp.</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

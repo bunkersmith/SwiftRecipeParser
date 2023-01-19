@@ -30,19 +30,19 @@ If necessary, add some more peanut oil to the pan and heat until shimmering. Add
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>palm sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>rice wine vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -60,7 +60,7 @@ If necessary, add some more peanut oil to the pan and heat until shimmering. Add
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>peanut oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -78,8 +78,8 @@ If necessary, add some more peanut oil to the pan and heat until shimmering. Add
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>whole</unitOfMeasure>
-            <ingredientName>eggs, beaten</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>whole eggs, beaten</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -90,7 +90,7 @@ If necessary, add some more peanut oil to the pan and heat until shimmering. Add
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>dried shrimp</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipe>
     <name>Cashew Butter</name>
-    <indexCharacter>C</indexCharacter>
+    <indexCharacter>c</indexCharacter>
     <notes></notes>
     <servings>0</servings>
     <instructions>Place the honey in a microwave-safe container and heat in the microwave for 15 seconds. Remove from the microwave and add the oil to the container. Place the nuts and salt in the bowl of a food processor and pulse for 5 seconds. Then, while the processor is running, very slowly drizzle in the honey and oil. Process until an emulsion is formed and the mixture is smooth; this will take approximately 45 seconds to 1 minute. If the mixture is too thick and doesn't spread easily, add a little more oil.</instructions>
     <ingredients>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>honey</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

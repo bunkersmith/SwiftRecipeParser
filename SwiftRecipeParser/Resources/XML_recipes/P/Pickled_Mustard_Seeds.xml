@@ -24,7 +24,7 @@
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cane sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -36,7 +36,7 @@
         </ingredient>
         <ingredient>
             <quantity>2-1/2</quantity>
-            <unitOfMeasure>tbsp</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>yellow mustard seeds</ingredientName>
             <processingInstructions> or exactly 8 tsp per recipe</processingInstructions>
         </ingredient>
