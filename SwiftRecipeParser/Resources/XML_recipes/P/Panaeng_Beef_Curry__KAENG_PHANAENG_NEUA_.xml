@@ -50,13 +50,13 @@ cucumber relish.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>fish sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>palm sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

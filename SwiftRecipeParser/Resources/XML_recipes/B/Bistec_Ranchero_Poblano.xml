@@ -30,7 +30,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Olive Oil </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -78,31 +78,31 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Chicken Or Beef Bouillon Granules </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Mexican Oregano </ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Worcestershire Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Flour Cornstarch Or Masa Harina</ingredientName>
             <processingInstructions>optional (I add it to thicken the sauce a little)</processingInstructions>
         </ingredient>

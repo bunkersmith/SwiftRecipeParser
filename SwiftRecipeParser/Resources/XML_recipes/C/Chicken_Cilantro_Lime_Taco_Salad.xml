@@ -84,32 +84,32 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>red pepper flakes</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>pinch</unitOfMeasure>
-            <ingredientName>sugar</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>pinch sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

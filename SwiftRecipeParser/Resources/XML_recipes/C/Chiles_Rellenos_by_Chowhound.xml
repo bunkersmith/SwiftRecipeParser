@@ -84,13 +84,13 @@ For the chiles rellenos:
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly squeezed lime juice</ingredientName>
             <processingInstructions> plus more as needed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions> plus more as needed</processingInstructions>
         </ingredient>
@@ -126,7 +126,7 @@ For the chiles rellenos:
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions> plus more as needed</processingInstructions>
         </ingredient>

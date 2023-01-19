@@ -22,43 +22,43 @@ Bake, switching the positions of the cookies from top to bottom and back to fron
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>baking soda</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cinnamon</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground ginger</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground allspice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cloves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly milled black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

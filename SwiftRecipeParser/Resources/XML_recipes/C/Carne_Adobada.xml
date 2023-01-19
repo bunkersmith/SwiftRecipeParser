@@ -75,25 +75,25 @@ NOTE: If dried pasilla chiles aren’t available, increase the number of dried a
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>dried oregano</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cinnamon</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

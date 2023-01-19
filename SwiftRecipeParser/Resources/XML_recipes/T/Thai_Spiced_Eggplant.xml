@@ -24,31 +24,31 @@ Taste and correct seasoning with salt and pepper. Turn off heat and stir in cila
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>butter</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>minced jalapeno</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced ginger</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>minced white onion</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -60,19 +60,19 @@ Taste and correct seasoning with salt and pepper. Turn off heat and stir in cila
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>teaspoon</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cumin powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>coriander powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -84,13 +84,13 @@ Taste and correct seasoning with salt and pepper. Turn off heat and stir in cila
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>cilantro</ingredientName>
             <processingInstructions> chiffonaded</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tablespoon</unitOfMeasure>
+            <unitOfMeasure>T</unitOfMeasure>
             <ingredientName>Thai basil</ingredientName>
             <processingInstructions> chiffonaded</processingInstructions>
         </ingredient>
