@@ -48,7 +48,7 @@ For tailgating, remove from the heat and transfer to a thermos. To serve, ladle 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -72,7 +72,7 @@ For tailgating, remove from the heat and transfer to a thermos. To serve, ladle 
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -58,19 +58,19 @@ Stir in cooked elbow noodles and chicken mixture. Pour mac and cheese mixture in
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -94,13 +94,13 @@ Stir in cooked elbow noodles and chicken mixture. Pour mac and cheese mixture in
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -60,8 +60,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>Green Cabbage</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Small Green Cabbage</ingredientName>
             <processingInstructions> Cut Into Chunks And Leaves Pulled Apart</processingInstructions>
         </ingredient>
         <ingredient>

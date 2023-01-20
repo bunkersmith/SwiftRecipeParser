@@ -36,13 +36,13 @@ COMBINE the hoisin sauce, remaining soy sauce and 1-1/2 tablespoons water in a s
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>roasted sesame oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>cornstarch</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -90,19 +90,19 @@ COMBINE the hoisin sauce, remaining soy sauce and 1-1/2 tablespoons water in a s
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>Chinese cabbage, shredded, stem sections and leafy sections separated</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small Chinese cabbage, shredded, stem sections and leafy sections separated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

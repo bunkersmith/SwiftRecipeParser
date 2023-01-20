@@ -38,13 +38,13 @@ Place the pie on a sheet pan to catch any juices that boil over. Bake in the cen
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>sugar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -62,7 +62,7 @@ Place the pie on a sheet pan to catch any juices that boil over. Bake in the cen
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>red wine vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -92,7 +92,7 @@ Place the pie on a sheet pan to catch any juices that boil over. Bake in the cen
         </ingredient>
         <ingredient>
             <quantity>1/8</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -104,19 +104,19 @@ Place the pie on a sheet pan to catch any juices that boil over. Bake in the cen
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>cinnamon</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/8</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>nutmeg</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>pure vanilla extract</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

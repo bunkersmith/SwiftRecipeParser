@@ -30,19 +30,19 @@ Yield: 1 quart</instructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>lemon juice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>lemon zest</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>vanilla</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

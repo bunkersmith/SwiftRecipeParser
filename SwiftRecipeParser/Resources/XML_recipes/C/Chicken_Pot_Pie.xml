@@ -102,13 +102,13 @@ Sift together flour, salt, and baking powder. Cut in shortening with blender unt
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>baking powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

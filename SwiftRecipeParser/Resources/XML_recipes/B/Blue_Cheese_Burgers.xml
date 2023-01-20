@@ -42,13 +42,13 @@ Cook the hamburgers for 4 minutes on 1 side, then turn and cook 3 minutes on the
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>black pepper, freshly ground</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -24,7 +24,7 @@ Cook murgh do pyaaza over moderate oven (350 degrees) for 10 minutes before serv
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>tsp salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -96,25 +96,25 @@ Cook murgh do pyaaza over moderate oven (350 degrees) for 10 minutes before serv
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>pcs</unitOfMeasure>
-            <ingredientName>cinnamon stick</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>pieces cinnamon stick</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground ginger</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>turmeric powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>red chili powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -132,7 +132,7 @@ Cook murgh do pyaaza over moderate oven (350 degrees) for 10 minutes before serv
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>garam masala powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

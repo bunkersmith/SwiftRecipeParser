@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>4-oz</unitOfMeasure>
-            <ingredientName>Salmon Fillets</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>4-oz Salmon Fillets</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

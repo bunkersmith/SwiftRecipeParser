@@ -12,8 +12,8 @@ Remove Lemongrass before serving.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>Onion</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Small Onion</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -30,19 +30,19 @@ Remove Lemongrass before serving.</instructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Kecap Manis (See Separate Recipe)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Coriander</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -66,7 +66,7 @@ Remove Lemongrass before serving.</instructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Sambal Ulek (Chili Vinegar Paste)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

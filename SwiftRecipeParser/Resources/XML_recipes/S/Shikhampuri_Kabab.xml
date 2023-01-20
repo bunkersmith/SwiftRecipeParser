@@ -96,7 +96,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>garam masala powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -162,7 +162,7 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>cumin seeds, roasted</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

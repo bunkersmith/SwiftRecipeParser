@@ -28,7 +28,7 @@ Use a cookie scoop to place the biscuits on a parchment paper lined baking sheet
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Baking Powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -40,7 +40,7 @@ Use a cookie scoop to place the biscuits on a parchment paper lined baking sheet
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

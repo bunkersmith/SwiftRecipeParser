@@ -141,7 +141,7 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
         searchTextField?.resignFirstResponder()
     }
     
-    func addRecipeWithPathname(pathname: URL) -> Array<String> {
+    func addRecipeWithPathname(pathname: URL) -> Bool /*Array<String>*/ {
         let recipeFiles:RecipeFiles = RecipeFiles()
         let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
         let recipeAddResult = recipeFiles.returnRecipeFromXML(recipePath: pathname.path, databaseInterface: databaseInterface)

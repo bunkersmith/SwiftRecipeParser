@@ -26,8 +26,8 @@ Bake in the oven for 30 minutes, remove and let rest for 10 minutes before slici
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>white onion, diced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small white onion, diced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -44,7 +44,7 @@ Bake in the oven for 30 minutes, remove and let rest for 10 minutes before slici
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Italian seasoning (or 1/2 teaspoon each of dried oregano, thyme and parsley)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

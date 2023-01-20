@@ -20,8 +20,8 @@ Place the cooked macaroni in a large bowl, add the cheese sauce, reserved pancet
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>piece</unitOfMeasure>
-            <ingredientName>pancetta (1 inch thick), cut into small dice</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>piece pancetta (1 inch thick), cut into small dice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -50,13 +50,13 @@ Place the cooked macaroni in a large bowl, add the cheese sauce, reserved pancet
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>fresh thyme leaves, finely chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>cayenne pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

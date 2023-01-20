@@ -51,7 +51,7 @@ Place the apples into the unbaked pie shell in concentric circles starting aroun
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>table salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -105,19 +105,19 @@ Place the apples into the unbaked pie shell in concentric circles starting aroun
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>lime juice</ingredientName>
             <processingInstructions>freshly squeezed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>grains of paradise</ingredientName>
             <processingInstructions>freshly ground</processingInstructions>
         </ingredient>

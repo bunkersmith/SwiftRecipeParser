@@ -14,8 +14,8 @@ Heat large stainless saute pan over medium-high heat and add the remaining 1 tea
     <ingredients>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>cup (+ 1 tsp)</unitOfMeasure>
-            <ingredientName>vegetable oil</ingredientName>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>+ 1 tsp vegetable oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -62,8 +62,8 @@ Heat large stainless saute pan over medium-high heat and add the remaining 1 tea
         </ingredient>
         <ingredient>
             <quantity>8</quantity>
-            <unitOfMeasure>4-oz</unitOfMeasure>
-            <ingredientName>thin pork chops</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>4-oz thin pork chops</ingredientName>
             <processingInstructions>bone-in (about 1/4-inch thick)</processingInstructions>
         </ingredient>
         <ingredient>

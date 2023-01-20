@@ -20,7 +20,7 @@ Drain off all but 1 tablespoon oil from the wok and heat over high heat for 20 s
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>baking soda</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -32,7 +32,7 @@ Drain off all but 1 tablespoon oil from the wok and heat over high heat for 20 s
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Shao-Hsing wine or dry sherry</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -68,7 +68,7 @@ Drain off all but 1 tablespoon oil from the wok and heat over high heat for 20 s
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>dark soy sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -80,13 +80,13 @@ Drain off all but 1 tablespoon oil from the wok and heat over high heat for 20 s
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>sesame oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Chinese white rice vinegar or distilled vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -116,19 +116,19 @@ Drain off all but 1 tablespoon oil from the wok and heat over high heat for 20 s
         </ingredient>
         <ingredient>
             <quantity>5</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>dried chilies</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small dried chilies</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>fresh ginger, minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>minced garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -152,8 +152,8 @@ Drain off all but 1 tablespoon oil from the wok and heat over high heat for 20 s
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>slices</unitOfMeasure>
-            <ingredientName>fresh orange</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>slices fresh orange</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

@@ -72,7 +72,7 @@ If necessary, add some more peanut oil to the pan and heat until shimmering. Add
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>minced garlic</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -84,7 +84,7 @@ If necessary, add some more peanut oil to the pan and heat until shimmering. Add
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salted cabbage</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

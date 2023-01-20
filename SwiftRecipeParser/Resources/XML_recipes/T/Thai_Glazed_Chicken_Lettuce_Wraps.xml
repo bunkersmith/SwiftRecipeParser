@@ -26,7 +26,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Red Pepper Flakes (can use more)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -80,8 +80,8 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>head</unitOfMeasure>
-            <ingredientName>Iceberg Lettuce, Cut Into Half Again</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Head Iceberg Lettuce, Cut Into Half Again</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

@@ -21,8 +21,8 @@ If you don't have buttermilk, just add 2 Tbsp. lemon juice or vinegar to 2 cups 
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>4-oz pkg</unitOfMeasure>
-            <ingredientName>BAKER'S GERMAN'S Sweet Chocolate (8 oz total)</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>4-oz Pkgs BAKER'S GERMAN'S Sweet Chocolate (8 oz total)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -39,13 +39,13 @@ If you don't have buttermilk, just add 2 Tbsp. lemon juice or vinegar to 2 cups 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>baking soda</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -69,7 +69,7 @@ If you don't have buttermilk, just add 2 Tbsp. lemon juice or vinegar to 2 cups 
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Vanilla</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

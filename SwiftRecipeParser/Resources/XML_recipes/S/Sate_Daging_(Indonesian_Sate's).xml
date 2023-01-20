@@ -36,13 +36,13 @@ Cook the sate's on the barbecue or under the grill for 5 -10 min. until done and
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Coriander powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Cummin powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -54,7 +54,7 @@ Cook the sate's on the barbecue or under the grill for 5 -10 min. until done and
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Sambal Ulek (Chili Vinegar Paste)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -48,13 +48,13 @@ Remove pan from oven and arrange shellfish on top of rice. Place a cloth over pa
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -108,7 +108,7 @@ Remove pan from oven and arrange shellfish on top of rice. Place a cloth over pa
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>fresh rosemary leaves, finely chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -120,7 +120,7 @@ Remove pan from oven and arrange shellfish on top of rice. Place a cloth over pa
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>saffron threads, or 1/2 teaspoon powdered saffron</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

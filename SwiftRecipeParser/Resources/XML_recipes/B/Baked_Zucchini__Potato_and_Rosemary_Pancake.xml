@@ -56,7 +56,7 @@ Allow pancake to cool for about 5 minutes. Slide the pancake out of the pan onto
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>fresh rosemary leaves, chopped, plus sprig for garnish</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -68,13 +68,13 @@ Allow pancake to cool for about 5 minutes. Slide the pancake out of the pan onto
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

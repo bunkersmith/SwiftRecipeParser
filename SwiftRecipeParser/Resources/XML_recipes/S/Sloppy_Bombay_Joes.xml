@@ -48,13 +48,13 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>garam masala</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>paprika</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -102,7 +102,7 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>cumin seeds</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -138,7 +138,7 @@ Toast the buns, fill with the turkey mixture and serve. Eat (with your hands!) a
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>honey</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

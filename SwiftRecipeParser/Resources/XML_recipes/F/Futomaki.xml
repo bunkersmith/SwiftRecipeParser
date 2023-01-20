@@ -50,14 +50,14 @@ Mushroom and Kampyo: Boil both in 2 cups stock (dashi or veggie), along with 1 t
         </ingredient>
         <ingredient>
             <quantity>6</quantity>
-            <unitOfMeasure>pcs</unitOfMeasure>
-            <ingredientName>nori</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>pieces nori</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>portion</unitOfMeasure>
-            <ingredientName>cooked sushi rice</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>portion cooked sushi rice</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -68,7 +68,7 @@ Mushroom and Kampyo: Boil both in 2 cups stock (dashi or veggie), along with 1 t
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>sake</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

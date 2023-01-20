@@ -20,8 +20,8 @@
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>red onion, finely chopped</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small red onion, finely chopped</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -44,7 +44,7 @@
         </ingredient>
         <ingredient>
             <quantity>5-1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>teaspoons honey</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

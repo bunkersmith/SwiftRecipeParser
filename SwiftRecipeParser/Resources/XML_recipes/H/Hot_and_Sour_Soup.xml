@@ -54,7 +54,7 @@ BRING the stock to the boil in a large clay pot or saucepan. Add the pork and st
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -84,7 +84,7 @@ BRING the stock to the boil in a large clay pot or saucepan. Add the pork and st
         </ingredient>
         <ingredient>
             <quantity>1-1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground white pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

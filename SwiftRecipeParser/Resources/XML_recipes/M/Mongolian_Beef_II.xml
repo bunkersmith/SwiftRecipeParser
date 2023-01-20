@@ -68,8 +68,8 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>bunches</unitOfMeasure>
-            <ingredientName>Green Onions, Cut Into 2 Inch Pieces</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Bunches Green Onions, Cut Into 2 Inch Pieces</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>

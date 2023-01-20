@@ -62,7 +62,7 @@ For best texture and rise, regrind the flax meal in a spice grinder.
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -80,7 +80,7 @@ For best texture and rise, regrind the flax meal in a spice grinder.
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>apple cider vinegar</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -64,8 +64,8 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure></unitOfMeasure>
-            <ingredientName>T avocado oil or tea seed oil</ingredientName>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>avocado oil or tea seed oil</ingredientName>
             <processingInstructions> divided</processingInstructions>
         </ingredient>
         <ingredient>

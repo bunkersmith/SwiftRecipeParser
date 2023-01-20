@@ -8,8 +8,8 @@
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>lg head</unitOfMeasure>
-            <ingredientName>cabbage, shredded</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>lg head cabbage, shredded</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -26,8 +26,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>onion, finely minced</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small onion, finely minced</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

@@ -60,7 +60,7 @@ In a saute pan heat 1 tablespoon of butter and sweat the onion and celery. In an
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>curry powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -72,13 +72,13 @@ In a saute pan heat 1 tablespoon of butter and sweat the onion and celery. In an
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>fresh ground pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

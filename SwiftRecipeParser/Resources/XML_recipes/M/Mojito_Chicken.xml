@@ -46,7 +46,7 @@ Remove the chicken from oven and brush with Mojito Glaze. Place chicken under br
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground cumin</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -70,7 +70,7 @@ Remove the chicken from oven and brush with Mojito Glaze. Place chicken under br
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Paprika</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

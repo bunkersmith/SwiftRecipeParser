@@ -44,8 +44,8 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>drops</unitOfMeasure>
-            <ingredientName>Hot Pepper Sauce</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Drops Hot Pepper Sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

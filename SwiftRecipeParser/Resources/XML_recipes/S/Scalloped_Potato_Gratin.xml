@@ -18,8 +18,8 @@ While cream is heating up, butter a casserole dish. Place a layer of potato in a
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>sprig</unitOfMeasure>
-            <ingredientName>fresh thyme</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>sprig fresh thyme</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -30,7 +30,7 @@ While cream is heating up, butter a casserole dish. Place a layer of potato in a
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground nutmeg</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

@@ -46,7 +46,7 @@ ARRANGE the pork slices, tofu, mushrooms, noodles and carrot in separate piles o
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -58,13 +58,13 @@ ARRANGE the pork slices, tofu, mushrooms, noodles and carrot in separate piles o
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>light soy sauce</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>roasted sesame oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -76,8 +76,8 @@ ARRANGE the pork slices, tofu, mushrooms, noodles and carrot in separate piles o
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>slices</unitOfMeasure>
-            <ingredientName>ginger, smashed with the flat side of a cleaver</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>slices ginger, smashed with the flat side of a cleaver</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

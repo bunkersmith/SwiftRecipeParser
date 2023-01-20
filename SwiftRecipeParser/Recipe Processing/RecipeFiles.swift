@@ -204,7 +204,7 @@ class RecipeFiles {
     }
     
     func asyncInitializeRecipeDatabase(databaseInterface:DatabaseInterface) {
-        var unitsOfMeasure = Array<String>()
+//        var unitsOfMeasure = Array<String>()
         
         let asyncInitStartTime = MillisecondTimer.currentTickCount()
 
@@ -234,14 +234,12 @@ class RecipeFiles {
             currentRecipeSection = recipePathnames[i]
             
             for j in 0 ..< currentRecipeSection.count {
-                let xmlUnitsOfMeasure = returnRecipeFromXML(recipePath: currentRecipeSection[j], databaseInterface:databaseInterface)
-                if xmlUnitsOfMeasure.count > 1 {
-                    for xmlUnitOfMeasure in xmlUnitsOfMeasure {
-                        if (unitsOfMeasure.firstIndex(of: xmlUnitOfMeasure) == nil) {
-                            unitsOfMeasure.append(xmlUnitOfMeasure)
-                        }
-                    }
-                }
+                let _ /*xmlUnitsOfMeasure*/ = returnRecipeFromXML(recipePath: currentRecipeSection[j], databaseInterface:databaseInterface)
+//                for xmlUnitOfMeasure in xmlUnitsOfMeasure {
+//                    if (unitsOfMeasure.firstIndex(of: xmlUnitOfMeasure) == nil) {
+//                        unitsOfMeasure.append(xmlUnitOfMeasure)
+//                    }
+//                }
                 recipesProcessed += 1
                 
                 let modValue = recipesProcessed % fivePercent
@@ -265,15 +263,15 @@ class RecipeFiles {
         
         Logger.logDetails(msg: logString)
 
-        for unitOfMeasure in unitsOfMeasure {
-            print(unitOfMeasure)
-        }
+//        for unitOfMeasure in unitsOfMeasure {
+//            print("\"\(unitOfMeasure)\"")
+//        }
     }
     
-    func returnRecipeFromXML(recipePath:String, databaseInterface:DatabaseInterface) -> Array<String> {
+    func returnRecipeFromXML(recipePath:String, databaseInterface:DatabaseInterface) -> Bool /*Array<String>*/ {
         let recipeFileData:NSData = FileManager.default.contents(atPath: recipePath)! as NSData
         
-        let xmlRecipeParser:ParseXMLRecipe = ParseXMLRecipe()
+        let xmlRecipeParser = ParseXMLRecipe()
         return xmlRecipeParser.parseRecipeFromXMLData(recipeFileData: recipeFileData, databaseInterface: databaseInterface)
     }
     

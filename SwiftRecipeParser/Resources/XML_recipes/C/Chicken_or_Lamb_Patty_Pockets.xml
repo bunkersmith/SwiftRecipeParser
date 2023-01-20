@@ -20,7 +20,7 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>ea </unitOfMeasure>
+            <unitOfMeasure>ea</unitOfMeasure>
             <ingredientName>handful basil leaves</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -38,7 +38,7 @@
         </ingredient>
         <ingredient>
             <quantity>4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>grill seasoning blend, (recommended: McCormick Montreal)</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

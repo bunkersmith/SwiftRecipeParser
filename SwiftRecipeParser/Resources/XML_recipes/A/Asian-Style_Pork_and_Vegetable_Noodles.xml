@@ -32,8 +32,8 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>8-oz</unitOfMeasure>
-            <ingredientName>Boneless Center-cut Pork Loin Chops</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>8-oz Boneless Center-cut Pork Loin Chops</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -62,8 +62,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>16-oz pkg</unitOfMeasure>
-            <ingredientName>Fresh Linguini</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>16-oz Pkg Fresh Linguini</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

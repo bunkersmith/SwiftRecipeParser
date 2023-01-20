@@ -40,7 +40,7 @@ Remove from the heat and stir in 1/4 of the onions and all of the green beans. T
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>kosher salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -88,7 +88,7 @@ Remove from the heat and stir in 1/4 of the onions and all of the green beans. T
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -100,7 +100,7 @@ Remove from the heat and stir in 1/4 of the onions and all of the green beans. T
         </ingredient>
         <ingredient>
             <quantity>1/4</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>freshly ground nutmeg</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

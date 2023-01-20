@@ -62,7 +62,7 @@ To serve, arrange the chicken breasts on dinner plates and top with lots of sauc
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>dry thyme</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -80,8 +80,8 @@ To serve, arrange the chicken breasts on dinner plates and top with lots of sauc
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>carrot, peeled and grated</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small carrot, peeled and grated</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

@@ -14,8 +14,8 @@ Transfer the braising liquid into a medium saucepot. Bring the liquid to a simme
     <ingredients>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>Whole Slabs</unitOfMeasure>
-            <ingredientName>Pork Baby Back Ribs</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Whole Slabs Pork Baby Back Ribs</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -50,31 +50,31 @@ Transfer the braising liquid into a medium saucepot. Bring the liquid to a simme
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>ground black pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>cayenne pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>jalapeno seasoning</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Old Bay Seasoning</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
-            <unitOfMeasure>tsp</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>thyme, rubbed</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>

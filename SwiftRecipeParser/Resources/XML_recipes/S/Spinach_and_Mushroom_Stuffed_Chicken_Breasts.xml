@@ -32,8 +32,8 @@
         </ingredient>
         <ingredient>
             <quantity>12</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>mushroom caps, cremini or button</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small mushroom caps, cremini or button</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
@@ -44,8 +44,8 @@
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
-            <unitOfMeasure>sm</unitOfMeasure>
-            <ingredientName>shallot, quartered</ingredientName>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>small shallot, quartered</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
