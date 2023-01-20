@@ -213,12 +213,12 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                         AlertUtilities.showOkButtonAlert(self, title: "That recipe is already in the database", message: "", buttonHandler: nil)
                     } else {
                         // If not, parse and add it
-//                       if self.addRecipeWithPathname(pathname: pathname) {
-//                           AlertUtilities.showOkButtonAlert(self, title: "Recipe added", message: "May need to restart app to see it", buttonHandler: nil)
-//                           self.tableView.reloadData()
-//                       } else {
-//                           AlertUtilities.showOkButtonAlert(self, title: "Error adding recipe", message: "", buttonHandler: nil)
-//                       }
+                       if self.addRecipeWithPathname(pathname: pathname) {
+                           AlertUtilities.showOkButtonAlert(self, title: "Recipe added", message: "May need to restart app to see it", buttonHandler: nil)
+                           self.tableView.reloadData()
+                       } else {
+                           AlertUtilities.showOkButtonAlert(self, title: "Error adding recipe", message: "", buttonHandler: nil)
+                       }
                     }
                 } else {
                     AlertUtilities.showOkButtonAlert(self, title: "Recipe file not found", message: "", buttonHandler: nil)
@@ -251,12 +251,12 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
                 if let recipe = Recipe.findRecipeByName(textFieldText.trimmingCharacters(in: .whitespaces)) {
                     let databaseInterface = DatabaseInterface(concurrencyType: .mainQueueConcurrencyType)
                     databaseInterface.deleteObject(coreDataObject: recipe)
-//                    if self.addRecipeWithPathname(pathname: pathname) {
-//                        AlertUtilities.showOkButtonAlert(self, title: "Recipe modified", message: "May need to restart app to see changes", buttonHandler: nil)
-//                        self.tableView.reloadData()
-//                    } else {
-//                        AlertUtilities.showOkButtonAlert(self, title: "Error re-adding recipe", message: "", buttonHandler: nil)
-//                    }
+                    if self.addRecipeWithPathname(pathname: pathname) {
+                        AlertUtilities.showOkButtonAlert(self, title: "Recipe modified", message: "May need to restart app to see changes", buttonHandler: nil)
+                        self.tableView.reloadData()
+                    } else {
+                        AlertUtilities.showOkButtonAlert(self, title: "Error re-adding recipe", message: "", buttonHandler: nil)
+                    }
                 } else {
                     AlertUtilities.showOkButtonAlert(self, title: "Recipe not found in database", message: "", buttonHandler: nil)
                 }
