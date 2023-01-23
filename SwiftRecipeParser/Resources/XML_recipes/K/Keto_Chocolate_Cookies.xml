@@ -2,9 +2,17 @@
 <recipe>
     <name>Keto Chocolate Cookies</name>
     <indexCharacter>K</indexCharacter>
-    <notes></notes>
+    <notes>Best mouth feel of keto cookie recipes we tried</notes>
     <servings>0</servings>
-    <instructions>Preheat oven to 325 F. Stir dry ingredients very well. Add wet ingredients to form a dough. If too wet, refrigerate until firm enough to roll into balls with your hands or a cookie scoop. Press down with a fork or spoon, since they don’t flatten on their own. Bake on a greased or parchment-lined tray for 11 minutes. Let cool before handling.</instructions>
+    <instructions>1. Preheat oven to 325 F. 
+2. Stir dry ingredients very well. 
+3. Add cream to form a dough. 
+4. If too dry, add a teaspoon of water at a time until proper consistency. 
+5. If too wet, refrigerate until firm enough to roll into balls. 
+6. Scoop onto a parchment-lined tray with a 1-1/2 tablespoon cookie scoop. 
+7. Press down with the bottom of a glass, dipped in sugar, since they don’t flatten on their own. 
+8. Bake for 11 minutes. 
+9. Let cool before handling.</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
@@ -14,7 +22,7 @@
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>T</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Cocoa Powder</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
@@ -34,7 +42,7 @@
             <quantity>1/4</quantity>
             <unitOfMeasure>c</unitOfMeasure>
             <ingredientName>Lily's Peppermint Baking Chips</ingredientName>
-            <processingInstructions> heaping?</processingInstructions>
+            <processingInstructions> heaping</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/8</quantity>
@@ -44,13 +52,13 @@
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>T</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Powdered Monk Fruit</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>T</unitOfMeasure>
+            <unitOfMeasure>t</unitOfMeasure>
             <ingredientName>Cream</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
