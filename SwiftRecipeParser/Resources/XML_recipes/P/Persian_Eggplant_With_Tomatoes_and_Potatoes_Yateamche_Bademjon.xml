@@ -8,13 +8,13 @@
 
 2.  Peel and cut potatoes into approximately ½” cubes. Put into a large bowl with water to cover.
 
-3. Dice onion. and press garlic cloves.
+3. Dice the onion and press the garlic cloves.
 
-4. Add oil to large pan and heat to medium.  Add onions and sauté.
+4. Dice the tomatoes.
 
-5. While the onion sauté dice tomatoes.
+5. Add oil to large pan and heat to medium.  Add onions and sauté.
 
-6. After the onions have sauteed for 2-3 minutes add the garlic.
+6. After the onions have sautéd for 2-3 minutes add the garlic.
 
 7. After another 2-3 minutes add the potatoes, turmeric and black pepper.  Sauté for another 3 minutes.
 
@@ -27,67 +27,67 @@
         <ingredient>
             <quantity>1-1/2</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>eggplant</ingredientName>
+            <ingredientName>Eggplant</ingredientName>
             <processingInstructions> peeled and cubed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>potatoes</ingredientName>
+            <ingredientName>Potatoes</ingredientName>
             <processingInstructions> peeled and cubed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>large onion</ingredientName>
+            <ingredientName>Large Onion</ingredientName>
             <processingInstructions> diced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>garlic cloves</ingredientName>
+            <ingredientName>Garlic Cloves</ingredientName>
             <processingInstructions> pressed</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>lb</unitOfMeasure>
-            <ingredientName>tomatoes</ingredientName>
+            <ingredientName>Tomatoes</ingredientName>
             <processingInstructions> diced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1/2</quantity>
             <unitOfMeasure>ea</unitOfMeasure>
-            <ingredientName>serrano chili</ingredientName>
+            <ingredientName>Serrano Chili</ingredientName>
             <processingInstructions> seeded and diced</processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>3</quantity>
-            <unitOfMeasure>T</unitOfMeasure>
-            <ingredientName>oil</ingredientName>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Oil</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>t</unitOfMeasure>
-            <ingredientName>salt</ingredientName>
+            <ingredientName>Salt</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>t</unitOfMeasure>
-            <ingredientName>black pepper</ingredientName>
+            <ingredientName>Black Pepper</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>1</quantity>
             <unitOfMeasure>t</unitOfMeasure>
-            <ingredientName>turmeric</ingredientName>
+            <ingredientName>Turmeric</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>
             <quantity>2</quantity>
-            <unitOfMeasure>T</unitOfMeasure>
-            <ingredientName>tomato paste</ingredientName>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Tomato Paste</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
     </ingredients>
