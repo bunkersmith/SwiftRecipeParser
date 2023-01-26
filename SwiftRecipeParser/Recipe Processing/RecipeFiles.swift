@@ -243,8 +243,6 @@ class RecipeFiles {
 //                }
                 recipesProcessed += 1
                 
-                let modValue = recipesProcessed % fivePercent
-                
                 //RecipeFiles.initRecipeFromPath(currentRecipeSection[j], databaseInterface:databaseInterface)
 
                 currentPercentage = recipesProcessed * 100 / totalRecipes
