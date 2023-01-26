@@ -578,7 +578,15 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
             
             progressLabel.alpha = 0.0
             tableView.alpha = 1.0
-            loadRecipeTable();
+            loadRecipeTable()
+            
+            let totalRecipes = Recipe.countOfDatabaseRecipes()
+            IToast().showToast(
+                self,
+                alertTitle: "\(totalRecipes) Recipes Processed",
+                alertMessage: "",
+                duration: TimeInterval(2),
+                completionHandler: nil)
         }
     }
     

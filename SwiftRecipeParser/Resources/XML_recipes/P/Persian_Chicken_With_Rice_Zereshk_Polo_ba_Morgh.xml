@@ -4,25 +4,27 @@
     <indexCharacter>P</indexCharacter>
     <notes></notes>
     <servings>0</servings>
-    <instructions>1. Start preparing Persian Rice first, because of soaking time required
-2. Chop the onion
-3. Pour enough oil into a large, flat pan to sauté the onion pieces
-4. Remove the skin from the chicken pieces
-5. Wash the chicken pieces
-6. Place the chicken pieces on top of the onion pieces, bone sides down
-7. Cover the pan and cook for about five minutes
-8. Sprinkle a little salt on the chicken 
-9. Sprinkle the chicken liberally with turmeric, cinnamon and Persian spice mix
-10. Turn the chicken pieces over
-11. Sprinkle the salt and spices on the bottom of the chicken
-12. Put the lid on the pan and cook for 30 minutes
-13. Begin preparing the candied barberries
-14. After 30 minutes, turn the chicken pieces over and cook for another 15 minutes
-15. Drizzle some butter on the chicken pieces, then put the lid back on the pan
-16. Plate rice (she spread across the whole plate)
-17. Plate candied barberries as a small stripe across the middle of the plate
-18. Plate pistachios on one side of the barberry and chicken on the other
-19. Spread some of the cooking juices from the chicken on top of the chicken</instructions>
+    <instructions>
+1. NOTE: IF FIXING ON A WEEKNIGHT, FIX THE RICE ONE NIGHT BEFORE!
+2. Start preparing Persian Rice first, because of soaking time required
+3. Chop the onion
+4. Pour enough oil into a large, flat pan to sauté the onion pieces
+5. Remove the skin from the chicken pieces
+6. Wash the chicken pieces
+7. Place the chicken pieces on top of the onion pieces, bone sides down
+8. Cover the pan and cook for about five minutes
+9. Sprinkle a little salt on the chicken
+10. Sprinkle the chicken liberally with turmeric, cinnamon and Persian spice mix
+11. Turn the chicken pieces over
+12. Sprinkle the salt and spices on the bottom of the chicken
+13. Put the lid on the pan and cook for 30 minutes
+14. Begin preparing the candied barberries
+15. After 30 minutes, turn the chicken pieces over and cook for another 15 minutes
+16. Drizzle some butter on the chicken pieces, then put the lid back on the pan
+17. Plate rice (she spread across the whole plate)
+18. Plate candied barberries as a small stripe across the middle of the plate
+19. Plate pistachios on one side of the barberry and chicken on the other
+20. Spread some of the cooking juices from the chicken on top of the chicken</instructions>
     <ingredients>
         <ingredient>
             <quantity>1</quantity>
@@ -63,7 +65,7 @@
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Persian Spice Mix (Advieh)</ingredientName>
+            <ingredientName>Persian Spice Mix \(Advieh\)</ingredientName>
             <processingInstructions> see below</processingInstructions>
         </ingredient>
         <ingredient>
@@ -93,7 +95,7 @@
         <ingredient>
             <quantity>0</quantity>
             <unitOfMeasure>-</unitOfMeasure>
-            <ingredientName>Persian Spice Mix (Advieh) Ingredients:</ingredientName>
+            <ingredientName>Persian Spice Mix \(Advieh\) Ingredients:</ingredientName>
             <processingInstructions></processingInstructions>
         </ingredient>
         <ingredient>

@@ -227,6 +227,7 @@ class RecipeFiles {
         Logger.logDetails(msg: "recipePathnames.count = \(recipePathnames.count)")
         
         var currentPercentage:Int = 0
+        var nextPercentageToReport:Int = 5
         var percentageDictionary:Dictionary<String,NSNumber>;
         var recipesProcessed:Int = 0
         
@@ -245,11 +246,14 @@ class RecipeFiles {
                 let modValue = recipesProcessed % fivePercent
                 
                 //RecipeFiles.initRecipeFromPath(currentRecipeSection[j], databaseInterface:databaseInterface)
-                if (modValue == 0) {
-                    currentPercentage += 5
+
+                currentPercentage = recipesProcessed * 100 / totalRecipes
+
+                if currentPercentage >= nextPercentageToReport {
                     percentageDictionary = ["percentage":NSNumber(value: currentPercentage)]
                     
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SwiftRecipeParser.RecipeProgressNotification"), object: self, userInfo: percentageDictionary)
+                    nextPercentageToReport += 5
                 }
             }
         }
