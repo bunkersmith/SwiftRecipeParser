@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pulled Chicken Ancho Chile and Black Bean Soup</name>
+    <indexCharacter>P</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1 Heat oil in a large soup pot over medium heat. Add onion, poblano, and 1 tsp salt; cook, stirring often, until onion is soft, 7 to 10 minutes. Add garlic, red pepper, both chili powders, and cumin; cook, stirring a few times, 1 minute. Add broth and tomatoes; increase heat to high to bring to a boil. Reduce heat to medium low and bring to a simmer; add chicken to pot. Cover and simmer until cooked through, 7 to 10 minutes.
+
+2 Remove chicken to a plate; let cool 2 to 3 minutes. Meanwhile, add beans and corn to pot; cook until heated through, 2 to 3 minutes.
+
+3 Shred chicken with two forks; add back to soup. Stir in lime juice and remaining 1/2 tsp salt (or to taste); serve topped with yogurt, cilantro, and scallions.
+
+4 Serving size: 1 cup soup, 2 tbsp yogurt, and 2 tbsp
+cilantro/scallion
+
+</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Olive oil</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Uncooked onions</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Medium Poblano chile</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1-1/2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Kosher salt</ingredientName>
+            <processingInstructions> divided</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Minced garlic</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Medium Sweet red pepper</ingredientName>
+            <processingInstructions> diced</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Chili powder</ingredientName>
+            <processingInstructions> or to taste</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Ancho chile powder</ingredientName>
+            <processingInstructions> or to taste</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Ground cumin</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>4</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Fat free chicken broth</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>15-oz Can diced tomatoes</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>lb</unitOfMeasure>
+            <ingredientName>Uncooked boneless skinless chicken breast</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>15-oz Can black beans</ingredientName>
+            <processingInstructions> rinsed and drained</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Frozen corn kernels</ingredientName>
+            <processingInstructions> defrosted</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>T</unitOfMeasure>
+            <ingredientName>Fresh lime juice</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Plain fat free Greek yogurt</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Cilantro</ingredientName>
+            <processingInstructions> chopped</processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/2</quantity>
+            <unitOfMeasure>c</unitOfMeasure>
+            <ingredientName>Uncooked scallions</ingredientName>
+            <processingInstructions> sliced</processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
