@@ -1,5 +1,5 @@
 //
-//  ThanksgivingRecipeCell.swift
+//  PersianRecipeCell.swift
 //  SwiftRecipeParser
 //
 //  Created by CarlSmith on 11/26/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThanksgivingRecipeCell: UITableViewCell {
+class PersianRecipeCell: UITableViewCell {
 
     @IBOutlet weak var recipeTitle: UILabel!
     @IBOutlet weak var ingredientsTableView: UITableView!

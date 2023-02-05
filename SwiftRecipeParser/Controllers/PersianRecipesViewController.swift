@@ -1,5 +1,5 @@
 //
-//  ThanksgivingRecipesViewController.swift
+//  PersianRecipesViewController.swift
 //  SwiftRecipeParser
 //
 //  Created by CarlSmith on 11/26/15.
@@ -8,15 +8,13 @@
 
 import UIKit
 
-class ThanksgivingRecipesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PersianRecipesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 
-    let recipeNamesArray:[String] = ["Brined Roast Turkey",
-                                     "Beth's Stuffing",
-                                     "Creamy Garlic Mashed Potatoes",
-                                     "French's Green Bean Casserole",
-                                     "Green Beans Almondine",
-                                     "'Ol No. 7 Yams"]
+    let recipeNamesArray:[String] = ["Persian Chicken With Rice (Zereshk Polo ba Morgh)",
+                                     "Persian Eggplant (Naz Khatoon)",
+                                     "Persian Eggplant With Tomatoes and Potatoes (Yateamche Bademjon)",
+                                     "Persian Saffron Rice With Tahdeeg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +27,7 @@ class ThanksgivingRecipesViewController: UIViewController, UITableViewDataSource
         // Dispose of any resources that can be recreated.
     }
     
-    func initIngredientsTableViewController(cell: ThanksgivingRecipeCell) {
+    func initIngredientsTableViewController(cell: PersianRecipeCell) {
         cell.ingredientsTableViewController = IngredientsTableViewController()
     
         cell.ingredientsTableViewController.embeddedTableView = cell.ingredientsTableView
@@ -45,7 +43,7 @@ class ThanksgivingRecipesViewController: UIViewController, UITableViewDataSource
 */
     }
     
-    func populateRecipeDisplayFields(cell: ThanksgivingRecipeCell) {
+    func populateRecipeDisplayFields(cell: PersianRecipeCell) {
         cell.instructionsTextView.textAlignment = .justified
         
         let recipe = Recipe.findRecipeByName(cell.recipeTitle.text!)
@@ -69,7 +67,7 @@ class ThanksgivingRecipesViewController: UIViewController, UITableViewDataSource
     
     @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:ThanksgivingRecipeCell = tableView.dequeueReusableCell(withIdentifier: "ThanksgivingRecipeCell") as! ThanksgivingRecipeCell
+        let cell:PersianRecipeCell = tableView.dequeueReusableCell(withIdentifier: "PersianRecipeCell") as! PersianRecipeCell
         
         cell.recipeTitle.text = recipeNamesArray[indexPath.row]
         

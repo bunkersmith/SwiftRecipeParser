@@ -244,10 +244,10 @@
             </objects>
             <point key="canvasLocation" x="1836.9230769230769" y="1195.734597156398"/>
         </scene>
-        <!--Thanksgiving Recipes-->
+        <!--Persian Recipes-->
         <scene sceneID="kgT-wu-JoK">
             <objects>
-                <viewController id="wbq-BK-xsw" customClass="ThanksgivingRecipesViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wbq-BK-xsw" userLabel="Persian Recipes" customClass="PersianRecipesViewController" customModule="SwiftRecipeParser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l3G-3T-fAU"/>
                         <viewControllerLayoutGuide type="bottom" id="OZl-0X-dPi"/>
@@ -260,7 +260,7 @@
                                 <rect key="frame" x="0.0" y="27" width="390" height="734"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThanksgivingRecipeCell" id="3PQ-Cz-ZBt" customClass="ThanksgivingRecipeCell" customModule="SwiftRecipeParser" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersianRecipeCell" id="3PQ-Cz-ZBt" customClass="PersianRecipeCell" customModule="SwiftRecipeParser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="895"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3PQ-Cz-ZBt" id="WbG-Kd-X4P">
@@ -335,7 +335,7 @@
                             <constraint firstItem="Rnn-CQ-isz" firstAttribute="trailing" secondItem="9QD-xZ-1NG" secondAttribute="trailing" id="ymE-IF-ycS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Thanksgiving Recipes" id="BYK-gx-Uu5"/>
+                    <navigationItem key="navigationItem" title="Persian Recipes" id="BYK-gx-Uu5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="In6-dw-2KZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -768,13 +768,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Produce Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-Ud-Kj6">
-                                <rect key="frame" x="16" y="348" width="114" height="21"/>
+                                <rect key="frame" x="16" y="347" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEw-Y2-E3X">
-                                <rect key="frame" x="138" y="341.66666666666669" width="60" height="34"/>
+                                <rect key="frame" x="138" y="340.66666666666669" width="60" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="x6Y-La-pPA"/>
                                 </constraints>
@@ -782,13 +782,13 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FSA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjz-CT-hNK">
-                                <rect key="frame" x="16" y="389" width="36" height="21"/>
+                                <rect key="frame" x="16" y="388" width="36" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Lpy-T3-rtJ">
-                                <rect key="frame" x="60" y="384" width="81" height="32"/>
+                                <rect key="frame" x="60" y="383" width="81" height="32"/>
                                 <segments>
                                     <segment title="No"/>
                                     <segment title="Yes"/>
@@ -798,13 +798,13 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxable:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcO-mn-ynl">
-                                <rect key="frame" x="16" y="428" width="63" height="21"/>
+                                <rect key="frame" x="16" y="427" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rO3-KG-lzr">
-                                <rect key="frame" x="87" y="423" width="81" height="32"/>
+                                <rect key="frame" x="87" y="422" width="81" height="32"/>
                                 <segments>
                                     <segment title="No"/>
                                     <segment title="Yes"/>
@@ -814,13 +814,13 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxable Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-Ad-Tha">
-                                <rect key="frame" x="184" y="428" width="106" height="21"/>
+                                <rect key="frame" x="184" y="427" width="106" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7wL-yh-gqK">
-                                <rect key="frame" x="298" y="421.66666666666669" width="55" height="34"/>
+                                <rect key="frame" x="298" y="420.66666666666669" width="55" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="FGc-1p-ZBl"/>
                                 </constraints>
@@ -831,13 +831,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRV:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4i0-EG-tBb">
-                                <rect key="frame" x="16" y="467" width="37" height="21"/>
+                                <rect key="frame" x="16" y="466" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ngy-8g-uuQ">
-                                <rect key="frame" x="67" y="462" width="81" height="32"/>
+                                <rect key="frame" x="67" y="461" width="81" height="32"/>
                                 <segments>
                                     <segment title="No"/>
                                     <segment title="Yes"/>
@@ -847,13 +847,13 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRV Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmq-qc-cSQ">
-                                <rect key="frame" x="16" y="506" width="107" height="21"/>
+                                <rect key="frame" x="16" y="505" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJp-5q-KdW">
-                                <rect key="frame" x="131" y="499.66666666666674" width="35" height="34"/>
+                                <rect key="frame" x="131" y="498.66666666666674" width="35" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="aDa-hz-GEW"/>
                                 </constraints>
@@ -864,13 +864,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRV Fluid Ounces:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2K-qV-tHO">
-                                <rect key="frame" x="16" y="546" width="141.66666666666666" height="21"/>
+                                <rect key="frame" x="16" y="545" width="141.66666666666666" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHj-jW-8a8">
-                                <rect key="frame" x="165.66666666666666" y="539.66666666666663" width="50" height="34"/>
+                                <rect key="frame" x="165.66666666666666" y="538.66666666666663" width="50" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Uim-iq-V9g"/>
                                 </constraints>
@@ -881,7 +881,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF0-ct-nHi">
-                                <rect key="frame" x="16" y="583" width="80" height="33"/>
+                                <rect key="frame" x="16" y="582" width="80" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Add Photo"/>
                                 <connections>
@@ -889,7 +889,7 @@
                                 </connections>
                             </button>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yu5-rh-P1K">
-                                <rect key="frame" x="16" y="630" width="145" height="190"/>
+                                <rect key="frame" x="16" y="629" width="145" height="190"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="190" id="SZL-k2-Lgc"/>
@@ -900,10 +900,10 @@
                                 </connections>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dj5-Ge-LTM">
-                                <rect key="frame" x="78.666666666666671" y="715" width="20" height="20"/>
+                                <rect key="frame" x="78.666666666666671" y="714" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgJ-m7-dGA">
-                                <rect key="frame" x="4" y="297.66666666666669" width="124" height="35.333333333333314"/>
+                                <rect key="frame" x="4" y="297.66666666666669" width="124" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Location"/>
                                 <connections>
@@ -1707,11 +1707,11 @@
             </objects>
             <point key="canvasLocation" x="230.76923076923077" y="1921.5639810426539"/>
         </scene>
-        <!--Thanksgiving Recipes-->
+        <!--Persian Recipes-->
         <scene sceneID="e8k-uE-b1H">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Yd-cw-DlE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Thanksgiving Recipes" image="tab_icon_turkey" id="rV6-VZ-njI"/>
+                    <tabBarItem key="tabBarItem" title="Persian Recipes" image="tab_icob_persian" id="rV6-VZ-njI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ekH-eC-KfO">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -1731,9 +1731,9 @@
         <segue reference="DfH-Hy-TeW"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="tab_icob_persian" width="32" height="32"/>
         <image name="tab_icon_grocery_list" width="17.333333969116211" height="10.666666984558105"/>
         <image name="tab_icon_recipe_list" width="30" height="23"/>
-        <image name="tab_icon_turkey" width="32" height="32"/>
         <image name="tab_icon_wheel" width="32" height="32"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
