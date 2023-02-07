@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Costco Chili</name>
+    <indexCharacter>C</indexCharacter>
+    <notes></notes>
+    <servings>0</servings>
+    <instructions>1. Heat the Costco Chili for 5 minutes.
+2. Add spices into chili and heat for another 3 minutes.</instructions>
+    <ingredients>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>ea</unitOfMeasure>
+            <ingredientName>Costco Chili Tub</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Ancho Chili Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Chili Powder</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+        <ingredient>
+            <quantity>1/4</quantity>
+            <unitOfMeasure>t</unitOfMeasure>
+            <ingredientName>Cayenne</ingredientName>
+            <processingInstructions></processingInstructions>
+        </ingredient>
+    </ingredients>
+</recipe>
