@@ -63,6 +63,11 @@ class RecipeMasterTableViewController: UIViewController, UITableViewDataSource, 
 //                }
             }
             
+//            if let itemString = GroceryListItem.allItemsToString() {
+//                var textFile = ProcessTextFile(fileName: "GroceryListItems.txt")
+//                textFile.write(string: itemString)
+//            }
+//            
             Logger.logDetails(msg: "emptyItemCount = \(emptyItemCount)")
             
 //            for measure in unitsOfMeasure {

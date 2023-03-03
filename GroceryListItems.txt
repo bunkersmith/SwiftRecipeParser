@@ -1,0 +1,1173 @@
+name:	12” Silver Serving Tray And Plastic Lid	quantity:	1.0	units:	ea	cost:	5.00
+name:	14-oz Baked Bean Cans, Drained	quantity:	2.0	units:	ea	cost:	0.00
+name:	15 Oz Cans White Beans (Navy, Great Northern, Cannellini)	quantity:	4.0	units:	ea	cost:	1.99
+name:	15-Oz Can Black Beans	quantity:	1.0	units:	ea	cost:	1.29
+name:	15-Oz Can Diced Tomatoes	quantity:	1.0	units:	ea	cost:	1.50	locStoreName:	Murphy Canyon Vons	locAisle:	14	locDetails:	Right side just past beans	locMonth:	1	locDay:	30	locYear:	2023
+name:	16-Ounce Package Lentil Pasta	quantity:	2.0	units:	ea	cost:	1.99
+name:	16” Silver Serving Tray And Plastic Lid	quantity:	3.0	units:	ea	cost:	0.00
+name:	2032 Battery	quantity:	2.0	units:	ea	cost:	4.99
+name:	39-Gallon Trash Bags	quantity:	1.0	units:	ea	cost:	9.99
+name:	40 Pack Costco Water Bottles	quantity:	1.0	units:	ea	cost:	5.99	isCRV:	true	crvQuantity:	40	crvFluidOunces:	16.9
+name:	4oz. Can Diced Green Chilies	quantity:	1.0	units:	ea	cost:	1.00
+name:	4oz. Can Diced Green Chilies, drained	quantity:	1.0	units:	ea	cost:	1.00
+name:	6mg Red Riot	quantity:	1.0	units:	ea	cost:	20.00
+name:	8-ounce packages cream cheese, softened	quantity:	1.0	units:	ea	cost:	1.79
+name:	9-Volt Battery	quantity:	1.0	units:	ea	cost:	0.00
+name:	A-1 Sauce	quantity:	1.0	units:	ea	cost:	2.99
+name:	AA Batteries	quantity:	1.0	units:	ea	cost:	20.99	isTaxable:	true
+name:	AAA Batteries	quantity:	1.0	units:	ea	cost:	19.29	isTaxable:	true	notes:	need 3 batteries
+name:	Acetaminophen	quantity:	1.0	units:	ea	cost:	7.99	isTaxable:	true
+name:	Afrin No Drip Decongestant Spray	quantity:	1.0	units:	ea	cost:	9.29	isTaxable:	true	isFSA:	true	locStoreName:	Target Mission Valley	locAisle:	D37	locDetails:	Locked case, bottom shelf	locMonth:	1	locDay:	8	locYear:	2023
+name:	Airborne	quantity:	1.0	units:	ea	cost:	16.49
+name:	Airwick Essentials Lavender And Almond	quantity:	1.0	units:	ea	cost:	6.99
+name:	Ajinomoto Yakisoba Noodles	quantity:	1.0	units:	ea	cost:	9.99	notes:	On sale at Costco until 8/7
+name:	Al Pastor	quantity:	1.0	units:	ea	cost:	9.69
+name:	Alfredo Chicken Pasta	quantity:	1.0	units:	ea	cost:	16.32
+name:	Alfredo Sauce	quantity:	1.0	units:	ea	cost:	1.99
+name:	Aller-Flo	quantity:	1.0	units:	ea	cost:	19.99	isTaxable:	true	taxablePrice:	21.00	isFSA:	true	locStoreName:	Mission Valley Costco	locAisle:	One aisle from fence	locDetails:	Right near front of warehouse	locMonth:	2	locDay:	19	locYear:	2023
+name:	Almond Flour	quantity:	1.0	units:	ea	cost:	10.99
+name:	Almond Milk	quantity:	1.0	units:	ea	cost:	11.99	notes:	Get the blue one if they don’t have this one
+name:	American Cheese, Broken Into Small Pieces	quantity:	1.0	units:	ea	cost:	2.79
+name:	Amla	quantity:	1.0	units:	ea	cost:	13.49	isTaxable:	true	taxablePrice:	15.99	notes:	Front left corner Point Loma Sprouts
+name:	Amy’s Casserole	quantity:	2.0	units:	ea	cost:	4.99
+name:	Ancho Chile Powder	quantity:	1.0	units:	ea	cost:	0.99
+name:	Ancho Chili Powder	quantity:	1.0	units:	ea	cost:	0.99	locStoreName:	North Park Produce	locAisle:	Mexican spice rack	locDetails:	Half way up near left side	locMonth:	2	locDay:	4	locYear:	2023
+name:	Ancho Pork Chops	quantity:	1.0	units:	ea	cost:	19.17
+name:	Angelica (Golpar)	quantity:	1.0	units:	ea	cost:	3.99	notes:	Spice rack facing back of store BIM
+name:	Angus Beef Steak Chili	quantity:	1.0	units:	ea	cost:	12.99
+name:	Antacid	quantity:	1.0	units:	ea	cost:	4.79
+name:	Antiperspirant	quantity:	1.0	units:	ea	cost:	2.00	isTaxable:	true
+name:	Apple	quantity:	1.0	units:	ea	cost:	0.50
+name:	Apples	quantity:	6.0	units:	ea	cost:	0.50	notes:	Qty 6 	locStoreName:	Point Loma Sprouts	locAisle:	Produce area	locDetails:	Near front	locMonth:	12	locDay:	29	locYear:	2022
+name:	Artichokes	quantity:	0.0	units:	-	cost:	0.00
+name:	Ashwagandha	quantity:	1.0	units:	ea	cost:	19.49
+name:	Asian Vegetable Mix	quantity:	1.0	units:	ea	cost:	4.00
+name:	Asparagus	quantity:	1.0	units:	ea	cost:	2.99
+name:	Authentic Basmati Rice	quantity:	1.0	units:	ea	cost:	12.99
+name:	Autumn Glory Apples	quantity:	1.0	units:	ea	cost:	0.00
+name:	Avocado Oil Mayonnaise	quantity:	1.0	units:	ea	cost:	3.49
+name:	Avocados	quantity:	6.0	units:	ea	cost:	1.83	notes:	Ripe
+name:	Baba Foods Hummus Spicy Pepper	quantity:	1.0	units:	ea	cost:	5.59	notes:	Spicy indeed!
+name:	Bacon	quantity:	1.0	units:	ea	cost:	5.00
+name:	Bag Potatoes O’brien	quantity:	0.5	units:	ea	cost:	0.00
+name:	Bagels, Cheese	quantity:	1.0	units:	ea	cost:	5.99
+name:	Baguette	quantity:	1.0	units:	ea	cost:	2.49
+name:	Baking Powder	quantity:	1.0	units:	ea	cost:	1.99
+name:	Bananas	quantity:	1.75	units:	lb	cost:	0.59	notes:	qty 1 very yellow & 3 mostly yellow, 6-7 oz each	produceCode:	4011
+name:	Bananas Bulk	quantity:	1.0	units:	ea	cost:	1.79
+name:	Bandaids	quantity:	1.0	units:	ea	cost:	0.00
+name:	Bandaids, Assorted	quantity:	1.0	units:	ea	cost:	3.99
+name:	Banquet Entrees	quantity:	5.0	units:	ea	cost:	1.25
+name:	Barbacoa	quantity:	1.0	units:	ea	cost:	12.79
+name:	Barbecue Sauce	quantity:	1.0	units:	ea	cost:	1.99
+name:	Bark Thins	quantity:	1.0	units:	ea	cost:	6.79
+name:	Basmati Rice	quantity:	1.0	units:	ea	cost:	3.99	notes:	Aisle 15 Murphy Canyon Vons
+name:	Basmati rice	quantity:	0.75	units:	c	cost:	0.00
+name:	Bath Soap	quantity:	1.0	units:	ea	cost:	3.49	isTaxable:	true	locStoreName:	Murphy Canyon Vons	locAisle:	One aisle past bank	locDetails:	In front of pharmacy	locMonth:	2	locDay:	11	locYear:	2023
+name:	Bay Leaves	quantity:	1.0	units:	ea	cost:	1.50
+name:	Bean Sprouts	quantity:	1.0	units:	ea	cost:	1.79
+name:	Bean Sprouts Or Pea Shoots	quantity:	1.0	units:	c	cost:	1.79
+name:	Beans	quantity:	2.0	units:	ea	cost:	0.60
+name:	Beef	quantity:	1.5	units:	lb	cost:	6.99
+name:	Beef Broth	quantity:	1.0	units:	ea	cost:	1.79
+name:	Beef Kebabs	quantity:	1.0	units:	ea	cost:	11.99
+name:	Beef Stroganoff	quantity:	1.0	units:	ea	cost:	14.79
+name:	Beets	quantity:	1.0	units:	ea	cost:	0.59
+name:	Ben & Jerry's Chocolate Therapy	quantity:	1.0	units:	ea	cost:	6.99
+name:	Ben & Jerry’s	quantity:	1.0	units:	ea	cost:	0.00
+name:	Betty Crocker Coconut Pecan Frosting	quantity:	1.0	units:	ea	cost:	2.99	notes:	Not that great, so Mary says make from scratch
+name:	Betty Crocker German Chocolate Cake Mix	quantity:	1.0	units:	ea	cost:	2.99
+name:	Birds Eye Chilis	quantity:	1.0	units:	ea	cost:	0.00
+name:	Birds Eye Veggie Pasta	quantity:	1.0	units:	ea	cost:	7.99
+name:	Biscuits	quantity:	1.0	units:	ea	cost:	3.69
+name:	Black Beans	quantity:	1.0	units:	ea	cost:	0.99	notes:	Aisle 14 at Murphy Canyon Vons
+name:	Black Chili Beans	quantity:	1.0	units:	ea	cost:	0.99
+name:	Black Forest Ham	quantity:	2.0	units:	ea	cost:	2.99
+name:	Black Pepper	quantity:	0.25	units:	t	cost:	0.00
+name:	Black Tea Bags	quantity:	1.0	units:	ea	cost:	2.79	notes:	Now $4.79 at Vons. Not gettin’ ‘em there!	locStoreName:	Food 4 Less Mission Valley	locAisle:		locDetails:		locMonth:	2	locDay:	21	locYear:	2023
+name:	Black peppercorns, cracked	quantity:	0.5	units:	t	cost:	0.00
+name:	Blade Razors	quantity:	1.0	units:	ea	cost:	22.99	isTaxable:	true
+name:	Bleach, Cheapest	quantity:	1.0	units:	ea	cost:	1.99
+name:	Blender Bottle	quantity:	1.0	units:	ea	cost:	0.00
+name:	Bleu Cheese	quantity:	1.0	units:	ea	cost:	0.00
+name:	Blue Berries	quantity:	1.0	units:	ea	cost:	0.00
+name:	Blue Buffalo Chicken Recipe	quantity:	7.0	units:	ea	cost:	1.25	isTaxable:	true	notes:	https://www.petsmart.com/cat/food-and-treats/wet-food/blue-buffalo-tastefuls-adult-cat-food---chicken-in-gravy-flaked-63246.html?cgid=200170
+name:	Blue Buffalo Tastefuls	quantity:	7.0	units:	ea	cost:	1.39	isTaxable:	true
+name:	Blue Buffalo Tastefuls Salmon	quantity:	4.0	units:	ea	cost:	1.49	isTaxable:	true
+name:	Blue Cheese	quantity:	1.0	units:	ea	cost:	3.99
+name:	Blue Wilderness Salmon	quantity:	1.0	units:	ea	cost:	0.00
+name:	Bob’s Red Mill Whole Flaxseed	quantity:	1.0	units:	ea	cost:	2.39	notes:	Aisle 4 right before cross aisle, right side
+name:	Body Wash	quantity:	1.0	units:	ea	cost:	10.99	isTaxable:	true
+name:	Bologna	quantity:	1.0	units:	ea	cost:	2.39
+name:	Bone broth	quantity:	1.0	units:	ea	cost:	16.69
+name:	Boneless Beef Chuck, Cut Into 1-inch Pieces	quantity:	1.0	units:	ea	cost:	0.00
+name:	Boston Market Meals	quantity:	5.0	units:	ea	cost:	1.99
+name:	Bounce Wrinkle Guard Dryer Sheets	quantity:	1.0	units:	ea	cost:	4.99
+name:	Bourbon	quantity:	1.5	units:	c	cost:	0.00
+name:	Branding Iron Carne Asada	quantity:	1.0	units:	ea	cost:	0.00
+name:	Bratwurst	quantity:	2.0	units:	lb	cost:	5.00
+name:	Braun Cleaning Fluid	quantity:	1.0	units:	ea	cost:	17.00
+name:	Bread	quantity:	1.0	units:	ea	cost:	2.49	notes:	Wonder brand
+name:	Bread Loaf, Stale and Grated	quantity:	1.0	units:	ea	cost:	0.99
+name:	Brined Turkey	quantity:	1.0	units:	ea	cost:	32.00	notes:	Use plastic grocery bag to carry it/contain juices
+name:	Brita Filters	quantity:	1.0	units:	ea	cost:	28.99	isTaxable:	true
+name:	Broccoli	quantity:	0.68	units:	ea	cost:	1.99	produceCode:	3082
+name:	Broccoli Sprouts	quantity:	1.0	units:	ea	cost:	2.99
+name:	Broccoli flowerets	quantity:	1.0	units:	c	cost:	0.00
+name:	Brown Sugar	quantity:	1.0	units:	ea	cost:	1.99
+name:	Brussels Sprouts	quantity:	1.0	units:	ea	cost:	5.99	notes:	Bags with less moisture and consistent size	produceCode:	4550
+name:	Bulgar Wheat	quantity:	1.0	units:	ea	cost:	5.49	locStoreName:	North Park Produce	locAisle:	Bulk section facing produce	locDetails:	Top row next to buckwheat	locMonth:	1	locDay:	7	locYear:	2023
+name:	Burritos	quantity:	1.0	units:	ea	cost:	0.00
+name:	Butter	quantity:	1.0	units:	ea	cost:	11.99
+name:	Butter-Flavored Crisco Sticks	quantity:	1.0	units:	ea	cost:	4.99
+name:	C Batteries	quantity:	1.0	units:	ea	cost:	8.79	isTaxable:	true	notes:	Safeway select 4-pack
+name:	CR 2025 Batteries	quantity:	1.0	units:	ea	cost:	8.00	isTaxable:	true	notes:	For 2013 Mazda 3
+name:	Cabbage	quantity:	1.0	units:	ea	cost:	1.49	notes:	1 very large or 2 very small
+name:	Cacao Powder	quantity:	1.0	units:	ea	cost:	6.99
+name:	Cadbury Mini Eggs	quantity:	1.0	units:	ea	cost:	5.00
+name:	Caesar Salad Kit	quantity:	1.0	units:	ea	cost:	8.60
+name:	Cage Free Brown Eggs	quantity:	1.0	units:	ea	cost:	3.29	locStoreName:	Sprouts Point Loma	locAisle:	Back left corner	locDetails:	Right by bathrooms	locMonth:	1	locDay:	8	locYear:	2023
+name:	Calcium Magnesium Zinc	quantity:	1.0	units:	ea	cost:	15.99	isTaxable:	true	notes:	Solgar dosage is 3 pills, Sprouts is 2	locStoreName:	Point Loma Sprouts	locAisle:	Third vitamin aisle	locDetails:	Under diet sign half way down	locMonth:	12	locDay:	30	locYear:	2022
+name:	California Style Frozen Vegetables	quantity:	1.0	units:	ea	cost:	2.49	notes:	32 oz package 
+name:	Camu Camu	quantity:	1.0	units:	ea	cost:	15.99	isTaxable:	true	notes:	Front left corner Point Loma Sprouts 
+name:	Can Diced Tomatoes	quantity:	2.0	units:	ea	cost:	0.00
+name:	Can Kidney Beans	quantity:	1.0	units:	ea	cost:	1.09
+name:	Can Niblets Mexicorn, drained	quantity:	4.0	units:	ea	cost:	1.99
+name:	Can Refried Beans, Vons With Black Beans	quantity:	1.0	units:	ea	cost:	0.99
+name:	Can Refried Beans, Vons With Black Beans	quantity:	1.0	units:	ea	cost:	0.99
+name:	Can Vegetarian Refried Beans	quantity:	1.0	units:	ea	cost:	0.00
+name:	Canned Chicken	quantity:	1.0	units:	ea	cost:	12.99
+name:	Canned Pumpkin	quantity:	3.0	units:	ea	cost:	1.89	notes:	Vons $4.49	locStoreName:	Food 4 Less	locAisle:	5	locDetails:	Left side after baking chips	locMonth:	12	locDay:	29	locYear:	2022
+name:	Canola Oil	quantity:	1.0	units:	c	cost:	0.00
+name:	Carly’s Food	quantity:	7.0	units:	ea	cost:	1.69	isTaxable:	true
+name:	Carl’s Rx	quantity:	1.0	units:	ea	cost:	28.00	isFSA:	true
+name:	Carnitas	quantity:	1.0	units:	ea	cost:	8.99
+name:	Carrot	quantity:	0.95	units:	lb	cost:	0.99	produceCode:	94562
+name:	Carrots	quantity:	3.0	units:	ea	cost:	0.00
+name:	Cash Back	quantity:	1.0	units:	ea	cost:	30.00
+name:	Cashews	quantity:	1.0	units:	ea	cost:	18.99
+name:	Castor Oil	quantity:	1.0	units:	ea	cost:	0.00
+name:	Cauliflower Potatoes	quantity:	1.0	units:	ea	cost:	5.49
+name:	Caulking	quantity:	1.0	units:	ea	cost:	1.00
+name:	Cayenne pepper	quantity:	0.5	units:	t	cost:	0.00
+name:	Cedar Plank Salmon	quantity:	1.0	units:	ea	cost:	11.00
+name:	Celery	quantity:	1.0	units:	ea	cost:	0.69
+name:	Celery (stalks and Leaves)	quantity:	1.5	units:	c	cost:	0.00
+name:	Celery Salt	quantity:	0.0	units:	-	cost:	0.00
+name:	Charcoal Briquets	quantity:	15.0	units:	lb	cost:	0.00
+name:	Charred Corn (Either Frozen And Defrosted Or Grilled On A Grill)	quantity:	1.0	units:	c	cost:	2.00	notes:	Vons has frozen Mexican style street corn
+name:	Charred Corn (Either Frozen And Defrosted Or Grilled On A Grill)	quantity:	1.0	units:	c	cost:	2.00
+name:	Cheese Tortellini w/Chicken	quantity:	1.0	units:	ea	cost:	5.97
+name:	Cheesecloth	quantity:	1.0	units:	ea	cost:	3.49	notes:	Aisle 16 left side right after divider
+name:	Cheesy Ranch Chicken	quantity:	1.0	units:	ea	cost:	8.69
+name:	Cherry Water Flavoring	quantity:	1.0	units:	ea	cost:	1.00
+name:	Chicken	quantity:	1.0	units:	ea	cost:	0.00
+name:	Chicken & Basil Meatballs	quantity:	1.0	units:	ea	cost:	13.89
+name:	Chicken & Mozzarella Ravioli	quantity:	1.0	units:	ea	cost:	7.99
+name:	Chicken Alfredo	quantity:	1.0	units:	ea	cost:	15.32
+name:	Chicken Breast	quantity:	1.0	units:	lb	cost:	6.99
+name:	Chicken Broth	quantity:	1.0	units:	ea	cost:	2.49	notes:	4 cups
+name:	Chicken Burrito Bowl	quantity:	1.0	units:	ea	cost:	9.99
+name:	Chicken Caesar Salad	quantity:	1.0	units:	ea	cost:	7.99
+name:	Chicken Enchiladas	quantity:	1.0	units:	ea	cost:	11.99
+name:	Chicken Margherita Pennne	quantity:	1.0	units:	ea	cost:	11.99
+name:	Chicken Noodle Soup	quantity:	1.0	units:	ea	cost:	0.00
+name:	Chicken Nuggets/popcorn Chicken	quantity:	1.0	units:	ea	cost:	0.00
+name:	Chicken Or Beef Bouillon Granules	quantity:	1.0	units:	t	cost:	0.00
+name:	Chicken Poblano Firecrackers	quantity:	1.0	units:	ea	cost:	11.89
+name:	Chicken Pot Pies	quantity:	1.0	units:	ea	cost:	17.16
+name:	Chicken Quinoa & Kale	quantity:	1.0	units:	ea	cost:	0.00
+name:	Chicken Sausage	quantity:	1.0	units:	ea	cost:	6.99	notes:	precooked
+name:	Chicken Sausage w/Mozarella	quantity:	1.0	units:	ea	cost:	13.79
+name:	Chicken Shawarma	quantity:	1.0	units:	ea	cost:	8.40
+name:	Chicken Stock	quantity:	1.0	units:	ea	cost:	3.29
+name:	Chicken Strips	quantity:	1.0	units:	ea	cost:	8.99
+name:	Chicken Tenders	quantity:	1.0	units:	ea	cost:	9.99
+name:	Chicken Thighs	quantity:	10.0	units:	lb	cost:	1.49
+name:	Chicken Tikka Masala	quantity:	1.0	units:	ea	cost:	10.49
+name:	Chicken w/Wild & White Rice	quantity:	1.0	units:	ea	cost:	13.99
+name:	Chicken/Mac/Bean Plate	quantity:	1.0	units:	ea	cost:	15.99
+name:	Chili	quantity:	1.0	units:	ea	cost:	1.99
+name:	Chili Powder	quantity:	2.0	units:	t	cost:	0.00
+name:	Chili Relleno	quantity:	2.0	units:	ea	cost:	5.00
+name:	Chili Verde	quantity:	1.0	units:	ea	cost:	11.99
+name:	Chili Verde Sauce	quantity:	1.0	units:	ea	cost:	7.99
+name:	Chipotle Salsa	quantity:	1.0	units:	ea	cost:	0.00
+name:	Chips	quantity:	2.0	units:	ea	cost:	3.00
+name:	Chives	quantity:	1.0	units:	ea	cost:	2.49
+name:	Chocolate Bars	quantity:	2.0	units:	ea	cost:	1.50
+name:	Chocolate Chip Cookie Dough	quantity:	1.0	units:	ea	cost:	2.89
+name:	Chocolate Chunk Cookies	quantity:	1.0	units:	ea	cost:	7.99
+name:	Chocolate Genache Ice Cream	quantity:	1.0	units:	ea	cost:	4.99
+name:	Chocolate Sauce	quantity:	1.0	units:	ea	cost:	2.69
+name:	Chopped Fresh Cilantro Leaves	quantity:	0.5	units:	c	cost:	0.99	produceCode:	94889
+name:	Chorizo	quantity:	1.0	units:	ea	cost:	5.99
+name:	Cider Or Rice Wine Vinegar	quantity:	3.0	units:	T	cost:	2.99
+name:	Cilantro	quantity:	0.5	units:	c	cost:	0.99
+name:	Cilantro Bunch	quantity:	1.0	units:	ea	cost:	0.99
+name:	Cilantro Lime Salad Dressing	quantity:	1.0	units:	ea	cost:	0.00
+name:	Cinnamon Chips	quantity:	1.0	units:	ea	cost:	5.00	notes:	Don’t know where to buy these
+name:	Cinnamon stick	quantity:	1.0	units:	in	cost:	0.00
+name:	Clam Chowder	quantity:	1.0	units:	ea	cost:	2.00
+name:	Clorox 2	quantity:	1.0	units:	ea	cost:	9.89	isTaxable:	true
+name:	Clorox Wipes	quantity:	1.0	units:	ea	cost:	14.99	isTaxable:	true
+name:	Cloves Garlic	quantity:	1.0	units:	ea	cost:	1.00
+name:	Cloves Garlic Minced	quantity:	3.0	units:	ea	cost:	0.00
+name:	Coconut Milk	quantity:	1.0	units:	ea	cost:	1.99	notes:	Back of Asian aisle
+name:	Coconut Milk- So Delicious Organic	quantity:	1.0	units:	ea	cost:	2.99
+name:	Coconut Sugar	quantity:	1.0	units:	c	cost:	5.00
+name:	Coconut milk	quantity:	27.0	units:	ea	cost:	1.99
+name:	Coffee	quantity:	1.0	units:	ea	cost:	8.79
+name:	Coffee - Jose’s Organic Mayan	quantity:	1.0	units:	ea	cost:	13.49
+name:	Coffee Chunk Keto Ice Cream	quantity:	2.0	units:	ea	cost:	6.49
+name:	Coffee Creamer	quantity:	1.0	units:	ea	cost:	3.79
+name:	Coffee Creamer - Peppermint	quantity:	1.0	units:	ea	cost:	2.79
+name:	Coffee Filters	quantity:	1.0	units:	ea	cost:	1.99
+name:	Coffee Filters - Cone Shaped	quantity:	1.0	units:	ea	cost:	4.49
+name:	Coffee Ice Cream	quantity:	1.0	units:	ea	cost:	6.00
+name:	Coke	quantity:	6.0	units:	ea	cost:	0.99	isTaxable:	true	isCRV:	true	crvQuantity:	1	crvFluidOunces:	12.0
+name:	Coke (Original Or Mexican Coke Is Ideal)	quantity:	0.75	units:	c	cost:	2.00
+name:	Coke (Original Or Mexican Coke Is Ideal)	quantity:	1.0	units:	c	cost:	2.00
+name:	Cold Beverage	quantity:	1.0	units:	ea	cost:	2.50
+name:	Cold Brew Concentrate	quantity:	1.0	units:	ea	cost:	8.99	notes:	Chamaeleon
+name:	Cold Caffeinated Beverage	quantity:	1.0	units:	ea	cost:	2.00
+name:	Colgate Toothpaste	quantity:	1.0	units:	ea	cost:	5.99	isTaxable:	true
+name:	Command Poster Strips	quantity:	1.0	units:	ea	cost:	0.00
+name:	Compound W	quantity:	1.0	units:	ea	cost:	18.99	isTaxable:	true
+name:	Conditioner	quantity:	1.0	units:	ea	cost:	1.99	isTaxable:	true
+name:	Cone Coffee Filters	quantity:	1.0	units:	ea	cost:	0.00
+name:	Cookie Icing	quantity:	1.0	units:	ea	cost:	5.49
+name:	Corn	quantity:	1.0	units:	ea	cost:	0.00
+name:	Corn Bread Mix	quantity:	1.0	units:	ea	cost:	3.99	notes:	Baking aisle	locStoreName:	Vons Murphy Canyon	locAisle:	8	locDetails:	Third shelf from bottom	locMonth:	1	locDay:	31	locYear:	2023
+name:	Corn Ears	quantity:	2.0	units:	ea	cost:	0.69
+name:	Corn Tortillas	quantity:	1.0	units:	ea	cost:	0.99	notes:	Smallest count possible
+name:	Corned Beef	quantity:	1.0	units:	ea	cost:	16.00
+name:	Cornmeal	quantity:	1.0	units:	ea	cost:	0.00
+name:	Cosmic Crisp Apples	quantity:	3.0	units:	lb	cost:	0.89	notes:	Qty 6	produceCode:	3507
+name:	Costco Caesar Salad	quantity:	1.0	units:	ea	cost:	9.38
+name:	Costco Chili	quantity:	1.0	units:	ea	cost:	14.03	notes:	Add 1 T ancho chili powder, 1 T chili powder, 1/4 t cayenne
+name:	Costco FC Pizza	quantity:	1.0	units:	ea	cost:	9.95	isTaxable:	true
+name:	Costco Flatbread Pizza	quantity:	1.0	units:	ea	cost:	13.99
+name:	Costco Kind Bars	quantity:	1.0	units:	ea	cost:	21.49	locStoreName:	Mission Valley Costco	locAisle:	307	locDetails:		locMonth:	1	locDay:	16	locYear:	2023
+name:	Costco Ribeye Steaks	quantity:	1.0	units:	ea	cost:	13.99	notes:	Ralphs price on 10/1/2022 was $10.99
+name:	Costco Tzatziki Dip	quantity:	1.0	units:	ea	cost:	6.00
+name:	Coupon	quantity:	1.0	units:	ea	cost:	0.01
+name:	Couscous	quantity:	1.0	units:	ea	cost:	0.00
+name:	Covid Test	quantity:	1.0	units:	ea	cost:	9.99	isFSA:	true
+name:	Cranberry Relish	quantity:	1.0	units:	ea	cost:	4.85
+name:	Cream	quantity:	1.0	units:	ea	cost:	3.49	notes:	Lucerne heavy whipping cream
+name:	Cream Cheese	quantity:	2.0	units:	ea	cost:	1.99
+name:	Cream Cheese, Small	quantity:	1.0	units:	ea	cost:	1.99
+name:	Cream cheese	quantity:	1.0	units:	ea	cost:	0.00
+name:	Creamy Peanut Butter	quantity:	18.0	units:	oz	cost:	2.99
+name:	Cremini Mushrooms	quantity:	4.0	units:	oz	cost:	2.49
+name:	Croissants	quantity:	1.0	units:	ea	cost:	0.00
+name:	Crystal Geyser	quantity:	1.0	units:	gal	cost:	1.25	isCRV:	true	crvQuantity:	1	crvFluidOunces:	128.0
+name:	Crystal Geyser 1 Gal	quantity:	1.0	units:	ea	cost:	1.49	isCRV:	true	crvQuantity:	1	crvFluidOunces:	128.0
+name:	Cucumber	quantity:	1.0	units:	ea	cost:	0.00
+name:	Cucumbers	quantity:	2.0	units:	ea	cost:	1.49
+name:	Cumin	quantity:	1.0	units:	t	cost:	0.00
+name:	Cumin Seed	quantity:	1.0	units:	ea	cost:	0.99	notes:	Back of aisle 13 Murphy Canyon Vons
+name:	Cuties	quantity:	1.0	units:	ea	cost:	2.98
+name:	Dandelion Root Tea	quantity:	1.0	units:	ea	cost:	5.99	notes:	Get at north park, because point Loma is out	locStoreName:	Sprouts North Park	locAisle:	First grocery aisle on the left	locDetails:		locMonth:	1	locDay:	30	locYear:	2023
+name:	Dark Chocolate Covered Caramels	quantity:	1.0	units:	ea	cost:	0.00
+name:	Dark Sesame Oil	quantity:	1.5	units:	T	cost:	4.29
+name:	Del Real Rice	quantity:	1.0	units:	ea	cost:	4.99
+name:	Del Real Shredded Chicken	quantity:	1.0	units:	lb	cost:	0.00
+name:	Delsym Cough Syrup	quantity:	1.0	units:	ea	cost:	12.00
+name:	Deodorant	quantity:	1.0	units:	ea	cost:	2.99	isTaxable:	true
+name:	Dessert	quantity:	1.0	units:	ea	cost:	0.00
+name:	Dial Soap	quantity:	1.0	units:	ea	cost:	3.99	isTaxable:	true	notes:	I put the last bar in the shower today.
+name:	Diced Green Chilies	quantity:	1.0	units:	ea	cost:	1.50	notes:	Hispanic food section at Murphy Canyon bonds
+name:	Diced Mild Green Chilis	quantity:	1.0	units:	ea	cost:	0.00
+name:	Diced Onion	quantity:	0.5	units:	c	cost:	0.00
+name:	Diced onions	quantity:	1.0	units:	ea	cost:	2.49
+name:	Diet Coke	quantity:	1.0	units:	ea	cost:	2.00	isTaxable:	true	isCRV:	true	crvQuantity:	1	crvFluidOunces:	12.0
+name:	Diffuser Refill	quantity:	1.0	units:	ea	cost:	0.00
+name:	Dill	quantity:	1.0	units:	ea	cost:	2.69
+name:	Dill Pickle Relish	quantity:	1.0	units:	ea	cost:	2.00
+name:	Dill, Fresh	quantity:	1.0	units:	ea	cost:	3.99
+name:	Dinner For Carl	quantity:	1.0	units:	ea	cost:	8.00
+name:	Dishwasher Detergent	quantity:	1.0	units:	ea	cost:	5.69	isTaxable:	true
+name:	Disinfecting Spray	quantity:	1.0	units:	ea	cost:	6.99	isTaxable:	true
+name:	Disinfecting Wipes	quantity:	1.0	units:	ea	cost:	12.99	isTaxable:	true
+name:	Dog Food	quantity:	1.0	units:	ea	cost:	0.00
+name:	Doke	quantity:	1.0	units:	ea	cost:	1.76	isTaxable:	true
+name:	Dove Chocolate	quantity:	1.0	units:	ea	cost:	0.00
+name:	Dove Milk Chocolate	quantity:	1.0	units:	ea	cost:	4.99
+name:	Downy Wrinkle Guard Fabric Softener	quantity:	1.0	units:	ea	cost:	8.00
+name:	Doxepin	quantity:	1.0	units:	ea	cost:	15.00	isFSA:	true
+name:	Drano	quantity:	1.0	units:	ea	cost:	3.69	isTaxable:	true
+name:	Dried Barberry	quantity:	1.0	units:	ea	cost:	5.99	notes:	Back wall behind produce at North Park	locStoreName:	Balboa International Market	locAisle:	Enclosed refrigerator in produce section	locDetails:	Near the back	locMonth:	1	locDay:	11	locYear:	2023
+name:	Dried Split Peas	quantity:	2.0	units:	ea	cost:	1.99	notes:	1 lb packages 
+name:	Dry Split Peas	quantity:	1.0	units:	ea	cost:	1.79
+name:	Dryer Sheets	quantity:	1.0	units:	ea	cost:	3.79	isTaxable:	true	notes:	Signature Select Free & Clear
+name:	Dubliner Cheese	quantity:	1.0	units:	ea	cost:	10.48
+name:	Dutch Top Julian Apple Pie	quantity:	1.0	units:	ea	cost:	23.99
+name:	Ear Plugs	quantity:	1.0	units:	ea	cost:	10.29
+name:	Easy Fix Dinner	quantity:	1.0	units:	ea	cost:	20.00
+name:	Easy Fix Dinners	quantity:	2.0	units:	ea	cost:	15.00
+name:	Egg lands best eggs	quantity:	1.0	units:	ea	cost:	0.00
+name:	Eggplant Parmesan	quantity:	1.0	units:	ea	cost:	11.99
+name:	Eggs	quantity:	6.0	units:	ea	cost:	4.99	notes:	Cheapest possible
+name:	Eggs 18 Ct	quantity:	1.0	units:	ea	cost:	7.49
+name:	Eggs 24 Ct	quantity:	1.0	units:	ea	cost:	4.99
+name:	Emergen-C	quantity:	1.0	units:	ea	cost:	20.00
+name:	Enchilada Bake	quantity:	1.0	units:	ea	cost:	21.80
+name:	Enchilada Bake W/Rotisserie Chicken	quantity:	1.0	units:	ea	cost:	24.98
+name:	Enchilada Bowls	quantity:	1.0	units:	ea	cost:	10.99
+name:	Energy Booster	quantity:	1.0	units:	ea	cost:	0.00
+name:	English Cucumber	quantity:	3.0	units:	ea	cost:	1.99	notes:	$1.50 & $2.50 organic, okay if curved 
+name:	Enlightened Ice Cream Pint	quantity:	1.0	units:	ea	cost:	5.99
+name:	Enlightened Keto Bars	quantity:	1.0	units:	ea	cost:	0.00
+name:	Excedrin	quantity:	1.0	units:	ea	cost:	15.99	isTaxable:	true
+name:	Extra-virgin olive oil	quantity:	1.0	units:	c	cost:	0.00
+name:	Eyeglass Cleaner	quantity:	1.0	units:	ea	cost:	9.99	isTaxable:	true	isFSA:	true	notes:	Front wall of store on the way to pharmacy
+name:	Eyeglasses Cleaner	quantity:	1.0	units:	ea	cost:	0.00
+name:	Fat Free Chicken Broth	quantity:	4.0	units:	c	cost:	2.49
+name:	Febreeze	quantity:	1.0	units:	ea	cost:	2.99	isTaxable:	true
+name:	Feliway	quantity:	1.0	units:	ea	cost:	27.99	isTaxable:	true
+name:	Feta Cheese	quantity:	1.0	units:	ea	cost:	7.00
+name:	Feta Chese	quantity:	1.0	units:	ea	cost:	4.99
+name:	Finely Shredded Mexican Cheese	quantity:	1.0	units:	ea	cost:	2.00	notes:	Food 4 Less!
+name:	Fire-Roasted Diced Tomatoes	quantity:	1.0	units:	ea	cost:	1.69	notes:	Aisle 14 at Murphy Canyon Vons	locStoreName:	Murphy Canyon Vons	locAisle:	Aisle 14	locDetails:	Right side	locMonth:	12	locDay:	31	locYear:	2022
+name:	First Street Ground Cloves	quantity:	1.0	units:	ea	cost:	4.79
+name:	First Street Scoopable Cat Litte	quantity:	1.0	units:	ea	cost:	4.99	isTaxable:	true
+name:	Fish Oil	quantity:	1.0	units:	ea	cost:	14.99	isTaxable:	true	taxablePrice:	19.99	notes:	Costco item 1226620
+name:	Fish Sauce	quantity:	1.0	units:	ea	cost:	2.99
+name:	Fizzy  Vitamin C	quantity:	1.0	units:	ea	cost:	4.50
+name:	Flat-Iron Steaks	quantity:	2.0	units:	ea	cost:	0.00
+name:	Flaxseed	quantity:	1.0	units:	lb	cost:	4.99
+name:	Flonase	quantity:	1.0	units:	ea	cost:	22.99
+name:	Floor Mats	quantity:	1.0	units:	ea	cost:	29.99	isTaxable:	true
+name:	Flossers	quantity:	1.0	units:	ea	cost:	4.99
+name:	Flour	quantity:	1.0	units:	ea	cost:	4.79	notes:	5 lbs
+name:	Flour Cornstarch Or Masa Harina	quantity:	1.0	units:	T	cost:	0.00
+name:	Flour Tortillas	quantity:	1.0	units:	ea	cost:	4.29
+name:	Foil	quantity:	1.0	units:	ea	cost:	0.00
+name:	Folios	quantity:	1.0	units:	ea	cost:	7.99
+name:	For the crust:	quantity:	0.0	units:	-	cost:	0.00
+name:	For the filling:	quantity:	0.0	units:	-	cost:	0.00
+name:	French Bread Baguette, unsliced, torn into chunks	quantity:	0.5	units:	ea	cost:	0.00
+name:	French Bread Loaf	quantity:	1.0	units:	ea	cost:	4.00
+name:	French Roast Coffee	quantity:	1.0	units:	ea	cost:	14.99
+name:	French Vanilla Ice Cream	quantity:	1.0	units:	ea	cost:	5.99
+name:	Fresh Basil	quantity:	1.0	units:	ea	cost:	3.49
+name:	Fresh Lemons, Juiced	quantity:	2.0	units:	ea	cost:	0.50	produceCode:	4053
+name:	Fresh Lime Juice	quantity:	1.0	units:	T	cost:	0.99
+name:	Fresh Limes, Juiced	quantity:	2.0	units:	ea	cost:	0.50	produceCode:	4048
+name:	Fresh Mangoes	quantity:	1.0	units:	ea	cost:	6.99	notes:	Kent variety, some soft, some hard, larger
+name:	Fresh Peppers And Onions	quantity:	1.0	units:	ea	cost:	2.99
+name:	Fresh Thyme Sprigs	quantity:	1.0	units:	ea	cost:	2.49
+name:	Fresno Pepper Sliced	quantity:	1.0	units:	ea	cost:	0.00
+name:	Fried Bananas	quantity:	1.0	units:	ea	cost:	0.00
+name:	Fried Rice	quantity:	2.0	units:	ea	cost:	5.00
+name:	Frozen Cauliflower	quantity:	1.0	units:	ea	cost:	2.99	notes:	10 oz
+name:	Frozen Chicken Breasts	quantity:	1.0	units:	ea	cost:	17.99
+name:	Frozen Corn Kernels	quantity:	2.0	units:	c	cost:	0.00
+name:	Frozen Dinner Entrée	quantity:	1.0	units:	ea	cost:	9.00
+name:	Frozen Entree	quantity:	1.0	units:	ea	cost:	5.99
+name:	Frozen Fish Fillets	quantity:	1.0	units:	ea	cost:	9.99
+name:	Frozen Mango Chunks	quantity:	1.0	units:	ea	cost:	9.59
+name:	Frozen Organic Blueberries	quantity:	1.0	units:	ea	cost:	8.99
+name:	Frozen Pizza	quantity:	1.0	units:	ea	cost:	7.99
+name:	Frozen Veggies	quantity:	1.0	units:	ea	cost:	10.00
+name:	Frozen Waffles	quantity:	1.0	units:	ea	cost:	1.49
+name:	Frozen vegetables	quantity:	1.0	units:	ea	cost:	2.99
+name:	Fuji Apples	quantity:	8.0	units:	lb	cost:	1.99
+name:	Gallon Crystal Geyser Water	quantity:	1.0	units:	ea	cost:	1.49
+name:	Gallon Ziplock Bags	quantity:	1.0	units:	ea	cost:	4.49
+name:	Garbanzo beans	quantity:	1.0	units:	ea	cost:	0.89
+name:	Garlic	quantity:	3.0	units:	ea	cost:	0.50	produceCode:	4608
+name:	Garlic Bread	quantity:	1.0	units:	ea	cost:	3.99
+name:	Garlic Butter From Sprouts	quantity:	1.0	units:	ea	cost:	3.99
+name:	Garlic Chicken	quantity:	1.0	units:	ea	cost:	6.99
+name:	Garlic Granules	quantity:	0.0	units:	-	cost:	0.00
+name:	Garlic Naan	quantity:	1.0	units:	ea	cost:	2.99
+name:	Garlic Oil	quantity:	2.0	units:	T	cost:	0.00
+name:	Garlic Powder	quantity:	1.0	units:	ea	cost:	0.00
+name:	Garlic Toast	quantity:	2.0	units:	ea	cost:	1.99
+name:	Gas Relief Chewables	quantity:	1.0	units:	ea	cost:	6.69	notes:	Only 2 left
+name:	Gasoline	quantity:	1.0	units:	ea	cost:	30.00
+name:	Gatorade	quantity:	2.0	units:	ea	cost:	2.00
+name:	Generic Allegra	quantity:	1.0	units:	ea	cost:	19.99	isTaxable:	true	isFSA:	true	locStoreName:	Vons Murphy Canyon	locAisle:	In front of pharmacy pickup	locDetails:	Second shelf from bottom	locMonth:	3	locDay:	2	locYear:	2023
+name:	Ghee	quantity:	1.0	units:	ea	cost:	8.99
+name:	Ghirardelli Brownie Mix	quantity:	1.0	units:	ea	cost:	9.99
+name:	Ghirardelli Peppermint Bark	quantity:	1.0	units:	ea	cost:	9.99
+name:	Ghost Pepper Cheese	quantity:	1.0	units:	ea	cost:	5.00
+name:	Ghost Pepper Simmer Sauce	quantity:	1.0	units:	ea	cost:	6.49	notes:	Aisle 14 at Murphy Canyon Vons
+name:	Ghost Pepper Sliced Cheese	quantity:	1.0	units:	ea	cost:	3.49
+name:	Ginger Ale	quantity:	3.0	units:	ea	cost:	0.87	isTaxable:	true
+name:	Ginger Root Beer	quantity:	1.0	units:	ea	cost:	4.29	isTaxable:	true
+name:	Ginger, Ground	quantity:	1.0	units:	ea	cost:	3.99	notes:	It's Delish brand
+name:	Ginger, Ground	quantity:	1.0	units:	ea	cost:	3.99	isFSA:	true	notes:	It's Delish brand.  MC Vons aisle 12 near cross aisle. 
+name:	Gingerbread Cookie Dough	quantity:	4.0	units:	ea	cost:	5.99	notes:	Cooler past end of cheese/lunch, meat aisle 
+name:	Girl Scout Thin Mint Almonds	quantity:	1.0	units:	ea	cost:	12.99
+name:	Glass Container	quantity:	1.0	units:	ea	cost:	5.99	isTaxable:	true	notes:	1 cup capacity
+name:	Gold Bond Rough And Bumpy Skin	quantity:	1.0	units:	ea	cost:	9.99	isTaxable:	true
+name:	Gold Bond Ultimate Healing Hand Lotion	quantity:	1.0	units:	ea	cost:	12.49	isTaxable:	true	notes:	Aisle in front of pharmacy closer to credit union 
+name:	Gold Peak Tea	quantity:	2.0	units:	ea	cost:	4.49
+name:	Goya Rice - Food 4 Less	quantity:	1.0	units:	ea	cost:	2.29	notes:	Food 4 Less Mission Valley	locStoreName:	Food 4 Less Mission Valley	locAisle:	3	locDetails:	Right side near front lower shelf 	locMonth:	12	locDay:	29	locYear:	2022
+name:	Goya Sofrita	quantity:	6.0	units:	oz	cost:	4.00
+name:	Goya Sofrito	quantity:	1.0	units:	ea	cost:	0.00
+name:	Granny Smith Apple	quantity:	5.0	units:	ea	cost:	0.00
+name:	Granny Smith Apples	quantity:	2.25	units:	lb	cost:	1.49	notes:	Qty 5
+name:	Granulated Garlic	quantity:	1.0	units:	ea	cost:	1.99	notes:	check Mexican spice section otherwise will get at Sprouts
+name:	Grape Nuts	quantity:	1.0	units:	ea	cost:	7.99
+name:	Grape Tomato Container	quantity:	1.0	units:	ea	cost:	5.99
+name:	Grape Tomatoes	quantity:	1.0	units:	ea	cost:	7.99	notes:	Not in cold room
+name:	Grapes	quantity:	2.0	units:	lb	cost:	0.97	notes:	red seedless
+name:	Grass Fed Beef	quantity:	1.0	units:	ea	cost:	7.49
+name:	Grass Fed Butter	quantity:	1.0	units:	ea	cost:	5.00
+name:	Grass-Fed Ground Beef	quantity:	1.0	units:	lb	cost:	7.49
+name:	Grated Cheddar Cheese	quantity:	4.5	units:	c	cost:	0.00
+name:	Grated Parmesan	quantity:	3.0	units:	oz	cost:	1.00
+name:	Grated Parmesan Cheese Jar (16 oz)	quantity:	1.0	units:	ea	cost:	3.50
+name:	Grated Parmesan Cheese Jar (16 oz)	quantity:	1.0	units:	ea	cost:	5.00
+name:	Grated Parmesan, (1/2 Pound)	quantity:	1.0	units:	ea	cost:	2.99
+name:	Gravy	quantity:	2.0	units:	ea	cost:	1.29
+name:	Gravy Master	quantity:	1.0	units:	ea	cost:	2.99
+name:	Great Northern beans, dried	quantity:	1.0	units:	lb	cost:	0.00
+name:	Greek Dressing	quantity:	1.0	units:	ea	cost:	4.00
+name:	Greek Olive Jar	quantity:	1.0	units:	ea	cost:	4.00
+name:	Greek Olives	quantity:	0.0	units:	-	cost:	4.00	notes:	On fridge door under cat food
+name:	Greek Salad Dressing	quantity:	1.0	units:	ea	cost:	3.99
+name:	Greek Yogurt	quantity:	1.0	units:	ea	cost:	4.49
+name:	Greek yogurt, for serving, optional	quantity:	0.0	units:	-	cost:	0.00
+name:	Green Chili Chicken Soup	quantity:	1.0	units:	ea	cost:	10.99
+name:	Green Curry Paste	quantity:	1.0	units:	ea	cost:	0.00
+name:	Green Hot Sauce	quantity:	1.0	units:	ea	cost:	4.99
+name:	Green Lentils	quantity:	2.0	units:	ea	cost:	1.99	notes:	Aisle 15 at Murphy Canyon Vons
+name:	Green Onions, Trimmed And Chopped For Garnish	quantity:	4.0	units:	ea	cost:	0.77	notes:	Four bunches	produceCode:	94068
+name:	Green Pepper	quantity:	1.0	units:	ea	cost:	1.98
+name:	Green pepper, diced	quantity:	0.5	units:	c	cost:	0.00
+name:	Ground Beef	quantity:	1.5	units:	lb	cost:	8.99	notes:	Open nature
+name:	Ground Cardamom	quantity:	1.0	units:	ea	cost:	2.99	notes:	Get at Balboa International Market	locStoreName:	Balboa International Market	locAisle:	Front spice section	locDetails:	Facing front of store, far left	locMonth:	2	locDay:	18	locYear:	2023
+name:	Ground Cinnamon	quantity:	1.0	units:	ea	cost:	3.69
+name:	Ground Cloves	quantity:	1.0	units:	ea	cost:	2.49	notes:	Get at Balboa International Market	locStoreName:	Balboa International Market	locAisle:	Front spice section	locDetails:	Facing front of store, far left	locMonth:	2	locDay:	18	locYear:	2023
+name:	Ground Cumin	quantity:	2.0	units:	t	cost:	0.00
+name:	Ground Flax Seed	quantity:	1.0	units:	ea	cost:	5.49
+name:	Ground Ginger	quantity:	1.0	units:	ea	cost:	0.00
+name:	Ground Turkey	quantity:	1.0	units:	ea	cost:	6.99
+name:	Ground cumin	quantity:	0.5	units:	t	cost:	0.00
+name:	Guacamole	quantity:	1.0	units:	c	cost:	7.99
+name:	Guacamole Mix	quantity:	1.0	units:	ea	cost:	0.99
+name:	Gyro Meat	quantity:	1.0	units:	ea	cost:	11.99
+name:	Habanero Chili	quantity:	1.0	units:	ea	cost:	0.00
+name:	Half-And-Half	quantity:	1.0	units:	c	cost:	3.99
+name:	Half-and-half	quantity:	2.0	units:	c	cost:	1.99
+name:	Hamburger	quantity:	1.0	units:	ea	cost:	0.00
+name:	Hamburger Buns	quantity:	1.0	units:	ea	cost:	2.99
+name:	Hand Sanitizer 2 Oz	quantity:	1.0	units:	ea	cost:	1.99	isTaxable:	true
+name:	Hand Sanitizer 32 Oz	quantity:	1.0	units:	ea	cost:	6.99	isTaxable:	true	notes:	Note the size
+name:	Hand Soap	quantity:	1.0	units:	ea	cost:	6.99	isTaxable:	true
+name:	Hanging Cat Scratcher	quantity:	1.0	units:	ea	cost:	10.39
+name:	Hash Browns	quantity:	1.0	units:	ea	cost:	3.50	locStoreName:	Food 4 Less Mission Valley	locAisle:	9	locDetails:	Left side	locMonth:	2	locDay:	28	locYear:	2023
+name:	Havarti Cheese	quantity:	1.0	units:	ea	cost:	8.59
+name:	Heavy Cream	quantity:	1.0	units:	ea	cost:	6.99
+name:	Heavy Whipping Cream	quantity:	1.0	units:	ea	cost:	5.00
+name:	Heirloom Navel Oranges	quantity:	1.0	units:	ea	cost:	4.99
+name:	Hershey's Chocolate Syrup	quantity:	1.0	units:	ea	cost:	2.39
+name:	Hickory-Smoked Salt	quantity:	1.0	units:	t	cost:	0.00
+name:	Hillshire Farms Lunch Meat	quantity:	1.0	units:	ea	cost:	4.79	notes:	Roast beef or pastrami preferred
+name:	Holiday Platters	quantity:	2.0	units:	ea	cost:	2.50
+name:	Honey	quantity:	1.0	units:	ea	cost:	0.00
+name:	Honey Chipotle Chicken	quantity:	1.0	units:	ea	cost:	22.14
+name:	Honey Nut Tasteeos	quantity:	1.0	units:	ea	cost:	3.49
+name:	Horseradish Mustard	quantity:	1.0	units:	ea	cost:	1.69	notes:	Get at Ralphs
+name:	Hot Italian Sausage	quantity:	1.0	units:	ea	cost:	4.99
+name:	Hot Mustard	quantity:	1.0	units:	ea	cost:	5.00
+name:	Hot Pockets	quantity:	1.0	units:	ea	cost:	0.00
+name:	Hot Sauce	quantity:	28.0	units:	oz	cost:	3.99
+name:	Hothouse Cucumber	quantity:	1.0	units:	ea	cost:	5.99
+name:	Hummus	quantity:	1.0	units:	ea	cost:	5.00
+name:	ICE!!!	quantity:	1.0	units:	ea	cost:	0.00
+name:	Ice	quantity:	1.0	units:	ea	cost:	4.49
+name:	Ice Cream	quantity:	1.0	units:	ea	cost:	6.49
+name:	Individual Macaroni And Cheese	quantity:	1.0	units:	ea	cost:	1.00
+name:	Irish Cream Coffee Creamer	quantity:	1.0	units:	ea	cost:	3.00
+name:	Italian Cheese Blend	quantity:	1.0	units:	ea	cost:	4.79
+name:	Italian Sausage	quantity:	1.0	units:	ea	cost:	5.99
+name:	It’s Delish Ginger	quantity:	1.0	units:	ea	cost:	5.00	notes:	Murphy Canyon/Tierrasanta Vons aisle 4
+name:	Jalapeno Chilis, Seeded And Deveined, Chopped	quantity:	1.0	units:	ea	cost:	0.99	produceCode:	4693
+name:	Jalapeno Pepper, sliced	quantity:	1.0	units:	ea	cost:	0.00
+name:	Jalapeno Slices	quantity:	0.0	units:	-	cost:	1.79
+name:	Jalapeño	quantity:	1.0	units:	ea	cost:	0.00
+name:	Jalapeño Pepper Sliced	quantity:	1.0	units:	ea	cost:	0.00
+name:	Jambalaya	quantity:	1.0	units:	ea	cost:	10.99
+name:	Jar Pimientos, With Juice	quantity:	4.0	units:	oz	cost:	1.29
+name:	Jar Ragu Simply Spaghetti Sauce	quantity:	1.0	units:	ea	cost:	3.00
+name:	Jet Dry	quantity:	1.0	units:	ea	cost:	6.99	isTaxable:	true
+name:	Jimmy Dean Croissants	quantity:	1.0	units:	ea	cost:	10.95
+name:	Jimmy Dean Sage Seasoned Pork Sausage	quantity:	4.0	units:	oz	cost:	5.99	notes:	Aisle 11 at Murphy Canyon Vons	locStoreName:	Murphy Canyon Vons	locAisle:	11	locDetails:	Next to the bacon	locMonth:	2	locDay:	4	locYear:	2023
+name:	Kalamata Olives	quantity:	1.0	units:	ea	cost:	4.99	notes:	Get at Trader Joe’s!
+name:	Kanzi Apples	quantity:	2.0	units:	lb	cost:	2.00
+name:	Kebab Meat Tub	quantity:	1.0	units:	ea	cost:	11.99
+name:	Keep Cool Bag	quantity:	1.0	units:	ea	cost:	8.00
+name:	Kerry Gold Sliced Cheese	quantity:	2.0	units:	ea	cost:	2.99
+name:	KerryGold Butter	quantity:	1.0	units:	ea	cost:	5.99
+name:	Kerrygold Butter	quantity:	1.0	units:	ea	cost:	14.49
+name:	Kerrygold Sliced Cheese	quantity:	2.0	units:	ea	cost:	2.49
+name:	Keto Ice Cream	quantity:	1.0	units:	ea	cost:	6.49
+name:	Kevin's Korean Bbq Beef	quantity:	1.0	units:	ea	cost:	13.99	notes:	This is the sale price until 2/26
+name:	Kevin’s Korean Bbq	quantity:	1.0	units:	ea	cost:	13.99
+name:	Kevin’s Lemongrass Chicken	quantity:	1.0	units:	ea	cost:	15.99
+name:	Kevin’s Mongolian Beef	quantity:	1.0	units:	ea	cost:	19.89	notes:	Buy scallions to go with it.
+name:	Kidney Beans	quantity:	1.0	units:	ea	cost:	1.79
+name:	Kielbasa	quantity:	1.0	units:	ea	cost:	14.59
+name:	Kind Bar	quantity:	1.0	units:	ea	cost:	1.25
+name:	Kind Bars	quantity:	1.0	units:	ea	cost:	19.39	notes:	By deli at MV Costco 2022/11 Vons aisle 17
+name:	King’s Hawaiian Rolls	quantity:	1.0	units:	ea	cost:	4.49
+name:	King’s Sliced Hawaiian Sweet Bread	quantity:	1.0	units:	ea	cost:	3.99
+name:	Kirkland Cashew Clusters	quantity:	1.0	units:	ea	cost:	9.99
+name:	Kirkland Organic Coconut Oil	quantity:	1.0	units:	ea	cost:	14.49	isTaxable:	true
+name:	Kirkland Paper Towels	quantity:	1.0	units:	ea	cost:	19.49	isTaxable:	true
+name:	Kirkland Peppermint Bark	quantity:	1.0	units:	ea	cost:	9.99	notes:	In the bakery area
+name:	Kirkland Shredded Mexican Cheese Blend	quantity:	1.0	units:	ea	cost:	14.49	notes:	5 pounds
+name:	Kirkland Water Filters	quantity:	1.0	units:	ea	cost:	19.99	isTaxable:	true
+name:	Kitchen Bouquet Browning Sauce	quantity:	1.0	units:	ea	cost:	4.49
+name:	Kitchen Trash Bags	quantity:	1.0	units:	ea	cost:	18.99	isTaxable:	true
+name:	Kitty Litter	quantity:	1.0	units:	ea	cost:	16.99	isTaxable:	true
+name:	Kitty Treats	quantity:	1.0	units:	ea	cost:	8.99	isTaxable:	true
+name:	Kiwi Strawberry Sparkling Water	quantity:	2.0	units:	ea	cost:	0.99
+name:	Kleenex	quantity:	1.0	units:	ea	cost:	1.59	isTaxable:	true	notes:	this price was for the 3-pack
+name:	Koru Apples	quantity:	4.0	units:	lb	cost:	1.99
+name:	Kosher Salt	quantity:	1.5	units:	t	cost:	0.50
+name:	Kosher salt	quantity:	0.0	units:	-	cost:	0.00
+name:	Krill Oil	quantity:	1.0	units:	ea	cost:	20.00
+name:	Langers Apple Cranberry Juice	quantity:	1.0	units:	ea	cost:	2.99
+name:	Langers Cran-apple Juice	quantity:	1.0	units:	ea	cost:	2.79
+name:	Large Brown Or White Onion	quantity:	1.0	units:	ea	cost:	1.00
+name:	Large Eggplants	quantity:	2.0	units:	ea	cost:	1.99
+name:	Large Leek, White Only, Well Rinsed And Chopped	quantity:	1.0	units:	ea	cost:	3.00	produceCode:	94629
+name:	Large Moving Box	quantity:	5.0	units:	ea	cost:	1.78	isTaxable:	true
+name:	Large Onion	quantity:	3.0	units:	ea	cost:	0.99
+name:	Large Oranges	quantity:	2.0	units:	ea	cost:	1.00
+name:	Large Tomato	quantity:	7.0	units:	ea	cost:	0.70
+name:	Large leek, white only, well rinsed and chopped	quantity:	1.0	units:	ea	cost:	2.00
+name:	Lasagna Noodles	quantity:	1.0	units:	ea	cost:	2.00
+name:	Laundry Detergent	quantity:	1.0	units:	ea	cost:	3.00	isTaxable:	true
+name:	Laura Scudder's Natural Peanut Butter	quantity:	1.0	units:	ea	cost:	4.79	isCRV:	true	crvQuantity:	0	crvFluidOunces:	0.0
+name:	Laura Scudder’s Natural Peanut Butter	quantity:	1.0	units:	ea	cost:	7.29
+name:	LaxaClear	quantity:	1.0	units:	ea	cost:	19.99	isTaxable:	true	isFSA:	true	notes:	Kirkland brand, NOT MiraLax!
+name:	Leaf Lettuce	quantity:	1.0	units:	ea	cost:	1.99
+name:	Lean Hamburger	quantity:	2.0	units:	lb	cost:	0.00
+name:	Leggings	quantity:	1.0	units:	ea	cost:	10.00
+name:	Lemon	quantity:	3.0	units:	ea	cost:	0.69
+name:	Lemon Juice	quantity:	2.0	units:	T	cost:	0.00
+name:	Lemon Turd Cheesecake	quantity:	1.0	units:	ea	cost:	16.99
+name:	Lemon juice squeeze, fresh	quantity:	1.0	units:	ea	cost:	0.00
+name:	Lemongrass	quantity:	1.0	units:	ea	cost:	0.00
+name:	Lemons	quantity:	2.0	units:	ea	cost:	0.69
+name:	Lens Wipes	quantity:	1.0	units:	ea	cost:	10.00	isFSA:	true
+name:	Lentil Pasta	quantity:	1.0	units:	ea	cost:	3.00
+name:	Lentil Soup	quantity:	1.0	units:	ea	cost:	0.99
+name:	Lentils	quantity:	1.0	units:	ea	cost:	1.99	notes:	S&F has 5 lbs for $5.49
+name:	Light Brown Sugar	quantity:	32.0	units:	oz	cost:	2.39
+name:	Light Bulb	quantity:	1.0	units:	ea	cost:	0.00
+name:	Light Corn Syrup	quantity:	1.0	units:	ea	cost:	2.49
+name:	Light Molasses	quantity:	1.0	units:	ea	cost:	3.99
+name:	Lily’s Chocolate Chips	quantity:	1.0	units:	ea	cost:	8.49
+name:	Lily’s Extra Dark Chocolate Bar	quantity:	1.0	units:	ea	cost:	3.99
+name:	Lily’s Peppermint Baking Chips	quantity:	1.0	units:	ea	cost:	7.49
+name:	Lime	quantity:	2.0	units:	ea	cost:	0.00
+name:	Limes	quantity:	1.0	units:	ea	cost:	0.50	produceCode:	4048
+name:	Liquid Bandaid	quantity:	1.0	units:	ea	cost:	3.99	isTaxable:	true	notes:	Aisle D39 MV Target 2022/12
+name:	Liquid Smoke	quantity:	1.0	units:	ea	cost:	5.00	notes:	Aisle 7 right side, top shelf right in front
+name:	Lite Sour Cream	quantity:	1.0	units:	c	cost:	0.00
+name:	Litter Genie Bags	quantity:	1.0	units:	ea	cost:	10.00
+name:	Loaf Dark Pumpernickel Bread, Unsliced	quantity:	0.5	units:	ea	cost:	0.00
+name:	Long Grain White Rice	quantity:	1.5	units:	c	cost:	3.99
+name:	Low Sodium Chicken Broth	quantity:	3.0	units:	c	cost:	5.00
+name:	Lower Bill	quantity:	1.0	units:	ea	cost:	200.00
+name:	Lunch Meat	quantity:	1.0	units:	ea	cost:	5.49
+name:	Lunch Options	quantity:	1.0	units:	ea	cost:	0.01
+name:	Lye	quantity:	1.0	units:	ea	cost:	0.00
+name:	Mac & Cheese Bake	quantity:	1.0	units:	ea	cost:	14.45
+name:	Macadamia Nuts	quantity:	1.0	units:	c	cost:	14.98	notes:	Sprouts bulk!	produceCode:	6480
+name:	Macaroni And Cheese	quantity:	1.0	units:	ea	cost:	11.84
+name:	Magnesium Citrate	quantity:	1.0	units:	ea	cost:	15.29	isTaxable:	true	notes:	120 count
+name:	Magnesium Glycinate	quantity:	1.0	units:	ea	cost:	15.19	isTaxable:	true	notes:	Most economical 400mg
+name:	Mama Bella Garlic Bread	quantity:	1.0	units:	ea	cost:	3.29
+name:	Mango Pineapple Sparkling Water	quantity:	2.0	units:	ea	cost:	0.99
+name:	Mangos	quantity:	1.0	units:	ea	cost:	8.49	notes:	only if they are Kent
+name:	Maple Syrup	quantity:	1.0	units:	ea	cost:	11.99	notes:	33.8 oz
+name:	Marie Callendar's Cornbread Mix	quantity:	1.0	units:	ea	cost:	3.00
+name:	Marie Callendar's Meals	quantity:	5.0	units:	ea	cost:	1.88
+name:	Marinated Salmon	quantity:	1.0	units:	ea	cost:	22.49	notes:	30 oz
+name:	Martinelli's Sparkling Cider	quantity:	1.0	units:	ea	cost:	7.00	notes:	4 pack
+name:	Martinelli’s	quantity:	1.0	units:	ea	cost:	4.99
+name:	Mary’s Rx	quantity:	1.0	units:	ea	cost:	10.00
+name:	Mary’s Rxs	quantity:	1.0	units:	ea	cost:	0.00
+name:	Mary’s Soup	quantity:	1.0	units:	ea	cost:	4.99
+name:	Mary’s Top	quantity:	1.0	units:	ea	cost:	9.99
+name:	Mashed Cauliflower	quantity:	1.0	units:	ea	cost:	3.99
+name:	Mashed Potatoes	quantity:	1.0	units:	ea	cost:	1.19
+name:	Massaman Curry Paste	quantity:	1.0	units:	ea	cost:	0.00
+name:	Massamon Curry Paste	quantity:	2.0	units:	ea	cost:	1.29
+name:	Matcha	quantity:	1.0	units:	ea	cost:	19.99
+name:	Mayo	quantity:	1.0	units:	ea	cost:	2.50
+name:	Meatloaf & Mashed Potatoes	quantity:	1.0	units:	ea	cost:	17.20
+name:	Meclizine	quantity:	1.0	units:	ea	cost:	4.00	isFSA:	true
+name:	Med White Onion	quantity:	1.25	units:	lb	cost:	1.49
+name:	Medium Cheddar	quantity:	1.0	units:	ea	cost:	3.50	notes:	Top shelf at Vons in Murphy Canyon
+name:	Medium Jalapeno chilis, seeded and deveined, chopped	quantity:	2.0	units:	ea	cost:	0.50
+name:	Medium Moving Box	quantity:	2.0	units:	ea	cost:	1.48	isTaxable:	true
+name:	Medium Onion, Minced	quantity:	1.0	units:	ea	cost:	0.00
+name:	Medium Onions	quantity:	0.75	units:	lb	cost:	0.99	notes:	Qty 1	produceCode:	4093
+name:	Medium Poblano Chile	quantity:	2.0	units:	ea	cost:	0.50	notes:	Try North Park
+name:	Medium Red Onions, Thinly Sliced	quantity:	1.0	units:	ea	cost:	1.69	notes:	Code: 4082
+name:	Medium Sweet Red Pepper	quantity:	1.0	units:	ea	cost:	1.50
+name:	Medium tomatoes, cut into wedges	quantity:	2.0	units:	ea	cost:	0.00
+name:	Melatonin	quantity:	1.0	units:	ea	cost:	14.99
+name:	Melatonin Gummies	quantity:	1.0	units:	ea	cost:	0.00
+name:	Melitta Coffee	quantity:	1.0	units:	ea	cost:	4.39
+name:	Mexican Appetizer	quantity:	1.0	units:	ea	cost:	5.00
+name:	Mexican Blend Vegetables	quantity:	1.0	units:	ea	cost:	2.99	notes:	Murphy Vons has Birds Eye Southwest Blend
+name:	Mexican Oregano	quantity:	1.0	units:	t	cost:	0.00
+name:	Mexican Oregano Flakes	quantity:	1.0	units:	ea	cost:	0.00
+name:	Mexican Oregano, Ground	quantity:	1.0	units:	ea	cost:	0.00
+name:	Mexican Tomato Base	quantity:	1.0	units:	ea	cost:	0.00
+name:	Milk	quantity:	1.0	units:	ea	cost:	1.49	notes:	Smallest quantity possible!
+name:	Milk Half Gallon	quantity:	1.0	units:	ea	cost:	2.69	notes:	Whole
+name:	Minced Garlic	quantity:	1.0	units:	T	cost:	0.00
+name:	Mint	quantity:	1.0	units:	ea	cost:	2.69	notes:	Living 
+name:	Mint Keto Ice Cream	quantity:	1.0	units:	ea	cost:	6.00
+name:	Mio Liquid Water Enhancer	quantity:	1.0	units:	ea	cost:	2.50	notes:	Back left of aisle with fruit juice @ MC Vons
+name:	Molasses	quantity:	1.0	units:	ea	cost:	3.99
+name:	Mouse	quantity:	1.0	units:	ea	cost:	19.99	isTaxable:	true
+name:	Mozzarella Cheese	quantity:	2.0	units:	ea	cost:	2.99
+name:	Mozzarella Cheese Ball (16 oz)	quantity:	1.0	units:	ea	cost:	5.00
+name:	Mozzarella Cheese Ball (16 oz)	quantity:	1.0	units:	ea	cost:	5.00
+name:	Mozzarella Sticks	quantity:	1.0	units:	ea	cost:	0.00
+name:	Mr Kooks Tikka Masala Simmer Sauce	quantity:	1.0	units:	ea	cost:	6.49
+name:	Mucus Relief Dm	quantity:	1.0	units:	ea	cost:	13.99	isTaxable:	true	isFSA:	true
+name:	Muenster Cheese	quantity:	1.0	units:	ea	cost:	6.59
+name:	Mushrooms	quantity:	1.0	units:	ea	cost:	2.99	isCRV:	true	crvQuantity:	0	crvFluidOunces:	0.0	notes:	NOT sliced
+name:	Mushrooms, sliced	quantity:	0.5	units:	c	cost:	0.00
+name:	Mustard	quantity:	1.0	units:	ea	cost:	1.49
+name:	Nacho Cheese	quantity:	1.0	units:	ea	cost:	5.29	notes:	7.5 oz
+name:	Nasal Decongestant Spray	quantity:	1.0	units:	ea	cost:	7.99	isFSA:	true	notes:	Get the menthol kind, not the regular kind!
+name:	Nature Valley Protein Bars	quantity:	1.0	units:	ea	cost:	14.89
+name:	Netti Pot	quantity:	1.0	units:	ea	cost:	0.00
+name:	New York Strip Bone-In	quantity:	2.0	units:	ea	cost:	0.00
+name:	Nitrite Free Sliced Chicken	quantity:	1.0	units:	ea	cost:	6.99
+name:	Nuclear Curry Sauce from Smart and Final	quantity:	1.0	units:	ea	cost:	1.00
+name:	Nugo Protein Bar	quantity:	1.0	units:	ea	cost:	1.59	notes:	Next to vitamin department
+name:	Nutmeg, Whole	quantity:	1.0	units:	ea	cost:	0.99	locStoreName:	Food 4 Less Mission Valley	locAisle:	3	locDetails:	Right side near back	locMonth:	2	locDay:	28	locYear:	2023
+name:	O Organics Flax Seed	quantity:	1.0	units:	ea	cost:	5.49	isTaxable:	true	notes:	Baking aisle, top shelf, Murphy Canyon Vons
+name:	O Organics Snacking Nuts	quantity:	1.0	units:	ea	cost:	0.00	notes:	8-10 oz
+name:	O Organics Super Greens	quantity:	4.0	units:	oz	cost:	5.49
+name:	Office Chair	quantity:	1.0	units:	ea	cost:	0.00
+name:	Oil	quantity:	2.0	units:	T	cost:	0.00
+name:	Olive Oil	quantity:	1.0	units:	t	cost:	12.99
+name:	Olive Oil Mayonnaise	quantity:	1.0	units:	ea	cost:	3.99
+name:	Onion	quantity:	2.0	units:	ea	cost:	1.99	notes:	One large & one medium, or three medium 
+name:	Onion Powder	quantity:	1.0	units:	ea	cost:	4.99
+name:	Onion Rings	quantity:	1.0	units:	ea	cost:	4.00
+name:	Onion, Coarsely Chopped	quantity:	1.0	units:	ea	cost:	3.75
+name:	Onion, Diced (about 1/2 Cup)	quantity:	1.0	units:	ea	cost:	0.00
+name:	Onion, Diced (about 1/2 Cup)	quantity:	1.0	units:	ea	cost:	0.60
+name:	Onions	quantity:	0.2	units:	lb	cost:	1.29	notes:	Qty 1	produceCode:	4166
+name:	Orange Chicken	quantity:	2.0	units:	ea	cost:	5.00
+name:	Orange Juice	quantity:	1.0	units:	ea	cost:	4.29
+name:	Oranges	quantity:	2.0	units:	ea	cost:	1.00
+name:	Oregano Sprig	quantity:	1.0	units:	ea	cost:	0.00
+name:	Organic Bean Sprouts	quantity:	1.0	units:	ea	cost:	0.00
+name:	Organic Cinnamon	quantity:	1.0	units:	ea	cost:	3.69
+name:	Organic Coffee	quantity:	1.0	units:	ea	cost:	10.99
+name:	Organic Cream	quantity:	1.0	units:	ea	cost:	4.99
+name:	Organic Popping Corn	quantity:	1.0	units:	ea	cost:	3.49	locStoreName:	Sprouts Point Loma	locAisle:	Chips and popcorn	locDetails:	Bottom shelf close to end	locMonth:	1	locDay:	16	locYear:	2023
+name:	Orville Redenbacher White Popcorn	quantity:	1.0	units:	ea	cost:	6.99
+name:	Oven Red Potatoes	quantity:	1.0	units:	ea	cost:	7.99
+name:	Oxiclean	quantity:	1.0	units:	ea	cost:	19.99
+name:	O’	quantity:	1.0	units:	ea	cost:	0.00
+name:	Package Butter-Flavored Shortening Sticks	quantity:	1.0	units:	ea	cost:	0.00
+name:	Package Shredded Sharp Cheddar	quantity:	8.0	units:	oz	cost:	5.00
+name:	Package Shredded White Cheddar	quantity:	8.0	units:	oz	cost:	5.00
+name:	Package Sliced Bell Peppers And Onions	quantity:	1.0	units:	ea	cost:	2.99	notes:	Equal amounts of peppers and onions
+name:	Package Thai basil leaves	quantity:	1.0	units:	ea	cost:	0.00
+name:	Packing Paper	quantity:	1.0	units:	ea	cost:	6.98	isTaxable:	true
+name:	Packing Tape	quantity:	1.0	units:	ea	cost:	7.47	isTaxable:	true
+name:	Pad Thai Noodles	quantity:	8.0	units:	oz	cost:	2.00
+name:	Pancho Villa's Adobado De Puerco	quantity:	1.0	units:	lb	cost:	4.66
+name:	Pancho Villa's Adobado de Puerco	quantity:	0.75	units:	lb	cost:	5.00
+name:	Paper Plates	quantity:	1.0	units:	ea	cost:	4.99	isTaxable:	true	taxablePrice:	1.99	locStoreName:	Murphy Canyon Vons	locAisle:	Paper section	locDetails:	Far back right corner	locMonth:	12	locDay:	27	locYear:	2022
+name:	Paper Towels	quantity:	1.0	units:	ea	cost:	16.99	isTaxable:	true
+name:	Paprika	quantity:	0.5	units:	t	cost:	0.00
+name:	Parmesan Cheese	quantity:	1.0	units:	ea	cost:	9.99
+name:	Parmesan cheese, grated	quantity:	0.0	units:	-	cost:	0.00
+name:	Parmigiano Reggiano	quantity:	1.0	units:	ea	cost:	11.99	notes:	16 oz
+name:	Pasta Sauce	quantity:	1.0	units:	ea	cost:	2.69
+name:	Pastor Seasoning	quantity:	1.0	units:	ea	cost:	0.00
+name:	Pastrami	quantity:	1.0	units:	ea	cost:	15.49
+name:	Peach Cobbler	quantity:	1.0	units:	ea	cost:	0.00
+name:	Peanut Butter	quantity:	1.0	units:	ea	cost:	2.99
+name:	Peanut Butter & Choc Granola Bars	quantity:	1.0	units:	ea	cost:	15.99	notes:	Back in snack area at Mission Valley Costco
+name:	Peanut Butter Cups	quantity:	1.0	units:	ea	cost:	0.00
+name:	Peelz	quantity:	1.0	units:	ea	cost:	2.97
+name:	Penne Pasta	quantity:	1.0	units:	ea	cost:	0.00
+name:	Peppermint Stevia	quantity:	1.0	units:	ea	cost:	11.99	isTaxable:	true
+name:	Peppermint Tea	quantity:	1.0	units:	ea	cost:	3.49
+name:	Pepperoncini Jar	quantity:	1.0	units:	ea	cost:	5.99
+name:	Pepperoncinis	quantity:	1.0	units:	ea	cost:	5.99	notes:	On fridge door under cat food
+name:	Pepperoni Slice	quantity:	1.0	units:	ea	cost:	0.00
+name:	Pepsi Cola	quantity:	1.0	units:	ea	cost:	4.99
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00	notes:	Get from Amazon?
+name:	Persian Spice (Advieh)	quantity:	1.0	units:	ea	cost:	5.00
+name:	Pesto Sauce	quantity:	1.0	units:	ea	cost:	4.99
+name:	Phil’s BBQ Sauce	quantity:	1.0	units:	ea	cost:	0.00
+name:	Pickles	quantity:	24.0	units:	oz	cost:	1.79	notes:	Food 4 Less!	locStoreName:	Food 4 Less Mission Valley	locAisle:	2	locDetails:	Right side second shelf up	locMonth:	2	locDay:	19	locYear:	2023
+name:	Pico De Gallo	quantity:	1.0	units:	ea	cost:	3.99
+name:	Pimentos 4 oz	quantity:	1.0	units:	ea	cost:	2.99
+name:	Pimientos	quantity:	1.0	units:	ea	cost:	1.99
+name:	Pine nuts, optional	quantity:	2.0	units:	T	cost:	0.00
+name:	Pink Lady Apples	quantity:	3.0	units:	lb	cost:	1.79	notes:	Qty 5
+name:	Pinto Beans	quantity:	1.0	units:	ea	cost:	0.00
+name:	Pistachio Slivers	quantity:	1.0	units:	ea	cost:	9.99	locStoreName:	Balboa International Market	locAisle:	Enclosed refrigerator in produce section	locDetails:	Near the back	locMonth:	1	locDay:	11	locYear:	2023
+name:	Pixel 3 Cable	quantity:	1.0	units:	ea	cost:	7.99	isTaxable:	true
+name:	Pizza	quantity:	2.0	units:	ea	cost:	5.00
+name:	Plain Fat Free Greek Yogurt	quantity:	1.0	units:	c	cost:	4.49	locStoreName:		locAisle:		locDetails:		locMonth:	1	locDay:	30	locYear:	2023
+name:	Plantains	quantity:	1.0	units:	ea	cost:	0.59
+name:	Poblano Chilis, Stemmed, Seeded And Chopped	quantity:	1.0	units:	ea	cost:	2.99	produceCode:	4701
+name:	Poblano Peppers Diced	quantity:	3.0	units:	ea	cost:	0.00
+name:	Poblano Peppers, diced	quantity:	3.0	units:	ea	cost:	0.00
+name:	Poblano chilis, stemmed, seeded and chopped	quantity:	3.0	units:	ea	cost:	1.00
+name:	Poinsettia 4-Pack	quantity:	1.0	units:	ea	cost:	21.59
+name:	Pomegranate	quantity:	1.0	units:	ea	cost:	1.00
+name:	Pomegranate Molasses	quantity:	0.25	units:	c	cost:	4.00	locStoreName:	North Park Produce	locAisle:	3	locDetails:	Back end cap	locMonth:	2	locDay:	4	locYear:	2023
+name:	Popcorn	quantity:	1.0	units:	ea	cost:	4.00
+name:	Popcorn Chicken	quantity:	1.0	units:	ea	cost:	12.99
+name:	Porcelain Chip Repair	quantity:	1.0	units:	ea	cost:	5.48	isTaxable:	true
+name:	Porchetta Pork Loin	quantity:	1.0	units:	ea	cost:	11.01
+name:	Pork Shoulder	quantity:	4.0	units:	lb	cost:	3.99
+name:	Pork Tamales	quantity:	1.0	units:	ea	cost:	12.99
+name:	Potato	quantity:	3.0	units:	ea	cost:	0.00
+name:	Potato Treats	quantity:	1.0	units:	ea	cost:	3.99
+name:	Potatoes	quantity:	1.0	units:	lb	cost:	2.00
+name:	Potatoes O'Brien	quantity:	1.0	units:	ea	cost:	3.50
+name:	Potatoes O’Brien	quantity:	1.0	units:	ea	cost:	2.99
+name:	Powdered Stevia	quantity:	1.0	units:	ea	cost:	5.49	isTaxable:	true
+name:	Powdered Sugar	quantity:	1.0	units:	ea	cost:	0.00
+name:	Power Greens	quantity:	1.0	units:	ea	cost:	5.99	notes:	item#782294	locStoreName:	Costco Mission Valley 	locAisle:	Produce area	locDetails:		locMonth:	12	locDay:	20	locYear:	2022
+name:	Power Strip	quantity:	1.0	units:	ea	cost:	1.00
+name:	Prepared white horseradish	quantity:	2.0	units:	T	cost:	0.00
+name:	Primo’s Chips	quantity:	1.0	units:	ea	cost:	0.00
+name:	Produce Bags	quantity:	1.0	units:	ea	cost:	0.00
+name:	Progreso Clam Chowder	quantity:	1.0	units:	ea	cost:	1.99
+name:	Progressive Lentil	quantity:	2.0	units:	ea	cost:	3.99
+name:	Progressive Split Pea Ham	quantity:	2.0	units:	ea	cost:	3.99
+name:	Progresso Chicken And Wild Rice	quantity:	1.0	units:	ea	cost:	0.00
+name:	Progresso Chicken Noodle Soup	quantity:	3.0	units:	ea	cost:	3.99
+name:	Progresso Lentil Soup	quantity:	3.0	units:	ea	cost:	2.49
+name:	Progresso Lentil Soups	quantity:	4.0	units:	ea	cost:	2.49	notes:	$2 off coupon for buying six
+name:	Protein Bar	quantity:	1.0	units:	ea	cost:	1.59
+name:	Protein Bars	quantity:	1.0	units:	ea	cost:	14.89	notes:	Aisle 307 Mission Valley Costco 7/5/22
+name:	Provolone Cheese	quantity:	1.0	units:	ea	cost:	10.00	notes:	6 slices
+name:	Pulled Pork	quantity:	1.0	units:	ea	cost:	9.99
+name:	Pumpernickel Bread	quantity:	1.0	units:	ea	cost:	4.99
+name:	Pumpkin Bread Kit	quantity:	1.0	units:	ea	cost:	2.98
+name:	Pumpkin Pie Spice	quantity:	1.0	units:	ea	cost:	1.00
+name:	Pumpkin Protein Powder	quantity:	1.0	units:	ea	cost:	31.00	notes:	Costco Poway 10/2022
+name:	Pumpkin Pudding Cake	quantity:	1.0	units:	ea	cost:	5.99	isTaxable:	true
+name:	Pumpkin Puree	quantity:	2.0	units:	ea	cost:	3.49
+name:	Pumpkin Purée Can	quantity:	1.0	units:	ea	cost:	0.00
+name:	Quart Ziplock Bags	quantity:	1.0	units:	ea	cost:	4.49	isTaxable:	true
+name:	Quick Cook Oats	quantity:	3.0	units:	c	cost:	4.49
+name:	Ragu Simply	quantity:	1.0	units:	ea	cost:	2.99
+name:	Raisins	quantity:	0.75	units:	c	cost:	0.00
+name:	Rana Organic Chicken Alfredo Pasta	quantity:	1.0	units:	ea	cost:	13.99
+name:	Ravioli Lasagna	quantity:	1.0	units:	ea	cost:	14.93
+name:	Ravioli Lasagna Bake	quantity:	1.0	units:	ea	cost:	15.71
+name:	Raw Honey	quantity:	1.0	units:	ea	cost:	10.89
+name:	Rebel Cookie Dough Ice Cream	quantity:	1.0	units:	ea	cost:	6.49
+name:	Rebel Mint Chocolate Ice Cream	quantity:	1.0	units:	ea	cost:	6.49
+name:	Rebel Triple Chocolate	quantity:	1.0	units:	ea	cost:	6.49
+name:	Rebel Triple Chocolate Ice Cream	quantity:	1.0	units:	ea	cost:	6.49
+name:	Red Baron Mini Pizzas	quantity:	3.0	units:	ea	cost:	3.99
+name:	Red Bell Pepper	quantity:	3.0	units:	ea	cost:	1.50	notes:	1 red, 1 orange & 1 yellow	produceCode:	3121
+name:	Red Curry Paste	quantity:	2.0	units:	T	cost:	1.29	notes:	2 tbsp
+name:	Red Enchilada Sauce	quantity:	1.0	units:	ea	cost:	1.29
+name:	Red Onion	quantity:	1.0	units:	ea	cost:	0.99
+name:	Red Onion Diced	quantity:	1.0	units:	c	cost:	0.00
+name:	Red Onions	quantity:	3.75	units:	lb	cost:	0.59	produceCode:	4082
+name:	Red Pepper	quantity:	1.0	units:	ea	cost:	2.99
+name:	Reese's Peanut Butter Cups	quantity:	1.0	units:	ea	cost:	5.49	isTaxable:	true
+name:	Refresh Tears	quantity:	1.0	units:	ea	cost:	20.00	isTaxable:	true	isFSA:	true	locStoreName:	Costco Mission Valley	locAisle:	Front-most rack	locDetails:	One bay from right	locMonth:	2	locDay:	19	locYear:	2023
+name:	Return Cream Bottle	quantity:	1.0	units:	ea	cost:	0.01	notes:	code is 1150
+name:	Rex’s Food	quantity:	7.0	units:	ea	cost:	2.49	isTaxable:	true
+name:	Rib Roast	quantity:	1.0	units:	ea	cost:	51.98
+name:	Ricola Cough Drops	quantity:	1.0	units:	ea	cost:	2.99
+name:	Ricola Cough Drops, Honey Lemon Or Original	quantity:	1.0	units:	ea	cost:	2.50
+name:	Ricotta Cheese Tub (15 oz)	quantity:	1.0	units:	ea	cost:	4.00
+name:	Ricotta Cheese Tub (15 oz)	quantity:	1.0	units:	ea	cost:	5.00
+name:	Right Rice	quantity:	1.0	units:	ea	cost:	3.99
+name:	Ripe Bananas	quantity:	2.0	units:	ea	cost:	1.00
+name:	Ripe Tomatoes	quantity:	2.0	units:	oz	cost:	1.00
+name:	Roasted Peanuts	quantity:	1.0	units:	ea	cost:	0.00
+name:	Roasting Pan	quantity:	1.0	units:	ea	cost:	1.99	isTaxable:	true
+name:	Rockit Apples	quantity:	1.0	units:	ea	cost:	3.49
+name:	Roma Tomatoes	quantity:	3.0	units:	ea	cost:	1.99	locStoreName:	North Park Produce	locAisle:	Mexican spice rack	locDetails:	Half way up near left side	locMonth:	2	locDay:	4	locYear:	2023
+name:	Romaine Lettuce	quantity:	1.0	units:	ea	cost:	4.99
+name:	Root Beer	quantity:	5.0	units:	ea	cost:	0.87	isTaxable:	true
+name:	Rotisserie Chick/Mac/Beans	quantity:	1.0	units:	ea	cost:	15.99
+name:	Rotisserie Chicken	quantity:	1.0	units:	ea	cost:	4.99	isTaxable:	true
+name:	Rotisserie Chicken Breast Meat	quantity:	1.0	units:	ea	cost:	17.99	notes:	In the case in front of the deli	locStoreName:	Costco Mission Valley	locAisle:	Cooler in front of hot chickens	locDetails:		locMonth:	1	locDay:	6	locYear:	2023
+name:	Royal Canin Urinary SO	quantity:	10.0	units:	ea	cost:	2.99	isTaxable:	true	notes:	5.1 oz can
+name:	Royal White Basmati Rice	quantity:	1.0	units:	ea	cost:	12.99	locStoreName:	Murphy Canyon Vons	locAisle:	15	locDetails:	Right side	locMonth:	12	locDay:	31	locYear:	2022
+name:	Russet Potatoes	quantity:	1.0	units:	lb	cost:	1.49
+name:	Rye Bread	quantity:	1.0	units:	ea	cost:	5.00
+name:	Salad mix	quantity:	1.0	units:	ea	cost:	2.00
+name:	Salami	quantity:	1.0	units:	ea	cost:	13.99
+name:	Saline Spray	quantity:	1.0	units:	ea	cost:	0.00
+name:	Salsa	quantity:	1.0	units:	ea	cost:	0.00
+name:	Salt And Pepper	quantity:	1.0	units:	ea	cost:	0.00
+name:	Salted Almonds	quantity:	1.0	units:	ea	cost:	11.99
+name:	Sandwich	quantity:	2.0	units:	ea	cost:	4.00
+name:	Sargento Aged Italian Blend	quantity:	1.0	units:	ea	cost:	4.79
+name:	Sausage	quantity:	1.0	units:	ea	cost:	0.00
+name:	Sausage & Beef Lasagna	quantity:	1.0	units:	ea	cost:	14.79
+name:	Sausages	quantity:	1.0	units:	ea	cost:	1.89
+name:	Scallions	quantity:	3.0	units:	ea	cost:	0.79
+name:	Scallions, Chopped On An Angle	quantity:	1.0	units:	ea	cost:	0.79	produceCode:	94068
+name:	Scalloped Potatoes	quantity:	1.0	units:	ea	cost:	6.79
+name:	Scoop Away Kitty Litter	quantity:	1.0	units:	ea	cost:	14.79	isTaxable:	true	notes:	goes on sale 10/26	locStoreName:	Mission Valley Costco	locAisle:	Left side, last aisle	locDetails:	End cap facing left wall	locMonth:	1	locDay:	7	locYear:	2023
+name:	Sea Salt Caramels	quantity:	1.0	units:	ea	cost:	8.99
+name:	Sea salt and freshly ground black pepper	quantity:	0.0	units:	-	cost:	0.00
+name:	Seasoned Bread Crumbs	quantity:	1.0	units:	ea	cost:	0.00
+name:	Seat Covers	quantity:	1.0	units:	ea	cost:	1.00
+name:	See's Gift Cards	quantity:	1.0	units:	ea	cost:	38.99
+name:	Selenium	quantity:	1.0	units:	ea	cost:	10.49	isTaxable:	true	notes:	Nature's Way 200 mcg 100 cap	locStoreName:	Sprouts Point Loma	locAisle:	Vitamin department third aisle	locDetails:	Under minerals sign near bottom	locMonth:	12	locDay:	29	locYear:	2022
+name:	Semisweet Chocolate Chips	quantity:	3.0	units:	ea	cost:	2.49	notes:	Three 12 oz bags looked cheapest on website
+name:	Senna Leaves	quantity:	1.0	units:	ea	cost:	12.49	isTaxable:	true	locStoreName:	Sprouts Point Loma	locAisle:	Vitamin department third aisle 	locDetails:	Under herbal capsules sign near bottom	locMonth:	12	locDay:	29	locYear:	2022
+name:	Serrano Chili	quantity:	1.0	units:	ea	cost:	1.00
+name:	Serrano Pepper	quantity:	1.0	units:	ea	cost:	0.99	produceCode:	4709
+name:	Shade Grown Coffee	quantity:	1.0	units:	ea	cost:	10.00
+name:	Shallots	quantity:	1.0	units:	ea	cost:	0.00
+name:	Shampoo	quantity:	1.0	units:	ea	cost:	2.29	isTaxable:	true	notes:	Suave
+name:	Sharp Cheddar Cheese	quantity:	0.5	units:	lb	cost:	10.00
+name:	Sheet Pan Vegetables	quantity:	1.0	units:	ea	cost:	12.99
+name:	Shelby's Chili Mix	quantity:	1.0	units:	ea	cost:	2.99	notes:	Aisle 15 top shelf
+name:	Shelled Pistachios	quantity:	1.0	units:	ea	cost:	5.00
+name:	Shepherds Pie	quantity:	1.0	units:	ea	cost:	20.89
+name:	Shipping Materials	quantity:	1.0	units:	ea	cost:	10.00
+name:	Shredded Cabbage And Carrot Mix	quantity:	2.0	units:	c	cost:	1.99
+name:	Shredded Cheese	quantity:	1.0	units:	ea	cost:	2.00	notes:	Food 4 Less!
+name:	Shredded Chicken	quantity:	1.0	units:	ea	cost:	8.99
+name:	Shredded Mexican Cheese	quantity:	1.0	units:	ea	cost:	7.99
+name:	Shredded Mexican Cheese Blend	quantity:	1.0	units:	ea	cost:	7.99
+name:	Shredded Parmesan Cheese	quantity:	1.0	units:	ea	cost:	9.99
+name:	Shredded Sharp Cheddar, (1-1/4 Pounds)	quantity:	1.0	units:	ea	cost:	5.99
+name:	Signature Care Nasal Decongestant	quantity:	1.0	units:	ea	cost:	9.99	isTaxable:	true
+name:	Signature Select Country White Bread	quantity:	1.0	units:	ea	cost:	2.49
+name:	Signature Select Macaroni And Cheese	quantity:	1.0	units:	ea	cost:	7.49	notes:	Get two, if having with chorizo
+name:	Skechers Shoes	quantity:	1.0	units:	ea	cost:	32.99	isTaxable:	true	notes:	Size 10-1/2
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.00
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	0.00
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.5	units:	lb	cost:	3.49
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	0.00
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.00
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	0.00
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.00
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.59
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.59
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.59
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.59
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.59
+name:	Skinless Boneless Pork Butt (Or Shoulder)	quantity:	4.0	units:	lb	cost:	3.59
+name:	Slaw Mix	quantity:	1.0	units:	ea	cost:	1.49
+name:	Sleep Aid	quantity:	1.0	units:	ea	cost:	6.99
+name:	Sliced Black Olives	quantity:	1.0	units:	ea	cost:	1.29
+name:	Sliced Cheese	quantity:	1.0	units:	ea	cost:	3.49	notes:	Tillamook
+name:	Sliced Honey Ham	quantity:	1.0	units:	ea	cost:	3.49
+name:	Sliced Kerrygold Cheese	quantity:	2.0	units:	ea	cost:	4.49
+name:	Sliced Peppers & Onions	quantity:	1.0	units:	ea	cost:	2.99
+name:	Sliced Sirloin	quantity:	1.0	units:	ea	cost:	0.00
+name:	Sm. Pkg. Chopped Walnuts	quantity:	1.0	units:	ea	cost:	3.00	notes:	2.25 oz
+name:	Small Box	quantity:	5.0	units:	ea	cost:	0.98	isTaxable:	true
+name:	Small Red Bell Pepper Diced	quantity:	1.0	units:	ea	cost:	0.00
+name:	Small Red Pepper, diced	quantity:	1.0	units:	ea	cost:	0.00
+name:	Small Trashbags	quantity:	1.0	units:	ea	cost:	2.49
+name:	Smokehouse Almonds	quantity:	1.0	units:	ea	cost:	14.49
+name:	Snow Peas	quantity:	1.0	units:	ea	cost:	3.49	notes:	6 oz pkg
+name:	Soft Kitty Treats	quantity:	1.0	units:	ea	cost:	5.00
+name:	Soleil	quantity:	1.0	units:	ea	cost:	6.00
+name:	Sonoma Pepper Jack	quantity:	1.0	units:	ea	cost:	6.89
+name:	Soup	quantity:	1.0	units:	ea	cost:	3.00
+name:	Sour Cream	quantity:	1.0	units:	c	cost:	1.79
+name:	Southwest Blend Vegetables	quantity:	1.0	units:	ea	cost:	2.00
+name:	Spaghetti Squash	quantity:	5.0	units:	lb	cost:	1.49	notes:	Qty 2
+name:	Spanish Rice	quantity:	1.0	units:	ea	cost:	2.00
+name:	Sparkling Water	quantity:	4.0	units:	ea	cost:	0.99	isTaxable:	true	isCRV:	true	crvQuantity:	1	crvFluidOunces:	34.0	notes:	Two for Mary, one for Carl
+name:	Speed Stick Deodorant	quantity:	1.0	units:	ea	cost:	4.99	isTaxable:	true
+name:	Spicy Black Beans	quantity:	1.0	units:	ea	cost:	0.99
+name:	Spinach	quantity:	2.0	units:	ea	cost:	2.50	notes:	8 oz bag
+name:	Spinach & Cheese Ravioli	quantity:	1.0	units:	ea	cost:	10.69
+name:	Split Pea Soup	quantity:	3.0	units:	ea	cost:	0.99
+name:	Split Pea w/Ham Soup	quantity:	3.0	units:	ea	cost:	3.49	notes:	Or Campbell’s Chunky if cheaper 
+name:	Spot Bandaids	quantity:	1.0	units:	ea	cost:	0.00
+name:	Spray N Wash	quantity:	1.0	units:	ea	cost:	3.99	isTaxable:	true
+name:	Spring Mix	quantity:	1.0	units:	ea	cost:	4.99
+name:	Spring Mix Container	quantity:	1.0	units:	ea	cost:	4.99
+name:	Spring Rolls	quantity:	1.0	units:	ea	cost:	3.99
+name:	Sprouts Berry Sparkling Water	quantity:	1.0	units:	ea	cost:	5.00
+name:	Sprouts Black Cherry Sparkling Water	quantity:	1.0	units:	ea	cost:	6.50	isCRV:	true	crvQuantity:	8	crvFluidOunces:	16.9
+name:	Standing Rib Roast	quantity:	5.0	units:	lb	cost:	0.00
+name:	Stash Chai Spice Tea	quantity:	1.0	units:	ea	cost:	4.99
+name:	Steak Fries	quantity:	1.0	units:	ea	cost:	3.50
+name:	Steak Sauce	quantity:	1.0	units:	ea	cost:	5.00
+name:	Steel Cut Oatmeal	quantity:	1.0	units:	ea	cost:	5.89
+name:	Steel Wool	quantity:	1.0	units:	ea	cost:	0.00
+name:	Stevia	quantity:	1.0	units:	ea	cost:	4.49	notes:	Preferably SweetLeaf brand 
+name:	Stew  Kit	quantity:	1.0	units:	ea	cost:	19.99
+name:	Stew Beef	quantity:	1.5	units:	lb	cost:	6.99
+name:	Stouffer’s Frozen Family Size Entree	quantity:	1.0	units:	ea	cost:	13.99
+name:	Straus Heavy Whipping Cream	quantity:	1.0	units:	ea	cost:	4.99
+name:	Stuffed Bell Peppers	quantity:	1.0	units:	ea	cost:	19.38
+name:	Stuffed Peppers	quantity:	1.0	units:	ea	cost:	15.00
+name:	Stuffing	quantity:	1.0	units:	ea	cost:	2.99
+name:	Stuffo	quantity:	1.0	units:	ea	cost:	0.00
+name:	Suave Tropical Coconut Shampoo	quantity:	1.0	units:	ea	cost:	1.99	notes:	Aisle D19 MV Target 2022/12
+name:	Sub Sandwich	quantity:	1.0	units:	ea	cost:	7.99
+name:	Sudafed	quantity:	3.0	units:	ea	cost:	1.69	isTaxable:	true	isFSA:	true
+name:	Sugar	quantity:	1.0	units:	ea	cost:	0.00
+name:	Sukhi’s Organic Lemon Rice	quantity:	1.0	units:	ea	cost:	10.49
+name:	Sukhi’s Tikka Masala	quantity:	1.0	units:	ea	cost:	16.99
+name:	Sumac	quantity:	1.0	units:	ea	cost:	2.99	notes:	Spice rack facing back of store BIM
+name:	Summer Savory	quantity:	1.0	units:	ea	cost:	0.00
+name:	Sun Harvest? Dish Soap	quantity:	1.0	units:	ea	cost:	0.00
+name:	Super B Complex	quantity:	1.0	units:	ea	cost:	9.99
+name:	Super Greens	quantity:	1.0	units:	ea	cost:	5.49
+name:	Sweats	quantity:	1.0	units:	ea	cost:	17.49	isTaxable:	true
+name:	Sweet Onion	quantity:	0.75	units:	lb	cost:	1.25
+name:	Sweet Thai Chili Almonds	quantity:	1.0	units:	ea	cost:	13.49
+name:	Sweetened Condensed Milk	quantity:	1.0	units:	ea	cost:	0.00
+name:	T-bone Steak	quantity:	1.0	units:	ea	cost:	26.54
+name:	Taco Seasoning	quantity:	1.0	units:	ea	cost:	1.29
+name:	Take & Bake Pizza	quantity:	1.0	units:	ea	cost:	8.99
+name:	Talenti Chocolate Peanut Butter Gelato	quantity:	1.0	units:	ea	cost:	4.99
+name:	Talenti Coffee Chocolate Chip Gelato	quantity:	1.0	units:	ea	cost:	4.99
+name:	Talenti Double Dark Chocolate Gelato	quantity:	1.0	units:	ea	cost:	4.99
+name:	Talenti Mint Fudge Cookie Gelato	quantity:	1.0	units:	ea	cost:	5.99
+name:	Tamale	quantity:	8.0	units:	ea	cost:	0.00
+name:	Tamari Dark Soy	quantity:	6.0	units:	T	cost:	3.50	notes:	Zonia market had it for $4.49 on 10/11/22
+name:	Tamari Soy Sauce	quantity:	1.0	units:	ea	cost:	0.00
+name:	Tangerine Grapefruit Sparkling Water	quantity:	1.0	units:	ea	cost:	0.99
+name:	Tartar Sauce	quantity:	1.0	units:	ea	cost:	3.00
+name:	Tater Treats	quantity:	1.0	units:	ea	cost:	2.49
+name:	Taylor Farms Chopped Kit	quantity:	3.0	units:	ea	cost:	4.79
+name:	Tazo Chai Tea Bags	quantity:	1.0	units:	ea	cost:	2.79
+name:	Tazo Tea	quantity:	1.0	units:	ea	cost:	3.99
+name:	Tea Bags 100 Ct	quantity:	1.0	units:	ea	cost:	2.99
+name:	Tempeh	quantity:	1.0	units:	ea	cost:	3.69
+name:	Test2	quantity:	1.0	units:	ea	cost:	5.00	isTaxable:	true	isCRV:	true	crvQuantity:	1	crvFluidOunces:	12.0	notes:	Testing 
+name:	Thai Kitchen Coconut Milk	quantity:	1.0	units:	ea	cost:	8.29
+name:	Thai Red Curry With Chicken	quantity:	1.0	units:	ea	cost:	14.89
+name:	Thai Yellow Coconut Curry Sauce	quantity:	1.0	units:	ea	cost:	8.99	notes:	2 x 16 oz
+name:	Thermal Bag	quantity:	1.0	units:	ea	cost:	1.00
+name:	Thermally Insulated Bag	quantity:	1.0	units:	ea	cost:	8.00
+name:	Thick Bacon	quantity:	1.0	units:	ea	cost:	9.99
+name:	Tikka Masala	quantity:	1.0	units:	ea	cost:	15.99
+name:	Tikka Masala Simmer Sauce	quantity:	1.0	units:	ea	cost:	6.49	notes:	Aisle 14 in Murphy Canyon Vons
+name:	Tillamook	quantity:	1.0	units:	ea	cost:	14.99
+name:	Tillamook Cheddar Cheese Snacks	quantity:	1.0	units:	ea	cost:	14.99	notes:	Aisle 319 10/8/22 at MV Costco
+name:	Tillamook Smoked sausage	quantity:	1.0	units:	ea	cost:	1.50
+name:	Toilet Bowl Cleaner	quantity:	1.0	units:	ea	cost:	1.99
+name:	Toilet Paper	quantity:	1.0	units:	ea	cost:	18.99	isTaxable:	true
+name:	Toilet Paper - Signature Select	quantity:	1.0	units:	ea	cost:	5.99	isTaxable:	true
+name:	Tomato	quantity:	1.0	units:	ea	cost:	1.50
+name:	Tomato Paste	quantity:	2.0	units:	T	cost:	0.99	locStoreName:	Murphy Canyon Vons	locAisle:	Aisle 14	locDetails:	Right side top shelf	locMonth:	12	locDay:	31	locYear:	2022
+name:	Tomato Paste (6 oz)	quantity:	1.0	units:	ea	cost:	1.00
+name:	Tomato Paste (6 oz)	quantity:	1.0	units:	ea	cost:	0.79
+name:	Tomato Sauce	quantity:	8.0	units:	oz	cost:	0.79	notes:	15 oz
+name:	Tomatoes	quantity:	1.0	units:	lb	cost:	1.00
+name:	Toothpaste	quantity:	1.0	units:	ea	cost:	0.00
+name:	Tops	quantity:	1.0	units:	ea	cost:	7.99	isTaxable:	true
+name:	Tortilla Chips	quantity:	1.0	units:	ea	cost:	3.99
+name:	Tortilla Strips	quantity:	1.0	units:	ea	cost:	2.49
+name:	Tortillas	quantity:	1.0	units:	ea	cost:	4.29
+name:	Tp-Link Ax11000 Router	quantity:	1.0	units:	ea	cost:	219.99	isTaxable:	true
+name:	Trader Joe's Salted Tortilla Chips	quantity:	1.0	units:	-	cost:	0.00
+name:	Trader Joe’s Cranberry Relish	quantity:	1.0	units:	ea	cost:	3.99	notes:	Cooler in front left of store, near the tzatziki 
+name:	Trader Joe’s Tzatziki Dip	quantity:	1.0	units:	ea	cost:	3.99
+name:	Trader Joe’s Tzatziki Dip Tub	quantity:	1.0	units:	ea	cost:	3.99
+name:	Tri-Tip	quantity:	1.0	units:	ea	cost:	22.76
+name:	Truvia	quantity:	1.0	units:	ea	cost:	14.99
+name:	Try Tip	quantity:	1.0	units:	ea	cost:	22.58
+name:	Turkey	quantity:	1.0	units:	ea	cost:	0.00
+name:	Turmeric	quantity:	1.0	units:	t	cost:	5.00
+name:	Tylenol	quantity:	1.0	units:	ea	cost:	8.49	isTaxable:	true
+name:	Uncooked Boneless Skinless Chicken Breast	quantity:	1.0	units:	lb	cost:	0.00
+name:	Uncooked Onions	quantity:	2.0	units:	c	cost:	0.00
+name:	Uncooked Scallions	quantity:	0.5	units:	c	cost:	0.00
+name:	Underwear	quantity:	1.0	units:	ea	cost:	25.98	isTaxable:	true
+name:	Unsalted Butter	quantity:	16.0	units:	oz	cost:	4.49
+name:	Valintina Sauce	quantity:	1.0	units:	ea	cost:	1.69
+name:	Vanilla Ice Cream	quantity:	1.0	units:	ea	cost:	3.49
+name:	Vegetable Oil	quantity:	1.0	units:	ea	cost:	0.00
+name:	Vegetables For Grilling	quantity:	2.0	units:	ea	cost:	3.00
+name:	Veggie Snacks	quantity:	1.0	units:	ea	cost:	2.49
+name:	Veggie Tots	quantity:	1.0	units:	ea	cost:	3.99
+name:	Verjuice (Sour Grape Juice)	quantity:	1.0	units:	ea	cost:	4.50
+name:	Vidalia Onions Peeled And Chopped	quantity:	1.0	units:	ea	cost:	1.50
+name:	Vidalia onions peeled and chopped	quantity:	1.0	units:	ea	cost:	0.75
+name:	Vitamin C	quantity:	1.0	units:	ea	cost:	13.99
+name:	Vitamin D	quantity:	1.0	units:	ea	cost:	10.49	isTaxable:	true	taxablePrice:	10.49	locStoreName:	Costco Mission Valley	locAisle:	Two aisles from pharmacy	locDetails:	Near the front of the warehouse	locMonth:	1	locDay:	25	locYear:	2023
+name:	Vitamin D3	quantity:	1.0	units:	ea	cost:	10.49	isTaxable:	true
+name:	Vons Medium Roast Coffee	quantity:	1.0	units:	ea	cost:	5.99
+name:	Vons Organic Whipping Cream	quantity:	1.0	units:	ea	cost:	6.99
+name:	Vons Tzatziki Dip	quantity:	1.0	units:	ea	cost:	5.49
+name:	Waffle Fries	quantity:	1.0	units:	ea	cost:	3.50
+name:	Wasabi And Soy Sauce Almonds	quantity:	1.0	units:	ea	cost:	0.00
+name:	Water	quantity:	3.0	units:	c	cost:	2.00
+name:	Water bottle	quantity:	1.0	units:	ea	cost:	2.00
+name:	Wear First Shorts	quantity:	1.0	units:	ea	cost:	13.99
+name:	Well Rested Herbal Tea	quantity:	1.0	units:	ea	cost:	0.00
+name:	Wellbutrin	quantity:	1.0	units:	ea	cost:	0.00
+name:	Wheat Bread	quantity:	1.0	units:	ea	cost:	4.59
+name:	Whipped Cream	quantity:	1.0	units:	ea	cost:	2.59
+name:	Whipping Cream	quantity:	1.0	units:	ea	cost:	0.00
+name:	White Beans, 15 Oz Can	quantity:	4.0	units:	ea	cost:	1.50
+name:	White Bread	quantity:	1.0	units:	ea	cost:	5.39
+name:	White Cheddar Cheese	quantity:	0.5	units:	lb	cost:	14.00
+name:	White Chocolate Chips	quantity:	12.0	units:	oz	cost:	2.49
+name:	White Sugar	quantity:	1.0	units:	ea	cost:	9.19	notes:	10 pounds
+name:	White Vinegar	quantity:	2.0	units:	ea	cost:	2.39	notes:	Gallons
+name:	Whole Foods Flax Seeds	quantity:	1.0	units:	ea	cost:	4.99	notes:	Aisle 8 at Hillcrest Whole Foods
+name:	Whole Grain White Bread	quantity:	1.0	units:	ea	cost:	4.49
+name:	Whole Milk	quantity:	1.0	units:	ea	cost:	1.69
+name:	Whole Milk Greek Yogurt	quantity:	1.0	units:	ea	cost:	4.99
+name:	Whole Nutmeg	quantity:	1.0	units:	ea	cost:	0.00
+name:	Wild Alaskan Salmon Oil	quantity:	1.0	units:	ea	cost:	18.99	isTaxable:	true
+name:	Wild Rice	quantity:	1.0	units:	ea	cost:	4.99
+name:	Windshield Washer Fluid	quantity:	1.0	units:	ea	cost:	1.00
+name:	Wiper Blades	quantity:	1.0	units:	ea	cost:	8.99	isTaxable:	true
+name:	Wood Chips, Hickory	quantity:	2.0	units:	lb	cost:	0.00
+name:	Worcestershire Sauce	quantity:	1.0	units:	T	cost:	1.99
+name:	Wound Tape	quantity:	1.0	units:	ea	cost:	4.79	isTaxable:	true
+name:	Yakisoba Bowls	quantity:	1.0	units:	ea	cost:	11.49
+name:	Yams	quantity:	2.0	units:	ea	cost:	0.88
+name:	Yellow Lentil Spaghetti	quantity:	1.0	units:	ea	cost:	3.50	notes:	8.8oz box
+name:	Yellow Pepper	quantity:	1.0	units:	ea	cost:	3.99
+name:	Yucatán Guacamole	quantity:	1.0	units:	ea	cost:	0.00
+name:	Yukon Gold Potatoes	quantity:	1.0	units:	ea	cost:	4.49	notes:	Qty 3 or 4
+name:	Yukon Gold Potato Diced (Approximately 1 Cup)	quantity:	1.0	units:	ea	cost:	0.50
+name:	Zevia 6-Pack	quantity:	1.0	units:	ea	cost:	5.99	isTaxable:	true	isCRV:	true	crvQuantity:	6	crvFluidOunces:	12.0	notes:	Regular flavor
+name:	Zevia Can	quantity:	1.0	units:	ea	cost:	0.99	isTaxable:	true	taxablePrice:	1.79	isCRV:	true	crvQuantity:	1	crvFluidOunces:	12.0
+name:	Zevia Cherry Cola 6 Pack	quantity:	1.0	units:	ea	cost:	3.99	isTaxable:	true	isCRV:	true	crvQuantity:	6	crvFluidOunces:	12.0
+name:	Zevia Cola	quantity:	1.0	units:	ea	cost:	9.49	isTaxable:	true	taxablePrice:	8.49	isCRV:	true	crvQuantity:	10	crvFluidOunces:	12.0
+name:	Zevia Tea	quantity:	3.0	units:	ea	cost:	1.79	isCRV:	true	crvQuantity:	1	crvFluidOunces:	12.0
+name:	Zip Ties	quantity:	1.0	units:	ea	cost:	1.00
+name:	Ziplock Bags Gallon	quantity:	1.0	units:	ea	cost:	3.99	isTaxable:	true	locStoreName:	Food 4 Less Mission Valley	locAisle:	5	locDetails:	Left side after Tupperware	locMonth:	2	locDay:	13	locYear:	2023
+name:	Ziplock Bags Sandwich	quantity:	1.0	units:	ea	cost:	2.99	isTaxable:	true
+name:	Zucchini	quantity:	1.97	units:	lb	cost:	1.49	notes:	Qty 4	produceCode:	4067
+name:	Zucchini squash, sliced	quantity:	1.0	units:	c	cost:	0.00
+name:	all-purpose floor	quantity:	12.0	units:	oz	cost:	0.00
+name:	apple cider	quantity:	1.0	units:	T	cost:	0.00
+name:	apple jelly	quantity:	2.0	units:	T	cost:	0.00
+name:	applejack	quantity:	6.0	units:	T	cost:	0.00
+name:	apples	quantity:	3.5	units:	lb	cost:	0.00
+name:	avocado	quantity:	1.0	units:	ea	cost:	1.50
+name:	bacon, chopped	quantity:	1.0	units:	lb	cost:	0.00
+name:	bag Potatoes O’Brien	quantity:	1.0	units:	ea	cost:	2.99	locStoreName:	Murphy Canyon Vons	locAisle:	12	locDetails:	Right side at back	locMonth:	12	locDay:	31	locYear:	2022
+name:	bell pepper	quantity:	1.0	units:	ea	cost:	1.49
+name:	black beans	quantity:	1.0	units:	ea	cost:	0.00
+name:	black pepper	quantity:	1.0	units:	t	cost:	0.00
+name:	boneless, skinless chicken breasts (about 3 double breasts), cooked and cubed	quantity:	3.0	units:	lb	cost:	0.00
+name:	broccoli sprouts	quantity:	0.5	units:	c	cost:	0.00
+name:	canned pumpkin	quantity:	1.0	units:	ea	cost:	2.49
+name:	carrots	quantity:	2.0	units:	ea	cost:	0.00
+name:	cayenne pepper	quantity:	0.25	units:	t	cost:	0.00
+name:	celery ribs, trimmed and chopped	quantity:	2.0	units:	ea	cost:	0.00
+name:	charred corn (either frozen and defrosted or grilled on a grill)	quantity:	1.0	units:	c	cost:	1.99
+name:	charred corn (either frozen and defrosted or grilled on a grill)	quantity:	1.0	units:	c	cost:	0.00
+name:	charred corn (either frozen and defrosted or grilled on a grill)	quantity:	1.0	units:	c	cost:	0.00
+name:	charred corn (either frozen and defrosted or grilled on a grill)	quantity:	1.0	units:	c	cost:	0.00
+name:	charred corn (either frozen and defrosted or grilled on a grill)	quantity:	1.0	units:	c	cost:	0.00
+name:	charred corn (either frozen and defrosted or grilled on a grill)	quantity:	1.0	units:	c	cost:	0.00
+name:	charred corn (either frozen and defrosted or grilled on a grill)	quantity:	1.0	units:	c	cost:	0.00
+name:	chopped fresh basil	quantity:	2.0	units:	T	cost:	0.00
+name:	chopped fresh cilantro leaves	quantity:	1.0	units:	c	cost:	0.00
+name:	chopped fresh cilantro leaves and fine stems, large handful	quantity:	1.0	units:	ea	cost:	0.00
+name:	chopped romaine lettuce	quantity:	10.0	units:	ea	cost:	5.00
+name:	cilantro leaves	quantity:	0.0	units:	-	cost:	0.00
+name:	cornbread mix	quantity:	1.0	units:	ea	cost:	3.59
+name:	cream cheese	quantity:	1.0	units:	ea	cost:	2.00
+name:	dark brown sugar	quantity:	0.25	units:	c	cost:	0.00
+name:	diced bacon (see note above)	quantity:	12.0	units:	oz	cost:	4.49
+name:	diced onion	quantity:	0.5	units:	c	cost:	0.00
+name:	dried basil, crumbled	quantity:	5.0	units:	T	cost:	0.00
+name:	dried oregano, crumbled	quantity:	2.0	units:	T	cost:	0.00
+name:	dried pinto beans	quantity:	1.0	units:	lb	cost:	0.00
+name:	egg	quantity:	1.0	units:	ea	cost:	0.00
+name:	eggs	quantity:	1.0	units:	ea	cost:	6.00
+name:	eggs, beaten	quantity:	1.0	units:	ea	cost:	0.00
+name:	epazote (optional; see note above)	quantity:	1.0	units:	ea	cost:	0.00
+name:	epazote sprigs - optional; see note above	quantity:	2.0	units:	ea	cost:	0.00
+name:	extra virgin olive oil	quantity:	1.0	units:	T	cost:	0.00
+name:	finely crushed gingersnaps (about 28)	quantity:	1.5	units:	c	cost:	0.00
+name:	finely crushed gingersnaps (about 28)	quantity:	1.5	units:	c	cost:	0.00
+name:	finely crushed gingersnaps (about 28)	quantity:	1.5	units:	c	cost:	0.00
+name:	fresh cilantro leaves	quantity:	1.0	units:	ea	cost:	0.00
+name:	fresh lemons, juiced	quantity:	2.0	units:	ea	cost:	0.00
+name:	fresh limes, juiced	quantity:	2.0	units:	ea	cost:	0.00
+name:	fresh rosemary	quantity:	1.0	units:	t	cost:	0.00
+name:	fresh spinach	quantity:	1.0	units:	ea	cost:	3.00	notes:	6-8 oz
+name:	freshly squeezed lime juice	quantity:	1.0	units:	ea	cost:	0.39
+name:	garlic cloves	quantity:	3.0	units:	ea	cost:	0.00
+name:	garlic cloves, pressed	quantity:	6.0	units:	ea	cost:	0.50
+name:	grains of paradise	quantity:	0.25	units:	t	cost:	3.00
+name:	granulated sugar	quantity:	1.0	units:	T	cost:	0.00
+name:	grated fresh ginger or 1/2 teaspoon ground ginger	quantity:	2.0	units:	t	cost:	0.10
+name:	grated sharp cheddar cheese	quantity:	1.0	units:	c	cost:	9.99
+name:	green cabbage, cut into chunks and leaves pulled apart	quantity:	1.0	units:	ea	cost:	0.00
+name:	green onions, trimmed and chopped for garnish	quantity:	1.0	units:	ea	cost:	0.00
+name:	ground cumin	quantity:	1.0	units:	oz	cost:	0.99	isTaxable:	true
+name:	heavy cream	quantity:	1.0	units:	ea	cost:	0.00
+name:	homemade or store-bought low-sodium chicken stock	quantity:	6.0	units:	c	cost:	4.00
+name:	jalapenos, chopped	quantity:	2.0	units:	ea	cost:	0.00
+name:	jar pimientos, with juice	quantity:	1.0	units:	oz	cost:	2.99
+name:	kosher salt	quantity:	0.25	units:	t	cost:	0.00
+name:	lean ground beef	quantity:	12.0	units:	oz	cost:	0.00
+name:	lime	quantity:	1.0	units:	ea	cost:	0.00
+name:	lime juice	quantity:	2.0	units:	t	cost:	0.00
+name:	low sodium chicken broth	quantity:	3.0	units:	c	cost:	0.00
+name:	medium onion	quantity:	1.0	units:	ea	cost:	0.00
+name:	minced garlic	quantity:	1.0	units:	t	cost:	0.59
+name:	molasses	quantity:	0.25	units:	c	cost:	0.00
+name:	olive oil	quantity:	1.0	units:	ea	cost:	15.99
+name:	onion	quantity:	1.0	units:	lb	cost:	1.69	produceCode:	4665
+name:	onion or bunch scallions	quantity:	1.0	units:	ea	cost:	0.00
+name:	onion, chopped	quantity:	1.0	units:	ea	cost:	0.00
+name:	package fresh peppers and onions	quantity:	1.0	units:	ea	cost:	2.99
+name:	russet potatoes	quantity:	3.0	units:	ea	cost:	0.00
+name:	semi-sweet chocolate chips	quantity:	1.0	units:	ea	cost:	8.99
+name:	serrano chilies, or 1 jalapeño	quantity:	2.0	units:	ea	cost:	0.00
+name:	serrano pepper	quantity:	1.0	units:	ea	cost:	0.00
+name:	shredded cheese	quantity:	0.0	units:	-	cost:	7.99
+name:	small cauliflower head	quantity:	1.0	units:	ea	cost:	0.00
+name:	spinach	quantity:	8.0	units:	oz	cost:	0.00
+name:	sugar	quantity:	1.0	units:	ea	cost:	1.99
+name:	table salt	quantity:	1.0	units:	t	cost:	0.00
+name:	tapioca floor	quantity:	3.0	units:	T	cost:	0.00
+name:	tomato paste	quantity:	0.25	units:	c	cost:	0.00
+name:	unsalted butter	quantity:	1.0	units:	ea	cost:	0.00
+name:	vanilla extract	quantity:	1.0	units:	ea	cost:	0.00
+name:	vegetable broth	quantity:	0.0	units:	-	cost:	0.00
+name:	vegetable shortening	quantity:	2.0	units:	oz	cost:	0.00
+name:	water	quantity:	2.0	units:	c	cost:	0.00
+name:	water or low-sodium chicken stock	quantity:	1.0	units:	c	cost:	0.00
+name:	whole kernel corn, drained	quantity:	0.33333334	units:	c	cost:	0.00

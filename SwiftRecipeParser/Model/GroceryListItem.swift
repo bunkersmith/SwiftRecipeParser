@@ -337,6 +337,16 @@ class GroceryListItem: NSManagedObject {
         }
     }
 
+    class func writeAllToTextFile(viewController: UIViewController) {
+        var startTime = MillisecondTimer.currentTickCount()
+        
+        guard let groceryListItems = fetchAll() else {
+            Logger.logDetails(msg: "Error fetching Grocery List Items")
+            return
+        }
+        
+    }
+
     class func writeAllToIcloud(viewController: UIViewController) {
         var startTime = MillisecondTimer.currentTickCount()
         
@@ -440,7 +450,7 @@ class GroceryListItem: NSManagedObject {
         }
     }
     
-    class func allItemsToData() -> Data? {
+    class func allItemsToString() -> String? {
         guard let allItems = fetchAll() else {
             Logger.logDetails(msg: "Error fetching all Grocery List Items")
             return nil
@@ -450,6 +460,14 @@ class GroceryListItem: NSManagedObject {
         
         for item in allItems {
             fileString += item.convertToShortOneLineString()
+        }
+        
+        return fileString
+    }
+    
+    class func allItemsToData() -> Data? {
+        guard let fileString = allItemsToString() else {
+            return nil
         }
         
         return Data(fileString.utf8)
