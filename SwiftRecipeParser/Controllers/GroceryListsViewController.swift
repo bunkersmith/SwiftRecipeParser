@@ -45,7 +45,26 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
         if UIDevice.current.model.starts(with: "iPad") {
             tabBarController?.selectedIndex = 1
         }
+
+// THE CODE BELOW DISPLAYS AN ALERT FOR EACH GroceryListItem, POSSIBLY FOR IDENTIFYING ITEMS TO PURGE?
+
+//        let groceryListItems = GroceryListItem.fetchAll()!
+//        displayAlert(i: 0, groceryListItems: groceryListItems)
+//        for groceryListItem in groceryListItems {
+//            let alertString = "\(groceryListItem.quantity)\n\(groceryListItem.unitOfMeasure)\n\(groceryListItem.name)"
+//            AlertUtilities.showOkButtonAlert(self, title: "Alert", message: alertString, buttonHandler: nil)
+//        }
     }
+    
+//    func displayAlert(i: Int, groceryListItems: [GroceryListItem]) {
+//        if i < groceryListItems.count {
+//            let groceryListItem = groceryListItems[i]
+//            let alertString = "\(groceryListItem.quantity)\n\(groceryListItem.unitOfMeasure)\n\(groceryListItem.name)"
+//            AlertUtilities.showOkButtonAlert(self, title: "Alert", message: alertString, buttonHandler: { _ in
+//                self.displayAlert(i: i+1, groceryListItems: groceryListItems)
+//            })
+//        }
+//    }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)

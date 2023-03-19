@@ -10,6 +10,7 @@ import UIKit
 
 class PersianRecipesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var recipe:Recipe?
 
     let recipeNamesArray:[String] = ["Persian Chicken With Rice (Zereshk Polo ba Morgh)",
                                      "Persian Eggplant (Naz Khatoon)",
@@ -32,7 +33,7 @@ class PersianRecipesViewController: UIViewController, UITableViewDataSource, UIT
     
         cell.ingredientsTableViewController.embeddedTableView = cell.ingredientsTableView
     
-        cell.ingredientsTableView.delegate = cell.ingredientsTableViewController
+        cell.ingredientsTableView.delegate = self
         cell.ingredientsTableView.dataSource = cell.ingredientsTableViewController
 
 /*
@@ -46,7 +47,7 @@ class PersianRecipesViewController: UIViewController, UITableViewDataSource, UIT
     func populateRecipeDisplayFields(cell: PersianRecipeCell) {
         cell.instructionsTextView.textAlignment = .justified
         
-        let recipe = Recipe.findRecipeByName(cell.recipeTitle.text!)
+        recipe = Recipe.findRecipeByName(cell.recipeTitle.text!)
         
         cell.instructionsTextView.text = recipe!.instructions
         
@@ -60,6 +61,13 @@ class PersianRecipesViewController: UIViewController, UITableViewDataSource, UIT
         cell.instructionsTextView.scrollRangeToVisible(NSMakeRange(0, 1))
     }
 
+    // MARK: - Table View Delegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        AlertUtilities.showAddIngredientAlert(object: recipe!.containsIngredients[indexPath.row] as AnyObject, viewController: self)
+    }
+    
     //MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipeNamesArray.count
