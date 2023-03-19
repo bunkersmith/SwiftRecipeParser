@@ -68,7 +68,7 @@ class PersianRecipesViewController: UIViewController, UITableViewDataSource, UIT
         AlertUtilities.showAddIngredientAlert(object: recipe!.containsIngredients[indexPath.row] as AnyObject, viewController: self)
     }
     
-    //MARK: - UITableViewDataSource
+    // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipeNamesArray.count
     }
