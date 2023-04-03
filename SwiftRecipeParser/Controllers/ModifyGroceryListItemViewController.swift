@@ -110,6 +110,8 @@ class ModifyGroceryListItemViewController: UIViewController, UITextFieldDelegate
         
         if groceryListItem.location != nil {
             addLocationButton.setTitle("Edit Location", for: .normal)
+            addLocationButton.backgroundColor = UIColor(red: 0.0, green: 0.375, blue: 0.0, alpha: 1)
+            addLocationButton.setTitleColor(UIColor.white, for: .normal)
         } else {
             addLocationButton.setTitle("Add Location", for: .normal)
         }
