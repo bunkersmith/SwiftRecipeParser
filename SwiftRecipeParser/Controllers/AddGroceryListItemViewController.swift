@@ -115,9 +115,10 @@ class AddGroceryListItemViewController: UIViewController, UITableViewDataSource,
     }
     
     @IBAction func exportButtonPressed(_ sender: Any) {
-        AlertUtilities.showYesNoAlert(viewController: self, title: "Export Alert", message: "Do you want to export all the Grocery List Items to the iCloud file?", yesButtonHandler: { action in
-            GroceryListItem.writeAllToIcloud(viewController: self)
-        }, noButtonHandler: nil)
+//        AlertUtilities.showYesNoAlert(viewController: self, title: "Export Alert", message: "Do you want to export all the Grocery List Items to the iCloud file?", yesButtonHandler: { action in
+//            GroceryListItem.writeAllToIcloud(viewController: self)
+//        }, noButtonHandler: nil)
+        GroceryListItem.writeAllToTextFile(viewController: self)
     }
     
     @IBAction func renameButtonPressed(_ sender: Any) {

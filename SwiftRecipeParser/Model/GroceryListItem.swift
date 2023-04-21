@@ -338,13 +338,33 @@ class GroceryListItem: NSManagedObject {
     }
 
     class func writeAllToTextFile(viewController: UIViewController) {
-        var startTime = MillisecondTimer.currentTickCount()
+//        var startTime = MillisecondTimer.currentTickCount()
         
         guard let groceryListItems = fetchAll() else {
             Logger.logDetails(msg: "Error fetching Grocery List Items")
             return
         }
         
+        var completeString = ""
+        
+        for groceryListItem in groceryListItems {
+            let itemString = groceryListItem.convertToExportString();
+            completeString += itemString
+        }
+        
+        deleteExportFile()
+        
+        let exportFilePath = FileUtilities.exportFilePath()
+        
+        NSLog("completeString.count = \(completeString.count)")
+        
+        do {
+            try completeString.write(toFile: exportFilePath, atomically:true, encoding:String.Encoding.utf8)
+        } catch let error as NSError {
+            NSLog("Error writing to export file (at path \(exportFilePath)): \(error)")
+        }
+
+        IToast().showToast(viewController, alertTitle: "SwiftRecipeParser Alert", alertMessage: "\(completeString.count) bytes sucessfully written", duration: 2, completionHandler: nil)
     }
 
     class func writeAllToIcloud(viewController: UIViewController) {
@@ -508,43 +528,120 @@ class GroceryListItem: NSManagedObject {
         
         return "\(string)\n\(itemString)"
     }
+
+/*
+
+ var returnValue = "name:\t" + groceryListItem.getName() // 1
+ returnValue += "\tcost:\t" + groceryListItem.unitCostString // 2
+ returnValue += "\tquantity:\t" + groceryListItem.quantityString // 3
+ returnValue += "\tunitOfMeasure:\t" + groceryListItem.getUnitOfMeasure() // 4
+     returnValue += "\tisTaxable:\t" + groceryListItem.isTaxable // 5
+         returnValue += "\ttaxablePrice:\t" + groceryListItem.taxablePrice // 6
+         returnValue += "\tisCRV:\t" + groceryListItem.isCRV // 7
+         returnValue += "\tcrvQuantity:\t" + groceryListItem.crvQuantity // 8
+         returnValue += "\tcrvFluidOunces:\t" + groceryListItem.crvFluidOunces // 9
+         returnValue += "\tisFSA:\t${groceryListItem.isFSA}" // 10
+         returnValue += "\tnotes:\t" + groceryListItem.notes // 11
+     returnValue += "\tproduceCode:\t" + groceryListItem.produceCode // 12
+ returnValue += "\tlistPosition:\t" + groceryListItem.listPosition
+     returnValue += "\tphotoPath:\t" + groceryListItem.photoPath
+
+     returnValue += "\tlocation:\tmonth:\t" + month + "\tday:\t" + day + "\tyear:\t" + year + "\tstoreName:\t" + storeName + "\taisle:\t" + aisle + "\tdetails:\t" + details
+ */
     
-    func convertToShortOneLineString() -> String {
-        var returnValue = "name:\t" + name
-        returnValue += "\tquantity:\t\(quantity.floatValue)"
-        returnValue += "\tunits:\t" + unitOfMeasure
-        returnValue += String(format: "\tcost:\t%.2f", cost.floatValue)
+    
+    class func deleteExportFile() {
+        let exportFilePath = FileUtilities.exportFilePath()
+        
+        let fileManager = FileManager.default
+        
+        if fileManager.fileExists(atPath: exportFilePath) {
+            do {
+                try fileManager.removeItem(atPath: exportFilePath)
+            } catch let error as NSError {
+                NSLog("Error deleting log file (at path \(exportFilePath)): \(error)")
+            }
+        }
+    }
+
+    func convertToExportString() -> String {
+        var returnValue = "name:\t" + name // 1
+        returnValue += String(format: "\tcost:\t%.2f", cost.floatValue) // 4
+        returnValue += "\tquantity:\t\(quantity.floatValue)" // 2
+        returnValue += "\tunitOfMeasure:\t" + unitOfMeasure // 3
         if isTaxable.boolValue {
-            returnValue += "\tisTaxable:\t\(isTaxable.boolValue)"
+            returnValue += "\tisTaxable:\t\(isTaxable.boolValue)" // 5
             let taxablePrice = taxablePrice.floatValue
             if taxablePrice > 0 {
-                returnValue += String(format: "\ttaxablePrice:\t%.2f", taxablePrice)
+                returnValue += String(format: "\ttaxablePrice:\t%.2f", taxablePrice) // 6
             }
         }
         if isCrv.boolValue {
-            returnValue += "\tisCRV:\t\(isCrv.boolValue)"
-            returnValue += "\tcrvQuantity:\t\(crvQuantity.intValue)"
-            returnValue += "\tcrvFluidOunces:\t\(crvFluidOunces.floatValue)"
+            returnValue += "\tisCRV:\t\(isCrv.boolValue)" // 7
+            returnValue += "\tcrvQuantity:\t\(crvQuantity.intValue)" // 8
+            returnValue += "\tcrvFluidOunces:\t\(crvFluidOunces.floatValue)" // 9
         }
         if isFsa.boolValue {
-            returnValue += "\tisFSA:\t\(isFsa.boolValue)"
+            returnValue += "\tisFSA:\t\(isFsa.boolValue)" // 10
         }
         if !notes.isEmpty {
-            returnValue += "\tnotes:\t" + notes
+            returnValue += "\tnotes:\t" + notes // 11
         }
         let produceCode = produceCode.int32Value
         if produceCode != 0 {
-            returnValue += "\tproduceCode:\t" + String(produceCode)
+            returnValue += "\tproduceCode:\t" + String(produceCode) // 12
+        }
+        
+        if location != nil {
+            returnValue += "\tlocation:\t"
+            returnValue += "\tmonth:\t\(location!.month!)" // 16
+            returnValue += "\tday:\t\(location!.day!)" // 17
+            returnValue += "\tyear:\t\(location!.year!)" // 18
+            returnValue += "\tstoreName:\t\(location!.storeName!)" // 13
+            returnValue += "\taisle:\t\(location!.aisle!)" // 14
+            returnValue += "\tdetails:\t\(location!.details!)" // 15
+        }
+        
+        returnValue += "\n"
+        return returnValue
+    }
+    
+    func convertToShortOneLineString() -> String {
+        var returnValue = "name:\t" + name // 1
+        returnValue += "\tquantity:\t\(quantity.floatValue)" // 2
+        returnValue += "\tunits:\t" + unitOfMeasure // 3
+        returnValue += String(format: "\tcost:\t%.2f", cost.floatValue) // 4
+        if isTaxable.boolValue {
+            returnValue += "\tisTaxable:\t\(isTaxable.boolValue)" // 5
+            let taxablePrice = taxablePrice.floatValue
+            if taxablePrice > 0 {
+                returnValue += String(format: "\ttaxablePrice:\t%.2f", taxablePrice) // 6
+            }
+        }
+        if isCrv.boolValue {
+            returnValue += "\tisCRV:\t\(isCrv.boolValue)" // 7
+            returnValue += "\tcrvQuantity:\t\(crvQuantity.intValue)" // 8
+            returnValue += "\tcrvFluidOunces:\t\(crvFluidOunces.floatValue)" // 9
+        }
+        if isFsa.boolValue {
+            returnValue += "\tisFSA:\t\(isFsa.boolValue)" // 10
+        }
+        if !notes.isEmpty {
+            returnValue += "\tnotes:\t" + notes // 11
+        }
+        let produceCode = produceCode.int32Value
+        if produceCode != 0 {
+            returnValue += "\tproduceCode:\t" + String(produceCode) // 12
         }
 
         if location != nil {
-            returnValue += "\tlocStoreName:\t\(location!.storeName!)"
-            returnValue += "\tlocAisle:\t\(location!.aisle!)"
-            returnValue += "\tlocDetails:\t\(location!.details!)"
+            returnValue += "\tlocStoreName:\t\(location!.storeName!)" // 13
+            returnValue += "\tlocAisle:\t\(location!.aisle!)" // 14
+            returnValue += "\tlocDetails:\t\(location!.details!)" // 15
 // ANDROID MONTHS ARE 0..11. THE ANDROID APP TAKES CARE OF CONVERTING THEM.
-            returnValue += "\tlocMonth:\t\(location!.month!)"
-            returnValue += "\tlocDay:\t\(location!.day!)"
-            returnValue += "\tlocYear:\t\(location!.year!)"
+            returnValue += "\tlocMonth:\t\(location!.month!)" // 16
+            returnValue += "\tlocDay:\t\(location!.day!)" // 17
+            returnValue += "\tlocYear:\t\(location!.year!)" // 18
         }
         
         returnValue += "\n"

@@ -39,6 +39,11 @@ class FileUtilities {
         return documentsDirectory.appendingPathComponent("SwiftRecipeParser.loggerArchive").path
     }
     
+    class func exportFilePath() -> String {
+        let documentsDirectory = FileUtilities.applicationDocumentsDirectory()
+        return documentsDirectory.appendingPathComponent("GroceryListItems.txt").path
+    }
+
     class func logFilePath() -> String {
         let documentsDirectory = FileUtilities.applicationDocumentsDirectory()
         return documentsDirectory.appendingPathComponent("SwiftRecipeParser-Log.txt").path
