@@ -602,6 +602,10 @@ class GroceryListItem: NSManagedObject {
             returnValue += "\tdetails:\t\(location!.details!)" // 15
         }
         
+        if imagePath != nil && imagePath != ""  {
+            returnValue += "\tphotoPath:\t\(imagePath!)";
+        }
+        
         returnValue += "\n"
         return returnValue
     }
